@@ -1,0 +1,114 @@
+{
+ "business_line": "HomepreunerHub / HerBiz",
+ "synthetic": true,
+ "owner": "WS C (source side); scenario steps: WS A",
+ "contract": "herbiz.source_validity/1.2",
+ "not_legal_advice": true,
+ "rule": "payloads copied unchanged from knowledge_base/t2/CL_source_validity_1.2.json; no official text",
+ "scenario_id": "SC-3",
+ "question": {
+  "question_id": "SYN-SC3-Q",
+  "text": "I buy baking supplies from a supplier abroad. Do I have to account for the VAT myself under the reverse charge?",
+  "touches": "FTA-VAT-DL8|48",
+  "article_heading": "Reverse Charge (Decree-Law Art. 48, per HerBiz article headings)",
+  "written_by": "HerBiz (synthetic)"
+ },
+ "validity_keys": [
+  "FTA-VAT-DL8|48",
+  "FTA-VAT-DL8|*"
+ ],
+ "payloads": [
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|48",
+   "source_id": "FTA-VAT-DL8",
+   "article": "48",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "48"
+     ],
+     "evidence_level": "observed_in_file",
+     "url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|*",
+   "source_id": "FTA-VAT-DL8",
+   "article": "*",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "48",
+      "54 (bis)",
+      "74",
+      "79 (bis)"
+     ],
+     "evidence_level": "observed",
+     "url": "https://mof.gov.ae/en/news/ministry-of-finance-to-implement-vat-law-amendments-starting-january-2026/"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  }
+ ],
+ "source_side_expectations": {
+  "status": "outdated",
+  "reason": "the pinned copy predates Federal Decree-Law No. 16 of 2025 (effective 2026-01-01)",
+  "affected_answer_withheld": true,
+  "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+  "current_official_url_content_check": "pending_founder_verification",
+  "fetched_by_app": false,
+  "pinned_source_replaced": false,
+  "flags": [
+   "stale_source",
+   "pending_unverified_link"
+  ],
+  "must_show": [
+   "current official link",
+   "link not yet verified",
+   "review required"
+  ]
+ },
+ "optional_step_4": "existing MD 131/2026 change replay (CT-MD73-2023|2(2) outdated in the C-2 export)"
+}

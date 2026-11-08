@@ -1,0 +1,4 @@
+v7 real rep0: recall=1.0 any=1.0 silent=[] oos_verif=[] FI=0.421 P=11.3 irr=0.63 oos_add=0 cert=0 miss=[]
+v7 real rep1: recall=1.0 any=1.0 silent=[] oos_verif=[] FI=0.421 P=11.1 irr=0.626 oos_add=0 cert=0 miss=[]
+v7 real rep2: recall=1.0 any=1.0 silent=[] oos_verif=[] FI=0.421 P=11.4 irr=0.636 oos_add=0 cert=0 miss=[]
+v8 proxy: recall=1.0 any=1.0 silent=[] oos_verif=[] FI=0.4 P=11.6 irr=0.554 oos_add=0 cert=0 miss=[]

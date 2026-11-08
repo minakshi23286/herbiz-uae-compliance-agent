@@ -1,0 +1,594 @@
+{
+ "contract": "0.1",
+ "profile": "synthetic demo persona",
+ "labels": [
+  {
+   "obligation_id": "ACC-AUDITED-FS",
+   "known": true,
+   "shown": true,
+   "title": "Audited financial statements (tax rule; authorities may differ)",
+   "domain": "bookkeeping",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-ACC, D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "ACC-MD84-2025",
+     "title": "Ministerial Decision No. 84 of 2025 on audited financial statements (CT)",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/wp-content/uploads/2025/04/Ministerial-Decision-No.-84-of-2025-on-Audited-Financial-Statements.pdf",
+     "evidence_level": "observed_listing_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "ACC-MD82-2023",
+     "title": "Ministerial Decision No. 82 of 2023 on audited financial statements (CT)",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/wp-content/uploads/2023/04/Ministerial-Decision-No.-82-of-2023-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022.pdf",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "ACC-G1",
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: Audited financial statements rule from 1 Jan 2025 (MD 84/2025) official text not located; Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "ACC-RECORDS",
+   "known": true,
+   "shown": true,
+   "title": "Keep accounting records",
+   "domain": "bookkeeping",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-ACC, D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "ACC-FTA-DEC4-2026",
+     "title": "FTA Decision No. 4 of 2026 on rules for maintaining information in accounting records (title truncated on listing)",
+     "authority": "Federal Tax Authority",
+     "url": "see https://tax.gov.ae/en/legislation.aspx",
+     "evidence_level": "observed_listing_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-DL47-2022",
+     "title": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses (Corporate Tax Law)",
+     "authority": "UAE Government; UAE Legislation portal",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1582",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "CT-G2"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: CT law text not collected; article-level citations unavailable.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-LATE-REG-PENALTY",
+   "known": true,
+   "shown": true,
+   "title": "Corporate tax late-registration penalty and waiver",
+   "domain": "corporate_tax",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "CT-REG-SERVICE",
+     "title": "FTA service card: Corporate Tax Registration",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/services/corporate.tax.registration.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-CR75-2023",
+     "title": "Cabinet Resolution No. 75 of 2023 on administrative penalties (Corporate Tax)",
+     "authority": "Cabinet",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2161",
+     "evidence_level": "observed_listing_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "CT-G2"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: CT law text not collected; article-level citations unavailable.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-REG-JURIDICAL",
+   "known": true,
+   "shown": true,
+   "title": "Corporate tax registration: juridical person",
+   "domain": "corporate_tax",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "CT-REG-SERVICE",
+     "title": "FTA service card: Corporate Tax Registration",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/services/corporate.tax.registration.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-FTA-DEC3-2024",
+     "title": "FTA Decision No. 3 of 2024 on timeframes for Corporate Tax registration",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/Datafolder/Files/Legislation/FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20-%20For%20publishing.pdf",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-DL47-2022",
+     "title": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses (Corporate Tax Law)",
+     "authority": "UAE Government; UAE Legislation portal",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1582",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "CT-G2"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: CT law text not collected; article-level citations unavailable.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-REG-NATURAL",
+   "known": true,
+   "shown": true,
+   "title": "Corporate tax registration: natural person",
+   "domain": "corporate_tax",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "CT-NATURAL-PERSON-TOPIC",
+     "title": "FTA topic page: Basis of Taxation - Natural Person",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-REG-SERVICE",
+     "title": "FTA service card: Corporate Tax Registration",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/services/corporate.tax.registration.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-FTA-DEC3-2024",
+     "title": "FTA Decision No. 3 of 2024 on timeframes for Corporate Tax registration",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/Datafolder/Files/Legislation/FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20-%20For%20publishing.pdf",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-CR49-2023",
+     "title": "Cabinet Resolution No. 49 of 2023 on businesses of natural persons subject to Corporate Tax",
+     "authority": "Cabinet",
+     "url": "https://uaelegislation.gov.ae/en/legislations/2219",
+     "evidence_level": "observed_listing_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-DL47-2022",
+     "title": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses (Corporate Tax Law)",
+     "authority": "UAE Government; UAE Legislation portal",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1582",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "CT-G2"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: CT law text not collected; article-level citations unavailable.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-RETURN",
+   "known": true,
+   "shown": true,
+   "title": "Corporate tax return and payment",
+   "domain": "corporate_tax",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "CT-RETURN-DEADLINE",
+     "title": "FTA news: CT returns and payment within nine months of the tax period end",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.calls.on.all.persons.subject.to.corporate.tax.to.file.their.tax.returns.and.pay.the.corporate.tax.due.within.the.specified.timeframes.to.avoid.latepayment.penalties.aspx",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-DL47-2022",
+     "title": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses (Corporate Tax Law)",
+     "authority": "UAE Government; UAE Legislation portal",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1582",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "CT-G2"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: CT law text not collected; article-level citations unavailable.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-SBR",
+   "known": true,
+   "shown": true,
+   "title": "Small Business Relief election",
+   "domain": "corporate_tax",
+   "mode": "synthetic scenario only",
+   "reviewer_needed": "D3-CT",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "CT-MD131-2026",
+     "title": "Ministerial Decision No. 131 of 2026 amending Ministerial Decision No. 73 of 2023 on Small Business Relief",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-MD73-2023",
+     "title": "Ministerial Decision No. 73 of 2023 on Small Business Relief",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/wp-content/uploads/2023/04/Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022.pdf",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-SBR-TOPIC",
+     "title": "FTA topic page: Small Business Relief",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/small.business.relief.23.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "CT-DL47-2022",
+     "title": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses (Corporate Tax Law)",
+     "authority": "UAE Government; UAE Legislation portal",
+     "url": "https://uaelegislation.gov.ae/en/legislations/1582",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "CT-G2"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; shown as a demonstration scenario only; open questions: CT law text not collected; article-level citations unavailable.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "EINV-READINESS",
+   "known": true,
+   "shown": true,
+   "title": "E-invoicing readiness",
+   "domain": "e_invoicing",
+   "mode": "awareness only",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "EINV-FTA-PAGE",
+     "title": "FTA page: UAE e-Invoicing",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/content/uae.einvoicing.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "EINV-MOF-PAGE",
+     "title": "MoF e-Invoicing initiative page",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/en/about-ministry/mof-initiatives/einvoicing/",
+     "evidence_level": "unresolved",
+     "retrieved_at": null,
+     "review_status": "unresolved",
+     "stale": true
+    }
+   ],
+   "vat_register_sources": [
+    "LS-09",
+    "LS-10",
+    "LS-11"
+   ],
+   "open_gaps": [
+    "EINV-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: E-invoicing applicability and dates for smaller businesses not verified; an official source has not been re-checked recently.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "ESR-HISTORICAL",
+   "known": true,
+   "shown": true,
+   "title": "Economic substance (historical periods only)",
+   "domain": "economic_substance",
+   "mode": "historical notice only",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "ESR-CD98-2024",
+     "title": "Cabinet Decision No. 98 of 2024 amending CD 57/2020 (economic substance)",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [],
+   "uncertainty": "medium",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; this applies to past periods only.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "LIC-RENEWAL",
+   "known": true,
+   "shown": true,
+   "title": "Trade licence renewal",
+   "domain": "licensing",
+   "mode": "reminder from the licence expiry date the owner gives",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "LIC-DUBAI-DET",
+     "title": "Invest in Dubai: renew licence (Dubai mainland, DET)",
+     "authority": "Dubai Department of Economy and Tourism",
+     "url": "https://app.invest.dubai.ae/license/renew",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "LIC-DDA-FZ",
+     "title": "Dubai Development Authority: trade licence renewal (free-zone example)",
+     "authority": "Dubai Development Authority",
+     "url": "https://dda.gov.ae/en/registration-licensing/existing-businesses/license-renewal",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "UBO-REGISTER",
+   "known": true,
+   "shown": true,
+   "title": "Beneficial-owner register",
+   "domain": "beneficial_ownership",
+   "mode": "awareness only (post-event)",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "UBO-CD109-2023",
+     "title": "Cabinet Decision No. 109 of 2023 on Regulating the Beneficial Owner Procedures",
+     "authority": "Cabinet; Ministry of Economy",
+     "url": "https://www.uaelegislation.gov.ae/en/legislations/2176",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "VAT-DEREG",
+   "known": true,
+   "shown": true,
+   "title": "VAT deregistration",
+   "domain": "vat",
+   "mode": "existing VAT module; deadline never stated (G1)",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [],
+   "vat_register_sources": [
+    "FTA-VAT-ER"
+   ],
+   "open_gaps": [
+    "G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Deregistration deadline conflict.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "VAT-MANDATORY-REG",
+   "known": true,
+   "shown": true,
+   "title": "VAT mandatory registration",
+   "domain": "vat",
+   "mode": "existing VAT module (validity contract v1.1)",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [],
+   "vat_register_sources": [
+    "FTA-VAT-DL8",
+    "FTA-VAT-ER"
+   ],
+   "open_gaps": [
+    "G3"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: FTA-VAT-DL8@v1 is outdated.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "VAT-RETURN",
+   "known": true,
+   "shown": true,
+   "title": "VAT returns and payment",
+   "domain": "vat",
+   "mode": "existing VAT module",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [],
+   "vat_register_sources": [
+    "FTA-VAT-DL8",
+    "FTA-VAT-ER"
+   ],
+   "open_gaps": [
+    "G3"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: FTA-VAT-DL8@v1 is outdated.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "WPS-PAYROLL",
+   "known": true,
+   "shown": true,
+   "title": "Wages through WPS",
+   "domain": "employment",
+   "mode": "awareness only (post-event)",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "WPS-MOHRE",
+     "title": "MoHRE: Wages Protection System; Ministerial Resolution No. 340 of 2026 concerning WPS",
+     "authority": "Ministry of Human Resources and Emiratisation",
+     "url": "https://www.mohre.gov.ae/en/guidance-and-awareness-portal-new/wages-protection-system",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "EMP-DL33-2021",
+     "title": "Federal Decree-Law No. 33 of 2021 on employment relationships (as amended)",
+     "authority": "UAE Government; MoHRE",
+     "url": "https://mohre.gov.ae/assets/download/8cd7cf08/Federal%20Decree-Law%20No.%2033%20of%202021%20Regarding%20the%20Regulation%20of%20Employment%20Relationship%20and%20its%20amendments.pdf.aspx",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demo scenario (fictional business). Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  }
+ ]
+}

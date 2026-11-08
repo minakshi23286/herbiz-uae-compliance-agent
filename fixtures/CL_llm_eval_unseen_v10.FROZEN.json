@@ -1,0 +1,13 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v10.json",
+ "sha256": "89d4156b59d479955206783a7fe4622a1a8b398e31f26aacb5b5e1a6e7383571",
+ "frozen_at": "2026-10-18 (Workstream B, Task 2 Phase 1 B-0, before any Task 2 retrieval code; D-098)",
+ "role": "independent holdout set v10 (run ONCE at B-4; no tuning on it)",
+ "author": "fresh general-purpose agent; read only the article title list (165 lines: DL8 and ER titles, plus FTA-VAT-REG-PAGE); synthetic; no web, no repository, no earlier sets",
+ "assembled_by": "Claude Code (Workstream B) - copied byte-for-byte; question text NOT read by the developer (structure, source-id validity, coverage counts and personal-data scan only)",
+ "coverage_counts": {"questions": 30, "realistic_scenario": 11, "paraphrase": 6, "rate_category": 5, "adversarial": 3, "out_of_scope": 3, "ambiguous": 2, "multi_article_required": 19, "deregistration": 3, "dl8_art_48_or_74_required": 4},
+ "personal_data_scan": {"email": 0, "phone": 0, "emirates_id": 0, "trn_15": 0, "url": 0},
+ "grading_criteria": "Task 2 WS-B prompt B-4 and gate G2 (CL_HERBIZ_Competition_Assessment/task2_prompts/CL_T2_PROMPT_WS_B.txt): hard gate 0 silent-incomplete; target >=70% all-required (deterministic class); silent-incomplete per doc 16 r2 section 1",
+ "grading_criteria_sha256": "2172ff3f57157850b7ef81eb42b78c8146ff1e57eaf5f1fdf94bb8187ba86a3b",
+ "rule": "Do not open or modify before the B-4 code_freeze record exists. Run once. Any later change needs a new independent set v11."
+}

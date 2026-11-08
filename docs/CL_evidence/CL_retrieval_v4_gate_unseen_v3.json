@@ -1,0 +1,826 @@
+{
+ "eval-v2": {
+  "summary": {
+   "questions": 24,
+   "any_expected": 0.526,
+   "all_required": 0.0,
+   "median_first_rank": 4,
+   "mrr": 0.079,
+   "irrelevant_added_share": 0.941,
+   "added_on_no_source_questions": 0,
+   "avg_passages": 6.7,
+   "misses_any": [
+    "W04",
+    "W08",
+    "W10",
+    "W11",
+    "W13",
+    "W14",
+    "W21",
+    "W23",
+    "W24"
+   ],
+   "misses_required": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12",
+    "W13",
+    "W14",
+    "W20",
+    "W21",
+    "W22",
+    "W24"
+   ]
+  },
+  "rows": [
+   {
+    "id": "W01",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 4,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W02",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W03",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 4,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "W04",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 1,
+    "irrelevant_added": 1,
+    "passages": 7
+   },
+   {
+    "id": "W05",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 1,
+    "irrelevant_added": 1,
+    "passages": 7
+   },
+   {
+    "id": "W06",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W07",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 1,
+    "irrelevant_added": 1,
+    "passages": 7
+   },
+   {
+    "id": "W08",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W09",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W10",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W11",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "W12",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 1,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W13",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W14",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W15",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W16",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W17",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W18",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W19",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W20",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "W21",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "W22",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 1,
+    "passages": 8
+   },
+   {
+    "id": "W23",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": null,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "W24",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   }
+  ]
+ },
+ "v3_blanket": {
+  "summary": {
+   "questions": 24,
+   "any_expected": 0.947,
+   "all_required": 0.333,
+   "median_first_rank": 7,
+   "mrr": 0.144,
+   "irrelevant_added_share": 0.632,
+   "added_on_no_source_questions": 0,
+   "avg_passages": 9.2,
+   "misses_any": [
+    "W13"
+   ],
+   "misses_required": [
+    "W03",
+    "W04",
+    "W05",
+    "W07",
+    "W09",
+    "W10",
+    "W11",
+    "W13",
+    "W14",
+    "W20",
+    "W21",
+    "W22"
+   ]
+  },
+  "rows": [
+   {
+    "id": "W01",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 4,
+    "added": 4,
+    "irrelevant_added": 2,
+    "passages": 10
+   },
+   {
+    "id": "W02",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 3,
+    "irrelevant_added": 0,
+    "passages": 9
+   },
+   {
+    "id": "W03",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 4,
+    "added": 5,
+    "irrelevant_added": 3,
+    "passages": 11
+   },
+   {
+    "id": "W04",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 10,
+    "added": 5,
+    "irrelevant_added": 2,
+    "passages": 11
+   },
+   {
+    "id": "W05",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 4,
+    "irrelevant_added": 4,
+    "passages": 10
+   },
+   {
+    "id": "W06",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 10,
+    "added": 4,
+    "irrelevant_added": 2,
+    "passages": 10
+   },
+   {
+    "id": "W07",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 4,
+    "irrelevant_added": 4,
+    "passages": 10
+   },
+   {
+    "id": "W08",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 4,
+    "irrelevant_added": 1,
+    "passages": 10
+   },
+   {
+    "id": "W09",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W10",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 3,
+    "irrelevant_added": 2,
+    "passages": 9
+   },
+   {
+    "id": "W11",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 10,
+    "added": 5,
+    "irrelevant_added": 3,
+    "passages": 11
+   },
+   {
+    "id": "W12",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 1,
+    "added": 2,
+    "irrelevant_added": 1,
+    "passages": 8
+   },
+   {
+    "id": "W13",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "W14",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W15",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W16",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W17",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W18",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W19",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W20",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 7,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "W21",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 9,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W22",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 7,
+    "added": 5,
+    "irrelevant_added": 3,
+    "passages": 11
+   },
+   {
+    "id": "W23",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": null,
+    "first_rank": 9,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "W24",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 5,
+    "irrelevant_added": 2,
+    "passages": 11
+   }
+  ]
+ },
+ "v4_intent": {
+  "summary": {
+   "questions": 24,
+   "any_expected": 1.0,
+   "all_required": 0.444,
+   "median_first_rank": 7,
+   "mrr": 0.146,
+   "irrelevant_added_share": 0.702,
+   "added_on_no_source_questions": 0,
+   "avg_passages": 9.9,
+   "misses_any": [],
+   "misses_required": [
+    "W03",
+    "W05",
+    "W07",
+    "W09",
+    "W10",
+    "W11",
+    "W13",
+    "W14",
+    "W21",
+    "W22"
+   ]
+  },
+  "rows": [
+   {
+    "id": "W01",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 4,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W02",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 5,
+    "irrelevant_added": 2,
+    "passages": 11
+   },
+   {
+    "id": "W03",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 4,
+    "added": 7,
+    "irrelevant_added": 5,
+    "passages": 13
+   },
+   {
+    "id": "W04",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 8,
+    "irrelevant_added": 4,
+    "passages": 14
+   },
+   {
+    "id": "W05",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "W06",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 11,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W07",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 4,
+    "irrelevant_added": 4,
+    "passages": 10
+   },
+   {
+    "id": "W08",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 4,
+    "irrelevant_added": 1,
+    "passages": 10
+   },
+   {
+    "id": "W09",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W10",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 9,
+    "added": 5,
+    "irrelevant_added": 3,
+    "passages": 11
+   },
+   {
+    "id": "W11",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 8,
+    "added": 5,
+    "irrelevant_added": 3,
+    "passages": 11
+   },
+   {
+    "id": "W12",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 1,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "W13",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W14",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "W15",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W16",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W17",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W18",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W19",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "W20",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 7,
+    "irrelevant_added": 5,
+    "passages": 13
+   },
+   {
+    "id": "W21",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 9,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W22",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "W23",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": null,
+    "first_rank": 8,
+    "added": 5,
+    "irrelevant_added": 4,
+    "passages": 11
+   },
+   {
+    "id": "W24",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 7,
+    "irrelevant_added": 5,
+    "passages": 13
+   }
+  ]
+ },
+ "C_top6_unchanged": true
+}

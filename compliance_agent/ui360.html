@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HerBiz 360 Demo</title>
+<style>
+:root{--field-line:#8f8b84;--bg:#f6f5f2;--card:#ffffff;--ink:#1c1c1e;--muted:#5d6166;--line:#e3e0d9;--accent:#3a5a8c;--accent-ink:#fff;--soft:#eef2f8;
+--amber:#8a5300;--amber-soft:#fff1d6;--blue:#24508f;--blue-soft:#e4edf9;--green:#1f6b3d;--green-soft:#e3f3e8;--grey:#4e5358;--grey-soft:#eceae6;--red:#9b2c2c;--red-soft:#fbe6e6;--violet:#5b3f8f;--violet-soft:#efe8fb}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--field-line:#6b6e73;--bg:#151617;--card:#1f2022;--ink:#ececec;--muted:#a9adb2;--line:#35373a;--accent:#8fb2ec;--accent-ink:#111;--soft:#232a35;
+--amber:#f2b860;--amber-soft:#3a2c14;--blue:#9cc0f5;--blue-soft:#1d2a3d;--green:#86cf9f;--green-soft:#173022;--grey:#c3c6ca;--grey-soft:#2b2c2e;--red:#f29a9a;--red-soft:#3a1d1d;--violet:#c6b2f0;--violet-soft:#2b2340}}
+:root[data-theme="dark"]{--field-line:#6b6e73;--bg:#151617;--card:#1f2022;--ink:#ececec;--muted:#a9adb2;--line:#35373a;--accent:#8fb2ec;--accent-ink:#111;--soft:#232a35;
+--amber:#f2b860;--amber-soft:#3a2c14;--blue:#9cc0f5;--blue-soft:#1d2a3d;--green:#86cf9f;--green-soft:#173022;--grey:#c3c6ca;--grey-soft:#2b2c2e;--red:#f29a9a;--red-soft:#3a1d1d;--violet:#c6b2f0;--violet-soft:#2b2340}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.banner{position:sticky;top:0;z-index:10;background:var(--amber-soft);color:var(--amber);font-size:12.5px;font-weight:600;line-height:1.35;padding:5px 16px;border-bottom:1px solid var(--line)}
+header{padding:14px 16px 6px;max-width:1080px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:space-between}
+h1{font-size:20px;margin:0}
+h1 small{font-weight:400;color:var(--muted);font-size:14px}
+.demo{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.demo .lbl{font-size:12px;color:var(--muted);margin-right:2px}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--field-line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:999px;font-size:13.5px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn[aria-pressed="true"]{background:var(--soft);border-color:var(--accent);font-weight:600}
+.btn[aria-pressed="true"]::before{content:"✓ "}
+.btn:focus-visible,.step:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+nav.steps{max-width:1080px;margin:8px auto 0;padding:0 16px;display:flex;gap:6px;flex-wrap:wrap}
+.step{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:6px 10px;font-size:13px;display:flex;gap:6px;align-items:center}
+.step b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--grey-soft);font-size:12px}
+.step[aria-current="step"]{border-color:var(--accent);background:var(--soft)}
+.step[aria-current="step"] b{background:var(--accent);color:var(--accent-ink)}
+main{max-width:1080px;margin:0 auto;padding:10px 16px 60px}
+.panel{display:none}.panel.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
+h2{font-size:18px;margin:4px 0 6px}
+h3{font-size:15px;margin:12px 0 6px}
+.muted{color:var(--muted);font-size:13.5px}
+.lead{font-size:16px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.two{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.chip{display:inline-block;flex:none;align-self:flex-start;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-blocked{background:var(--red-soft);color:var(--red)}.c-blocked::before{content:"⛔ "}.c-needinfo{background:var(--blue-soft);color:var(--blue)}
+.c-done{background:transparent;color:var(--grey);border:1px dashed var(--grey)}.c-test{background:var(--grey-soft);color:var(--grey)}.c-other{background:var(--grey-soft);color:var(--ink)}
+.c-high{background:var(--red-soft);color:var(--red)}.c-medium{background:var(--amber-soft);color:var(--amber)}
+.c-real{background:transparent;color:var(--green);border:1px solid var(--green)}.c-sim{background:transparent;color:var(--violet);border:1px solid var(--violet)}
+.c-tech{background:transparent;color:var(--blue);border:1px solid var(--blue)}.c-unrev{background:transparent;color:var(--amber);border:1px solid var(--amber)}
+.ob h3{margin:0 0 4px;font-size:15.5px}
+.ob .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.ob ul{margin:4px 0 6px 18px;padding:0}
+.ob li{margin:2px 0}
+.kv{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:4px 10px;font-size:14px}
+.kv div:nth-child(odd){color:var(--muted)}
+details{border-top:1px solid var(--line);margin-top:8px;padding-top:6px}
+summary{cursor:pointer;font-size:13.5px;color:var(--accent);font-weight:600}
+.cite{font-size:13px;margin:6px 0;padding-left:8px;border-left:3px solid var(--line)}
+label{display:block;font-size:13.5px;font-weight:600;margin:10px 0 3px}
+.hint{font-weight:400;color:var(--muted);font-size:12.5px}
+input[aria-invalid="true"],select[aria-invalid="true"]{border:2px solid var(--red)}
+input,select{width:100%;padding:8px;border:1px solid var(--field-line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+.checks{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}
+.checks label{display:flex;gap:6px;align-items:center;font-weight:400;margin:0}
+.checks input{width:auto}
+.form-grid{display:grid;gap:4px 14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.sum{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+.sum .chip{font-size:13px;padding:4px 11px;white-space:normal;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border-bottom:1px solid var(--line);padding:6px;text-align:left;vertical-align:top}
+.wrap{overflow-x:auto}
+.pipe{display:grid;gap:10px}
+.pipe .card{margin:0;position:relative;padding-left:46px}
+.pipe .n{position:absolute;left:12px;top:14px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px;font-weight:700}
+.note{background:var(--soft);border-radius:8px;padding:8px 10px;font-size:13.5px;margin:8px 0}
+.pro{border-left:4px solid var(--accent);background:var(--soft);padding:8px 10px;border-radius:6px;margin:8px 0;font-size:14px}
+.warn{background:var(--amber-soft);color:var(--amber);border-radius:8px;padding:8px 10px;font-size:13.5px;margin:8px 0}
+.ok{background:var(--green-soft);color:var(--green);border-radius:8px;padding:8px 10px;font-size:13.5px;margin:8px 0}
+.hero{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.persona{cursor:pointer;text-align:left;width:100%;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:14px}
+.persona:hover,.persona:focus-within{border-color:var(--accent)}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;font:inherit;cursor:pointer}
+.navrow2{display:flex;justify-content:space-between;gap:8px;margin:18px 0 0}
+.demo summary{font-size:13px}
+.snap{max-width:1080px;margin:4px auto 0;padding:0 16px;font-size:13px}
+.stepnow{display:none;font-size:13px;color:var(--muted);margin:6px 16px 0}
+@media (max-width:600px){.stepnow{display:block}nav.steps .step span{display:none}#snap .muted{display:none}}
+.navrow{display:flex;justify-content:space-between;gap:8px;margin-top:14px;flex-wrap:wrap}
+footer{max-width:1080px;margin:0 auto;padding:0 16px 30px;font-size:12px;color:var(--muted)}
+#toast{position:fixed;bottom:12px;left:12px;right:12px;max-width:560px;margin:auto;padding:10px 12px;border-radius:8px;background:var(--ink);color:var(--bg);display:none;font-size:13.5px;z-index:20}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<div class="banner" id="banner" role="note">Prototype · synthetic business data · simulated reviewer · Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision · HerBiz does not file or pay</div>
+<header>
+  <div class="brand"><h1>HerBiz 360 <small>· after you register your business</small></h1></div>
+  <details class="demo" id="presenter"><summary>Presenter controls</summary><div class="demo" aria-label="Demo controls">
+    <button class="btn" data-persona="SYN-AMAL-A">Amal · sole establishment</button>
+    <button class="btn" data-persona="SYN-AMAL-B">Amal · small LLC</button>
+    <button class="btn" data-persona="blank">Start blank</button>
+    <button class="btn" id="replay">Replay a rule change</button>
+    <button class="btn" id="reset">Reset demo</button></div><p class="muted" id="pins" style="font-size:12px"></p>
+    <div class="demo" aria-label="Error scenarios"><b>Error scenarios (synthetic):</b>
+      <select id="scSel" aria-label="Scenario"><option value="SC-1">SC-1 Missing information</option><option value="SC-2">SC-2 Conflicting rules</option><option value="SC-3">SC-3 Outdated source</option></select>
+      <button class="btn" id="scStart">Start</button><button class="btn" id="scNext" disabled>Next event</button></div>
+    <div id="scOut" aria-live="polite"></div></details>
+</header>
+<p class="snap" id="snap"><b>Demo source snapshot: 17 October 2026.</b> <span class="muted">This is the date HerBiz copied the official sources used in this demo. It is not the date any law was published or amended, and it does not mean a qualified person has checked the law.</span></p>
+<p class="stepnow" id="stepnow" aria-live="polite"></p>
+<nav class="steps" aria-label="Journey steps" id="steps"></nav>
+<main>
+  <section class="panel" data-p="0">
+    <div class="card"><p class="lead"><b>"I've registered my business in the UAE. What do I need to do next?"</b></p>
+      <p>Corporate tax? VAT? Which records? Which dates might matter (HerBiz shows no dates until a reviewer checks the rules)? Can I do it myself, or do I need an accountant?
+      HerBiz turns a few answers about your business into a to-do overview, shows the official sources behind each item,
+      and says clearly when something still needs an expert.</p>
+      <p class="muted">This demo uses fictional businesses only. Pick one to start, or start blank with made-up details.</p></div>
+    <div class="hero" id="hero"></div>
+  </section>
+  <section class="panel" data-p="1">
+    <div class="card"><h2 tabindex="-1">1 · About your business</h2>
+      <p class="muted">Answer what you know. "Not sure" is always fine — HerBiz asks about it later instead of guessing. Use made-up details only: do not enter real names, licence numbers or ID numbers.</p>
+      <form id="form" autocomplete="off"></form>
+      <div class="navrow"><span class="muted" id="formmsg"></span><button class="btn primary" id="run" type="button">Show what may apply</button></div></div>
+  </section>
+  <section class="panel" data-p="2">
+    <div class="card"><h2 tabindex="-1">2 · Your to-do overview</h2><div id="dashhead"></div></div>
+    <div id="dash"></div>
+  </section>
+  <section class="panel" data-p="3">
+    <div class="card"><h2 tabindex="-1">3 · VAT</h2><p class="muted">What HerBiz knows about VAT for this business, and answers to common VAT questions with their official sources.</p></div>
+    <div id="vatrows"></div>
+    <div class="card"><h3>Common VAT questions</h3>
+      <p class="muted" id="vatrecnote">These answers were <b>recorded in earlier tests</b> and are replayed here — no AI is called now. Each one shows its sources and whether its texts look complete.</p>
+      <div class="sum" id="vatq"></div><div id="vatans" aria-live="polite"></div></div>
+  </section>
+  <section class="panel" data-p="4">
+    <div class="card"><h2 tabindex="-1">4 · Corporate tax <span class="chip c-sim" id="ctlabel">Demo scenario — fictional business.</span></h2>
+      <p id="ctintro" class="muted"></p></div>
+    <div id="ct"></div>
+  </section>
+  <section class="panel" data-p="5">
+    <div class="card"><h2 tabindex="-1">5 · Money and records</h2>
+      <p class="muted">A checklist built from <b>made-up transactions</b> for Amal's studio. HerBiz organises records and adds them up; it does not prepare financial statements or tax computations.</p></div>
+    <div id="fin"></div>
+  </section>
+  <section class="panel" data-p="6">
+    <div class="card"><h2 tabindex="-1">6 · What can I prepare myself, and when might I need an accountant or tax specialist?</h2>
+      <p class="muted" id="helpcap"></p></div>
+    <div class="grid" id="help"></div>
+  </section>
+  <section class="panel" data-p="7">
+    <div class="card"><h2 tabindex="-1">7 · When the rules change</h2>
+      <p class="muted">A real change to an official text, replayed step by step. HerBiz flags what may be affected and waits for a person — nothing changes automatically.</p>
+      <div class="sum"><span class="chip c-real">Official text (real)</span><span class="chip c-tech">Technical result</span><span class="chip c-sim">Simulated business</span><span class="chip c-unrev">Unreviewed interpretation</span></div></div>
+    <div class="pipe" id="change"></div>
+  </section>
+</main>
+<footer id="foot"></footer>
+<div id="toast" role="status"></div>
+<script>
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const KEY = "herbiz360-demo-v1";
+const STEPS = ["Start", "Your business", "To-do overview", "VAT", "Corporate tax", "Money & records", "Getting help", "Rule changes"];
+let C = null, S = {step: 0, persona: null, fields: {}, dash: null, showChange: false};
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify({step: S.step, persona: S.persona, fields: S.fields, showChange: S.showChange})); }catch(e){} }
+function load(){ try{ Object.assign(S, JSON.parse(localStorage.getItem(KEY) || "{}")); }catch(e){} }
+function toast(m){ const t = $("#toast"); t.textContent = m; t.style.display = "block"; clearTimeout(t._h); t._h = setTimeout(() => t.style.display = "none", 5000); }
+// A-1: a random id per page load groups this visit's audit records (no personal data)
+const SESSION = "s-" + Array.from(crypto.getRandomValues(new Uint8Array(16)), b => String.fromCharCode(97 + b % 26)).join("");
+async function get(p){ const r = await fetch(p, {headers: {"X-HerBiz-Session": SESSION}}); const j = await r.json(); if (!r.ok) throw new Error(j.unavailable || j.error || r.status); return j; }
+async function post(p, b){ const r = await fetch(p, {method:"POST", headers:{"Content-Type":"application/json","X-Requested-With":"compliance-ui","X-HerBiz-Session": SESSION}, body: JSON.stringify(b)}); const j = await r.json(); if (!r.ok) throw new Error(j.unavailable || j.error || r.status); return j; }
+
+// ---------- options (values are WS B's profile schema; labels are plain words) ----------
+const O = {
+  emirate: [["AE-DU","Dubai"],["AE-AZ","Abu Dhabi"],["AE-SH","Sharjah"],["AE-AJ","Ajman"],["AE-UQ","Umm Al Quwain"],["AE-RK","Ras Al Khaimah"],["AE-FU","Fujairah"]],
+  jurisdiction_type: [["mainland","Mainland"],["free_zone","Free zone"],["designated_zone","Designated zone"]],
+  legal_form: [["sole_establishment","Sole establishment"],["freelance_permit","Freelance permit"],["home_business_licence","Home business licence"],["civil_company","Civil company"],["llc","LLC (company)"],["branch","Branch"],["other","Other"]],
+  person_type: [["natural_person","It's me (a natural person)"],["juridical_person","A separate company"]],
+  activities: [["design","Design"],["graphic_design","Graphic design"],["home_bakery","Home bakery"],["catering","Catering"],["beauty_salon","Beauty"],["management_consulting","Consulting"],["online_retail","Online shop"]],
+  financial_year_end: [["12-31","31 December"],["03-31","31 March"],["06-30","30 June"],["09-30","30 September"]],
+  revenue_band_last_12m: [["0-187500","Up to AED 187,500"],["187500-375000","AED 187,500 – 375,000"],["375000-1000000","AED 375,000 – 1 million"],["1000000-3000000","AED 1 – 3 million"],["3000000+","Over AED 3 million"]],
+  vat_registration_status: [["registered","Registered"],["applied","Applied, waiting"],["not_registered","Not registered"]],
+  ct_registration_status: [["registered","Registered"],["applied","Applied, waiting"],["not_registered","Not registered"]],
+  yesno: [["true","Yes"],["false","No"]]
+};
+const DOCS = [["trade_licence","Trade licence"],["owner_id","Emirates ID or passport"],["moa","Memorandum or articles"],["bank_details","Bank account details"],["sales_12m","Turnover records"],["expenses_12m","Expense records"],["sales_invoices","Sales invoices"],["receipts","Expense receipts"],["bank_statements","Bank statements"],["draft_pnl","Draft profit and loss"]];
+const FIELDS = [
+  ["emirate","Emirate","select","emirate"],["jurisdiction_type","Mainland or free zone","select","jurisdiction_type"],
+  ["licensing_authority","Licensing authority","text","", "e.g. Dubai DET"],["legal_form","Legal structure","select","legal_form"],
+  ["person_type","Is the business you, or a separate company?","select","person_type"],["activities","Main activity","select","activities"],
+  ["licence_issue_date","Licence issue date","date"],["licence_expiry_date","Licence expiry date","date","", "as printed on the licence"],
+  ["financial_year_end","Financial year ends on","select","financial_year_end"],["revenue_band_last_12m","Sales in the last 12 months (roughly)","select","revenue_band_last_12m"],
+  ["vat_registration_status","Registered for VAT?","select","vat_registration_status"],["ct_registration_status","Registered for corporate tax?","select","ct_registration_status"],
+  ["has_employees","Do you employ anyone?","select","yesno"],["employees_count","How many employees?","number","", "only if you employ people"],
+  ["keeps_accounting_records","Do you keep records of sales and expenses?","select","yesno"]];
+
+const CORE = ["emirate","jurisdiction_type","legal_form","person_type","financial_year_end","revenue_band_last_12m","vat_registration_status","ct_registration_status"];
+function renderForm(){
+  const f = S.fields || {};
+  const fieldHtml = ([k, lab, type, opt, hint]) => {
+    const v = f[k]; const id = "f-" + k; const h = hint ? ` <span class="hint">(${esc(hint)})</span>` : "";
+    if (type === "select"){ const cur = k === "activities" ? (v || [])[0] : (v === true ? "true" : v === false ? "false" : v);
+      return `<div><label for="${id}">${esc(lab)}${h}</label><select id="${id}" data-k="${k}"><option value="">Choose…</option>${O[opt].map(([val, t]) => `<option value="${val}" ${String(cur) === val ? "selected" : ""}>${esc(t)}</option>`).join("")}<option value="not_sure" ${cur === "not_sure" ? "selected" : ""}>Not sure</option></select></div>`; }
+    const ns = v === "not_sure";
+    return `<div><label for="${id}">${esc(lab)}${h}</label><input id="${id}" data-k="${k}" type="${type}" ${type === "number" ? 'min="0" step="1"' : ""} value="${ns ? "" : esc(v ?? "")}" ${ns ? "disabled" : ""}>
+      <label class="hint" style="display:flex;gap:6px;align-items:center;font-weight:400;margin:4px 0 0"><input type="checkbox" style="width:auto" data-ns="${k}" ${ns ? "checked" : ""}> Not sure</label></div>`;
+  };
+  $("#form").innerHTML = `<div class="form-grid">${FIELDS.filter(x => CORE.includes(x[0])).map(fieldHtml).join("")}</div>
+  <details ${FIELDS.some(x => !CORE.includes(x[0]) && f[x[0]] != null) ? "open" : ""}><summary>Add more detail (optional)</summary><div class="form-grid">${FIELDS.filter(x => !CORE.includes(x[0])).map(fieldHtml).join("")}</div>
+  <label>Documents you already have <span class="hint">(tick what is ready)</span></label>
+  <div class="checks">${DOCS.map(([d, t]) => `<label><input type="checkbox" data-doc="${d}" ${(f.documents_available || []).includes(d) ? "checked" : ""}> ${esc(t)}</label>`).join("")}</div></details>`;
+  $$("#form [data-ns]").forEach(cb => cb.addEventListener("change", () => { const el = $("#f-" + cb.dataset.ns); el.disabled = cb.checked; if (cb.checked) el.value = ""; }));
+  $$("#form [data-k], #form [data-doc], #form [data-ns]").forEach(el => el.addEventListener("change", () => { S.fields = readForm(); S.persona = matchPersona(); save(); }));
+}
+function showInputProblem(p){
+  $$("#form [aria-invalid]").forEach(el => el.removeAttribute("aria-invalid"));
+  $("#formmsg").innerHTML = `<span style="color:var(--red);font-weight:600">1 answer needs fixing — see the highlighted field.</span>`;
+  const el = p.field && $("#f-" + p.field);
+  $$(".fielderr").forEach(x => x.remove());
+  if (el){ const d = el.closest("details"); if (d) d.open = true; el.setAttribute("aria-invalid", "true");
+    el.insertAdjacentHTML("afterend", `<div class="fielderr" id="err-${esc(p.field)}" style="color:var(--red);font-size:13px;margin-top:4px">${esc(p.message)}</div>`);
+    el.setAttribute("aria-describedby", "err-" + p.field); el.focus(); }
+}
+function readForm(){
+  const f = {};
+  $$("#form [data-ns]").forEach(cb => { if (cb.checked) f[cb.dataset.ns] = "not_sure"; });
+  $$("#form [data-k]").forEach(el => { const k = el.dataset.k, v = el.value.trim(); if (!v || el.disabled) return;
+    if (v === "not_sure"){ f[k] = "not_sure"; return; }
+    if (k === "activities") f[k] = [v]; else if (["has_employees","keeps_accounting_records"].includes(k)) f[k] = v === "true";
+    else if (k === "employees_count") f[k] = parseInt(v, 10); else f[k] = v; });
+  const docs = $$("#form [data-doc]").filter(x => x.checked).map(x => x.dataset.doc); if (docs.length) f.documents_available = docs;
+  return f;
+}
+function matchPersona(){ const p = (C.personas || []).find(x => JSON.stringify(x.fields) === JSON.stringify(S.fields)); return p ? p.id : null; }
+
+// ---------- steps ----------
+function renderSteps(){
+  $("#steps").innerHTML = STEPS.map((t, i) => `<button class="step" data-step="${i}" aria-label="Step ${i}: ${esc(t)}" ${S.step === i ? 'aria-current="step"' : ""}><b>${i}</b><span>${esc(t)}</span></button>`).join("");
+  $("#stepnow").textContent = `Step ${S.step} of ${STEPS.length - 1} · ${STEPS[S.step]}`;
+  $$(".panel").forEach(p => { if (!p.querySelector(".navrow2")){ const i = +p.dataset.p; p.insertAdjacentHTML("beforeend", `<div class="navrow2">${i > 0 ? `<button class="btn" data-nav="${i - 1}">← ${esc(STEPS[i - 1])}</button>` : "<span></span>"}${i < STEPS.length - 1 ? `<button class="btn primary" data-nav="${i + 1}">${esc(STEPS[i + 1])} →</button>` : ""}</div>`); } });
+  $$("[data-nav]").forEach(b => b.onclick = () => go(+b.dataset.nav));
+  $$("#steps [data-step]").forEach(b => b.onclick = () => go(+b.dataset.step));
+  $$(".panel").forEach(p => p.classList.toggle("on", +p.dataset.p === S.step));
+  $$(".demo [data-persona]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.persona === S.persona)));
+}
+async function go(i){ S.step = i; save(); renderSteps(); window.scrollTo({top: 0});
+  try{
+    if (i === 1) renderForm();
+    if ([2, 3].includes(i) && !S.dash) await runDash(false);
+    if (i === 2) renderDash(); if (i === 3) renderVat(); if (i === 4) await renderCT(); if (i === 5) await renderFin();
+    if (i === 6) renderHelp(); if (i === 7) await renderChange();
+  }catch(e){ toast("Not available: " + e.message); }
+  const h = document.querySelector(`.panel[data-p="${i}"] h2`); if (h && go._moved) h.focus({preventScroll: true}); go._moved = true;
+}
+
+// ---------- dashboard (WS B owner rows, shown as given) ----------
+const CT_IDS = ["C360-07","C360-08","C360-10","C360-11","C360-14"];
+const areaOf = r => r.id.startsWith("SYN-") ? "Test rule" : CT_IDS.includes(r.id) ? "Corporate tax" : "VAT";
+const kindOf = c => /^Blocked/i.test(c) ? "blocked" : /owner says done/i.test(c) ? "done" : /TEST RULE/i.test(c) ? "test" : /information/i.test(c) ? "needinfo" : "other";
+const plainName = n => String(n || "").replace(/\(juridical person\)/g, "(a separate company)").replace(/\(natural person\)/g, "(you, as a person)");
+const isFixed = () => !!S.persona;
+async function runDash(jump){
+  if (!S.persona && (!S.fields || !Object.keys(S.fields).length)){ S.dash = {empty: true}; if (jump) go(2); return; }
+  try{
+    const r = await fetch("/api/360/dashboard", {method: "POST", headers: {"Content-Type": "application/json", "X-Requested-With": "compliance-ui", "X-HerBiz-Session": SESSION},
+      body: JSON.stringify(S.persona ? {profile_id: S.persona, show_change: S.showChange} : {fields: S.fields, show_change: S.showChange})});
+    const j = await r.json();
+    if (j.input_problem){ S.dash = null; if (jump) showInputProblem(j.input_problem); return; }
+    if (!r.ok) throw new Error(j.unavailable || j.error || r.status);
+    S.dash = j;
+  }catch(e){ S.dash = {error: e.message}; }
+  if (jump) go(2);
+}
+const fmtDate = v => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(v || "")); return m ? `${+m[3]} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m[2] - 1]} ${m[1]}` : (v || "date unknown"); };
+const reviewerName = r => /CT/.test(String(r)) ? "a qualified corporate-tax reviewer" : /D3/.test(String(r)) ? "a qualified VAT reviewer" : "a qualified reviewer";   // no internal codes on screen
+const plain = v => { const all = Object.values(O).flat(); const hit = all.find(([k]) => k === v); return hit ? hit[1] : (v === "not_sure" ? "Not sure" : String(v).replace(/_/g, " ")); };
+function labelBlock(l){
+  if (!l) return "";
+  return `<div class="sum"><span class="chip c-${esc(l.uncertainty)}">Uncertainty: ${esc(l.uncertainty)}</span>${l.reviewer_needed ? `<span class="chip c-unrev">Reviewer needed: ${esc(reviewerName(l.reviewer_needed))}</span>` : ""}</div>
+    <p class="muted">${esc(l.user_wording)}</p>${(l.citations || []).map(c => `<div class="cite">${c.citation_chip ? `<span class="chip c-tech">${esc(c.citation_chip)}</span> ` : ""}<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a><br>${esc(c.authority)} · copied for this demo on ${esc(fmtDate(c.retrieved_at))}${c.stale ? " · <b>not re-checked recently</b>" : ""}</div>`).join("")}`;
+}
+function card(r){
+  if (r.suppressed) return `<article class="card ob" aria-label="${esc(r.title)}"><div class="top"><h3>${esc(r.title)}</h3><span class="chip c-${kindOf(r.state_chip)}">${esc(r.state_chip)}</span></div>
+    <div class="warn"><b>${esc(r.owner_text)}</b><br><span style="font-size:13px">Reason: ${esc(r.suppressed.reason)} (since ${esc(r.suppressed.since)})</span></div></article>`;
+  const docs = r.documents || {}, ds = r.demo_scenario, area = areaOf(r), kind = kindOf(r.state_chip);
+  const src = ds ? labelBlock(ds.source_label)
+    : area === "Test rule" ? `<p class="muted">Made-up test rule for the demo — no official source.</p>`
+    : area === "VAT" ? `<p class="muted">Official VAT texts for this item have not been checked by a reviewer.</p><button class="linkbtn" data-govat="1">See VAT answers with quotes from the official texts →</button>`
+    : `<p class="muted">Corporate-tax sources are shown only in the demo scenario for the two fictional Amal businesses.</p>`;
+  return `<article class="card ob" aria-label="${esc(r.title)}"><div class="top"><h3>${esc(r.title)}</h3><span class="chip c-${kind}">${esc(r.state_chip)}</span></div>
+    <div class="sum"><span class="chip ${area === "Test rule" ? "c-test" : "c-unrev"}">${esc(r.label)}</span>${ds ? `<span class="chip c-sim">${esc(ds.demo_label)}</span>` : ""}</div>
+    ${r.changed_pending_review ? `<div class="warn"><b>Source changed — pending review.</b> An official text behind this item was amended. Nothing here changes until a person reviews it.</div>` : ""}
+    <p>${esc(r.owner_text)}</p>${r.meaning ? `<p class="muted">${esc(r.meaning)}</p>` : ""}
+    ${(r.missing_information || []).length ? `<b>HerBiz needs to know</b><ul>${r.missing_information.map(m => `<li>${esc(m.question || m)}</li>`).join("")}</ul>` : ""}
+    ${(docs.missing || []).length || (docs.ready || []).length ? `<b>Documents</b><ul>${(docs.ready || []).map(d => `<li>✓ ${esc(d.label || d)}</li>`).join("")}${(docs.missing || []).map(d => `<li>○ ${esc(d.label || d)} <span class="muted">(still needed)</span></li>`).join("")}</ul>` : ""}
+    ${r.deadline_display ? `<p class="muted">Dates: ${esc(r.deadline_display)}</p>` : ""}
+    ${kind === "blocked" || kind === "needinfo" ? `<div class="pro"><b>What you can do now:</b> ${(docs.missing || []).length ? "gather the documents above, then " : ""}${(r.missing_information || []).length ? "answer the questions above, and " : ""}ask an FTA-registered tax agent about this item.</div>` : ""}
+    ${ds ? `<p><button class="linkbtn" data-goct="1">See the corporate-tax demo steps →</button></p>` : ""}
+    <details><summary>Official sources and certainty</summary>${src}</details></article>`;
+}
+function renderDash(){
+  const d = S.dash || {};
+  if (d.empty){ $("#dashhead").innerHTML = `<p>Choose a fictional business or describe yours first.</p><button class="btn primary" onclick="go(0)">Choose a business</button>`; $("#dash").innerHTML = ""; return; }
+  if (d.error){ $("#dashhead").innerHTML = `<div class="warn"><b>Nothing is shown.</b> The obligations check is unavailable or did not accept these answers, so HerBiz shows nothing rather than guess. <span class="muted">(${esc(d.error)})</span></div>`; $("#dash").innerHTML = ""; return; }
+  const n = k => d.rows.filter(r => kindOf(r.state_chip) === k).length;
+  const chip = (k, cls, t) => n(k) ? `<span class="chip ${cls}">${n(k)} ${t}</span>` : "";
+  const qs = d.questions.filter(q => !d.rows.some(r => (r.missing_information || []).some(m => (m.question || m) === q)));
+  const days = Math.max(0, Math.round((Date.now() - Date.parse(d.data_as_of + "T00:00:00+04:00")) / 864e5));
+  const name = isFixed() ? esc(plainName((C.personas.find(p => p.id === S.persona) || {}).name)) : "Your made-up business";
+  $("#dashhead").innerHTML = `<p class="muted">${name}</p>
+    <div class="sum">${chip("blocked","c-blocked","blocked until an expert reviews the rules")}${chip("needinfo","c-needinfo","need more information")}${chip("done","c-done","you say done — not checked")}${chip("test","c-test","test rules (made up)")}${chip("other","c-other","other")}</div>
+    <p class="muted">${esc(d.snapshot)} ${esc(d.snapshot_note)}${days > 7 ? ` Official sources may have changed since; HerBiz reviews any change before the demo shows it.` : ""}</p>
+    ${qs.length ? `<div class="note"><b>Other questions about the business:</b><ul>${qs.map(q => `<li>${esc(q)}</li>`).join("")}</ul>${isFixed() ? `<span class="muted">In a real account you would answer these in step 1.</span>` : `<button class="btn" onclick="go(1)">Answer them</button>`}</div>` : ""}
+    <p class="muted">"Blocked: legal validation" means HerBiz does not answer yet: the rule or its official sources have not been checked by a qualified reviewer. That is on purpose.</p>`;
+  const groups = [["VAT", "VAT"], ["Corporate tax", "Corporate tax and records"], ["Test rule", "Other reminders (made-up test rules)"]];
+  $("#dash").innerHTML = groups.map(([a, t]) => { const rs = d.rows.filter(r => areaOf(r) === a); return rs.length ? `<h3>${esc(t)}</h3><div class="grid">${rs.map(card).join("")}</div>` : ""; }).join("");
+  $$("[data-goct]").forEach(a => a.onclick = () => go(4));
+  $$("[data-govat]").forEach(a => a.onclick = () => go(3));
+}
+
+// ---------- error scenarios (Task 2 A-2): one event per click; each step has its own audit record ----------
+let SCRUN = null;
+const SCRESULT = {PASS: "as expected", FAIL: "NOT as expected", PENDING_DATA: "waiting for engine data (placeholder)"};
+$("#scStart").onclick = async () => {
+  try{ SCRUN = await post("/api/scenario/start", {scenario_id: $("#scSel").value}); $("#scNext").disabled = false;
+    $("#scOut").innerHTML = `<p class="muted">${esc(SCRUN.title)}: ${SCRUN.steps_total} events, released one at a time. Press "Next event".</p>`;
+  }catch(e){ $("#scOut").innerHTML = `<div class="warn">Scenario unavailable: ${esc(e.message)}</div>`; }
+};
+$("#scNext").onclick = async () => {
+  if (!SCRUN) return;
+  try{
+    const r = await fetch("/api/scenario/next", {method: "POST", headers: {"Content-Type": "application/json", "X-Requested-With": "compliance-ui", "X-HerBiz-Session": SESSION}, body: JSON.stringify({run_id: SCRUN.run_id})});
+    const j = await r.json(); if (!r.ok) throw new Error(j.unavailable || j.error || r.status);
+    const rp = j.response || {};
+    const say = rp.message || (rp.obligation ? `${rp.obligation.title}: ${rp.obligation.state_chip}` : "") || (rp.questions ? `${rp.questions.length} open questions` : "") || rp.status || "";
+    $("#scOut").insertAdjacentHTML("beforeend", `<div class="card"><b>Event ${j.n} of ${j.steps_total}: ${esc(j.event.replace(/_/g, " "))}</b>
+      <p>${esc(say)}</p>${(rp.questions || []).length ? `<p class="muted">Open questions: ${rp.questions.length}</p>` : ""}
+      ${rp.what_you_can_do_now ? `<p>${esc(rp.what_you_can_do_now)}</p>` : ""}${rp.current_official_url ? `<p><a href="${esc(rp.current_official_url)}" target="_blank" rel="noopener">Current official text (not checked yet)</a></p>` : ""}
+      <p class="muted">Flags: ${j.flags.length ? j.flags.map(esc).join(", ") : "none"} · Check: ${esc(SCRESULT[j.check.result] || j.check.result)} · Audit record ${esc(r.headers.get("X-HerBiz-Audit-Record") || "")}</p></div>`);
+    if (j.done) $("#scNext").disabled = true;
+  }catch(e){ $("#scOut").insertAdjacentHTML("beforeend", `<div class="warn">${esc(e.message)}</div>`); }
+};
+
+// ---------- VAT ----------
+const NO_RECORDED = "The recorded VAT answers are not included in this copy of HerBiz. They quote official FTA texts, and the terms for sharing those texts are not yet confirmed. Nothing has been put in their place. Ask a VAT question to an FTA-registered tax agent.";
+const ST = {answered:"c-done", needs_facts:"c-needinfo", not_covered:"c-test", declined:"c-blocked", no_recording:"c-test"};
+async function renderVat(){
+  const d = S.dash || {};
+  $("#vatrows").innerHTML = d.rows ? `<div class="grid">${d.rows.filter(r => areaOf(r) === "VAT").map(card).join("")}</div>` : `<div class="card"><p class="muted">Choose a business first to see its VAT items.</p></div>`;
+  $$("#vatrows [data-govat]").forEach(b => b.remove());
+  if (!$("#vatq").dataset.done){
+    const qs = await Promise.all((C.vat_questions || []).map(id => get("/api/ask?id=" + id).then(r => ({id, q: r.question})).catch(() => null)));
+    if (C.vat_recorded === false) $("#vatrecnote").hidden = true;
+    $("#vatq").innerHTML = C.vat_recorded === false ? `<p class="warn">${esc(NO_RECORDED)}</p>`
+      : qs.filter(x => x && x.q).map(x => `<button class="btn" data-vq="${esc(x.id)}">${esc(x.q)}</button>`).join("");
+    $$("#vatq [data-vq]").forEach(b => b.onclick = () => askVat(b.dataset.vq)); $("#vatq").dataset.done = "1";
+  }
+}
+async function askVat(id){
+  try{ const r = await get("/api/ask?id=" + encodeURIComponent(id)); const g = r.guard || {};
+    const gb = g.level === "complete_for_map" ? `<div class="ok">✓ ${esc(g.message)}</div>` : g.level === "not_applicable" ? "" : `<div class="warn">⚠ ${esc(g.message)}${(g.missing || []).length ? `<br>Not in the texts used: ${g.missing.map(esc).join("; ")}` : ""}</div>`;
+    $("#vatans").innerHTML = `<div class="card"><p><b>${esc(r.question)}</b></p><span class="chip ${ST[r.status] || "c-test"}">${esc(r.status_plain)}</span>${gb}
+      ${String(r.answer).split(/\n+/).map(t => `<p>${esc(t)}</p>`).join("")}
+      ${(r.missing_facts || []).length ? `<b>To answer properly I need</b><ul>${r.missing_facts.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+      ${(r.sources || []).map(s => `<details><summary>${s.quote ? `“${esc(s.quote)}” — ` : ""}${esc(s.where)}</summary>${s.validity ? `<p class="muted">${esc(s.validity.plain)}${s.validity.current_official_url ? ` · Current official page: <a href="${esc(s.validity.current_official_url)}" target="_blank" rel="noopener">${esc(s.validity.current_official_url)}</a>${s.validity.note ? " · " + esc(s.validity.note) : ""}` : ""}</p>` : ""}${s.text ? `<p class="muted">${esc(s.text.slice(0, 900))}</p>` : ""}${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">Open the official document</a>` : ""}</details>`).join("")}
+      <div class="pro"><b>Check with a registered tax agent before you act.</b></div>
+      <p class="muted">${esc((r.provenance || {}).note || "")}</p></div>`;
+  }catch(e){ $("#vatans").innerHTML = `<div class="warn">Answer unavailable: ${esc(e.message)}</div>`; }
+}
+
+// ---------- corporate tax: the D-064 two-persona demo, as WS B's fixture gives it ----------
+let DOCSTATE = {};
+async function renderCT(){
+  try{
+    const ids = ["SYN-AMAL-A", "SYN-AMAL-B"];
+    const [a, b] = await Promise.all(ids.map(id => get("/api/360/ct?profile=" + id)));
+    $("#ctlabel").textContent = a.label;
+    $("#ctintro").textContent = "Corporate tax is shown only for the two fictional Amal businesses. HerBiz shows the questions, documents and possible next steps — never whether a rule applies, any relief, dates or filing instructions. Every corporate-tax item stays blocked until a qualified corporate-tax reviewer checks the rules.";
+    const name = id => plainName((C.personas.find(p => p.id === id) || {}).name) || id;
+    const col = x => `<div><h3>${esc(name(x.profile_id))}</h3>${x.rows.map(r => { const ds = r.demo_scenario, docs = ds.documents || {};
+      return `<article class="card ob"><div class="top"><h3>${esc(r.title)}</h3><span class="chip c-blocked">${esc(r.state_chip)}</span></div>
+      <div class="sum"><span class="chip c-sim">${esc(ds.demo_label)}</span></div>
+      <b>Questions about the business</b><ul>${(ds.profile_walkthrough || []).map(q => `<li>${esc(q.question)} <span class="muted">— demo answer: ${esc(plain(q.demo_answer))}</span></li>`).join("")}</ul>
+      <b>Documents</b> <span class="muted">(tick what this fictional business has ready)</span><ul class="checks" style="display:block">${(docs.required || []).map(d => { const k = x.profile_id + ":" + d.id;
+        return `<li style="list-style:none"><label><input type="checkbox" data-doc2="${esc(k)}" ${DOCSTATE[k] ? "checked" : ""}> ${esc(d.label)}</label></li>`; }).join("")}</ul>
+      <b>Possible next steps</b><ol>${(ds.possible_workflow_steps || []).map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+      ${(ds.professional_review || []).length ? `<b>Ask an expert about</b><ul>${ds.professional_review.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
+      <div class="note"><b>Withheld on purpose:</b> ${esc((ds.withheld || []).join("; "))}.<br><span class="muted">${esc(ds.withheld_why || "")}</span></div>
+      <details><summary>Official sources and certainty</summary>${labelBlock(ds.source_label)}</details></article>`; }).join("")}</div>`;
+    $("#ct").innerHTML = `<div class="two">${col(a)}${col(b)}</div>
+      <div class="pro">This demonstration does not decide anything for a real owner. Check with the FTA or an FTA-registered tax agent.</div>`;
+    $$("[data-doc2]").forEach(cb => cb.onchange = () => { DOCSTATE[cb.dataset.doc2] = cb.checked; try{ localStorage.setItem(KEY + ":docs", JSON.stringify(DOCSTATE)); }catch(e){} });
+  }catch(e){ $("#ct").innerHTML = `<div class="warn">Corporate-tax demo unavailable: ${esc(e.message)}</div>`; }
+}
+
+// ---------- money & records ----------
+async function renderFin(){
+  const f = await get("/api/360/finance");
+  const st = {ok: ["c-done","In place"], gaps: ["c-blocked","Gaps"], missing: ["c-blocked","Missing"], needed: ["c-needinfo","Needed"], draft: ["c-test","Draft"]};
+  $("#fin").innerHTML = `<div class="two"><div class="card"><h3>Checklist · ${esc(f.period)}</h3>${f.checklist.map(c => `<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin:6px 0"><span><b>${esc(c.item)}</b><br><span class="muted">${esc(c.note)}</span></span><span class="chip ${st[c.state][0]}">${st[c.state][1]}</span></div>`).join("")}</div>
+    <div class="card"><h3>${esc(f.pnl.title)} <span class="chip c-test">${esc(f.pnl.label_level)}</span></h3>
+      <div class="kv"><div>Income</div><div>AED ${f.pnl.income.toLocaleString()}</div><div>Expenses</div><div>AED ${f.pnl.expenses.toLocaleString()}</div><div>Money in minus money out</div><div>AED ${f.pnl.result.toLocaleString()}</div></div>
+      <p class="muted">${esc(f.pnl.label)}. ${esc(f.fx_note)}</p>
+      <h3>Documents still missing</h3><ul>${f.missing_documents.map(m => `<li>${esc(m)}</li>`).join("")}</ul>
+      <a class="btn primary" href="/api/360/finance.csv" download>Download records for your accountant (CSV)</a></div></div>
+    <div class="card"><h3>Revenue figures used by different rules</h3><p class="muted">Different rules count revenue differently. HerBiz shows the figures; it does not decide what they mean for you.</p>
+      <div class="wrap"><table><tr><th>Used for</th><th>What counts</th><th>This sample</th><th>Status</th></tr>${f.revenue_tests.map(t => `<tr><td>${esc(t.test)}</td><td>${esc(t.basis)}</td><td>${esc(t.this_sample)}</td><td><span class="chip c-needinfo">${esc(t.result)}</span></td></tr>`).join("")}</table></div></div>
+    <div class="card"><h3>Draft figures are not financial statements</h3><div class="wrap"><table><tr><th>Level</th><th>What it is</th><th>Does HerBiz produce it?</th></tr>${f.ladder.map(l => `<tr><td>${esc(l[0])}</td><td>${esc(l[1])}</td><td>${esc(l[2])}</td></tr>`).join("")}</table></div></div>
+    <details class="card"><summary>See the made-up transactions</summary><div class="wrap"><table><tr><th>Date</th><th>Item</th><th>AED</th><th>Category</th><th>Document</th></tr>${f.transactions.map(t => `<tr><td>${esc(t.date)}</td><td>${esc(t.description)}</td><td>${(t.type === "expense" ? "−" : "") + t.amount_aed.toLocaleString()}</td><td>${esc(t.category || "unclassified")}</td><td>${t.has_document ? "✓" : "○ missing"} ${esc(t.document)}</td></tr>`).join("")}</table></div></details>`;
+}
+
+// ---------- help ----------
+function renderHelp(){
+  const w = C.who_does_what; $("#helpcap").textContent = w.caption;
+  $("#help").innerHTML = w.rows.map(r => `<article class="card"><h3>${esc(r[0])}</h3><div class="kv">${w.columns.slice(1).map((c, i) => `<div>${esc(c)}</div><div>${esc(r[i + 1])}</div>`).join("")}</div></article>`).join("");
+}
+
+// ---------- rule change replay ----------
+async function renderChange(){
+  if ((C.suppressed_steps || []).includes("step:7")){ $("#change").innerHTML = `<div class="warn">This demonstration is withheld while a newer change to an official source is reviewed.</div>`; return; }
+  const x = await get("/api/360/change");
+  const s73 = x.sources["CT-MD73-2023"] || {}, s131 = x.sources["CT-MD131-2026"] || {};
+  const link = s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> · ${esc(s.authority)} · copied for this demo on ${esc(fmtDate(s.retrieved_at))}` : esc(s.title || "");
+  const ev = x.events[0] || {};
+  $("#change").innerHTML = [
+    ["Official source updated", "c-real", "Official text (real)", `<p>${link(s131)}</p><p class="muted">Earlier text: ${link(s73)}</p><p class="muted">"Copied for this demo" is HerBiz's snapshot date, not the date the decision was issued or took effect; the issue date is in the next step.</p>`],
+    ["Changed provision detected", "c-real", "Official text changed (real)", `<p>${esc(String(ev.detail || "").replace(/^REAL:\s*/, ""))}</p><p class="muted">Summary of the change, not reviewed by a qualified professional. It does not say whether relief applies to anyone.</p><p class="muted">Recorded by HerBiz's source intelligence (Workstream C) on ${esc(ev.at || "")}. Not reviewed by a qualified professional.</p>`],
+    ["Related obligation identified", "c-tech", "Technical result", `<p>${x.affected_titles.map(esc).join(", ")}</p><p class="muted">Matched through the official source it cites.</p>`],
+    ["Potentially affected answers flagged", "c-sim", "Simulated business", `<p>Amal's (variant B) dashboard item${x.affected_rows.length > 1 ? "s" : ""} <b>${x.affected_rows.map(esc).join(", ")}</b> ${x.affected_rows.length > 1 ? "are" : "is"} marked <b>changed — pending review</b>.</p><button class="btn primary" id="flag">${S.showChange ? "Shown on the dashboard ✓" : "Show it on the dashboard"}</button>`],
+    ["Human review required", "c-unrev", "Unreviewed interpretation", `<p>Review queue: <b>waiting for a reviewer</b> <span class="chip c-sim">simulated reviewer</span></p><p class="muted">Human review required: ${x.human_review_required ? "yes" : "no"}. The change is not professionally validated.</p>`],
+    ["No automatic legal activation", "c-tech", "Technical result", `<p>Status: <b>${esc(x.activation)}</b>. Rules, answers and deadlines stay as they were until a qualified person approves the change.</p><p class="muted">Evidence: HerBiz source-intelligence record, copied for this demo on 17 Oct 2026.</p>`]
+  ].map((s, i) => `<div class="card"><span class="n">${i + 1}</span><div class="top" style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><b>${esc(s[0])}</b><span class="chip ${s[1]}">${esc(s[2])}</span></div>${s[3]}</div>`).join("");
+  $("#flag").onclick = async () => { S.showChange = true; save(); if (S.persona !== "SYN-AMAL-B") await pick("SYN-AMAL-B", false); else await runDash(false); toast("Flag shown on the dashboard"); go(2); };
+}
+
+// ---------- fictional businesses (WS B fixture) / demo controls ----------
+async function pick(key, jump = true){
+  S.showChange = false;
+  if (key === "blank"){ S.persona = null; S.fields = {}; S.dash = null; save(); go(1); return; }
+  const p = C.personas.find(x => x.id === key); if (!p) return;
+  S.persona = key; S.fields = JSON.parse(JSON.stringify(p.fields)); save();
+  await runDash(false); if (jump) go(2);
+}
+function hero(){
+  const amal = C.personas.filter(p => p.kind === "amal"), other = C.personas.filter(p => p.kind !== "amal");
+  $("#hero").innerHTML = amal.map(p => `<article class="persona" aria-labelledby="h-${esc(p.id)}"><span class="chip c-sim">Fictional business</span><h3 id="h-${esc(p.id)}">${esc(plainName(p.name))}</h3>
+      <div class="kv">${[["Emirate", plain(p.fields.emirate)], ["Legal form", plain(p.fields.legal_form)], ["Licensing authority", p.fields.licensing_authority], ["VAT", plain(p.fields.vat_registration_status)], ["Corporate tax", plain(p.fields.ct_registration_status)], ["2025 turnover (not in profile)", p.extra.calendar_2025_turnover_aed ? "AED " + Number(p.extra.calendar_2025_turnover_aed).toLocaleString() : "—"]].map(([k, v]) => `<div>${esc(k)}</div><div>${esc(v)}</div>`).join("")}</div><p><button class="btn primary" data-hero="${esc(p.id)}">Use this business</button></p></article>`).join("")
+    + `<div class="persona" style="cursor:default"><h3>More fictional businesses</h3><label for="more" class="sr">More fictional businesses</label><select id="more"><option value="">Choose one…</option>${other.map(p => `<option value="${esc(p.id)}">${esc(plainName(p.name))}</option>`).join("")}</select>
+       <h3 style="margin-top:14px">Or start blank</h3><p class="muted">Enter a made-up business yourself. "Not sure" is fine.</p><button class="btn" data-hero="blank">Start blank</button></div>`;
+  $$("[data-hero]").forEach(b => b.onclick = () => pick(b.dataset.hero));
+  $("#more").onchange = e => e.target.value && pick(e.target.value);
+}
+$$(".demo [data-persona]").forEach(b => b.onclick = () => pick(b.dataset.persona));
+$("#replay").onclick = () => go(7);
+$("#reset").onclick = () => { try{ localStorage.removeItem(KEY); localStorage.removeItem(KEY + ":docs"); }catch(e){} DOCSTATE = {}; S = {step: 0, persona: null, fields: {}, dash: null, showChange: false}; $("#vatans").innerHTML = ""; go(0); toast("Demo reset."); };
+$("#run").onclick = async () => { S.fields = readForm(); S.persona = matchPersona(); save(); $$("#form [aria-invalid]").forEach(el => el.removeAttribute("aria-invalid")); $$(".fielderr").forEach(x => x.remove()); $("#formmsg").textContent = "Checking…";
+  await runDash(true); if ($("#formmsg").textContent === "Checking…") $("#formmsg").textContent = ""; };
+
+(async () => {
+  load();
+  try{ C = await get("/api/360/content"); }catch(e){ $("main").innerHTML = `<div class="card warn">The demo content is unavailable: ${esc(e.message)}</div>`; return; }
+  $("#banner").textContent = C.banner;
+  $("#snap").innerHTML = `<b>${esc(C.snapshot)}</b> <span class="muted">${esc(C.snapshot_note)}</span>`;
+  $("#foot").innerHTML = `${esc(C.snapshot)} Fixed, so the demo repeats exactly. Fictional businesses · no live AI · no calls to government sites · nothing filed or paid.`;
+  $("#pins").textContent = `Presenter note — versions: obligations fixture ${C.pins.b_fixture} @ ${C.pins.b}; sources ${C.pins.c_contract} @ ${C.pins.c}.`;
+  try{ DOCSTATE = JSON.parse(localStorage.getItem(KEY + ":docs") || "{}"); }catch(e){}
+  hero();
+  if (window.matchMedia("(min-width: 700px)").matches) $("#presenter").open = true;
+  if (S.persona && !C.personas.some(p => p.id === S.persona)){ S = {step: 0, persona: null, fields: {}, dash: null, showChange: false}; save(); }   // saved state from an older demo build
+  if (S.persona || (S.fields && Object.keys(S.fields).length)) await runDash(false);
+  go(S.step || 0);
+})();
+</script>
+</body>
+</html>

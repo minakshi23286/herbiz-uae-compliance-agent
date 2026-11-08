@@ -1,0 +1,21 @@
+# Local databases and run data (may hold typed reviewer notes); backups go to data/backups/
+data/*.sqlite3
+data/*.sqlite3-*
+data/backups/
+# Raw official-source snapshots: reuse/publication terms not yet confirmed. Hashes are in the manifest.
+data/raw/
+__pycache__/
+*.pyc
+.DS_Store
+
+# LLM experiment (project-only environment and its ledger)
+.venv-llm/
+data/CL_llm_experiment.sqlite3
+
+# HerBiz 360 MVP: read-only exports of pinned WS B / WS C commits (rebuilt on demand)
+data/vendor360/
+# Source monitoring state, reports and alerts (Workstream C); may hold fetched page text
+data/monitor/
+
+# Task 2 A-1: per-response audit logs (workspace data; synthetic only)
+data/audit-logs/

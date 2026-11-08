@@ -1,0 +1,221 @@
+{
+  "_notice": "Independent blind set v6 for HerBiz retrieval, written by a fresh agent from general knowledge + article title list only; not tax-reviewed; not legal advice.",
+  "questions": [
+    {
+      "id": "Z01",
+      "category": "realistic_scenario",
+      "topic": "mandatory registration threshold",
+      "text": "hi, i run a home bakery in sharjah (cakes, brownies, eid boxes). last 12 months my sales came to around 4,10,000 dirhams i think, mostly from instagram orders. do i HAVE to register for vat now or is it optional? and does it count from when i started or just last year??",
+      "required_sources": [["FTA-VAT-DL8", "13"], ["FTA-VAT-ER", "7"]],
+      "supporting_sources": [["FTA-VAT-DL8", "19"], ["FTA-VAT-REG-PAGE", null]],
+      "source_rationale": "Mandatory registration rests on the Decree-Law article and the Executive Regulation detail; the threshold calculation article and FTA registration page help explain the 12-month look-back and AED 375,000 figure."
+    },
+    {
+      "id": "Z02",
+      "category": "realistic_scenario",
+      "topic": "voluntary registration",
+      "text": "My candle business is small, sales maybe AED 120k a year but I spend a lot on wax, jars, packaging (around 200k incl. the new equipment). Someone told me I can register voluntarily and claim back the vat I pay on supplies. Is that true, what's the minimum I need?",
+      "required_sources": [["FTA-VAT-DL8", "17"], ["FTA-VAT-ER", "8"]],
+      "supporting_sources": [["FTA-VAT-REG-PAGE", null], ["FTA-VAT-DL8", "54"]],
+      "source_rationale": "Voluntary registration on the basis of supplies or expenses is set by DL8 Article 17 and ER Article 8; the FTA page gives the AED 187,500 figure and input recovery explains the benefit."
+    },
+    {
+      "id": "Z03",
+      "category": "realistic_scenario",
+      "topic": "non-resident registration",
+      "text": "I live in Muscat but sell handmade abayas to ladies in Dubai and Abu Dhabi, ship from Oman, no shop or license in UAE. sales to UAE are small like 50-60k AED. do i still need a UAE vat number or am i under the limit?",
+      "required_sources": [["FTA-VAT-DL8", "18"]],
+      "supporting_sources": [["FTA-VAT-DL8", "13"], ["FTA-VAT-ER", "7"], ["FTA-VAT-DL8", "32"]],
+      "source_rationale": "Registration of a person with no place of residence in the UAE is governed by DL8 Article 18; the general mandatory registration rules and place of establishment give context."
+    },
+    {
+      "id": "Z04",
+      "category": "out_of_scope",
+      "topic": "corporate tax registration",
+      "text": "FTA sent me a msg saying I need to register for corporate tax by end of the month. My freelance permit income is around 90k a year. Is there a fine if I miss it and do I pay 9% on everything??",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Corporate tax registration, deadlines and the 9% rate fall under the UAE Corporate Tax law, not the VAT Decree-Law or its Executive Regulation."
+    },
+    {
+      "id": "Z05",
+      "category": "realistic_scenario",
+      "topic": "exception from registration (zero-rated only)",
+      "text": "all my sales are exports - i make spice blends and ship 100% to customers in the UK and Canada. turnover went above 400k aed this year. can i ask FTA to not register me since everything I sell is zero rated anyway?",
+      "required_sources": [["FTA-VAT-DL8", "15"], ["FTA-VAT-ER", "16"]],
+      "supporting_sources": [["FTA-VAT-ER", "30"]],
+      "source_rationale": "The exception from registration for persons making only zero-rated supplies is in DL8 Article 15 and ER Article 16; export zero-rating supports why the supplies are zero-rated."
+    },
+    {
+      "id": "Z06",
+      "category": "realistic_scenario",
+      "topic": "deregistration",
+      "text": "Closing my home catering business next month bc I'm moving back to India. I'm vat registered since 2023. what do i need to do to cancel the TRN and how long do i have? also do i still need to pay vat on the leftover stock/equipment??",
+      "required_sources": [["FTA-VAT-DL8", "21"], ["FTA-VAT-ER", "14"]],
+      "supporting_sources": [["FTA-VAT-DL8", "22"], ["FTA-VAT-ER", "18"]],
+      "source_rationale": "Deregistration cases and the regulation's procedure answer the main question; the application article and liabilities due before deregistration cover timing and remaining obligations."
+    },
+    {
+      "id": "Z07",
+      "category": "realistic_scenario",
+      "topic": "related parties aggregation",
+      "text": "me and my husband each have a separate home business license, mine is for makeup services and his is for photography, we do a lot of weddings together. each of us earns around AED 250,000. if we keep them separate we're both under the vat limit right? or will fta add us together",
+      "required_sources": [["FTA-VAT-ER", "13"]],
+      "supporting_sources": [["FTA-VAT-ER", "9"], ["FTA-VAT-DL8", "13"]],
+      "source_rationale": "The Executive Regulation article on aggregation of related parties addresses splitting a business to stay under the threshold; the related-parties definition and mandatory registration add context."
+    },
+    {
+      "id": "Z08",
+      "category": "realistic_scenario",
+      "topic": "tax invoice contents",
+      "text": "just got my TRN yay. what exactly do i have to put on my invoices now? i used to just send a whatsapp screenshot with the price lol. do i need arabic, the word tax invoice, my trn, customer trn??",
+      "required_sources": [["FTA-VAT-DL8", "65"], ["FTA-VAT-ER", "59"]],
+      "supporting_sources": [["FTA-VAT-DL8", "79"], ["FTA-VAT-DL8", "67"]],
+      "source_rationale": "Conditions for issuing tax invoices are in DL8 Article 65 and the detailed contents in ER Article 59; stating the TRN and the invoice issue date are supporting."
+    },
+    {
+      "id": "Z09",
+      "category": "realistic_scenario",
+      "topic": "credit note for refund",
+      "text": "A corporate client returned 30 of the 100 gift hampers (AED 15,750 incl vat) because of a delivery mistake and I refunded them. I already put the full amount in my last vat return. How do I fix that, do I issue some kind of credit note?",
+      "required_sources": [["FTA-VAT-DL8", "63"], ["FTA-VAT-ER", "60"]],
+      "supporting_sources": [["FTA-VAT-DL8", "61"], ["FTA-VAT-DL8", "62"]],
+      "source_rationale": "Adjusting output tax through a tax credit note is governed by DL8 Article 63 and ER Article 60; the output tax adjustment instances and mechanism articles support the answer."
+    },
+    {
+      "id": "Z10",
+      "category": "realistic_scenario",
+      "topic": "bad debts",
+      "text": "an event company owes me 22k for decor I did 8 months ago, they stopped answering. I already paid the vat on that invoice to FTA :( can i get that vat back if they never pay?",
+      "required_sources": [["FTA-VAT-DL8", "64"]],
+      "supporting_sources": [["FTA-VAT-DL8", "61"], ["FTA-VAT-DL8", "62"]],
+      "source_rationale": "Bad debt relief conditions sit in DL8 Article 64; the general output tax adjustment articles provide the mechanism."
+    },
+    {
+      "id": "Z11",
+      "category": "ambiguous",
+      "topic": "bundled hamper with class (single vs multiple supply)",
+      "text": "I sell a 'Ramadan box' for AED 399 – it has dates and chocolates, a printed recipe book, AND a voucher for a 2 hr online baking class with me. Do I charge 5% on the whole box or do the parts get treated differently? some of my customers are in KSA too",
+      "required_sources": [["FTA-VAT-DL8", "8"], ["FTA-VAT-ER", "4"]],
+      "supporting_sources": [["FTA-VAT-ER", "46"], ["FTA-VAT-ER", "26"], ["FTA-VAT-DL8", "29"]],
+      "source_rationale": "Ambiguous: the facts could be a single composite supply or multiple supplies with apportioned consideration (DL8 8, ER 4, ER 46, ER 26), and the KSA customers and online class also raise place-of-supply questions for services."
+    },
+    {
+      "id": "Z12",
+      "category": "realistic_scenario",
+      "topic": "export of services zero rate",
+      "text": "I'm a freelance graphic designer in Ajman, VAT registered. Most of my clients are startups in London and Berlin, they pay me in GBP/EUR and have no office in UAE. do I charge them 5% or 0%? what proof do i need to keep",
+      "required_sources": [["FTA-VAT-ER", "31"], ["FTA-VAT-DL8", "45"]],
+      "supporting_sources": [["FTA-VAT-DL8", "29"], ["FTA-VAT-DL8", "69"]],
+      "source_rationale": "Zero-rating of exported services relies on DL8 Article 45 and the conditions in ER Article 31; place of supply of services and invoice currency rules support the answer."
+    },
+    {
+      "id": "Z13",
+      "category": "out_of_scope",
+      "topic": "home business licence",
+      "text": "how much does the DED home business licence cost in dubai now? and can I run a food business from my villa kitchen or do I need municipality approval first",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Trade licence fees and municipality food-safety approval are licensing matters, not UAE VAT law."
+    },
+    {
+      "id": "Z14",
+      "category": "realistic_scenario",
+      "topic": "tax-inclusive prices",
+      "text": "my price list on insta says 'Lash extensions – 250 aed'. now that im registered, is the 250 supposed to include vat or can i add 5% on top at the till? customers are getting confused",
+      "required_sources": [["FTA-VAT-DL8", "38"]],
+      "supporting_sources": [["FTA-VAT-ER", "27"]],
+      "source_rationale": "Tax-inclusive pricing for displayed prices is in DL8 Article 38; ER Article 27 on price excluding tax adds the exceptions."
+    },
+    {
+      "id": "Z15",
+      "category": "realistic_scenario",
+      "topic": "tax periods and return deadline",
+      "text": "When is my first VAT return due? registered 1 March 2026. is it every 3 months or monthly, and how many days after the quarter do I have to file AND pay? scared of missing it",
+      "required_sources": [["FTA-VAT-DL8", "71"], ["FTA-VAT-DL8", "72"], ["FTA-VAT-ER", "64"]],
+      "supporting_sources": [["FTA-VAT-ER", "62"], ["FTA-VAT-DL8", "73"]],
+      "source_rationale": "Tax period duration, return submission and the regulation's 28-day filing and payment rule answer the question; length of tax period and settlement of tax support."
+    },
+    {
+      "id": "Z16",
+      "category": "realistic_scenario",
+      "topic": "record-keeping",
+      "text": "how long do I need to keep all my receipts and invoices? i have a shoebox full of paper bills from 2021 lol. can i just scan them and throw the paper away",
+      "required_sources": [["FTA-VAT-DL8", "78"], ["FTA-VAT-ER", "71"]],
+      "supporting_sources": [["FTA-VAT-ER", "72"]],
+      "source_rationale": "Record-keeping obligations and retention period are in DL8 Article 78 and ER Article 71; ER Article 72 on records of supplies made is supporting."
+    },
+    {
+      "id": "Z17",
+      "category": "realistic_scenario",
+      "topic": "non-recoverable input tax",
+      "text": "can i claim the vat on: (1) a new iPhone i use for the business insta, (2) client lunches at cafes, (3) petrol for my car that I use for deliveries + school run?? accountant cousin says some of these are blocked",
+      "required_sources": [["FTA-VAT-ER", "53"], ["FTA-VAT-DL8", "54"]],
+      "supporting_sources": [["FTA-VAT-ER", "55"]],
+      "source_rationale": "General input tax recovery (DL8 54) and the blocked categories such as entertainment and private-use motor vehicles (ER 53) are essential; apportionment helps for mixed-use items."
+    },
+    {
+      "id": "Z18",
+      "category": "realistic_scenario",
+      "topic": "input tax paid before registration",
+      "text": "Bought a big commercial oven & mixer for AED 31,500 (incl. 1,500 VAT) in Jan, but only got registered in May. Can I still claim that 1.5k back in my first return or is it lost?",
+      "required_sources": [["FTA-VAT-DL8", "56"]],
+      "supporting_sources": [["FTA-VAT-DL8", "55"], ["FTA-VAT-DL8", "54"]],
+      "source_rationale": "Input tax paid before registration is governed by DL8 Article 56; the recovery timing and recoverable input tax articles support."
+    },
+    {
+      "id": "Z19",
+      "category": "out_of_scope",
+      "topic": "Saudi VAT (ZATCA)",
+      "text": "My sister runs the same cookie brand in Riyadh. ZATCA is asking her for e-invoicing phase 2 integration. what's the 15% vat threshold there and does she need a QR code on invoices?",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Saudi Arabian VAT and ZATCA e-invoicing are outside the UAE VAT Decree-Law and its Executive Regulation."
+    },
+    {
+      "id": "Z20",
+      "category": "realistic_scenario",
+      "topic": "deemed supply (free gifts/samples)",
+      "text": "I give free cupcake boxes to influencers for reviews, roughly 40 boxes a month worth 120 AED each. Do i have to pay vat on stuff i give away for free? I've already claimed the vat on the ingredients",
+      "required_sources": [["FTA-VAT-DL8", "11"], ["FTA-VAT-ER", "5"]],
+      "supporting_sources": [["FTA-VAT-DL8", "12"], ["FTA-VAT-DL8", "37"]],
+      "source_rationale": "Gifts where input tax was recovered fall under deemed supply (DL8 11) and its exceptions such as the low-value business gift limits (ER 5); DL8 12 and the value of deemed supply support."
+    },
+    {
+      "id": "Z21",
+      "category": "realistic_scenario",
+      "topic": "vouchers / gift cards",
+      "text": "thinking of selling gift cards for my nail studio - AED 200, 500, 1000. when do i charge vat, when someone buys the card or when the friend comes in and uses it? what if they never use it",
+      "required_sources": [["FTA-VAT-DL8", "40"], ["FTA-VAT-ER", "28"]],
+      "supporting_sources": [["FTA-VAT-DL8", "26"]],
+      "source_rationale": "Value of supply of vouchers is in DL8 Article 40 and the regulation's discounts, subsidies and vouchers article; date of supply in special cases supports timing."
+    },
+    {
+      "id": "Z22",
+      "category": "realistic_scenario",
+      "topic": "residential rent exemption",
+      "text": "Besides my small tailoring biz (vat registered) I rent out a 1BR apartment in JVC to a family for 65k/yr. Do I have to charge them vat on the rent too? and can i claim vat on the maintenance for that flat?",
+      "required_sources": [["FTA-VAT-DL8", "46"], ["FTA-VAT-ER", "43"]],
+      "supporting_sources": [["FTA-VAT-ER", "52"], ["FTA-VAT-ER", "55"]],
+      "source_rationale": "Exemption of residential leasing rests on DL8 Article 46 and ER Article 43; input tax relating to exempt supplies and apportionment cover the maintenance question."
+    },
+    {
+      "id": "Z23",
+      "category": "ambiguous",
+      "topic": "online course sales: electronic services vs export",
+      "text": "I sell pre-recorded crochet courses on my own website, AED 149 each. buyers are all over – UAE, India, US, a few in Bahrain. it's automatic download, I never meet them. Which ones do I charge vat to?? do I need to check where each buyer lives",
+      "required_sources": [["FTA-VAT-ER", "23"], ["FTA-VAT-DL8", "31"]],
+      "supporting_sources": [["FTA-VAT-ER", "31"], ["FTA-VAT-DL8", "45"], ["FTA-VAT-DL8", "29"]],
+      "source_rationale": "Ambiguous: automated courses could be treated as electronic services with special place-of-supply rules (DL8 31, ER 23) or as ordinary services exported to non-residents eligible for zero rating (DL8 45, ER 31); the facts do not settle which route applies."
+    },
+    {
+      "id": "Z24",
+      "category": "out_of_scope",
+      "topic": "business bank account",
+      "text": "bank keeps rejecting my business account application because my home licence is 'high risk' and they want 50k minimum balance. which UAE bank is easiest for a small home business, any with zero balance?",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Choosing a bank and meeting account minimums is a banking question, not a UAE VAT law question."
+    }
+  ]
+}

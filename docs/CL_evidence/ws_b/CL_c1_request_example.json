@@ -1,0 +1,107 @@
+{
+ "note": "Exact request body sent per call (only the question text varies). Built by classifier_c1.request().",
+ "request": {
+  "model": "claude-haiku-5-5",
+  "max_tokens": 1024,
+  "system": "You classify questions from small-business owners about UAE VAT (Federal Decree-Law No. 8 of 2017 and its Executive Regulation). You do not answer the question. Choose up to 4 topics from the list below that a correct answer must rest on, most important first. If the question is not about UAE VAT, set in_scope to false and choose the class: non_uae_vat (VAT or sales tax of another country), corporate_tax (UAE or other corporate or income tax, even if the FTA is mentioned), other_regime (licences, visas, municipality, customs, labour or other laws), not_tax (anything else). Set confidence to low if the wording is unclear, the facts fit several topics, or no listed topic fits well.\n\nTopics:\n- agent: Decree-Law Art. 9: Supply via Agent; Decree-Law Art. 33: The Agent\n- bad_debt: Decree-Law Art. 64: Adjustment for Bad Debts\n- blocked_input_tax: Executive Regulation Art. 53: Non-recoverable Input Tax\n- capital_assets_scheme: Decree-Law Art. 60: Capital Assets Scheme; Executive Regulation Art. 57: Assets Considered Capital Assets\n- capital_assets_threshold: Decree-Law Art. 19: Calculating the Tax Registration Threshold; Decree-Law Art. 20: Capital Assets\n- composite_supply: Decree-Law Art. 8: Supply consisting of more than one component; Executive Regulation Art. 4: Supply of More Than One Component\n- credit_note: Decree-Law Art. 63: Adjustment due to the Issuance of Tax Credit Notes; Executive Regulation Art. 60: Tax Credit Note\n- date_of_supply: Decree-Law Art. 25: Date of Supply; Executive Regulation Art. 19: Due Tax at Date of Supply\n- deemed_supply: Decree-Law Art. 11: Cases of Deemed Supply; Decree-Law Art. 12: Exceptions from Deemed Supply\n- deregistration: Decree-Law Art. 21: Tax Deregistration Cases; Executive Regulation Art. 14: Tax Deregistration; Decree-Law Art. 22: Application for Tax Deregistration; Decree-Law Art. 23: Voluntary Tax Deregistration\n- designated_zone: Decree-Law Art. 50: Designated Zone; Executive Regulation Art. 51: Designated zones\n- discount: Decree-Law Art. 39: Value of Supply in case of Discount or Subsidies; Executive Regulation Art. 28: Discounts, Subsidies and Vouchers\n- education: Decree-Law Art. 45: Goods and Services Subject to Zero Rate; Executive Regulation Art. 40: Zero-rating Education Services\n- electronic_services: Decree-Law Art. 31: Place of Supply of Telecommunication and Electronic Services; Executive Regulation Art. 23: Telecommunication and Electronic Services\n- evasion: Decree-Law Art. 77: Tax Evasion\n- exempt_land: Decree-Law Art. 46: Supply Exempt from Tax; Executive Regulation Art. 44: Exemption of Bare Land\n- exempt_passenger: Decree-Law Art. 46: Supply Exempt from Tax; Executive Regulation Art. 45: Exemption of Local Passenger Transport Services\n- exempt_residential: Decree-Law Art. 46: Supply Exempt from Tax; Executive Regulation Art. 43: Exemption of Residential Buildings\n- exempt_supplies: Decree-Law Art. 46: Supply Exempt from Tax\n- financial_services: Decree-Law Art. 46: Supply Exempt from Tax; Executive Regulation Art. 42: Tax Treatment of Financial Services\n- healthcare: Decree-Law Art. 45: Goods and Services Subject to Zero Rate; Executive Regulation Art. 41: Zero-rating Healthcare Services\n- imports: Decree-Law Art. 48: Reverse Charge; Executive Regulation Art. 47: General Rules regarding Import of Goods\n- input_tax: Decree-Law Art. 54: Recoverable Input Tax; Decree-Law Art. 55: Recovery of Recoverable Input Tax in the Tax\n- input_tax_before_registration: Decree-Law Art. 56: Input Tax Paid before Tax Registration\n- mandatory_registration: Decree-Law Art. 13: Mandatory Tax Registration; Executive Regulation Art. 7: Mandatory Registration\n- new_residence: Executive Regulation Art. 66: New residence\n- non_resident: Decree-Law Art. 18: Tax Registration for a Non-Resident\n- payment: Decree-Law Art. 73: Settlement of Tax The Executive; Executive Regulation Art. 64: Tax Return and Payment\n- penalties: Decree-Law Art. 76: Administrative Penalties Assessment\n- place_of_supply: Decree-Law Art. 29: Place of Supply of Services; Decree-Law Art. 27: Place of Supply of Goods\n- profit_margin: Decree-Law Art. 43: Charging Tax based on Profit Margin; Executive Regulation Art. 29: Accounting for Tax on the Profit Margin\n- records: Decree-Law Art. 78: Record-keeping; Executive Regulation Art. 71: Record-keeping Requirements\n- registration_exception: Decree-Law Art. 15: Registration Exception; Executive Regulation Art. 16: Exception from Registration\n- related_parties: Executive Regulation Art. 13: Aggregation of Related Parties; Executive Regulation Art. 9: Related Parties\n- related_value: Decree-Law Art. 36: Value of Supply and Deemed Supply for Related; Executive Regulation Art. 9: Related Parties\n- tax_group: Decree-Law Art. 14: Tax Group; Executive Regulation Art. 10: Registration as a Tax Group\n- tax_inclusive: Decree-Law Art. 38: Tax-Inclusive Prices; Executive Regulation Art. 27: Price Excluding Tax\n- tax_invoice: Decree-Law Art. 65: Conditions and Requirements for Issuing Tax Invoices; Executive Regulation Art. 59: Tax invoices\n- tax_return: Decree-Law Art. 72: Submission of Tax Returns; Executive Regulation Art. 64: Tax Return and Payment; Decree-Law Art. 71: Duration of Tax Period\n- threshold_calculation: Decree-Law Art. 19: Calculating the Tax Registration Threshold; Decree-Law Art. 13: Mandatory Tax Registration\n- tourist: Executive Regulation Art. 68: Tourist Visitors\n- value_of_supply: Decree-Law Art. 34: Value of Supply\n- vat_rate: Decree-Law Art. 3: Tax Rate\n- voluntary_registration: Decree-Law Art. 17: Voluntary Registration; Executive Regulation Art. 8: Voluntary Registration\n- vouchers: Decree-Law Art. 40: Value of Supply of Vouchers; Executive Regulation Art. 28: Discounts, Subsidies and Vouchers\n- zero_rated: Decree-Law Art. 45: Goods and Services Subject to Zero Rate\n- zero_rated_or_exports: Decree-Law Art. 45: Goods and Services Subject to Zero Rate; Executive Regulation Art. 30: Zero-rating the export of goods; Executive Regulation Art. 31: Zero-rating the Export of Services",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Owner's question:\n<question>\n<one synthetic owner question from frozen set v7 goes here>\n</question>"
+   }
+  ],
+  "output_config": {
+   "effort": "low",
+   "format": {
+    "type": "json_schema",
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "in_scope",
+      "out_of_scope_class",
+      "topics",
+      "confidence"
+     ],
+     "properties": {
+      "in_scope": {
+       "type": "boolean"
+      },
+      "out_of_scope_class": {
+       "type": "string",
+       "enum": [
+        "none",
+        "non_uae_vat",
+        "corporate_tax",
+        "other_regime",
+        "not_tax"
+       ]
+      },
+      "topics": {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "agent",
+         "bad_debt",
+         "blocked_input_tax",
+         "capital_assets_scheme",
+         "capital_assets_threshold",
+         "composite_supply",
+         "credit_note",
+         "date_of_supply",
+         "deemed_supply",
+         "deregistration",
+         "designated_zone",
+         "discount",
+         "education",
+         "electronic_services",
+         "evasion",
+         "exempt_land",
+         "exempt_passenger",
+         "exempt_residential",
+         "exempt_supplies",
+         "financial_services",
+         "healthcare",
+         "imports",
+         "input_tax",
+         "input_tax_before_registration",
+         "mandatory_registration",
+         "new_residence",
+         "non_resident",
+         "payment",
+         "penalties",
+         "place_of_supply",
+         "profit_margin",
+         "records",
+         "registration_exception",
+         "related_parties",
+         "related_value",
+         "tax_group",
+         "tax_inclusive",
+         "tax_invoice",
+         "tax_return",
+         "threshold_calculation",
+         "tourist",
+         "value_of_supply",
+         "vat_rate",
+         "voluntary_registration",
+         "vouchers",
+         "zero_rated",
+         "zero_rated_or_exports"
+        ]
+       }
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

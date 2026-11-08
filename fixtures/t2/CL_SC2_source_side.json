@@ -1,0 +1,120 @@
+{
+ "business_line": "HomepreunerHub / HerBiz",
+ "synthetic": true,
+ "owner": "WS C (source side); scenario steps: WS A",
+ "contract": "herbiz.source_validity/1.2",
+ "not_legal_advice": true,
+ "rule": "payloads copied unchanged from knowledge_base/t2/CL_source_validity_1.2.json; no official text",
+ "scenario_id": "SC-2",
+ "question": {
+  "question_id": "SYN-SC2-Q",
+  "text": "My home bakery stopped making taxable sales. How many days do I have to apply to cancel my VAT registration?",
+  "topic": "vat_deregistration_deadline",
+  "written_by": "HerBiz (synthetic)"
+ },
+ "validity_keys": [
+  "FTA-VAT-ER|14",
+  "FTA-VAT-DEREG-SERVICE|*"
+ ],
+ "payloads": [
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-ER|14",
+   "source_id": "FTA-VAT-ER",
+   "article": "14",
+   "status": "conflict",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [
+    {
+     "conflict_id": "G1",
+     "claim": "VAT deregistration: application deadline after the obligation arises",
+     "values": [
+      {
+       "source_id": "FTA-VAT-ER",
+       "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+       "value": "20 business days",
+       "locator": "Article 14(1)"
+      },
+      {
+       "source_id": "FTA-VAT-DEREG-SERVICE",
+       "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+       "value": "30 business days",
+       "locator": "FTA deregistration service page (updated 2026-09-24)"
+      }
+     ],
+     "precedence_known": false,
+     "resolution": "escalate"
+    }
+   ],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DEREG-SERVICE|*",
+   "source_id": "FTA-VAT-DEREG-SERVICE",
+   "article": "*",
+   "status": "conflict",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [
+    {
+     "conflict_id": "G1",
+     "claim": "VAT deregistration: application deadline after the obligation arises",
+     "values": [
+      {
+       "source_id": "FTA-VAT-ER",
+       "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+       "value": "20 business days",
+       "locator": "Article 14(1)"
+      },
+      {
+       "source_id": "FTA-VAT-DEREG-SERVICE",
+       "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+       "value": "30 business days",
+       "locator": "FTA deregistration service page (updated 2026-09-24)"
+      }
+     ],
+     "precedence_known": false,
+     "resolution": "escalate"
+    }
+   ],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  }
+ ],
+ "source_side_expectations": {
+  "conflict_id": "G1",
+  "values_shown": [
+   "20 business days (Executive Regulation Art. 14(1))",
+   "30 business days (FTA deregistration service page)"
+  ],
+  "precedence_known": false,
+  "resolution": "escalate",
+  "deadline_given": false,
+  "language_note": "the English Executive Regulation is a translation; Arabic prevails",
+  "escalate_to": "an FTA-registered tax agent",
+  "flags": [
+   "conflict"
+  ]
+ }
+}

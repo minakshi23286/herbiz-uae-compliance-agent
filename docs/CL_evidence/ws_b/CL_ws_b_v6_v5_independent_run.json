@@ -1,0 +1,988 @@
+{
+ "label": "v6_on_v5",
+ "sets": {
+  "v5": {
+   "summary": {
+    "questions": 24,
+    "any_expected": 0.85,
+    "all_required": 0.6,
+    "median_first_rank": 6,
+    "mrr": 0.244,
+    "irrelevant_added_share": 0.693,
+    "added_on_no_source_questions": 0,
+    "avg_passages": 10.2,
+    "misses_any": [
+     "Y08",
+     "Y12",
+     "Y20"
+    ],
+    "misses_required": [
+     "Y03",
+     "Y05",
+     "Y06",
+     "Y08",
+     "Y12",
+     "Y13",
+     "Y18",
+     "Y20"
+    ],
+    "silent_incomplete_rate": 0.0,
+    "silent_incomplete_ids": [],
+    "certified_with_issue": 0,
+    "certified_complete_share": 0.25,
+    "over_flagged_ids": [
+     "Y02",
+     "Y04",
+     "Y11",
+     "Y14",
+     "Y15",
+     "Y16",
+     "Y19"
+    ],
+    "out_of_scope_labelled": "4/4",
+    "statuses": {
+     "complete": 5,
+     "incomplete": 11,
+     "source_validity_unresolved": 2,
+     "ambiguous": 1,
+     "out_of_scope": 5
+    }
+   },
+   "rows": [
+    {
+     "id": "Y01",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 1,
+     "added": 2,
+     "irrelevant_added": 0,
+     "passages": 8,
+     "status": "complete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "mandatory_registration"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-DL8|Article 13|bm25",
+      "FTA-VAT-ER|Article 7|bm25",
+      "FTA-VAT-ER|Article 55|bm25",
+      "FTA-VAT-ER|Article 5|bm25",
+      "FTA-VAT-ER|Article 8|bm25",
+      "FTA-VAT-DL8|Article 22|bm25",
+      "FTA-VAT-DL8|Article 19|v6:partner:explicit_reference:FTA-VAT-DL8|13",
+      "FTA-VAT-REG-PAGE|Paragraph 1|v6:supporting:mandatory_registration"
+     ]
+    },
+    {
+     "id": "Y02",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 8,
+     "added": 6,
+     "irrelevant_added": 3,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|54",
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-DL8|55",
+      "FTA-VAT-ER|8",
+      "FTA-VAT-DL8|20"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "input_tax",
+      "voluntary_registration",
+      "capital_assets_threshold"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-ER|Article 16|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 51|bm25",
+      "FTA-VAT-ER|Article 7|bm25",
+      "FTA-VAT-DL8|Article 54|v6:required:input_tax",
+      "FTA-VAT-DL8|Article 17|v6:required:voluntary_registration",
+      "FTA-VAT-DL8|Article 19|v6:required:capital_assets_threshold",
+      "FTA-VAT-DL8|Article 55|v6:required:input_tax",
+      "FTA-VAT-ER|Article 8|v6:required:voluntary_registration",
+      "FTA-VAT-DL8|Article 20|v6:required:capital_assets_threshold"
+     ]
+    },
+    {
+     "id": "Y03",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": false,
+     "first_rank": 7,
+     "added": 6,
+     "irrelevant_added": 3,
+     "passages": 12,
+     "status": "source_validity_unresolved",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-DL8|76",
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-DL8|22",
+      "FTA-VAT-ER|8",
+      "FTA-VAT-ER|14"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "deregistration",
+      "penalties",
+      "voluntary_registration"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-DL8|Article 61|bm25",
+      "FTA-VAT-ER|Article 70|bm25",
+      "FTA-VAT-ER|Article 56|bm25",
+      "FTA-VAT-DL8|Article 21|v6:required:deregistration",
+      "FTA-VAT-DL8|Article 76|v6:required:penalties",
+      "FTA-VAT-DL8|Article 17|v6:required:voluntary_registration",
+      "FTA-VAT-DL8|Article 22|v6:required:deregistration",
+      "FTA-VAT-ER|Article 8|v6:required:voluntary_registration",
+      "FTA-VAT-ER|Article 14|v6:required:deregistration"
+     ]
+    },
+    {
+     "id": "Y04",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 7,
+     "added": 6,
+     "irrelevant_added": 3,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "tax_invoice"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-DL8|Article 26|bm25",
+      "FTA-VAT-DL8|Article 1|bm25",
+      "FTA-VAT-DL8|Article 30|bm25",
+      "FTA-VAT-DL8|Article 14|bm25",
+      "FTA-VAT-ER|Article 13|bm25",
+      "FTA-VAT-ER|Article 53|bm25",
+      "FTA-VAT-DL8|Article 65|v6:required:tax_invoice",
+      "FTA-VAT-ER|Article 59|v6:required:tax_invoice",
+      "FTA-VAT-DL8|Article 13|v6:required:base_rule",
+      "FTA-VAT-ER|Article 7|v6:required:base_rule",
+      "FTA-VAT-DL8|Article 67|v6:partner:implementing_pair:FTA-VAT-ER|59",
+      "FTA-VAT-DL8|Article 68|v6:partner:implementing_pair:FTA-VAT-ER|59"
+     ]
+    },
+    {
+     "id": "Y05",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": false,
+     "first_rank": null,
+     "added": 4,
+     "irrelevant_added": 3,
+     "passages": 10,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|3",
+      "FTA-VAT-DL8|29",
+      "FTA-VAT-DL8|27"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "vat_rate",
+      "place_of_supply"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 37|bm25",
+      "FTA-VAT-ER|Article 72|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 48|bm25",
+      "FTA-VAT-DL8|Article 3|v6:required:vat_rate",
+      "FTA-VAT-DL8|Article 29|v6:required:place_of_supply",
+      "FTA-VAT-DL8|Article 27|v6:required:place_of_supply",
+      "FTA-VAT-DL8|Article 2|v6:partner:explicit_reference:FTA-VAT-DL8|3"
+     ]
+    },
+    {
+     "id": "Y06",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": false,
+     "first_rank": null,
+     "added": 6,
+     "irrelevant_added": 4,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|54",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-DL8|55",
+      "FTA-VAT-DL8|20",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "input_tax",
+      "capital_assets_threshold"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-DL8|Article 1|bm25",
+      "FTA-VAT-ER|Article 18|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 66|bm25",
+      "FTA-VAT-DL8|Article 54|v6:required:input_tax",
+      "FTA-VAT-DL8|Article 19|v6:required:capital_assets_threshold",
+      "FTA-VAT-DL8|Article 55|v6:required:input_tax",
+      "FTA-VAT-DL8|Article 20|v6:required:capital_assets_threshold",
+      "FTA-VAT-DL8|Article 13|v6:required:base_rule",
+      "FTA-VAT-ER|Article 7|v6:required:base_rule"
+     ]
+    },
+    {
+     "id": "Y07",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 6,
+     "added": 5,
+     "irrelevant_added": 5,
+     "passages": 11,
+     "status": "complete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|3",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-DL8|38",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|27",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "vat_rate",
+      "threshold_calculation",
+      "tax_inclusive"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-DL8|Article 1|bm25",
+      "FTA-VAT-ER|Article 27|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 28|bm25",
+      "FTA-VAT-DL8|Article 38|bm25",
+      "FTA-VAT-DL8|Article 3|v6:required:vat_rate",
+      "FTA-VAT-DL8|Article 19|v6:required:threshold_calculation",
+      "FTA-VAT-DL8|Article 13|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 7|v6:required:base_rule",
+      "FTA-VAT-DL8|Article 2|v6:partner:explicit_reference:FTA-VAT-DL8|3"
+     ]
+    },
+    {
+     "id": "Y08",
+     "has_expected": true,
+     "any_expected": false,
+     "all_required": false,
+     "first_rank": null,
+     "added": 5,
+     "irrelevant_added": 5,
+     "passages": 11,
+     "status": "ambiguous",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-ER|8"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "mandatory_registration",
+      "voluntary_registration",
+      "threshold_calculation"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 55|bm25",
+      "FTA-VAT-ER|Article 70|bm25",
+      "FTA-VAT-ER|Article 72|bm25",
+      "FTA-VAT-DL8|Article 13|v6:required:mandatory_registration:ambiguous",
+      "FTA-VAT-DL8|Article 17|v6:required:voluntary_registration:ambiguous",
+      "FTA-VAT-DL8|Article 19|v6:required:threshold_calculation:ambiguous",
+      "FTA-VAT-ER|Article 7|v6:required:mandatory_registration:ambiguous",
+      "FTA-VAT-ER|Article 8|v6:required:voluntary_registration:ambiguous"
+     ]
+    },
+    {
+     "id": "Y09",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 5,
+     "added": 6,
+     "irrelevant_added": 4,
+     "passages": 12,
+     "status": "complete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-ER|71"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "tax_invoice",
+      "records"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-DL8|Article 65|bm25",
+      "FTA-VAT-DL8|Article 70|bm25",
+      "FTA-VAT-DL8|Article 26|bm25",
+      "FTA-VAT-ER|Article 59|bm25",
+      "FTA-VAT-DL8|Article 78|bm25",
+      "FTA-VAT-DL8|Article 25|bm25",
+      "FTA-VAT-ER|Article 71|v6:required:records",
+      "FTA-VAT-ER|Article 72|v6:partner:implementing_pair:FTA-VAT-DL8|78",
+      "FTA-VAT-DL8|Article 67|v6:partner:implementing_pair:FTA-VAT-ER|59",
+      "FTA-VAT-DL8|Article 68|v6:partner:implementing_pair:FTA-VAT-ER|59",
+      "FTA-VAT-DL8|Article 69|v6:partner:implementing_pair:FTA-VAT-ER|59",
+      "FTA-VAT-DL8|Article 72|v6:partner:explicit_reference:FTA-VAT-ER|71"
+     ]
+    },
+    {
+     "id": "Y10",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 7,
+     "added": 4,
+     "irrelevant_added": 1,
+     "passages": 10,
+     "status": "complete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|71"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "tax_return",
+      "mandatory_registration"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 55|bm25",
+      "FTA-VAT-DL8|Article 13|bm25",
+      "FTA-VAT-ER|Article 7|bm25",
+      "FTA-VAT-ER|Article 14|bm25",
+      "FTA-VAT-ER|Article 5|bm25",
+      "FTA-VAT-ER|Article 62|bm25",
+      "FTA-VAT-DL8|Article 72|v6:required:tax_return",
+      "FTA-VAT-ER|Article 64|v6:required:tax_return",
+      "FTA-VAT-DL8|Article 71|v6:required:tax_return",
+      "FTA-VAT-DL8|Article 19|v6:partner:explicit_reference:FTA-VAT-DL8|13"
+     ]
+    },
+    {
+     "id": "Y11",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 7,
+     "added": 6,
+     "irrelevant_added": 3,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|11",
+      "FTA-VAT-DL8|73",
+      "FTA-VAT-DL8|12",
+      "FTA-VAT-ER|64"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "deemed_supply",
+      "payment"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-ER|Article 53|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 9|bm25",
+      "FTA-VAT-DL8|Front matter|bm25",
+      "FTA-VAT-DL8|Article 11|v6:required:deemed_supply",
+      "FTA-VAT-DL8|Article 73|v6:required:payment",
+      "FTA-VAT-DL8|Article 12|v6:required:deemed_supply",
+      "FTA-VAT-ER|Article 64|v6:required:payment",
+      "FTA-VAT-ER|Article 5|v6:partner:implementing_pair:FTA-VAT-DL8|11",
+      "FTA-VAT-ER|Article 3 (bis)|v6:partner:implementing_pair:FTA-VAT-DL8|12"
+     ]
+    },
+    {
+     "id": "Y12",
+     "has_expected": true,
+     "any_expected": false,
+     "all_required": false,
+     "first_rank": null,
+     "added": 6,
+     "irrelevant_added": 6,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [
+      "FTA-VAT-DL8|20",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "our_required": [
+      "FTA-VAT-DL8|25",
+      "FTA-VAT-DL8|11",
+      "FTA-VAT-DL8|34",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-ER|19",
+      "FTA-VAT-DL8|12",
+      "FTA-VAT-DL8|20",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "date_of_supply",
+      "deemed_supply",
+      "value_of_supply",
+      "capital_assets_threshold"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 47|bm25",
+      "FTA-VAT-DL8|Article 39|bm25",
+      "FTA-VAT-ER|Article 52|bm25",
+      "FTA-VAT-DL8|Article 37|bm25",
+      "FTA-VAT-ER|Article 43|bm25",
+      "FTA-VAT-ER|Article 14|bm25",
+      "FTA-VAT-DL8|Article 25|v6:required:date_of_supply",
+      "FTA-VAT-DL8|Article 11|v6:required:deemed_supply",
+      "FTA-VAT-DL8|Article 34|v6:required:value_of_supply",
+      "FTA-VAT-DL8|Article 19|v6:required:capital_assets_threshold",
+      "FTA-VAT-ER|Article 19|v6:required:date_of_supply",
+      "FTA-VAT-DL8|Article 12|v6:required:deemed_supply"
+     ]
+    },
+    {
+     "id": "Y13",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": false,
+     "first_rank": null,
+     "added": 6,
+     "irrelevant_added": 5,
+     "passages": 12,
+     "status": "source_validity_unresolved",
+     "missing": [
+      "FTA-VAT-ER|7",
+      "FTA-VAT-ER|8",
+      "FTA-VAT-DL8|22",
+      "FTA-VAT-DL8|55",
+      "FTA-VAT-ER|9",
+      "FTA-VAT-ER|57",
+      "FTA-VAT-ER|14"
+     ],
+     "our_required": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-DL8|54",
+      "FTA-VAT-ER|13",
+      "FTA-VAT-DL8|60",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-ER|8",
+      "FTA-VAT-DL8|22",
+      "FTA-VAT-DL8|55",
+      "FTA-VAT-ER|9",
+      "FTA-VAT-ER|57",
+      "FTA-VAT-ER|14"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "mandatory_registration",
+      "voluntary_registration",
+      "deregistration",
+      "input_tax",
+      "related_parties",
+      "capital_assets_scheme"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-ER|Article 66|bm25",
+      "FTA-VAT-ER|Article 51|bm25",
+      "FTA-VAT-ER|Article 31|bm25",
+      "FTA-VAT-ER|Article 69|bm25",
+      "FTA-VAT-DL8|Article 59|bm25",
+      "FTA-VAT-DL8|Article 13|v6:required:mandatory_registration:ambiguous",
+      "FTA-VAT-DL8|Article 17|v6:required:voluntary_registration:ambiguous",
+      "FTA-VAT-DL8|Article 21|v6:required:deregistration:ambiguous",
+      "FTA-VAT-DL8|Article 54|v6:required:input_tax:ambiguous",
+      "FTA-VAT-ER|Article 13|v6:required:related_parties:ambiguous",
+      "FTA-VAT-DL8|Article 60|v6:required:capital_assets_scheme:ambiguous"
+     ]
+    },
+    {
+     "id": "Y14",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 3,
+     "added": 4,
+     "irrelevant_added": 3,
+     "passages": 10,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|76"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "penalties"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 9|bm25",
+      "FTA-VAT-ER|Article 7|bm25",
+      "FTA-VAT-DL8|Article 13|bm25",
+      "FTA-VAT-ER|Article 10|bm25",
+      "FTA-VAT-ER|Article 8|bm25",
+      "FTA-VAT-ER|Article 15|bm25",
+      "FTA-VAT-DL8|Article 76|v6:required:penalties",
+      "FTA-VAT-DL8|Article 38|v6:partner:explicit_reference:FTA-VAT-DL8|76",
+      "FTA-VAT-DL8|Article 43|v6:partner:explicit_reference:FTA-VAT-DL8|76",
+      "FTA-VAT-DL8|Article 77|v6:supporting:penalties"
+     ]
+    },
+    {
+     "id": "Y15",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 1,
+     "added": 6,
+     "irrelevant_added": 6,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|45",
+      "FTA-VAT-DL8|3",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-ER|40",
+      "FTA-VAT-ER|41",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "education",
+      "healthcare",
+      "vat_rate",
+      "threshold_calculation"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 40|bm25",
+      "FTA-VAT-ER|Article 29|bm25",
+      "FTA-VAT-DL8|Article 45|bm25",
+      "FTA-VAT-ER|Article 37|bm25",
+      "FTA-VAT-ER|Article 42|bm25",
+      "FTA-VAT-DL8|Article 35|bm25",
+      "FTA-VAT-DL8|Article 3|v6:required:vat_rate",
+      "FTA-VAT-DL8|Article 19|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 41|v6:required:healthcare",
+      "FTA-VAT-DL8|Article 13|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 7|v6:required:base_rule",
+      "FTA-VAT-DL8|Article 44|v6:partner:sibling:FTA-VAT-DL8|45"
+     ]
+    },
+    {
+     "id": "Y16",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 7,
+     "added": 6,
+     "irrelevant_added": 3,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|46",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-ER|43",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "exempt_residential",
+      "threshold_calculation"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 1|bm25",
+      "FTA-VAT-REG-PAGE|Paragraph 2|bm25",
+      "FTA-VAT-ER|Article 53|bm25",
+      "FTA-VAT-ER|Article 67|bm25",
+      "FTA-VAT-ER|Article 53|bm25",
+      "FTA-VAT-ER|Article 70|bm25",
+      "FTA-VAT-DL8|Article 46|v6:required:exempt_residential",
+      "FTA-VAT-DL8|Article 19|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 43|v6:required:exempt_residential",
+      "FTA-VAT-DL8|Article 13|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 7|v6:required:base_rule",
+      "FTA-VAT-ER|Article 44|v6:partner:implementing_pair:FTA-VAT-DL8|46"
+     ]
+    },
+    {
+     "id": "Y17",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 3,
+     "added": 6,
+     "irrelevant_added": 4,
+     "passages": 12,
+     "status": "complete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-DL8|63",
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|60",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "category": "realistic_scenario",
+     "intents": [
+      "credit_note",
+      "tax_return"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-DL8|Article 79|bm25",
+      "FTA-VAT-ER|Article 58|bm25",
+      "FTA-VAT-DL8|Article 70|bm25",
+      "FTA-VAT-ER|Article 60|bm25",
+      "FTA-VAT-DL8|Article 1|bm25",
+      "FTA-VAT-DL8|Article 56|bm25",
+      "FTA-VAT-DL8|Article 63|v6:required:credit_note",
+      "FTA-VAT-DL8|Article 72|v6:required:tax_return",
+      "FTA-VAT-ER|Article 64|v6:required:tax_return",
+      "FTA-VAT-DL8|Article 71|v6:required:tax_return",
+      "FTA-VAT-DL8|Article 61|v6:partner:sibling:FTA-VAT-DL8|63",
+      "FTA-VAT-DL8|Article 62|v6:partner:sibling:FTA-VAT-DL8|63"
+     ]
+    },
+    {
+     "id": "Y18",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": false,
+     "first_rank": null,
+     "added": 0,
+     "irrelevant_added": 0,
+     "passages": 6,
+     "status": "out_of_scope",
+     "missing": [],
+     "our_required": [],
+     "category": "realistic_scenario",
+     "intents": [],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 21|bm25",
+      "FTA-VAT-ER|Front matter|bm25",
+      "FTA-VAT-ER|Article 9|bm25",
+      "FTA-VAT-ER|Article 3 (bis)|bm25",
+      "FTA-VAT-ER|Article 51|bm25",
+      "FTA-VAT-DL8|Article 11|bm25"
+     ]
+    },
+    {
+     "id": "Y19",
+     "has_expected": true,
+     "any_expected": true,
+     "all_required": true,
+     "first_rank": 1,
+     "added": 6,
+     "irrelevant_added": 4,
+     "passages": 12,
+     "status": "incomplete",
+     "missing": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "our_required": [
+      "FTA-VAT-DL8|45",
+      "FTA-VAT-DL8|29",
+      "FTA-VAT-DL8|31",
+      "FTA-VAT-ER|30",
+      "FTA-VAT-DL8|27",
+      "FTA-VAT-ER|23",
+      "FTA-VAT-ER|31",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "category": "ambiguous",
+     "intents": [
+      "zero_rated_or_exports",
+      "place_of_supply",
+      "electronic_services"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": true,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 30|bm25",
+      "FTA-VAT-DL8|Article 42|bm25",
+      "FTA-VAT-ER|Article 51|bm25",
+      "FTA-VAT-ER|Article 33|bm25",
+      "FTA-VAT-DL8|Article 1|bm25",
+      "FTA-VAT-ER|Article 47|bm25",
+      "FTA-VAT-DL8|Article 45|v6:required:zero_rated_or_exports",
+      "FTA-VAT-DL8|Article 29|v6:required:place_of_supply",
+      "FTA-VAT-DL8|Article 31|v6:required:electronic_services",
+      "FTA-VAT-DL8|Article 27|v6:required:place_of_supply",
+      "FTA-VAT-ER|Article 23|v6:required:electronic_services",
+      "FTA-VAT-ER|Article 31|v6:required:zero_rated_or_exports"
+     ]
+    },
+    {
+     "id": "Y20",
+     "has_expected": true,
+     "any_expected": false,
+     "all_required": false,
+     "first_rank": null,
+     "added": 5,
+     "irrelevant_added": 5,
+     "passages": 11,
+     "status": "incomplete",
+     "missing": [],
+     "our_required": [
+      "FTA-VAT-ER|13",
+      "FTA-VAT-DL8|19",
+      "FTA-VAT-ER|9",
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7"
+     ],
+     "category": "ambiguous",
+     "intents": [
+      "related_parties",
+      "threshold_calculation"
+     ],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-REG-PAGE|Paragraph 9|bm25",
+      "FTA-VAT-ER|Article 70|bm25",
+      "FTA-VAT-ER|Article 17|bm25",
+      "FTA-VAT-ER|Article 75|bm25",
+      "FTA-VAT-ER|Article 23|bm25",
+      "FTA-VAT-DL8|Article 85|bm25",
+      "FTA-VAT-ER|Article 13|v6:required:related_parties",
+      "FTA-VAT-DL8|Article 19|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 9|v6:required:related_parties",
+      "FTA-VAT-DL8|Article 13|v6:required:threshold_calculation",
+      "FTA-VAT-ER|Article 7|v6:required:base_rule"
+     ]
+    },
+    {
+     "id": "Y21",
+     "has_expected": false,
+     "any_expected": null,
+     "all_required": null,
+     "first_rank": null,
+     "added": 0,
+     "irrelevant_added": 0,
+     "passages": 6,
+     "status": "out_of_scope",
+     "missing": [],
+     "our_required": [],
+     "category": "out_of_scope",
+     "intents": [],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 37|bm25",
+      "FTA-VAT-ER|Article 13|bm25",
+      "FTA-VAT-ER|Article 10|bm25",
+      "FTA-VAT-ER|Article 15|bm25",
+      "FTA-VAT-ER|Article 14|bm25",
+      "FTA-VAT-ER|Article 9|bm25"
+     ]
+    },
+    {
+     "id": "Y22",
+     "has_expected": false,
+     "any_expected": null,
+     "all_required": null,
+     "first_rank": null,
+     "added": 0,
+     "irrelevant_added": 0,
+     "passages": 6,
+     "status": "out_of_scope",
+     "missing": [],
+     "our_required": [],
+     "category": "out_of_scope",
+     "intents": [],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 53|bm25",
+      "FTA-VAT-ER|Article 51|bm25",
+      "FTA-VAT-ER|Article 51|bm25",
+      "FTA-VAT-DL8|Article 72|bm25",
+      "FTA-VAT-DL8|Front matter|bm25",
+      "FTA-VAT-DL8|Article 30|bm25"
+     ]
+    },
+    {
+     "id": "Y23",
+     "has_expected": false,
+     "any_expected": null,
+     "all_required": null,
+     "first_rank": null,
+     "added": 0,
+     "irrelevant_added": 0,
+     "passages": 6,
+     "status": "out_of_scope",
+     "missing": [],
+     "our_required": [],
+     "category": "out_of_scope",
+     "intents": [],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 37|bm25",
+      "FTA-VAT-ER|Article 69|bm25",
+      "FTA-VAT-ER|Article 47|bm25",
+      "FTA-VAT-ER|Article 16|bm25",
+      "FTA-VAT-DL8|Article 69|bm25",
+      "FTA-VAT-DL8|Article 30|bm25"
+     ]
+    },
+    {
+     "id": "Y24",
+     "has_expected": false,
+     "any_expected": null,
+     "all_required": null,
+     "first_rank": null,
+     "added": 0,
+     "irrelevant_added": 0,
+     "passages": 6,
+     "status": "out_of_scope",
+     "missing": [],
+     "our_required": [],
+     "category": "out_of_scope",
+     "intents": [],
+     "silent_incomplete": false,
+     "over_flagged": false,
+     "certified_with_issue": false,
+     "retrieved": [
+      "FTA-VAT-ER|Article 30|bm25",
+      "FTA-VAT-ER|Article 29|bm25",
+      "FTA-VAT-DL8|Front matter|bm25",
+      "FTA-VAT-ER|Article 40|bm25",
+      "FTA-VAT-ER|Article 30|bm25",
+      "FTA-VAT-ER|Article 72|bm25"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "_meta": {
+  "file": "CL_policy_kb.json",
+  "version": "0.1.1",
+  "date": "2026-10-17",
+  "by": "Claude Code, Workstream C",
+  "business_line": "HomepreunerHub / HerBiz",
+  "domain": "B (policies governing the AI agent)",
+  "approval": "D-088 (founder, 17 Oct 2026): privacy intake gate, with conditions; follows D-084 (FD-05)",
+  "rule": "The gate loads its rules from the 'controls' table below. Clause texts are HerBiz summaries in our own words, not official text; Arabic prevails for UAE law. Applicability of the UAE PDPL to HerBiz has not been determined: these principles are used as a design benchmark. Synthetic data only. Not legal advice.",
+  "required_controls": [
+   "CTRL-PD-MINIMISE",
+   "CTRL-NO-RAW-LOG",
+   "CTRL-FAIL-CLOSED"
+  ],
+  "sources": "knowledge_base/policy/CL_ai_governance_references.json",
+  "changes": [
+   "0.1.1 (2026-10-17): legal-kalpu review: Art. 18 and Art. 5 summaries reworded"
+  ]
+ },
+ "clauses": [
+  {
+   "clause_id": "PDPL-ART4",
+   "policy_id": "POL-UAE-PDPL",
+   "type": "binding law; applicability to HerBiz not determined",
+   "locator": "Art. 4",
+   "summary": "HerBiz summary, not official text; Arabic prevails: personal data should not be processed without the person's consent, except in the cases the law lists.",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": "01a14af6-fcc6-7366-a7db-590808714f6e"
+  },
+  {
+   "clause_id": "PDPL-ART5",
+   "policy_id": "POL-UAE-PDPL",
+   "type": "binding law; applicability to HerBiz not determined",
+   "locator": "Art. 5(2)-(3), (6)-(7) (sub-paragraph numbering to verify)",
+   "summary": "HerBiz summary, not official text; Arabic prevails: collect personal data only for a clear purpose, keep it to what that purpose needs, protect it, and do not keep it after the purpose is served unless it is anonymised.",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": "01a14af6-fcc6-7366-a7db-590808714f6e"
+  },
+  {
+   "clause_id": "PDPL-ART18",
+   "policy_id": "POL-UAE-PDPL",
+   "type": "binding law; applicability to HerBiz not determined",
+   "locator": "Art. 18",
+   "summary": "HerBiz summary, not official text; Arabic prevails: people may object to decisions based on automated processing that have legal effects on them or seriously affect them, subject to exceptions the law lists; the controller must involve a person in reviewing such decisions when the person asks (Art. 18(4), read 17 Oct 2026).",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": "01a14af6-fcc6-7366-a7db-590808714f6e"
+  },
+  {
+   "clause_id": "CHARTER-P4",
+   "policy_id": "POL-UAE-AI-CHARTER",
+   "type": "official policy; no binding force stated",
+   "locator": "Principle 4 (Data privacy)",
+   "summary": "HerBiz summary, not official text: AI development should keep people's privacy a top priority.",
+   "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": "01a14af6-fd41-77f8-a4b6-8f713780bdf5"
+  },
+  {
+   "clause_id": "CHARTER-P6",
+   "policy_id": "POL-UAE-AI-CHARTER",
+   "type": "official policy; no binding force stated",
+   "locator": "Principle 6 (Human oversight)",
+   "summary": "HerBiz summary, not official text: human judgement and oversight should stay in control of AI, so errors or bias can be corrected.",
+   "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": "01a14af6-fd41-77f8-a4b6-8f713780bdf5"
+  },
+  {
+   "clause_id": "HERBIZ-SYNTHETIC-ONLY",
+   "policy_id": "HERBIZ-INTERNAL",
+   "type": "internal control",
+   "locator": "D-061, D-062, D-088",
+   "summary": "HerBiz internal rule: the prototype works only with synthetic data; it must not take in real people's personal details.",
+   "url": null,
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": null
+  },
+  {
+   "clause_id": "HERBIZ-NO-RAW-LOG",
+   "policy_id": "HERBIZ-INTERNAL",
+   "type": "internal control",
+   "locator": "D-088",
+   "summary": "HerBiz internal rule: when an input is blocked, its original text is never stored, echoed, searched or logged; only the detector and control identifiers are recorded.",
+   "url": null,
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": null
+  },
+  {
+   "clause_id": "HERBIZ-FAIL-CLOSED",
+   "policy_id": "HERBIZ-INTERNAL",
+   "type": "internal control",
+   "locator": "D-062, D-088",
+   "summary": "HerBiz internal rule: if the privacy rules cannot be loaded or checked, the input is not processed.",
+   "url": null,
+   "retrieved_at": "2026-10-17",
+   "firecrawl_scrape_id": null
+  }
+ ],
+ "controls": [
+  {
+   "control_id": "CTRL-PD-MINIMISE",
+   "detector_ids": [
+    "emirates_id",
+    "iban_ae",
+    "uae_phone",
+    "email",
+    "passport"
+   ],
+   "action": "block",
+   "clause_ids": [
+    "PDPL-ART5",
+    "PDPL-ART4",
+    "CHARTER-P4",
+    "HERBIZ-SYNTHETIC-ONLY"
+   ],
+   "owner_message": "Please remove personal details about you or your customers. This demo is built to work without personal data. Its design draws on principles in the UAE PDPL (Art. 4–5) and the UAE AI Charter. This is not a legal assessment."
+  },
+  {
+   "control_id": "CTRL-SENSITIVE-WARN",
+   "detector_ids": [
+    "sensitive_words"
+   ],
+   "action": "warn",
+   "clause_ids": [
+    "PDPL-ART5",
+    "CHARTER-P4"
+   ],
+   "owner_message": "Your question mentions a sensitive topic. Please do not include anyone's health or other personal details."
+  },
+  {
+   "control_id": "CTRL-NO-RAW-LOG",
+   "detector_ids": [],
+   "action": "log_ids_only",
+   "clause_ids": [
+    "HERBIZ-NO-RAW-LOG",
+    "PDPL-ART5"
+   ],
+   "owner_message": null
+  },
+  {
+   "control_id": "CTRL-FAIL-CLOSED",
+   "detector_ids": [],
+   "action": "block_on_error",
+   "clause_ids": [
+    "HERBIZ-FAIL-CLOSED"
+   ],
+   "owner_message": "HerBiz could not check this input for personal details, so it was not processed. Please try again later."
+  }
+ ]
+}

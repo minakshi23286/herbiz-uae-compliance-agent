@@ -1,0 +1,8 @@
+test_t2_b5_01_only_the_two_sentences_differ (tests.test_t2_wording_differential.WordingDifferential.test_t2_b5_01_only_the_two_sentences_differ) ... ok
+test_t2_b5_02_both_sentences_actually_changed_and_no_we_left (tests.test_t2_wording_differential.WordingDifferential.test_t2_b5_02_both_sentences_actually_changed_and_no_we_left) ... ok
+test_t2_b5_03_states_reasons_deadlines_documents_identical (tests.test_t2_wording_differential.WordingDifferential.test_t2_b5_03_states_reasons_deadlines_documents_identical) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.209s
+
+OK

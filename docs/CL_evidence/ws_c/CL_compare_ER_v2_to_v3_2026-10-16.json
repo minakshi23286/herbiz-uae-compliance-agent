@@ -1,0 +1,278 @@
+{
+ "old": "FTA-VAT-ER@v2",
+ "new": "FTA-VAT-ER@v3",
+ "summary": {
+  "added": 0,
+  "removed": 0,
+  "cosmetic": 47,
+  "substantive": 15
+ },
+ "rows": [
+  {
+   "unit": "Front matter",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 2",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 3",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 3 (bis)",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 4",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 5",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 7",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 8",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 9",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 12",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 13",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 14",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 14 (bis)",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 15",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 16",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 17",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 18",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 21",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 22",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 23",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 24",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 25",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 29",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 30",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 31",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 33",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 34",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 35",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 37",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 38",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 40",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 41",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 42",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 43",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 44",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 45",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 46",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 47",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 48",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 49",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 50",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 51",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 52",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 53",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 54",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 55",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 56",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 57",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 58",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 59",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 60",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 62",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 63",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 64",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 65",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 66",
+   "change": "substantive"
+  },
+  {
+   "unit": "Article 67",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 68",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 69",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 70",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 71",
+   "change": "cosmetic"
+  },
+  {
+   "unit": "Article 72",
+   "change": "cosmetic"
+  }
+ ],
+ "note": "Machine comparison to help a reviewer. It does not decide what changed in law.",
+ "substantive_units": [
+  "Article 4",
+  "Article 29",
+  "Article 31",
+  "Article 41",
+  "Article 51",
+  "Article 52",
+  "Article 53",
+  "Article 54",
+  "Article 55",
+  "Article 56",
+  "Article 57",
+  "Article 59",
+  "Article 60",
+  "Article 66",
+  "Front matter"
+ ]
+}

@@ -1,0 +1,1070 @@
+{
+ "_notice": "HerBiz 360 submission export: every file with its sha256. Prepared locally; not published.",
+ "from_repository_commit": "08fbd9d077d9e2fc894c993acfd9a65fb4baaf81",
+ "built": "2026-11-09",
+ "files": {
+  ".env.example": "7bbca3c59c0ac8411c9043c122e3b09c471135bbdba07abce2e1a5cbb6936d68",
+  ".gitignore": "a0279580eb00c3c541862944deb58d221dec8a7bf59bd917618a5e0a5d2a5d52",
+  "README.md": "b4a58bb86a5d63597db31b5872dfdb6ba584a176bf37f12a2af69985f06efa4d",
+  "capabilities.json": "22c93278062b73694f8bd2024e250da7727bc1f7bb4f016a10ebee6d38bc6bde",
+  "compliance_agent/__init__.py": "3246c5abab81d45cd28b459a84e69182db3818c11fec34bd701a23041fdea6eb",
+  "compliance_agent/ask.py": "1640e52475d32f5f896895e8a489edaf8ac2e5acec3ac33bd3c07eae67afb429",
+  "compliance_agent/audit_log.py": "309193f52c7845d07d84464c82b06041b91f1df857166dcd552f44967477220a",
+  "compliance_agent/audit_records.py": "086e9d817b9573a1d445d738a77640cc991c44daca247b6606f2511b48fb0872",
+  "compliance_agent/audit_sanitizer.py": "6762ff929044df625ba043b3057f102e1fd9558926e3dd1046c129c5efae95f4",
+  "compliance_agent/backup.py": "a32b76d274609cd2d62c5990db4f740cd42b45a9b996e221afc3ed4af17a997c",
+  "compliance_agent/clock.py": "0837df4ee15f645d67bd4cea624daa2b3fe9b69ca5cd514bffeacaadb5806ce9",
+  "compliance_agent/dbsafety.py": "cd6a996a537d8826d38cd49578dd82bad32f4e34a45dfcd98ba38dcf37ab9b91",
+  "compliance_agent/demo.py": "6d3cf441d911c59d64e49ced54a182c2d02cd1d557d6ca0d51fca30e225971cd",
+  "compliance_agent/engine.py": "4e1b355052e2edb0e70d72aacd288eacb2a704f8845c48af3038dab16c738b74",
+  "compliance_agent/evaluation.py": "12780e288d94edb166e75ce31715a18b249b9c30e79868febd63e1bdcaf32dbb",
+  "compliance_agent/kb.py": "25f25ab1d085d83049f638f8c46579e8d2eb6fc499d74066fdca6653d846967f",
+  "compliance_agent/llm_lab/__init__.py": "bb0161095e965d55d68c76904eda941e6967cb7717fc90b5b2d25aa6639f83f3",
+  "compliance_agent/llm_lab/answer.py": "6b05bda1d330e29fbdf36f8f6186bd969e5bfc84e2355ebcfc291d144bbfe329",
+  "compliance_agent/llm_lab/budget.py": "faf25ea6fce0c685c18df6b1854d7927a6d0011af104428880834ea50b003c18",
+  "compliance_agent/llm_lab/classifier_c1.py": "874bb6ec2a9a5a9b840dca3efa985544e8b4e77028255f36f06908294bfafc81",
+  "compliance_agent/llm_lab/classifier_c1p.py": "252f5c679735de2c98234741d4b02df0bb55cbe844302820197959a02def05e5",
+  "compliance_agent/llm_lab/classifier_c1p2.py": "1d6e1ced5704ae5185e30d3c64ca95ba5a0dbceeb66b057ebf470fd59bfa28fc",
+  "compliance_agent/llm_lab/concepts.py": "5dd350a321e368c29997c68087126cd5316767e5aa311a91af3bf04488c9c6ad",
+  "compliance_agent/llm_lab/concepts_v5.py": "8eadc88009b870b9e2600f4860cf305df0067025abb826924c64b37798c05a49",
+  "compliance_agent/llm_lab/data/CL_coverage_audit_v7.json": "147bf29f9d1b63132088353377144a52b4238011cc85ae4ace0f298ba81d2e1e",
+  "compliance_agent/llm_lab/data/CL_expansion_v6.json": "bf36ce5deb81410beba2f7dfb0502e692d7600b4ba334ecc75340c07d9184a36",
+  "compliance_agent/llm_lab/data/CL_provision_map_v6.json": "5fc5d4247f084bdc0291ad8e6423f4b06853558d53d62b568f65a15870d3c6ec",
+  "compliance_agent/llm_lab/data/CL_provision_map_v7.json": "6c926baf0893c3a0a8333407969747631b1f71445501f962195021497c7fca1a",
+  "compliance_agent/llm_lab/data/CL_source_validity_v6.json": "debcaf7bcb6d5c15e371a9e9298d25a11d5b31880a5f2573cd8d1b5ccae22ea3",
+  "compliance_agent/llm_lab/fake.py": "e8e6a65f4a656517ba59db3ce25444f8dd2b8510a76a0432e3fbbc8f338c834e",
+  "compliance_agent/llm_lab/freeze.py": "040e0a807a33f58fb34e4bcb9df85758be004e5390a5cab7e1a2285bcdae5b10",
+  "compliance_agent/llm_lab/locators.py": "3bc1cee1649f1befd2c1f5ed975b752577bb6983953e700d906ae5bce4882810",
+  "compliance_agent/llm_lab/pipeline_c1.py": "98ecf0f874c11ed4bdb753337dd77bb23f40461bb64393dc57a836df8918d412",
+  "compliance_agent/llm_lab/pipeline_c1p.py": "35ca9eb66142ad4900eba780112c703a4a7853ff607bd65f9f68b26946182712",
+  "compliance_agent/llm_lab/pipeline_c1p2.py": "c880ef77b598147dcb5d4c389cbf77c2e1d7a2217199e23e443d4c43a73d5f12",
+  "compliance_agent/llm_lab/pipeline_v6.py": "8c71fb099827950dfd4ba1225b394385763b882212b111ae1158949096ccf957",
+  "compliance_agent/llm_lab/pipeline_v7.py": "c703911038cfa7b69c47c48e40e8ef4a34e8946221da2b26925c62c5e68ebb97",
+  "compliance_agent/llm_lab/report.py": "7c65548fd0142a431773b0e0c3811117c8735a10e098422a2b326ea8294bdb53",
+  "compliance_agent/llm_lab/retrieval_metrics.py": "131ec78f430140f1d93ef457fbd374f17fe7b8c265ef49bf56d1834c0d6b09f6",
+  "compliance_agent/llm_lab/retrieve.py": "827876d4eda13ad8764b3d410ae2e5e1b72f5ef607562ce8886d5df15636f3ab",
+  "compliance_agent/llm_lab/retrieve_v8.py": "4da6eef629ada059af459f342d17a2e8ea1a461447e5bd0268a49873a7258aba",
+  "compliance_agent/llm_lab/run.py": "26c209f6a6b36a4ea50c95bf1f1332d905019696d4c6b3f05606eca8ab814d9c",
+  "compliance_agent/llm_lab/source_validity_c.py": "d2c5a3d3b7810cc487b3e8e254628dc6fd552f5cbe58689c5da9a56c840d65f9",
+  "compliance_agent/llm_lab/t2_payloads.py": "0e52488758e55d3c497cc3e7630246d7c7a54577492e54ea3ee368f52d7666ce",
+  "compliance_agent/mvp360/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "compliance_agent/mvp360/adapter.py": "2f12d8ac552394b06ef8ec2b44f760b809b77e8d2175a7a63262fc0eddd2b056",
+  "compliance_agent/mvp360/pins.py": "153086cb16f55cf3b151c7a45fd9b55459b1770da0736bcdc96b3ca5f1f1abdd",
+  "compliance_agent/obligations/__init__.py": "b1425e40bbb28efa9535137ad80a17d2fc8ea5d1f9365b318e1d6eb8b1ef78fd",
+  "compliance_agent/obligations/catalogue/ct.json": "ef77b0d63f539adb6878742860c2f072e0dbf03c0283708a3d0af51d4ad0a1e3",
+  "compliance_agent/obligations/catalogue/synthetic_test.json": "9fdec145ceac32b3969cf2e14b9263ae20a4c3071202a23da8ef99f83eb9b960",
+  "compliance_agent/obligations/catalogue/vat.json": "7a30bf40b62f5f175e3f2d25b60c0438744eb228b6dda3c9b4058010f1bbd562",
+  "compliance_agent/obligations/ct_demo.py": "6192594d37a7da080502bccca9f5361d0b2b05142a15d35523029a2297fcbc86",
+  "compliance_agent/obligations/engine.py": "66d8af382fd258d57f8b97a1c59bedae46e6e6fdb37fd6577979133e8f2c838f",
+  "compliance_agent/obligations/profile.py": "deb6a8c91fefa0fe2d70545b5308cb36279d5dc2d5c13d75d06777d871b658eb",
+  "compliance_agent/obligations/profile_schema.json": "5f4092f7c2ca8d53d08f16a119fbeda1d516ca62c2050a0a53a5c94f04d451da",
+  "compliance_agent/obligations/validity.py": "1c0c35a5735d4404a880e8060ca1bc273bcb40b9c662f7f3320a4288a18e46f9",
+  "compliance_agent/profiles.py": "62a191107db4670db0d61514336e0b55e48c98f66859c01487985e95896a6e1f",
+  "compliance_agent/rag_c/__init__.py": "259c0798d5e302c78a849d3332892dd4a07a2ad22a72862d94c872d13fe24c35",
+  "compliance_agent/rag_c/__main__.py": "5d2e9370efd93fbb8185748d0cfee58163f92d63d7e301345af6541c264a954e",
+  "compliance_agent/rag_c/amendments.py": "b0bd9249a21e80dbd08ad6e883fd19fe28e581efe8cda31443ab8e353efbd73a",
+  "compliance_agent/rag_c/citations.py": "857a815187da4df945b95a8cfeb8fa52bd11a9018e4607ccc9155fb67748374b",
+  "compliance_agent/rag_c/claims.py": "e75f1beeb709ad0a8e88f3431fb1e056cb57d7c496729d71ae114a01baacb72b",
+  "compliance_agent/rag_c/discovery.py": "a272cf9491a35afe41fd6d4ff7e44971b2dddd9df9eeb9330e345ed1c846477d",
+  "compliance_agent/rag_c/dryrun.py": "d53a982131cbd9f6b0091692d1199f5613f5eeab77c3240924e1603b0bb285fd",
+  "compliance_agent/rag_c/extraction_check.py": "b8fd1fd3f75a3e9f9e9c12f3635dacf01f520df2465979bea30f7c8ede6ec9b5",
+  "compliance_agent/rag_c/firecrawl_trial.py": "1a0a8ada77ded957983fe0dd58497d507e2f484410a9aa92fc649e3d9701ff35",
+  "compliance_agent/rag_c/interface.py": "160a41e7c548fca11a30dbf1e53e574862696e0b54f1417270b8955f3e51dab0",
+  "compliance_agent/rag_c/inventory.py": "8bbb26b9dc363e5d4519147c02f2063b2c7948c9d29ca10e73c1a737c98f8554",
+  "compliance_agent/rag_c/monitor.py": "8e0762bf79b9979470f55f3d0d53913c33a8493217ba0d790e4afe31497486ce",
+  "compliance_agent/rag_c/policy_gate.py": "c63ed45121cb953471170d1334319ffc52f8c9bf4b2b7ab0e2896d44e98ace10",
+  "compliance_agent/rag_c/protection.py": "398e15b42be0c3afb957e56a7c74bfaa8f58138e44266fc47c1110947f9644fe",
+  "compliance_agent/rag_c/register.py": "8c1282c0a5ca93e15081dbd60c666d918e2375ada73e05eb3ff80c14b23f9890",
+  "compliance_agent/rag_c/render.py": "bb3056c1a6063b70466cdf6b128f3b9a4ff0df55c31affeb331cab65d811c2ab",
+  "compliance_agent/rag_c/sources360.py": "fedcbf56321ab9d1f5352475331358e392c98c0ca4cce55758c570a395bf9a66",
+  "compliance_agent/rag_c/validity.py": "96cc880a0064286f77ad4b74140afb809d7b9a6d5ba54bb48e4b669f89caacfa",
+  "compliance_agent/scenario.py": "00f1388beb8a267c25ddb8d47fcca64155093c384249df27ade01fcd6ab6b160",
+  "compliance_agent/scenarios.py": "a9a277ecbbdef4af97ad06bf62c126d1e94db1ee8a97005281b0c55f10f37f46",
+  "compliance_agent/sources.py": "9dd399fd1e952c67400e3e2653fd56bace0b088914e667d834d3755eaba3a404",
+  "compliance_agent/store.py": "70298a9e3730e574c8c2143305c8428cc041044bc86f212fdcc8061acc7988ad",
+  "compliance_agent/t2_retrieval.py": "4aad69102614b45ee341ee1a21f83114f72fd58a0a0dab76189b94fb2ea70a01",
+  "compliance_agent/ui.html": "8daf6d459484a2433875181548c5e2612fcd69f6c7737b9aa9bc70ca9babbb3b",
+  "compliance_agent/ui360.html": "c4650a7dfd86b737464b2869de5d2871d8222f131062aba6438f8373acc815ab",
+  "compliance_agent/web.py": "1ef097781364c557b322c7fdfd2438867392dd94f79d6c71c15bb09f395c6e86",
+  "contracts/ACK_B_v1.0.md": "e8421f3f394c931129e1979e585ee512f89e5cc8e06e6077baa688813b3dd800",
+  "contracts/ACK_B_v1.1_NOTICE.md": "de33da744c99d7060a0081211d724fcbafd9d9edcae71537f5d49b38a6f198bf",
+  "contracts/CONTRACTS_INDEX.json": "237dfe2333044d6299992e1881a255d36a4ece88ec603e8622ff72dc2410b24f",
+  "contracts/G1_FROZEN.md": "7d0591df8cdd79fcbcbd157b4419a5526fc7f932b85ccd131282ccba89552410",
+  "contracts/G1_SIGNOFF_B.md": "8182a9f5379c3e612bc717b42d57b4938e387eee94c7414b210018518979d172",
+  "contracts/README.md": "d87bb06ed1708e21ec2163cb4a5b3616aecad07e77de2e91d9dc50ca5b640f46",
+  "contracts/audit_record_1.0.schema.json": "cc2aebeae9ff0ad54670c2d75e50cd68a6be3eab342c15a8c514d5100989e061",
+  "contracts/build_schemas.py": "97254d8b266ec0f1cab74f25f9a6c5acb87069146f337971672819634102f71f",
+  "contracts/capability_declaration_1.0.schema.json": "5bde1f9ed4814a253c2081c1c59094cca7429c53c103ee96bc5c5b1c72b0a50f",
+  "contracts/decision_explanation_1.0.schema.json": "388e98545b88d19b6b3719cc94099efd07318fdedf4154158755694f013e1f7f",
+  "contracts/fixtures/audit_record.invalid_query_text_when_blocked_T2-D2.json": "6c266f1f532bc1af8cccc23194ab352e22dd67598c1e508fd3cb575f14a3c853",
+  "contracts/fixtures/audit_record.valid_allow.json": "bb5c377a07cf8a41fd2dcbdba224632e66355564a5afffdcacbebfb6c9ffb395",
+  "contracts/fixtures/audit_record.valid_blocked.json": "62ca31856863cdcdb8153a48680e3064ff8cd9bf80687e3c6b7fcae8041abb0d",
+  "contracts/fixtures/build_fixtures.py": "0f26a8de53b050181525387634da3fba0fa907ab15c20e23c7fb2ae307c3eb3e",
+  "contracts/fixtures/capability_declaration.invalid_live_inference_active.json": "60906a03bf8ad8090d0f4856b6115cd41a8c8adee48bc1131e143561a1ae811d",
+  "contracts/fixtures/capability_declaration.valid.json": "0bfd1a18c99b433cb4b0b2c8d3d2cb19229a32c696092835343483d6de981372",
+  "contracts/fixtures/decision_explanation.invalid_numeric_confidence_T2-D3.json": "74b4ecc17b0ca095390ef708ac4bdb75100cfd5006f48a8ebf65128d9c0bbaaa",
+  "contracts/fixtures/decision_explanation.valid.json": "cd56420a2971192fbc99fd7fa9b0ce39ea81316e1d32eff4301b9d7d05491ba7",
+  "contracts/fixtures/retrieval_result.invalid_complete_with_missing_required.json": "3cafbfb286e30cb33c73330ef712eb53896e7c3b0327268d599f8c981ac4116a",
+  "contracts/fixtures/retrieval_result.valid.json": "e465fc1007bc94fac193c35110f067040e6bbd538ca11514127c34de0b85eca9",
+  "contracts/fixtures/scenario.invalid_unknown_scenario.json": "191a4be6ba15020efab6899f723770ef99047d104cd5f4d16fafe75f79a045a9",
+  "contracts/fixtures/scenario.valid_SC-1.json": "9b94834836466fe762746d47aa860eaff5a4a5cf67fc0bc1e4ee21f1362962bb",
+  "contracts/fixtures/scenario.valid_SC-2.json": "09d3f83f1eb6c89745895c107449c45af2fb8884b236b84c5bd3ec3ef6be0535",
+  "contracts/fixtures/scenario.valid_SC-3.json": "ce802916957a3b20f0b695f78f8b956c3156417249457f9d4fc41c9cd51651a5",
+  "contracts/fixtures/source_validity.invalid_review_status_approved.json": "beb67db0d5603f4266d3e01a25d53f917902c957ea3404c6df5699c3edf2ee46",
+  "contracts/fixtures/source_validity.invalid_url_without_status_R-C1.json": "ceae29af71dd6f2b5faa98a5cdcb666292b1462b3dea946a2cc84b35203f7433",
+  "contracts/fixtures/source_validity.valid_conflict.json": "e3ce2d6c99e791aa42482264c5da60bf5ffa253bdbbb9f9d5b7c7fd68de0121c",
+  "contracts/fixtures/source_validity.valid_outdated.json": "97ec95144845b2e781b8d271e6dd10dfebfdac43eac3231cf8a2088773a6d276",
+  "contracts/retrieval_result_1.0.schema.json": "f878a0af5cab43095ed5ef1b587db2f36ea9fa3cd3ea9cf062cf14d32202f3a5",
+  "contracts/scenario_1.0.schema.json": "4f445bea14520ae415bafd6f5c574010202c39db4c736698c3f5db7d8e502883",
+  "contracts/source_validity_1.2.schema.json": "5ebe5f98e5514f37de62cfed608d38ddc2a21921010bca33e143c14b1035b948",
+  "contracts/validate.py": "7263b19ed2dac6aa677ba9ca37c561df2368ce3947174170bcbd66d44717f059",
+  "contracts/ws_a_canonical_b4eb7bb/CONTRACTS_INDEX.json": "237dfe2333044d6299992e1881a255d36a4ece88ec603e8622ff72dc2410b24f",
+  "contracts/ws_a_canonical_b4eb7bb/audit_record_1.0.schema.json": "cc2aebeae9ff0ad54670c2d75e50cd68a6be3eab342c15a8c514d5100989e061",
+  "contracts/ws_a_canonical_b4eb7bb/capability_declaration_1.0.schema.json": "5bde1f9ed4814a253c2081c1c59094cca7429c53c103ee96bc5c5b1c72b0a50f",
+  "contracts/ws_a_canonical_b4eb7bb/decision_explanation_1.0.schema.json": "388e98545b88d19b6b3719cc94099efd07318fdedf4154158755694f013e1f7f",
+  "contracts/ws_a_canonical_b4eb7bb/retrieval_result_1.0.schema.json": "f878a0af5cab43095ed5ef1b587db2f36ea9fa3cd3ea9cf062cf14d32202f3a5",
+  "contracts/ws_a_canonical_b4eb7bb/scenario_1.0.schema.json": "4f445bea14520ae415bafd6f5c574010202c39db4c736698c3f5db7d8e502883",
+  "data/CL_DATA_README.md": "907e6318898b25fbabd70d67726e14c23e6f36735d8259f4ed60d15513bae286",
+  "docs/360/CL_DEMO_SNAPSHOT.lock.json": "9123dcc7850083a2f6bcf0575a3eaeb86f108c6912aae55b46be5e46cb12aaf3",
+  "docs/360/CL_HERBIZ360_POST_SNAPSHOT_CHANGE_REPORT.md": "560068ea3ce7fe8539cc830ec9b89da727e13a0e77b164bd1ae5e038678bf5e2",
+  "docs/360/CL_WSB_FINAL_SIGNOFF_2026-10-17.md": "6eb033f2d1b7441ffa98c2d8c8770a12271de640b205b73be15760df2bced61c",
+  "docs/360/CL_WS_A_360_DEPENDENCY_NOTE.md": "8ea1019eeaca4665dad1db45efd69aa8e9bf3750954e76554fb6a83cde17a9fa",
+  "docs/360/CL_WS_B_TO_A_INTEGRATION_HANDOFF.md": "ed1cc4889bc928eac6c1f852f8dfb96e2535ac939f9e369cef58af6605d8786f",
+  "docs/360/WSB_COMPETITION_TECHNICAL_EVIDENCE.md": "4e477b655495fbba039ab57d248c8eb0c391adc0e061ae0d862379bf27201ab9",
+  "docs/360/demo/CL_OBLIGATIONS_DEMO_EVIDENCE.md": "f9fe0f42d4083e4cf2e23ebb16b4175a3fe0379e9b5a70e6a01c70cf2370b5c4",
+  "docs/360/demo/CL_obligations_demo_blocked.json": "c6fee3bba5001514d8cb839e7025227eb9ea73c78d7ed5e882ed2bbc85051ada",
+  "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json": "ad9b8e77114beba00e6fb2d8bf9947c4fc2f716045d35f9fd1bea1e40752348e",
+  "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json.sha256": "85f2fab1c3da2d99ad160d3c8fbfce9657d82751aef79e36b6abf7562b249b19",
+  "docs/360/demo/wsa/README.md": "417571457e48b03a798385c3cb1781b9b1ab49a8ad9fb584e271dcc3138f2c47",
+  "docs/360/evidence/CL_error_scenarios.json": "d6917f2f088110fbb5cfb88f66b46477def119aa9ef8e6d9c75840b98334e477",
+  "docs/360/evidence/CL_error_scenarios.md": "cfae4bef4185da4f73d231c4037e1702cfb5d5a57b6c00c2bc8004db8f122808",
+  "docs/360/evidence/audit-logs/audit-2026-10-18.jsonl": "d77b8f13571887c2b1f95806aa7ea0fd8818ae356680df5ef374c2c3f34d8c4a",
+  "docs/360/publication/CL_WSB_PRIVACY_AND_SECRETS_SCAN.md": "4d8c6d8d2e2cae45c98c734175f069804d1cd6be65be1c5aad9e82ce679d0af0",
+  "docs/360/screens/CL_360_01_phone_start.jpg": "f2840bd08ef6f16de66f519a32b42711be258460ff292556573e5cce76d7d260",
+  "docs/360/screens/CL_360_02_phone_overview.jpg": "d0bb0e00d59ca43e00314299b06da51fe27f24a0ea9893b1d7ccbca0a53da7b7",
+  "docs/360/screens/CL_360_03_phone_sbr_card_sources.jpg": "06420909e6985bdeff63ad40443bb1c81b8cebcb3048cdf8e6b038bfcd27eca1",
+  "docs/360/screens/CL_360_03b_sbr_sources_copied_on.jpg": "88761888a7b947d224cc868fb2c0219013c10a0eb923b81ddd005b4abf5831bc",
+  "docs/360/screens/CL_360_04_corporate_tax_demo.jpg": "16279246b8e93e7519ed00be8ee92bec348af0f848c064c5dd6f115491d37c0a",
+  "docs/360/screens/CL_360_05_money_records.jpg": "acce199a8667e0af71fbc1d479329553dca932aeb2f365ea244fde4b914be6c8",
+  "docs/360/screens/CL_360_05b_money_records.jpg": "bb328e82cfc8b1bf642e06c4cea309e10d7106909cfdb91b5860e656038c4ed5",
+  "docs/360/screens/CL_360_06_rule_change.jpg": "ef24efc4f6a4ccc5ab2528b1f03dae49885cf38a4035e4775ba8127919d0194b",
+  "docs/360/screens/CL_360_07_flagged_pending_review.jpg": "5cc0c699036db205a92a9c2de12c4e6d1500ce7db3c904e26c95b19ac7bcbe2f",
+  "docs/360/screens/CL_360_08_snapshot_line.jpg": "806fbf2238425d061a16def1f8733a21899099bf139e2b3a1921912b682af7a3",
+  "docs/360/screens/CL_360_09_phone_step2_after_recheck.jpg": "fdd705a695b53dd58ea9c316f9e54273c4ed99d717eddf32f27571cebec3a855",
+  "docs/360/screens/CL_360_10_vat_no_date_refusal.jpg": "c7095ae2410547084e3ef625e868bee9575c62b97132eb2bcdb91da19eadf80a",
+  "docs/360/screens/CL_360_11_form_error.jpg": "3d3b09f7b3959d342967578ffcd0cda5e025ec83aad222c5f981904e6a1d4cfa",
+  "docs/360/screens/CL_360_12_vat_incomplete_warning.jpg": "3281641d4e87d9a53aa8512df499632c3d3727f53fd4d7f3b3e571c04452f996",
+  "docs/360/submission/CL_HERBIZ360_ARCHITECTURE.png": "bbd043c5e4e435e707ae2018267cf0795db032617769c5fe205f2cbca24f4d55",
+  "docs/360/submission/CL_HERBIZ360_ARCHITECTURE.svg": "9d772b16e1314a31c90c12d142fa94895c88cde588d14938cf242830f4ab301b",
+  "docs/360/submission/CL_HERBIZ360_REPORT_EVIDENCE_APPENDIX.md": "5f4ece6a767072955eb436489cb75a71e5e25afe918b1a22e9feeadfbe9dc73f",
+  "docs/CL_ARCHITECTURE_AND_DATA.md": "d355cf0cb6a25f0c0c21df077ff14dd95fb129db8c6cd74735120b9537c40076",
+  "docs/CL_EVALUATION_REPORT.md": "2003228464e7dcc289c0af2a3c8046b9ab48653de516ff5bae399ea6cd5ae61b",
+  "docs/CL_evidence/CL_demo_run_2026-10-16.txt": "46cadbbbb328fa626520ea4f5e5cada00d367070f28939c46e205847eb18958e",
+  "docs/CL_evidence/CL_evaluation_run_final.txt": "1446e49f3f9df557f5dc7419abce2792a09ad2f69f9b305676434232322afbf0",
+  "docs/CL_evidence/CL_kb_status_final.txt": "b29710a8aac6838c389e05634258a69fa9312fff23c7a02406ff224d4e4a64fd",
+  "docs/CL_evidence/CL_llm_eval_v2_report_2026-10-16.json": "1109ec467c34e120a1648e3252b19ffdad820bff2b8747ed2820180b45c54d10",
+  "docs/CL_evidence/CL_retrieval_gate_v2_2026-10-16.txt": "5887519dabf6f9fc16ec8b05ca30e527b7b0d06f1c724ec93c224c24c29b2f02",
+  "docs/CL_evidence/CL_retrieval_v4_gate_unseen_v3.json": "611551692f574237d02195044c29a4444228f79f4fe6f3197f2abde8b8a5046c",
+  "docs/CL_evidence/CL_test_run_2026-10-16.txt": "58f54cb81fc62870421ebf28b1070853a62fa517ec3629336cf3268be715c1e4",
+  "docs/CL_evidence/CL_test_run_final.txt": "10e2c6c970291e21d750f99020d3d376d32e53435f434e72fa4e6cbf5b85d138",
+  "docs/CL_evidence/ws_b/CL_c1_code_freeze.json": "896d878d079caf5a096b60f71767feabf7b1cea40e47cfedc1e3dec3e93b063b",
+  "docs/CL_evidence/ws_b/CL_c1_request_example.json": "3502803f781bb10797113ee883a408fa625b90b37e6a41eb964aad542bf9fa8a",
+  "docs/CL_evidence/ws_b/CL_c1_v7_paid_run.json": "12397dabd12dff3ef729c385de6a1d6e727fbe86f9f159ba4437fe3902eb8c2c",
+  "docs/CL_evidence/ws_b/CL_c1p2_code_freeze.json": "3daa3abfd8444ef1636ee8955bb187829591e4b6eea41824335b6d8ba7f81f9e",
+  "docs/CL_evidence/ws_b/CL_c1p2_dev_summary.txt": "0d0f816601c6309bf5f682c14e69b560f5659716fb3c7fcf9db2a733d00092c9",
+  "docs/CL_evidence/ws_b/CL_c1p2_v9_offline_proxy_eval.json": "ccd4b9f3e7b2f362668e8dbf0b78ce3086f869fe7e848a1a2b8b2f37d0883ff2",
+  "docs/CL_evidence/ws_b/CL_c1p_code_freeze.json": "bad51253e376b9a867a5d0beaeea1ec44839628d012240cfe505702fbf3fde1c",
+  "docs/CL_evidence/ws_b/CL_c1p_on_recorded_v7.json": "274e8036a0e3e54e15992a8709223a4b9d8f4a5478e25ecc97d8095d6d0f3da4",
+  "docs/CL_evidence/ws_b/CL_c1p_paid_freeze.json": "2695f7ec28403456b7c25d0f13541ed48b745eb6d821dfb663a3cc7f5c50f57a",
+  "docs/CL_evidence/ws_b/CL_c1p_v8_offline_proxy_eval.json": "70932a1c02c5a1d38864f976a98870fe1743413ec3abf4365cedd2fb7b8bdf30",
+  "docs/CL_evidence/ws_b/CL_v6_code_freeze.json": "a24d7db9d8ad981969b6509cdfa0ecac8e512a8f5b0a8c5f4750efe39f99a665",
+  "docs/CL_evidence/ws_b/CL_v7_code_freeze.json": "94e602824ff5eba8fb0d35218c2f436d4f8931d16c6035c2eec2f652a5e84065",
+  "docs/CL_evidence/ws_b/CL_v8_proxy_classifier_outputs.json": "883f3c63ce4c955d3ea12ad5529c40f78b9c5f6bcd96cfe062cf0fe4f462ca0a",
+  "docs/CL_evidence/ws_b/CL_v9_proxy_classifier_outputs.json": "72ae5730138a5148b831b46b35bca9b3ca14d3a43c3ce737171ca27f5900589d",
+  "docs/CL_evidence/ws_b/CL_ws_b_baseline_dev.json": "dd8b194da95d25a21bac0cf7399268ed51f5197643a746a080d9be2a59a71192",
+  "docs/CL_evidence/ws_b/CL_ws_b_iter1_dev.json": "1e0a0e7c94a1ee49030f5b54d749ab4f7e1d3205834e2f725a32bbae26801b04",
+  "docs/CL_evidence/ws_b/CL_ws_b_iter2_dev.json": "480cff30e761e4a95aafea447a9a12566de85a7b5efa7b749f784cf3256d9e41",
+  "docs/CL_evidence/ws_b/CL_ws_b_set_v6_baselines.json": "368fcdc95c617511071f4c6cebd36ff302394d7c8fd39c7d35c4de7488f380a8",
+  "docs/CL_evidence/ws_b/CL_ws_b_v4_independent_run.json": "648748e8a5e8a0a68b877ecf36a1b1b3bb9290bda2bd576ed7e5a0961d621113",
+  "docs/CL_evidence/ws_b/CL_ws_b_v5set_baselines.json": "176c1f6ea2d8d31223e82b7ad78a9c4e1b67d393c18e4f05320498aae7dec7fd",
+  "docs/CL_evidence/ws_b/CL_ws_b_v6_dev.json": "e8ab9a508da58152b740440394bb373e5e84e7eb3161f95b112d75c1c6f0c701",
+  "docs/CL_evidence/ws_b/CL_ws_b_v6_v5_independent_run.json": "6813fd85131b0924d7f27fdd81b2eab9efb7ae9fda70a1092c5456a20b71083e",
+  "docs/CL_evidence/ws_b/CL_ws_b_v7_dev.json": "e531f3570bcf548304e4a70c8d90547d8de55ecd2e22eb0d90815d92d6f28384",
+  "docs/CL_evidence/ws_b/CL_ws_b_v7_set_v6_independent_run.json": "77d6142db25807d5d777eaee85e6bb1034d377e37de46fa378ca33738e642e41",
+  "docs/CL_evidence/ws_b/t2/CL_t2_code_freeze.json": "0424b4a7c838fa838c1b3fb09bdf5d821e0cd6bd9006a4e88b4e57e726b2ca00",
+  "docs/CL_evidence/ws_b/t2/CL_t2_v10_RUN_DONE.json": "e8a6cf6e743fe33608006b4327e96a0701300e1c21aad4a66defe7674d89ddc6",
+  "docs/CL_evidence/ws_b/t2/CL_t2_v10_and_dev_metrics.json": "5df1c4a6307394e2d9b426f8a1f81433ba5ffbf179a0f3a80432ab90aadbdf43",
+  "docs/CL_evidence/ws_b/t2/CL_t2_wording_differential_output.txt": "15a7f13296230e48c1039ca4e3f90a9348618cb31833fe7142de839b352be6d4",
+  "docs/CL_evidence/ws_c/360/CL_build_360_sources.py": "03cee84add999f622093c0c50885e2fc75581861755bda9a6915c3168f77315e",
+  "docs/CL_evidence/ws_c/360/CL_capability_audit_raw_2026-10-17.md": "af0e51e886337525b2af01f52b735b85707fcf2b1bd7b7453db65933cb4cdc14",
+  "docs/CL_evidence/ws_c/360/mvp/CL_obligation_labels_real_profile_2026-10-18.json": "0b646c8a91695c9f607e7124fd6e37a93ce346fd236fa98eeff5a2f59b4330e3",
+  "docs/CL_evidence/ws_c/360/mvp/CL_obligation_labels_real_profile_2026-10-18_v0.2.json": "95f1248d1122aad71c5636a89c52a6c095c10ee3fb1450cd4c98323986e229ad",
+  "docs/CL_evidence/ws_c/360/mvp/CL_obligation_labels_synthetic_profile_2026-10-18.json": "d85e06d4c6f59ab9f560b251f7832c5d4a3aabe87356c054b97d559a33af5d05",
+  "docs/CL_evidence/ws_c/360/mvp/CL_obligation_labels_synthetic_profile_2026-10-18_v0.2.json": "05d01b42d6642d21d728b0a7c17512aa6fcf0ef38480a1cf309e1ba0cad1712d",
+  "docs/CL_evidence/ws_c/360/mvp/CL_sbr_amendment_impact_2026-10-17.json": "be28cebf0512fed1a6d19f751ec0eb89a545a7f333bd55e4da7d4c48244e0d27",
+  "docs/CL_evidence/ws_c/CL_compare_ER_v1_to_v2_2026-10-16.json": "213195183b595eb6823c5ef49db90e00e2f7cfbde7a150fd7376b9641a0e1123",
+  "docs/CL_evidence/ws_c/CL_compare_ER_v2_to_v3_2026-10-16.json": "b826f5de656b19e7db6a234374ecbf4fcb1ba936e5dec543dcadc996b57ee30b",
+  "docs/CL_evidence/ws_c/CL_d10_build_diff_2026-10-16.json": "1f49bfbc53721cd9e22c12cbcbbfc0c97dac3bc8d8b128d9fdead4682779b623",
+  "docs/CL_evidence/ws_c/CL_d10_build_inventory_2026-10-16.json": "5f970ac69ffb424515319005dd126b92fb95e6ec8e66697d82798dfe38b277bd",
+  "docs/CL_evidence/ws_c/CL_db_protection_experiments_2026-10-17.json": "e983c789080fa93e38906c0278d986c88cdc6f687ad8de8e65a5e287fc65bddf",
+  "docs/CL_evidence/ws_c/CL_db_protection_experiments_script.py": "95107f399f0d04a948c2d2c95d1e249377c240f3ae8e8e0d8872fad3bf3e094a",
+  "docs/CL_evidence/ws_c/CL_dryrun_2026-10-16.json": "3964df55301b163237f9d9fb9cc76aed26d3ced386ae2ae375462c88cc9f8e6f",
+  "docs/CL_evidence/ws_c/CL_hashes_2026-10-16.json": "7d9182a14c9f0f937af7624b26236d959ca228780a531a794f3a68eed93079d8",
+  "docs/CL_evidence/ws_c/CL_inventory_2026-10-16.json": "a8785d03862a7a74d6f4001254ebf93860e77d01aef7a4b90a4696717101862c",
+  "docs/CL_evidence/ws_c/CL_landscape_2026-10-17.json": "691d48e30ee42a4e543b8a779ed1ccf7a15397aab2a59d86ee480936911be541",
+  "docs/CL_evidence/ws_c/CL_register_validation_2026-10-16.json": "64a1d05de4a93b7d35d3a96402b7de71b68c1abe53c3de91dc86953cac5b1e01",
+  "docs/CL_evidence/ws_c/CL_research_sources_2026-10-16.json": "fb972a78c7567be6b3511fe66df7cbfad4222d4fd806724dcc334e66b6ea704e",
+  "docs/CL_evidence/ws_c/firecrawl/CL_change_impact_demo_2026-10-17.json": "8c1c96851b5322a525e2ccc7439e58ca3c2f4db88323e519115569bfd8ec95dc",
+  "docs/CL_evidence/ws_c/firecrawl/CL_dl8_portal_vs_kb_2026-10-17.json": "d082cc5c577c4f0e587cd642cf87898daef5b2bf2c83dac8f962b64ac972133f",
+  "docs/CL_evidence/ws_c/integration/CL_bc_whatif_harness.py": "2aae13c0e9ca4574ea8869f8b670ebbd26d801d31c2a00ff40715b8939cbd4e0",
+  "docs/CL_evidence/ws_c/integration/CL_bc_whatif_results_2026-10-17.json": "8c70f61bcd5be3902a857f45eba8177a1b8e9428723680ac740a0a00e095939c",
+  "docs/CL_evidence/ws_c/qa/CL_QA2_lifecycle_contract_protection.md": "41981c288c33b0de4ff36b7c30078cf7312496b3a52948d1f59ce7ed4a8b161c",
+  "docs/CL_evidence/ws_c/qa/CL_QA2_mutation_harness.py": "dd2b7f3ab24706e6aa9906864493a7f2cd4dc5af96328f71b16d957712200b45",
+  "docs/CL_evidence/ws_c/qa/CL_QA_architecture_interface.md": "87b81ab53b3cf6e05df2ab15061ce842edef1f2383bf2d8b5eec0d1218b95778",
+  "docs/CL_evidence/ws_c/qa/CL_QA_coverage_amendments.md": "98731c39d8b73adadc38d1122b41a7864dd3bdda1188f4c4a3f76bb3c69315b3",
+  "docs/CL_evidence/ws_c/qa/CL_QA_extraction_arabic.md": "5965463e8dc05c0e0ab9b0ac7127dea83adb7404b8184a2588ca585ab98c49c6",
+  "docs/CL_evidence/ws_c/qa/CL_QA_monitoring.md": "7ab7089c302b37e275f7a0b7a4b4957ee70fdd245c9de2f58ceb4f557c21bc84",
+  "docs/rag/360/CL_HERBIZ_360_01_CAPABILITY_AUDIT_AND_GAP.md": "ff682f13dc17c8729a8052fe221eedf954e2bd1515c739c7409416befda56433",
+  "docs/rag/360/CL_HERBIZ_360_02_PRODUCT_SCOPE.md": "76c67fd1f763917fed7eed8564515ba5d63ca1cf5b4eee7169d8f6b43d4f8177",
+  "docs/rag/360/CL_HERBIZ_360_03_OBLIGATIONS_AND_SOURCES.md": "4c1424c45e7f7536b6f73cfba10b568da64de6d81ba6185ae393bdbfa53ba549",
+  "docs/rag/360/CL_HERBIZ_360_05_ARCHITECTURE.md": "74eea2974c08095f1438161e30267dc8d3c6b3884e5fb7fb6cc00e0471c54d9d",
+  "docs/rag/360/CL_HERBIZ_360_07_REVIEW_AND_MONITORING.md": "4ee154884ad5454f63a966cd99c821edccce7021a24c8d7aafe9066067bffe9a",
+  "docs/rag/360/CL_HERBIZ_360_MVP_READINESS_PACK.md": "688fdf0765517536c2d46f4b4c493a34024191454997c874e48cdff02d8199ad",
+  "docs/rag/360/CL_WS_C_TO_AB_360_INTERFACE.md": "86df3ded0ee47cd0d2db70b7986204951d4cde28cdf333f78718616e6e2add96",
+  "docs/rag/360/CL_WS_C_TO_A_360_HANDOFF.md": "f24a850fb9d524ff70b3d09ad25717545c8b36a8f9170501e82fcc0c84f5d45b",
+  "docs/rag/CL_D10_ARTICLE1_FIX_REPORT.md": "bf5379a75c40c61f65e37621fde3453e1a51505ebf5c73d482154383de56cc86",
+  "docs/rag/CL_HERBIZ_AMENDMENT_LIFECYCLE_TEST.md": "ed63fb93d1005446bdc72727605f174fd8d2df7dd96b234d337aea85341b963d",
+  "docs/rag/CL_HERBIZ_BC_INTEGRATION_TEST.md": "6c038adde214aa30077b0d43e9d74a6417bacfb1f2e6dcac6be74e2bf185b15a",
+  "docs/rag/CL_HERBIZ_DB_PROTECTION_DESIGN.md": "0cfb7a244c3f07bb0ff7efca12b245b96ced8fc963f8f5d6794db5b49cbf83ae",
+  "docs/rag/CL_HERBIZ_OFFICIAL_SOURCE_REGISTER.md": "15c56ccf7f4f1cfac93efea8372543f81c60ce5ccfcaef5d1fd4b65153009bc3",
+  "docs/rag/CL_HERBIZ_RAG_ARCHITECTURE.md": "42f79e68f5a8f5204ba62facfebbca0fcdf1409818c5101dc55997996049ad0e",
+  "docs/rag/CL_HERBIZ_RAG_INTEGRATION_HANDOFF.md": "87be07f1b56fd98298686f4f084c8af2fba56ae831313487772e7eaf62446ce8",
+  "docs/rag/CL_HERBIZ_SOURCE_DISCOVERY_REPORT.md": "1d1f757684294fabc410ddb514898ce5819452f14a6c44bb3daf7bda36762cce",
+  "docs/rag/CL_HERBIZ_SOURCE_MONITORING_DESIGN.md": "34938b66cea2705c67292077577b600f8f625cda5407c5900cbfe0a87d5deaf1",
+  "docs/rag/CL_HERBIZ_SOURCE_OPERATING_MODEL.md": "71946461014a74329f18b51abfd0c963eda6a99e24237a040f5afc531e8d6a22",
+  "docs/rag/CL_HERBIZ_SOURCE_VALIDITY_CONTRACT_v1.1.md": "eb37b914a12aa459013fc817cba176fc7dc77e52f26a5325ed8a5921ee81df6b",
+  "docs/rag/CL_HERBIZ_SOURCE_VALIDITY_MATRIX.md": "3d21dc2e99ab9b09c9cd687b82dae2f9c65c56df8303502b7affefe435d2e758",
+  "docs/rag/CL_HERBIZ_WS_C_INTEGRATION_READINESS_REPORT.md": "6c7000624a0dab87c4a37eaa8e4a6ee33004594be513b5f59f02b069e6d0c224",
+  "docs/rag/CL_RAG_ARCHITECTURE_WS_C.md": "9c0f6fde7c1e4f9ec278ad468b1e7f6b24eed36314d53276c3ef17b3641ba841",
+  "docs/rag/CL_SOURCE_VALIDITY_ADDENDUM_v1.2_2026-10-17.md": "5615a1eb31253665bdc5753fc54498436fdc585b00339a1561700868cf111111",
+  "docs/rag/CL_SOURCE_VALIDITY_G1_ADDENDUM_v1.1_2026-10-16.md": "1ed9904e968cdd8cf7cbd3defa5f7eca19c6fe36e1dfe194ab1dedeedbcc3900",
+  "docs/rag/CL_SOURCE_VALIDITY_G1_G3_2026-10-16.md": "aa2a13e9706c4e2f5baf2d74273058b1488d211f184c5ad9e1d99959a17263ec",
+  "docs/rag/templates/CL_firecrawl_monitor_session_prompt.md": "f5b98d8d52db1f96e7796215af8b896f4655f8e7ce529ea18e9ba19302891693",
+  "docs/rag/templates/CL_firecrawl_trial_plan.json": "3ab1967179fd62715d16fff92048b95abc9ea9038490715c934b592fe958c044",
+  "docs/rag/templates/CL_launchd_source_monitor.plist.template": "f3f4533c8ea316a12a9e67e01c67b17b890cd22641c75b6bd50c6f901cb60896",
+  "experiments/llm/CL_llm_experiment.json": "1df384dca488079ede0287635c2c0f13cce2fdce7cef17f0f619087221061d31",
+  "experiments/ws_a/CL_build_architecture.py": "18024b8796bdb58ea2d11efc4cb6ecede93fb2ffaeea0a3ea29e17a97067212d",
+  "experiments/ws_a/CL_build_audit_samples.py": "66c1497f01e8fc7ed5058f37747db82d931af4f963e3f6bf3b2b7690dd57a4fc",
+  "experiments/ws_a/CL_build_capabilities.py": "cdccb664c89304189e4f786decb8953d58948059883a1ce57f6611e7d1e1084e",
+  "experiments/ws_a/CL_build_submission_export.py": "1f7d7803c36b8fd273a62fccc2e8f9778600a692c5cec42a8482fc6db2ce22e1",
+  "experiments/ws_a/CL_build_synthetic_vat_fixture.py": "a388fcadd47bf7850351464f5105e31004be023e97e6c278e00aa2b6a0d2de7f",
+  "experiments/ws_a/CL_build_tech_report.py": "18c12a40509aefae9cd3491e654cb4bffbfe08620362638252965738013ef640",
+  "experiments/ws_a/CL_build_test_manifests.py": "8792ae1fc28aef497b75cd36147d6c561a6b9512b18ea134399f169907df8f13",
+  "experiments/ws_a/CL_error_scenarios.py": "4a11db423377cacb2ab8062787b9616beb68bb491b6e23785e9ac5b2b1132373",
+  "experiments/ws_a/CL_export_recorded_answers.py": "521255600b27d2e07864932f00b15e29d7a838b2f0918b26c3289558159d6bdb",
+  "experiments/ws_a/CL_run_export_tests.py": "a6a180dcbc348c5074272c1e9212e0c99c0bb54bf404b15165904f11de360f85",
+  "experiments/ws_b/CL_amendment_impact.py": "1d66184be8bb4338740744bd9bfd10135ae1620a72c54fac5ce268130b25bf87",
+  "experiments/ws_b/CL_build_d3_review_pack.py": "a76515e3c3d0315b872873ea7583a97fa73c3172dd9881252541a1a7eb541728",
+  "experiments/ws_b/CL_build_v6_tables.py": "2cb59c47a11f8c36c71b84f47d5ecf72f0cd4940fe2a90a0204270dab072d4ff",
+  "experiments/ws_b/CL_build_v7_tables.py": "45a30b53b70dd3760f784a505b4a14467419375336e017e966ea4046851cb7c2",
+  "experiments/ws_b/CL_build_wsa_demo_fixture.py": "428508b975d30ed3f47cce756d217943ba8f89123e3491e9d7f1ea180263cbd0",
+  "experiments/ws_b/CL_c1_authorisation.json": "9ca4be66dd8abdb4169bb658446e66a8a1cf6a084a34e8bc6101808464643b8d",
+  "experiments/ws_b/CL_c1p2_authorisation.json": "d8d929066d5331321bebdc3ebf2023ff87b276a96972880fa3a55046681a1978",
+  "experiments/ws_b/CL_c1p_authorisation.json": "6b4a9c58a97b63dfdd8f6ce1a46f395077983d67a72940973dd79ac23db37da9",
+  "experiments/ws_b/CL_obligations_demo_evidence.py": "0ce4f3811629d7d9a7f283fbbf965e9b8ac61a205dcad272fa12b49339492c65",
+  "experiments/ws_b/CL_t2_build_scenarios.py": "d2a5b57c87b938d7f9303aab1d26b87c27912cf0ed0d319926054c85943f7cbb",
+  "experiments/ws_b/CL_t2_eval.py": "5f64cdb84b98857ef868c4e302064ab3bce384aefc30b953361cc5ec8c1e1559",
+  "experiments/ws_b/CL_t2_write_freeze.py": "cde26ac08473a108822fd47aaaf217ba6b01268ac375b71aec9bd37fdc3308ac",
+  "experiments/ws_b/CL_ws_b_c1_run.py": "2df328c3f49dc214a6b30128f3dbb9ebd1f068c8289bbfa730165e5cc0e85003",
+  "experiments/ws_b/CL_ws_b_c1p2_offline_eval.py": "c9ef420dc59725912d9fa5a4a719379b7bbf8fe8c29f5d3eccaf0ae16c91e123",
+  "experiments/ws_b/CL_ws_b_c1p2_paid_run.py": "dfed92af9a56928abb573ccd80d60451ab82e4b780ddbf122679b27365b3f402",
+  "experiments/ws_b/CL_ws_b_c1p_offline_eval.py": "af515612678466e8d0e7afb05c9b8e81e8367b2308fc1469674426290f5a0f7e",
+  "experiments/ws_b/CL_ws_b_c1p_paid_run.py": "cf5b20114bc7e19228b55bf3e896a92b68f653b6d265c4e427d5d86c2b11667c",
+  "experiments/ws_b/CL_ws_b_eval.py": "45214d04ca72ceed230242c2bb472cae4e5ce615168f13cd528f75dd294386bc",
+  "experiments/ws_b/CL_ws_b_eval_v6.py": "9af4affad96dab68f387f8b0ccee0e2908e3faff1937920f392dbfedc8dcef74",
+  "experiments/ws_b/CL_ws_b_eval_v7.py": "49806993ab2b7a0da5d75e23bcb0bd93192145a0b366dd77ff97ea7c39535740",
+  "experiments/ws_b/CL_ws_b_v4_once.py": "909c2ae1c8f42212dd63960f185f886d99103315832620636e67189e5ea3a1b8",
+  "fixtures/CL_eval_scenarios.json": "cd4260c8a61d61e7bf6526e628916744f74af30eb1265d0332e15d2f5241f6b7",
+  "fixtures/CL_llm_eval_questions.json": "d0764bd8bb3b62eb963a4d2641789fb6b03ca8fa00fbbc73364ebd8a15b6f1f0",
+  "fixtures/CL_llm_eval_unseen_v1.FROZEN.json": "d91b16543cde4fe991a852d7cf0e7c2910624f7a2697918da71be94f4a4f6c68",
+  "fixtures/CL_llm_eval_unseen_v1.json": "45ad5ad07d5f9c160607045f926fdea3f53d020267aed5b36a50aaf57187f430",
+  "fixtures/CL_llm_eval_unseen_v10.FROZEN.json": "c6b26edaf3242144ce52496ccb6e2ac1bedd995c6733258c466fc98787048d0b",
+  "fixtures/CL_llm_eval_unseen_v10.json": "89d4156b59d479955206783a7fe4622a1a8b398e31f26aacb5b5e1a6e7383571",
+  "fixtures/CL_llm_eval_unseen_v2.FROZEN.json": "a57dde70f1068f7dc92f84c7ef28b565d227d3b5ddf646a67b52888fdf39c5ad",
+  "fixtures/CL_llm_eval_unseen_v2.json": "6f47c3ef69d48b533f74623c290028e15ea6cca96a162b36d549bd37cd20638a",
+  "fixtures/CL_llm_eval_unseen_v3.FROZEN.json": "0d706d46eb14f95d90d9238a5ec854f0ff5e044d33046ae1849ff170204b057f",
+  "fixtures/CL_llm_eval_unseen_v3.json": "844b53987441847236ca232417dc2aaabf652d5720817883c6a90b7708f3ed68",
+  "fixtures/CL_llm_eval_unseen_v4.FROZEN.json": "6673163c9e74eb41a7d33cfb3c786243eaf9cd44a323faff0eabc883fcd51d8c",
+  "fixtures/CL_llm_eval_unseen_v4.json": "d2d22ae618738d061b1204394c967f365b35cf53d11be1b467d3bf3f2cc83206",
+  "fixtures/CL_llm_eval_unseen_v5.FROZEN.json": "78c754c95ae583ee9ac9a938b3492344a65d8f711727cd39642a04d4f7e31d55",
+  "fixtures/CL_llm_eval_unseen_v5.json": "946f0284493d81e0d4bc7b1374d0b881de8859a3e18d7d16dd887255bfef4172",
+  "fixtures/CL_llm_eval_unseen_v6.FROZEN.json": "e5c8d037d68f0b8fd6abc69437729c80764d3e56bf568d9ee0b474760280c33f",
+  "fixtures/CL_llm_eval_unseen_v6.json": "783be0346cda3f3b8c83f75a906e803c1e76e8d4a9b4fe41f66bd70a712a9add",
+  "fixtures/CL_llm_eval_unseen_v7.FROZEN.json": "9a4d04f3b50b11058a38ba619a03715acde2534194b864b53881570e0a8d82ab",
+  "fixtures/CL_llm_eval_unseen_v7.json": "35c4d7f96dbf49804efbb585ebfa7db9591a9077d3fee94a761f84c685a5be12",
+  "fixtures/CL_llm_eval_unseen_v8.FROZEN.json": "f8975778c556adfa345dfaaf44796b6f410545bd8962a10cbc246ba909c9ca71",
+  "fixtures/CL_llm_eval_unseen_v8.json": "26bba8876db1f614f3e52011c81f3146c7eeb65cb71f321cc73963a80ecc660b",
+  "fixtures/CL_llm_eval_unseen_v8_label_review.FROZEN.json": "eb5fbc76d6cd0f645e1f7e4d5bf7ca0ae37f79922cf95c53a547bd07c39b4ac4",
+  "fixtures/CL_llm_eval_unseen_v8_label_review.json": "d7cbf054d74a742c8d11f007e50b44a9e0aac7a2496f7476c1936a71c2b8608f",
+  "fixtures/CL_llm_eval_unseen_v9.FROZEN.json": "3f0cf3e9b3c4e68cb7b679a2663a8e37927018944fdaa4125f548fe90147b583",
+  "fixtures/CL_llm_eval_unseen_v9.json": "56649995ecea801d8728c9aab865b3b633d07dff2e98325bd04dc47913443880",
+  "fixtures/CL_llm_eval_unseen_v9_label_review.FROZEN.json": "56d9af82f3d0269996adcc8236019e4edb1622336a7e38df2ecaf58ee421208b",
+  "fixtures/CL_llm_eval_unseen_v9_label_review.json": "b29f1ccb0e16631c85fd1d6cfe827e3401f4945a5d3647c6646787831e594f7c",
+  "fixtures/CL_profiles.json": "73c709a0a5db5ee50d8745cd3c2742f982593d2709d334a6b3823ef66c5cb18c",
+  "fixtures/CL_sources.json": "a6d6fcfe1f50b826342d4447c958f22bf3f41ca95dcc2da9b294e6e18bd06f35",
+  "fixtures/mvp360/CL_mvp360_demo_content.json": "28bb152cbba4243a1a5a0bdf2ade03c07f630a7577bb87b06bf52b041b2ea6c8",
+  "fixtures/obligations/CL_ct_demo_personas_wsc.json": "4b4f8864579d7719aff4e1840a46ff830443440e751763e30523c33673a28984",
+  "fixtures/obligations/CL_synthetic_profiles_360.json": "77ca9e8e1392973a9d425d4d868a9459e17690fc289059b25433e01836aa999e",
+  "fixtures/t2/CL_SC-1_decision.json": "6b4ac7ab825d7d73bd6423c3627771d955a0290416d3352ff510b3d6680cd64e",
+  "fixtures/t2/CL_SC-2_decision.json": "c046d84d4aba96f9f1274ee6b26cc2d73332ef1619a73c5a61dc902d146890c2",
+  "fixtures/t2/CL_SC2_source_side.json": "7a7d02d93fa4817a9ae0c3fd8b2518cba5852b3a86a272ab98770d0f64d3bd0c",
+  "fixtures/t2/CL_SC3_source_side.json": "f70933f8b8a98adb173d6b0d6a4d7026485dbc23387d81873a8b6e750be9b9e0",
+  "kb_export/CL_HERBIZ_KB_MANIFEST.json": "c6d59d88a29305fc0493935e6243de883f75e3ef4848dc7f6acfafa3d111706c",
+  "kb_export/README.md": "cb8b07da43e92566dcfe84fdf67fec6272296220470eb26ef69cfaeb32c5361f",
+  "knowledge_base/CL_360_obligation_sources.json": "863795ee7a891f8328594547bcb042fb1568006a21e52013caaec149b3f82a95",
+  "knowledge_base/CL_360_source_candidates.json": "bc21dfd08393e557a3aa7a7f60b836ef7d132cd534538291eaa5c435e0e04f55",
+  "knowledge_base/CL_article_headings.json": "99f3de8a53d9af289d053769472ece246778a4b1a84173cba21c7d540099ecb7",
+  "knowledge_base/CL_collected_lock.json": "2ebb8c251694c29c27dcb64d722bb38777c8051c9c7c8b421f50d141c6f0be4d",
+  "knowledge_base/CL_draft_interpretations.json": "ce1555fd37cd60ebaf9b78452d7ee7609d3afa99ed5594ec57e4fe8a39d4a3bd",
+  "knowledge_base/CL_source_manifest.json": "02acbe976f00d37c491ce22d1c76478153fd8036f9f439509ed52b867c9adacf",
+  "knowledge_base/CL_source_register.json": "d2723ce836b6b5a8780a80eba317a6a60d57bbc8f798860845202f5270596a02",
+  "knowledge_base/CL_source_validity.json": "81fd107d37999776d8f65f9ecd9fc70430d2218bcf19c58a91cb03790b75bb05",
+  "knowledge_base/policy/CL_ai_governance_references.json": "9b3a381ef73e70363bf2f13e9ae620aa82e5383f9c1e5f580b023fb267b9e6e4",
+  "knowledge_base/policy/CL_policy_kb.json": "d3da659cae8d0f8eb1fd7ab19ad78935328f3c4c6785aba9c60c3a4232835691",
+  "knowledge_base/t2/CL_link_status.json": "ac055cfcbed92fb49e47d5939b8fd0287296ecb302ca580e3e4b2584f43933f9",
+  "knowledge_base/t2/CL_source_validity_1.2.json": "68e5e85021e2657d8047835c43027bf9359418f8e2a779c5c3a28636316992e3",
+  "requirements-optional.txt": "917d8de046e87b7a09440c3dd0dc28316e8bfcb13ee4ce202ee3dbcd0b76bec5",
+  "tests/MANIFEST_INTERNAL.json": "fa605425acfb03e5af319b5d07b14c0e8c65896dcec48b839681aa89e12116c4",
+  "tests/MANIFEST_PUBLIC.json": "d3aafaaa897ae9ff29d7b0efbd9dba681ae1f63af7653929bc114e781eff440f",
+  "tests/fixtures/CL_synthetic_vat_answers.json": "dddaf382d74056496cd2866b7ed994f52db8c2fbbec20271fa735016a9e711aa",
+  "tests/test_a4_integration.py": "ea752e81bac6044fe9d6f030d7ad2de47547588281d9398fad06fb2face028c9",
+  "tests/test_audit_log.py": "b6f2b6ad7c5bb320c3078da0988858613fe538ef1a2a7a27150fe625f4c19c3a",
+  "tests/test_audit_samples.py": "0e445b4586cb3f89ccd6003b2861a16b4b7ea1ea31083a660079b04c12a4a267",
+  "tests/test_c1.py": "a5b3966ddb10d93355d17387379d17e789f4cd2ca76156c8d9cd35e9edfa5c77",
+  "tests/test_c1p.py": "75bbd164bd132bc55e7dcd1d9ca06c5736e3e2859c2ed9eb06f1535226e4a28d",
+  "tests/test_c1p2.py": "9b6a8629c4ced5a52de24b77401c8c9f21d42cbab4f85fd90b070b844f89f719",
+  "tests/test_capabilities.py": "ef623dcd7241918d1882e812729634d5094ff40843f56bea22f1a798a7c08c02",
+  "tests/test_compliance_agent.py": "b725888585b1f469976c6f13da5c16bfc65543246e33973c00c11dced84866c8",
+  "tests/test_contracts.py": "1349c3ea24dbeb12133a587ea796f4e0ab41030d427533d46347711f56329fb6",
+  "tests/test_cx_demo.py": "d0d21a72e1b7412deb153d5a7621bc332e963b6afd57608b185745aaece61c15",
+  "tests/test_db_safety.py": "0933359247bf452e4a2c982240cc5e68b6dfc981c5121cc06b5d134802ced081",
+  "tests/test_knowledge_base.py": "e0cf241850a2761ea6cc6936955e9e0ad37bb6ac0907f887f5acf53eb88fce78",
+  "tests/test_llm_lab.py": "3c660aba2f6a2c1f01e9e12e3c50abd77ceaf51c37efb3151ba3124486a20cc9",
+  "tests/test_manifests.py": "130cc3f8c90a4c5c4427dce40ab9084e5a533f17e8a2cd953e190aca7f856a75",
+  "tests/test_mvp360.py": "49a636cf2d456b1a5774499d7405d94ee008e4a753f021b2f47109e82857c87c",
+  "tests/test_obligations.py": "1737c69e91836fd9852bd6b95153410c395dcf94154198493d0f8c3770d93966",
+  "tests/test_privacy_gate_app.py": "6de4d12e86c57905d3d9c5221370319ed0892f21c915b22d9ca86b334cd88126",
+  "tests/test_recorded_validity.py": "f6a337676d48478902aef5024d0bf287f5b78c4412b25de0ed882eaf5ca5f13d",
+  "tests/test_retrieval_v5.py": "84ce28ce5eb37cf4d0ff833fa42125bcd73a011cfb6df73647d8011ddc319d80",
+  "tests/test_retrieval_v6.py": "97ecbdb1348ffd76e1dddba24dfd874dde922e7d5445e2f0db5b4984671eef0e",
+  "tests/test_retrieval_v7.py": "2886548aaf392ed298f779a2a6dab448a89e3c0713a8080b9405b4fac47bcf10",
+  "tests/test_scenarios.py": "d0cef22f04c298b38e2f0c4f3445c5c0b2b7cc4d9b8bdb8396c6f5f5a4dd6db3",
+  "tests/test_signoff_endpoint.py": "042edb3f68ed7ac3b9152cecd63d876148dce6c41a622cebc7d38376e617ff42",
+  "tests/test_synthetic_vat_warning.py": "8e7927d1838438ec0a4c04e2b27b3f669a77eaf97b4704fbd140a63fca76fc26",
+  "tests/test_t2_contract_copy.py": "ece6430adc22771ef167ad899b12d65ad910565ae5b2269f8177a415a519662d",
+  "tests/test_t2_payloads.py": "fbf0fb5fd3435ed6636605ab1c77e8c4cf1fd62b0e992aa3220abd8eb40429e1",
+  "tests/test_t2_scenarios.py": "11916cd4616731c2d1b1510470d247a6641c0e56fd296bf37eb8b2c4c43fa5a0",
+  "tests/test_t2_v10_freeze.py": "9843cf49563e6b66da4169745773e8a45393d5b8b1e8d965187cba1b2d6ca838",
+  "tests/test_t2_wording_differential.py": "42408ca2485d672fe5fa30081f9bdcf6a697b5dbe8dd8699eb2be1c760391d49",
+  "tests/test_ws_c_amendment_lifecycle.py": "fc4462c90cc4e3c51c5109801bc5cb73cbdc3740f367b6897ccf42a58b421e21",
+  "tests/test_ws_c_change_impact.py": "f73c4192d236e5cf0334cc78e8f3676a274c616ae6e28f91de8dfd4e41fe17b8",
+  "tests/test_ws_c_d10_article1.py": "4797822358be43908de45ec4f45db62a553eba9d01b3891990a0c566a6f2376d",
+  "tests/test_ws_c_db_safety.py": "3f9c257d24c937d471ca58fb621b48497efdba1f472e899ae776483e563a10e6",
+  "tests/test_ws_c_firecrawl_trial.py": "8b2705035f3c3492193cec8781767141a4e74c6129ae404eac601095b30a2e38",
+  "tests/test_ws_c_monitor_reliability.py": "2df90f5ed0a1e609bad2fe4bbed84a5f1b4bdce55e8ca47b65b002e9cbd0991b",
+  "tests/test_ws_c_monitoring.py": "11e7a4609bf8c0f45cc247971283a296095fe4706bc1ff3b17409fe711131271",
+  "tests/test_ws_c_policy_gate.py": "1b7555538389053c69f28d252d209e345b221281b86e37e063cb87b2139db575",
+  "tests/test_ws_c_protection.py": "7f2d71175b3b06fce386a2650bb7392abfa7ddebf8e9c7ba0609e180449804bf",
+  "tests/test_ws_c_qa_fixes.py": "2139b20215ab122e88d7b9f36fdfafc2ffe0a1481928552668de641aa7d74eb3",
+  "tests/test_ws_c_rag_tools.py": "3d0d56435482da85f6159353ff39245fddabb4f78f550ba4aeee2a4bee0ba92e",
+  "tests/test_ws_c_source_intel.py": "d6970e18833817be026e38f4690c281e2159d54365ffc82facd19e5d529e3491",
+  "tests/test_ws_c_sources360.py": "38ae79a4fac744761acae4525038678649190f5d3e4b2b434e1a4a7f4acdea0f",
+  "tests/test_ws_c_t2_delivery.py": "261c1b9a5eda64926723814d3f4b72981ec12a16cf68abe784f76799782a1b4f",
+  "tests/test_ws_c_trial_parsers.py": "167fa7a65c1d49d842a73c95f7d1384a78cd59ed7da7d6154f4c09d60d730902"
+ },
+ "local_paths_replaced": [
+  {
+   "path": "docs/360/demo/CL_obligations_demo_blocked.json",
+   "local_paths_replaced": 6,
+   "committed_sha256": "17847bd723baec0665a9826eec0a6cbfa71b1807afa7ceff43dffed6c6c84e30"
+  },
+  {
+   "path": "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json",
+   "local_paths_replaced": 8,
+   "committed_sha256": "d5e34672425e75aeca30af625e2cf7c147269edcc1e682b6f2fc3939d77517c3",
+   "note": "WS B scrub rule; identical to vendor360 copy"
+  },
+  {
+   "path": "docs/360/publication/CL_WSB_PRIVACY_AND_SECRETS_SCAN.md",
+   "local_paths_replaced": 2,
+   "committed_sha256": "cf2ad29f229138a58d43ec09ec3988c05312c28a5274985a587a5e7ebab0242d"
+  },
+  {
+   "path": "docs/CL_evidence/ws_b/CL_c1p2_v9_offline_proxy_eval.json",
+   "local_paths_replaced": 1,
+   "committed_sha256": "478158f394472dfd8616562326268911f7af53f67cc24de7aaa03db08e5fac09"
+  },
+  {
+   "path": "docs/CL_evidence/ws_b/CL_c1p_v8_offline_proxy_eval.json",
+   "local_paths_replaced": 1,
+   "committed_sha256": "b0ed38f9b23563e8a4e04eea0a6cb53ccab14019c93d893946bfc07195d1d964"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/CL_capability_audit_raw_2026-10-17.md",
+   "local_paths_replaced": 1,
+   "committed_sha256": "1a6a36f05dc05b83fa8fd6bbdcdcb525b30e6fc8bebb2aa7a8983e909987feba"
+  },
+  {
+   "path": "tests/test_ws_c_t2_delivery.py",
+   "local_paths_replaced": 1,
+   "committed_sha256": "a8bc07a78f081aa9e7ddb7f930a273560646600912ee37b4b24eb4d72773c47f"
+  },
+  {
+   "path": "capabilities.json",
+   "local_paths_replaced": 0,
+   "committed_sha256": "42f60a345a54e512731e314b62bea813941fe08553a858dc6698707baac1a34a",
+   "note": "build.integration_commit set to the exported commit"
+  },
+  {
+   "path": "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json.sha256",
+   "local_paths_replaced": 0,
+   "committed_sha256": "14b54190dcbe49abd1b72ffc5a8f3a59a1b4592ad6e6ff7dc2b986f56eb2608e",
+   "note": "rewritten to the checksum of the scrubbed fixture"
+  }
+ ],
+ "excluded_from_export": [
+  {
+   "path": "B_T2_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_OVERNIGHT_WS_A_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_OVERNIGHT_WS_B_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_OVERNIGHT_WS_C_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_A_TO_C_RAG_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_360_BUILD_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_C1P2_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_C1P_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_C1_APPROVAL_REQUEST.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_C1_EVALUATION_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_FINAL_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_V6_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_B_V7_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CL_WS_C_TO_B_SOURCE_VALIDITY_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "CONTINUE_HERE.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "MORNING_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "RAG_SESSION_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "README.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "compliance_agent/llm_lab/data/CL_article_index_v6.json",
+   "reason": "HELD: contains the opening text of official articles (reuse terms unconfirmed); regenerate with experiments/ws_b/CL_build_v6_tables.py after rebuilding the knowledge base"
+  },
+  {
+   "path": "docs/360/CL_HERBIZ360_DEMO_SCRIPTS.md",
+   "reason": "superseded internal script"
+  },
+  {
+   "path": "docs/360/CL_HERBIZ360_INTEGRATION_REPORT.md",
+   "reason": "internal integration report (advisory-board passes, decision references)"
+  },
+  {
+   "path": "docs/360/CL_HERBIZ360_READINESS_DASHBOARD.md",
+   "reason": "internal planning: readiness dashboard"
+  },
+  {
+   "path": "docs/360/CL_RC3_CHANGE_LIST_PROPOSAL.md",
+   "reason": "internal planning: rc3 change list"
+  },
+  {
+   "path": "docs/360/CL_WSB_360_RECONCILIATION_AND_PLAN_ADDENDUM.md",
+   "reason": "internal plan (capacity, board dissent)"
+  },
+  {
+   "path": "docs/360/export/CL_EXPORT_README.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_CANDIDATE_EXPORT_REPORT_2026-10-18.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_CLEAN_CLONE_VERIFICATION_REPORT.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_COMPETITION_BACKLOG.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_DEPENDENCY_AND_SOURCE_MANIFEST.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_NOV6_RUNBOOK.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_PRIVACY_GATE_EVIDENCE.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_PUBLICATION_READINESS_REPORT.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_RELEASE_EVIDENCE_2026-10-18.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_SKIP_CLASSIFICATION.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_SYNTHETIC_VAT_WARNING_PROPOSAL.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_HERBIZ360_UX_AUDIT_FINDINGS_REGISTER.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_REGRESSION_CONFIG_PREVIOUS_2026-10-17.md",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_nov6_release_check.sh",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_publication_scan.py",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_publication_scan_result_2026-10-17.json",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_publication_scan_result_candidate_2026-10-18.json",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_t2_rc_regression.sh",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/export/CL_t2_release_check.sh",
+   "reason": "export README (copied to README.md) and internal export reports"
+  },
+  {
+   "path": "docs/360/submission/CL_HERBIZ360_FOUNDER_WALKTHROUGH.md",
+   "reason": "internal usability kit"
+  },
+  {
+   "path": "docs/360/submission/CL_HERBIZ360_PITCH_VIDEO_STORYBOARD.md",
+   "reason": "internal pitch script"
+  },
+  {
+   "path": "docs/360/submission/CL_HERBIZ360_SUBMISSION_PACKAGE.md",
+   "reason": "internal submission checklist (founder tasks)"
+  },
+  {
+   "path": "docs/360/submission/CL_HERBIZ360_TECHNICAL_REPORT.docx",
+   "reason": "draft report; the final report is submitted separately"
+  },
+  {
+   "path": "docs/360/submission/CL_HERBIZ360_TECHNICAL_REPORT.md",
+   "reason": "draft report; the final report is submitted separately"
+  },
+  {
+   "path": "docs/360/submission/CL_HERBIZ360_TECHNICAL_REPORT.pdf",
+   "reason": "draft report; the final report is submitted separately"
+  },
+  {
+   "path": "docs/CL_ADVISORY_REVIEW.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_BOS_CAPABILITY_AUDIT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_BOS_INTEGRATION_GAP.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_CLAIM_AND_SOURCE_REGISTER.csv",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_DISCOVERY_BRIEF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_DRAFT_CORRECTIONS_MEMO.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_INTERVIEW_AND_VALIDATION_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_MVP_SCOPE_AND_ACCEPTANCE.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/CL_evidence/CL_demo_run_2026-10-16.sqlite3",
+   "reason": "database file: no database is published (synthetic demo-run state; regenerate with the classic demo)"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/board/CL_review_finance-neha.md",
+   "reason": "internal advisory-board reviews"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/board/CL_review_legal-kalpu.md",
+   "reason": "internal advisory-board reviews"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/board/CL_review_product-minakshi.md",
+   "reason": "internal advisory-board reviews"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/board/CL_review_strategy-minal.md",
+   "reason": "internal advisory-board reviews"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/board2/CL_review_legal-kalpu.md",
+   "reason": "internal advisory-board reviews"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/360/board2/CL_review_tech-sonu.md",
+   "reason": "internal advisory-board reviews"
+  },
+  {
+   "path": "docs/CL_evidence/ws_c/qa/CL_QA_database.md",
+   "reason": "internal QA note labelled with another business line"
+  },
+  {
+   "path": "docs/ai/CL_LLM_EVALUATION_V2_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_EVALUATION_V2_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_FIXES_D5_D6.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_INTEGRATION_ASSESSMENT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_RETEST_V3_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_RETRIEVAL_V3_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_RETRIEVAL_V4_GATE_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_RETRIEVAL_V4_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_REVISED_IMPLEMENTATION_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_LLM_SMOKE_TEST_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_C1P2_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_C1P_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_C1_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_GATE_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_ITERATION_LOG.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_RETRIEVAL_ARCHITECTURE_REVIEW.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_V6_GATE_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/ai/CL_WS_B_V7_CYCLE_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/board/CL_STRATEGIC_GATE_MEMO_2026-10-16.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/board/CL_WORK_ORDER_strategic_gate_2026-10-16.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/CL_CX_BACKLOG_BUILD_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/CL_CX_EVALUATION_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/CL_CX_TEST_PLAN.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/CL_WS_A_CLOSURE_RECORD.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_01_first_screen.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_02_owner_view_facts.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_03_condition_trace_for_owner.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_04_P1_question_search_result.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_05_P6_no_match.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_06_P4_official_text_search.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_07_facts_saved_case_updates.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_08_phone_first_screen.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_01_owner_first_screen.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_02_fatima_answer_guard_ok.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_03_layla_guard_incomplete.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_04_no_recorded_answer.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_05_team_tools.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_06_release_blockers_BEFORE_tag_fix.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/cx/screens/CL_after_07_decision_register.jpg",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/itu/CL_WSC_POLICY_AND_STANDARDS_GAPS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_BASELINE_AND_METRICS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_ERROR_SCENARIOS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_PARTICIPANT_DRAFTS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_PILOT_PROTOCOL.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_PILOT_READINESS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_REVIEWER_SIGNOFF_REGISTER.csv",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/pilot/CL_SUPPORT_AND_ESCALATION_RUNBOOK.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/rag/360/CL_HERBIZ_360_04_FIRECRAWL_PLAN.md",
+   "reason": "internal paid-tool plan (credits)"
+  },
+  {
+   "path": "docs/rag/360/CL_HERBIZ_360_06_MVP_ROADMAP_BACKLOG.md",
+   "reason": "internal roadmap and capacity notes"
+  },
+  {
+   "path": "docs/rag/360/CL_HERBIZ_360_08_BOARD_REVIEW.md",
+   "reason": "internal advisory-board review"
+  },
+  {
+   "path": "docs/rag/360/CL_HERBIZ_360_FOUNDER_DECISION_REPORT.md",
+   "reason": "internal founder decision report"
+  },
+  {
+   "path": "docs/rag/CL_FTA_ENQUIRY_G1_DRAFT_2026-10-16.md",
+   "reason": "unsent draft enquiry to a government authority"
+  },
+  {
+   "path": "docs/rag/CL_HERBIZ_CLAUDE_TOOLS_ASSESSMENT.md",
+   "reason": "internal tool and subscription assessment"
+  },
+  {
+   "path": "docs/rag/CL_HERBIZ_FIRECRAWL_TRIAL_PLAN.md",
+   "reason": "internal paid-tool trial plan (credits)"
+  },
+  {
+   "path": "docs/rag/CL_HERBIZ_FIRECRAWL_TRIAL_REPORT.md",
+   "reason": "internal paid-tool trial report (credits)"
+  },
+  {
+   "path": "docs/rag/CL_HERBIZ_RAG_OVERNIGHT_REPORT.md",
+   "reason": "internal session report"
+  },
+  {
+   "path": "docs/rag/CL_WS_B_REQUESTS_TO_WS_C.md",
+   "reason": "internal workstream correspondence"
+  },
+  {
+   "path": "docs/release/CL_APPROVAL_PACKAGE.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_DEMO_SCRIPT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_DEPLOYMENT_AND_ROLLBACK.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_HACKATHON_ENTRY_CHECKLIST.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_LICENCE_REGISTER.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_ORGANISER_MESSAGE_FINAL_2026-10-17.txt",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_ORGANISER_QUESTIONS_DRAFT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_ORGANISER_QUESTIONS_FINAL.txt",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_POST_CX_RELEASE_DISCIPLINE_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_RELEASE_READINESS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_SOURCE_MAINTENANCE_RUNBOOK.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_SUBMISSION_REQUIREMENTS_MATRIX.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_TECHNICAL_REPORT_DRAFT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_TECHNICAL_REPORT_DRAFT_v2_360.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/release/CL_USER_GUIDE.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_AMENDMENT_REVIEW_PROCEDURE.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_PROVISION_MAP_REVIEW_PACKAGE.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_REVIEWER_BRIEFING.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_REVIEWER_DECISION_REGISTER.xlsx",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_amendment_impact_EXAMPLE_DL13.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_review_data.json",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_reviewer_cover_email_DRAFT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_D3_reviewer_cover_email_v2_quotation_DRAFT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/CL_HERBIZ_D3_TAX_REVIEWER.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/review_d3/README.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/t2/CL_A1_A2_A3_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/t2/CL_A1_SAMPLE_AUDIT_RECORDS.json",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/t2/CL_A4_INTEGRATION_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/t2/CL_A6_INPUTS.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/t2/CL_C_RC3_CHANGE_REPORT.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "docs/t2/CL_C_T2_HANDOFF.md",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "project/CL_project_status.json",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "requirements-llm.lock",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  },
+  {
+   "path": "requirements-llm.txt",
+   "reason": "not on the export allow-list (internal handoff, plan or record)"
+  }
+ ],
+ "held_back_separately": {
+  "fixtures/mvp360/CL_recorded_vat_answers.json": "recorded VAT answers Q01, Q13, Q35, U10, U14, U18, U22",
+  "compliance_agent/llm_lab/data/CL_article_index_v6.json": "opening text of official articles (retrieval scorer table)"
+ },
+ "not_included": [
+  "data/*.sqlite3 (protected database, workspace copies, experiment ledger)",
+  "data/raw/ (official FTA files; rebuild with the collector)",
+  "git history"
+ ]
+}

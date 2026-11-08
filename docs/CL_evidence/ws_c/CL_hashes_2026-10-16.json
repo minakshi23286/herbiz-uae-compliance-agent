@@ -1,0 +1,43 @@
+{
+ "files": [
+  {
+   "source_id": "FTA-VAT-DL8",
+   "raw_path": "raw/FTA-VAT-DL8/37159c643e64ef2e.pdf",
+   "expected": "37159c643e64ef2e4accf8a5825539f1c8fac7387166f8fc22afac9e9f6677ea",
+   "status": "ok"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "raw_path": "raw/FTA-VAT-ER/b87b4c2c0a60d209.pdf",
+   "expected": "b87b4c2c0a60d209783a25b3aa92e64d9f696a0f3300b9ca911c72a401f4e1c7",
+   "status": "ok"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "raw_path": "raw/FTA-VAT-ER/11de7a2063f2ee75.pdf",
+   "expected": "11de7a2063f2ee7544e45e88df228e05716c4c36871028d898c969691238cbb0",
+   "status": "ok"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "raw_path": "raw/FTA-VAT-ER/7e0882e3d6f9e4ba.pdf",
+   "expected": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+   "status": "ok"
+  },
+  {
+   "source_id": "FTA-VAT-REG-PAGE",
+   "raw_path": "raw/FTA-VAT-REG-PAGE/a729f138823baceb.html",
+   "expected": "a729f138823baceb14bb028b893234449cc926b1d8eef2fbbcda5aef677a6f36",
+   "status": "ok"
+  }
+ ],
+ "ok": 5,
+ "total": 5,
+ "duplicate_hashes_in_lock": {},
+ "raw_files_not_in_lock": [
+  "raw/FTA-VAT-REG-PAGE/031e22a95a64a892.html",
+  "raw/FTA-VAT-REG-PAGE/437f6925a496276c.html",
+  "raw/FTA-VAT-REG-PAGE/649c1050103ac522.html",
+  "raw/FTA-VAT-REG-PAGE/c2bb7d8933ea6908.html"
+ ]
+}

@@ -1,0 +1,97 @@
+# Command: python3 -m compliance_agent.demo --db docs/CL_evidence/CL_demo_run_2026-10-16.sqlite3
+--- Stage 0: Approved fixture corpus loaded
+  LIC_v1: SRC-FX-LIC@v1 first_version -> approved
+  VAT_v1: SRC-FX-VAT@v1 first_version -> approved
+  PRIV_A_v1: SRC-FX-PRIV-A@v1 first_version -> approved
+  FOOD_v1_irrelevant: SRC-FX-FOOD@v1 first_version -> approved
+  EINV_v1_future: SRC-FX-EINV@v1 first_version -> approved
+  INJECT_v1_malicious: SRC-FX-INJECT@v1 first_version -> candidate
+--- Stage 1: Owner profile lacks licensing details
+  Profile BP-0001 created without licensing context or licence expiry date.
+--- Stage 2: Owner adds facts; a source update appears
+  Owner supplied licensing context and the expiry date printed on the licence.
+  Cosmetic page change: SRC-FX-LIC@v2 -> cosmetic_noted (no action).
+  Substantive change: SRC-FX-LIC@v3 -> candidate, review case CASE-0004.
+  SIMULATED REVIEWER approved SRC-FX-LIC@v3: {'outcome': 'accepted', 'status': 'approved'}
+--- Stage 3: Another source is inconsistent
+  Second source on privacy notices: SRC-FX-PRIV-B@v1 -> approved; conflicts with SRC-FX-PRIV-A.
+--- Stage 4: Simulated authorised clarification arrives
+  Simulated authorised clarification: SRC-FX-PRIV-B@v2 -> candidate, review case CASE-0005.
+  SIMULATED REVIEWER approved SRC-FX-PRIV-B@v2: {'outcome': 'accepted', 'status': 'approved'}
+--- Stage 5: Owner supplies incomplete completion evidence
+  Owner sent 1 of 2 evidence items for CASE-0002: status open, still missing ['Current tenancy or ownership document for the home address'].
+  SIMULATED REVIEWER tried to approve CASE-0002 early: refused (evidence incomplete).
+--- Stage 6: Owner completes evidence; reviewer resolves
+  Owner sent the second item; SIMULATED REVIEWER approved CASE-0002: {'outcome': 'accepted', 'status': 'resolved'}.
+{
+ "mode": "FIXTURE MODE: synthetic sources, deterministic keyword search, no AI model, no network",
+ "cases": [
+  {
+   "case_id": "CASE-0001",
+   "kind": "source_update",
+   "status": "open",
+   "title": "Review source change: SRC-FX-INJECT@v1",
+   "due_date": null,
+   "missing_evidence": []
+  },
+  {
+   "case_id": "CASE-0002",
+   "kind": "obligation_action",
+   "status": "resolved",
+   "title": "Renew the home-based licence",
+   "due_date": "2026-11-30",
+   "missing_evidence": []
+  },
+  {
+   "case_id": "CASE-0003",
+   "kind": "obligation_action",
+   "status": "open",
+   "title": "Publish a privacy notice where customer data is collected",
+   "due_date": null,
+   "missing_evidence": [
+    "Link or screenshot of the published privacy notice"
+   ]
+  },
+  {
+   "case_id": "CASE-0004",
+   "kind": "source_update",
+   "status": "resolved",
+   "title": "Review source change: SRC-FX-LIC@v3",
+   "due_date": null,
+   "missing_evidence": []
+  },
+  {
+   "case_id": "CASE-0005",
+   "kind": "source_update",
+   "status": "resolved",
+   "title": "Review source change: SRC-FX-PRIV-B@v2",
+   "due_date": null,
+   "missing_evidence": []
+  }
+ ],
+ "assessments": [
+  {
+   "obligation_key": "EINV-START:upcoming",
+   "result": "not_yet_in_force"
+  },
+  {
+   "obligation_key": "FOOD-HYGIENE",
+   "result": "not_applicable"
+  },
+  {
+   "obligation_key": "LIC-RENEWAL",
+   "result": "applicable"
+  },
+  {
+   "obligation_key": "PRIV-NOTICE",
+   "result": "applicable"
+  },
+  {
+   "obligation_key": "VAT-MANDATORY-REG",
+   "result": "not_applicable"
+  }
+ ],
+ "audit_events": 49,
+ "persisted_after_restart": true
+}
+exit=0

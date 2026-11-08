@@ -1,0 +1,1498 @@
+{
+ "_meta": {
+  "built_by": "experiments/ws_b/CL_build_v6_tables.py",
+  "corpus_fingerprint": "29c67bb1177a51d4646b5599679463d1f5992dfac05311d74d460dfe4f5d5fe3",
+  "edges": 255,
+  "locator_contract": "Workstream C interface contract v0.1",
+  "not_legal_advice": true
+ },
+ "links": {
+  "FTA-VAT-DL8|11": [
+   {
+    "key": "FTA-VAT-DL8|12",
+    "title": "Exceptions from Deemed Supply",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|5",
+    "title": "Exceptions related to Deemed Supply",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|12": [
+   {
+    "key": "FTA-VAT-DL8|11",
+    "title": "Cases of Deemed Supply",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|3 (bis)",
+    "title": "Exceptions of Supplies",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|5",
+    "title": "Exceptions related to Deemed Supply",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|13": [
+   {
+    "key": "FTA-VAT-DL8|19",
+    "title": "Calculating the Tax Registration Threshold",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|7",
+    "title": "Mandatory Registration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|14": [
+   {
+    "key": "FTA-VAT-ER|10",
+    "title": "Registration as a Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|11",
+    "title": "Amendments to a Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|12",
+    "title": "Effect of registration as a Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|15",
+    "title": "Deregistration of a Tax Group Registration or",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|15": [
+   {
+    "key": "FTA-VAT-ER|16",
+    "title": "Exception from Registration",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|3 (bis)",
+    "title": "Exceptions of Supplies",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|16": [
+   {
+    "key": "FTA-VAT-DL8|10",
+    "title": "Supply by Government Entities",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|17": [
+   {
+    "key": "FTA-VAT-DL8|19",
+    "title": "Calculating the Tax Registration Threshold",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|8",
+    "title": "Voluntary Registration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|18": [
+   {
+    "key": "FTA-VAT-DL8|48",
+    "title": "Reverse Charge",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|20": [
+   {
+    "key": "FTA-VAT-ER|57",
+    "title": "Assets Considered Capital Assets",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|58",
+    "title": "Adjustments under the Capital Assets Scheme",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|21": [
+   {
+    "key": "FTA-VAT-DL8|17",
+    "title": "Voluntary Registration",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|22",
+    "title": "Application for Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|23",
+    "title": "Voluntary Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "title": "Tax Deregistration",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|14 (bis)",
+    "title": "Tax Deregistration to Protect the Integrity of the Tax System",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|15",
+    "title": "Deregistration of a Tax Group Registration or",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|18",
+    "title": "Liabilities due before Deregistration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|22": [
+   {
+    "key": "FTA-VAT-DL8|21",
+    "title": "Tax Deregistration Cases",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|23",
+    "title": "Voluntary Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|24",
+    "title": "Procedures, Controls and Conditions of Tax Registration and Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "title": "Tax Deregistration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|23": [
+   {
+    "key": "FTA-VAT-DL8|17",
+    "title": "Voluntary Registration",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|21",
+    "title": "Tax Deregistration Cases",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|22",
+    "title": "Application for Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|24",
+    "title": "Procedures, Controls and Conditions of Tax Registration and Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "title": "Tax Deregistration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|24": [
+   {
+    "key": "FTA-VAT-DL8|22",
+    "title": "Application for Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|23",
+    "title": "Voluntary Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "title": "Tax Deregistration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|25": [
+   {
+    "key": "FTA-VAT-DL8|26",
+    "title": "Date of Supply in Special Cases",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|19",
+    "title": "Due Tax at Date of Supply",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|26": [
+   {
+    "key": "FTA-VAT-DL8|25",
+    "title": "Date of Supply",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|3": [
+   {
+    "key": "FTA-VAT-DL8|2",
+    "title": "Scope of Tax",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|30": [
+   {
+    "key": "FTA-VAT-DL8|29",
+    "title": "Place of Supply of Services",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|31": [
+   {
+    "key": "FTA-VAT-ER|23",
+    "title": "Telecommunication and Electronic Services",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|34": [
+   {
+    "key": "FTA-VAT-DL8|35",
+    "title": "Value of Import",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|36",
+    "title": "Value of Supply and Deemed Supply for Related",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|48",
+    "title": "Reverse Charge",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|25",
+    "title": "Market Value",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|35": [
+   {
+    "key": "FTA-VAT-DL8|34",
+    "title": "Value of Supply",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|36",
+    "title": "Value of Supply and Deemed Supply for Related",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|37",
+    "title": "Value of Deemed Supply",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|36": [
+   {
+    "key": "FTA-VAT-DL8|34",
+    "title": "Value of Supply",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|34",
+    "title": "Value of Supply",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|35",
+    "title": "Value of Import",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|35",
+    "title": "Value of Import",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|37",
+    "title": "Value of Deemed Supply",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|37": [
+   {
+    "key": "FTA-VAT-DL8|34",
+    "title": "Value of Supply",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|35",
+    "title": "Value of Import",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|35",
+    "title": "Value of Import",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|36",
+    "title": "Value of Supply and Deemed Supply for Related",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|39",
+    "title": "Value of Supply in case of Discount or Subsidies",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|39": [
+   {
+    "key": "FTA-VAT-DL8|37",
+    "title": "Value of Deemed Supply",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|40",
+    "title": "Value of Supply of Vouchers",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|41",
+    "title": "Value of Supply of Postage Stamps",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|4": [
+   {
+    "key": "FTA-VAT-DL8|2",
+    "title": "Scope of Tax",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|48",
+    "title": "Reverse Charge",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|40": [
+   {
+    "key": "FTA-VAT-DL8|39",
+    "title": "Value of Supply in case of Discount or Subsidies",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|41",
+    "title": "Value of Supply of Postage Stamps",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|41": [
+   {
+    "key": "FTA-VAT-DL8|39",
+    "title": "Value of Supply in case of Discount or Subsidies",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|40",
+    "title": "Value of Supply of Vouchers",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|44": [
+   {
+    "key": "FTA-VAT-DL8|45",
+    "title": "Goods and Services Subject to Zero Rate",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|45": [
+   {
+    "key": "FTA-VAT-DL8|1",
+    "title": "Definitions",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|44",
+    "title": "Supply and Import Taxable at Zero Rate",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|46": [
+   {
+    "key": "FTA-VAT-DL8|45",
+    "title": "Goods and Services Subject to Zero Rate",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|43",
+    "title": "Exemption of Residential Buildings",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|44",
+    "title": "Exemption of Bare Land",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|45",
+    "title": "Exemption of Local Passenger Transport Services",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|52",
+    "title": "Input Tax Recovery in Respect of Exempt Supplies",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|47": [
+   {
+    "key": "FTA-VAT-ER|4",
+    "title": "Supply of More Than One Component",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|46",
+    "title": "Tax on Supplies of More Than One Component",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|48": [
+   {
+    "key": "FTA-VAT-ER|48",
+    "title": "Calculation of Tax under the Reverse Charge",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|50": [
+   {
+    "key": "FTA-VAT-DL8|51",
+    "title": "Transfer of Goods in Designated Zones",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|52",
+    "title": "Exceptions for Designated Zone",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|51": [
+   {
+    "key": "FTA-VAT-DL8|50",
+    "title": "Designated Zone",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|52",
+    "title": "Exceptions for Designated Zone",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|51",
+    "title": "Designated zones",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|52": [
+   {
+    "key": "FTA-VAT-DL8|50",
+    "title": "Designated Zone",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|50",
+    "title": "Designated Zone",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|51",
+    "title": "Transfer of Goods in Designated Zones",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|3 (bis)",
+    "title": "Exceptions of Supplies",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|55": [
+   {
+    "key": "FTA-VAT-DL8|56",
+    "title": "Input Tax Paid before Tax Registration",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|58": [
+   {
+    "key": "FTA-VAT-DL8|54",
+    "title": "Recoverable Input Tax",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|59": [
+   {
+    "key": "FTA-VAT-DL8|61",
+    "title": "Instances and Conditions for Output Tax Adjustments",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|60": [
+   {
+    "key": "FTA-VAT-ER|58",
+    "title": "Adjustments under the Capital Assets Scheme",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|61": [
+   {
+    "key": "FTA-VAT-DL8|59",
+    "title": "Conditions and Mechanism of Input Tax Adjustment",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|62",
+    "title": "Mechanism for Output Tax Adjustment",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|63",
+    "title": "Adjustment due to the Issuance of Tax Credit Notes",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|62": [
+   {
+    "key": "FTA-VAT-DL8|61",
+    "title": "Instances and Conditions for Output Tax Adjustments",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|63",
+    "title": "Adjustment due to the Issuance of Tax Credit Notes",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|64",
+    "title": "Adjustment for Bad Debts",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|63": [
+   {
+    "key": "FTA-VAT-DL8|61",
+    "title": "Instances and Conditions for Output Tax Adjustments",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|62",
+    "title": "Mechanism for Output Tax Adjustment",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|62",
+    "title": "Mechanism for Output Tax Adjustment",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|64",
+    "title": "Adjustment for Bad Debts",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|64": [
+   {
+    "key": "FTA-VAT-DL8|62",
+    "title": "Mechanism for Output Tax Adjustment",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|63",
+    "title": "Adjustment due to the Issuance of Tax Credit Notes",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-DL8|65": [
+   {
+    "key": "FTA-VAT-DL8|67",
+    "title": "Date of Issuance of Tax Invoice",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|59",
+    "title": "Tax invoices",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|66": [
+   {
+    "key": "FTA-VAT-DL8|65",
+    "title": "Conditions and Requirements for Issuing Tax Invoices",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|67": [
+   {
+    "key": "FTA-VAT-DL8|25",
+    "title": "Date of Supply",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|26",
+    "title": "Date of Supply in Special Cases",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|65",
+    "title": "Conditions and Requirements for Issuing Tax Invoices",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|68",
+    "title": "Rounding on Tax Invoices",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|69",
+    "title": "Currency Used on Tax Invoices",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|59",
+    "title": "Tax invoices",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|68": [
+   {
+    "key": "FTA-VAT-DL8|67",
+    "title": "Date of Issuance of Tax Invoice",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|69",
+    "title": "Currency Used on Tax Invoices",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|59",
+    "title": "Tax invoices",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|69": [
+   {
+    "key": "FTA-VAT-DL8|67",
+    "title": "Date of Issuance of Tax Invoice",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-DL8|68",
+    "title": "Rounding on Tax Invoices",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|59",
+    "title": "Tax invoices",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|7": [
+   {
+    "key": "FTA-VAT-DL8|5",
+    "title": "Supply of Goods",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|6",
+    "title": "Supply of Services",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|50",
+    "title": "Special Rules of Import",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|54",
+    "title": "Special cases of Input tax",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|70": [
+   {
+    "key": "FTA-VAT-DL8|61",
+    "title": "Instances and Conditions for Output Tax Adjustments",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|62",
+    "title": "Mechanism for Output Tax Adjustment",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|60",
+    "title": "Tax Credit Note",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|74": [
+   {
+    "key": "FTA-VAT-ER|65",
+    "title": "Recovery of Excess Tax If the Taxable",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|76": [
+   {
+    "key": "FTA-VAT-DL8|38",
+    "title": "Tax-Inclusive Prices",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|43",
+    "title": "Charging Tax based on Profit Margin",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|77": [
+   {
+    "key": "FTA-VAT-DL8|48",
+    "title": "Reverse Charge",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-DL8|78": [
+   {
+    "key": "FTA-VAT-ER|71",
+    "title": "Record-keeping Requirements",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|72",
+    "title": "Record Keeping of the Supplies Made",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|8": [
+   {
+    "key": "FTA-VAT-ER|4",
+    "title": "Supply of More Than One Component",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|46",
+    "title": "Tax on Supplies of More Than One Component",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-DL8|80": [
+   {
+    "key": "FTA-VAT-ER|70",
+    "title": "Transitional rules",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|10": [
+   {
+    "key": "FTA-VAT-DL8|14",
+    "title": "Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|11",
+    "title": "Amendments to a Tax Group",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|12",
+    "title": "Effect of registration as a Tax Group",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|11": [
+   {
+    "key": "FTA-VAT-DL8|14",
+    "title": "Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|10",
+    "title": "Registration as a Tax Group",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|10",
+    "title": "Registration as a Tax Group",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|12",
+    "title": "Effect of registration as a Tax Group",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|12": [
+   {
+    "key": "FTA-VAT-DL8|14",
+    "title": "Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|10",
+    "title": "Registration as a Tax Group",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|11",
+    "title": "Amendments to a Tax Group",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|13": [
+   {
+    "key": "FTA-VAT-ER|9",
+    "title": "Related Parties",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|14": [
+   {
+    "key": "FTA-VAT-DL8|19",
+    "title": "Calculating the Tax Registration Threshold",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|21",
+    "title": "Tax Deregistration Cases",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|22",
+    "title": "Application for Tax Deregistration",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|23",
+    "title": "Voluntary Tax Deregistration",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|24",
+    "title": "Procedures, Controls and Conditions of Tax Registration and Deregistration",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|14 (bis)",
+    "title": "Tax Deregistration to Protect the Integrity of the Tax System",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|15",
+    "title": "Deregistration of a Tax Group Registration or",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|14 (bis)": [
+   {
+    "key": "FTA-VAT-DL8|21",
+    "title": "Tax Deregistration Cases",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "title": "Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|15",
+    "title": "Deregistration of a Tax Group Registration or",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|15": [
+   {
+    "key": "FTA-VAT-DL8|14",
+    "title": "Tax Group",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|21",
+    "title": "Tax Deregistration Cases",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "title": "Tax Deregistration",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|14 (bis)",
+    "title": "Tax Deregistration to Protect the Integrity of the Tax System",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|16": [
+   {
+    "key": "FTA-VAT-DL8|15",
+    "title": "Registration Exception",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|18": [
+   {
+    "key": "FTA-VAT-DL8|21",
+    "title": "Tax Deregistration Cases",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|19",
+    "title": "Due Tax at Date of Supply",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|19": [
+   {
+    "key": "FTA-VAT-DL8|25",
+    "title": "Date of Supply",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|25",
+    "title": "Date of Supply",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|26",
+    "title": "Date of Supply in Special Cases",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|80",
+    "title": "Transitional Rules",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|18",
+    "title": "Liabilities due before Deregistration",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|22": [
+   {
+    "key": "FTA-VAT-ER|4",
+    "title": "Supply of More Than One Component",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|23": [
+   {
+    "key": "FTA-VAT-DL8|31",
+    "title": "Place of Supply of Telecommunication and Electronic Services",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|25": [
+   {
+    "key": "FTA-VAT-DL8|34",
+    "title": "Value of Supply",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|26": [
+   {
+    "key": "FTA-VAT-DL8|47",
+    "title": "Supply Consisting of More Than One Component",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|25",
+    "title": "Market Value",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|29": [
+   {
+    "key": "FTA-VAT-ER|53",
+    "title": "Non-recoverable Input Tax",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|3 (bis)": [
+   {
+    "key": "FTA-VAT-DL8|12",
+    "title": "Exceptions from Deemed Supply",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|15",
+    "title": "Registration Exception",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|52",
+    "title": "Exceptions for Designated Zone",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|5",
+    "title": "Exceptions related to Deemed Supply",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|30": [
+   {
+    "key": "FTA-VAT-ER|31",
+    "title": "Zero-rating the Export of Services",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|32",
+    "title": "Zero-Rating Exported Telecommunications Services",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|31": [
+   {
+    "key": "FTA-VAT-ER|30",
+    "title": "Zero-rating the export of goods",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|32",
+    "title": "Zero-Rating Exported Telecommunications Services",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|32": [
+   {
+    "key": "FTA-VAT-ER|30",
+    "title": "Zero-rating the export of goods",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|31",
+    "title": "Zero-rating the Export of Services",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|33": [
+   {
+    "key": "FTA-VAT-ER|34",
+    "title": "Zero-rating certain Means of Transport",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|35",
+    "title": "Zero-rating Goods and Services in Connection with Means of Transport",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|34": [
+   {
+    "key": "FTA-VAT-ER|33",
+    "title": "Zero-rating International Transportation Services",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|35",
+    "title": "Zero-rating Goods and Services in Connection with Means of Transport",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|35": [
+   {
+    "key": "FTA-VAT-ER|33",
+    "title": "Zero-rating International Transportation Services",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|34",
+    "title": "Zero-rating certain Means of Transport",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|34",
+    "title": "Zero-rating certain Means of Transport",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|37": [
+   {
+    "key": "FTA-VAT-ER|38",
+    "title": "Zero-rating of Buildings Specifically Designed to be",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|39",
+    "title": "Zero-rating Converted Residential Building",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|38": [
+   {
+    "key": "FTA-VAT-ER|37",
+    "title": "Residential buildings",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|39",
+    "title": "Zero-rating Converted Residential Building",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|39": [
+   {
+    "key": "FTA-VAT-ER|37",
+    "title": "Residential buildings",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|38",
+    "title": "Zero-rating of Buildings Specifically Designed to be",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|4": [
+   {
+    "key": "FTA-VAT-DL8|47",
+    "title": "Supply Consisting of More Than One Component",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|8",
+    "title": "Supply consisting of more than one component",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|43": [
+   {
+    "key": "FTA-VAT-DL8|46",
+    "title": "Supply Exempt from Tax",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|44",
+    "title": "Exemption of Bare Land",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|45",
+    "title": "Exemption of Local Passenger Transport Services",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|44": [
+   {
+    "key": "FTA-VAT-DL8|46",
+    "title": "Supply Exempt from Tax",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|43",
+    "title": "Exemption of Residential Buildings",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|45",
+    "title": "Exemption of Local Passenger Transport Services",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|45": [
+   {
+    "key": "FTA-VAT-DL8|46",
+    "title": "Supply Exempt from Tax",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|43",
+    "title": "Exemption of Residential Buildings",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|44",
+    "title": "Exemption of Bare Land",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|46": [
+   {
+    "key": "FTA-VAT-DL8|47",
+    "title": "Supply Consisting of More Than One Component",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|8",
+    "title": "Supply consisting of more than one component",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|4",
+    "title": "Supply of More Than One Component",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|48": [
+   {
+    "key": "FTA-VAT-DL8|48",
+    "title": "Reverse Charge",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|48",
+    "title": "Reverse Charge",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|5": [
+   {
+    "key": "FTA-VAT-DL8|11",
+    "title": "Cases of Deemed Supply",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|12",
+    "title": "Exceptions from Deemed Supply",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|12",
+    "title": "Exceptions from Deemed Supply",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|3 (bis)",
+    "title": "Exceptions of Supplies",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|50": [
+   {
+    "key": "FTA-VAT-DL8|7",
+    "title": "Supply in Special Cases",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|48",
+    "title": "Calculation of Tax under the Reverse Charge",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|51": [
+   {
+    "key": "FTA-VAT-DL8|51",
+    "title": "Transfer of Goods in Designated Zones",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|52": [
+   {
+    "key": "FTA-VAT-DL8|46",
+    "title": "Supply Exempt from Tax",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|54",
+    "title": "Recoverable Input Tax",
+    "why": "explicit_reference"
+   }
+  ],
+  "FTA-VAT-ER|54": [
+   {
+    "key": "FTA-VAT-DL8|7",
+    "title": "Supply in Special Cases",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|56": [
+   {
+    "key": "FTA-VAT-DL8|54",
+    "title": "Recoverable Input Tax",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|58",
+    "title": "Adjustments under the Capital Assets Scheme",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|57": [
+   {
+    "key": "FTA-VAT-DL8|12",
+    "title": "Exceptions from Deemed Supply",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|20",
+    "title": "Capital Assets",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|60",
+    "title": "Capital Assets Scheme",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-ER|58",
+    "title": "Adjustments under the Capital Assets Scheme",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|58": [
+   {
+    "key": "FTA-VAT-DL8|20",
+    "title": "Capital Assets",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|60",
+    "title": "Capital Assets Scheme",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|56",
+    "title": "Adjustment of Input Tax Post-Recovery",
+    "why": "sibling"
+   },
+   {
+    "key": "FTA-VAT-ER|57",
+    "title": "Assets Considered Capital Assets",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|59": [
+   {
+    "key": "FTA-VAT-DL8|65",
+    "title": "Conditions and Requirements for Issuing Tax Invoices",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|67",
+    "title": "Date of Issuance of Tax Invoice",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|68",
+    "title": "Rounding on Tax Invoices",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-DL8|69",
+    "title": "Currency Used on Tax Invoices",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|60": [
+   {
+    "key": "FTA-VAT-DL8|70",
+    "title": "Conditions and Requirements for Issuing the Tax Credit Note",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|62": [
+   {
+    "key": "FTA-VAT-ER|63",
+    "title": "Tax Periods in the Case of Loss of Capacity",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|63": [
+   {
+    "key": "FTA-VAT-ER|62",
+    "title": "Length of tax period",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|65": [
+   {
+    "key": "FTA-VAT-DL8|74",
+    "title": "Excess Recoverable Tax",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|67": [
+   {
+    "key": "FTA-VAT-ER|68",
+    "title": "Tourist Visitors",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|68": [
+   {
+    "key": "FTA-VAT-ER|67",
+    "title": "Business visitors",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|7": [
+   {
+    "key": "FTA-VAT-DL8|13",
+    "title": "Mandatory Tax Registration",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|70": [
+   {
+    "key": "FTA-VAT-DL8|80",
+    "title": "Transitional Rules",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|80",
+    "title": "Transitional Rules",
+    "why": "implementing_pair"
+   }
+  ],
+  "FTA-VAT-ER|71": [
+   {
+    "key": "FTA-VAT-DL8|72",
+    "title": "Submission of Tax Returns",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|78",
+    "title": "Record-keeping",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|72",
+    "title": "Record Keeping of the Supplies Made",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|72": [
+   {
+    "key": "FTA-VAT-DL8|78",
+    "title": "Record-keeping",
+    "why": "explicit_reference"
+   },
+   {
+    "key": "FTA-VAT-DL8|78",
+    "title": "Record-keeping",
+    "why": "implementing_pair"
+   },
+   {
+    "key": "FTA-VAT-ER|71",
+    "title": "Record-keeping Requirements",
+    "why": "sibling"
+   }
+  ],
+  "FTA-VAT-ER|8": [
+   {
+    "key": "FTA-VAT-DL8|17",
+    "title": "Voluntary Registration",
+    "why": "implementing_pair"
+   }
+  ]
+ }
+}

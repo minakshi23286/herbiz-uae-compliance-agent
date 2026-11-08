@@ -1,0 +1,62 @@
+{
+ "confidence": {
+  "basis": [
+   "blocked",
+   "source_not_current"
+  ],
+  "level": "low",
+  "numeric": 0.82
+ },
+ "contract": "herbiz.decision_explanation/1.0",
+ "engine": {
+  "commit": "fdbe131",
+  "fixture_contract": "ws-b-demo-0.3"
+ },
+ "execution_mode": "deterministic",
+ "label": "Draft — not reviewed",
+ "missing_information": [],
+ "obligation_id": "SYN-OB-VAT-RETURN",
+ "professional_review": [
+  "an FTA-registered tax agent"
+ ],
+ "reason": "rule or sources not checked by a reviewer",
+ "review": {
+  "human_review_required": true,
+  "release_approved": false,
+  "reviewer_needed": "a qualified VAT reviewer"
+ },
+ "rule_status": "draft_unreviewed",
+ "state": "blocked_pending_legal_validation",
+ "state_chip": "Blocked: legal validation",
+ "steps": [
+  {
+   "input_facts": {
+    "vat_registration_status": "registered"
+   },
+   "kind": "fact_check",
+   "n": 1,
+   "outcome": "fact present",
+   "rule_ref": null,
+   "visible_to": "owner"
+  },
+  {
+   "input_facts": [],
+   "kind": "validity_check",
+   "n": 2,
+   "outcome": "source not reviewed",
+   "rule_ref": {
+    "article": "*",
+    "source_id": "FTA-VAT-DL8"
+   },
+   "visible_to": "reviewer"
+  },
+  {
+   "input_facts": [],
+   "kind": "block",
+   "n": 3,
+   "outcome": "blocked pending legal validation",
+   "rule_ref": null,
+   "visible_to": "owner"
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+# Command: python3 -m compliance_agent.kb status --db data/CL_compliance.sqlite3   (2026-10-16 05:15 +04)
+{
+ "real_sources": 3,
+ "documents": 5,
+ "extracted_ok": 5,
+ "extracted_partial": 0,
+ "extraction_failed": 0,
+ "collection_failures": 1,
+ "passages": 371,
+ "approved_real_versions": 0,
+ "draft_interpretations": 2,
+ "reviewed_interpretations_real": 0,
+ "attempts": [
+  {
+   "source_id": "FTA-VAT-DL8",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+   "at": "2026-10-16T05:05:13+04:00",
+   "outcome": "new_version",
+   "detail": "FTA-VAT-DL8@v1 candidate; 93 passages; extraction ok (pypdf 6.8.0) Locator repairs: heading 'Article 8337' read as Article 83 (footnote marker merged). Running headers removed: Federal Decree-Law No. # of # and its amendments – As published by Ministry of F. "
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive Regulation of Federal Decree Law No 8 of 2017 - Publish - 04 10 2024.pdf",
+   "at": "2026-10-16T05:05:14+04:00",
+   "outcome": "new_version",
+   "detail": "FTA-VAT-ER@v1 candidate; 89 passages; extraction ok (pypdf 6.8.0) Running headers removed: # Cabinet Decision No. # of # and its amendments – Unofficial translation. "
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive-Regulation-of-Federal-Decree-Law-No-08-of-2017-Publish-18-09-2025.pdf",
+   "at": "2026-10-16T05:05:15+04:00",
+   "outcome": "new_version",
+   "detail": "FTA-VAT-ER@v2 candidate; 89 passages; extraction ok (pypdf 6.8.0) Running headers removed: # Cabinet Decision No. # of # and its amendments – Unofficial translation. "
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "at": "2026-10-16T05:05:16+04:00",
+   "outcome": "new_version",
+   "detail": "FTA-VAT-ER@v3 candidate; 91 passages; extraction ok (pypdf 6.8.0) Running headers removed: # Cabinet Decision No. # of # and its amendments – As published by the Ministry . "
+  },
+  {
+   "source_id": "FTA-VAT-REG-PAGE",
+   "url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+   "at": "2026-10-16T05:05:16+04:00",
+   "outcome": "new_version",
+   "detail": "FTA-VAT-REG-PAGE@v1 candidate; 9 passages; extraction ok (html.parser (stdlib)) "
+  },
+  {
+   "source_id": "MOJ-ELAWS-VAT-DL8",
+   "url": "https://elaws.moj.gov.ae/UAE-MOJ_LC-En/00_TAXES/UAE-LC-En_2017-08-23_00008_Markait.html?val=EL1",
+   "at": "2026-10-16T05:05:16+04:00",
+   "outcome": "failed",
+   "detail": "never collected successfully (see CL_collected_lock.json)"
+  }
+ ]
+}

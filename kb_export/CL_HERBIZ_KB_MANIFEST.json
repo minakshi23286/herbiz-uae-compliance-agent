@@ -1,0 +1,3904 @@
+{
+ "_meta": {
+  "title": "HerBiz knowledge-base manifest (publication-safe proposal)",
+  "version": "0.2.1",
+  "built_from": "WS C snapshot commit aa50dd4 (tax sources) and e01c371 (gate files), as pinned by the submitted agent",
+  "business_line": "HomepreunerHub / HerBiz",
+  "source_snapshot": "2026-10-17",
+  "decisions": "D4 / D-089 metadata only; D-086 repository private initially; nothing published",
+  "contains": "official URLs with link status (C-1 re-check), titles, issuers, dates, versions, article locators, content and raw-file hashes checked against the collected lock, validity 1.2 statuses, evidence and review status, HerBiz notes",
+  "excludes": "official legal texts and passages, quotes and search excerpts, reviewer packages, credit records, crawl identifiers, local file paths, database files",
+  "review_status_note": "No legal source has qualified approval: approved_versions is empty.",
+  "not_legal_advice": true
+ },
+ "agent_interface": {
+  "ask_panel": "Recorded answers replayed from earlier offline model experiments (no live model, no network). For other questions: offline lexical full-text search (SQLite FTS5) over the newest captured version of each VAT source; passages shown are unreviewed official texts, not an answer.",
+  "ask_panel_searched_versions": [
+   "FTA-VAT-DL8@v1",
+   "FTA-VAT-ER@v3",
+   "FTA-VAT-REG-PAGE@v1"
+  ],
+  "dashboard_360": "Synthetic profiles only. Labels and citation chips from WS C sources360 contract 0.2 at aa50dd4; obligation states from the WS B demo fixture fdbe131. No substantive corporate-tax rules (D-061).",
+  "intake_gate": "WS C policy gate pinned at e01c371 (CR-29): rules from CL_policy_kb.json; clause ids shown only as design references.",
+  "governance_sources_activated": false,
+  "retrieval_in_submission": "Synthetic demonstration only: recorded answers and offline retrieval over unreviewed texts, shown for fictional businesses. No real-owner use; no qualified approval of any source.",
+  "manifest_matches_agent_database": true,
+  "agent_database_versions_checked": 5
+ },
+ "domain_a_business_compliance": {
+  "collected_versions": [
+   {
+    "version_id": "FTA-VAT-DL8@v1",
+    "source_id": "FTA-VAT-DL8",
+    "issuing_authority": "UAE Federal Government — Federal Decree-Law No. 8 of 2017 on VAT, as amended (copy hosted by the Federal Tax Authority)",
+    "jurisdiction": "AE",
+    "title": "Federal Decree-Law No. 8 of 2017 on Value Added Tax and amendments (FTA legislation archive, 2025 folder)",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+    "retrieved_at": "2026-10-16T04:58:56+04:00",
+    "content_sha256": "ff68ce7d682380171fd52c2e18d9dcaedac69efbcb05d6d6a1735789db468fcb",
+    "kb_status": "candidate",
+    "approved": false,
+    "searched_by_agent": true,
+    "raw_file_sha256": "37159c643e64ef2e4accf8a5825539f1c8fac7387166f8fc22afac9e9f6677ea",
+    "lock_verified": true,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "passage_count": 93,
+    "article_locators": [
+     {
+      "locator": "Front matter, p. 1",
+      "passage_sha256": "9f69616fbf52ca5315bd3e7d3c21922c243ba637bbd48ed1195845cf74402592"
+     },
+     {
+      "locator": "Front matter, p. 2",
+      "passage_sha256": "69815dae5d6463dc126e4b2c1d1e46ec63a94657e015acbfe382b5cd1a2f1187"
+     },
+     {
+      "locator": "Article 1, pp. 2-7, part 1",
+      "passage_sha256": "31cceee239c747bfd7c4c03f6145ec6bcdfa74f60b278ae760b6b7e2d1bfbe3e"
+     },
+     {
+      "locator": "Article 1, pp. 2-7, part 2",
+      "passage_sha256": "929f43596152ca6d28161a04703adc78a78cf67d9e83c2180a056f15ca34ce72"
+     },
+     {
+      "locator": "Article 1, pp. 2-7, part 3",
+      "passage_sha256": "5c8b65d3ddaa700c35bfbaa5fd4fcd0172fab4cd7aab190263423772c759c775"
+     },
+     {
+      "locator": "Article 1, pp. 2-7, part 4",
+      "passage_sha256": "2f4c90f27ae6c3cdfee3b70c100601e773490652fd5cbbe250107a0bb32b405d"
+     },
+     {
+      "locator": "Article 2, p. 7",
+      "passage_sha256": "23ffaeb64e7fbc409903b2f37bd7f75c7b5aca55157dbdd4711454ae882550f7"
+     },
+     {
+      "locator": "Article 3, p. 8",
+      "passage_sha256": "e77484bf48b2245319d0eb0a7c26960b41299b946aa95946e1401b3a491480b1"
+     },
+     {
+      "locator": "Article 4, p. 8",
+      "passage_sha256": "54810cdcb3bad94c295c979b4a820740f32de9d62ca8d5075f01758f25e11383"
+     },
+     {
+      "locator": "Article 5, p. 8",
+      "passage_sha256": "f9ba235d268988de28a24f7707e6747430e3278c8a5d2153b6581d126801313d"
+     },
+     {
+      "locator": "Article 6, p. 8",
+      "passage_sha256": "3f0b755764a9fc915b8ffdbd966602b2c6c6917ef6fdfdda3a8dc21f8d316b39"
+     },
+     {
+      "locator": "Article 7, p. 9",
+      "passage_sha256": "e438b550b2accb1cc95a8de29cd931d1e268ab0fbeec6275b4874d4e1dd6c66b"
+     },
+     {
+      "locator": "Article 8, p. 9",
+      "passage_sha256": "9c28aa968b81eae0f6874ea4410aa8dccee946a349e8cab7c0b879dda6acdf7e"
+     },
+     {
+      "locator": "Article 9, p. 9",
+      "passage_sha256": "73245b406dbdca09039c8674350a963eac1c668e9080eec6d408569fc0bcddf4"
+     },
+     {
+      "locator": "Article 10, pp. 9-10",
+      "passage_sha256": "4a8e08f04b75d443d5cc41773364d1bda6442bebd0fbd9c27b7d12f78e7b9644"
+     },
+     {
+      "locator": "Article 11, p. 10",
+      "passage_sha256": "8114323457465ee030e4144035c5e4011f2e1a032ad2fbaa41987f50755c9f39"
+     },
+     {
+      "locator": "Article 12, pp. 10-11",
+      "passage_sha256": "9023d01599bbe877d970fa06649bc5d787985c9fed2c7dcbd94d91d858564f8c"
+     },
+     {
+      "locator": "Article 13, p. 11",
+      "passage_sha256": "3b0b105078316ef115d247d037b27b56674f6ead62cade8bb138ee8eaca02cad"
+     },
+     {
+      "locator": "Article 14, pp. 11-12",
+      "passage_sha256": "29e21d9dde6ba4ace87551ec3caa64ece8bb6c4f841433cde0d50d93a9aeb2b4"
+     },
+     {
+      "locator": "Article 15, p. 12",
+      "passage_sha256": "8d2057f1cc4fc69ef25edc7e37fa6e4d771ff02081dddeb496cffd59705dbe25"
+     },
+     {
+      "locator": "Article 16, p. 12",
+      "passage_sha256": "6cd2b261165698afea3314db315153e8997f14dbd66c8a1ecf2ba3192d0f0cbf"
+     },
+     {
+      "locator": "Article 17, pp. 12-13",
+      "passage_sha256": "0ee8698e655a5b2f539329943ff9fda8b7370699b8cff6a944aa2ea16b277eee"
+     },
+     {
+      "locator": "Article 18, p. 13",
+      "passage_sha256": "18f7d466dd9059481e6434edf288cfeaf22b6487509a2f3dbce5e8321c005691"
+     },
+     {
+      "locator": "Article 19, p. 13",
+      "passage_sha256": "7850192ab4794ff50e3f579fc411c7d4a038039cde17238fb4de83f96d489af8"
+     },
+     {
+      "locator": "Article 20, p. 13",
+      "passage_sha256": "4c3134eb0d3f594f90c9cba9a52449d765a8a3ed24e450030d3ff05983840f9c"
+     },
+     {
+      "locator": "Article 21, pp. 13-14",
+      "passage_sha256": "0887701659e4d44a1e5bbfff9fe829e8bcc544bf0017907dc73d4285ef591781"
+     },
+     {
+      "locator": "Article 22, p. 14",
+      "passage_sha256": "c5b6a8989dbde570035d9f6609dbbe54c3cd7500562e488c016c47059ee52329"
+     },
+     {
+      "locator": "Article 23, p. 14",
+      "passage_sha256": "236a0bf73faecd290dc192cd26e943f9141215eeedb02380d9011014b68189e9"
+     },
+     {
+      "locator": "Article 24, p. 14",
+      "passage_sha256": "7fa2bbfe5e5f54f465e3a0d64bc3aba8b71ca9d1b81861fdb6c3d9ec823d8d9b"
+     },
+     {
+      "locator": "Article 25, pp. 14-15",
+      "passage_sha256": "bb86ed89c49ff8c46cc81e3bfcb096e51a721fcc4dcf11edfc656cacc10f99af"
+     },
+     {
+      "locator": "Article 26, p. 15",
+      "passage_sha256": "7ce1109d5e98a6674d17b9e52f1071fb4b7e5bbbc7fc68e854558b629e7321a8"
+     },
+     {
+      "locator": "Article 27, pp. 15-16",
+      "passage_sha256": "9bea6379d06a0b17f7bbad2e258a058f80432f79324276e786c72c1ce8547059"
+     },
+     {
+      "locator": "Article 28, pp. 16-17",
+      "passage_sha256": "55add390f4bb553cda155c220cd3c248306a0671aecf954ff782f8909dc050eb"
+     },
+     {
+      "locator": "Article 29, p. 17",
+      "passage_sha256": "2ac03c81e298ddd56eff1670ef9c9a5b4b4c34cca85f352c487e77be6760f90a"
+     },
+     {
+      "locator": "Article 30, p. 17",
+      "passage_sha256": "8999d4e6bd3fa1956f565c56b40a238c3319c8446cde3d7f5d903b356ac96018"
+     },
+     {
+      "locator": "Article 31, p. 18",
+      "passage_sha256": "daf86a56b549a75a8229ec5bec1c119014bb0f05e13b95f541ecf99250779622"
+     },
+     {
+      "locator": "Article 32, p. 18",
+      "passage_sha256": "9a702095c6961b8cccbf2d049c464e93befc276e489ea937e19af7c702121d64"
+     },
+     {
+      "locator": "Article 33, pp. 18-19",
+      "passage_sha256": "67ed110895477ecc99c243be266a8e8e05b1550bf0da94ec0c1dd6a5ac523c44"
+     },
+     {
+      "locator": "Article 34, p. 19",
+      "passage_sha256": "8b8c1950c366881a819b1e3191e8e8b9aa81fd192128c379c761438b0fd5779f"
+     },
+     {
+      "locator": "Article 35, p. 19",
+      "passage_sha256": "483e1af186a82c980c78e3893d2459cda2b428ee77e30403cd9ac31e82134f30"
+     },
+     {
+      "locator": "Article 36, pp. 19-20",
+      "passage_sha256": "eb61937b4d98685d3da0bc561be1611dc72de607fd8cda948044076865cfbc49"
+     },
+     {
+      "locator": "Article 37, p. 20",
+      "passage_sha256": "f5467dff6a68c320dfd756d4024fe9d03543c37a1da81ac4719f1f290b67fa25"
+     },
+     {
+      "locator": "Article 38, p. 20",
+      "passage_sha256": "8ecb9daebb6f5e5d5141095d9bba1f77ae724dc9927a83e96ec6a3aa145ed82d"
+     },
+     {
+      "locator": "Article 39, p. 20",
+      "passage_sha256": "0323b778dd06eb3188e3d0938e477ce51dbd404330b00022ae03214c8a0ac991"
+     },
+     {
+      "locator": "Article 40, p. 20",
+      "passage_sha256": "b5bc5a45389e01c9e42a2531fd5c6fb042d41057f21ae1bf5981edbf8a7283cb"
+     },
+     {
+      "locator": "Article 41, p. 20",
+      "passage_sha256": "faa501db7b071f9f11bf2e379b48cc95a6c333bc6def1dc22bbdd762d5769d46"
+     },
+     {
+      "locator": "Article 42, p. 21",
+      "passage_sha256": "def56e57cb03d633d2122c1405391a2cc902b95ae2a241b4ae799d46d6a070ad"
+     },
+     {
+      "locator": "Article 43, p. 21",
+      "passage_sha256": "b54b38a9d9e7e67869636c9b3942d7b56033e9d9df81efc23a41738280ebe57b"
+     },
+     {
+      "locator": "Article 44, p. 21",
+      "passage_sha256": "9740692cadf39eaa557d404666b1394d6931bba5ce19211da21093736e5cf337"
+     },
+     {
+      "locator": "Article 45, pp. 21-23, part 1",
+      "passage_sha256": "4e75f30d5ab37ed696dff8b2622885443ec6372601be428745e039b21374ef1f"
+     },
+     {
+      "locator": "Article 45, pp. 21-23, part 2",
+      "passage_sha256": "8733705390c40185d4fdf50295b63d53c27cfbcb67ec61b63c1e091d28e51eab"
+     },
+     {
+      "locator": "Article 46, p. 23",
+      "passage_sha256": "3458385819d61645d867c5e0be8557212abb5a1b1e0a7cf48c4d2cb3d528dca9"
+     },
+     {
+      "locator": "Article 47, p. 23",
+      "passage_sha256": "48f8e799f0286397701f176e392fe0da39145fd1098fe313a78c21d3a2f0c131"
+     },
+     {
+      "locator": "Article 48, pp. 23-25, part 1",
+      "passage_sha256": "409c818e3e393616388b3a5af127723f9cde9af0690afc4d4be172c4ffaea3a0"
+     },
+     {
+      "locator": "Article 48, pp. 23-25, part 2",
+      "passage_sha256": "cee17ae893cc03dd146f77018555a619078a523781037dff130ade35ae42dcff"
+     },
+     {
+      "locator": "Article 49, p. 25",
+      "passage_sha256": "2b87abe20ac01a75b8625a7f5e6195f066e0dd72f7cb19b3838c07519db373bd"
+     },
+     {
+      "locator": "Article 50, p. 25",
+      "passage_sha256": "2968467eadf99ab31df2057b6448d7c5e56f371d487ce7fbc6bac48da1010813"
+     },
+     {
+      "locator": "Article 51, p. 25",
+      "passage_sha256": "1f92d83132afe4b6fcbabe02616511adc8a010a76d899cd8abc26bbc1e966696"
+     },
+     {
+      "locator": "Article 52, p. 25",
+      "passage_sha256": "6d5b82f7acc6c4056fccbd2c3eeea189c1ccd709f78ad88f85c593e643e2529d"
+     },
+     {
+      "locator": "Article 53, pp. 25-26",
+      "passage_sha256": "1a200686535e748d712f6e2039fba48434d9d56f9b370370071cfb93fcf92481"
+     },
+     {
+      "locator": "Article 54, p. 26",
+      "passage_sha256": "1c83250a618fd17d135a3e3a3e1e8a6b9d1d4791c2c61f7947aff5a9d21372cf"
+     },
+     {
+      "locator": "Article 55, pp. 26-27",
+      "passage_sha256": "a491032b79ef2393a49a6e57a6fb646efaf2cc01ac4af598f6b472038c967d6c"
+     },
+     {
+      "locator": "Article 56, pp. 27-28",
+      "passage_sha256": "3c5e6a22a70c7845622977cf44b45da9c14c84243519d6f124ac90583c884969"
+     },
+     {
+      "locator": "Article 57, p. 28",
+      "passage_sha256": "3ccbd9dc8826f17d0ccca1f062b5ea21161d556de451141114f4be86f5ebc4f2"
+     },
+     {
+      "locator": "Article 58, p. 28",
+      "passage_sha256": "1791c2c9a54d339662033d251c1747c44bb27f10123e32f4f62ea893af4c847d"
+     },
+     {
+      "locator": "Article 59, pp. 28-29",
+      "passage_sha256": "01e1fb610ab5eef34fcf32147ac9df524ad319aa149583502ea96074fb0e70bc"
+     },
+     {
+      "locator": "Article 60, p. 29",
+      "passage_sha256": "f209058c0aa0e596d1ed0541e4a284b841cb22a604815a686555f9638d94d184"
+     },
+     {
+      "locator": "Article 61, pp. 29-30",
+      "passage_sha256": "c360330aa9279c07dfa5e33381210180471e3ed3b09a0ea7828e8c8072e4921e"
+     },
+     {
+      "locator": "Article 62, p. 30",
+      "passage_sha256": "0c025d8c5953b984c2635c63f3f7823af9b991fcc7ee6ab4cedf112e7f199d2b"
+     },
+     {
+      "locator": "Article 63, pp. 30-31",
+      "passage_sha256": "109af591d55dedbe8ffa95b647cf672d7fb0bed4221777ccf118ab75fc2082d1"
+     },
+     {
+      "locator": "Article 64, pp. 31-32",
+      "passage_sha256": "070401fe5b9051767e3f138a69a763d202ff74cccdd2d529641a735015c188da"
+     },
+     {
+      "locator": "Article 65, p. 32",
+      "passage_sha256": "3654ae6f6b74a62d5a4e43e7e6e367389b9cac9e2b1244b21e934e4c9349b699"
+     },
+     {
+      "locator": "Article 66, p. 32",
+      "passage_sha256": "9e89393ff0ce79a268a273a550dfc2a8db6f62f9f9b290e0dbcebab5459b2c94"
+     },
+     {
+      "locator": "Article 67, p. 33",
+      "passage_sha256": "27da4a3021b55f9df7960b49f3bdce59174f89850b305407e455c46a78bb6ac0"
+     },
+     {
+      "locator": "Article 68, p. 33",
+      "passage_sha256": "2a81d33d4cae4b96bc3ec116beb870de2ae649dea221495ee23eb139268c1d75"
+     },
+     {
+      "locator": "Article 69, p. 33",
+      "passage_sha256": "e71822e1232009a8509b612c8b411d3070b33decabae3f8a521f44ad728f9418"
+     },
+     {
+      "locator": "Article 70, pp. 33-34",
+      "passage_sha256": "2ee67ac29839c27ccb89d1e148b4c1528ec2ea02b75e23a8084ee564396a5226"
+     },
+     {
+      "locator": "Article 71, p. 34",
+      "passage_sha256": "9fa1005fc2a70983e73eb21d3cc1af3f41e15512b235c608c18f8789d83ad0e9"
+     },
+     {
+      "locator": "Article 72, p. 34",
+      "passage_sha256": "d617afc5ecc6a579cf6ed5e0a0fd4abd9057bacf92b25c3391330af9568a585e"
+     },
+     {
+      "locator": "Article 73, pp. 34-35",
+      "passage_sha256": "5fc57fdedda87cae02e5ed6d4545b0609708ab325eab929264ec27162a2718f6"
+     },
+     {
+      "locator": "Article 74, p. 35",
+      "passage_sha256": "5c4c87a1e68ef1e788f6092b44359171198e5cc4658fb5bfa3fde267024f5677"
+     },
+     {
+      "locator": "Article 75, pp. 35-36",
+      "passage_sha256": "caa3c79399f899ed13efe0714eaafa734146404e4f0e2009490640eab13a4a11"
+     },
+     {
+      "locator": "Article 76, p. 36",
+      "passage_sha256": "1eb0549c77ef2e0476cfae41575ef6d62672b3b12a235170b80ce944ec891464"
+     },
+     {
+      "locator": "Article 77, pp. 36-37",
+      "passage_sha256": "fdf5088093b7d3d03072fbae7d650296afb28120a04b8f14815acedca381242e"
+     },
+     {
+      "locator": "Article 78, p. 37",
+      "passage_sha256": "527660a178884c562314f765a594fbb80814288d202b9433a0d23a8437b89409"
+     },
+     {
+      "locator": "Article 79, p. 38",
+      "passage_sha256": "a121e0d81e35fa77960b27b17823652602910303ef7b999032bbf9c1d92156db"
+     },
+     {
+      "locator": "Article 79 (bis), pp. 38-39",
+      "passage_sha256": "c3ac445c529b3740ef851046e946430a195d5f1aebf74bfc4752730f178766a2"
+     },
+     {
+      "locator": "Article 80, p. 39",
+      "passage_sha256": "8c3ae30ea2f8f1dfb39f6398b1bbd1fc7c531039aaee58fb772144e4971520ae"
+     },
+     {
+      "locator": "Article 81, p. 39",
+      "passage_sha256": "2e50dae17a9f4852088ade189c86943c4ed026b415f9de8db4864aa1d7a26b4e"
+     },
+     {
+      "locator": "Article 82, p. 40",
+      "passage_sha256": "235765b94fe939dcd45f165e112eb6a5c3e236abc29be2c3496686d0a80af974"
+     },
+     {
+      "locator": "Article 83, p. 40",
+      "passage_sha256": "5f32b609f134089cf28149b07a8aabe5d3bdd2cd6449f520706ec5848ec5837c"
+     },
+     {
+      "locator": "Article 84, p. 40",
+      "passage_sha256": "fe72ef68bed30d46daf509c95edc85609b42710a21e6e27c42538c4491b543cf"
+     },
+     {
+      "locator": "Article 85, p. 40",
+      "passage_sha256": "2383b52a9955732ec371e40cbb2ba3323a1a28ad56793baab3d003a7d927f8e0"
+     }
+    ]
+   },
+   {
+    "version_id": "FTA-VAT-ER@v1",
+    "source_id": "FTA-VAT-ER",
+    "issuing_authority": "UAE Cabinet — Cabinet Decision No. 52 of 2017 (Executive Regulation of the VAT Decree-Law), as amended; copy hosted by the Federal Tax Authority",
+    "jurisdiction": "AE",
+    "title": "Executive Regulation of the VAT Decree-Law (FTA publication 04-10-2024, archive)",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive Regulation of Federal Decree Law No 8 of 2017 - Publish - 04 10 2024.pdf",
+    "retrieved_at": "2026-10-16T04:58:57+04:00",
+    "content_sha256": "13836bf7a0449de2ed391a7e2104442fdc3d403891f4a7ef78d8f43097bcac95",
+    "kb_status": "candidate",
+    "approved": false,
+    "searched_by_agent": false,
+    "raw_file_sha256": "b87b4c2c0a60d209783a25b3aa92e64d9f696a0f3300b9ca911c72a401f4e1c7",
+    "lock_verified": true,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "passage_count": 89,
+    "article_locators": [
+     {
+      "locator": "Front matter, p. 1",
+      "passage_sha256": "f01bdb62d31d1c6756c6525014ed130b21f132bc8464a1bb4c1e1fa89af303f0"
+     },
+     {
+      "locator": "Front matter, p. 2",
+      "passage_sha256": "6facf41ec98cd511da10a401d1cf6e7e6f2accb8410fa927dd6d5b6bbe9cc5c7"
+     },
+     {
+      "locator": "Article 2, pp. 2-3",
+      "passage_sha256": "f5e2efbf701eb66f6a7056555b670ce2ea5b82380e7dac539ee098d47e2a681f"
+     },
+     {
+      "locator": "Article 3, p. 3",
+      "passage_sha256": "da4ac1bd1338b764e0c74da2b5f9e48ee87e831cc98264c26fe6f38f9bdffc7d"
+     },
+     {
+      "locator": "Article 3 (bis), p. 4",
+      "passage_sha256": "1e568830144f8dff06bbaac93debc9e156c7f45647fbd018873809ee5e4a7eb8"
+     },
+     {
+      "locator": "Article 4, pp. 4-5",
+      "passage_sha256": "5af2ce270f4d0e8819878c82f3713683c027a2a18c83f825e0572c2692eb3c32"
+     },
+     {
+      "locator": "Article 5, pp. 5-6",
+      "passage_sha256": "d328953b427beed8fa54dd054e362b2b809fa25c2552d5ad5a93ba604c35429d"
+     },
+     {
+      "locator": "Article 6, p. 6",
+      "passage_sha256": "c11e6903428a65a26d97bb6e6e2e32197ee7a78a3673d160382953aaa0a858a1"
+     },
+     {
+      "locator": "Article 7, pp. 6-7",
+      "passage_sha256": "ec67e8cc723d2d473463f05963c48d2f113933732ff0f03fe94cd98b90554929"
+     },
+     {
+      "locator": "Article 8, p. 7",
+      "passage_sha256": "a8e3be9a6032b4cdac6c9749cec3c81d8468edef58fb30cc5745d77ccd4cd2b4"
+     },
+     {
+      "locator": "Article 9, pp. 7-8",
+      "passage_sha256": "3c306cc1a5b39a31ab2ad94acf6c6f71a816f66f87f67e37ef598d4c7e93ef83"
+     },
+     {
+      "locator": "Article 10, pp. 8-10",
+      "passage_sha256": "8244696a76d748618c088c08f329b7c2226ad63408a6d5e62f5ceca4e9635349"
+     },
+     {
+      "locator": "Article 11, p. 10",
+      "passage_sha256": "b6341b4ae871708fc21bda11737dde0500cf8d166184283233de6ab96979eb0a"
+     },
+     {
+      "locator": "Article 12, pp. 10-11",
+      "passage_sha256": "c8a69cb96adc6428a8320e970e02fa23c66b73cdd793ec7dc7e5d00717c96931"
+     },
+     {
+      "locator": "Article 13, p. 11",
+      "passage_sha256": "2cba373174210d801b455b6fff1d1612f3a7229b1c343e860c4815b15f36a5a1"
+     },
+     {
+      "locator": "Article 14, pp. 12-13, part 1",
+      "passage_sha256": "5b200ab504d42ce272d98504e628c28e14875946c29afa69449ad2c6a56f38b4"
+     },
+     {
+      "locator": "Article 14, pp. 12-13, part 2",
+      "passage_sha256": "21123b43b83684ce52ed78d60d7c1c116aaaf512064569382b7d51fc794c3400"
+     },
+     {
+      "locator": "Article 14 (bis), p. 13",
+      "passage_sha256": "ac9b83381f6d4fc9bde273de4f2e4c3f40039a371a1ab749ace40d500053a2c5"
+     },
+     {
+      "locator": "Article 15, p. 14",
+      "passage_sha256": "962f3e7474412757a94e241c422842785e0d48c5a965597c0b62ed039d8d165e"
+     },
+     {
+      "locator": "Article 16, p. 15",
+      "passage_sha256": "da77c9bcee2eee94c57e9e9c8d5885b42998ec26c47f8b1ed64ad7bf67d7206a"
+     },
+     {
+      "locator": "Article 17, p. 15",
+      "passage_sha256": "15b521992ffe9619e201c3b808b15e240bc1becfc57fcc1c0b414be54e0088ac"
+     },
+     {
+      "locator": "Article 18, pp. 15-16",
+      "passage_sha256": "55997ce7f6c16f0c3a6fcc2900e2a014c37a239bb158026b8ffc73d8309c1c01"
+     },
+     {
+      "locator": "Article 19, p. 16",
+      "passage_sha256": "7aba13f0bead166bc1d69efe0c28e351fd5fd7d5ad2797f8efb5cfa01a565980"
+     },
+     {
+      "locator": "Article 20, p. 16",
+      "passage_sha256": "5f53a0b6150f7ca003918af8c2b13d9226f9b7f9faddf738b97ab3dab7cdd427"
+     },
+     {
+      "locator": "Article 21, pp. 16-17",
+      "passage_sha256": "ebfe9dd52f1fc55bd333d3c3430957c24bea61f7258def6f4976a5623953e62a"
+     },
+     {
+      "locator": "Article 22, p. 17",
+      "passage_sha256": "90931cc51f922914e669b63303595c1600086f8e117b9615363ac8f6d12900fa"
+     },
+     {
+      "locator": "Article 23, pp. 17-18",
+      "passage_sha256": "300e9f372f6955a0f67d612b9516981af2b50fe0ce297c7001d43a1bac2bc60b"
+     },
+     {
+      "locator": "Article 24, pp. 18-19",
+      "passage_sha256": "a2fcf4e644a126814727a02066b283129472228cdfd24f1345aadb6413528fb3"
+     },
+     {
+      "locator": "Article 25, p. 19",
+      "passage_sha256": "6d4b941b9866f460ac37534c96d6bac3af31162684bb2ab055317e8aa7436d7a"
+     },
+     {
+      "locator": "Article 26, p. 19",
+      "passage_sha256": "4fab27623cd03f7bf69a842a507530f7d709e893d55821e903b05b492ebe53f1"
+     },
+     {
+      "locator": "Article 27, p. 20",
+      "passage_sha256": "0ff804c25f02e6faf540d0b9ef2113eedfefd7d2711c0635f6c663694cd89330"
+     },
+     {
+      "locator": "Article 28, pp. 20-21",
+      "passage_sha256": "10d1d1d42390352348cd0dded7586062d6dedb3d2d8ca2220a5f721adcf7f1a6"
+     },
+     {
+      "locator": "Article 29, pp. 21-22",
+      "passage_sha256": "c7535897e6f693e52fe64a69b259375540a6d586359ca64284215417da25e28c"
+     },
+     {
+      "locator": "Article 30, pp. 22-24, part 1",
+      "passage_sha256": "48973aac8cf906f01097e0ab2732a18ed2a6ff51a13a92a92babd4b55e43f0e1"
+     },
+     {
+      "locator": "Article 30, pp. 22-24, part 2",
+      "passage_sha256": "380d76db7b462fae69c7405ef5e5e9fbc3ce380a0d2856f4a8cb89a3ac9d413d"
+     },
+     {
+      "locator": "Article 31, pp. 25-26",
+      "passage_sha256": "1694e3c9e349d0219198f4ad62134da8c1236494382ac136f4a90fe841598843"
+     },
+     {
+      "locator": "Article 32, p. 26",
+      "passage_sha256": "ab281577704e61b5373f6d4cd8b074749bc163aa06bec4c2332506dbd943af1d"
+     },
+     {
+      "locator": "Article 33, pp. 26-27",
+      "passage_sha256": "1b247d103ea68105b784af3b62b4ab6ca9321c9a3ba875b8155ea6119ef9cebb"
+     },
+     {
+      "locator": "Article 34, pp. 27-28",
+      "passage_sha256": "769122b74ef96be9710fcfc7f460cb96b3fdc167b72ef562af565198a2e76425"
+     },
+     {
+      "locator": "Article 35, pp. 28-29",
+      "passage_sha256": "2ef50bd44e3b40b84d96fda7a49bb18f331ba23eba14cde2a902adc712731a48"
+     },
+     {
+      "locator": "Article 36, p. 29",
+      "passage_sha256": "0bedd76089429b0c17860af689f5ce0e9ce5a4c0cfbd3e6ce7fd87f2c111f711"
+     },
+     {
+      "locator": "Article 37, p. 29",
+      "passage_sha256": "27260d774610eff71c3dea4de678fcf393046b8212b9f52a03864ac1c5b86807"
+     },
+     {
+      "locator": "Article 38, p. 30",
+      "passage_sha256": "cc7bed89de0869ef3308be3931ad7da3829d4729ca406fbec486cc3536284174"
+     },
+     {
+      "locator": "Article 39, p. 30",
+      "passage_sha256": "107fcbfc5cab0b229dac04e1fa145470ecb13984d078615ad59598ef171e864f"
+     },
+     {
+      "locator": "Article 40, pp. 30-31",
+      "passage_sha256": "9034288b0a461d7c0eaf88f1d7600ba2df29d25e07e723eef9473a3d618def6f"
+     },
+     {
+      "locator": "Article 41, pp. 31-32",
+      "passage_sha256": "9ef1fdfb2332027e9c048e0d83433ababb265d31702f06cddfac27bbf9e21bbf"
+     },
+     {
+      "locator": "Article 42, pp. 32-34, part 1",
+      "passage_sha256": "9b057483ff22a12c970313d97be0088e109f1878ebb0675a20e0504f27ad5c6f"
+     },
+     {
+      "locator": "Article 42, pp. 32-34, part 2",
+      "passage_sha256": "89bc3c7f9e5575319d02aac3cd99ae8c1e0b442d2fa0687545ec9c4c9257321c"
+     },
+     {
+      "locator": "Article 43, p. 34",
+      "passage_sha256": "3c9a8710356376d39a387e98a9786347f75af1890dbf14f37797fab201e9109d"
+     },
+     {
+      "locator": "Article 44, p. 34",
+      "passage_sha256": "c1b442b2941b1f072cb33db5ba198a0493f722a3326ca2bcedd7ddb0fe87ec15"
+     },
+     {
+      "locator": "Article 45, p. 35",
+      "passage_sha256": "3115683b3b9aed8fac6d53bf219f6d554c0e64b34698fb1f58e813a23064e11e"
+     },
+     {
+      "locator": "Article 46, pp. 35-36",
+      "passage_sha256": "248a536b431b469420eb396d1aecfd5aac74de4eac59960e15bbfb1701607634"
+     },
+     {
+      "locator": "Article 47, p. 36",
+      "passage_sha256": "62c5e4c74db059e59d3cd6ab8eb6ed4ff32300f120d2039d38511547afb31a43"
+     },
+     {
+      "locator": "Article 48, pp. 37-38",
+      "passage_sha256": "baed11acb52889e1fec784f34c8aba14fe62e5ba8120fd7b4a7eabb216a76e31"
+     },
+     {
+      "locator": "Article 49, p. 38",
+      "passage_sha256": "aa2151472750b82e1d42882939308507a3126e033f60436dd836cc7df3e88fdb"
+     },
+     {
+      "locator": "Article 50, pp. 38-39",
+      "passage_sha256": "37097c62f3a29a81d3f7b868f93967d5ec099b2e2eea1699112a54c45300e140"
+     },
+     {
+      "locator": "Article 51, pp. 39-41, part 1",
+      "passage_sha256": "8fb203f2f1a8263f270ce6a2b7aead03aab78e692a2a6826e492e822be008461"
+     },
+     {
+      "locator": "Article 51, pp. 39-41, part 2",
+      "passage_sha256": "245fec8ac6febb741a4c37ff3429d2bae0179c8fab7e64153f2216786138368e"
+     },
+     {
+      "locator": "Article 52, pp. 41-42",
+      "passage_sha256": "7bf3d960f4387ebdb127ba2d197dd4edadfa34ef457086fa218109ab39b4d536"
+     },
+     {
+      "locator": "Article 53, pp. 42-43",
+      "passage_sha256": "12793c9ecef65431c5ce0197d89107b8fa2649b1348c7b02a8c234589266bd12"
+     },
+     {
+      "locator": "Article 54, p. 43",
+      "passage_sha256": "118368e51cc895f6b3540b3a190a946dda3d678555cec1729d35230abf614f22"
+     },
+     {
+      "locator": "Article 55, pp. 43-46, part 1",
+      "passage_sha256": "1f48c5138817e7e51f5361b589bf789bca24262facb85539dd70191a17331d33"
+     },
+     {
+      "locator": "Article 55, pp. 43-46, part 2",
+      "passage_sha256": "aa7acdb72b8ab928f4eeb7afb218e3513efa9c5b2a6c2b6e6dc0c742ef3267a4"
+     },
+     {
+      "locator": "Article 55, pp. 43-46, part 3",
+      "passage_sha256": "90168abc59b9c8cefa18a0df2a202f07f2e86c8d93a66abafcc46f96fa535a41"
+     },
+     {
+      "locator": "Article 56, pp. 46-47",
+      "passage_sha256": "e316b5a41062d4e042c3cd2869baf3baa19490e9b94cd994659f9fa4c64c72d7"
+     },
+     {
+      "locator": "Article 57, p. 47",
+      "passage_sha256": "c460ecb3bbb6794c846e7409a4bc2a5044c8c795e4abf3f53bb628dbeaf97ee5"
+     },
+     {
+      "locator": "Article 58, pp. 47-49, part 1",
+      "passage_sha256": "633c0f5ff745c2c75f5eb3e9039150d556106163571e34f12a896984532cb752"
+     },
+     {
+      "locator": "Article 58, pp. 47-49, part 2",
+      "passage_sha256": "a50a8a3e7b5410fb55bccd34fbe9c446d7c7e472ae22f78b7e107a51bbf5160c"
+     },
+     {
+      "locator": "Article 59, pp. 49-52, part 1",
+      "passage_sha256": "4c620f6a721f4495da266b90a7c9f2c9f4ec8e6a954fde9f19bbf927c97bd300"
+     },
+     {
+      "locator": "Article 59, pp. 49-52, part 2",
+      "passage_sha256": "4473be9173f08db690c7bee5b25133f92209d6f20a3127de9e5dd739ec5b5d23"
+     },
+     {
+      "locator": "Article 59, pp. 49-52, part 3",
+      "passage_sha256": "37c054ac9949d824dcacab74de39787910057f12aa3ae565723432a0a98f606b"
+     },
+     {
+      "locator": "Article 60, pp. 52-54, part 1",
+      "passage_sha256": "c34d4b2e8e27ceece499dd2f2625ea592884f17ad29403d3f008a2d7f40b7509"
+     },
+     {
+      "locator": "Article 60, pp. 52-54, part 2",
+      "passage_sha256": "242c1d69c124b77771bda768497ce79ea78bed4e11f4be68c7478c671be21026"
+     },
+     {
+      "locator": "Article 61, p. 54",
+      "passage_sha256": "8ec1f7dc149d09e3edc4e577050b82cd0970d8189a5652fd6a0ced5525d69e3e"
+     },
+     {
+      "locator": "Article 62, pp. 54-55",
+      "passage_sha256": "c7b21b4f019e3b7f9af357b3d1eb41993e39dfa11895e6469fc7771a20622f34"
+     },
+     {
+      "locator": "Article 63, p. 55",
+      "passage_sha256": "b4bf44979ba8dc403ed216cbaaac0ecbfa495e6ce8d8bd5e3cbd9e44db8379d6"
+     },
+     {
+      "locator": "Article 64, pp. 55-56",
+      "passage_sha256": "ba62fa25eab5a0d78875d9b281a440e7c65c77dff50bb76d328bb6780cc22f2e"
+     },
+     {
+      "locator": "Article 65, p. 56",
+      "passage_sha256": "a582837364c8f1d4bccdd0c502490f46297f10a66633ba46cd7a446f6643270f"
+     },
+     {
+      "locator": "Article 66, pp. 56-57",
+      "passage_sha256": "00ef5ce248406d866fa441fa7c4651bca5730fb3892476e7bdbff4121e713fd6"
+     },
+     {
+      "locator": "Article 67, pp. 57-58",
+      "passage_sha256": "473361ac383623e3f6c6d68db81d0f53b8bd4aec0604bc0470c74e71429101cd"
+     },
+     {
+      "locator": "Article 68, p. 59",
+      "passage_sha256": "d03e5d31710f4adcd524e6326f6568e30d5844c349f5496abb0283f48d0ec607"
+     },
+     {
+      "locator": "Article 69, pp. 59-60",
+      "passage_sha256": "da63565dc9c386535a01a978adeaa215f390e04e2003f8cb8e44f0fd0c7324fc"
+     },
+     {
+      "locator": "Article 70, pp. 60-62, part 1",
+      "passage_sha256": "2b6238bbef29182701eb32d0b97f4691a2085016e36eae7d27d5c687b510f2c7"
+     },
+     {
+      "locator": "Article 70, pp. 60-62, part 2",
+      "passage_sha256": "d7c68b3d21c3d4e3fac143725e65872fab4745c944ec15e65bc0641bb8eff4bb"
+     },
+     {
+      "locator": "Article 71, pp. 62-63",
+      "passage_sha256": "509d2d54087d17d6ef0c9f24c8df16beb483d97a7ca10ce39c209cabe515631c"
+     },
+     {
+      "locator": "Article 72, pp. 63-64",
+      "passage_sha256": "fcc8659167d7f553d4f8740aa28d761d7b85f6e8f487c134dd9d62bd2edaba09"
+     },
+     {
+      "locator": "Article 73, p. 64",
+      "passage_sha256": "70c58a35eafbf273880e4928d186d2dd30ba6bd89d5dc263c22e04df4712d594"
+     },
+     {
+      "locator": "Article 74, p. 64",
+      "passage_sha256": "81186f20a03b0eb46870ae0a64211287115fdddd10e7d9688edf8678e43428d3"
+     },
+     {
+      "locator": "Article 75, p. 64",
+      "passage_sha256": "3706a11014f2012d9e84d34373e5afc4642f6be30e61451f61419fec2c3bb352"
+     }
+    ]
+   },
+   {
+    "version_id": "FTA-VAT-ER@v2",
+    "source_id": "FTA-VAT-ER",
+    "issuing_authority": "UAE Cabinet — Cabinet Decision No. 52 of 2017 (Executive Regulation of the VAT Decree-Law), as amended; copy hosted by the Federal Tax Authority",
+    "jurisdiction": "AE",
+    "title": "Executive Regulation of the VAT Decree-Law (FTA publication 18-09-2025, archive)",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive-Regulation-of-Federal-Decree-Law-No-08-of-2017-Publish-18-09-2025.pdf",
+    "retrieved_at": "2026-10-16T04:58:59+04:00",
+    "content_sha256": "c1d3989bda2be114c97b0dc8536c9c632bed84538fd5ca2dde3a425f42d1a031",
+    "kb_status": "candidate",
+    "approved": false,
+    "searched_by_agent": false,
+    "raw_file_sha256": "11de7a2063f2ee7544e45e88df228e05716c4c36871028d898c969691238cbb0",
+    "lock_verified": true,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "passage_count": 89,
+    "article_locators": [
+     {
+      "locator": "Front matter, p. 1",
+      "passage_sha256": "542c53d533c95e27759e644d1c224635c4002e32578956f0ef706f7b8bb747c6"
+     },
+     {
+      "locator": "Front matter, p. 2",
+      "passage_sha256": "0b7d75fa0f41e432f8e676310fbb4c8016fcbf6e2fe1e750552c2e92d62aff39"
+     },
+     {
+      "locator": "Article 2, pp. 2-3",
+      "passage_sha256": "c62bcd26c98c1991ccccebe544c63d2d516ebe16ddf1b7705001c196c5b10e53"
+     },
+     {
+      "locator": "Article 3, pp. 3-4",
+      "passage_sha256": "3d9a843f8863ccf9c56d0b6ac70244f4acbb90ed82653468e7e8b85a04cb3edb"
+     },
+     {
+      "locator": "Article 3 (bis), p. 4",
+      "passage_sha256": "8670505729fed4f0cbb259d134f29428e3d661679c8d62b0c8a257cff6857918"
+     },
+     {
+      "locator": "Article 4, pp. 4-5",
+      "passage_sha256": "e407c2c546ee144e5c81ab060e2fa3bca874d747f85ed5407b8b6b8474be86c1"
+     },
+     {
+      "locator": "Article 5, pp. 5-6",
+      "passage_sha256": "44bb96a423ad34f4a40e89729b282edd998e92d6dc470fa67b3d703ef043bd2e"
+     },
+     {
+      "locator": "Article 6, p. 6",
+      "passage_sha256": "4f06174918a5672d3fa0014eb5b42dc762d47933f1a0c2c39929c4d41e32bfc6"
+     },
+     {
+      "locator": "Article 7, pp. 6-7",
+      "passage_sha256": "c990c4458dbf73bc31847018721a4832c169a0bbd087362df907fa1bba8fa6b9"
+     },
+     {
+      "locator": "Article 8, p. 7",
+      "passage_sha256": "32c55bb462063713d6d23b591d66f69991448b297be8bbc5912252525032ae6d"
+     },
+     {
+      "locator": "Article 9, p. 8",
+      "passage_sha256": "f5c8f7d349bf2090329ff5059e73c036e327849beeafacd08751dd38b77a9e30"
+     },
+     {
+      "locator": "Article 10, pp. 9-10",
+      "passage_sha256": "d240e2fec0d4225e91787cfc97ab2a3dd3936d601fd46b6e1bcf859842a376e0"
+     },
+     {
+      "locator": "Article 11, p. 10",
+      "passage_sha256": "b6341b4ae871708fc21bda11737dde0500cf8d166184283233de6ab96979eb0a"
+     },
+     {
+      "locator": "Article 12, pp. 10-11",
+      "passage_sha256": "7df3dcefd6492ebec05b7fc3c32572ccc45baa1aa8c5fff403aab549daea13b5"
+     },
+     {
+      "locator": "Article 13, p. 11",
+      "passage_sha256": "0924c6fed0651ac57939420325920eee40c805f4c1264a8c85ea221ae2b1a208"
+     },
+     {
+      "locator": "Article 14, pp. 12-13, part 1",
+      "passage_sha256": "e0f69e63f20c38b322728369e3e64da26dbd5e5d924abdae771a3e6f629c0319"
+     },
+     {
+      "locator": "Article 14, pp. 12-13, part 2",
+      "passage_sha256": "21123b43b83684ce52ed78d60d7c1c116aaaf512064569382b7d51fc794c3400"
+     },
+     {
+      "locator": "Article 14 (bis), p. 13",
+      "passage_sha256": "ac41f4fe28898dcd95c9e8d5b5d78034240389035c5a0914ac94666a97ec337e"
+     },
+     {
+      "locator": "Article 15, p. 14",
+      "passage_sha256": "98af76b43e10773e2426014c267675e5b3d5ecc48d7caabb4c841433c8cf1b1a"
+     },
+     {
+      "locator": "Article 16, p. 15",
+      "passage_sha256": "3a606b90f72c0ca532f5d8fc7e7a29cfc3013e977dce32ba13867b4957bf68da"
+     },
+     {
+      "locator": "Article 17, p. 15",
+      "passage_sha256": "dab2222047f7af14e077352224b27330414ea9e4181062225960b354157f0032"
+     },
+     {
+      "locator": "Article 18, pp. 15-16",
+      "passage_sha256": "55997ce7f6c16f0c3a6fcc2900e2a014c37a239bb158026b8ffc73d8309c1c01"
+     },
+     {
+      "locator": "Article 19, p. 16",
+      "passage_sha256": "7aba13f0bead166bc1d69efe0c28e351fd5fd7d5ad2797f8efb5cfa01a565980"
+     },
+     {
+      "locator": "Article 20, p. 16",
+      "passage_sha256": "e6a7dad9e32f5d8f285e2e2c22b9531ad4c3d64074c430dd54813442f8a358fe"
+     },
+     {
+      "locator": "Article 21, pp. 16-17",
+      "passage_sha256": "5760d1dd26d1fa127c174187676af81594fc91fba140b973db6ed08707fa3b62"
+     },
+     {
+      "locator": "Article 22, p. 17",
+      "passage_sha256": "6d999220b4978593d5f0672a5018a23854ee9207b6243c25a5fa4aad75152ae7"
+     },
+     {
+      "locator": "Article 23, pp. 17-18",
+      "passage_sha256": "8c4fb1031be44749da00b27e52e52b5486b07a9edf6ec70b48675491b6c084ff"
+     },
+     {
+      "locator": "Article 24, pp. 18-19",
+      "passage_sha256": "9ef16a999f37780099421d0512060da3fd25d41fc29e95aeae4b5b87955a8f85"
+     },
+     {
+      "locator": "Article 25, p. 19",
+      "passage_sha256": "b44ae3a07d08208554500ccf92f49be8503912ef9e4ace8d65753f56af3494de"
+     },
+     {
+      "locator": "Article 26, p. 19",
+      "passage_sha256": "4fab27623cd03f7bf69a842a507530f7d709e893d55821e903b05b492ebe53f1"
+     },
+     {
+      "locator": "Article 27, p. 20",
+      "passage_sha256": "657199123765e591b60115fc3882e277c44c10c620ba0ab67f0411a678105efc"
+     },
+     {
+      "locator": "Article 28, pp. 20-21",
+      "passage_sha256": "530e9bf3d728bb1ce1e0e258464aa5deac478a1e92658479123954c1ddb45aea"
+     },
+     {
+      "locator": "Article 29, pp. 21-22",
+      "passage_sha256": "db215f752154d06007cf96e95acd09efe17a16c4c9e4f8f0876237e78ea19508"
+     },
+     {
+      "locator": "Article 30, pp. 22-24, part 1",
+      "passage_sha256": "b2427f36798bcf95b6abd0439994a3e6a288528ecd2e4165e398710ea416817d"
+     },
+     {
+      "locator": "Article 30, pp. 22-24, part 2",
+      "passage_sha256": "eab3aa2d7ef2e1ef0297e10b0d37931baeb7280272a62a0318911eda2a882f28"
+     },
+     {
+      "locator": "Article 31, pp. 25-26",
+      "passage_sha256": "b4e56305d1234b7dc269d8f4581fe13c8ee47eb15706204e100e304db766455d"
+     },
+     {
+      "locator": "Article 32, p. 26",
+      "passage_sha256": "db03f8a9a97b51d0f674a49a73aa23bb552cb43388f6d76bfa3ef8ded9e7feaf"
+     },
+     {
+      "locator": "Article 33, pp. 26-27",
+      "passage_sha256": "1b247d103ea68105b784af3b62b4ab6ca9321c9a3ba875b8155ea6119ef9cebb"
+     },
+     {
+      "locator": "Article 34, pp. 27-28",
+      "passage_sha256": "d062d4bcd83ddddfecede9b73346bc36968ed6a01ec4aa6477e30679ee778c9f"
+     },
+     {
+      "locator": "Article 35, pp. 28-29",
+      "passage_sha256": "73c845be36275e20523896d5fdd97679a0fc74663b95d783353fdfbd1109923c"
+     },
+     {
+      "locator": "Article 36, p. 29",
+      "passage_sha256": "0bedd76089429b0c17860af689f5ce0e9ce5a4c0cfbd3e6ce7fd87f2c111f711"
+     },
+     {
+      "locator": "Article 37, p. 29",
+      "passage_sha256": "27260d774610eff71c3dea4de678fcf393046b8212b9f52a03864ac1c5b86807"
+     },
+     {
+      "locator": "Article 38, p. 30",
+      "passage_sha256": "cc7bed89de0869ef3308be3931ad7da3829d4729ca406fbec486cc3536284174"
+     },
+     {
+      "locator": "Article 39, p. 30",
+      "passage_sha256": "107fcbfc5cab0b229dac04e1fa145470ecb13984d078615ad59598ef171e864f"
+     },
+     {
+      "locator": "Article 40, pp. 30-31",
+      "passage_sha256": "7bad979002f8ff0474e31f6822cbfc61b38467c89802fa2dad3595748c61efab"
+     },
+     {
+      "locator": "Article 41, pp. 31-32",
+      "passage_sha256": "9a7ca77dfeb4f30c3909db2fcbff4de978f69dad86ab5195758b9a1c3a2d2c21"
+     },
+     {
+      "locator": "Article 42, pp. 32-34, part 1",
+      "passage_sha256": "7e9bf477867a3ccacaffea51661c561630f66cb637c95ac8b6dea5b63ae3dbe3"
+     },
+     {
+      "locator": "Article 42, pp. 32-34, part 2",
+      "passage_sha256": "7c96dfe5d576b3101e68ea68531ff33d6051c4e0a394423f1d4580677776b0ad"
+     },
+     {
+      "locator": "Article 43, p. 34",
+      "passage_sha256": "3c9a8710356376d39a387e98a9786347f75af1890dbf14f37797fab201e9109d"
+     },
+     {
+      "locator": "Article 44, p. 34",
+      "passage_sha256": "8b3f1cff00a9cc6339fc4b845deb60757c6836e32ced26fa473aa5c21dfad515"
+     },
+     {
+      "locator": "Article 45, p. 35",
+      "passage_sha256": "6cb386bb6118d216bbd19c88b114cffeba6021b38fa577fb1f41560bf6c4ccd8"
+     },
+     {
+      "locator": "Article 46, pp. 35-36",
+      "passage_sha256": "82a8b2676cd1b60af8e841bf8af975d3bc9a89f9bfa0ddd344f5a08ac00fc15f"
+     },
+     {
+      "locator": "Article 47, p. 36",
+      "passage_sha256": "6697e08be908417bac3d8fb7c7be821b6499ff41e4cf1a84d44446b447f45c20"
+     },
+     {
+      "locator": "Article 48, pp. 37-38",
+      "passage_sha256": "1c06394cafc3ce2e2c0b77aa77052db7d619e4f212ecf1e0f4d055374a9550a5"
+     },
+     {
+      "locator": "Article 49, p. 38",
+      "passage_sha256": "6293d2e7cb973cebcfb1d8b4995620d777a414dc979a8dc6b440a070844f8e58"
+     },
+     {
+      "locator": "Article 50, pp. 38-39",
+      "passage_sha256": "b7c7612daf82228796ce6a689998ebeb14855108a0c3b4620a32a77f2f2c8b8b"
+     },
+     {
+      "locator": "Article 51, pp. 39-41, part 1",
+      "passage_sha256": "c1796c478693477c149494b63492af1a732aec22795bf7e626108bbd1975ba69"
+     },
+     {
+      "locator": "Article 51, pp. 39-41, part 2",
+      "passage_sha256": "5b09e5869925df12aed1fbb5bcfaa076aba8df5eb2c1794f774073fe766867bc"
+     },
+     {
+      "locator": "Article 52, pp. 41-42",
+      "passage_sha256": "0d45672bc75d352af60af452607a1b5da2d965d3a06f2f38eddc101dc8f054ae"
+     },
+     {
+      "locator": "Article 53, pp. 42-43",
+      "passage_sha256": "48bf047d2e36c0ba6e61f613e05aa34f0f779b3e950da9b4d4a1426fffebc83f"
+     },
+     {
+      "locator": "Article 54, p. 43",
+      "passage_sha256": "97a1afc77155ef05e6d98b09e7f178998b301824640adf650fd6008ff7e3c65f"
+     },
+     {
+      "locator": "Article 55, pp. 43-46, part 1",
+      "passage_sha256": "06da1584e835f586204924562078eadd058fc96c3adf0ea583aefd0d3ee13d91"
+     },
+     {
+      "locator": "Article 55, pp. 43-46, part 2",
+      "passage_sha256": "44647cb60e2ab0ab3e8031cc8cd9260f0d41a1589e64ef74e192cc59604e6d2b"
+     },
+     {
+      "locator": "Article 55, pp. 43-46, part 3",
+      "passage_sha256": "e25de7ad6e1fdc0c67486ddc184264fa9a61a1e4d5eb0361117c907ad9b208c1"
+     },
+     {
+      "locator": "Article 56, pp. 46-47",
+      "passage_sha256": "b49ce86cacf542d15790298a108580835fb6bd748c94593734806a730d5a742b"
+     },
+     {
+      "locator": "Article 57, p. 47",
+      "passage_sha256": "b3e0012d00368d6cbefdf63dc56f0c6ad220662a1add61948eb1f51757ca9f4c"
+     },
+     {
+      "locator": "Article 58, pp. 47-49, part 1",
+      "passage_sha256": "670e1fac248b035a97662e4aca935ce3c341281d1cbba0269020aaa56c3e8dde"
+     },
+     {
+      "locator": "Article 58, pp. 47-49, part 2",
+      "passage_sha256": "1adba992363b2e6233ec99ae18d9391848a78ba620a79fbd0952ccfe8ea47a74"
+     },
+     {
+      "locator": "Article 59, pp. 49-52, part 1",
+      "passage_sha256": "62f5ca31bee1ca9b5282d71040b03e270c599da585246bfcddc0a892d0acf4c4"
+     },
+     {
+      "locator": "Article 59, pp. 49-52, part 2",
+      "passage_sha256": "4c15a676b28f9772e559037421f60e4d687c872d2a877fd414de27e95ad04f90"
+     },
+     {
+      "locator": "Article 59, pp. 49-52, part 3",
+      "passage_sha256": "299d53cc7842aa7d481d7a482c1c911879ab41c3dcbcbbf4da23150864a5dc0d"
+     },
+     {
+      "locator": "Article 60, pp. 53-54, part 1",
+      "passage_sha256": "68e4ce8a9c84aac6bb9423d4178784cf44dba6d69265900241b799c46e4e14b9"
+     },
+     {
+      "locator": "Article 60, pp. 53-54, part 2",
+      "passage_sha256": "f42282ba8ae4b4679ff566f602f2de7e908e0e4dc52b23fb29969d4a92ef3ec5"
+     },
+     {
+      "locator": "Article 61, pp. 54-55",
+      "passage_sha256": "615d7dd2335e1aa3acc9d142bfa6aa93add3733f7024fe2e927fe5ad95b73c49"
+     },
+     {
+      "locator": "Article 62, p. 55",
+      "passage_sha256": "b1b0392338991bd578940880b69aaba3b07da740ba7ee9319853025f022c9ab0"
+     },
+     {
+      "locator": "Article 63, p. 55",
+      "passage_sha256": "ff78b29a75e247964233638610c7361cd9d5e82be4c4277c9840c88e61d13276"
+     },
+     {
+      "locator": "Article 64, pp. 56-57",
+      "passage_sha256": "2c32e69e73fbda44eab95b4666bde3bf56b8eb093732fc84d10ede597f763372"
+     },
+     {
+      "locator": "Article 65, p. 57",
+      "passage_sha256": "7b440370860bea42a0d3fa711939b11087c773f1bf8089eaedbfcb0734593064"
+     },
+     {
+      "locator": "Article 66, pp. 57-58",
+      "passage_sha256": "213b618601b89bc6c13d6b93acd470a219998588f7366c4c44d2bd4b494937a0"
+     },
+     {
+      "locator": "Article 67, pp. 58-59",
+      "passage_sha256": "020cefb91b4efd7288db553b53f37979159197817b0926c4b0c9a8ebfd6f0f71"
+     },
+     {
+      "locator": "Article 68, pp. 59-60",
+      "passage_sha256": "21a678b2fd5f1d4ea166d043a62e8bdf530d3c63fd106adf2fddf88dfaef1725"
+     },
+     {
+      "locator": "Article 69, pp. 60-61",
+      "passage_sha256": "c7e43083ca2c6e45224b9f4f9338bb819f34111282a9dae3f562556c6b370e25"
+     },
+     {
+      "locator": "Article 70, pp. 61-63, part 1",
+      "passage_sha256": "05ed7c7843189134b252c70ebe5e6b2026cbbcbf3f13724174d4d9317840e621"
+     },
+     {
+      "locator": "Article 70, pp. 61-63, part 2",
+      "passage_sha256": "02b392933732c911d58bdb890a215148c03deeacd1a1b8276d5f9ddd970e8207"
+     },
+     {
+      "locator": "Article 71, p. 63",
+      "passage_sha256": "8341c6a84ca5fd8f0c2708810baa5079d7ad5944c671d5b920e0d0798826957f"
+     },
+     {
+      "locator": "Article 72, pp. 63-64",
+      "passage_sha256": "6ebf870f0abdb4c658d7a95e176369161c6638a60da9653516509f59eb2954f9"
+     },
+     {
+      "locator": "Article 73, p. 64",
+      "passage_sha256": "70c58a35eafbf273880e4928d186d2dd30ba6bd89d5dc263c22e04df4712d594"
+     },
+     {
+      "locator": "Article 74, p. 65",
+      "passage_sha256": "d705b72324cdcab86bd962edb9b5f22677a85b4ae9f489a79f9f7abfd2887b70"
+     },
+     {
+      "locator": "Article 75, p. 65",
+      "passage_sha256": "3706a11014f2012d9e84d34373e5afc4642f6be30e61451f61419fec2c3bb352"
+     }
+    ]
+   },
+   {
+    "version_id": "FTA-VAT-ER@v3",
+    "source_id": "FTA-VAT-ER",
+    "issuing_authority": "UAE Cabinet — Cabinet Decision No. 52 of 2017 (Executive Regulation of the VAT Decree-Law), as amended; copy hosted by the Federal Tax Authority",
+    "jurisdiction": "AE",
+    "title": "Executive Regulation of the VAT Decree-Law, as amended (FTA file dated 09-2026; file name says 'Law No 8' but page 1 is the Executive Regulation)",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "retrieved_at": "2026-10-16T04:59:00+04:00",
+    "content_sha256": "42df4b1d49dd29c625f76ec9fe1f4bb798b7a57c7e9b4f97f2ebd0669372ddce",
+    "kb_status": "candidate",
+    "approved": false,
+    "searched_by_agent": true,
+    "raw_file_sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+    "lock_verified": true,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "passage_count": 91,
+    "article_locators": [
+     {
+      "locator": "Front matter, p. 1",
+      "passage_sha256": "b9ee03f76ba1dfd1f3050553ce2102370e6a760c1c4b9f9f4f3c881047b91d2a"
+     },
+     {
+      "locator": "Front matter, p. 2",
+      "passage_sha256": "01cf0eddd8faeb17adb12edd20b4fbe00bb247aaadcd5747436f910d89a6957b"
+     },
+     {
+      "locator": "Article 2, pp. 2-3",
+      "passage_sha256": "d9aa390b1fe358971e756e7da912b7116051d10968017150321e915ef4fb79f4"
+     },
+     {
+      "locator": "Article 3, pp. 3-4",
+      "passage_sha256": "d256421bf1e03e5dd16770007356d3ff16d577602a7e01d90f7bc73f0327eea0"
+     },
+     {
+      "locator": "Article 3 (bis), p. 4",
+      "passage_sha256": "1e56f556e1d7ae3b744b64453f8b1c48ebb0cf4638ac4ef694a9a63311aaa199"
+     },
+     {
+      "locator": "Article 4, pp. 4-5",
+      "passage_sha256": "d0dda78f9c9f5b76d30031972867df75f4c03dec2424d9ec9ea7499be52d3f17"
+     },
+     {
+      "locator": "Article 5, pp. 5-6",
+      "passage_sha256": "f1fd775331fc1a2c67053617ec76b29fd609a2161193cd372ff881ca607d90d1"
+     },
+     {
+      "locator": "Article 6, p. 6",
+      "passage_sha256": "4f06174918a5672d3fa0014eb5b42dc762d47933f1a0c2c39929c4d41e32bfc6"
+     },
+     {
+      "locator": "Article 7, pp. 6-7",
+      "passage_sha256": "0ae58757a02ba78800bc90299dc749f354b4a7422fc9101a9842b2f3ca19a4a8"
+     },
+     {
+      "locator": "Article 8, p. 7",
+      "passage_sha256": "07471951736301c53efaf824eaf86c570e26df35e73d5215ec5debacd1d7013f"
+     },
+     {
+      "locator": "Article 9, p. 8",
+      "passage_sha256": "bb882e17b733525ff2123196aa549bded06569454cb1e982448e93eecf492658"
+     },
+     {
+      "locator": "Article 10, pp. 9-10",
+      "passage_sha256": "d240e2fec0d4225e91787cfc97ab2a3dd3936d601fd46b6e1bcf859842a376e0"
+     },
+     {
+      "locator": "Article 11, p. 10",
+      "passage_sha256": "b6341b4ae871708fc21bda11737dde0500cf8d166184283233de6ab96979eb0a"
+     },
+     {
+      "locator": "Article 12, pp. 10-11",
+      "passage_sha256": "62ae853ac87f6ae85bf04f96849bc511d68a1a270e5d5cfe354ddab04e33ec8d"
+     },
+     {
+      "locator": "Article 13, p. 11",
+      "passage_sha256": "b38ae5380d4852358138936ea7489d3e105863fdecbc93bacc74c8cc52f14fed"
+     },
+     {
+      "locator": "Article 14, pp. 12-13, part 1",
+      "passage_sha256": "cbeda29d7ce79826daa4431fb2071caa9ffb107920b6669643f2a0cdd680465e"
+     },
+     {
+      "locator": "Article 14, pp. 12-13, part 2",
+      "passage_sha256": "92ffe56ec18f8ec7b0858e99a0cc60efce64ef845e1b16ac8323a32b5ee25e72"
+     },
+     {
+      "locator": "Article 14 (bis), p. 13",
+      "passage_sha256": "db4b1dfd5c541348bba7b684d2536c2e3c029441690abc5eb7b95e711cbe84d6"
+     },
+     {
+      "locator": "Article 15, p. 14",
+      "passage_sha256": "f8b7b5fe0e1093b327336dbaea1d1fab66b7a4303eb53e64aebad982fd450cb2"
+     },
+     {
+      "locator": "Article 16, p. 15",
+      "passage_sha256": "89c956793aa74020e6910325246497312cbeceda1fb512b4e728ad8dfb1356ab"
+     },
+     {
+      "locator": "Article 17, p. 15",
+      "passage_sha256": "8954e9f4a2edcc4a4f9241b312e30e552c8712b0f35d1a5248b4005e872742de"
+     },
+     {
+      "locator": "Article 18, pp. 15-16",
+      "passage_sha256": "8d450574f213f43e87bc24e9bfce4d8559b661907c9b52bed3cd2ab1129641a8"
+     },
+     {
+      "locator": "Article 19, p. 16",
+      "passage_sha256": "7aba13f0bead166bc1d69efe0c28e351fd5fd7d5ad2797f8efb5cfa01a565980"
+     },
+     {
+      "locator": "Article 20, p. 16",
+      "passage_sha256": "e6a7dad9e32f5d8f285e2e2c22b9531ad4c3d64074c430dd54813442f8a358fe"
+     },
+     {
+      "locator": "Article 21, pp. 16-17",
+      "passage_sha256": "b624a0b1e391734f2153f95663ecddbf871c6b3241ce6aab8fbb19c712d5dd9d"
+     },
+     {
+      "locator": "Article 22, p. 17",
+      "passage_sha256": "021dbc43efa543c9a6965b84ee118e64729bad8369fe43211c82e5bcbedd291f"
+     },
+     {
+      "locator": "Article 23, pp. 17-18",
+      "passage_sha256": "4e16eaa947f741dace1b94e6088303296a39a06aad691b32735b82e7c90dc2d4"
+     },
+     {
+      "locator": "Article 24, pp. 18-19",
+      "passage_sha256": "cea8312f9064ea5230e7b8e094e4ca117aa8fac7f532bbc91ae198d725d20cbf"
+     },
+     {
+      "locator": "Article 25, p. 19",
+      "passage_sha256": "7c9bf5976ef3dec7304c36a34bea8986e9630c00b98c9ffadcef5e167a5a8fa7"
+     },
+     {
+      "locator": "Article 26, p. 19",
+      "passage_sha256": "4fab27623cd03f7bf69a842a507530f7d709e893d55821e903b05b492ebe53f1"
+     },
+     {
+      "locator": "Article 27, p. 20",
+      "passage_sha256": "657199123765e591b60115fc3882e277c44c10c620ba0ab67f0411a678105efc"
+     },
+     {
+      "locator": "Article 28, pp. 20-21",
+      "passage_sha256": "530e9bf3d728bb1ce1e0e258464aa5deac478a1e92658479123954c1ddb45aea"
+     },
+     {
+      "locator": "Article 29, pp. 21-22, part 1",
+      "passage_sha256": "b41960f9d11b8036810cec888c30ace7c5957b08932e4d3b0a81c4e098e4b249"
+     },
+     {
+      "locator": "Article 29, pp. 21-22, part 2",
+      "passage_sha256": "97286b691445033d107ecf70a1b437c6c59c2802ca150d230d4feed61a3ed6ca"
+     },
+     {
+      "locator": "Article 30, pp. 22-25, part 1",
+      "passage_sha256": "368689f00c6757a05a5d07cdd7e3c815c36e0a3d6d0426fbd53e129c4d45822c"
+     },
+     {
+      "locator": "Article 30, pp. 22-25, part 2",
+      "passage_sha256": "1b5762567d7edff1734eaf26e2691834a3aff6da008017e1562793815ca7c0a9"
+     },
+     {
+      "locator": "Article 31, pp. 25-26",
+      "passage_sha256": "19736ef2dd264f2e271f81a1fa69aa1557ba97b3f882764c5bda4663c7a00a69"
+     },
+     {
+      "locator": "Article 32, p. 26",
+      "passage_sha256": "db03f8a9a97b51d0f674a49a73aa23bb552cb43388f6d76bfa3ef8ded9e7feaf"
+     },
+     {
+      "locator": "Article 33, p. 27",
+      "passage_sha256": "b0b95bfee4d6f83d7954143c67c23cd798967df3d551abd66a51aedb758bb103"
+     },
+     {
+      "locator": "Article 34, pp. 27-28",
+      "passage_sha256": "e6b121effe1ef19280c338d9480a5c856083dbcc6618bb1c051411a1c92bfb6f"
+     },
+     {
+      "locator": "Article 35, pp. 28-29",
+      "passage_sha256": "600040afc49d490ba7cf116bb6d0d200a0c2f6f903b9e0d28bc2740c159cb883"
+     },
+     {
+      "locator": "Article 36, p. 29",
+      "passage_sha256": "0bedd76089429b0c17860af689f5ce0e9ce5a4c0cfbd3e6ce7fd87f2c111f711"
+     },
+     {
+      "locator": "Article 37, pp. 29-30",
+      "passage_sha256": "2d5222ef1f3c2f8b82c4a2c46baf1a7a1e933675c8abb0431c8ce3bbff2d9671"
+     },
+     {
+      "locator": "Article 38, p. 30",
+      "passage_sha256": "76694fbc49763e48a31aa6c74a2338326ce40700a1bbe3d04de93ffdaaef9fa1"
+     },
+     {
+      "locator": "Article 39, p. 30",
+      "passage_sha256": "107fcbfc5cab0b229dac04e1fa145470ecb13984d078615ad59598ef171e864f"
+     },
+     {
+      "locator": "Article 40, pp. 30-32",
+      "passage_sha256": "3e85ccf663c28ab21d30bffb9866dee3a8effe84085a3728538f68f0252bf0cc"
+     },
+     {
+      "locator": "Article 41, p. 32",
+      "passage_sha256": "4a009615a812a5904980768969abdd45e8790e9a96b7989af0c890d89c28acb5"
+     },
+     {
+      "locator": "Article 42, pp. 32-34, part 1",
+      "passage_sha256": "5582c1448b9987e8e20f526aa1d186def22805a8289f041e8da3690efaa7a813"
+     },
+     {
+      "locator": "Article 42, pp. 32-34, part 2",
+      "passage_sha256": "1eefb5b82608426bf13271c7310a9cd98e297804910507854f5108eedcb5ea9c"
+     },
+     {
+      "locator": "Article 43, pp. 34-35",
+      "passage_sha256": "8b6ac5760fa36566495fb59bd1feaac41df2e2fbddc1d704fcf111a6ec46fbf1"
+     },
+     {
+      "locator": "Article 44, p. 35",
+      "passage_sha256": "c1b442b2941b1f072cb33db5ba198a0493f722a3326ca2bcedd7ddb0fe87ec15"
+     },
+     {
+      "locator": "Article 45, pp. 35-36",
+      "passage_sha256": "0eb4d3c28a161ce0bbf2bbd718d5a4737df8f09e4ad79305cc04ca955e3ae144"
+     },
+     {
+      "locator": "Article 46, p. 36",
+      "passage_sha256": "17866683eeedb0fccd60f9eca9ca362acc4c338f57c19df7c7d16a27cd56a84f"
+     },
+     {
+      "locator": "Article 47, pp. 36-37",
+      "passage_sha256": "c566e9ccb8395be0861d07699541e1d91672f52953e8128079ef311399219f6a"
+     },
+     {
+      "locator": "Article 48, pp. 37-38",
+      "passage_sha256": "5e064be94f69f68a0a512ef685cf503e8124dd2ae7ebff55b9c1e41d1bc0efe0"
+     },
+     {
+      "locator": "Article 49, p. 38",
+      "passage_sha256": "eb22825a02c159084a04cae32a383e5fae8fa85e8ffa9993ff37aca56c657c2a"
+     },
+     {
+      "locator": "Article 50, pp. 38-39",
+      "passage_sha256": "f603fc99956bb31d7774f52a95ed95405cf50c9c33a04c40544a555dbc704c6c"
+     },
+     {
+      "locator": "Article 51, pp. 39-41, part 1",
+      "passage_sha256": "8c8530ab9d6cbed531f6cc665d80b35aded243745d9f70cd70d3ce85b928dcb0"
+     },
+     {
+      "locator": "Article 51, pp. 39-41, part 2",
+      "passage_sha256": "97473b5a551340a87ebda9ff48a37dc512e8164c07129613ac595188e2346f27"
+     },
+     {
+      "locator": "Article 52, pp. 41-42",
+      "passage_sha256": "054dd8d953025268c486cca81cd86f2391aea517fd7e1fe6d0b5175cd87cc20d"
+     },
+     {
+      "locator": "Article 53, pp. 42-43, part 1",
+      "passage_sha256": "b55cdf9e7b86204b8d9ab78f9fe0d2b57f00bf967c0d7b16526e7c33249e7ea2"
+     },
+     {
+      "locator": "Article 53, pp. 42-43, part 2",
+      "passage_sha256": "4666737fc7a92cd880e33304e10daf7f83d8799d75eb242253d39f80f58b21e2"
+     },
+     {
+      "locator": "Article 54, pp. 43-44",
+      "passage_sha256": "12a7536ae0588b8f4adf2230d5bf2d8535f33e7065ddbc4293be0ac45257e434"
+     },
+     {
+      "locator": "Article 55, pp. 44-47, part 1",
+      "passage_sha256": "99643f744de0d67af3e138eaf89d0df04b1a2ce283ae17fb2661b481d5cb6c7d"
+     },
+     {
+      "locator": "Article 55, pp. 44-47, part 2",
+      "passage_sha256": "59181b940201255bcf1f433345ebedb676934612f0d8564ef3b3a19482a05ed5"
+     },
+     {
+      "locator": "Article 55, pp. 44-47, part 3",
+      "passage_sha256": "d535213bcc0526bb3c9c6934363b4d7b9739b20323c50895a0eda8e1667674c3"
+     },
+     {
+      "locator": "Article 56, pp. 47-48",
+      "passage_sha256": "63a11d76899ad3a055dd10c356ec64bcdc175c7496361ffed4d5914fe30f446b"
+     },
+     {
+      "locator": "Article 57, pp. 48-49",
+      "passage_sha256": "0f325ae4bfaa9e1cf36aee9b28c2b3537b1b0deb6a4d1732e98ef830f704bfe6"
+     },
+     {
+      "locator": "Article 58, pp. 49-51, part 1",
+      "passage_sha256": "5b569bc741b8ab522d217f7856f9af2d12c8e89c5f336838af3f5ca519b000b6"
+     },
+     {
+      "locator": "Article 58, pp. 49-51, part 2",
+      "passage_sha256": "11b50803604330aff6993a3b7b81464e8a2b06b2d41bcb51bcd27e2a873e6724"
+     },
+     {
+      "locator": "Article 59, pp. 51-54, part 1",
+      "passage_sha256": "14b547197be9c9352418c848a993abeb902932e6f2f379730d025944bb59ce9e"
+     },
+     {
+      "locator": "Article 59, pp. 51-54, part 2",
+      "passage_sha256": "4b4c9a9eb4b0c5e1371eefd2f188ff61e6b0ff1f73f90e6bf75c63be3cee8d3a"
+     },
+     {
+      "locator": "Article 59, pp. 51-54, part 3",
+      "passage_sha256": "60fce1c867c8769804d783554d03726c44f0916d19f319f62b261807b12440ab"
+     },
+     {
+      "locator": "Article 60, pp. 54-56, part 1",
+      "passage_sha256": "9adba7e16b0146927463163d41bf5ee483e9da047addf9a75470903c0ab3a384"
+     },
+     {
+      "locator": "Article 60, pp. 54-56, part 2",
+      "passage_sha256": "ecb0b5e92d8d5a51002691cf27ca7bd1401b73e2e5548247972bf7afc75b35e3"
+     },
+     {
+      "locator": "Article 61, p. 56",
+      "passage_sha256": "0eb134421a19b77959eb7ad6220d2d19e7e679fa9ceb32147bf40012a9f317b2"
+     },
+     {
+      "locator": "Article 62, p. 56",
+      "passage_sha256": "96041248285ee9b2563e72c07c2d6a00286ffb4e309666c6d17d915d72de1aa6"
+     },
+     {
+      "locator": "Article 63, p. 57",
+      "passage_sha256": "7cf1414a8746e6a9fbffd44170ad348e3a86aef8340249bd22f1ad1e8cc89806"
+     },
+     {
+      "locator": "Article 64, pp. 57-58",
+      "passage_sha256": "a315eb8d3984f9a3a17664d81e0875be93cdf5081adea494432bc29371195d25"
+     },
+     {
+      "locator": "Article 65, p. 58",
+      "passage_sha256": "92268e28556f6b7831cf85e03ca1c6ae8d56d74b879ebd312dcd3f86d503a136"
+     },
+     {
+      "locator": "Article 66, pp. 58-59",
+      "passage_sha256": "02cfa2f95b1e5d0406f61fcb46db98b6f85e1c995fd1ad2e47d1d9ccb82652e7"
+     },
+     {
+      "locator": "Article 67, pp. 59-60",
+      "passage_sha256": "313829ec8a481a7e564e69695ac984fa72edfc41eca1eba2aa192bc8563c479e"
+     },
+     {
+      "locator": "Article 68, pp. 60-61",
+      "passage_sha256": "1674c633215fb4a64ea45491863e4812fc55b7488e0f3e819d66721ae901d837"
+     },
+     {
+      "locator": "Article 69, pp. 61-62",
+      "passage_sha256": "b0b772a633de832307ec21c96a8f320e5b1438a126973c2e81094802f9015a67"
+     },
+     {
+      "locator": "Article 70, pp. 62-64, part 1",
+      "passage_sha256": "8247086e2d5287551af396569efdd5249d8d7cd691fb2dfc33db7a2d3baaa709"
+     },
+     {
+      "locator": "Article 70, pp. 62-64, part 2",
+      "passage_sha256": "8cd09e0c33558514422d11f995ea3d8a85636d798fb6dff05259dbbbe647dd67"
+     },
+     {
+      "locator": "Article 71, p. 64",
+      "passage_sha256": "6216f43978cc1debf29928916e7a66b99effdcda5198f162c97f99f55c53ad86"
+     },
+     {
+      "locator": "Article 72, pp. 64-66",
+      "passage_sha256": "9daf1241ed66bdc8b9adacc8a2d3570348b2ca7f6dced924717ab96cc55be49d"
+     },
+     {
+      "locator": "Article 73, p. 66",
+      "passage_sha256": "70c58a35eafbf273880e4928d186d2dd30ba6bd89d5dc263c22e04df4712d594"
+     },
+     {
+      "locator": "Article 74, p. 66",
+      "passage_sha256": "d705b72324cdcab86bd962edb9b5f22677a85b4ae9f489a79f9f7abfd2887b70"
+     },
+     {
+      "locator": "Article 75, p. 66",
+      "passage_sha256": "3706a11014f2012d9e84d34373e5afc4642f6be30e61451f61419fec2c3bb352"
+     }
+    ]
+   },
+   {
+    "version_id": "FTA-VAT-REG-PAGE@v1",
+    "source_id": "FTA-VAT-REG-PAGE",
+    "issuing_authority": "Federal Tax Authority (web topic page)",
+    "jurisdiction": "AE",
+    "title": "Registration For VAT (FTA web topic page)",
+    "official_url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+    "retrieved_at": "2026-10-16T04:59:02+04:00",
+    "content_sha256": "5ee970ec8840a2f86f17c3d4f130b021ce565b7552db999d71d6240930328840",
+    "kb_status": "candidate",
+    "approved": false,
+    "searched_by_agent": true,
+    "raw_file_sha256": "a729f138823baceb14bb028b893234449cc926b1d8eef2fbbcda5aef677a6f36",
+    "lock_verified": true,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "passage_count": 9,
+    "article_locators": [
+     {
+      "locator": "Paragraph 1",
+      "passage_sha256": "4a7beaf65f378b221d4d2f06ad9318e5fffb4b587b385cb436ecc3214e6d4295"
+     },
+     {
+      "locator": "Paragraph 2",
+      "passage_sha256": "ad0a5c2e8c6364ddc447c7f0144cf02b35497c6415d3ee058ca15d6ddfee68f8"
+     },
+     {
+      "locator": "Paragraph 3",
+      "passage_sha256": "f0a402be5aedfae6eb5209e56996c87ea804ba394f6ccb7ad43b0f7f42281089"
+     },
+     {
+      "locator": "Paragraph 4",
+      "passage_sha256": "3bd0f6b15bd7f6af5fb6ce8ca14451fa1400b8a2596aea802d8c441ede6fc4dd"
+     },
+     {
+      "locator": "Paragraph 5",
+      "passage_sha256": "704df908cb4f7b51ab6596adc677ea978ab0e9f225118a4ea073e463a7c961e8"
+     },
+     {
+      "locator": "Paragraph 6",
+      "passage_sha256": "62b4d246c1d4107b259f2fda15eb1132d30c7e00350de5189ef4111ff933b1bf"
+     },
+     {
+      "locator": "Paragraph 7",
+      "passage_sha256": "20b87db0399eb0f7872bcb83be5d1d172af407896e15fd426ec0b61c3bd4c2b8"
+     },
+     {
+      "locator": "Paragraph 8",
+      "passage_sha256": "2e76724d3569f89c074a31bef67f31a87e20826801948d40c425742b38620143"
+     },
+     {
+      "locator": "Paragraph 9",
+      "passage_sha256": "771d1cad811b27e3da71002ca98320d44f8a44b5b6fbd0cbb4f884f549fa873c"
+     }
+    ]
+   }
+  ],
+  "register_candidates": [
+   {
+    "id": "DL16-2025-VAT-AMEND",
+    "title": "Federal Decree-Law No. 16 of 2025 amending Federal Decree-Law No. 8 of 2017 on VAT",
+    "issuing_authority": "UAE Federal Government (announced by the Ministry of Finance)",
+    "document_type": "amending legislation",
+    "official_url": "https://mof.gov.ae/en/news/ministry-of-finance-to-implement-vat-law-amendments-starting-january-2026/",
+    "issue_date": null,
+    "effective_date": "2026-01-01",
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VATP046",
+    "title": "VAT Public Clarification VATP046 — amendments to the VAT Decree-Law",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "public clarification",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf",
+    "issue_date": "2026-09-04",
+    "effective_date": null,
+    "language": "en+ar",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-DL8-2023-CONSOL-OLD",
+    "title": "Federal Decree-Law No. 8 of 2017 and amendments (older consolidation, up to DL 18/2022)",
+    "issuing_authority": "Federal Tax Authority (host)",
+    "document_type": "primary legislation (older consolidated copy)",
+    "official_url": "https://tax.gov.ae/DataFolder/Files/Legislation/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20For%20Publishing.pdf",
+    "issue_date": null,
+    "effective_date": "2023-01-01",
+    "language": "en",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-ER-2026-09-AR",
+    "title": "Executive Regulation of the VAT Decree-Law, as amended (Arabic file, 09-2026)",
+    "issuing_authority": "UAE Cabinet; file hosted by the Federal Tax Authority",
+    "document_type": "executive regulation (Arabic consolidated copy)",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026-arabic.pdf",
+    "issue_date": "2026-09-01",
+    "effective_date": null,
+    "language": "ar",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "MOF-CD149-2026-NEWS",
+    "title": "MoF announcement: amendments to the VAT Executive Regulation (Cabinet Decision No. 149 of 2026)",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "official news",
+    "official_url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendments-to-the-vat-executive-regulation/",
+    "issue_date": "2026-09-08",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "CD100-2025-ER-AMEND",
+    "title": "Cabinet Decision No. 100 of 2025 amending the VAT Executive Regulation",
+    "issuing_authority": "UAE Cabinet",
+    "document_type": "amending executive regulation",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "issue_date": "2025-08-12",
+    "effective_date": "2025-09-29",
+    "language": "en",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VATP040",
+    "title": "VAT Public Clarification VATP040 — amendments to the VAT Executive Regulation (Cabinet Decision No. 100 of 2024)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "public clarification",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Pdf/2025/VATP040%20-%20Amendments%20to%20VAT%20ER%20-%2014%2003%202025.pdf",
+    "issue_date": null,
+    "effective_date": "2024-11-15",
+    "language": "en+ar",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-REG-SERVICE",
+    "title": "VAT registration service page",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official guidance (service page)",
+    "official_url": "https://tax.gov.ae/en/services/vat.registration.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-REG-USER-MANUAL",
+    "title": "EmaraTax VAT registration user manual (service card)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "portal user manual",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Service-cards/VAT-reg.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-DEREG-SERVICE",
+    "title": "VAT deregistration service page",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official guidance (service page)",
+    "official_url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-DEREG-USER-MANUAL",
+    "title": "EmaraTax VAT deregistration user manual (service card)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "portal user manual",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Guides/service%20card/VAT%20Deregisteration.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-DEREG-SELF-ASSESS",
+    "title": "VAT deregistration self-assessment tool",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "interactive tool",
+    "official_url": "https://tax.gov.ae/emaratax/vat_deregistration_self_Assessment_tool.html",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-GUIDES-LISTING",
+    "title": "FTA VAT guides and references listing",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "listing page",
+    "official_url": "https://tax.gov.ae/en/taxes/Vat/guides.references.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-VAT-USER-GUIDE",
+    "title": "VAT User Guide",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Guides/VAT/VAT%20User%20Guide.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-DEC13-2026",
+    "title": "FTA Decision No. 13 of 2026 (verification of supplies before input tax deduction)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%2013%20of%202026%20on%20Measures%2018%2008%202026.pdf",
+    "issue_date": "2026-07-22",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-LEGISLATION-LISTING",
+    "title": "FTA legislation listing (live) and legislation archive",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "listing page",
+    "official_url": "https://tax.gov.ae/en/legislation.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-DL28-2022-TPL",
+    "title": "Federal Decree-Law No. 28 of 2022 on Tax Procedures (consolidated copy)",
+    "issuing_authority": "UAE Federal Government; copy hosted by the Ministry of Finance",
+    "document_type": "primary legislation (related scope)",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2025/07/Federal-Decree-Law-No.-28-of-2022.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "dead",
+    "link_checked_on": "2026-10-18",
+    "link_dead_reason": "MoF file removed (404)",
+    "replacement_url": "https://uaelegislation.gov.ae/en/legislations/1625",
+    "replacement_note": "official portal entry; blocked to automation; pending founder verification"
+   },
+   {
+    "id": "MOF-CD40-2017-PENALTIES",
+    "title": "Cabinet Decision No. 40 of 2017 on administrative penalties, as amended (consolidated)",
+    "issuing_authority": "UAE Cabinet; copy hosted by the Ministry of Finance",
+    "document_type": "executive regulation (related scope: penalties)",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2025/11/Cabinet-Decision-No.-40-of-2017-and-its-amendments-v14.11.25.pdf",
+    "issue_date": null,
+    "effective_date": "2026-04-14",
+    "language": "en",
+    "evidence_level": "observed_in_file",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FTA-CD129-2025-NEWS",
+    "title": "FTA news: entry into force of Cabinet Decision No. 129 of 2025 (penalties)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official news",
+    "official_url": "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.announces.entry.into.force.of.the.decision.amending.administrative.penalties.imposed.for.violations.of.tax.legislation.and.calls.on.registrants.to.benefit.from.the.advantages.of.the.new.decision.aspx",
+    "issue_date": "2026-04-15",
+    "effective_date": "2026-04-14",
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-DL8-2017",
+    "title": "UAE Legislation platform: Federal Decree-Law No. 8 of 2017 (EN/AR)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "primary legislation (official portal)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en+ar",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18",
+    "founder_check": "page loads (founder, 18 Oct 2026); contents not yet checked"
+   },
+   {
+    "id": "FTA-TERMS",
+    "title": "FTA website terms and conditions",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "terms",
+    "official_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": null,
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "CURRENT-DL8-CONSOL-INCL-DL16-2025",
+    "title": "Current FTA/MoF consolidated English copy of DL 8/2017 including DL 16/2025",
+    "issuing_authority": null,
+    "document_type": "primary legislation (consolidated)",
+    "official_url": null,
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "unresolved",
+    "review_status": "unresolved",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "unchecked",
+    "link_checked_on": null
+   },
+   {
+    "id": "MOF-CD149-2026-TEXT",
+    "title": "Cabinet Decision No. 149 of 2026 amending certain provisions of the VAT Executive Regulation (English text)",
+    "issuing_authority": "UAE Cabinet; copy hosted by the Ministry of Finance",
+    "document_type": "amending executive regulation",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf",
+    "issue_date": "2026-09-01",
+    "effective_date": "2026-10-01",
+    "language": "en",
+    "evidence_level": "unresolved",
+    "review_status": "unresolved",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "dead",
+    "link_checked_on": "2026-10-18",
+    "link_dead_reason": "MoF file removed (404 since 2026-10-16)",
+    "replacement_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+    "replacement_note": "FTA consolidated Executive Regulation (09-2026, stored as FTA-VAT-ER@v3) lists CD 149/2026 in its front matter"
+   },
+   {
+    "id": "LS-01",
+    "title": "Executive Regulation of Federal Decree-Law No. 28 of 2022 on Tax Procedures (Cabinet Decision No. 74 of 2023 and its amendments, consolidated 01-04-2026)",
+    "issuing_authority": "Cabinet (published by MoF/FTA)",
+    "document_type": "executive regulation (related scope: tax procedures)",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/Cabinet-Decision-No-74-of-2023-on-Executive-Regulation-of-Tax-Procedures-and-is-amendments-Publishing-01-04-2026.pdf",
+    "issue_date": "2023-07-10",
+    "effective_date": "2023-08-01",
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-02",
+    "title": "Cabinet Decision No. 17 of 2026 amending certain provisions of Cabinet Decision No. 74 of 2023",
+    "issuing_authority": "Cabinet",
+    "document_type": "executive regulation (related scope: tax procedures)",
+    "official_url": null,
+    "issue_date": "2026-03-23",
+    "effective_date": "2026-04-01",
+    "language": "en/ar",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "unchecked",
+    "link_checked_on": null
+   },
+   {
+    "id": "LS-03",
+    "title": "Cabinet Decision No. 74 of 2023 (original, 2023 publishing file)",
+    "issuing_authority": "Cabinet",
+    "document_type": "executive regulation (related scope: tax procedures)",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2074%20of%202023%20on%20Executive%20Regulation%20of%20Federal%20Decree-Law%20No.%2028%20of%202022%20on%20Tax%20Procedures%20-%20For%20Publishing.pdf",
+    "issue_date": "2023-07-10",
+    "effective_date": "2023-08-01",
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-04",
+    "title": "MoF news: amendments to Tax Procedures Executive Regulations effective April 2026",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "official web page",
+    "official_url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendments-to-tax-procedures-executive-regulations-effective-april-2026/",
+    "issue_date": "2026-04-01",
+    "effective_date": "2026-04-01",
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-05",
+    "title": "Cabinet Decision No. 59 of 2017 on Designated Zones for VAT purposes, and its amendments",
+    "issuing_authority": "Cabinet",
+    "document_type": "cabinet decision",
+    "official_url": null,
+    "issue_date": null,
+    "effective_date": "2018-01-01",
+    "language": "en/ar",
+    "evidence_level": "snippet_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "unchecked",
+    "link_checked_on": null
+   },
+   {
+    "id": "LS-06",
+    "title": "Cabinet decision designating Government Entities for VAT (DL Art. 10) / government entities in tax groups",
+    "issuing_authority": "Cabinet",
+    "document_type": "cabinet decision",
+    "official_url": null,
+    "issue_date": null,
+    "effective_date": null,
+    "language": null,
+    "evidence_level": "unresolved",
+    "review_status": "unresolved",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "unchecked",
+    "link_checked_on": null
+   },
+   {
+    "id": "LS-07",
+    "title": "Cabinet Decision No. 106 of 2025 on violations and administrative penalties for the Electronic Invoicing System",
+    "issuing_authority": "Cabinet",
+    "document_type": "cabinet decision",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2025/12/Cabinet-Decision-Violations-and-Penalties-eInvoicing-final-version-en-8.12.25.pdf",
+    "issue_date": "2025-10-09",
+    "effective_date": "2025-10-15",
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-08",
+    "title": "Cabinet Resolution No. 12 of 2025 regulating objection/appeal procedures (incl. VAT disputes involving government authorities)",
+    "issuing_authority": "Cabinet",
+    "document_type": "cabinet decision",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/2801/download",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-09",
+    "title": "Ministerial Decision No. 243 of 2025 on the Electronic Invoicing System",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "ministerial decision",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-no.-243-of-2025-on-the-Electronic-Invoicing-System.pdf",
+    "issue_date": "2025-09-28",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-10",
+    "title": "Ministerial Decision No. 244 of 2025 on the Implementation of the Electronic Invoicing System",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "ministerial decision",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf",
+    "issue_date": "2025-09-17",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-11",
+    "title": "Ministerial Resolution No. 66 of 2026 amending MD 244 of 2025 (ASP deadline to 30 Oct 2026 for AED 50m+)",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "ministerial decision",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-12",
+    "title": "Ministerial Decision No. 64 of 2025 on accreditation of service providers (amended 2026)",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "ministerial decision",
+    "official_url": null,
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "unchecked",
+    "link_checked_on": null
+   },
+   {
+    "id": "LS-13",
+    "title": "FTA Decision No. 17 of 2026 on Cases and Conditions for the Recovery of Input Tax Incurred on Employee Expenses",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf",
+    "issue_date": "2026-09-09",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-14",
+    "title": "Directive on Tax Transactions No. 2 of 2026 for VAT on Adjustments of Output Tax and Input Tax following a Registrant's exit from a Tax Group",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-02%20-%20VAT%20-%20Adjustment%20for%20VAT%20Group%20Members%20-%2007%202026.pdf",
+    "issue_date": "2026-07-10",
+    "effective_date": "2026-08-01",
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-15",
+    "title": "FTA Decision No. 2 of 2025 on FTA Policy for Issuance of Clarifications and Directives",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/FTA-Decision-No-2-of-2025.pdf",
+    "issue_date": "2025-02-19",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-16",
+    "title": "FTA Decision No. 4 of 2026 on rules for maintaining information in accounting records and commercial books",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%204%20of%202026%20on%20the%20Rules%20and%20Requirements%20-%2018%2008%202026.pdf",
+    "issue_date": "2026-06-02",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-17",
+    "title": "VAT Guide on Tax Groups (VATGGR101)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae/DownloadOpenTextFile?fileUrl=en/VAT_VAT_Guides/Tax_Groups_Guide_Value_Added_Tax/Tax_Groups_Guide_EN.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-18",
+    "title": "TAXP010 Tax Public Clarification - Free Zones and Designated Zones for Tax Purposes",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/TAXP010%20-%20Designated%20Zones%20for%20CT%20VAT%20Excise%20-%2010%202026.pdf",
+    "issue_date": "2026-10-02",
+    "effective_date": null,
+    "language": "en/ar",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-19",
+    "title": "VAT Administrative Exceptions Guide (Dec 2025)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2025/VAT%20Administrative%20Exceptions%20Guide%20-%20EN%20-%2005%2012%202025.pdf",
+    "issue_date": "2025-12-05",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-20",
+    "title": "Tax Group User Guide (registration, amendments and de-registration) V050",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae/DataFolder/Files/Pdf/Tax%20Groups%20User%20GuideEnglishV050.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-21",
+    "title": "VAT Registration knowledge-centre leaflet (2022)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Pdf/2023/Knowledge%20Center%20Page/vat1-vat-registration-threshold-en.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-22",
+    "title": "Taxable Person Guide for VAT (June 2018, Issue 2)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae/DataFolder/Files/Pdf/Taxable-Person-Guide-June-2018.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-23",
+    "title": "FTA service page: Tax Group Registration - VAT",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official web page",
+    "official_url": "https://tax.gov.ae/en/services/tax.group.registration.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-24",
+    "title": "FTA service page: Tax Group Record Amendment",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official web page",
+    "official_url": "https://tax.gov.ae/en/services/vat.group.amendment.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-25",
+    "title": "FTA service page: Deregistration of Tax Groups",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official web page",
+    "official_url": "https://tax.gov.ae/en/services/deregistration.of.tax.groups.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-26",
+    "title": "FTA service pages returning 404 today (exception-to-TRN; combined deregistration)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "official web page",
+    "official_url": "https://tax.gov.ae/en/services/convert.registration.exception.to.trn.vat.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "unresolved",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-28",
+    "title": "FTA Legislation listing (AR)",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "listing page",
+    "official_url": "https://tax.gov.ae/ar/legislation.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "ar",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-29",
+    "title": "FTA VAT legislation listing",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "listing page",
+    "official_url": "https://tax.gov.ae/en/legislation/vat.aspx",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "LS-32",
+    "title": "MoF Financial Legislation (tax legislation)",
+    "issuing_authority": "Ministry of Finance",
+    "document_type": "listing page",
+    "official_url": "https://mof.gov.ae/en/financial-legislation/",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-DIR-2026-05",
+    "title": "2026-5 - VAT - Valuation of Deemed Supplies - 07 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision/directive (as listed)",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-5%20-%20VAT%20-%20Valuation%20of%20Deemed%20Supplies%20-%2007%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-DIR-2026-04",
+    "title": "2026-04 - VAT - Life Insurance - 07 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision/directive (as listed)",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-04%20-%20VAT%20-%20Life%20Insurance%20-%2007%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-DIR-2026-03",
+    "title": "2026-03 - VAT - Method of Converting Consideration Received in Digital Currency into AED - 07 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision/directive (as listed)",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-03%20-%20VAT%20-%20Method%20of%20Converting%20Consideration%20Received%20in%20Digital%20Currency%20into%20AED%20-%2007%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-DIR-2026-01",
+    "title": "2026-01 - VAT - Judicial Expert Services - 07 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "FTA decision/directive (as listed)",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-01%20-%20VAT%20-%20Judicial%20Expert%20Services%20-%2007%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-CD153-2025",
+    "title": "Cabinet Decision No. 153 of 2025 on the Application of the Reverse Charge Mechanism on Metal Scrap",
+    "issuing_authority": "Cabinet",
+    "document_type": "cabinet decision",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%20153%20of%202025%20on%20the%20Application%20of%20the%20Reverse%20Charge%20Mechanism%20on%20Metal%20Scrap.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VATP047",
+    "title": "VATP047 - Reverse Charge Mechanism on Metal Scrap - 10 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "public clarification",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VATP047%20-%20Reverse%20Charge%20Mechanism%20on%20Metal%20Scrap%20-%2010%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VATP045",
+    "title": "VATP045 - Concerned Goods - Tax Invoices and Input Tax recovery - 08 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "public clarification",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VATP045%20-%20Concerned%20Goods%20-%20Tax%20Invoices%20and%20Input%20Tax%20recovery%20-%2008%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-EDU-GUIDE-2026",
+    "title": "VAT Education Guide - 29 06 2026-rep",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VAT%20Education%20Guide%20-%2029%2006%202026-rep.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-REFUND-NATIONALS-2026-06",
+    "title": "VAT Refund for UAE Nationals Building New Residences - EN - 09 06 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VAT%20Refund%20for%20UAE%20Nationals%20Building%20New%20Residences%20-%20EN%20-%2009%2006%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "FC-VAT-REFUND-NATIONALS-2026-04",
+    "title": "VAT-Refund-for-UAE-Nationals-Building-New-Residences-EN-10 04 2026",
+    "issuing_authority": "Federal Tax Authority",
+    "document_type": "guide",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VAT-Refund-for-UAE-Nationals-Building-New-Residences-EN-10%2004%202026.pdf",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-ER-1226",
+    "title": "UAE Legislation portal: Cabinet Resolution on the Executive Regulation of the VAT Decree-Law (EN)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "executive regulation (official portal, consolidated)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1226",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-DL8-1227-AR",
+    "title": "UAE Legislation portal: Federal Decree-Law No. 8 of 2017 (Arabic)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "primary legislation (official portal, Arabic original)",
+    "official_url": "https://uaelegislation.gov.ae/ar/legislations/1227",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "ar",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-TPL-1625",
+    "title": "UAE Legislation portal: Federal Decree-Law No. 28 of 2022 on Tax Procedures",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "primary legislation (official portal)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1625",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-1230",
+    "title": "UAE Legislation portal entry 1230 (related to DL 8/2017)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "related legislation (title not recorded)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1230",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-1229",
+    "title": "UAE Legislation portal entry 1229 (related to DL 8/2017)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "related legislation (title not recorded)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1229",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-2572",
+    "title": "UAE Legislation portal entry 2572 (related to DL 8/2017)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "related legislation (title not recorded)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/2572",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "id": "UAELEG-CD153-2025-3860",
+    "title": "UAE Legislation portal: Cabinet Decision No. 153 of 2025 (metal scrap reverse charge)",
+    "issuing_authority": "UAE Government legislation platform",
+    "document_type": "cabinet decision (official portal)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/3860",
+    "issue_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "pending_verification",
+    "activated": false,
+    "kb_status": "not_ingested",
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   }
+  ],
+  "inventory_360": [
+   {
+    "source_id": "CT-DL47-2022",
+    "title": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses (Corporate Tax Law)",
+    "issuing_authority": "UAE Government; UAE Legislation portal",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1582",
+    "domain": "corporate_tax",
+    "document_identifier": "DL 47/2022",
+    "publication_date": "issued 2022-10-03; Official Gazette 737 (suppl.) 2022-10-10",
+    "effective_date": "law effective 2022-10-25; applies to tax periods starting on or after 2023-06-01 (FTA public clarification)",
+    "language": "en+ar",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-CR116-2022",
+    "title": "Cabinet Resolution No. 116 of 2022 on the amount of annual income subject to Corporate Tax",
+    "issuing_authority": "Cabinet",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1614",
+    "domain": "corporate_tax",
+    "document_identifier": "CR 116/2022",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-CR75-2023",
+    "title": "Cabinet Resolution No. 75 of 2023 on administrative penalties (Corporate Tax)",
+    "issuing_authority": "Cabinet",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/2161",
+    "domain": "corporate_tax",
+    "document_identifier": "CR 75/2023",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-CR49-2023",
+    "title": "Cabinet Resolution No. 49 of 2023 on businesses of natural persons subject to Corporate Tax",
+    "issuing_authority": "Cabinet",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/2219",
+    "domain": "corporate_tax",
+    "document_identifier": "CR 49/2023",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-OTHER-CRS",
+    "title": "Other CT Cabinet Resolutions: 37/2023, 34/2025, 35/2025 (repeals 56/2023 from 2025), 55/2025, 63/2025, 209/2025, 215/2025, 1/2026",
+    "issuing_authority": "Cabinet",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1582/related-legislations",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-FTA-DEC3-2024",
+    "title": "FTA Decision No. 3 of 2024 on timeframes for Corporate Tax registration",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/Datafolder/Files/Legislation/FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20-%20For%20publishing.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": "FTA Decision 3/2024",
+    "publication_date": "FTA news 2024-02-27",
+    "effective_date": "2024-03-01",
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-REG-SERVICE",
+    "title": "FTA service card: Corporate Tax Registration",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/en/services/corporate.tax.registration.aspx",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": "page updated 2026-08-19",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-SBR-TOPIC",
+    "title": "FTA topic page: Small Business Relief",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/small.business.relief.23.aspx",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": "page updated 2024-05-06",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-MD73-2023",
+    "title": "Ministerial Decision No. 73 of 2023 on Small Business Relief",
+    "issuing_authority": "Ministry of Finance",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2023/04/Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": "MD 73/2023",
+    "publication_date": "issued 2023-04-03 (12 Ramadan 1444)",
+    "effective_date": "15 days after publication",
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-MD131-2026",
+    "title": "Ministerial Decision No. 131 of 2026 amending Ministerial Decision No. 73 of 2023 on Small Business Relief",
+    "issuing_authority": "Ministry of Finance",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": "MD 131/2026",
+    "publication_date": "issued 2026-07-29 (15 Safar 1448); MoF announcement reported 2026-08-07 (secondary)",
+    "effective_date": "the day following publication",
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-NATURAL-PERSON-TOPIC",
+    "title": "FTA topic page: Basis of Taxation - Natural Person",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": "page updated 2024-05-06",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-RETURN-DEADLINE",
+    "title": "FTA news: CT returns and payment within nine months of the tax period end",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.calls.on.all.persons.subject.to.corporate.tax.to.file.their.tax.returns.and.pay.the.corporate.tax.due.within.the.specified.timeframes.to.avoid.latepayment.penalties.aspx",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": "2026-09-02",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-GUIDES-LISTING",
+    "title": "FTA Corporate Tax Guides, References and Public Clarifications listing",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": "page updated 2026-10-02",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-SB-BULLETIN-2026",
+    "title": "Basic Tax Information Bulletin - Small Business",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": null,
+    "publication_date": "2026-07-30",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "TAX-TAXP010",
+    "title": "TAXP010 Free Zones and Designated Zones for Tax Purposes",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/TAXP010%20-%20Designated%20Zones%20for%20CT%20VAT%20Excise%20-%2010%202026.pdf",
+    "domain": "free_zone",
+    "document_identifier": null,
+    "publication_date": "2026-10-02",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "CT-FTA-DEC15-2026",
+    "title": "FTA Decision No. 15 of 2026 on Provisions on Exemption from Corporate Tax",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": "FTA Decision 15/2026",
+    "publication_date": "issue date shown 2026-09-08",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "ACC-FTA-DEC4-2026",
+    "title": "FTA Decision No. 4 of 2026 on rules for maintaining information in accounting records (title truncated on listing)",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "see https://tax.gov.ae/en/legislation.aspx",
+    "domain": "bookkeeping",
+    "document_identifier": "FTA Decision 4/2026",
+    "publication_date": "issue date shown 2026-06-02",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "unchecked",
+    "link_checked_on": null
+   },
+   {
+    "source_id": "ACC-MD82-2023",
+    "title": "Ministerial Decision No. 82 of 2023 on audited financial statements (CT)",
+    "issuing_authority": "Ministry of Finance",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2023/04/Ministerial-Decision-No.-82-of-2023-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": "MD 82/2023",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "ACC-MD84-2025",
+    "title": "Ministerial Decision No. 84 of 2025 on audited financial statements (CT)",
+    "issuing_authority": "Ministry of Finance",
+    "official_url": "https://mof.gov.ae/wp-content/uploads/2025/04/Ministerial-Decision-No.-84-of-2025-on-Audited-Financial-Statements.pdf",
+    "domain": "corporate_tax",
+    "document_identifier": "MD 84/2025",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed_listing_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "EINV-FTA-PAGE",
+    "title": "FTA page: UAE e-Invoicing",
+    "issuing_authority": "Federal Tax Authority",
+    "official_url": "https://tax.gov.ae/en/content/uae.einvoicing.aspx",
+    "domain": "e_invoicing",
+    "document_identifier": null,
+    "publication_date": "page updated 2026-10-15",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "EINV-MOF-PAGE",
+    "title": "MoF e-Invoicing initiative page",
+    "issuing_authority": "Ministry of Finance",
+    "official_url": "https://mof.gov.ae/en/about-ministry/mof-initiatives/einvoicing/",
+    "domain": "e_invoicing",
+    "document_identifier": null,
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "unresolved",
+    "review_status": "unresolved",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "UBO-CD109-2023",
+    "title": "Cabinet Decision No. 109 of 2023 on Regulating the Beneficial Owner Procedures",
+    "issuing_authority": "Cabinet; Ministry of Economy",
+    "official_url": "https://www.uaelegislation.gov.ae/en/legislations/2176",
+    "domain": "beneficial_ownership",
+    "document_identifier": "CD 109/2023",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "WPS-MOHRE",
+    "title": "MoHRE: Wages Protection System; Ministerial Resolution No. 340 of 2026 concerning WPS",
+    "issuing_authority": "Ministry of Human Resources and Emiratisation",
+    "official_url": "https://www.mohre.gov.ae/en/guidance-and-awareness-portal-new/wages-protection-system",
+    "domain": "employment",
+    "document_identifier": null,
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "EMP-DL33-2021",
+    "title": "Federal Decree-Law No. 33 of 2021 on employment relationships (as amended)",
+    "issuing_authority": "UAE Government; MoHRE",
+    "official_url": "https://mohre.gov.ae/assets/download/8cd7cf08/Federal%20Decree-Law%20No.%2033%20of%202021%20Regarding%20the%20Regulation%20of%20Employment%20Relationship%20and%20its%20amendments.pdf.aspx",
+    "domain": "employment",
+    "document_identifier": "DL 33/2021",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "ESR-CD98-2024",
+    "title": "Cabinet Decision No. 98 of 2024 amending CD 57/2020 (economic substance)",
+    "issuing_authority": "Ministry of Finance",
+    "official_url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/",
+    "domain": "economic_substance",
+    "document_identifier": "CD 98/2024",
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "LIC-DUBAI-DET",
+    "title": "Invest in Dubai: renew licence (Dubai mainland, DET)",
+    "issuing_authority": "Dubai Department of Economy and Tourism",
+    "official_url": "https://app.invest.dubai.ae/license/renew",
+    "domain": "licensing",
+    "document_identifier": null,
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18"
+   },
+   {
+    "source_id": "LIC-DDA-FZ",
+    "title": "Dubai Development Authority: trade licence renewal (free-zone example)",
+    "issuing_authority": "Dubai Development Authority",
+    "official_url": "https://dda.gov.ae/en/registration-licensing/existing-businesses/license-renewal",
+    "domain": "licensing",
+    "document_identifier": null,
+    "publication_date": null,
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "approved": false,
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18"
+   }
+  ],
+  "inventory_360_gaps": [
+   {
+    "id": "CT-G1",
+    "state": "resolved",
+    "impact_level": "high"
+   },
+   {
+    "id": "CT-G2",
+    "state": "open",
+    "impact_level": "high"
+   },
+   {
+    "id": "ACC-G1",
+    "state": "partly_resolved",
+    "impact_level": "medium"
+   },
+   {
+    "id": "EINV-G1",
+    "state": "open",
+    "impact_level": "high"
+   },
+   {
+    "id": "OBL-G1",
+    "state": "open",
+    "impact_level": "high"
+   }
+  ],
+  "obligations_360": [
+   {
+    "obligation_id": "VAT-MANDATORY-REG",
+    "domain": "vat",
+    "title": "VAT mandatory registration",
+    "sources": [],
+    "vat_register_sources": [
+     "FTA-VAT-DL8",
+     "FTA-VAT-ER"
+    ],
+    "gaps": [
+     "G3"
+    ],
+    "reviewer": "D3",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "VAT-RETURN",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "sources": [],
+    "vat_register_sources": [
+     "FTA-VAT-DL8",
+     "FTA-VAT-ER"
+    ],
+    "gaps": [
+     "G3"
+    ],
+    "reviewer": "D3",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "VAT-DEREG",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "sources": [],
+    "vat_register_sources": [
+     "FTA-VAT-ER"
+    ],
+    "gaps": [
+     "G1"
+    ],
+    "reviewer": "D3",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "CT-REG-NATURAL",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration: natural person",
+    "sources": [
+     "CT-NATURAL-PERSON-TOPIC",
+     "CT-REG-SERVICE",
+     "CT-FTA-DEC3-2024",
+     "CT-CR49-2023",
+     "CT-DL47-2022"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "CT-G2"
+    ],
+    "reviewer": "D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "CT-REG-JURIDICAL",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration: juridical person",
+    "sources": [
+     "CT-REG-SERVICE",
+     "CT-FTA-DEC3-2024",
+     "CT-DL47-2022"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "CT-G2"
+    ],
+    "reviewer": "D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "CT-LATE-REG-PENALTY",
+    "domain": "corporate_tax",
+    "title": "Corporate tax late-registration penalty and waiver",
+    "sources": [
+     "CT-REG-SERVICE",
+     "CT-CR75-2023"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "CT-G2"
+    ],
+    "reviewer": "D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "CT-RETURN",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "sources": [
+     "CT-RETURN-DEADLINE",
+     "CT-DL47-2022"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "CT-G2"
+    ],
+    "reviewer": "D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "CT-SBR",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief election",
+    "sources": [
+     "CT-MD131-2026",
+     "CT-MD73-2023",
+     "CT-SBR-TOPIC",
+     "CT-DL47-2022"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "CT-G1",
+     "CT-G2"
+    ],
+    "reviewer": "D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "ACC-RECORDS",
+    "domain": "bookkeeping",
+    "title": "Keep accounting records",
+    "sources": [
+     "ACC-FTA-DEC4-2026",
+     "CT-DL47-2022"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "CT-G2"
+    ],
+    "reviewer": "D3-ACC, D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "ACC-AUDITED-FS",
+    "domain": "bookkeeping",
+    "title": "Audited financial statements (tax rule; authorities may differ)",
+    "sources": [
+     "ACC-MD84-2025",
+     "ACC-MD82-2023"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "ACC-G1",
+     "OBL-G1"
+    ],
+    "reviewer": "D3-ACC, D3-CT",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "EINV-READINESS",
+    "domain": "e_invoicing",
+    "title": "E-invoicing readiness",
+    "sources": [
+     "EINV-FTA-PAGE",
+     "EINV-MOF-PAGE"
+    ],
+    "vat_register_sources": [
+     "LS-09",
+     "LS-10",
+     "LS-11"
+    ],
+    "gaps": [
+     "EINV-G1"
+    ],
+    "reviewer": "D3",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "LIC-RENEWAL",
+    "domain": "licensing",
+    "title": "Trade licence renewal",
+    "sources": [
+     "LIC-DUBAI-DET",
+     "LIC-DDA-FZ"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "OBL-G1"
+    ],
+    "reviewer": "D3-JUR",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "UBO-REGISTER",
+    "domain": "beneficial_ownership",
+    "title": "Beneficial-owner register",
+    "sources": [
+     "UBO-CD109-2023"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "OBL-G1"
+    ],
+    "reviewer": "D3-JUR",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "WPS-PAYROLL",
+    "domain": "employment",
+    "title": "Wages through WPS",
+    "sources": [
+     "WPS-MOHRE",
+     "EMP-DL33-2021"
+    ],
+    "vat_register_sources": null,
+    "gaps": [
+     "OBL-G1"
+    ],
+    "reviewer": "D3-JUR",
+    "substantive_rule_allowed": false
+   },
+   {
+    "obligation_id": "ESR-HISTORICAL",
+    "domain": "economic_substance",
+    "title": "Economic substance (historical periods only)",
+    "sources": [
+     "ESR-CD98-2024"
+    ],
+    "vat_register_sources": null,
+    "gaps": [],
+    "reviewer": "D3-JUR",
+    "substantive_rule_allowed": false
+   }
+  ],
+  "validity": {
+   "approved_versions": [],
+   "versions": [
+    {
+     "version_id": "FTA-VAT-DL8@v1",
+     "approved": false,
+     "outdated": true,
+     "selected_as_current": true
+    },
+    {
+     "version_id": "FTA-VAT-ER@v1",
+     "approved": false,
+     "outdated": true,
+     "selected_as_current": false
+    },
+    {
+     "version_id": "FTA-VAT-ER@v2",
+     "approved": false,
+     "outdated": true,
+     "selected_as_current": false
+    },
+    {
+     "version_id": "FTA-VAT-ER@v3",
+     "approved": false,
+     "outdated": false,
+     "selected_as_current": true
+    },
+    {
+     "version_id": "FTA-VAT-REG-PAGE@v1",
+     "approved": false,
+     "outdated": false,
+     "selected_as_current": true
+    }
+   ],
+   "issues": [
+    {
+     "id": "FTA-VAT-DL8:missing",
+     "kind": "missing",
+     "provisions": [
+      "FTA-VAT-DL8|54 (bis)"
+     ]
+    },
+    {
+     "id": "FTA-VAT-DL8:outdated",
+     "kind": "outdated",
+     "provisions": [
+      "FTA-VAT-DL8|48",
+      "FTA-VAT-DL8|74"
+     ]
+    },
+    {
+     "id": "FTA-VAT-DL8:repealed",
+     "kind": "repealed",
+     "provisions": [
+      "FTA-VAT-DL8|79 (bis)"
+     ]
+    },
+    {
+     "id": "FTA-VAT-DL8:partial-scope",
+     "kind": "outdated",
+     "provisions": [
+      "FTA-VAT-DL8|*"
+     ]
+    },
+    {
+     "id": "FTA-VAT-ER:future-text",
+     "kind": "future_text",
+     "provisions": [
+      "FTA-VAT-ER|55",
+      "FTA-VAT-ER|56"
+     ]
+    },
+    {
+     "id": "conflict:vat.deregistration.mandatory_application_deadline",
+     "kind": "conflict",
+     "provisions": [
+      "FTA-VAT-ER|14"
+     ]
+    },
+    {
+     "id": "FTA-VAT-ER:extraction",
+     "kind": "extraction",
+     "provisions": [
+      "FTA-VAT-ER|1"
+     ]
+    }
+   ]
+  },
+  "validity_1_2": [
+   {
+    "key": "FTA-VAT-DL8|*",
+    "status": "outdated",
+    "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+    "current_official_url_content_check": "pending_founder_verification",
+    "amendments": [
+     "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-DL8|48",
+    "status": "outdated",
+    "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+    "current_official_url_content_check": "pending_founder_verification",
+    "amendments": [
+     "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-DL8|74",
+    "status": "outdated",
+    "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+    "current_official_url_content_check": "pending_founder_verification",
+    "amendments": [
+     "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-DL8|54 (bis)",
+    "status": "outdated",
+    "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+    "current_official_url_content_check": "pending_founder_verification",
+    "amendments": [
+     "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-DL8|79 (bis)",
+    "status": "superseded",
+    "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+    "current_official_url_content_check": "pending_founder_verification",
+    "amendments": [
+     "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-ER|*",
+    "status": "current",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-ER|14",
+    "status": "conflict",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [],
+    "conflicts": [
+     "G1"
+    ],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-REG-PAGE|*",
+    "status": "current",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "FTA-VAT-DEREG-SERVICE|*",
+    "status": "conflict",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [],
+    "conflicts": [
+     "G1"
+    ],
+    "release_approved": false
+   },
+   {
+    "key": "CT-MD73-2023|*",
+    "status": "outdated",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [
+     "Ministerial Decision No. 131 of 2026 (amending MD 73/2023, Small Business Relief)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "CT-MD73-2023|2(2)",
+    "status": "outdated",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [
+     "Ministerial Decision No. 131 of 2026 (amending MD 73/2023, Small Business Relief)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   },
+   {
+    "key": "ACC-MD82-2023|*",
+    "status": "superseded",
+    "current_official_url": null,
+    "current_official_url_content_check": null,
+    "amendments": [
+     "Ministerial Decision No. 84 of 2025 on Audited Financial Statements (repeals MD 82/2023)"
+    ],
+    "conflicts": [],
+    "release_approved": false
+   }
+  ],
+  "post_snapshot_changes_not_in_demo": [
+   {
+    "source_id": "CT-DL47-2022",
+    "fields_changed": [
+     "notes"
+    ]
+   },
+   {
+    "source_id": "CT-FTA-DEC3-2024",
+    "fields_changed": [
+     "evidence",
+     "url_read"
+    ]
+   },
+   {
+    "source_id": "CT-REG-SERVICE",
+    "fields_changed": [
+     "notes"
+    ]
+   },
+   {
+    "source_id": "CT-SBR-TOPIC",
+    "fields_changed": [
+     "notes",
+     "url_read"
+    ]
+   },
+   {
+    "source_id": "ACC-MD82-2023",
+    "fields_changed": [
+     "notes"
+    ]
+   },
+   {
+    "source_id": "ACC-MD84-2025",
+    "fields_changed": [
+     "effective_date",
+     "evidence",
+     "evidence_level",
+     "extraction_completeness",
+     "notes",
+     "publication_date",
+     "retrieval_tool"
+    ]
+   },
+   {
+    "source_id": "EINV-MOF-PAGE",
+    "fields_changed": [
+     "evidence"
+    ]
+   }
+  ]
+ },
+ "synthetic_demonstration_examples": {
+  "note": "Fictional businesses and questions written by HerBiz; no real person.",
+  "ask_examples": [
+   {
+    "id": "Q13",
+    "persona": "Fatima, bridal henna",
+    "label": "Crossed the limit — from when?"
+   },
+   {
+    "id": "U10",
+    "persona": "Aisha, home baker",
+    "label": "An amount with no period"
+   },
+   {
+    "id": "Q35",
+    "persona": "Layla, cupcakes",
+    "label": "Cancel a voluntary registration"
+   },
+   {
+    "id": "U14",
+    "persona": "Mariam, henna + a flat",
+    "label": "Does rent count?"
+   },
+   {
+    "id": "U18",
+    "persona": "Huda, home food",
+    "label": "A licensing question"
+   },
+   {
+    "id": "U22",
+    "persona": "Noura, beauty",
+    "label": "Split sales with my sister"
+   }
+  ],
+  "dashboard_profiles": {
+   "ct_demo_personas": [
+    "SYN-AMAL-A",
+    "SYN-AMAL-B"
+   ],
+   "other_synthetic_profiles": [
+    "SYN-P01",
+    "SYN-P02",
+    "SYN-P03",
+    "SYN-P04",
+    "SYN-P05",
+    "SYN-P06"
+   ]
+  }
+ },
+ "domain_b_agent_governance": {
+  "references": [
+   {
+    "policy_id": "POL-UAE-PDPL",
+    "title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data",
+    "issuing_authority": "UAE Federal Government (UAE Legislation portal)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+    "document_type": "federal decree-law",
+    "binding_status": "binding law (applicability to HerBiz not determined; Art. 2(2)(g) excludes free-zone companies with their own data laws)",
+    "publication_date": "issued 2021-09-20; Official Gazette 712 (suppl.) 2021-09-26",
+    "effective_date": "2022-01-02",
+    "language": "en (Arabic prevails)",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18",
+    "founder_check": "page loads (founder, 18 Oct 2026); contents not yet checked",
+    "herbiz_note_provisions": [
+     "Art. 1 definitions (personal, sensitive personal data, automated processing, consent)",
+     "Art. 2 scope and exclusions",
+     "Art. 4 no processing without consent (listed exceptions)",
+     "Art. 5 processing controls: purpose limitation, data minimisation, accuracy, security, retention",
+     "Art. 6 consent terms",
+     "Art. 7 controller obligations (incl. privacy by design, records)",
+     "Art. 13 right to information incl. decisions based on automated processing",
+     "Art. 18 right to object to automated decisions; 18(4) human review on request",
+     "Art. 20 security",
+     "Art. 21 impact assessment for high-risk processing"
+    ],
+    "in_submitted_agent": true
+   },
+   {
+    "policy_id": "POL-UAE-AI-CHARTER",
+    "title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+    "issuing_authority": "UAE Government (u.ae; policy page on the UAE Legislation portal)",
+    "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+    "document_type": "national charter / policy",
+    "binding_status": "official policy and principles (no binding force stated on the page read)",
+    "publication_date": "not stated on the page read (u.ae page updated 2026-07-03)",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed",
+    "review_status": "discovered",
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "herbiz_note_provisions": [
+     "Objectives: ethical and responsible use; privacy and data security; transparency and accountability",
+     "Principle 2 Safety (modify or remove risky systems)",
+     "Principle 3 Algorithmic bias",
+     "Principle 4 Data privacy",
+     "Principle 5 Transparency",
+     "Principle 6 Human oversight (human judgement; correct errors or biases)",
+     "Principle 7 Governance and accountability",
+     "Principle 12 Commitment to treaties and applicable laws"
+    ],
+    "in_submitted_agent": true
+   },
+   {
+    "policy_id": "POL-UAE-AI-STRATEGY-2031",
+    "title": "UAE National Strategy for Artificial Intelligence 2031 (UAE Strategy for Artificial Intelligence)",
+    "issuing_authority": "UAE Government; Minister of State for AI office (ai.gov.ae)",
+    "official_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Ai/uae-strategy-for-artificial-intelligence",
+    "document_type": "national strategy",
+    "binding_status": "strategy (non-binding)",
+    "publication_date": "launched October 2017 (u.ae page)",
+    "effective_date": null,
+    "language": "en",
+    "evidence_level": "observed (u.ae summary); PDF observed_listing_only",
+    "review_status": "discovered",
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "herbiz_note_provisions": [
+     "Aims: boost government performance; integrated smart digital system",
+     "Themes incl. capability building and 'issue a government law on the safe use of AI'"
+    ],
+    "in_submitted_agent": true
+   },
+   {
+    "policy_id": "POL-DUBAI-AI-ETHICS",
+    "title": "Smart Dubai AI Ethics Principles & Guidelines",
+    "issuing_authority": "Smart Dubai / Digital Dubai",
+    "official_url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+    "document_type": "principles and guidelines (emirate)",
+    "binding_status": "voluntary guidance (binding status not stated on pages read; secondary sources describe it as non-binding)",
+    "publication_date": "not on pages read (secondary sources: March 2019, unverified)",
+    "effective_date": null,
+    "language": "en (Arabic on cover)",
+    "evidence_level": "observed (pages 1-2 of 35: cover and contents)",
+    "review_status": "discovered",
+    "activated": false,
+    "link_status": "ok",
+    "link_checked_on": "2026-10-18",
+    "herbiz_note_provisions": [
+     "AI principles: Ethics, Security, Humanity, Inclusiveness",
+     "1.1 We will make AI systems fair (1.1.1-1.1.5) (heading only, text not read)",
+     "1.2 We will make AI systems accountable: 1.2.1 accountability for outcomes should not lie with the system itself; 1.2.2 identify and mitigate significant risks; 1.2.3 SUSPENDED external audit; 1.2.4 AI subjects able to challenge significant automated decisions (heading only, text not read)"
+    ],
+    "in_submitted_agent": true
+   }
+  ],
+  "located_only": [
+   {
+    "policy_id": "POL-UAE-DATA-OFFICE",
+    "title": "Federal Decree by Law No. (44) of 2021 Establishing the Emirates Data Office (title as shown in the portal search result)",
+    "issuing_authority": "UAE Federal Government (UAE Legislation portal, entry 2433)",
+    "official_url": "https://uaelegislation.gov.ae/en/legislations/2433",
+    "document_type": "federal decree-law",
+    "binding_status": "binding law (establishes the federal data regulator named in the PDPL); applicability to HerBiz not determined",
+    "publication_date": "issued 2021-09-20 (search excerpt); Official Gazette No. 712; gazette date 26 or 27 Sep 2021 (excerpts disagree: to verify)",
+    "effective_date": null,
+    "language": "en (Arabic prevails)",
+    "evidence_level": "snippet_only",
+    "review_status": "discovered",
+    "activated": false,
+    "link_status": "blocked_to_automation",
+    "link_checked_on": "2026-10-18",
+    "status": "located reference only: excerpt seen, official text not retrieved or reviewed",
+    "in_submitted_agent": false
+   }
+  ],
+  "standards_link_only": [
+   {
+    "title": "Rec. ITU-T Y.3172 (06/2019)",
+    "issuer": "ITU-T"
+   },
+   {
+    "title": "AI Ready – Analysis Towards a Standardized Readiness Framework, Report 2.0 (Jan 2026)",
+    "issuer": "ITU"
+   }
+  ]
+ }
+}

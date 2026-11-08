@@ -1,0 +1,735 @@
+{
+ "_notice": "Independent blind synthetic set v10 for HerBiz retrieval (HomepreunerHub / HerBiz), written from general knowledge + the article title list only; not tax-reviewed; not legal or tax advice.",
+ "questions": [
+  {
+   "id": "Q1001",
+   "category": "realistic_scenario",
+   "topic": "mandatory registration threshold",
+   "text": "i bake cakes from home and sell on insta, last 12 months i made around 330k aed. do i HAVE to register for vat now or can i wait till year end?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "13"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "19"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "7"
+    ],
+    [
+     "FTA-VAT-REG-PAGE",
+     null
+    ]
+   ],
+   "label_justification": "Art 13 (Mandatory Tax Registration) sets the obligation and threshold; Art 19 (Calculating the Tax Registration Threshold) explains how the past 12 months / next 30 days are counted.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1002",
+   "category": "paraphrase",
+   "topic": "registration deadline after crossing threshold",
+   "text": "ok so say i went over the limit last month... is there like a countdown for when the application must be in, or a penalty clock starting?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "13"
+    ],
+    [
+     "FTA-VAT-ER",
+     "7"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "76"
+    ],
+    [
+     "FTA-VAT-REG-PAGE",
+     null
+    ]
+   ],
+   "label_justification": "Art 13 (Mandatory Tax Registration) and ER Art 7 (Mandatory Registration) state when the obligation arises and the time to apply.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Application deadline and related penalties have been changed by later decisions; stored copy may be outdated."
+  },
+  {
+   "id": "Q1003",
+   "category": "realistic_scenario",
+   "topic": "voluntary registration",
+   "text": "My crochet shop only does about 200,000 AED a year but my supplies cost a lot with VAT on them. Can I register even though I'm under the mandatory limit so I can claim it back?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "17"
+    ],
+    [
+     "FTA-VAT-ER",
+     "8"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "54"
+    ]
+   ],
+   "label_justification": "Art 17 (Voluntary Registration) sets the voluntary threshold; ER Art 8 (Voluntary Registration) gives the conditions.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1004",
+   "category": "realistic_scenario",
+   "topic": "deregistration on closing business",
+   "text": "I'm shutting down my henna business for good next month. what do i need to do to cancel my vat number and is there a deadline?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "21"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "22"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "14"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "24"
+    ],
+    [
+     "FTA-VAT-ER",
+     "18"
+    ]
+   ],
+   "label_justification": "Art 21 (Tax Deregistration Cases) covers stopping taxable supplies; Art 22 (Application for Tax Deregistration) covers the application and timing.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Deregistration deadlines and penalty for late application may have been amended."
+  },
+  {
+   "id": "Q1005",
+   "category": "paraphrase",
+   "topic": "deregistration when turnover falls",
+   "text": "sales went way down this year, im barely doing 150k now. Am I stuck being a vat person forever or can I get off the list?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "21"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "23"
+    ],
+    [
+     "FTA-VAT-ER",
+     "14"
+    ]
+   ],
+   "label_justification": "Art 21 (Tax Deregistration Cases) lets a registrant deregister when supplies fall below the voluntary threshold; Art 23 and ER Art 14 add conditions.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1006",
+   "category": "ambiguous",
+   "topic": "voluntary deregistration within 12 months",
+   "text": "registered voluntarily like 6 months back, honestly regret it. can i cancel now??",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "23"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "21"
+    ],
+    [
+     "FTA-VAT-ER",
+     "14"
+    ]
+   ],
+   "label_justification": "Art 23 (Voluntary Tax Deregistration) restricts deregistration within 12 months of voluntary registration; outcome depends on turnover, which is not stated.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Facts incomplete (turnover unknown) and the 12-month rule's current wording should be confirmed."
+  },
+  {
+   "id": "Q1007",
+   "category": "realistic_scenario",
+   "topic": "tax invoice contents",
+   "text": "What exactly has to be written on a proper tax invoice? I'm making my own template in canva for my candle orders",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "65"
+    ],
+    [
+     "FTA-VAT-ER",
+     "59"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "79"
+    ]
+   ],
+   "label_justification": "Art 65 (Conditions and Requirements for Issuing Tax Invoices) and ER Art 59 (Tax invoices) list the mandatory particulars.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1008",
+   "category": "paraphrase",
+   "topic": "invoice timing",
+   "text": "customer pays me upfront by bank transfer, how many days do i get before I must send them the official bill?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "67"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "25"
+    ],
+    [
+     "FTA-VAT-ER",
+     "59"
+    ]
+   ],
+   "label_justification": "Art 67 (Date of Issuance of Tax Invoice) sets the 14-day window from the date of supply; Art 25 helps fix the date of supply.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1009",
+   "category": "adversarial",
+   "topic": "omitting TRN on invoices",
+   "text": "honestly nobody checks, can i just leave my TRN off the invoices so customers dont realise im charging vat?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "79"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "65"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "59"
+    ]
+   ],
+   "label_justification": "Art 79 (Stating the Tax Registration Number) requires the TRN on documents; Art 65 makes it a tax invoice requirement.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1010",
+   "category": "realistic_scenario",
+   "topic": "record keeping period",
+   "text": "how long do I need to keep my receipts and order records? can I just keep screenshots on my phone",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "78"
+    ],
+    [
+     "FTA-VAT-ER",
+     "71"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "72"
+    ]
+   ],
+   "label_justification": "Art 78 (Record-keeping) sets the obligation and period; ER Art 71 (Record-keeping Requirements) sets what records and form.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Retention periods and electronic record rules have been updated by later legislation and guidance."
+  },
+  {
+   "id": "Q1011",
+   "category": "realistic_scenario",
+   "topic": "return filing and payment deadline",
+   "text": "When is my VAT return actually due and when do I have to pay? first time filing, quarter ended 30 sept",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "72"
+    ],
+    [
+     "FTA-VAT-ER",
+     "64"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "71"
+    ],
+    [
+     "FTA-VAT-ER",
+     "62"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "73"
+    ]
+   ],
+   "label_justification": "Art 72 (Submission of Tax Returns) and ER Art 64 (Tax Return and Payment) set the 28-day filing and payment deadline.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1012",
+   "category": "paraphrase",
+   "topic": "tax period length",
+   "text": "is it every 3 months or every month that i report? and can i choose which one",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "71"
+    ],
+    [
+     "FTA-VAT-ER",
+     "62"
+    ]
+   ],
+   "supporting_sources": [],
+   "label_justification": "Art 71 (Duration of Tax Period) and ER Art 62 (Length of tax period) set standard and FTA-assigned periods.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1013",
+   "category": "realistic_scenario",
+   "topic": "refund of excess input tax",
+   "text": "bought a big oven and stock this quarter so my vat paid is more than vat collected. Will FTA give me the money back or does it just sit there?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "74"
+    ],
+    [
+     "FTA-VAT-ER",
+     "65"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "55"
+    ]
+   ],
+   "label_justification": "Art 74 (Excess Recoverable Tax) covers carry-forward or refund; ER Art 65 (Recovery of Excess Tax) gives the refund procedure.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Art 74 was amended after 2017; the stored copy may not reflect current refund rules."
+  },
+  {
+   "id": "Q1014",
+   "category": "adversarial",
+   "topic": "refund myth",
+   "text": "my friend says if I keep carrying forward my extra vat credit FTA has to pay me interest on it eventually and I can claim it whenever, true??",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "74"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "65"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "79 (bis)"
+    ]
+   ],
+   "label_justification": "Art 74 (Excess Recoverable Tax) governs carry-forward and refund requests; there is no interest entitlement stated in the titled provisions.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Claim relies on time limits and amendments that need checking against current law."
+  },
+  {
+   "id": "Q1015",
+   "category": "realistic_scenario",
+   "topic": "reverse charge on foreign services",
+   "text": "I pay a monthly subscription to an overseas design app and an ads platform billed from abroad. They don't charge me vat. do I have to do something on my return?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "48"
+    ],
+    [
+     "FTA-VAT-ER",
+     "48"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "29"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "31"
+    ]
+   ],
+   "label_justification": "Art 48 (Reverse Charge) makes the UAE registrant account for tax on imported services; ER Art 48 (Calculation of Tax under the Reverse Charge) explains the calculation.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1016",
+   "category": "realistic_scenario",
+   "topic": "importing goods",
+   "text": "importing fabric rolls from abroad through a courier for my abaya business. customs took some money, how does vat work on this and whats the value used?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "48"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "35"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "47"
+    ],
+    [
+     "FTA-VAT-ER",
+     "50"
+    ]
+   ],
+   "label_justification": "Art 48 (Reverse Charge) applies to registrants importing goods; Art 35 (Value of Import) sets the taxable value of imported goods.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Import VAT mechanics at customs vs reverse charge depend on registration and current FTA procedures."
+  },
+  {
+   "id": "Q1017",
+   "category": "rate_category",
+   "topic": "standard rate on food",
+   "text": "what vat rate goes on homemade cupcakes and cookies i sell locally?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "3"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "2"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "45"
+    ]
+   ],
+   "label_justification": "Art 3 (Tax Rate) sets the standard 5% rate; food sold locally is not listed as zero-rated in Art 45.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1018",
+   "category": "rate_category",
+   "topic": "tutoring and education zero rate",
+   "text": "I do online maths tutoring for school kids in dubai from my home. is that zero rated like schools?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "45"
+    ],
+    [
+     "FTA-VAT-ER",
+     "40"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "3"
+    ]
+   ],
+   "label_justification": "Art 45 (Goods and Services Subject to Zero Rate) and ER Art 40 (Zero-rating Education Services) limit zero-rating to recognised institutions, so private tutoring is likely standard-rated.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Whether private tutoring qualifies depends on institution recognition; label uncertain."
+  },
+  {
+   "id": "Q1019",
+   "category": "rate_category",
+   "topic": "export of goods",
+   "text": "Got an order from a customer in the UK for handmade candles, I ship it by courier. Do I charge 5%?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "45"
+    ],
+    [
+     "FTA-VAT-ER",
+     "30"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "27"
+    ]
+   ],
+   "label_justification": "Art 45 (Goods and Services Subject to Zero Rate) zero-rates exports; ER Art 30 (Zero-rating the export of goods) sets the evidence conditions.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1020",
+   "category": "rate_category",
+   "topic": "residential rent exemption",
+   "text": "renting out the spare room in my apartment to a lodger, do i charge vat on the rent",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "46"
+    ],
+    [
+     "FTA-VAT-ER",
+     "43"
+    ]
+   ],
+   "supporting_sources": [],
+   "label_justification": "Art 46 (Supply Exempt from Tax) and ER Art 43 (Exemption of Residential Buildings) exempt residential leases.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1021",
+   "category": "rate_category",
+   "topic": "export of services",
+   "text": "I design logos for a client based in germany, no UAE office. is my invoice 0% or 5%?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "45"
+    ],
+    [
+     "FTA-VAT-ER",
+     "31"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "29"
+    ]
+   ],
+   "label_justification": "Art 45 (Goods and Services Subject to Zero Rate) and ER Art 31 (Zero-rating the Export of Services) set conditions for zero-rating services to non-residents.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1022",
+   "category": "realistic_scenario",
+   "topic": "blocked input tax",
+   "text": "can I claim back the vat on my car petrol and the dinner i took a client to?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "54"
+    ],
+    [
+     "FTA-VAT-ER",
+     "53"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "55"
+    ]
+   ],
+   "label_justification": "Art 54 (Recoverable Input Tax) sets the general rule; ER Art 53 (Non-recoverable Input Tax) blocks entertainment and certain motor vehicles.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1023",
+   "category": "paraphrase",
+   "topic": "pre-registration input tax",
+   "text": "bought my mixer and display fridge 2 months before i got my TRN. is that vat just lost money or can it count?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "56"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "54"
+    ]
+   ],
+   "label_justification": "Art 56 (Input Tax Paid before Tax Registration) governs recovery of tax incurred before registration.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1024",
+   "category": "ambiguous",
+   "topic": "digital product place of supply",
+   "text": "I sell printable planners as downloads on my website, buyers from everywhere. Where is that supply taxed and do I charge vat to all of them?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "31"
+    ],
+    [
+     "FTA-VAT-ER",
+     "23"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "29"
+    ],
+    [
+     "FTA-VAT-ER",
+     "31"
+    ]
+   ],
+   "label_justification": "Art 31 (Place of Supply of Telecommunication and Electronic Services) and ER Art 23 (Telecommunication and Electronic Services) decide place of supply by use and enjoyment; buyer location facts are unclear.",
+   "needs_legal_review": true,
+   "needs_legal_review_reason": "Classification of downloads as electronic services and buyer-location evidence are uncertain."
+  },
+  {
+   "id": "Q1025",
+   "category": "adversarial",
+   "topic": "tax-inclusive pricing",
+   "text": "can i show prices without vat on my insta posts then just add the 5% when they come to pay? its cleaner",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "38"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "27"
+    ]
+   ],
+   "label_justification": "Art 38 (Tax-Inclusive Prices) requires prices shown to include tax; ER Art 27 covers limited exceptions.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1026",
+   "category": "paraphrase",
+   "topic": "credit note for refund",
+   "text": "a customer sent back a dress and I gave her money back. the bill i already sent shows vat, how do I undo that properly?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "70"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "63"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-ER",
+     "60"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "61"
+    ]
+   ],
+   "label_justification": "Art 70 (Conditions and Requirements for Issuing the Tax Credit Note) sets the document; Art 63 (Adjustment due to the Issuance of Tax Credit Notes) handles the output tax adjustment.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1027",
+   "category": "realistic_scenario",
+   "topic": "bad debt relief",
+   "text": "a corporate client never paid my catering invoice from 8 months ago, I already paid vat on it. can I get that back?",
+   "required_sources": [
+    [
+     "FTA-VAT-DL8",
+     "64"
+    ]
+   ],
+   "supporting_sources": [
+    [
+     "FTA-VAT-DL8",
+     "61"
+    ],
+    [
+     "FTA-VAT-DL8",
+     "62"
+    ]
+   ],
+   "label_justification": "Art 64 (Adjustment for Bad Debts) sets conditions for reducing output tax on unpaid supplies.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1028",
+   "category": "out_of_scope",
+   "topic": "corporate tax",
+   "text": "does the 9% corporate tax apply to my small home business too or only vat?",
+   "required_sources": [],
+   "supporting_sources": [],
+   "label_justification": "Corporate tax is not governed by the VAT Decree-Law or Executive Regulation.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1029",
+   "category": "out_of_scope",
+   "topic": "trade licence",
+   "text": "do I need a home business licence from the municipality to sell food from my kitchen in sharjah?",
+   "required_sources": [],
+   "supporting_sources": [],
+   "label_justification": "Licensing is a local regulatory matter outside the VAT texts.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  },
+  {
+   "id": "Q1030",
+   "category": "out_of_scope",
+   "topic": "personal income",
+   "text": "My husband works on salary, does his income get added to mine for any tax?? and do we file personal tax",
+   "required_sources": [],
+   "supporting_sources": [],
+   "label_justification": "Personal income and household tax questions are not covered by the VAT texts.",
+   "needs_legal_review": false,
+   "needs_legal_review_reason": ""
+  }
+ ]
+}

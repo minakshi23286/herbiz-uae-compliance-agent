@@ -1,0 +1,139 @@
+{
+ "_meta": {
+  "title": "Synthetic VAT-warning test fixture (A-7; D-098)",
+  "synthetic": true,
+  "contains": "question ids, a fixed synthetic answer label, source ids and article locators only",
+  "excludes": "official legal text, official quotes, model outputs, personal data (rc3 cases carry a fixed synthetic quote label)",
+  "use": "tests and the --synthetic-answers scenario option only; never loaded by the demo"
+ },
+ "answers": {
+  "Q35": {
+   "call_id": -1,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "Q35",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-17\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 17\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"citations\": [], \"missing_facts\": []}",
+   "checks_json": "{\"supported\": true}",
+   "passages": {},
+   "case": "primary provisions DL8 Art 21, ER Art 14 and ER Art 8 absent -> incomplete, named"
+  },
+  "U22": {
+   "call_id": -2,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "U22",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[]",
+   "parsed_json": "{\"answer_status\": \"declined\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"citations\": [], \"missing_facts\": []}",
+   "checks_json": "{\"supported\": true}",
+   "passages": {},
+   "case": "declined -> not_applicable; tax-agent box"
+  },
+  "U10": {
+   "call_id": -3,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "U10",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-13\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 13\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}, {\"passage_id\": \"SYNTHETIC-FTA-VAT-ER-7\", \"source_id\": \"FTA-VAT-ER\", \"locator\": \"Article 7\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}, {\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-17\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 17\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}, {\"passage_id\": \"SYNTHETIC-FTA-VAT-ER-8\", \"source_id\": \"FTA-VAT-ER\", \"locator\": \"Article 8\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"citations\": [], \"missing_facts\": []}",
+   "checks_json": "{\"supported\": false}",
+   "passages": {},
+   "case": "quote check failed -> incomplete (unreliable-quote message)"
+  },
+  "Q13": {
+   "call_id": -4,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "Q13",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-13\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 13\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}, {\"passage_id\": \"SYNTHETIC-FTA-VAT-ER-7\", \"source_id\": \"FTA-VAT-ER\", \"locator\": \"Article 7\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"citations\": [], \"missing_facts\": []}",
+   "checks_json": "{\"supported\": true}",
+   "passages": {},
+   "case": "all primary provisions present -> complete_for_map, still not checked by a qualified tax professional (control)"
+  },
+  "SYN-79BIS": {
+   "call_id": -5,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "SYN-79BIS",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-79 (bis)\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 79 (bis)\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"missing_facts\": [], \"citations\": [{\"passage_id\": \"FTA-VAT-DL8:SYNTHETIC-79(bis)\", \"quote\": \"SYNTHETIC QUOTE \\u2014 not official text\"}]}",
+   "checks_json": "{\"supported\": true}",
+   "case": "article record superseded -> answer withheld (as V24)",
+   "passages": {
+    "FTA-VAT-DL8:SYNTHETIC-79(bis)": {
+     "passage_id": "FTA-VAT-DL8:SYNTHETIC-79(bis)",
+     "source_id": "FTA-VAT-DL8",
+     "locator": "Article 79 (bis)",
+     "url": "",
+     "text": ""
+    }
+   }
+  },
+  "SYN-ART48": {
+   "call_id": -6,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "SYN-ART48",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-48\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 48\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"missing_facts\": [], \"citations\": [{\"passage_id\": \"FTA-VAT-DL8:SYNTHETIC-48\", \"quote\": \"SYNTHETIC QUOTE \\u2014 not official text\"}]}",
+   "checks_json": "{\"supported\": true}",
+   "case": "article record outdated (amended) -> answer withheld",
+   "passages": {
+    "FTA-VAT-DL8:SYNTHETIC-48": {
+     "passage_id": "FTA-VAT-DL8:SYNTHETIC-48",
+     "source_id": "FTA-VAT-DL8",
+     "locator": "Article 48",
+     "url": "",
+     "text": ""
+    }
+   }
+  },
+  "SYN-ER14": {
+   "call_id": -7,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "SYN-ER14",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-ER-14\", \"source_id\": \"FTA-VAT-ER\", \"locator\": \"Article 14\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"missing_facts\": [], \"citations\": [{\"passage_id\": \"FTA-VAT-ER:SYNTHETIC-14\", \"quote\": \"SYNTHETIC QUOTE \\u2014 not official text\"}]}",
+   "checks_json": "{\"supported\": true}",
+   "case": "article record conflict -> answer withheld and escalated",
+   "passages": {
+    "FTA-VAT-ER:SYNTHETIC-14": {
+     "passage_id": "FTA-VAT-ER:SYNTHETIC-14",
+     "source_id": "FTA-VAT-ER",
+     "locator": "Article 14",
+     "url": "",
+     "text": ""
+    }
+   }
+  },
+  "SYN-ART13": {
+   "call_id": -8,
+   "run_id": "SYNTHETIC-FIXTURE",
+   "at": "2026-10-18T00:00:00+04:00",
+   "question_id": "SYN-ART13",
+   "model_returned": "none (synthetic fixture)",
+   "retrieved_json": "[{\"passage_id\": \"SYNTHETIC-FTA-VAT-DL8-13\", \"source_id\": \"FTA-VAT-DL8\", \"locator\": \"Article 13\", \"source_status\": \"synthetic\", \"added_by\": \"synthetic_fixture\"}]",
+   "parsed_json": "{\"answer_status\": \"answered\", \"answer\": \"SYNTHETIC TEST ANSWER \\u2014 written for a test, not a model output and not a statement of the law.\", \"missing_facts\": [], \"citations\": [{\"passage_id\": \"FTA-VAT-DL8:SYNTHETIC-13\", \"quote\": \"SYNTHETIC QUOTE \\u2014 not official text\"}]}",
+   "checks_json": "{\"supported\": true}",
+   "case": "only the whole-source record; article not listed as amended -> shown with a note",
+   "passages": {
+    "FTA-VAT-DL8:SYNTHETIC-13": {
+     "passage_id": "FTA-VAT-DL8:SYNTHETIC-13",
+     "source_id": "FTA-VAT-DL8",
+     "locator": "Article 13",
+     "url": "",
+     "text": ""
+    }
+   }
+  }
+ }
+}

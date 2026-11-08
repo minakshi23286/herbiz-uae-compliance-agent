@@ -1,0 +1,322 @@
+{
+ "contract": "0.1",
+ "labels": [
+  {
+   "obligation_id": "ACC-AUDITED-FS",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "ACC-RECORDS",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-LATE-REG-PENALTY",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-REG-JURIDICAL",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-REG-NATURAL",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-RETURN",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "CT-SBR",
+   "known": true,
+   "shown": false,
+   "release_approved": false,
+   "uncertainty": "high",
+   "refused": "corporate_tax_real_profile",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: HerBiz shows corporate tax only in demonstration scenarios for fictional businesses. Check with the FTA or an FTA-registered tax agent.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "EINV-READINESS",
+   "known": true,
+   "shown": true,
+   "title": "E-invoicing readiness",
+   "domain": "e_invoicing",
+   "mode": "awareness only",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "EINV-FTA-PAGE",
+     "title": "FTA page: UAE e-Invoicing",
+     "authority": "Federal Tax Authority",
+     "url": "https://tax.gov.ae/en/content/uae.einvoicing.aspx",
+     "evidence_level": "observed",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "EINV-MOF-PAGE",
+     "title": "MoF e-Invoicing initiative page",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/en/about-ministry/mof-initiatives/einvoicing/",
+     "evidence_level": "unresolved",
+     "retrieved_at": null,
+     "review_status": "unresolved",
+     "stale": true
+    }
+   ],
+   "vat_register_sources": [
+    "LS-09",
+    "LS-10",
+    "LS-11"
+   ],
+   "open_gaps": [
+    "EINV-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: E-invoicing applicability and dates for smaller businesses not verified; an official source has not been re-checked recently.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "ESR-HISTORICAL",
+   "known": true,
+   "shown": true,
+   "title": "Economic substance (historical periods only)",
+   "domain": "economic_substance",
+   "mode": "historical notice only",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "ESR-CD98-2024",
+     "title": "Cabinet Decision No. 98 of 2024 amending CD 57/2020 (economic substance)",
+     "authority": "Ministry of Finance",
+     "url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [],
+   "uncertainty": "medium",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; this applies to past periods only.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "LIC-RENEWAL",
+   "known": true,
+   "shown": true,
+   "title": "Trade licence renewal",
+   "domain": "licensing",
+   "mode": "reminder from the licence expiry date the owner gives",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "LIC-DUBAI-DET",
+     "title": "Invest in Dubai: renew licence (Dubai mainland, DET)",
+     "authority": "Dubai Department of Economy and Tourism",
+     "url": "https://app.invest.dubai.ae/license/renew",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "LIC-DDA-FZ",
+     "title": "Dubai Development Authority: trade licence renewal (free-zone example)",
+     "authority": "Dubai Development Authority",
+     "url": "https://dda.gov.ae/en/registration-licensing/existing-businesses/license-renewal",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "UBO-REGISTER",
+   "known": true,
+   "shown": true,
+   "title": "Beneficial-owner register",
+   "domain": "beneficial_ownership",
+   "mode": "awareness only (post-event)",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "UBO-CD109-2023",
+     "title": "Cabinet Decision No. 109 of 2023 on Regulating the Beneficial Owner Procedures",
+     "authority": "Cabinet; Ministry of Economy",
+     "url": "https://www.uaelegislation.gov.ae/en/legislations/2176",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "VAT-DEREG",
+   "known": true,
+   "shown": true,
+   "title": "VAT deregistration",
+   "domain": "vat",
+   "mode": "existing VAT module; deadline never stated (G1)",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [],
+   "vat_register_sources": [
+    "FTA-VAT-ER"
+   ],
+   "open_gaps": [
+    "G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Deregistration deadline conflict.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "VAT-MANDATORY-REG",
+   "known": true,
+   "shown": true,
+   "title": "VAT mandatory registration",
+   "domain": "vat",
+   "mode": "existing VAT module (validity contract v1.1)",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [],
+   "vat_register_sources": [
+    "FTA-VAT-DL8",
+    "FTA-VAT-ER"
+   ],
+   "open_gaps": [
+    "G3"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: FTA-VAT-DL8@v1 is outdated.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "VAT-RETURN",
+   "known": true,
+   "shown": true,
+   "title": "VAT returns and payment",
+   "domain": "vat",
+   "mode": "existing VAT module",
+   "reviewer_needed": "D3",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [],
+   "vat_register_sources": [
+    "FTA-VAT-DL8",
+    "FTA-VAT-ER"
+   ],
+   "open_gaps": [
+    "G3"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: FTA-VAT-DL8@v1 is outdated.",
+   "contract": "0.1"
+  },
+  {
+   "obligation_id": "WPS-PAYROLL",
+   "known": true,
+   "shown": true,
+   "title": "Wages through WPS",
+   "domain": "employment",
+   "mode": "awareness only (post-event)",
+   "reviewer_needed": "D3-JUR",
+   "substantive_rule_allowed": false,
+   "release_approved": false,
+   "citations": [
+    {
+     "source_id": "WPS-MOHRE",
+     "title": "MoHRE: Wages Protection System; Ministerial Resolution No. 340 of 2026 concerning WPS",
+     "authority": "Ministry of Human Resources and Emiratisation",
+     "url": "https://www.mohre.gov.ae/en/guidance-and-awareness-portal-new/wages-protection-system",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    },
+    {
+     "source_id": "EMP-DL33-2021",
+     "title": "Federal Decree-Law No. 33 of 2021 on employment relationships (as amended)",
+     "authority": "UAE Government; MoHRE",
+     "url": "https://mohre.gov.ae/assets/download/8cd7cf08/Federal%20Decree-Law%20No.%2033%20of%202021%20Regarding%20the%20Regulation%20of%20Employment%20Relationship%20and%20its%20amendments.pdf.aspx",
+     "evidence_level": "snippet_only",
+     "retrieved_at": "2026-10-17",
+     "review_status": "discovered",
+     "stale": false
+    }
+   ],
+   "vat_register_sources": [],
+   "open_gaps": [
+    "OBL-G1"
+   ],
+   "uncertainty": "high",
+   "user_wording": "Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision: not reviewed by a qualified professional; open questions: Licensing, UBO, WPS and free-zone obligations differ by emirate and zone; only Dubai examples located.",
+   "contract": "0.1"
+  }
+ ]
+}

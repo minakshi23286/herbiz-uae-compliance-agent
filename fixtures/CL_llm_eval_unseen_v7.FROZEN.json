@@ -1,0 +1,18 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v7.json",
+ "sha256": "35c4d7f96dbf49804efbb585ebfa7db9591a9077d3fee94a761f84c685a5be12",
+ "frozen_at": "2026-10-16 (Workstream B, before any C1 code)",
+ "author": "fresh general-purpose agent; read only the 160-line article-title list; no code, no earlier sets, no web; synthetic data only (no real names, contacts, IDs, TRNs, addresses, company names); questions before labels",
+ "assembled_by": "Claude Code (Workstream B) - copied byte-for-byte; questions and labels NOT read by the developer before the C1 code freeze (structure + automated personal-data pattern scan only)",
+ "personal_data_scan": {
+  "email": 0,
+  "phone": 0,
+  "emirates_id": 0,
+  "trn_15": 0,
+  "url": 0
+ },
+ "grading_criteria": "docs/ai/CL_WS_B_C1_PLAN.md",
+ "grading_criteria_sha256": "216e49e3fc13adebe122cc819ab268fe2ace14bc7603f7bbd829b6eff7f82700",
+ "disclosure": "Developer specified category counts (17/2/5) and that out-of-scope items include foreign VAT, UAE corporate tax mentioning the FTA, and a non-tax government or money topic.",
+ "rule": "Do not modify after results are observed. The runner refuses to use this set if the sha256 changes."
+}

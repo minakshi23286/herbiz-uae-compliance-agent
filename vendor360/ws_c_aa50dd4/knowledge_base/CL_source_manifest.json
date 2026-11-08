@@ -1,0 +1,57 @@
+{
+  "_notice": "HerBiz Compliance Agent. Official sources for the provisional scope (UAE federal VAT: mandatory registration). Collected copies are REAL OFFICIAL SOURCES (FTA-hosted files), but the English texts describe themselves as unofficial translations; every extracted passage is UNVERIFIED_EXTRACTION and every interpretation is a DRAFT until a qualified reviewer approves it. Entries sharing a source_id are versions of one document, collected oldest first. Identity was checked from page 1 and running headers, not from file names (one FTA file name says 'Law No 8' but the content is the Executive Regulation).",
+  "sources": [
+    {
+      "source_id": "FTA-VAT-DL8",
+      "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+      "issuing_authority": "UAE Federal Government — Federal Decree-Law No. 8 of 2017 on VAT, as amended (copy hosted by the Federal Tax Authority)",
+      "authority_type": "primary", "jurisdiction": "AE",
+      "document_title": "Federal Decree-Law No. 8 of 2017 on Value Added Tax and amendments (FTA legislation archive, 2025 folder)",
+      "publication_date": null, "effective_date": null, "split": "article",
+      "note": "Listed on the FTA legislation ARCHIVE page. Whether a newer consolidated copy exists is UNVERIFIED."
+    },
+    {
+      "source_id": "FTA-VAT-ER",
+      "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive Regulation of Federal Decree Law No 8 of 2017 - Publish - 04 10 2024.pdf",
+      "issuing_authority": "UAE Cabinet — Cabinet Decision No. 52 of 2017 (Executive Regulation of the VAT Decree-Law), as amended; copy hosted by the Federal Tax Authority",
+      "authority_type": "primary", "jurisdiction": "AE",
+      "document_title": "Executive Regulation of the VAT Decree-Law (FTA publication 04-10-2024, archive)",
+      "publication_date": null, "effective_date": null, "split": "article"
+    },
+    {
+      "source_id": "FTA-VAT-ER",
+      "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive-Regulation-of-Federal-Decree-Law-No-08-of-2017-Publish-18-09-2025.pdf",
+      "issuing_authority": "UAE Cabinet — Cabinet Decision No. 52 of 2017 (Executive Regulation of the VAT Decree-Law), as amended; copy hosted by the Federal Tax Authority",
+      "authority_type": "primary", "jurisdiction": "AE",
+      "document_title": "Executive Regulation of the VAT Decree-Law (FTA publication 18-09-2025, archive)",
+      "publication_date": null, "effective_date": null, "split": "article"
+    },
+    {
+      "source_id": "FTA-VAT-ER",
+      "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+      "issuing_authority": "UAE Cabinet — Cabinet Decision No. 52 of 2017 (Executive Regulation of the VAT Decree-Law), as amended; copy hosted by the Federal Tax Authority",
+      "authority_type": "primary", "jurisdiction": "AE",
+      "document_title": "Executive Regulation of the VAT Decree-Law, as amended (FTA file dated 09-2026; file name says 'Law No 8' but page 1 is the Executive Regulation)",
+      "publication_date": null, "effective_date": null, "split": "article",
+      "note": "Currently linked from the FTA VAT legislation page (checked 16 Oct 2026)."
+    },
+    {
+      "source_id": "FTA-VAT-REG-PAGE",
+      "url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+      "issuing_authority": "Federal Tax Authority (web topic page)",
+      "authority_type": "primary", "jurisdiction": "AE",
+      "document_title": "Registration For VAT (FTA web topic page)",
+      "publication_date": null, "effective_date": null, "anchor": "mandatory registration threshold",
+      "note": "Official guidance page, not legislation."
+    },
+    {
+      "source_id": "MOJ-ELAWS-VAT-DL8",
+      "url": "https://elaws.moj.gov.ae/UAE-MOJ_LC-En/00_TAXES/UAE-LC-En_2017-08-23_00008_Markait.html?val=EL1",
+      "issuing_authority": "Ministry of Justice eLaws (legislation portal)",
+      "authority_type": "primary", "jurisdiction": "AE",
+      "document_title": "Federal Decree-Law No. 8 of 2017 (MOJ eLaws text)",
+      "publication_date": null, "effective_date": null,
+      "note": "Second official copy for cross-checking. Host did not resolve / timed out from this machine on 16 Oct 2026."
+    }
+  ]
+}

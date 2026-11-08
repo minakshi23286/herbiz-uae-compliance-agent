@@ -1,0 +1,253 @@
+{
+ "_meta": {
+  "file": "CL_360_obligation_sources.json",
+  "version": "0.1.1",
+  "date": "2026-10-17",
+  "by": "Claude Code, Workstream C",
+  "business_line": "HomepreunerHub / HerBiz",
+  "purpose": "Provenance map for the championship MVP: which official sources and open gaps stand behind each candidate obligation. It contains NO applicability rules. Rules are Workstream B's (obligations engine) and, for corporate tax, may only be synthetic demonstration scenarios until a qualified corporate-tax reviewer (D3-CT) approves them.",
+  "founder_restriction": "No substantive corporate tax rules without qualified review (founder approval 2026-10-17).",
+  "contract": "sources360 0.1 (compliance_agent/rag_c/sources360.py)"
+ },
+ "obligations": [
+  {
+   "obligation_id": "VAT-MANDATORY-REG",
+   "domain": "vat",
+   "title": "VAT mandatory registration",
+   "sources": [],
+   "vat_register_sources": [
+    "FTA-VAT-DL8",
+    "FTA-VAT-ER"
+   ],
+   "gaps": [
+    "G3"
+   ],
+   "reviewer": "D3",
+   "mode": "existing VAT module (validity contract v1.1)",
+   "substantive_rule_allowed": false,
+   "note": "Use interface.answer_label for VAT; this file only links it into the 360 dashboard."
+  },
+  {
+   "obligation_id": "VAT-RETURN",
+   "domain": "vat",
+   "title": "VAT returns and payment",
+   "sources": [],
+   "vat_register_sources": [
+    "FTA-VAT-DL8",
+    "FTA-VAT-ER"
+   ],
+   "gaps": [
+    "G3"
+   ],
+   "reviewer": "D3",
+   "mode": "existing VAT module",
+   "substantive_rule_allowed": false,
+   "note": "Due dates depend on the tax period the FTA assigned; the owner supplies it."
+  },
+  {
+   "obligation_id": "VAT-DEREG",
+   "domain": "vat",
+   "title": "VAT deregistration",
+   "sources": [],
+   "vat_register_sources": [
+    "FTA-VAT-ER"
+   ],
+   "gaps": [
+    "G1"
+   ],
+   "reviewer": "D3",
+   "mode": "existing VAT module; deadline never stated (G1)",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "CT-REG-NATURAL",
+   "domain": "corporate_tax",
+   "title": "Corporate tax registration: natural person",
+   "sources": [
+    "CT-NATURAL-PERSON-TOPIC",
+    "CT-REG-SERVICE",
+    "CT-FTA-DEC3-2024",
+    "CT-CR49-2023",
+    "CT-DL47-2022"
+   ],
+   "gaps": [
+    "CT-G2"
+   ],
+   "reviewer": "D3-CT",
+   "mode": "synthetic scenario only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "CT-REG-JURIDICAL",
+   "domain": "corporate_tax",
+   "title": "Corporate tax registration: juridical person",
+   "sources": [
+    "CT-REG-SERVICE",
+    "CT-FTA-DEC3-2024",
+    "CT-DL47-2022"
+   ],
+   "gaps": [
+    "CT-G2"
+   ],
+   "reviewer": "D3-CT",
+   "mode": "synthetic scenario only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "CT-LATE-REG-PENALTY",
+   "domain": "corporate_tax",
+   "title": "Corporate tax late-registration penalty and waiver",
+   "sources": [
+    "CT-REG-SERVICE",
+    "CT-CR75-2023"
+   ],
+   "gaps": [
+    "CT-G2"
+   ],
+   "reviewer": "D3-CT",
+   "mode": "synthetic scenario only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "CT-RETURN",
+   "domain": "corporate_tax",
+   "title": "Corporate tax return and payment",
+   "sources": [
+    "CT-RETURN-DEADLINE",
+    "CT-DL47-2022"
+   ],
+   "gaps": [
+    "CT-G2"
+   ],
+   "reviewer": "D3-CT",
+   "mode": "synthetic scenario only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "CT-SBR",
+   "domain": "corporate_tax",
+   "title": "Small Business Relief election",
+   "sources": [
+    "CT-MD131-2026",
+    "CT-MD73-2023",
+    "CT-SBR-TOPIC",
+    "CT-DL47-2022"
+   ],
+   "gaps": [
+    "CT-G1",
+    "CT-G2"
+   ],
+   "reviewer": "D3-CT",
+   "mode": "synthetic scenario only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "ACC-RECORDS",
+   "domain": "bookkeeping",
+   "title": "Keep accounting records",
+   "sources": [
+    "ACC-FTA-DEC4-2026",
+    "CT-DL47-2022"
+   ],
+   "gaps": [
+    "CT-G2"
+   ],
+   "reviewer": "D3-ACC, D3-CT",
+   "mode": "checklist only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "ACC-AUDITED-FS",
+   "domain": "bookkeeping",
+   "title": "Audited financial statements (tax rule; authorities may differ)",
+   "sources": [
+    "ACC-MD84-2025",
+    "ACC-MD82-2023"
+   ],
+   "gaps": [
+    "ACC-G1",
+    "OBL-G1"
+   ],
+   "reviewer": "D3-ACC, D3-CT",
+   "mode": "flag and get-help only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "EINV-READINESS",
+   "domain": "e_invoicing",
+   "title": "E-invoicing readiness",
+   "sources": [
+    "EINV-FTA-PAGE",
+    "EINV-MOF-PAGE"
+   ],
+   "vat_register_sources": [
+    "LS-09",
+    "LS-10",
+    "LS-11"
+   ],
+   "gaps": [
+    "EINV-G1"
+   ],
+   "reviewer": "D3",
+   "mode": "awareness only",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "LIC-RENEWAL",
+   "domain": "licensing",
+   "title": "Trade licence renewal",
+   "sources": [
+    "LIC-DUBAI-DET",
+    "LIC-DDA-FZ"
+   ],
+   "gaps": [
+    "OBL-G1"
+   ],
+   "reviewer": "D3-JUR",
+   "mode": "reminder from the licence expiry date the owner gives",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "UBO-REGISTER",
+   "domain": "beneficial_ownership",
+   "title": "Beneficial-owner register",
+   "sources": [
+    "UBO-CD109-2023"
+   ],
+   "gaps": [
+    "OBL-G1"
+   ],
+   "reviewer": "D3-JUR",
+   "mode": "awareness only (post-event)",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "WPS-PAYROLL",
+   "domain": "employment",
+   "title": "Wages through WPS",
+   "sources": [
+    "WPS-MOHRE",
+    "EMP-DL33-2021"
+   ],
+   "gaps": [
+    "OBL-G1"
+   ],
+   "reviewer": "D3-JUR",
+   "mode": "awareness only (post-event)",
+   "substantive_rule_allowed": false
+  },
+  {
+   "obligation_id": "ESR-HISTORICAL",
+   "domain": "economic_substance",
+   "title": "Economic substance (historical periods only)",
+   "sources": [
+    "ESR-CD98-2024"
+   ],
+   "gaps": [],
+   "reviewer": "D3-JUR",
+   "mode": "historical notice only",
+   "substantive_rule_allowed": false,
+   "historical": true
+  }
+ ]
+}

@@ -1,0 +1,459 @@
+{
+ "_meta": {
+  "built_by": "experiments/ws_b/CL_build_v6_tables.py",
+  "corpus_fingerprint": "29c67bb1177a51d4646b5599679463d1f5992dfac05311d74d460dfe4f5d5fe3",
+  "locator_contract": "Workstream C interface contract v0.1",
+  "not_legal_advice": true,
+  "note": "Topic -> required provisions. Draft: no qualified reviewer has approved it (D3)."
+ },
+ "topics": {
+  "agent": {
+   "required": [
+    "FTA-VAT-DL8|9",
+    "FTA-VAT-DL8|33"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|34"
+   ]
+  },
+  "bad_debt": {
+   "required": [
+    "FTA-VAT-DL8|64"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|61"
+   ]
+  },
+  "capital_assets_scheme": {
+   "required": [
+    "FTA-VAT-DL8|60",
+    "FTA-VAT-ER|57"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|58"
+   ]
+  },
+  "capital_assets_threshold": {
+   "required": [
+    "FTA-VAT-DL8|19",
+    "FTA-VAT-DL8|20"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|57"
+   ]
+  },
+  "credit_note": {
+   "required": [
+    "FTA-VAT-DL8|63",
+    "FTA-VAT-ER|60"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|61"
+   ]
+  },
+  "date_of_supply": {
+   "required": [
+    "FTA-VAT-DL8|25",
+    "FTA-VAT-ER|19"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|26"
+   ]
+  },
+  "deemed_supply": {
+   "required": [
+    "FTA-VAT-DL8|11",
+    "FTA-VAT-DL8|12"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|5"
+   ]
+  },
+  "deregistration": {
+   "required": [
+    "FTA-VAT-DL8|21",
+    "FTA-VAT-DL8|22",
+    "FTA-VAT-ER|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|23",
+    "FTA-VAT-ER|18"
+   ]
+  },
+  "designated_zone": {
+   "required": [
+    "FTA-VAT-DL8|50",
+    "FTA-VAT-ER|51"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|51"
+   ]
+  },
+  "discount": {
+   "required": [
+    "FTA-VAT-DL8|39",
+    "FTA-VAT-ER|28"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|34"
+   ]
+  },
+  "education": {
+   "required": [
+    "FTA-VAT-DL8|45",
+    "FTA-VAT-ER|40"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "electronic_services": {
+   "required": [
+    "FTA-VAT-DL8|31",
+    "FTA-VAT-ER|23"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|29"
+   ]
+  },
+  "evasion": {
+   "required": [
+    "FTA-VAT-DL8|77"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|76"
+   ]
+  },
+  "exempt_land": {
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|44"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "exempt_passenger": {
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|45"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "exempt_residential": {
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|43"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|37"
+   ]
+  },
+  "exempt_supplies": {
+   "required": [
+    "FTA-VAT-DL8|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|43"
+   ]
+  },
+  "financial_services": {
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|42"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "healthcare": {
+   "required": [
+    "FTA-VAT-DL8|45",
+    "FTA-VAT-ER|41"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "imports": {
+   "required": [
+    "FTA-VAT-DL8|48",
+    "FTA-VAT-ER|47"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|35"
+   ]
+  },
+  "input_tax": {
+   "required": [
+    "FTA-VAT-DL8|54",
+    "FTA-VAT-DL8|55"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|53"
+   ]
+  },
+  "mandatory_registration": {
+   "required": [
+    "FTA-VAT-DL8|13",
+    "FTA-VAT-ER|7"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-REG-PAGE|*"
+   ]
+  },
+  "new_residence": {
+   "required": [
+    "FTA-VAT-ER|66"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "non_resident": {
+   "required": [
+    "FTA-VAT-DL8|18"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|13"
+   ]
+  },
+  "payment": {
+   "required": [
+    "FTA-VAT-DL8|73",
+    "FTA-VAT-ER|64"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "penalties": {
+   "required": [
+    "FTA-VAT-DL8|76"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|77"
+   ]
+  },
+  "place_of_supply": {
+   "required": [
+    "FTA-VAT-DL8|29",
+    "FTA-VAT-DL8|27"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|30"
+   ]
+  },
+  "profit_margin": {
+   "required": [
+    "FTA-VAT-DL8|43",
+    "FTA-VAT-ER|29"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "records": {
+   "required": [
+    "FTA-VAT-DL8|78",
+    "FTA-VAT-ER|71"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|72"
+   ]
+  },
+  "registration_exception": {
+   "required": [
+    "FTA-VAT-DL8|15",
+    "FTA-VAT-ER|16"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|13"
+   ]
+  },
+  "related_parties": {
+   "required": [
+    "FTA-VAT-ER|13",
+    "FTA-VAT-ER|9"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|14"
+   ]
+  },
+  "related_value": {
+   "required": [
+    "FTA-VAT-DL8|36",
+    "FTA-VAT-ER|9"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|25"
+   ]
+  },
+  "tax_group": {
+   "required": [
+    "FTA-VAT-DL8|14",
+    "FTA-VAT-ER|10"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|12"
+   ]
+  },
+  "tax_inclusive": {
+   "required": [
+    "FTA-VAT-DL8|38",
+    "FTA-VAT-ER|27"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "tax_invoice": {
+   "required": [
+    "FTA-VAT-DL8|65",
+    "FTA-VAT-ER|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|67"
+   ]
+  },
+  "tax_return": {
+   "required": [
+    "FTA-VAT-DL8|72",
+    "FTA-VAT-ER|64",
+    "FTA-VAT-DL8|71"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|71",
+    "FTA-VAT-ER|62"
+   ]
+  },
+  "threshold_calculation": {
+   "required": [
+    "FTA-VAT-DL8|19",
+    "FTA-VAT-DL8|13"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|7"
+   ]
+  },
+  "tourist": {
+   "required": [
+    "FTA-VAT-ER|68"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "value_of_supply": {
+   "required": [
+    "FTA-VAT-DL8|34"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|25"
+   ]
+  },
+  "vat_rate": {
+   "required": [
+    "FTA-VAT-DL8|3"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|2"
+   ]
+  },
+  "voluntary_registration": {
+   "required": [
+    "FTA-VAT-DL8|17",
+    "FTA-VAT-ER|8"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-REG-PAGE|*"
+   ]
+  },
+  "zero_rated": {
+   "required": [
+    "FTA-VAT-DL8|45"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|44"
+   ]
+  },
+  "zero_rated_or_exports": {
+   "required": [
+    "FTA-VAT-DL8|45",
+    "FTA-VAT-ER|30",
+    "FTA-VAT-ER|31"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|44"
+   ]
+  }
+ }
+}

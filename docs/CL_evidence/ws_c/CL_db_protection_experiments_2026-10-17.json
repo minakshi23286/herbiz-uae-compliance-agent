@@ -1,0 +1,57 @@
+{
+ "L2_chmod444_write": "OperationalError: attempt to write a readonly database",
+ "L2_store_open": "OperationalError: attempt to write a readonly database",
+ "L2_ro_read": 371,
+ "L2_side_files_after": [],
+ "L2_revert": "WRITE OK",
+ "L3_write": "OperationalError: attempt to write a readonly database",
+ "L3_rm": "refused (PermissionError)",
+ "L3_rename": "refused (PermissionError)",
+ "L3_chmod": "refused (PermissionError)",
+ "L3_ro_read": 371,
+ "L3_status": {
+  "mode": "0o644",
+  "user_immutable": true,
+  "journal_mode": "delete"
+ },
+ "L3_revert_write": "WRITE OK",
+ "WAL_ro_read_444_no_shm": "ok 371",
+ "WAL_immutable1_read": "ok 371",
+ "WAL_ro_read_writable_side_files": [
+  "-wal",
+  "-shm"
+ ],
+ "DELETE_mode_ro_side_files": [],
+ "L4_applied": 8,
+ "L4_replace_audit": "IntegrityError: audit_events is append-only (replace refused)",
+ "L4_update_passage": "IntegrityError: passage text and identity are frozen",
+ "L4_delete_version": "IntegrityError: source_versions rows are evidence and cannot be deleted",
+ "L4_update_doc_hash": "IntegrityError: document provenance (sha256, raw_path, url, bytes) is frozen",
+ "L4_drop_trigger": "WRITE OK",
+ "L4_legit_rebuild": [
+  "identical"
+ ],
+ "L4_legit_review_approve": {
+  "outcome": "accepted",
+  "status": "approved"
+ },
+ "L4_rollback_removed": 8,
+ "L4_after_rollback_update": "WRITE OK",
+ "L4_refuses_original": "AuthoritativeDatabaseError",
+ "original_status_readonly": {
+  "exists": true,
+  "mode": "0o644",
+  "owner_writable": true,
+  "user_immutable": false,
+  "hard_links": 1,
+  "protected_by_code_guard": true,
+  "side_files": [],
+  "journal_mode": "delete",
+  "triggers": [
+   "audit_no_delete",
+   "audit_no_update",
+   "source_text_frozen"
+  ],
+  "hardening_triggers": []
+ }
+}

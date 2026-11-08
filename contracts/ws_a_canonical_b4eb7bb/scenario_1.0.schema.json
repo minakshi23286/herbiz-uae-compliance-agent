@@ -1,0 +1,139 @@
+{
+ "$id": "https://herbiz.invalid/contracts/scenario_1.0.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "contract": {
+   "const": "herbiz.scenario/1.0"
+  },
+  "run": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "n": {
+      "minimum": 1,
+      "type": "integer"
+     },
+     "record_id": {
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+      "type": "string"
+     },
+     "response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+     }
+    },
+    "required": [
+     "n",
+     "record_id",
+     "response_sha256"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "scenario_id": {
+   "enum": [
+    "SC-1",
+    "SC-2",
+    "SC-3"
+   ]
+  },
+  "steps": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "event": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "expected": {
+      "additionalProperties": false,
+      "properties": {
+       "flags": {
+        "items": {
+         "enum": [
+          "may_be_incomplete",
+          "stale_source",
+          "conflict",
+          "test_rule",
+          "blocked_legal_validation",
+          "simulated_reviewer",
+          "pending_unverified_link"
+         ]
+        },
+        "type": "array",
+        "uniqueItems": true
+       },
+       "must_not": {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       "must_show": {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       "state": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "state",
+       "flags",
+       "must_not",
+       "must_show"
+      ],
+      "type": "object"
+     },
+     "input": {
+      "type": "object"
+     },
+     "n": {
+      "minimum": 1,
+      "type": "integer"
+     },
+     "released_after": {
+      "minimum": 1,
+      "type": [
+       "integer",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "n",
+     "event",
+     "input",
+     "expected",
+     "released_after"
+    ],
+    "type": "object"
+   },
+   "minItems": 3,
+   "type": "array"
+  },
+  "synthetic": {
+   "const": true
+  },
+  "title": {
+   "minLength": 1,
+   "type": "string"
+  }
+ },
+ "required": [
+  "contract",
+  "scenario_id",
+  "title",
+  "synthetic",
+  "steps"
+ ],
+ "title": "herbiz.scenario/1.0",
+ "type": "object"
+}

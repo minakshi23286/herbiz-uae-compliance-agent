@@ -1,0 +1,127 @@
+{
+ "build": {
+  "b_commit": "fdbe131",
+  "c_commit": "aa50dd4",
+  "integration_commit": "e42e37a"
+ },
+ "capabilities": [
+  {
+   "active": true,
+   "class": "deterministic",
+   "description": "Obligations engine: rules as data, fixed states, no model",
+   "evidence": [
+    "tests/test_obligations.py"
+   ],
+   "id": "CAP-ENGINE",
+   "owner": "B"
+  },
+  {
+   "active": true,
+   "class": "deterministic",
+   "description": "Offline lexical full-text search over the pinned VAT texts",
+   "evidence": [
+    "compliance_agent/llm_lab/retrieve.py"
+   ],
+   "id": "CAP-SEARCH",
+   "owner": "B"
+  },
+  {
+   "active": true,
+   "class": "deterministic",
+   "description": "Source validity and conflict checks (no fetching)",
+   "evidence": [
+    "compliance_agent/rag_c/"
+   ],
+   "id": "CAP-VALIDITY",
+   "owner": "C"
+  },
+  {
+   "active": true,
+   "class": "deterministic",
+   "description": "Personal-data intake gate (pattern checks from the policy KB)",
+   "evidence": [
+    "tests/test_ws_c_policy_gate.py",
+    "tests/test_privacy_gate_app.py"
+   ],
+   "id": "CAP-GATE",
+   "owner": "C"
+  },
+  {
+   "active": false,
+   "class": "deterministic",
+   "description": "Per-response audit records (Task 2, planned until A-1)",
+   "evidence": [
+    "contracts/audit_record_1.0.schema.json"
+   ],
+   "id": "CAP-AUDIT",
+   "owner": "A"
+  },
+  {
+   "active": true,
+   "class": "recorded_model",
+   "description": "VAT answers produced by a language model in earlier offline runs and replayed",
+   "evidence": [
+    "compliance_agent/ask.py"
+   ],
+   "id": "CAP-RECORDED",
+   "owner": "A"
+  },
+  {
+   "active": true,
+   "class": "proxy_outputs",
+   "description": "Classifier outputs written by an independent agent for offline evaluation; not model performance",
+   "evidence": [
+    "docs/CL_evidence/ws_b/"
+   ],
+   "id": "CAP-PROXY",
+   "owner": "B"
+  },
+  {
+   "active": false,
+   "class": "live_inference",
+   "description": "Language model called at run time: none in Task 2",
+   "evidence": [],
+   "id": "CAP-LIVE",
+   "owner": "A"
+  },
+  {
+   "active": true,
+   "class": "tool_use",
+   "description": "Reads the local knowledge base and fixtures; writes its own logs. Does not browse, fetch, file, pay or send",
+   "evidence": [
+    "compliance_agent/web.py"
+   ],
+   "id": "CAP-TOOLS",
+   "owner": "A"
+  },
+  {
+   "active": true,
+   "class": "simulated",
+   "description": "Fictional businesses, TEST RULES, the simulated reviewer, scenario events, the change replay",
+   "evidence": [
+    "fixtures/"
+   ],
+   "id": "CAP-SIM",
+   "owner": "A"
+  },
+  {
+   "active": false,
+   "class": "planned",
+   "description": "Live model answers, six-domain coverage, scheduled monitoring, Arabic, real users, qualified review",
+   "evidence": [],
+   "id": "CAP-PLANNED",
+   "owner": "A"
+  }
+ ],
+ "contract": "herbiz.capability_declaration/1.0",
+ "declared_on": "2026-10-18",
+ "metrics": [
+  {
+   "class": "deterministic",
+   "date": "2026-10-16",
+   "name": "all_required_recall_unseen_v3",
+   "set": "unseen v3 (8 of 18)",
+   "value": 0.444
+  }
+ ]
+}

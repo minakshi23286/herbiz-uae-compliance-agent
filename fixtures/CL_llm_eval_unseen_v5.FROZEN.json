@@ -1,0 +1,11 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v5.json",
+ "sha256": "946f0284493d81e0d4bc7b1374d0b881de8859a3e18d7d16dd887255bfef4172",
+ "frozen_at": "2026-10-16 (Workstream B, before any v6 code)",
+ "author": "fresh general-purpose agent; read only the 160-line article-title list; chose topics itself across the whole list; no code, no earlier sets, no web; questions written before labels",
+ "assembled_by": "Claude Code (Workstream B) - copied byte-for-byte; questions and labels NOT read by the developer before the v6 code freeze (structure check only)",
+ "grading_criteria": "docs/ai/CL_WS_B_V6_GATE_PLAN.md",
+ "grading_criteria_sha256": "176f5eb24d4cd9b938f239367e5822bd2837733b9771a2a96f144a95cae8a76d",
+ "disclosure": "Unlike v4, the developer gave no topic list; only category counts (18 in scope, 2 ambiguous, 4 out of scope).",
+ "rule": "Do not modify after results are observed. The runner refuses to use this set if the sha256 changes."
+}

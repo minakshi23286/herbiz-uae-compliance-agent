@@ -1,0 +1,9 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v3.json",
+ "sha256": "844b53987441847236ca232417dc2aaabf652d5720817883c6a90b7708f3ed68",
+ "frozen_at": "2026-10-16T20:15:57+04:00",
+ "author": "same independent general-purpose agent as v2's process (did not read the project; no web search); two steps: questions, then required/supporting articles from a title list",
+ "assembled_by": "Claude Code \u2014 transcribed without edits",
+ "pre_freeze_use": "No retrieval search and no model call had used these questions at freeze time. Intent-specific retrieval (v4) was written before v3 was received. After v3's question text arrived (but before any run on it) one fix was made: removal of the leftover blanket ER Art. 7 block, found through development-set tests, not v3.",
+ "rule": "Do not modify after results are observed. The runner refuses to use this set if the sha256 changes."
+}

@@ -1,0 +1,40 @@
+{
+ "item": "Workstream B Option C1 paid evaluation: Claude Haiku 5.5 classifies each question of frozen blind set v7 (24 synthetic questions), 3 repeats",
+ "status": "used",
+ "approved_by": "Minakshi (founder), chat message 'APPROVED \u2014 HERBIZ OPTION C1 PAID EVALUATION'",
+ "approved_at": "2026-10-17",
+ "authorized_usd": 0.1,
+ "sets": [
+  "v7"
+ ],
+ "repeats": 3,
+ "model": "claude-haiku-5-5",
+ "max_calls": 72,
+ "note": "Single approved run completed. Any further paid run needs a new founder approval of the exact item.",
+ "conditions": [
+  "max 72 calls",
+  "hard cumulative cap $0.10",
+  "synthetic v7 questions only",
+  "no change to set or code after start",
+  "stop if budget cannot be enforced or unexpected data would be sent"
+ ],
+ "preflight": {
+  "model_id": "claude-haiku-5-5 (Anthropic models overview, read 2026-10-17)",
+  "price": "$0.10 input / $0.50 output per MTok, prompts <= 100K (Anthropic pricing page, read 2026-10-17)",
+  "earlier_authorisation": "$6 cap: $5.0308 spent in the protected ledger (read-only), $0.97 left; this run is separately capped at $0.10",
+  "payload_check": "72/72 requests: one system prompt (sha 84ef965d...), one schema, user content = wrapped v7 question only; no secrets/IDs/contacts/URLs/legal text",
+  "budget_self_test": "Ledger refuses at the cap (offline test)"
+ },
+ "used": {
+  "run_id": "c1-078891c6",
+  "date": "2026-10-17",
+  "calls_ok": 72,
+  "spent_usd": 0.027516,
+  "earlier_rejected_attempts": {
+   "run_id": "c1-5e8f62ae",
+   "calls": 3,
+   "error": "401 invalid x-api-key",
+   "spent_usd": 0.0
+  }
+ }
+}

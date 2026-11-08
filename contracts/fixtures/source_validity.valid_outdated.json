@@ -1,0 +1,35 @@
+{
+ "amendments": [
+  {
+   "articles_affected": [
+    "48"
+   ],
+   "effective_date": "2026-01-01",
+   "evidence_level": "observed_listing_only",
+   "instrument": "FIXTURE amending instrument",
+   "url": "https://uaelegislation.gov.ae/"
+  }
+ ],
+ "article": "48",
+ "conflicts": [],
+ "contract": "herbiz.source_validity/1.2",
+ "current_official_url": "https://uaelegislation.gov.ae/",
+ "current_official_url_status": {
+  "checked_on": "2026-10-18",
+  "content_check": "pending_founder_verification",
+  "link_status": "blocked_to_automation"
+ },
+ "key": "FTA-VAT-DL8|48",
+ "link_checked_on": null,
+ "link_status": "unchecked",
+ "release_approved": false,
+ "reuse_terms": {
+  "note": "fixture",
+  "publisher_terms_url": null,
+  "redistribution": "unknown"
+ },
+ "review_status": "candidate",
+ "snapshot_date": "2026-10-17",
+ "source_id": "FTA-VAT-DL8",
+ "status": "outdated"
+}

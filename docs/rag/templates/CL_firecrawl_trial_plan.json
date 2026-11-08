@@ -1,0 +1,217 @@
+{
+ "cap": 15,
+ "worst_case_credits": 11,
+ "reserve": 4,
+ "runs": 2,
+ "calls": [
+  {
+   "run": 1,
+   "url": "https://tax.gov.ae/en/legislation.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: live legislation listing (EN)",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run1/01.json"
+  },
+  {
+   "run": 1,
+   "url": "https://tax.gov.ae/en/legislation/vat.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: VAT-only legislation listing",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run1/02.json"
+  },
+  {
+   "run": 1,
+   "url": "https://tax.gov.ae/en/Legislation.archive.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: legislation archive",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run1/03.json"
+  },
+  {
+   "run": 1,
+   "url": "https://tax.gov.ae/en/taxes/Vat/guides.references.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: VAT guides and public clarifications",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run1/04.json"
+  },
+  {
+   "run": 1,
+   "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+   "kind": "document",
+   "purpose": "Q2: G1 page (30 business days)",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run1/05.json"
+  },
+  {
+   "run": 1,
+   "url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "kind": "document",
+   "purpose": "Q3: official portal entry for DL 8/2017 (run 1 only)",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run1/06.json"
+  },
+  {
+   "run": 2,
+   "url": "https://tax.gov.ae/en/legislation.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: live legislation listing (EN)",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run2/07.json"
+  },
+  {
+   "run": 2,
+   "url": "https://tax.gov.ae/en/legislation/vat.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: VAT-only legislation listing",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run2/08.json"
+  },
+  {
+   "run": 2,
+   "url": "https://tax.gov.ae/en/Legislation.archive.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: legislation archive",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run2/09.json"
+  },
+  {
+   "run": 2,
+   "url": "https://tax.gov.ae/en/taxes/Vat/guides.references.aspx",
+   "kind": "listing",
+   "purpose": "Q1/Q2: VAT guides and public clarifications",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run2/10.json"
+  },
+  {
+   "run": 2,
+   "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+   "kind": "document",
+   "purpose": "Q2: G1 page (30 business days)",
+   "options": {
+    "formats": [
+     "markdown",
+     "changeTracking",
+     "links"
+    ],
+    "onlyMainContent": false,
+    "maxAge": 0,
+    "proxy": "basic"
+   },
+   "registered": true,
+   "save_as": "data/monitor/firecrawl/trial-run2/11.json"
+  }
+ ],
+ "excluded": "PDF documents (per-page PDF pricing not confirmed); crawl, map, search, json/summary formats; stealth proxies",
+ "preconditions": [
+  "founder approval of this exact plan (decision D15)",
+  "founder checks the Firecrawl dashboard balance first (not readable from Claude: find_tools has no balance capability; checked 17 Oct 2026, 0 credits used)",
+  "run 2 at least 24 hours after run 1, with identical options"
+ ],
+ "stop_rules": [
+  "stop the whole trial if any call reports more than 1 credit",
+  "do not retry a failed URL in the same run",
+  "a 403 on uaelegislation.gov.ae is recorded and not retried; a person opens the page in a browser"
+ ]
+}

@@ -1,0 +1,1152 @@
+{
+ "set": "v8",
+ "classifier_outputs": "independent Claude Code helper agent (Haiku-class), frozen C1-primary prompt; NOT the Haiku 5.5 API",
+ "warning": "Pre-recorded outputs from an independent agent, NOT Claude Haiku 5.5.",
+ "validity_interface": {
+  "available": true,
+  "error": null,
+  "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c"
+ },
+ "c1_primary": {
+  "recall": 0.84,
+  "answerable": 25,
+  "any_expected": 0.92,
+  "silent_incomplete": 1,
+  "silent_ids": [
+   "Q824"
+  ],
+  "oos_verified_or_certified": 0,
+  "false_incomplete": 0.429,
+  "irrelevant_added": 0.478,
+  "avg_passages": 10.1,
+  "added_on_oos": 0,
+  "certifiable": 0,
+  "misses": [
+   "Q815",
+   "Q816",
+   "Q818",
+   "Q824"
+  ],
+  "recall_on_legal_review_flagged": 1.0,
+  "statuses": {
+   "complete": 13,
+   "incomplete": 13,
+   "ambiguous": 1,
+   "out_of_scope": 1
+  },
+  "rows": [
+   {
+    "id": "Q801",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q802",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q803",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q804",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "ambiguous",
+    "legal_review": true
+   },
+   {
+    "id": "Q805",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q806",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q807",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q808",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q809",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q810",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q811",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q812",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q813",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q814",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q815",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q816",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q817",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q818",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q819",
+    "category": "ambiguous",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q820",
+    "category": "ambiguous",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q821",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q822",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q823",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": false,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q824",
+    "category": "adversarial",
+    "all_required": false,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q825",
+    "category": "adversarial",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q826",
+    "category": "adversarial",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q827",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q828",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   }
+  ]
+ },
+ "c1_agreement": {
+  "recall": 0.72,
+  "answerable": 25,
+  "any_expected": 0.92,
+  "silent_incomplete": 0,
+  "silent_ids": [],
+  "oos_verified_or_certified": 0,
+  "false_incomplete": 0.944,
+  "irrelevant_added": 0.609,
+  "avg_passages": 10.6,
+  "added_on_oos": 0,
+  "certifiable": null,
+  "misses": [
+   "Q804",
+   "Q805",
+   "Q815",
+   "Q816",
+   "Q818",
+   "Q819",
+   "Q824"
+  ],
+  "recall_on_legal_review_flagged": 0.625,
+  "statuses": {
+   "incomplete": 23,
+   "complete": 1,
+   "source_validity_unresolved": 3,
+   "out_of_scope": 1
+  },
+  "rows": [
+   {
+    "id": "Q801",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q802",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q803",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q804",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "source_validity_unresolved",
+    "legal_review": true
+   },
+   {
+    "id": "Q805",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q806",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q807",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q808",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q809",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "source_validity_unresolved",
+    "legal_review": false
+   },
+   {
+    "id": "Q810",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q811",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q812",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q813",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q814",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q815",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q816",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q817",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q818",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q819",
+    "category": "ambiguous",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q820",
+    "category": "ambiguous",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q821",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q822",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q823",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": null,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q824",
+    "category": "adversarial",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q825",
+    "category": "adversarial",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q826",
+    "category": "adversarial",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "source_validity_unresolved",
+    "legal_review": true
+   },
+   {
+    "id": "Q827",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q828",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   }
+  ]
+ },
+ "v7_only": {
+  "recall": 0.48,
+  "answerable": 25,
+  "any_expected": 0.88,
+  "silent_incomplete": 4,
+  "silent_ids": [
+   "Q806",
+   "Q820",
+   "Q824",
+   "Q826"
+  ],
+  "oos_verified_or_certified": 0,
+  "false_incomplete": 0.5,
+  "irrelevant_added": 0.717,
+  "avg_passages": 10.5,
+  "added_on_oos": 8,
+  "certifiable": null,
+  "misses": [
+   "Q802",
+   "Q804",
+   "Q805",
+   "Q806",
+   "Q808",
+   "Q815",
+   "Q816",
+   "Q818",
+   "Q819",
+   "Q820",
+   "Q824",
+   "Q825",
+   "Q826"
+  ],
+  "recall_on_legal_review_flagged": 0.25,
+  "statuses": {
+   "complete": 10,
+   "incomplete": 11,
+   "source_validity_unresolved": 2,
+   "out_of_scope": 4,
+   "ambiguous": 1
+  },
+  "rows": [
+   {
+    "id": "Q801",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q802",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q803",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q804",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "source_validity_unresolved",
+    "legal_review": true
+   },
+   {
+    "id": "Q805",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q806",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q807",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q808",
+    "category": "realistic_scenario",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q809",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "source_validity_unresolved",
+    "legal_review": false
+   },
+   {
+    "id": "Q810",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q811",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q812",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q813",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q814",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q815",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q816",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q817",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q818",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q819",
+    "category": "ambiguous",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q820",
+    "category": "ambiguous",
+    "all_required": false,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q821",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": null,
+    "status": "ambiguous",
+    "legal_review": false
+   },
+   {
+    "id": "Q822",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q823",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": null,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q824",
+    "category": "adversarial",
+    "all_required": false,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q825",
+    "category": "adversarial",
+    "all_required": false,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q826",
+    "category": "adversarial",
+    "all_required": false,
+    "verified": true,
+    "certifiable": null,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q827",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q828",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": null,
+    "status": "incomplete",
+    "legal_review": false
+   }
+  ]
+ },
+ "c1_primary_reviewer_labels": {
+  "recall": 0.84,
+  "answerable": 25,
+  "any_expected": 0.92,
+  "silent_incomplete": 1,
+  "silent_ids": [
+   "Q824"
+  ],
+  "oos_verified_or_certified": 0,
+  "false_incomplete": 0.429,
+  "irrelevant_added": 0.478,
+  "avg_passages": 10.1,
+  "added_on_oos": 0,
+  "certifiable": 0,
+  "misses": [
+   "Q815",
+   "Q816",
+   "Q818",
+   "Q824"
+  ],
+  "recall_on_legal_review_flagged": 1.0,
+  "statuses": {
+   "complete": 13,
+   "incomplete": 13,
+   "ambiguous": 1,
+   "out_of_scope": 1
+  },
+  "rows": [
+   {
+    "id": "Q801",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q802",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q803",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q804",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "ambiguous",
+    "legal_review": true
+   },
+   {
+    "id": "Q805",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q806",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q807",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q808",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q809",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q810",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q811",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q812",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q813",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q814",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q815",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q816",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q817",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q818",
+    "category": "paraphrase",
+    "all_required": false,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q819",
+    "category": "ambiguous",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q820",
+    "category": "ambiguous",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q821",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q822",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   },
+   {
+    "id": "Q823",
+    "category": "out_of_scope",
+    "all_required": null,
+    "verified": false,
+    "certifiable": false,
+    "status": "out_of_scope",
+    "legal_review": false
+   },
+   {
+    "id": "Q824",
+    "category": "adversarial",
+    "all_required": false,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q825",
+    "category": "adversarial",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": false
+   },
+   {
+    "id": "Q826",
+    "category": "adversarial",
+    "all_required": true,
+    "verified": true,
+    "certifiable": false,
+    "status": "complete",
+    "legal_review": true
+   },
+   {
+    "id": "Q827",
+    "category": "realistic_scenario",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": true
+   },
+   {
+    "id": "Q828",
+    "category": "paraphrase",
+    "all_required": true,
+    "verified": false,
+    "certifiable": false,
+    "status": "incomplete",
+    "legal_review": false
+   }
+  ]
+ }
+}

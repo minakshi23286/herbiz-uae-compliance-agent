@@ -1,0 +1,27 @@
+{
+ "_notice": "Demo scenario — fictional business. WS-C's existing synthetic persona 'Amal' (two variants), transcribed field by field from ws-c-source-intelligence @ 37897a1, docs/rag/360/CL_HERBIZ_360_06_MVP_ROADMAP_BACKLOG.md §1 persona card. No new persona, no new facts. Founder decision D-064 (T-040 #5). Not legal or tax advice.",
+ "source": {"repo": "CL_compliance_agent_app_ws_c", "commit": "37897a1", "path": "docs/rag/360/CL_HERBIZ_360_06_MVP_ROADMAP_BACKLOG.md", "section": "1. Proposed MVP — persona card"},
+ "mapping_notes": [
+  "revenue_band_last_12m: WS-C gives calendar-year 2025 turnover AED 640,000; mapped to the band that contains it (375000-1000000). No exact 12-month taxable-supplies figure is given, so none is set.",
+  "activities: 'home-based design business' -> ['design'].",
+  "licensing_authority: copied as written by WS-C (variant A authority still to confirm).",
+  "documents_available: not given by WS-C; left empty so the demo shows every checklist item as missing (WS-A may toggle items in the UI).",
+  "VAT tax period (quarterly) and 'revenue in every tax period <= AED 3m' have no field in the B profile schema; kept in persona_facts_not_in_schema for display only."
+ ],
+ "profiles": [
+  {"profile_id": "SYN-AMAL-A", "synthetic": true, "demo_scenario": "WS-C Amal variant A",
+   "persona": "Amal — Dubai mainland home-based design business, variant A: sole establishment (natural person)",
+   "fields": {"emirate": "AE-DU", "jurisdiction_type": "mainland", "legal_form": "sole_establishment", "activities": ["design"],
+              "licensing_authority": "home-business permit (authority to confirm)", "licence_issue_date": "2025-02-10", "licence_expiry_date": "2027-02-09",
+              "financial_year_end": "12-31", "revenue_band_last_12m": "375000-1000000", "vat_registration_status": "registered",
+              "ct_registration_status": "not_registered", "has_employees": false, "documents_available": []},
+   "persona_facts_not_in_schema": {"calendar_2025_turnover_aed": 640000, "vat_tax_period": "quarterly (synthetic)", "revenue_every_tax_period": "<= AED 3m", "special_circumstances": "none"}},
+  {"profile_id": "SYN-AMAL-B", "synthetic": true, "demo_scenario": "WS-C Amal variant B",
+   "persona": "Amal — Dubai mainland home-based design business, variant B: small LLC (juridical person)",
+   "fields": {"emirate": "AE-DU", "jurisdiction_type": "mainland", "legal_form": "llc", "activities": ["design"],
+              "licensing_authority": "Dubai DET", "licence_issue_date": "2025-02-10", "licence_expiry_date": "2027-02-09",
+              "financial_year_end": "12-31", "revenue_band_last_12m": "375000-1000000", "vat_registration_status": "registered",
+              "ct_registration_status": "registered", "has_employees": false, "employees_count": 0, "documents_available": []},
+   "persona_facts_not_in_schema": {"calendar_2025_turnover_aed": 640000, "vat_tax_period": "quarterly (synthetic)", "revenue_every_tax_period": "<= AED 3m", "special_circumstances": "none"}}
+ ]
+}

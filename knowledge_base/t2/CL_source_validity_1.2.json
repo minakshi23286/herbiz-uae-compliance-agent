@@ -1,0 +1,2475 @@
+{
+ "_meta": {
+  "contract": "herbiz.source_validity/1.2",
+  "schema_sha256": "5ebe5f98e5514f37de62cfed608d38ddc2a21921010bca33e143c14b1035b948",
+  "snapshot_date": "2026-10-17",
+  "by": "WS C, Task 2 C-2",
+  "count": 110,
+  "status_counts": {
+   "outdated": 6,
+   "superseded": 2,
+   "current": 2,
+   "conflict": 2,
+   "not_collected": 98
+  },
+  "rules": "no source activated; approved_versions stays empty; release_approved false; current_official_url shown, never fetched; portal 1227 pending founder verification",
+  "not_legal_advice": true
+ },
+ "payloads": [
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|*",
+   "source_id": "FTA-VAT-DL8",
+   "article": "*",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "48",
+      "54 (bis)",
+      "74",
+      "79 (bis)"
+     ],
+     "evidence_level": "observed",
+     "url": "https://mof.gov.ae/en/news/ministry-of-finance-to-implement-vat-law-amendments-starting-january-2026/"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|48",
+   "source_id": "FTA-VAT-DL8",
+   "article": "48",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "48"
+     ],
+     "evidence_level": "observed_in_file",
+     "url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|74",
+   "source_id": "FTA-VAT-DL8",
+   "article": "74",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "74"
+     ],
+     "evidence_level": "observed_in_file",
+     "url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|54 (bis)",
+   "source_id": "FTA-VAT-DL8",
+   "article": "54 (bis)",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "54 (bis)"
+     ],
+     "evidence_level": "observed_in_file",
+     "url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8|79 (bis)",
+   "source_id": "FTA-VAT-DL8",
+   "article": "79 (bis)",
+   "status": "superseded",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Federal Decree-Law No. 16 of 2025 (amending Federal Decree-Law No. 8 of 2017 on VAT)",
+     "effective_date": "2026-01-01",
+     "articles_affected": [
+      "79 (bis)"
+     ],
+     "evidence_level": "observed_in_file",
+     "url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf"
+    }
+   ],
+   "current_official_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "current_official_url_status": {
+    "link_status": "blocked_to_automation",
+    "checked_on": "2026-10-18",
+    "content_check": "pending_founder_verification"
+   },
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-ER|*",
+   "source_id": "FTA-VAT-ER",
+   "article": "*",
+   "status": "current",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-ER|14",
+   "source_id": "FTA-VAT-ER",
+   "article": "14",
+   "status": "conflict",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [
+    {
+     "conflict_id": "G1",
+     "claim": "VAT deregistration: application deadline after the obligation arises",
+     "values": [
+      {
+       "source_id": "FTA-VAT-ER",
+       "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+       "value": "20 business days",
+       "locator": "Article 14(1)"
+      },
+      {
+       "source_id": "FTA-VAT-DEREG-SERVICE",
+       "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+       "value": "30 business days",
+       "locator": "FTA deregistration service page (updated 2026-09-24)"
+      }
+     ],
+     "precedence_known": false,
+     "resolution": "escalate"
+    }
+   ],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-REG-PAGE|*",
+   "source_id": "FTA-VAT-REG-PAGE",
+   "article": "*",
+   "status": "current",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "candidate",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DEREG-SERVICE|*",
+   "source_id": "FTA-VAT-DEREG-SERVICE",
+   "article": "*",
+   "status": "conflict",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [
+    {
+     "conflict_id": "G1",
+     "claim": "VAT deregistration: application deadline after the obligation arises",
+     "values": [
+      {
+       "source_id": "FTA-VAT-ER",
+       "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+       "value": "20 business days",
+       "locator": "Article 14(1)"
+      },
+      {
+       "source_id": "FTA-VAT-DEREG-SERVICE",
+       "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+       "value": "30 business days",
+       "locator": "FTA deregistration service page (updated 2026-09-24)"
+      }
+     ],
+     "precedence_known": false,
+     "resolution": "escalate"
+    }
+   ],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-MD73-2023|*",
+   "source_id": "CT-MD73-2023",
+   "article": "*",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Ministerial Decision No. 131 of 2026 (amending MD 73/2023, Small Business Relief)",
+     "effective_date": null,
+     "articles_affected": [
+      "2(2)"
+     ],
+     "evidence_level": "observed",
+     "url": "https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf"
+    }
+   ],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-MD73-2023|2(2)",
+   "source_id": "CT-MD73-2023",
+   "article": "2(2)",
+   "status": "outdated",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Ministerial Decision No. 131 of 2026 (amending MD 73/2023, Small Business Relief)",
+     "effective_date": null,
+     "articles_affected": [
+      "2(2)"
+     ],
+     "evidence_level": "observed",
+     "url": "https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf"
+    }
+   ],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "ACC-MD82-2023|*",
+   "source_id": "ACC-MD82-2023",
+   "article": "*",
+   "status": "superseded",
+   "snapshot_date": "2026-10-17",
+   "amendments": [
+    {
+     "instrument": "Ministerial Decision No. 84 of 2025 on Audited Financial Statements (repeals MD 82/2023)",
+     "effective_date": "2025-03-25",
+     "articles_affected": [
+      "*"
+     ],
+     "evidence_level": "observed",
+     "url": "https://mof.gov.ae/wp-content/uploads/2025/04/Ministerial-Decision-No.-84-of-2025-on-Audited-Financial-Statements.pdf"
+    }
+   ],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-DL47-2022|*",
+   "source_id": "CT-DL47-2022",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-CR116-2022|*",
+   "source_id": "CT-CR116-2022",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-CR75-2023|*",
+   "source_id": "CT-CR75-2023",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-CR49-2023|*",
+   "source_id": "CT-CR49-2023",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-OTHER-CRS|*",
+   "source_id": "CT-OTHER-CRS",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-FTA-DEC3-2024|*",
+   "source_id": "CT-FTA-DEC3-2024",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-REG-SERVICE|*",
+   "source_id": "CT-REG-SERVICE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-SBR-TOPIC|*",
+   "source_id": "CT-SBR-TOPIC",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-MD131-2026|*",
+   "source_id": "CT-MD131-2026",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-NATURAL-PERSON-TOPIC|*",
+   "source_id": "CT-NATURAL-PERSON-TOPIC",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-RETURN-DEADLINE|*",
+   "source_id": "CT-RETURN-DEADLINE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-GUIDES-LISTING|*",
+   "source_id": "CT-GUIDES-LISTING",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-SB-BULLETIN-2026|*",
+   "source_id": "CT-SB-BULLETIN-2026",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "TAX-TAXP010|*",
+   "source_id": "TAX-TAXP010",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CT-FTA-DEC15-2026|*",
+   "source_id": "CT-FTA-DEC15-2026",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "ACC-FTA-DEC4-2026|*",
+   "source_id": "ACC-FTA-DEC4-2026",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "unchecked",
+   "link_checked_on": null,
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "ACC-MD84-2025|*",
+   "source_id": "ACC-MD84-2025",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "EINV-FTA-PAGE|*",
+   "source_id": "EINV-FTA-PAGE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "EINV-MOF-PAGE|*",
+   "source_id": "EINV-MOF-PAGE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UBO-CD109-2023|*",
+   "source_id": "UBO-CD109-2023",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "WPS-MOHRE|*",
+   "source_id": "WPS-MOHRE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "EMP-DL33-2021|*",
+   "source_id": "EMP-DL33-2021",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "ESR-CD98-2024|*",
+   "source_id": "ESR-CD98-2024",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LIC-DUBAI-DET|*",
+   "source_id": "LIC-DUBAI-DET",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LIC-DDA-FZ|*",
+   "source_id": "LIC-DDA-FZ",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "POL-UAE-PDPL|*",
+   "source_id": "POL-UAE-PDPL",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "POL-UAE-AI-CHARTER|*",
+   "source_id": "POL-UAE-AI-CHARTER",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "POL-UAE-AI-STRATEGY-2031|*",
+   "source_id": "POL-UAE-AI-STRATEGY-2031",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "POL-DUBAI-AI-ETHICS|*",
+   "source_id": "POL-DUBAI-AI-ETHICS",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "POL-UAE-DATA-OFFICE|*",
+   "source_id": "POL-UAE-DATA-OFFICE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "DL16-2025-VAT-AMEND|*",
+   "source_id": "DL16-2025-VAT-AMEND",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VATP046|*",
+   "source_id": "FTA-VATP046",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DL8-2023-CONSOL-OLD|*",
+   "source_id": "FTA-VAT-DL8-2023-CONSOL-OLD",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-ER-2026-09-AR|*",
+   "source_id": "FTA-VAT-ER-2026-09-AR",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "MOF-CD149-2026-NEWS|*",
+   "source_id": "MOF-CD149-2026-NEWS",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CD100-2025-ER-AMEND|*",
+   "source_id": "CD100-2025-ER-AMEND",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VATP040|*",
+   "source_id": "FTA-VATP040",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-REG-SERVICE|*",
+   "source_id": "FTA-VAT-REG-SERVICE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-REG-USER-MANUAL|*",
+   "source_id": "FTA-VAT-REG-USER-MANUAL",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DEREG-USER-MANUAL|*",
+   "source_id": "FTA-VAT-DEREG-USER-MANUAL",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-DEREG-SELF-ASSESS|*",
+   "source_id": "FTA-VAT-DEREG-SELF-ASSESS",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-GUIDES-LISTING|*",
+   "source_id": "FTA-VAT-GUIDES-LISTING",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-VAT-USER-GUIDE|*",
+   "source_id": "FTA-VAT-USER-GUIDE",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-DEC13-2026|*",
+   "source_id": "FTA-DEC13-2026",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-LEGISLATION-LISTING|*",
+   "source_id": "FTA-LEGISLATION-LISTING",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-DL28-2022-TPL|*",
+   "source_id": "FTA-DL28-2022-TPL",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "dead",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "MOF-CD40-2017-PENALTIES|*",
+   "source_id": "MOF-CD40-2017-PENALTIES",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-CD129-2025-NEWS|*",
+   "source_id": "FTA-CD129-2025-NEWS",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-DL8-2017|*",
+   "source_id": "UAELEG-DL8-2017",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FTA-TERMS|*",
+   "source_id": "FTA-TERMS",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "CURRENT-DL8-CONSOL-INCL-DL16-2025|*",
+   "source_id": "CURRENT-DL8-CONSOL-INCL-DL16-2025",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "unchecked",
+   "link_checked_on": null,
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "MOF-CD149-2026-TEXT|*",
+   "source_id": "MOF-CD149-2026-TEXT",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "dead",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-01|*",
+   "source_id": "LS-01",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-02|*",
+   "source_id": "LS-02",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "unchecked",
+   "link_checked_on": null,
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-03|*",
+   "source_id": "LS-03",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-04|*",
+   "source_id": "LS-04",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-05|*",
+   "source_id": "LS-05",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "unchecked",
+   "link_checked_on": null,
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-06|*",
+   "source_id": "LS-06",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "unchecked",
+   "link_checked_on": null,
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-07|*",
+   "source_id": "LS-07",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-08|*",
+   "source_id": "LS-08",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-09|*",
+   "source_id": "LS-09",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-10|*",
+   "source_id": "LS-10",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-11|*",
+   "source_id": "LS-11",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-12|*",
+   "source_id": "LS-12",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "unchecked",
+   "link_checked_on": null,
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-13|*",
+   "source_id": "LS-13",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-14|*",
+   "source_id": "LS-14",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-15|*",
+   "source_id": "LS-15",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-16|*",
+   "source_id": "LS-16",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-17|*",
+   "source_id": "LS-17",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-18|*",
+   "source_id": "LS-18",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-19|*",
+   "source_id": "LS-19",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-20|*",
+   "source_id": "LS-20",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-21|*",
+   "source_id": "LS-21",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-22|*",
+   "source_id": "LS-22",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-23|*",
+   "source_id": "LS-23",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-24|*",
+   "source_id": "LS-24",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-25|*",
+   "source_id": "LS-25",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-26|*",
+   "source_id": "LS-26",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-28|*",
+   "source_id": "LS-28",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-29|*",
+   "source_id": "LS-29",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "LS-32|*",
+   "source_id": "LS-32",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-DIR-2026-05|*",
+   "source_id": "FC-VAT-DIR-2026-05",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-DIR-2026-04|*",
+   "source_id": "FC-VAT-DIR-2026-04",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-DIR-2026-03|*",
+   "source_id": "FC-VAT-DIR-2026-03",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-DIR-2026-01|*",
+   "source_id": "FC-VAT-DIR-2026-01",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-CD153-2025|*",
+   "source_id": "FC-CD153-2025",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VATP047|*",
+   "source_id": "FC-VATP047",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VATP045|*",
+   "source_id": "FC-VATP045",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-EDU-GUIDE-2026|*",
+   "source_id": "FC-VAT-EDU-GUIDE-2026",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-REFUND-NATIONALS-2026-06|*",
+   "source_id": "FC-VAT-REFUND-NATIONALS-2026-06",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "FC-VAT-REFUND-NATIONALS-2026-04|*",
+   "source_id": "FC-VAT-REFUND-NATIONALS-2026-04",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+    "redistribution": "link_only",
+    "note": "FTA terms require prior written consent for copying beyond personal, non-commercial or educational use (register G5); link and cite only"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-ER-1226|*",
+   "source_id": "UAELEG-ER-1226",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-DL8-1227-AR|*",
+   "source_id": "UAELEG-DL8-1227-AR",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-TPL-1625|*",
+   "source_id": "UAELEG-TPL-1625",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-1230|*",
+   "source_id": "UAELEG-1230",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-1229|*",
+   "source_id": "UAELEG-1229",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-2572|*",
+   "source_id": "UAELEG-2572",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  },
+  {
+   "contract": "herbiz.source_validity/1.2",
+   "key": "UAELEG-CD153-2025-3860|*",
+   "source_id": "UAELEG-CD153-2025-3860",
+   "article": "*",
+   "status": "not_collected",
+   "snapshot_date": "2026-10-17",
+   "amendments": [],
+   "current_official_url": null,
+   "current_official_url_status": null,
+   "conflicts": [],
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "review_status": "discovered",
+   "reuse_terms": {
+    "publisher_terms_url": null,
+    "redistribution": "unknown",
+    "note": "publisher terms not reviewed; metadata and link only in public outputs (D4)"
+   },
+   "release_approved": false
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "item": "Workstream B C1-primary v2 (final cycle) paid evaluation: Claude Haiku 5.5 classifies each question of frozen blind set v9 (30 synthetic questions), 3 repeats, frozen C1P v2 code",
+ "status": "awaiting_approval",
+ "approved_by": null,
+ "approved_at": null,
+ "authorized_usd": 0,
+ "sets": ["v9"],
+ "repeats": 3,
+ "model": "claude-haiku-5-5",
+ "max_calls": 90,
+ "note": "Only the founder changes status to 'approved', sets approved_by/approved_at and the cap (proposed: 0.10). The harness refuses any other run."
+}

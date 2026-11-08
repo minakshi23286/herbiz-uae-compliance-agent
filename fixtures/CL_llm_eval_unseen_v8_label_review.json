@@ -1,0 +1,529 @@
+{
+  "_notice": "Independent label review of v8; reviewer read only the title list and the v8 file; not tax-qualified; not legal advice.",
+  "reviews": [
+    {
+      "id": "Q801",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "13"
+        ],
+        [
+          "FTA-VAT-ER",
+          "7"
+        ],
+        [
+          "FTA-VAT-REG-PAGE",
+          null
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Duty (DL8 13), threshold timing/effective date (ER 7) and AED 375,000 figure (REG page) all needed; DL8 19 correctly supporting."
+    },
+    {
+      "id": "Q802",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "17"
+        ],
+        [
+          "FTA-VAT-ER",
+          "8"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Voluntary registration and its threshold rest on DL8 17 and ER 8; input recovery (DL8 54) correctly supporting."
+    },
+    {
+      "id": "Q803",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "65"
+        ],
+        [
+          "FTA-VAT-ER",
+          "59"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Invoice duty and particulars; DL8 67/79 correctly supporting."
+    },
+    {
+      "id": "Q804",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "38"
+        ],
+        [
+          "FTA-VAT-ER",
+          "27"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Titles match the question; keep author's flag because the scope of the ER 27 exception for consumer online listings cannot be confirmed from titles."
+    },
+    {
+      "id": "Q805",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "45"
+        ],
+        [
+          "FTA-VAT-ER",
+          "31"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Zero-rating of exported services rests on DL8 45 and ER 31; DL8 29 place of supply is arguably required too, so a tax reviewer should confirm."
+    },
+    {
+      "id": "Q806",
+      "verdict": "partly_agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "72"
+        ],
+        [
+          "FTA-VAT-ER",
+          "64"
+        ],
+        [
+          "FTA-VAT-ER",
+          "62"
+        ]
+      ],
+      "missing_from_author": [
+        [
+          "FTA-VAT-ER",
+          "62"
+        ]
+      ],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "The user asks directly whether periods are monthly or quarterly; ER 62 'Length of tax period' answers that and should be required, not supporting."
+    },
+    {
+      "id": "Q807",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "78"
+        ],
+        [
+          "FTA-VAT-ER",
+          "71"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Retention period and record form (including electronic copies) rest on DL8 78 and ER 71."
+    },
+    {
+      "id": "Q808",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "76"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "13"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Correct pair from the list; penalty amounts sit outside this title list, as the author notes."
+    },
+    {
+      "id": "Q809",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "21"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "22"
+        ],
+        [
+          "FTA-VAT-ER",
+          "14"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Deregistration duty, application and procedure covered; any late-deregistration penalty amount is outside the list, which a careful answer should say."
+    },
+    {
+      "id": "Q810",
+      "verdict": "partly_agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "54"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "55"
+        ],
+        [
+          "FTA-VAT-ER",
+          "59"
+        ]
+      ],
+      "missing_from_author": [
+        [
+          "FTA-VAT-ER",
+          "59"
+        ]
+      ],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "The second part asks whether an invoice in the personal name not the trade name is a problem; that turns on tax invoice particulars (ER 59), so it should be required. Validity of a personal-name invoice for a home licence holder needs a tax reviewer."
+    },
+    {
+      "id": "Q811",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-ER",
+          "53"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Entertainment and motor-vehicle/fuel blocks both sit in ER 53."
+    },
+    {
+      "id": "Q812",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "64"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Bad-debt relief conditions are in DL8 64."
+    },
+    {
+      "id": "Q813",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "40"
+        ],
+        [
+          "FTA-VAT-ER",
+          "28"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Voucher timing/value rules sit in DL8 40 and ER 28."
+    },
+    {
+      "id": "Q814",
+      "verdict": "partly_agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "70"
+        ],
+        [
+          "FTA-VAT-ER",
+          "60"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "61"
+        ]
+      ],
+      "missing_from_author": [
+        [
+          "FTA-VAT-DL8",
+          "61"
+        ]
+      ],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "The question asks how to fix the VAT, not only what document to issue; DL8 61 (instances for output tax adjustment, e.g. returned goods/refund) should be required rather than supporting."
+    },
+    {
+      "id": "Q815",
+      "verdict": "partly_agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "11"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "12"
+        ],
+        [
+          "FTA-VAT-ER",
+          "5"
+        ]
+      ],
+      "missing_from_author": [
+        [
+          "FTA-VAT-ER",
+          "5"
+        ]
+      ],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "The gift/sample exception detail (value limits, conditions) is likely in ER 5 'Exceptions related to Deemed Supply'; a careful answer on 40 free boxes a month needs it."
+    },
+    {
+      "id": "Q816",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "13"
+        ],
+        [
+          "FTA-VAT-REG-PAGE",
+          null
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Threshold duty and figure; ER 7 and DL8 19 reasonably supporting."
+    },
+    {
+      "id": "Q817",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "45"
+        ],
+        [
+          "FTA-VAT-ER",
+          "40"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Correct sources; whether informal home tutoring qualifies is a substantive question for a reviewer, as the author flags."
+    },
+    {
+      "id": "Q818",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "45"
+        ],
+        [
+          "FTA-VAT-ER",
+          "30"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Export of goods zero rating and evidence conditions."
+    },
+    {
+      "id": "Q819",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "8"
+        ],
+        [
+          "FTA-VAT-ER",
+          "46"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Reasonable primary pair; overlap with DL8 47 and ER 4 means a reviewer should confirm which is primary."
+    },
+    {
+      "id": "Q820",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "9"
+        ],
+        [
+          "FTA-VAT-ER",
+          "13"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Both agent and aggregation issues captured; fact-dependent."
+    },
+    {
+      "id": "Q821",
+      "verdict": "not_applicable",
+      "reviewer_required": [],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Corporate tax; outside VAT title list."
+    },
+    {
+      "id": "Q822",
+      "verdict": "not_applicable",
+      "reviewer_required": [],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Indian GST; outside scope."
+    },
+    {
+      "id": "Q823",
+      "verdict": "not_applicable",
+      "reviewer_required": [],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Licence fees and banking; outside scope."
+    },
+    {
+      "id": "Q824",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "45"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "46"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Rebutting the exemption claim rests on the zero-rate and exempt lists; DL8 3 and 13 correctly supporting."
+    },
+    {
+      "id": "Q825",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "3"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "13"
+        ],
+        [
+          "FTA-VAT-REG-PAGE",
+          null
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Rate and threshold premise correction."
+    },
+    {
+      "id": "Q826",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "77"
+        ],
+        [
+          "FTA-VAT-ER",
+          "13"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Evasion and aggregation are the right anchors; spouse aggregation and penalty sources outside the list need confirmation."
+    },
+    {
+      "id": "Q827",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "31"
+        ],
+        [
+          "FTA-VAT-ER",
+          "23"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": true,
+      "reason": "Electronic-services place of supply is primary; interaction with export zero rating needs a reviewer."
+    },
+    {
+      "id": "Q828",
+      "verdict": "agree",
+      "reviewer_required": [
+        [
+          "FTA-VAT-DL8",
+          "25"
+        ],
+        [
+          "FTA-VAT-DL8",
+          "26"
+        ]
+      ],
+      "missing_from_author": [],
+      "not_needed_in_author": [],
+      "needs_legal_review": false,
+      "reason": "Date of supply on advance payment; ER 19 reasonably supporting."
+    }
+  ],
+  "summary": {
+    "agree": 21,
+    "partly_agree": 4,
+    "disagree": 0,
+    "not_applicable": 3,
+    "needs_legal_review": 9
+  }
+}

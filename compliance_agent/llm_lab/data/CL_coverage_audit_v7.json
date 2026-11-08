@@ -1,0 +1,667 @@
+{
+ "_meta": {
+  "article_topics": 162,
+  "articles": 162,
+  "articles_in_a_curated_topic": 74,
+  "base": "v6 provision map + v6 expansion links",
+  "built_by": "experiments/ws_b/CL_build_v7_tables.py",
+  "curated_topics": 47,
+  "locator_contract": "Workstream C interface contract v0.1",
+  "not_legal_advice": true
+ },
+ "article_to_topics": {
+  "FTA-VAT-DL8|1": [
+   "art:FTA-VAT-DL8|1"
+  ],
+  "FTA-VAT-DL8|10": [
+   "art:FTA-VAT-DL8|10"
+  ],
+  "FTA-VAT-DL8|11": [
+   "art:FTA-VAT-DL8|11",
+   "art:FTA-VAT-ER|5",
+   "deemed_supply"
+  ],
+  "FTA-VAT-DL8|12": [
+   "art:FTA-VAT-DL8|12",
+   "art:FTA-VAT-ER|3 (bis)",
+   "art:FTA-VAT-ER|5",
+   "deemed_supply"
+  ],
+  "FTA-VAT-DL8|13": [
+   "art:FTA-VAT-DL8|13",
+   "art:FTA-VAT-ER|7",
+   "mandatory_registration",
+   "threshold_calculation"
+  ],
+  "FTA-VAT-DL8|14": [
+   "art:FTA-VAT-DL8|14",
+   "art:FTA-VAT-ER|10",
+   "art:FTA-VAT-ER|11",
+   "art:FTA-VAT-ER|12",
+   "art:FTA-VAT-ER|15",
+   "tax_group"
+  ],
+  "FTA-VAT-DL8|15": [
+   "art:FTA-VAT-DL8|15",
+   "art:FTA-VAT-ER|16",
+   "art:FTA-VAT-ER|3 (bis)",
+   "registration_exception"
+  ],
+  "FTA-VAT-DL8|16": [
+   "art:FTA-VAT-DL8|16"
+  ],
+  "FTA-VAT-DL8|17": [
+   "art:FTA-VAT-DL8|17",
+   "art:FTA-VAT-ER|8",
+   "voluntary_registration"
+  ],
+  "FTA-VAT-DL8|18": [
+   "art:FTA-VAT-DL8|18",
+   "non_resident"
+  ],
+  "FTA-VAT-DL8|19": [
+   "art:FTA-VAT-DL8|19",
+   "capital_assets_threshold",
+   "threshold_calculation"
+  ],
+  "FTA-VAT-DL8|2": [
+   "art:FTA-VAT-DL8|2"
+  ],
+  "FTA-VAT-DL8|20": [
+   "art:FTA-VAT-DL8|20",
+   "art:FTA-VAT-ER|57",
+   "art:FTA-VAT-ER|58",
+   "capital_assets_threshold"
+  ],
+  "FTA-VAT-DL8|21": [
+   "art:FTA-VAT-DL8|21",
+   "art:FTA-VAT-ER|14",
+   "art:FTA-VAT-ER|14 (bis)",
+   "art:FTA-VAT-ER|15",
+   "art:FTA-VAT-ER|18",
+   "deregistration"
+  ],
+  "FTA-VAT-DL8|22": [
+   "art:FTA-VAT-DL8|22",
+   "art:FTA-VAT-ER|14",
+   "deregistration"
+  ],
+  "FTA-VAT-DL8|23": [
+   "art:FTA-VAT-DL8|23",
+   "deregistration"
+  ],
+  "FTA-VAT-DL8|24": [
+   "art:FTA-VAT-DL8|24"
+  ],
+  "FTA-VAT-DL8|25": [
+   "art:FTA-VAT-DL8|25",
+   "art:FTA-VAT-ER|19",
+   "date_of_supply"
+  ],
+  "FTA-VAT-DL8|26": [
+   "art:FTA-VAT-DL8|26"
+  ],
+  "FTA-VAT-DL8|27": [
+   "art:FTA-VAT-DL8|27",
+   "place_of_supply"
+  ],
+  "FTA-VAT-DL8|28": [
+   "art:FTA-VAT-DL8|28"
+  ],
+  "FTA-VAT-DL8|29": [
+   "art:FTA-VAT-DL8|29",
+   "place_of_supply"
+  ],
+  "FTA-VAT-DL8|3": [
+   "art:FTA-VAT-DL8|3",
+   "vat_rate"
+  ],
+  "FTA-VAT-DL8|30": [
+   "art:FTA-VAT-DL8|30"
+  ],
+  "FTA-VAT-DL8|31": [
+   "art:FTA-VAT-DL8|31",
+   "art:FTA-VAT-ER|23",
+   "electronic_services"
+  ],
+  "FTA-VAT-DL8|32": [
+   "art:FTA-VAT-DL8|32"
+  ],
+  "FTA-VAT-DL8|33": [
+   "agent",
+   "art:FTA-VAT-DL8|33"
+  ],
+  "FTA-VAT-DL8|34": [
+   "art:FTA-VAT-DL8|34",
+   "art:FTA-VAT-ER|25",
+   "value_of_supply"
+  ],
+  "FTA-VAT-DL8|35": [
+   "art:FTA-VAT-DL8|35"
+  ],
+  "FTA-VAT-DL8|36": [
+   "art:FTA-VAT-DL8|36",
+   "related_value"
+  ],
+  "FTA-VAT-DL8|37": [
+   "art:FTA-VAT-DL8|37"
+  ],
+  "FTA-VAT-DL8|38": [
+   "art:FTA-VAT-DL8|38",
+   "tax_inclusive"
+  ],
+  "FTA-VAT-DL8|39": [
+   "art:FTA-VAT-DL8|39",
+   "discount"
+  ],
+  "FTA-VAT-DL8|4": [
+   "art:FTA-VAT-DL8|4"
+  ],
+  "FTA-VAT-DL8|40": [
+   "art:FTA-VAT-DL8|40",
+   "vouchers"
+  ],
+  "FTA-VAT-DL8|41": [
+   "art:FTA-VAT-DL8|41"
+  ],
+  "FTA-VAT-DL8|42": [
+   "art:FTA-VAT-DL8|42"
+  ],
+  "FTA-VAT-DL8|43": [
+   "art:FTA-VAT-DL8|43",
+   "profit_margin"
+  ],
+  "FTA-VAT-DL8|44": [
+   "art:FTA-VAT-DL8|44"
+  ],
+  "FTA-VAT-DL8|45": [
+   "art:FTA-VAT-DL8|45",
+   "education",
+   "healthcare",
+   "zero_rated",
+   "zero_rated_or_exports"
+  ],
+  "FTA-VAT-DL8|46": [
+   "art:FTA-VAT-DL8|46",
+   "art:FTA-VAT-ER|43",
+   "art:FTA-VAT-ER|44",
+   "art:FTA-VAT-ER|45",
+   "art:FTA-VAT-ER|52",
+   "exempt_land",
+   "exempt_passenger",
+   "exempt_residential",
+   "exempt_supplies",
+   "financial_services"
+  ],
+  "FTA-VAT-DL8|47": [
+   "art:FTA-VAT-DL8|47",
+   "art:FTA-VAT-ER|4",
+   "art:FTA-VAT-ER|46"
+  ],
+  "FTA-VAT-DL8|48": [
+   "art:FTA-VAT-DL8|48",
+   "art:FTA-VAT-ER|48",
+   "imports"
+  ],
+  "FTA-VAT-DL8|49": [
+   "art:FTA-VAT-DL8|49"
+  ],
+  "FTA-VAT-DL8|5": [
+   "art:FTA-VAT-DL8|5"
+  ],
+  "FTA-VAT-DL8|50": [
+   "art:FTA-VAT-DL8|50",
+   "designated_zone"
+  ],
+  "FTA-VAT-DL8|51": [
+   "art:FTA-VAT-DL8|51",
+   "art:FTA-VAT-ER|51"
+  ],
+  "FTA-VAT-DL8|52": [
+   "art:FTA-VAT-DL8|52"
+  ],
+  "FTA-VAT-DL8|53": [
+   "art:FTA-VAT-DL8|53"
+  ],
+  "FTA-VAT-DL8|54": [
+   "art:FTA-VAT-DL8|54",
+   "input_tax"
+  ],
+  "FTA-VAT-DL8|55": [
+   "art:FTA-VAT-DL8|55",
+   "input_tax"
+  ],
+  "FTA-VAT-DL8|56": [
+   "art:FTA-VAT-DL8|56",
+   "input_tax_before_registration"
+  ],
+  "FTA-VAT-DL8|57": [
+   "art:FTA-VAT-DL8|57"
+  ],
+  "FTA-VAT-DL8|58": [
+   "art:FTA-VAT-DL8|58"
+  ],
+  "FTA-VAT-DL8|59": [
+   "art:FTA-VAT-DL8|59"
+  ],
+  "FTA-VAT-DL8|6": [
+   "art:FTA-VAT-DL8|6"
+  ],
+  "FTA-VAT-DL8|60": [
+   "art:FTA-VAT-DL8|60",
+   "art:FTA-VAT-ER|58",
+   "capital_assets_scheme"
+  ],
+  "FTA-VAT-DL8|61": [
+   "art:FTA-VAT-DL8|61"
+  ],
+  "FTA-VAT-DL8|62": [
+   "art:FTA-VAT-DL8|62"
+  ],
+  "FTA-VAT-DL8|63": [
+   "art:FTA-VAT-DL8|63",
+   "credit_note"
+  ],
+  "FTA-VAT-DL8|64": [
+   "art:FTA-VAT-DL8|64",
+   "bad_debt"
+  ],
+  "FTA-VAT-DL8|65": [
+   "art:FTA-VAT-DL8|65",
+   "art:FTA-VAT-ER|59",
+   "tax_invoice"
+  ],
+  "FTA-VAT-DL8|66": [
+   "art:FTA-VAT-DL8|66"
+  ],
+  "FTA-VAT-DL8|67": [
+   "art:FTA-VAT-DL8|67",
+   "art:FTA-VAT-ER|59"
+  ],
+  "FTA-VAT-DL8|68": [
+   "art:FTA-VAT-DL8|68"
+  ],
+  "FTA-VAT-DL8|69": [
+   "art:FTA-VAT-DL8|69"
+  ],
+  "FTA-VAT-DL8|7": [
+   "art:FTA-VAT-DL8|7",
+   "art:FTA-VAT-ER|50",
+   "art:FTA-VAT-ER|54"
+  ],
+  "FTA-VAT-DL8|70": [
+   "art:FTA-VAT-DL8|70",
+   "art:FTA-VAT-ER|60"
+  ],
+  "FTA-VAT-DL8|71": [
+   "art:FTA-VAT-DL8|71",
+   "tax_return"
+  ],
+  "FTA-VAT-DL8|72": [
+   "art:FTA-VAT-DL8|72",
+   "tax_return"
+  ],
+  "FTA-VAT-DL8|73": [
+   "art:FTA-VAT-DL8|73",
+   "payment"
+  ],
+  "FTA-VAT-DL8|74": [
+   "art:FTA-VAT-DL8|74",
+   "art:FTA-VAT-ER|65"
+  ],
+  "FTA-VAT-DL8|75": [
+   "art:FTA-VAT-DL8|75"
+  ],
+  "FTA-VAT-DL8|76": [
+   "art:FTA-VAT-DL8|76",
+   "penalties"
+  ],
+  "FTA-VAT-DL8|77": [
+   "art:FTA-VAT-DL8|77",
+   "evasion"
+  ],
+  "FTA-VAT-DL8|78": [
+   "art:FTA-VAT-DL8|78",
+   "art:FTA-VAT-ER|71",
+   "art:FTA-VAT-ER|72",
+   "records"
+  ],
+  "FTA-VAT-DL8|79": [
+   "art:FTA-VAT-DL8|79"
+  ],
+  "FTA-VAT-DL8|79 (bis)": [
+   "art:FTA-VAT-DL8|79 (bis)"
+  ],
+  "FTA-VAT-DL8|8": [
+   "art:FTA-VAT-DL8|8",
+   "art:FTA-VAT-ER|4",
+   "art:FTA-VAT-ER|46",
+   "composite_supply"
+  ],
+  "FTA-VAT-DL8|80": [
+   "art:FTA-VAT-DL8|80",
+   "art:FTA-VAT-ER|70"
+  ],
+  "FTA-VAT-DL8|81": [
+   "art:FTA-VAT-DL8|81"
+  ],
+  "FTA-VAT-DL8|82": [
+   "art:FTA-VAT-DL8|82"
+  ],
+  "FTA-VAT-DL8|83": [
+   "art:FTA-VAT-DL8|83"
+  ],
+  "FTA-VAT-DL8|84": [
+   "art:FTA-VAT-DL8|84"
+  ],
+  "FTA-VAT-DL8|85": [
+   "art:FTA-VAT-DL8|85"
+  ],
+  "FTA-VAT-DL8|9": [
+   "agent",
+   "art:FTA-VAT-DL8|9"
+  ],
+  "FTA-VAT-ER|10": [
+   "art:FTA-VAT-DL8|14",
+   "art:FTA-VAT-ER|10",
+   "tax_group"
+  ],
+  "FTA-VAT-ER|11": [
+   "art:FTA-VAT-DL8|14",
+   "art:FTA-VAT-ER|11"
+  ],
+  "FTA-VAT-ER|12": [
+   "art:FTA-VAT-ER|12"
+  ],
+  "FTA-VAT-ER|13": [
+   "art:FTA-VAT-ER|13",
+   "related_parties"
+  ],
+  "FTA-VAT-ER|14": [
+   "art:FTA-VAT-DL8|21",
+   "art:FTA-VAT-DL8|22",
+   "art:FTA-VAT-DL8|23",
+   "art:FTA-VAT-DL8|24",
+   "art:FTA-VAT-ER|14",
+   "deregistration"
+  ],
+  "FTA-VAT-ER|14 (bis)": [
+   "art:FTA-VAT-DL8|21",
+   "art:FTA-VAT-ER|14 (bis)"
+  ],
+  "FTA-VAT-ER|15": [
+   "art:FTA-VAT-ER|15"
+  ],
+  "FTA-VAT-ER|16": [
+   "art:FTA-VAT-DL8|15",
+   "art:FTA-VAT-ER|16",
+   "registration_exception"
+  ],
+  "FTA-VAT-ER|17": [
+   "art:FTA-VAT-ER|17"
+  ],
+  "FTA-VAT-ER|18": [
+   "art:FTA-VAT-ER|18"
+  ],
+  "FTA-VAT-ER|19": [
+   "art:FTA-VAT-DL8|25",
+   "art:FTA-VAT-ER|19",
+   "date_of_supply"
+  ],
+  "FTA-VAT-ER|2": [
+   "art:FTA-VAT-ER|2"
+  ],
+  "FTA-VAT-ER|20": [
+   "art:FTA-VAT-ER|20"
+  ],
+  "FTA-VAT-ER|21": [
+   "art:FTA-VAT-ER|21"
+  ],
+  "FTA-VAT-ER|22": [
+   "art:FTA-VAT-ER|22"
+  ],
+  "FTA-VAT-ER|23": [
+   "art:FTA-VAT-DL8|31",
+   "art:FTA-VAT-ER|23",
+   "electronic_services"
+  ],
+  "FTA-VAT-ER|24": [
+   "art:FTA-VAT-ER|24"
+  ],
+  "FTA-VAT-ER|25": [
+   "art:FTA-VAT-DL8|34",
+   "art:FTA-VAT-ER|25"
+  ],
+  "FTA-VAT-ER|26": [
+   "art:FTA-VAT-ER|26"
+  ],
+  "FTA-VAT-ER|27": [
+   "art:FTA-VAT-ER|27",
+   "tax_inclusive"
+  ],
+  "FTA-VAT-ER|28": [
+   "art:FTA-VAT-ER|28",
+   "discount",
+   "vouchers"
+  ],
+  "FTA-VAT-ER|29": [
+   "art:FTA-VAT-ER|29",
+   "profit_margin"
+  ],
+  "FTA-VAT-ER|3": [
+   "art:FTA-VAT-ER|3"
+  ],
+  "FTA-VAT-ER|3 (bis)": [
+   "art:FTA-VAT-DL8|12",
+   "art:FTA-VAT-DL8|15",
+   "art:FTA-VAT-DL8|52",
+   "art:FTA-VAT-ER|3 (bis)"
+  ],
+  "FTA-VAT-ER|30": [
+   "art:FTA-VAT-ER|30",
+   "zero_rated_or_exports"
+  ],
+  "FTA-VAT-ER|31": [
+   "art:FTA-VAT-ER|31",
+   "zero_rated_or_exports"
+  ],
+  "FTA-VAT-ER|32": [
+   "art:FTA-VAT-ER|32"
+  ],
+  "FTA-VAT-ER|33": [
+   "art:FTA-VAT-ER|33"
+  ],
+  "FTA-VAT-ER|34": [
+   "art:FTA-VAT-ER|34"
+  ],
+  "FTA-VAT-ER|35": [
+   "art:FTA-VAT-ER|35"
+  ],
+  "FTA-VAT-ER|36": [
+   "art:FTA-VAT-ER|36"
+  ],
+  "FTA-VAT-ER|37": [
+   "art:FTA-VAT-ER|37"
+  ],
+  "FTA-VAT-ER|38": [
+   "art:FTA-VAT-ER|38"
+  ],
+  "FTA-VAT-ER|39": [
+   "art:FTA-VAT-ER|39"
+  ],
+  "FTA-VAT-ER|4": [
+   "art:FTA-VAT-DL8|47",
+   "art:FTA-VAT-DL8|8",
+   "art:FTA-VAT-ER|4",
+   "composite_supply"
+  ],
+  "FTA-VAT-ER|40": [
+   "art:FTA-VAT-ER|40",
+   "education"
+  ],
+  "FTA-VAT-ER|41": [
+   "art:FTA-VAT-ER|41",
+   "healthcare"
+  ],
+  "FTA-VAT-ER|42": [
+   "art:FTA-VAT-ER|42",
+   "financial_services"
+  ],
+  "FTA-VAT-ER|43": [
+   "art:FTA-VAT-DL8|46",
+   "art:FTA-VAT-ER|43",
+   "exempt_residential"
+  ],
+  "FTA-VAT-ER|44": [
+   "art:FTA-VAT-DL8|46",
+   "art:FTA-VAT-ER|44",
+   "exempt_land"
+  ],
+  "FTA-VAT-ER|45": [
+   "art:FTA-VAT-ER|45",
+   "exempt_passenger"
+  ],
+  "FTA-VAT-ER|46": [
+   "art:FTA-VAT-DL8|47",
+   "art:FTA-VAT-DL8|8",
+   "art:FTA-VAT-ER|46"
+  ],
+  "FTA-VAT-ER|47": [
+   "art:FTA-VAT-ER|47",
+   "imports"
+  ],
+  "FTA-VAT-ER|48": [
+   "art:FTA-VAT-DL8|48",
+   "art:FTA-VAT-ER|48"
+  ],
+  "FTA-VAT-ER|49": [
+   "art:FTA-VAT-ER|49"
+  ],
+  "FTA-VAT-ER|5": [
+   "art:FTA-VAT-DL8|11",
+   "art:FTA-VAT-DL8|12",
+   "art:FTA-VAT-ER|5"
+  ],
+  "FTA-VAT-ER|50": [
+   "art:FTA-VAT-DL8|7",
+   "art:FTA-VAT-ER|50"
+  ],
+  "FTA-VAT-ER|51": [
+   "art:FTA-VAT-DL8|51",
+   "art:FTA-VAT-ER|51",
+   "designated_zone"
+  ],
+  "FTA-VAT-ER|52": [
+   "art:FTA-VAT-ER|52"
+  ],
+  "FTA-VAT-ER|53": [
+   "art:FTA-VAT-ER|53",
+   "blocked_input_tax"
+  ],
+  "FTA-VAT-ER|54": [
+   "art:FTA-VAT-DL8|7",
+   "art:FTA-VAT-ER|54"
+  ],
+  "FTA-VAT-ER|55": [
+   "art:FTA-VAT-ER|55"
+  ],
+  "FTA-VAT-ER|56": [
+   "art:FTA-VAT-ER|56"
+  ],
+  "FTA-VAT-ER|57": [
+   "art:FTA-VAT-DL8|20",
+   "art:FTA-VAT-ER|57",
+   "capital_assets_scheme"
+  ],
+  "FTA-VAT-ER|58": [
+   "art:FTA-VAT-DL8|20",
+   "art:FTA-VAT-DL8|60",
+   "art:FTA-VAT-ER|58"
+  ],
+  "FTA-VAT-ER|59": [
+   "art:FTA-VAT-DL8|65",
+   "art:FTA-VAT-DL8|67",
+   "art:FTA-VAT-DL8|68",
+   "art:FTA-VAT-DL8|69",
+   "art:FTA-VAT-ER|59",
+   "tax_invoice"
+  ],
+  "FTA-VAT-ER|6": [
+   "art:FTA-VAT-ER|6"
+  ],
+  "FTA-VAT-ER|60": [
+   "art:FTA-VAT-DL8|70",
+   "art:FTA-VAT-ER|60",
+   "credit_note"
+  ],
+  "FTA-VAT-ER|61": [
+   "art:FTA-VAT-ER|61"
+  ],
+  "FTA-VAT-ER|62": [
+   "art:FTA-VAT-ER|62"
+  ],
+  "FTA-VAT-ER|63": [
+   "art:FTA-VAT-ER|63"
+  ],
+  "FTA-VAT-ER|64": [
+   "art:FTA-VAT-ER|64",
+   "payment",
+   "tax_return"
+  ],
+  "FTA-VAT-ER|65": [
+   "art:FTA-VAT-DL8|74",
+   "art:FTA-VAT-ER|65"
+  ],
+  "FTA-VAT-ER|66": [
+   "art:FTA-VAT-ER|66",
+   "new_residence"
+  ],
+  "FTA-VAT-ER|67": [
+   "art:FTA-VAT-ER|67"
+  ],
+  "FTA-VAT-ER|68": [
+   "art:FTA-VAT-ER|68",
+   "tourist"
+  ],
+  "FTA-VAT-ER|69": [
+   "art:FTA-VAT-ER|69"
+  ],
+  "FTA-VAT-ER|7": [
+   "art:FTA-VAT-DL8|13",
+   "art:FTA-VAT-ER|7",
+   "mandatory_registration"
+  ],
+  "FTA-VAT-ER|70": [
+   "art:FTA-VAT-DL8|80",
+   "art:FTA-VAT-ER|70"
+  ],
+  "FTA-VAT-ER|71": [
+   "art:FTA-VAT-DL8|78",
+   "art:FTA-VAT-ER|71",
+   "records"
+  ],
+  "FTA-VAT-ER|72": [
+   "art:FTA-VAT-DL8|78",
+   "art:FTA-VAT-ER|72"
+  ],
+  "FTA-VAT-ER|73": [
+   "art:FTA-VAT-ER|73"
+  ],
+  "FTA-VAT-ER|74": [
+   "art:FTA-VAT-ER|74"
+  ],
+  "FTA-VAT-ER|75": [
+   "art:FTA-VAT-ER|75"
+  ],
+  "FTA-VAT-ER|8": [
+   "art:FTA-VAT-DL8|17",
+   "art:FTA-VAT-ER|8",
+   "voluntary_registration"
+  ],
+  "FTA-VAT-ER|9": [
+   "art:FTA-VAT-ER|9",
+   "related_parties",
+   "related_value"
+  ]
+ }
+}

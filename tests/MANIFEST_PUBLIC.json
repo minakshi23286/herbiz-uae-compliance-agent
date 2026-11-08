@@ -1,0 +1,1202 @@
+{
+ "generated_by": "experiments/ws_a/CL_build_test_manifests.py",
+ "from_export_commit": "122baff",
+ "manifest": "public",
+ "count": 336,
+ "tests": [
+  "test_a4_integration.Export.test_t2i_12_export_scrub_never_alters_app_code_and_ships_the_contracts",
+  "test_audit_log.AuditLogTests.test_t2a_01_every_owner_channel_writes_one_valid_record_matching_the_response",
+  "test_audit_log.AuditLogTests.test_t2a_02_decisions_and_sources_come_from_the_engine_report",
+  "test_audit_log.AuditLogTests.test_t2a_03_T2_D2_blocked_and_warned_question_text_never_reaches_a_record",
+  "test_audit_log.AuditLogTests.test_t2a_04_N_B1_may_be_incomplete_unless_complete_for_map",
+  "test_audit_log.AuditLogTests.test_t2a_05_sanitizer_rejects_rather_than_redacts",
+  "test_audit_log.AuditLogTests.test_t2a_06_fail_closed_when_the_record_is_rejected_or_cannot_be_written",
+  "test_audit_log.AuditLogTests.test_t2a_07_audit_view_only_in_reviewer_mode_and_owner_responses_hold_no_reviewer_fields",
+  "test_audit_log.AuditLogTests.test_t2a_08_hash_chain_detects_edit_delete_reorder_truncate_and_pointer_mismatch",
+  "test_audit_log.AuditLogTests.test_t2a_09_writer_refuses_to_append_to_a_broken_file",
+  "test_audit_log.AuditLogTests.test_t2a_10_fifty_plus_parallel_requests_one_record_each_contiguous_chain",
+  "test_audit_log.AuditLogTests.test_t2a_11_a_second_process_on_the_same_folder_is_serialised",
+  "test_audit_log.AuditLogTests.test_t2a_12_offline_scanner_has_its_own_patterns_and_catches_injected_data",
+  "test_audit_log.AuditLogTests.test_t2a_13_logs_live_in_the_workspace_folder_never_beside_the_authoritative_db",
+  "test_audit_log.AuditLogTests.test_t2a_14_owner_responses_are_unchanged_by_auditing",
+  "test_audit_log.AuditLogTests.test_t2a_15_machine_values_never_trigger_personal_data_rules_but_free_text_does",
+  "test_audit_samples.Samples.test_t2e_01_chain_intact_scan_clean_every_record_valid_and_sanitized",
+  "test_audit_samples.Samples.test_t2e_02_every_owner_channel_and_scenario_is_sampled",
+  "test_c1.Harness.test_c1_08_paid_run_refused_without_approval_and_v7_only_live",
+  "test_capabilities.Capabilities.test_t2k_01_valid_against_the_frozen_contract",
+  "test_capabilities.Capabilities.test_t2k_02_evidence_exists_and_ids_are_unique",
+  "test_capabilities.Capabilities.test_t2k_03_no_live_inference_and_every_class_declared",
+  "test_capabilities.Capabilities.test_t2k_04_metrics_carry_class_set_date_and_the_d106_figures_together",
+  "test_capabilities.Capabilities.test_t2k_05_audit_execution_modes_match_active_declared_classes",
+  "test_capabilities.Capabilities.test_t2k_06_file_is_current",
+  "test_compliance_agent.BackupRestore.test_42_backup_verify_restore_keeps_previous",
+  "test_compliance_agent.CasesAndReview.test_19_insufficient_completion_evidence_keeps_case_open",
+  "test_compliance_agent.CasesAndReview.test_20_empty_description_does_not_count_as_evidence",
+  "test_compliance_agent.CasesAndReview.test_21_rejected_review_returns_case_and_records_identity",
+  "test_compliance_agent.CasesAndReview.test_22_review_needs_identity_and_context",
+  "test_compliance_agent.CasesAndReview.test_23_full_resolution_after_requirements_met",
+  "test_compliance_agent.CasesAndReview.test_24_duplicate_retry_does_not_duplicate_case_or_alert",
+  "test_compliance_agent.CasesAndReview.test_25_audit_log_is_append_only",
+  "test_compliance_agent.EndToEnd.test_26_staged_demo_and_restart_persistence",
+  "test_compliance_agent.EndToEnd.test_27_conflict_clarification_updates_only_affected",
+  "test_compliance_agent.EndToEnd.test_28_no_numeric_confidence_anywhere",
+  "test_compliance_agent.Evaluation.test_40_scenario_suite_passes_and_runner_can_fail",
+  "test_compliance_agent.Evaluation.test_41_evaluation_results_are_persisted",
+  "test_compliance_agent.ProfileAndFacts.test_01_missing_jurisdiction_needs_clarification",
+  "test_compliance_agent.ProfileAndFacts.test_02_missing_licence_context_needs_clarification",
+  "test_compliance_agent.ProfileAndFacts.test_03_invalid_profiles_are_refused",
+  "test_compliance_agent.ProfileAndFacts.test_04_regression_salary_never_added_to_taxable_turnover",
+  "test_compliance_agent.ProfileAndFacts.test_05_unknown_ledger_line_is_not_guessed",
+  "test_compliance_agent.ProfileAndFacts.test_06_profile_change_rechecks_dependent_assessments",
+  "test_compliance_agent.ProfileAndFacts.test_07_renewal_date_never_inferred_from_issue_date",
+  "test_compliance_agent.Sources.test_08_irrelevant_source_not_applicable",
+  "test_compliance_agent.Sources.test_09_conflicting_evidence_escalates_and_keeps_both",
+  "test_compliance_agent.Sources.test_10_superseded_rule_is_not_used",
+  "test_compliance_agent.Sources.test_11_withdrawn_rule_escalates_open_case",
+  "test_compliance_agent.Sources.test_12_future_effective_date_raises_no_action",
+  "test_compliance_agent.Sources.test_13_cosmetic_change_creates_nothing",
+  "test_compliance_agent.Sources.test_14_substantive_change_proposes_then_updates_action",
+  "test_compliance_agent.Sources.test_15_resolved_case_reopens_when_rule_changes",
+  "test_compliance_agent.Sources.test_16_malicious_source_text_is_data_only",
+  "test_compliance_agent.Sources.test_17_fetch_allowlist_and_unavailable_source",
+  "test_compliance_agent.Sources.test_18_source_evidence_is_immutable",
+  "test_compliance_agent.WebInterface.test_29_local_api_rejects_foreign_requests_and_serves_state",
+  "test_contracts.Contracts.test_t2c_01_schemas_and_fixtures_are_exactly_what_the_builders_produce",
+  "test_contracts.Contracts.test_t2c_02_index_lists_the_six_contracts_with_their_sha256",
+  "test_contracts.Contracts.test_t2c_03_schemas_use_only_supported_keywords_and_are_valid_2020_12",
+  "test_contracts.Contracts.test_t2c_04_every_golden_fixture_has_the_expected_verdict",
+  "test_contracts.Contracts.test_t2c_05_T2_D2_question_text_only_when_the_gate_allows",
+  "test_contracts.Contracts.test_t2c_06_T2_D3_confidence_is_categorical",
+  "test_contracts.Contracts.test_t2c_07_no_approval_anywhere",
+  "test_contracts.Contracts.test_t2c_08_audit_records_never_carry_passage_text_and_blocked_answers_never_carry_retrieval",
+  "test_contracts.Contracts.test_t2c_09_scenarios_release_events_one_at_a_time",
+  "test_contracts.Contracts.test_t2c_10_capability_declaration_classes",
+  "test_contracts.Contracts.test_t2c_11_fixtures_are_synthetic_and_hold_no_personal_data_or_official_text",
+  "test_contracts.Contracts.test_t2c_12_owner_facing_fixture_wording",
+  "test_contracts.Contracts.test_t2c_13_R_C1_current_official_url_status_and_embedded_validity",
+  "test_contracts.Contracts.test_t2c_14_R_B1_engine_values_and_R_B2_named_obligation",
+  "test_cx_demo.Endpoints.test_79_ask_and_onboard_endpoints",
+  "test_cx_demo.Guard.test_70_complete_when_primary_provisions_seen",
+  "test_cx_demo.Guard.test_71_incomplete_names_missing_provisions",
+  "test_cx_demo.Guard.test_72_ambiguous_needs_all_alternatives",
+  "test_cx_demo.Guard.test_73_unmapped_topic_is_unchecked_and_refusals_not_applicable",
+  "test_cx_demo.Onboarding.test_78_onboarding_creates_profile_and_runs_checks",
+  "test_cx_demo.Recorded.test_74_exact_question_replays_recorded_answer_with_provenance",
+  "test_cx_demo.Recorded.test_75_unsupported_answer_is_never_shown_as_complete",
+  "test_cx_demo.Recorded.test_76_other_questions_get_no_answer_and_professional_box",
+  "test_cx_demo.Recorded.test_77_missing_ledger_is_handled",
+  "test_cx_demo.WordingWithoutLedger.test_85_never_described_as_legally_verified",
+  "test_knowledge_base.KBTest.test_30_allowlist_and_unavailable_sources_are_recorded",
+  "test_knowledge_base.KBTest.test_31_pdf_articles_headers_footnotes_and_locators",
+  "test_knowledge_base.KBTest.test_32_retries_do_not_duplicate",
+  "test_knowledge_base.KBTest.test_33_empty_page_is_flagged_not_guessed",
+  "test_knowledge_base.KBTest.test_34_unreadable_document_is_a_recorded_failure",
+  "test_knowledge_base.KBTest.test_35_html_extraction_and_full_text_search",
+  "test_knowledge_base.KBTest.test_36_real_source_never_preapproved_and_never_used_unreviewed",
+  "test_knowledge_base.KBTest.test_37_citation_support_and_interpretation_review_gate",
+  "test_knowledge_base.KBTest.test_38_version_comparison_separates_noise_from_wording",
+  "test_knowledge_base.RealVatReading.test_39_art19_value_excludes_salary_and_asks_for_concerned_goods",
+  "test_llm_lab.FrozenUnseen.test_61_frozen_set_is_intact_and_guarded",
+  "test_llm_lab.GradingRules.test_54_conditional_vs_definitive",
+  "test_llm_lab.GradingRules.test_55_mixed_answer_flags_only_the_definitive_sentence",
+  "test_llm_lab.GradingRules.test_56_grade_uses_sentence_rule",
+  "test_manifests.Manifests.test_t2m_01_internal_lists_every_discovered_test_once",
+  "test_manifests.Manifests.test_t2m_02_public_is_a_subset_and_every_exclusion_has_a_reason",
+  "test_manifests.Manifests.test_t2m_03_guard_flags_restricted_paths_only",
+  "test_manifests.Manifests.test_t2m_04_guard_attributes_a_read_to_the_running_test",
+  "test_manifests.Manifests.test_t2m_05_public_manifest_names_no_test_that_needs_a_private_or_held_file",
+  "test_manifests.Manifests.test_t2m_06_readme_counts_match_the_manifests",
+  "test_manifests.Manifests.test_t2m_07_architecture_figure_matches_the_evidence",
+  "test_mvp360.Mvp360.test_100_endpoints_banner_and_real_owner_refusal",
+  "test_mvp360.Mvp360.test_101_missing_citation_or_chip_fails_closed",
+  "test_mvp360.Mvp360.test_102_negated_approval_words_also_fail_closed",
+  "test_mvp360.Mvp360.test_103_ct_detected_by_title_and_bad_demo_block_fails_closed",
+  "test_mvp360.Mvp360.test_104_no_draft_dates_for_real_law_rows_and_test_dates_labelled",
+  "test_mvp360.Mvp360.test_105_replay_checks_c_contract",
+  "test_mvp360.Mvp360.test_106_tampered_cache_is_rebuilt_not_trusted",
+  "test_mvp360.Mvp360.test_107_in_tree_b_and_c_match_the_pins_on_the_integration_branch",
+  "test_mvp360.Mvp360.test_108_who_does_what_has_no_time_or_fee_claims",
+  "test_mvp360.Mvp360.test_109_snapshot_text_shown_and_distinguished_from_legal_dates",
+  "test_mvp360.Mvp360.test_110_snapshot_lock_matches_pins_and_committed_files",
+  "test_mvp360.Mvp360.test_111_suppressed_claims_are_withheld_not_silently_changed",
+  "test_mvp360.Mvp360.test_112_malformed_suppression_entry_fails_closed",
+  "test_mvp360.Mvp360.test_113_page_scripts_parse",
+  "test_mvp360.Mvp360.test_114_no_unapproved_external_calls",
+  "test_mvp360.Mvp360.test_115_error_scenarios_all_pass",
+  "test_mvp360.Mvp360.test_116_reviewer_only_or_potential_reports_are_refused",
+  "test_mvp360.Mvp360.test_117_public_fixture_differs_from_the_committed_one_only_in_local_paths",
+  "test_mvp360.Mvp360.test_118_owner_rows_do_not_depend_on_the_protected_database",
+  "test_mvp360.Mvp360.test_120_vendored_mode_refuses_missing_extra_or_changed_files",
+  "test_mvp360.Mvp360.test_121_vat_step_says_answers_are_absent_instead_of_inventing_them",
+  "test_mvp360.Mvp360.test_122_team_tools_page_works_without_the_internal_project_record",
+  "test_mvp360.Mvp360.test_134_kb_manifest_matches_the_pins_and_has_no_official_text",
+  "test_mvp360.Mvp360.test_86_pinned_fixture_matches_committed_checksum_and_contract",
+  "test_mvp360.Mvp360.test_87_tampered_fixture_fails_closed",
+  "test_mvp360.Mvp360.test_88_c_contract_0_2_labels",
+  "test_mvp360.Mvp360.test_89_personas_are_bs_fixed_fictional_businesses",
+  "test_mvp360.Mvp360.test_90_owner_view_hides_reviewer_fields_and_keeps_ct_blocked",
+  "test_mvp360.Mvp360.test_91_ct_demo_only_for_the_two_amal_variants_and_never_validated",
+  "test_mvp360.Mvp360.test_92_injected_ct_outcome_or_approval_wording_fails_closed",
+  "test_mvp360.Mvp360.test_93_unknown_answers_become_questions_not_guesses",
+  "test_mvp360.Mvp360.test_94_malformed_answers_get_a_plain_field_message",
+  "test_mvp360.Mvp360.test_95_stale_sources_fail_closed_or_are_flagged",
+  "test_mvp360.Mvp360.test_96_rule_change_replay_is_report_only",
+  "test_mvp360.Mvp360.test_97_finance_labels_and_export",
+  "test_mvp360.Mvp360.test_98_demo_replay_is_deterministic",
+  "test_mvp360.Mvp360.test_99_who_does_what_keeps_estimate_status_and_no_fees",
+  "test_obligations.CorporateTaxDemo.test_80_only_wsc_persona_variants",
+  "test_obligations.CorporateTaxDemo.test_81_ct_rows_blocked_labelled_and_withheld",
+  "test_obligations.CorporateTaxDemo.test_83_labels_fail_closed",
+  "test_obligations.CorporateTaxDemo.test_84_variants_answer_from_wsc_persona_card",
+  "test_obligations.CorporateTaxDemo.test_85_wsa_fixture_is_current_and_checksummed",
+  "test_obligations.DeadlinesAndDocuments.test_30_deadlines_only_for_applicable_test_rules",
+  "test_obligations.DeadlinesAndDocuments.test_31_licence_and_payroll_dates",
+  "test_obligations.DeadlinesAndDocuments.test_32_draft_text_deadline_never_computed",
+  "test_obligations.DeadlinesAndDocuments.test_33_document_readiness",
+  "test_obligations.FailClosedOwnerView.test_70_owner_view_has_no_unreviewed_answers",
+  "test_obligations.FailClosedOwnerView.test_71_sbr_note_kept_and_blocked",
+  "test_obligations.FailClosedOwnerView.test_72_owner_demo_files_are_fail_closed",
+  "test_obligations.Guards.test_50_ct_blocked_even_if_marked_reviewed_with_rule_and_skip",
+  "test_obligations.Guards.test_51_real_law_cannot_pose_as_test_rule",
+  "test_obligations.Guards.test_52_unknown_status_and_policy_refused",
+  "test_obligations.Guards.test_53_malformed_provision_fails_closed_for_that_item_only",
+  "test_obligations.Guards.test_54_band_never_compared_with_eq",
+  "test_obligations.Guards.test_55_interval_edges",
+  "test_obligations.OwnerRowDeadlines.test_90_real_law_rows_show_only_standard_sentence",
+  "test_obligations.OwnerRowDeadlines.test_91_already_done_row_hides_draft_reading",
+  "test_obligations.OwnerRowDeadlines.test_92_reviewed_certified_rule_may_show_computed_date",
+  "test_obligations.Profile.test_01_synthetic_flag_required",
+  "test_obligations.Profile.test_02_not_sure_is_unknown_and_required_gaps_asked",
+  "test_obligations.Profile.test_03_person_type_derived",
+  "test_obligations.Profile.test_04_band_becomes_interval_and_dates_use_injected_day",
+  "test_obligations.ProfileStrictness.test_60_bad_values_refused",
+  "test_obligations.ProfileStrictness.test_61_contradictions_become_questions",
+  "test_obligations.ProfileStrictness.test_62_overdue_test_date_told_to_owner",
+  "test_obligations.SafetyAndData.test_40_no_forbidden_wording_and_banner_everywhere",
+  "test_obligations.SafetyAndData.test_41_wording_check_catches_definitive_text",
+  "test_obligations.SafetyAndData.test_41b_wording_scan_covers_every_owner_string",
+  "test_obligations.SafetyAndData.test_42_affected_by",
+  "test_obligations.SafetyAndData.test_43_catalogue_schema",
+  "test_obligations.SafetyAndData.test_44_fixtures_are_synthetic",
+  "test_obligations.States.test_10_resolve_state_table",
+  "test_obligations.States.test_11_real_law_never_definitive_today",
+  "test_obligations.States.test_12_corporate_tax_always_blocked",
+  "test_obligations.States.test_13_policy_switch_only_changes_draft_met_rules",
+  "test_obligations.States.test_14_missing_facts_ask_owner_questions",
+  "test_obligations.States.test_15_band_straddling_threshold_asks_exact_amount",
+  "test_obligations.States.test_16_already_registered_is_owner_fact_not_judgement",
+  "test_obligations.States.test_17_deregistration_blocked_by_source_conflict",
+  "test_obligations.States.test_18_reviewed_and_certified_path_works_with_fake_export",
+  "test_obligations.Validity.test_21_fail_closed_stale_wrong_commit_wrong_db",
+  "test_obligations.Validity.test_22_no_validity_means_nothing_certified",
+  "test_privacy_gate_app.Gate.test_123_blocked_question_never_reaches_search_and_is_not_echoed",
+  "test_privacy_gate_app.Gate.test_124_free_text_in_the_url_is_refused_and_fixed_ids_still_work",
+  "test_privacy_gate_app.Gate.test_125_blocked_reviewer_note_is_not_stored_and_notes_never_reach_the_owner",
+  "test_privacy_gate_app.Gate.test_126_review_context_note_is_gated",
+  "test_privacy_gate_app.Gate.test_127_logs_hold_identifiers_only",
+  "test_privacy_gate_app.Gate.test_128_fail_closed_when_the_kb_or_the_gate_fails",
+  "test_privacy_gate_app.Gate.test_129_sensitive_topic_is_processed_with_a_caution",
+  "test_privacy_gate_app.Gate.test_130_kb_ablation_changes_behaviour",
+  "test_privacy_gate_app.Gate.test_131_gate_files_match_the_pinned_ws_c_commit",
+  "test_privacy_gate_app.Gate.test_132_fixture_sets_through_the_app_endpoints",
+  "test_privacy_gate_app.Gate.test_133_corrupt_kb_file_fails_closed",
+  "test_recorded_validity.Synthetic.test_t3r_01_superseded_amended_and_conflict_articles_withhold_the_answer",
+  "test_recorded_validity.Synthetic.test_t3r_02_whole_source_status_is_not_inherited_by_an_unlisted_article",
+  "test_recorded_validity.Synthetic.test_t3r_03_rule_m4_lookup",
+  "test_recorded_validity.Synthetic.test_t3r_04_free_typed_path_and_link_rule_unchanged_in_rc3",
+  "test_recorded_validity.Synthetic.test_t3r_05_withheld_answer_audit_record_is_valid_clean_and_flagged",
+  "test_retrieval_v5.IntentRulesV5.test_86_owner_wording_for_deregistration_and_voluntary",
+  "test_retrieval_v5.IntentRulesV5.test_87_falling_turnover_and_hesitation_get_all_registration_alternatives",
+  "test_retrieval_v5.IntentRulesV5.test_88_precision_guards",
+  "test_retrieval_v5.IntentRulesV5.test_89_value_and_related_party_rules",
+  "test_retrieval_v5.IntentRulesV5.test_90_provision_map_fixes",
+  "test_retrieval_v5.IntentRulesV5.test_91_demo_guard_map_unchanged",
+  "test_retrieval_v5.Iteration2V5.test_94_turnover_and_calculation_wording",
+  "test_retrieval_v6.FrozenV5Guard.test_v6_12_v5_runs_only_with_final",
+  "test_retrieval_v6.LocatorContract.test_v6_01_locator_grammar",
+  "test_retrieval_v7.FrozenV6Guard.test_v7_10_eval_set_v6_runs_only_with_final",
+  "test_scenarios.Scenarios.test_t2s_01_events_are_released_one_at_a_time",
+  "test_scenarios.Scenarios.test_t2s_02_SC2_conflict_is_explained_never_resolved",
+  "test_scenarios.Scenarios.test_t2s_03_SC3_answer_withheld_link_shown_not_fetched",
+  "test_scenarios.Scenarios.test_t2s_04_SC1_placeholder_is_pending_never_passed",
+  "test_scenarios.Scenarios.test_t2s_05_SC1_passes_on_ws_b_delivered_data",
+  "test_scenarios.Scenarios.test_t2s_06_checks_fail_when_behaviour_deviates",
+  "test_scenarios.Scenarios.test_t2s_07_scenario_records_are_valid_and_embed_the_validity_payload",
+  "test_scenarios.Scenarios.test_t2s_08_api_releases_and_audits_each_step",
+  "test_scenarios.Scenarios.test_t2s_09_one_command_per_scenario",
+  "test_scenarios.Scenarios.test_t2s_10_page_has_the_next_event_control_and_no_we_wording_in_it",
+  "test_scenarios.Scenarios.test_t2s_11_A3_owner_pages_never_say_we_our_or_us",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_01_valid_signoff_writes_one_row_and_one_audit_event",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_02_each_missing_field_is_refused_and_nothing_written",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_03_unknown_decision_is_refused",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_04_all_three_allowed_decisions_are_recorded",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_05_request_without_local_ui_header_is_refused",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_06_signoff_listed_by_project_endpoint",
+  "test_signoff_endpoint.SignoffEndpoint.test_h13_07_signoff_audit_event_is_append_only",
+  "test_synthetic_vat_warning.SyntheticWarning.test_t2v_01_fixture_is_current_and_holds_no_legal_text",
+  "test_synthetic_vat_warning.SyntheticWarning.test_t2v_02_test84_rule_holds_on_every_synthetic_record",
+  "test_synthetic_vat_warning.SyntheticWarning.test_t2v_03_missing_articles_are_named",
+  "test_synthetic_vat_warning.SyntheticWarning.test_t2v_04_declined_and_unreliable_quote",
+  "test_synthetic_vat_warning.SyntheticWarning.test_t2v_05_control_case_complete_for_map_is_still_not_checked",
+  "test_synthetic_vat_warning.SyntheticWarning.test_t2v_06_scenarios_E10_E11_run_on_the_fixture_and_say_so",
+  "test_t2_contract_copy.ContractCopy.test_t2_ba_01_byte_identical_sha256",
+  "test_t2_contract_copy.ContractCopy.test_t2_ba_02_retrieval_embedded_unchanged_except_text",
+  "test_t2_contract_copy.ContractCopy.test_t2_ba_03_decision_embedded_unchanged",
+  "test_t2_contract_copy.ContractCopy.test_t2_ba_04_ws_b_never_live_and_confidence_never_numeric",
+  "test_t2_payloads.DecisionExplanation.test_t2_b3_07_every_payload_validates",
+  "test_t2_payloads.DecisionExplanation.test_t2_b3_08_semantics",
+  "test_t2_scenarios.Scenarios.test_t2_b6_01_committed_fixtures_equal_engine_output",
+  "test_t2_scenarios.Scenarios.test_t2_b6_02_valid_and_named_obligations",
+  "test_t2_scenarios.Scenarios.test_t2_b6_03_sc1_story",
+  "test_t2_v10_freeze.V10Freeze.test_t2_b0_01_hash_matches_lock",
+  "test_t2_v10_freeze.V10Freeze.test_t2_b0_02_coverage_minimums",
+  "test_ws_c_d10_article1.HeadingRule.test_103_footnoted_title_less_heading_needs_its_footnote_on_the_page",
+  "test_ws_c_firecrawl_trial.Trial.test_154_plan_stays_within_the_15_credit_cap_and_uses_safe_options",
+  "test_ws_c_firecrawl_trial.Trial.test_155_verification_catches_unplanned_scrapes_and_overspend_then_feeds_the_monitor",
+  "test_ws_c_monitor_reliability.LinkRelevance.test_161_hyphenated_mof_file_names_and_titled_links_are_not_dropped",
+  "test_ws_c_monitor_reliability.Reliability.test_131_one_failing_item_does_not_stop_the_run",
+  "test_ws_c_monitor_reliability.Reliability.test_132_already_missing_at_baseline_is_alerted_once",
+  "test_ws_c_monitor_reliability.Reliability.test_133_soft_404_or_empty_page_keeps_the_baseline",
+  "test_ws_c_monitor_reliability.Reliability.test_134_footnote_renumbering_and_page_footers_are_cosmetic",
+  "test_ws_c_monitor_reliability.Reliability.test_135_web_page_paragraphs_compare_by_content_not_position",
+  "test_ws_c_monitor_reliability.Reliability.test_136_empty_or_js_only_listing_is_an_error_not_mass_removal",
+  "test_ws_c_monitor_reliability.Reliability.test_137_persistent_fetch_failure_escalates",
+  "test_ws_c_monitor_reliability.Reliability.test_138_corrupt_state_is_set_aside_and_runs_are_locked",
+  "test_ws_c_monitor_reliability.Reliability.test_139_report_is_written_before_state_so_alerts_are_not_lost",
+  "test_ws_c_monitor_reliability.Reliability.test_140_drift_from_collected_bytes_is_alerted_on_any_run_once_per_new_bytes",
+  "test_ws_c_monitoring.FirecrawlImportAndSafety.test_112_firecrawl_results_are_verified_locally_and_disagreement_is_recorded",
+  "test_ws_c_monitoring.FirecrawlImportAndSafety.test_113_local_fetcher_needs_explicit_network_approval",
+  "test_ws_c_monitoring.FirecrawlImportAndSafety.test_114_discovery_url_normalisation_and_known_sources",
+  "test_ws_c_monitoring.FirecrawlImportAndSafety.test_115_adding_proposals_bumps_the_register_and_keeps_everything_inactive",
+  "test_ws_c_monitoring.MonitorOnSyntheticFixtures.test_106_first_run_records_baseline_without_change_alerts",
+  "test_ws_c_monitoring.MonitorOnSyntheticFixtures.test_107_substantive_in_scope_change_is_high_and_names_the_provision",
+  "test_ws_c_monitoring.MonitorOnSyntheticFixtures.test_108_change_to_a_conflicted_provision_raises_its_own_alert",
+  "test_ws_c_monitoring.MonitorOnSyntheticFixtures.test_109_removed_document_and_listing_changes_are_detected",
+  "test_ws_c_monitoring.MonitorOnSyntheticFixtures.test_110_unchanged_rerun_is_quiet",
+  "test_ws_c_monitoring.MonitorOnSyntheticFixtures.test_111_outputs_are_atomic_and_never_overwrite_a_report",
+  "test_ws_c_policy_gate.PolicyGate.test_197_kb_loads_with_required_controls_and_resolvable_clauses",
+  "test_ws_c_policy_gate.PolicyGate.test_198_permitted_business_questions_are_never_blocked",
+  "test_ws_c_policy_gate.PolicyGate.test_199_hard_negatives_are_allowed",
+  "test_ws_c_policy_gate.PolicyGate.test_200_personal_data_is_blocked_with_kb_clauses",
+  "test_ws_c_policy_gate.PolicyGate.test_201_bypass_attempts_are_caught",
+  "test_ws_c_policy_gate.PolicyGate.test_202_invalid_iban_check_digits_are_not_flagged",
+  "test_ws_c_policy_gate.PolicyGate.test_203_no_raw_text_or_matched_value_in_any_output",
+  "test_ws_c_policy_gate.PolicyGate.test_204_sensitive_words_warn_but_never_block",
+  "test_ws_c_policy_gate.PolicyGate.test_205_missing_or_corrupt_kb_fails_closed",
+  "test_ws_c_policy_gate.PolicyGate.test_206_kb_without_a_required_control_fails_closed",
+  "test_ws_c_policy_gate.PolicyGate.test_207_unknown_detector_or_clause_fails_closed",
+  "test_ws_c_policy_gate.PolicyGate.test_208_non_string_or_oversized_input_fails_closed",
+  "test_ws_c_policy_gate.PolicyGate.test_209_detector_crash_fails_closed",
+  "test_ws_c_policy_gate.PolicyGate.test_210_ablation_the_kb_drives_the_decision",
+  "test_ws_c_policy_gate.PolicyGate.test_211_owner_message_comes_from_the_kb_and_makes_no_legal_claim",
+  "test_ws_c_policy_gate.PolicyGate.test_212_loaded_kb_is_a_copy",
+  "test_ws_c_policy_gate.PolicyGate.test_213_unicode_dashes_and_other_script_digits_are_caught",
+  "test_ws_c_policy_gate.PolicyGate.test_214_malformed_kb_shapes_fail_closed",
+  "test_ws_c_policy_gate.PolicyGate.test_215_block_or_warn_control_needs_an_owner_message",
+  "test_ws_c_policy_gate.PolicyGate.test_216_changing_a_control_action_in_the_kb_changes_the_decision",
+  "test_ws_c_qa_fixes.GuardHardening.test_141_protected_names_are_refused_from_any_checkout",
+  "test_ws_c_qa_fixes.GuardHardening.test_142_hard_link_to_a_sibling_checkout_file_and_errors_fail_closed",
+  "test_ws_c_rag_tools.Boundaries.test_102_workstream_c_tools_do_not_import_workstream_b_retrieval",
+  "test_ws_c_rag_tools.RawFiles.test_97_tampered_raw_file_is_reported",
+  "test_ws_c_rag_tools.RegisterRules.test_94_committed_register_is_valid_and_covers_every_locked_file",
+  "test_ws_c_rag_tools.RegisterRules.test_95_register_rejects_activation_invented_dates_and_broken_provenance",
+  "test_ws_c_source_intel.AmendmentMap.test_117_decree_law_copy_is_outdated_by_dl_16_2025_and_er_v3_is_current",
+  "test_ws_c_source_intel.AmendmentMap.test_118_in_force_date_matters",
+  "test_ws_c_source_intel.AmendmentMap.test_119_instrument_name_variants_match",
+  "test_ws_c_source_intel.RegisterStillValid.test_130_register_with_instruments_and_claims_validates",
+  "test_ws_c_sources360.Sources360.test_178_committed_files_validate_and_nothing_is_approved",
+  "test_ws_c_sources360.Sources360.test_179_loader_refuses_approved_activated_stored_or_unknown_level",
+  "test_ws_c_sources360.Sources360.test_180_corporate_tax_must_stay_synthetic_with_d3ct",
+  "test_ws_c_sources360.Sources360.test_181_unknown_source_or_gap_is_refused",
+  "test_ws_c_sources360.Sources360.test_182_sbr_label_cites_md73_shows_gap_and_is_never_release_approved",
+  "test_ws_c_sources360.Sources360.test_183_uncertainty_rules",
+  "test_ws_c_sources360.Sources360.test_184_sources_go_stale_after_30_days",
+  "test_ws_c_sources360.Sources360.test_185_esr_is_labelled_historical",
+  "test_ws_c_sources360.Sources360.test_186_impact_maps_alerts_to_obligations_and_reports_unmapped",
+  "test_ws_c_sources360.Sources360.test_187_no_prices_or_fees_in_the_360_files",
+  "test_ws_c_sources360.Sources360.test_188_corporate_tax_is_refused_for_a_real_profile",
+  "test_ws_c_sources360.Sources360.test_189_ct_sources_need_d3ct_whatever_the_domain_label",
+  "test_ws_c_sources360.Sources360.test_190_no_unreviewed_source_is_ever_low",
+  "test_ws_c_sources360.Sources360.test_191_cto_bypasses_are_refused",
+  "test_ws_c_sources360.Sources360.test_192_best_evidence_rule_and_vat_start_level",
+  "test_ws_c_sources360.Sources360.test_193_mutating_loaded_data_cannot_upgrade_a_ct_item",
+  "test_ws_c_sources360.Sources360.test_194_only_reviewed_true_hides_an_alert",
+  "test_ws_c_sources360.Sources360.test_195_output_fields_are_frozen_for_the_ui",
+  "test_ws_c_sources360.Sources360.test_196_wording_is_short_sentences_and_chips_never_claim_review",
+  "test_ws_c_t2_delivery.LinkStatus.test_221_every_row_uses_the_contract_vocabulary_and_no_synthetic_hosts",
+  "test_ws_c_t2_delivery.LinkStatus.test_222_researched_dead_links_carry_replacements",
+  "test_ws_c_t2_delivery.Manifest021.test_228_version_lock_and_metadata_only",
+  "test_ws_c_t2_delivery.Manifest021.test_229_dead_links_in_the_manifest_are_marked_with_replacements",
+  "test_ws_c_t2_delivery.ScenarioFixtures.test_230_sc2_sc3_source_side_fixtures_validate_and_match_the_export",
+  "test_ws_c_t2_delivery.Validity12.test_223_every_payload_validates_and_keys_are_unique",
+  "test_ws_c_t2_delivery.Validity12.test_224_safety_constants",
+  "test_ws_c_t2_delivery.Validity12.test_225_g3_outdated_decree_law_articles_and_pending_portal_link",
+  "test_ws_c_t2_delivery.Validity12.test_226_g1_conflict_both_values_no_resolution",
+  "test_ws_c_t2_delivery.Validity12.test_227_fta_reuse_terms_are_link_only",
+  "test_ws_c_trial_parsers.Discovery.test_174_title_attribute_and_size_label",
+  "test_ws_c_trial_parsers.Discovery.test_175_other_taxes_filtered_vat_kept",
+  "test_ws_c_trial_parsers.ListingEntries.test_172_na_issue_date_and_missing_publish_date",
+  "test_ws_c_trial_parsers.PortalHeadings.test_173_md_heading_bis_without_dash",
+  "test_ws_c_trial_parsers.PortalHeadings.test_173b_reference_in_body_is_not_a_heading",
+  "test_ws_c_trial_parsers.TrimMain.test_171_footer_cut_without_h1",
+  "test_ws_c_trial_parsers.TrimMain.test_171b_h1_start_and_earliest_footer"
+ ],
+ "excluded_count": 171,
+ "excluded": [
+  {
+   "id": "test_a4_integration.Protected.test_t2i_11_protected_databases_unchanged",
+   "outcome": "skipped",
+   "reason": "protected database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_01_frozen_code_matches_ws_b_freeze_record",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_02_payload_validates_and_never_certifies",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_03_passages_carry_ws_c_validity_and_links_are_not_fetched",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_04_validity_lookup_is_the_ws_c_rc2_export",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_05_out_of_scope_shows_no_passages_and_says_the_check_can_be_wrong",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_06_fail_closed_on_drifted_code_or_missing_database",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Retrieval.test_t2i_07_recorded_answers_are_unchanged",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Web.test_t2i_08_owner_response_has_no_reviewer_detail_and_the_record_has_the_payload",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Web.test_t2i_09_blocked_question_is_never_searched",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_a4_integration.Web.test_t2i_10_out_of_scope_is_audited_with_its_classification",
+   "outcome": "skipped",
+   "reason": "knowledge-base database not present on this computer"
+  },
+  {
+   "id": "test_c1.Agreement.test_c1_03_none_is_plain_v7",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_c1.Agreement.test_c1_04_never_complete_unless_both_agree",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_c1.Agreement.test_c1_05_out_of_scope_needs_both_and_adds_nothing",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_c1.Agreement.test_c1_06_c1_topic_adds_provisions_but_cannot_certify_alone",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_c1.Agreement.test_c1_07_g1_g3_stay_blocked_even_when_both_agree",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_c1.Request.test_c1_01_request_is_minimal_and_fixed",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_c1.Request.test_c1_02_every_failure_is_not_ok",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_c1p.Classifier.test_c1p_01_question_is_data_and_injection_cannot_change_the_request",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_c1p.Classifier.test_c1p_02_invalid_outputs_are_not_ok",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_c1p.PipelineC1P.test_c1p_08_failure_injection_never_verifies",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.PipelineC1P.test_c1p_09_scope_agreement_and_corporate_tax",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.PipelineC1P.test_c1p_10_plausible_llm_topic_alone_never_verifies",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.PipelineC1P.test_c1p_11_invariants_on_every_development_question",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.ReviewFindings.test_c1p_12_every_retrieved_passage_is_checked_not_only_required",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.ReviewFindings.test_c1p_13_database_must_match_the_validity_export",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.ReviewFindings.test_c1p_14_malformed_classifier_results_fall_back_safely",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.ReviewFindings.test_c1p_15_c1_failure_keeps_v7_validity_notes",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.ReviewFindings.test_c1p_16_stale_export_fails_closed",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.SourceValidityInterface.test_c1p_03_real_interface_loads_and_nothing_is_approved_today",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.SourceValidityInterface.test_c1p_04_fail_closed_on_missing_stale_wrong_schema_or_absent_interface",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.SourceValidityInterface.test_c1p_05_negative_cases_outdated_conflict_unapproved_missing",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.SourceValidityInterface.test_c1p_06_positive_path_exists_only_with_approved_clean_sources",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p.SourceValidityInterface.test_c1p_07_llm_cannot_override_source_validity",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.Classifier.test_c1p2_01_question_is_data_and_injection_cannot_change_the_request",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_c1p2.Classifier.test_c1p2_02_invalid_outputs_are_not_ok",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_c1p2.FinalCycleFixes.test_c1p2_fix1_exemption_questions_get_zero_rate_and_exempt_lists",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.FinalCycleFixes.test_c1p2_fix2_paraphrase_retrieved_for_investigation_never_verified",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.FinalCycleFixes.test_c1p2_fix3_multi_topic_budget",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.FinalCycleFixes.test_c1p2_fix4_needs_two_deterministic_signals_and_llm_is_never_one",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.PipelineC1P.test_c1p2_08_failure_injection_never_verifies",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.PipelineC1P.test_c1p2_09_scope_agreement_and_corporate_tax",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.PipelineC1P.test_c1p2_10_plausible_llm_topic_alone_never_verifies",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.PipelineC1P.test_c1p2_11_invariants_on_every_development_question",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewFindings.test_c1p2_12_every_retrieved_passage_is_checked_not_only_required",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewFindings.test_c1p2_13_database_must_match_the_validity_export",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewFindings.test_c1p2_14_malformed_classifier_results_fall_back_safely",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewFindings.test_c1p2_15_c1_failure_keeps_v7_validity_notes",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewFindings.test_c1p2_16_stale_export_fails_closed",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewV2Findings.test_c1p2_r1_shared_rate_pair_is_not_evidence",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewV2Findings.test_c1p2_r2_one_vote_per_method",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewV2Findings.test_c1p2_r3_v7_ambiguity_always_vetoes",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewV2Findings.test_c1p2_r4_paraphrase_records_are_not_in_scope",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.ReviewV2Findings.test_c1p2_r5_average_passages_within_gate",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.SourceValidityInterface.test_c1p2_03_real_interface_loads_and_nothing_is_approved_today",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.SourceValidityInterface.test_c1p2_04_fail_closed_on_missing_stale_wrong_schema_or_absent_interface",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.SourceValidityInterface.test_c1p2_05_negative_cases_outdated_conflict_unapproved_missing",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.SourceValidityInterface.test_c1p2_06_positive_path_exists_only_with_approved_clean_sources",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_c1p2.SourceValidityInterface.test_c1p2_07_llm_cannot_override_source_validity",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy and Workstream C's worktree (read-only)"
+  },
+  {
+   "id": "test_cx_demo.SafetyOverRecordedAnswers.test_84_missing_primary_provision_always_flagged",
+   "outcome": "skipped",
+   "reason": "recorded answers not present on this computer"
+  },
+  {
+   "id": "test_db_safety.AuthoritativeUnchanged.test_80_default_evaluation_run_uses_workspace_and_leaves_authoritative_unchanged",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_db_safety.AuthoritativeUnchanged.test_81_explicit_authoritative_path_is_refused_without_override",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_db_safety.AuthoritativeUnchanged.test_82_web_app_refuses_authoritative_database",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_db_safety.AuthoritativeUnchanged.test_83_workspace_is_a_readonly_copy_and_never_the_authoritative_file",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_knowledge_base.RealCorpusIntegration.test_43_reviewed_real_reading_drives_owner_case_on_a_copy",
+   "outcome": "skipped",
+   "reason": "main database not built; run python3 -m compliance_agent.kb setup"
+  },
+  {
+   "id": "test_llm_lab.EvaluationReport.test_60_report_from_fake_runs_with_repeats",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.KnownRegressions.test_62_Q18_deregistration_cases_KNOWN_REGRESSION",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_44_grounded_run_logs_everything_and_keeps_main_db",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_45_budget_refuses_before_sending",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_46_hard_ceiling_cannot_exceed_60",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_47_invented_citations_and_numbers_are_caught_and_stop",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_48_repeated_failures_and_billing_stop",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_49_unknown_model_stops_before_any_spend",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_50_model_mismatch_stops",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_51_retrieval_connection_is_read_only",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_52_citation_check_rules",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.LLMLab.test_53_malformed_request_stops_at_first_400_with_message",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalFix.test_57_salary_question_now_retrieves_article_19",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalFix.test_58_heading_retrieval_only_adds_never_replaces",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalV3.test_63_amounts_and_concepts_detected",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalV3.test_64_intent_provisions_only_for_registration_topics",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalV3.test_65_no_blanket_art7_for_deregistration_or_voluntary",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalV3.test_66_intent_detection_and_ambiguity",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalV3.test_67_ambiguous_questions_get_alternatives_without_supporting",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_llm_lab.RetrievalVocabulary.test_59_vocabulary_cases_and_recall_gate",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_mvp360.Mvp360.test_119_recorded_answers_file_replays_the_same_screen_as_the_ledger",
+   "outcome": "skipped",
+   "reason": "experiment ledger not present (submission export): nothing to compare the file with"
+  },
+  {
+   "id": "test_obligations.CorporateTaxDemo.test_82_wsc_labels_attached_never_approved",
+   "outcome": "needs_private_copy",
+   "reason": "WS B: loads WS C labels with `git archive` from a sibling WS C checkout (../CL_compliance_agent_app_ws_c); the app itself uses the vendored copy"
+  },
+  {
+   "id": "test_obligations.SafetyAndData.test_45_db_copies_unchanged",
+   "outcome": "needs_private_copy",
+   "reason": "WS B: checks the private database copies are unchanged"
+  },
+  {
+   "id": "test_obligations.Validity.test_20_pinned_export_loads_on_exact_copy",
+   "outcome": "needs_private_copy",
+   "reason": "WS B: needs data/CL_ws_b_exact_copy.sqlite3 (byte copy of the protected database)"
+  },
+  {
+   "id": "test_obligations.Validity.test_23_real_vat_provisions_not_certified_today",
+   "outcome": "needs_private_copy",
+   "reason": "WS B: needs data/CL_ws_b_exact_copy.sqlite3 (byte copy of the protected database)"
+  },
+  {
+   "id": "test_recorded_validity.Recorded.test_t3r_06_V24_is_withheld_without_its_text_and_the_link_is_not_fetched",
+   "outcome": "skipped",
+   "reason": "recorded answers not present on this computer"
+  },
+  {
+   "id": "test_recorded_validity.Recorded.test_t3r_07_before_after_only_V24_changes",
+   "outcome": "skipped",
+   "reason": "recorded answers not present on this computer"
+  },
+  {
+   "id": "test_recorded_validity.Recorded.test_t3r_08_demo_chips_are_not_withheld",
+   "outcome": "skipped",
+   "reason": "recorded answers not present on this computer"
+  },
+  {
+   "id": "test_retrieval_v5.Iteration2V5.test_95_title_matches_only_as_fallback",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v5.SearchBudgetV5.test_92_additions_only_and_within_budget_on_every_dev_question",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v5.SearchBudgetV5.test_93_other_regime_question_gets_no_additions",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_05_outdated_provision_is_never_certified",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_06_conflicting_deadline_is_never_certified",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_07_out_of_scope_gets_no_additions",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_08_complete_only_when_nothing_missing_and_no_issue",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_09_second_method_adds_a_missed_topic",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_10_location_resolves_generic_ambiguity",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Pipeline.test_v6_11_stage5_note_and_guard",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v6.Tables.test_v6_02_expansion_links_come_from_the_law",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v6.Tables.test_v6_03_provision_map_is_draft_and_unreviewed",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v6.Tables.test_v6_04_tables_rebuild_identically",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v7.ClassifyV7.test_v7_04_scope_rule",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v7.ClassifyV7.test_v7_05_missing_concepts_are_recognised",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v7.ClassifyV7.test_v7_06_false_secondary_triggers_removed",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v7.MapV7.test_v7_01_every_article_is_reachable_and_new_concepts_are_mapped",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v7.MapV7.test_v7_02_tables_rebuild_identically",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v7.MapV7.test_v7_03_v6_files_unchanged",
+   "outcome": "needs_held_table",
+   "reason": "needs compliance_agent/llm_lab/data/CL_article_index_v6.json"
+  },
+  {
+   "id": "test_retrieval_v7.PipelineV7.test_v7_07_primary_topics_first_in_budget",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v7.PipelineV7.test_v7_08_g1_g3_stay_blocked",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_retrieval_v7.PipelineV7.test_v7_09_invariants_on_every_development_question",
+   "outcome": "skipped",
+   "reason": "main database not built"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b1_02_budget_and_completeness_invariants",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b1_03_no_silent_incomplete_on_development_sets",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b1_04_other_regimes_never_answered_from_vat_texts",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b1_04b_mixed_questions_keep_vat_part_and_review_examples",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b1_05_query_hash_normalisation",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b3_01_every_payload_validates",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_payloads.RetrievalV8.test_t2_b3_06_live_model_refused_and_text_can_be_dropped",
+   "outcome": "skipped",
+   "reason": "needs the exact DB copy (read-only)"
+  },
+  {
+   "id": "test_t2_wording_differential.WordingDifferential.test_t2_b5_01_only_the_two_sentences_differ",
+   "outcome": "skipped",
+   "reason": "frozen commit fdbe131 not in this repository"
+  },
+  {
+   "id": "test_t2_wording_differential.WordingDifferential.test_t2_b5_02_both_sentences_actually_changed_and_no_we_left",
+   "outcome": "skipped",
+   "reason": "frozen commit fdbe131 not in this repository"
+  },
+  {
+   "id": "test_t2_wording_differential.WordingDifferential.test_t2_b5_03_states_reasons_deadlines_documents_identical",
+   "outcome": "skipped",
+   "reason": "frozen commit fdbe131 not in this repository"
+  },
+  {
+   "id": "test_ws_c_amendment_lifecycle.AmendmentLifecycle.test_160_full_lifecycle",
+   "outcome": "skipped",
+   "reason": "PyMuPDF or the reference copy is missing"
+  },
+  {
+   "id": "test_ws_c_change_impact.ChangeImpact.test_170_detect_identify_flag_alert_block",
+   "outcome": "skipped",
+   "reason": "real portal snapshot, DB copy or ledger copy missing"
+  },
+  {
+   "id": "test_ws_c_d10_article1.RealFiles.test_104_every_er_version_now_has_article_1_and_the_decree_law_is_unchanged",
+   "outcome": "skipped",
+   "reason": "raw files or reference copy not present"
+  },
+  {
+   "id": "test_ws_c_d10_article1.RealFiles.test_105_rebuild_changes_only_the_er_article_1_split_and_keeps_all_text",
+   "outcome": "skipped",
+   "reason": "raw files or reference copy not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_86_every_kb_command_refuses_the_authoritative_path",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_87_kb_default_is_the_test_workspace_copy",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_88_kb_collect_needs_explicit_network_approval_and_never_fetches_without_it",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_89_links_to_the_authoritative_file_are_recognised",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_90_restore_refuses_the_authoritative_target_even_with_yes",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_91_restore_needs_an_explicit_target",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_92_restore_into_a_test_copy_works_and_keeps_the_previous_file",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_db_safety.KbAndBackupNeverWriteAuthoritative.test_93_backup_never_writes_over_an_earlier_backup",
+   "outcome": "skipped",
+   "reason": "authoritative database not present"
+  },
+  {
+   "id": "test_ws_c_monitoring.MonitorOnRealRegister.test_116_registered_versions_served_from_local_copies_match_the_lock",
+   "outcome": "skipped",
+   "reason": "data/raw not present"
+  },
+  {
+   "id": "test_ws_c_protection.Protection.test_151_triggers_block_evidence_tampering_and_roll_back_exactly",
+   "outcome": "skipped",
+   "reason": "reference copy missing"
+  },
+  {
+   "id": "test_ws_c_protection.Protection.test_152_protected_files_are_never_hardened_or_unhardened_by_code",
+   "outcome": "skipped",
+   "reason": "reference copy missing"
+  },
+  {
+   "id": "test_ws_c_protection.Protection.test_153_status_is_read_only_and_reports_os_protection",
+   "outcome": "skipped",
+   "reason": "reference copy missing"
+  },
+  {
+   "id": "test_ws_c_protection.Protection.test_163_application_writes_still_work_under_all_triggers_and_typos_create_nothing",
+   "outcome": "skipped",
+   "reason": "reference copy missing"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.AmendmentEvidence.test_144_footnotes_map_to_the_right_articles",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.AmendmentEvidence.test_145_future_effective_footnote_text_is_flagged",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.AmendmentEvidence.test_146_incomplete_amendment_list_flags_the_whole_outdated_source",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.AmendmentEvidence.test_147_instrument_types_never_cross_match_and_unknown_dates_count",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.ContractEdgeCases.test_164_only_current_known_parsed_versions_of_the_same_source_certify",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.ContractEdgeCases.test_165_validity_must_be_loaded_against_the_database_it_describes",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.ContractEdgeCases.test_166_register_approval_is_not_enough_without_database_approval",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.ContractV11.test_162_completeness_and_approval_are_separate_and_only_both_certify",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.GuardHardening.test_143_dry_run_refuses_a_symlink_output",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.InterfaceRules.test_148_superseded_versions_are_never_certifiable_and_stale_exports_are_refused",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.InterfaceRules.test_149_web_page_conflicts_use_the_whole_page_key",
+   "outcome": "skipped",
+   "reason": "no database copy"
+  },
+  {
+   "id": "test_ws_c_qa_fixes.NumberCounts.test_150_page_numbers_no_longer_excuse_numbers_and_split_numbers_are_caught",
+   "outcome": "skipped",
+   "reason": "database or raw files missing"
+  },
+  {
+   "id": "test_ws_c_rag_tools.RawFiles.test_96_raw_files_match_the_lock",
+   "outcome": "skipped",
+   "reason": "data/raw not present"
+  },
+  {
+   "id": "test_ws_c_rag_tools.ReadOnlyCorpusTools.test_100_compare_reuses_the_existing_kb_compare",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_rag_tools.ReadOnlyCorpusTools.test_101_dry_run_is_offline_reproducible_and_never_overwrites",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_rag_tools.ReadOnlyCorpusTools.test_98_inventory_reports_coverage_and_the_merged_article_1_heading",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_rag_tools.ReadOnlyCorpusTools.test_99_no_duplicate_passages_inside_a_version",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ClaimsAndConflicts.test_120_the_deregistration_conflict_is_detected_and_thresholds_agree",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ClaimsAndConflicts.test_121_a_fabricated_quote_or_value_is_caught",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ClaimsAndConflicts.test_122_fact_inventory_finds_every_er_business_day_deadline_with_matching_words",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.Extraction.test_127_structure_and_second_extractor_numbers_agree_on_every_pdf_article",
+   "outcome": "skipped",
+   "reason": "database copy or raw files not present"
+  },
+  {
+   "id": "test_ws_c_source_intel.Extraction.test_128_a_corrupted_number_is_detected",
+   "outcome": "skipped",
+   "reason": "database copy or raw files not present"
+  },
+  {
+   "id": "test_ws_c_source_intel.Extraction.test_129_headings_give_titles_and_chapters_for_retrieval",
+   "outcome": "skipped",
+   "reason": "database copy or raw files not present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ValidityAndCitations.test_123_validity_export_matches_workstream_b_keys",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ValidityAndCitations.test_124_committed_export_is_current",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ValidityAndCitations.test_125_citation_checks_flag_fakes_wrong_versions_and_validity_issues",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_source_intel.ValidityAndCitations.test_126_every_recorded_answer_is_traced_and_none_is_certifiable",
+   "outcome": "skipped",
+   "reason": "no database copy present"
+  },
+  {
+   "id": "test_ws_c_trial_parsers.SourceChangedIssues.test_176_unreviewed_change_blocks_reviewed_does_not",
+   "outcome": "skipped",
+   "reason": "read-only DB copy missing"
+  },
+  {
+   "id": "test_ws_c_trial_parsers.SourceChangedIssues.test_177_no_article_means_whole_source_and_noise_kinds_ignored",
+   "outcome": "skipped",
+   "reason": "read-only DB copy missing"
+  }
+ ]
+}

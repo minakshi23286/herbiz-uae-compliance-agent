@@ -1,0 +1,9 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v2.json",
+ "sha256": "6f47c3ef69d48b533f74623c290028e15ea6cca96a162b36d549bd37cd20638a",
+ "frozen_at": "2026-10-16T19:40:42+04:00",
+ "author": "new independent general-purpose agent (did not read the project; no web search); shown only v1 scenario list to avoid repeats",
+ "assembled_by": "Claude Code \u2014 transcribed without edits",
+ "pre_freeze_use": "No retrieval search and no model call had used these questions at freeze time. The concept index (commit ed48f76) was written before v2 was received; the retrieval wiring is still being tuned on the dev set (v1 + tuned) only.",
+ "rule": "Do not modify after results are observed. The runner refuses to use this set if the sha256 changes."
+}

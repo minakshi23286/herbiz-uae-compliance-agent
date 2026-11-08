@@ -1,0 +1,144 @@
+{
+ "meta": {
+  "run_note": "synthetic; offline; no AI or network calls",
+  "snapshot": "Demo source snapshot: 17 October 2026.",
+  "pins": {
+   "b": "89dc2b9",
+   "b_fixture": "ws-b-demo-0.4",
+   "c": "aa50dd4",
+   "c_contract": "0.2"
+  },
+  "protected_md5_before": [
+   "26e202b87a062288e56bcda1de9b0217",
+   "59226cd03eb7105d635538d7da738949"
+  ],
+  "protected_md5_after": [
+   "26e202b87a062288e56bcda1de9b0217",
+   "59226cd03eb7105d635538d7da738949"
+  ],
+  "protected_unchanged": true,
+  "passed": 13,
+  "passed_synthetic": 0,
+  "skipped": 0,
+  "total": 13
+ },
+ "scenarios": [
+  {
+   "id": "E1",
+   "scenario": "Owner does not know several answers",
+   "input": "made-up profile with 'Not sure' for jurisdiction and VAT status",
+   "expected": "states only 'Need more information' or 'Blocked: legal validation'; open questions listed",
+   "actual": "states=['Blocked: legal validation', 'Need more information']; questions=['Is your licence from a mainland authority or a free zone?', 'Roughly how much did the business sell in the last 12 months?']",
+   "result": "PASS",
+   "evidence": "adapter.dashboard (live WS B engine)"
+  },
+  {
+   "id": "E2",
+   "scenario": "Owner types an invalid number",
+   "input": "employees_count = -3",
+   "expected": "plain message naming the field; no result shown",
+   "actual": "employees_count: How many employees? — please enter a whole number of 0 or more, or tick \"Not sure\".",
+   "result": "PASS",
+   "evidence": "adapter.input_problem"
+  },
+  {
+   "id": "E3",
+   "scenario": "Owner expects a VAT or corporate-tax deadline",
+   "input": "Amal (LLC) overview",
+   "expected": "every real-law row: 'No date is shown until a qualified reviewer has checked the rule and its sources.'",
+   "actual": "distinct date texts on real-law rows: ['No date is shown until a qualified reviewer has checked the rule and its sources.']",
+   "result": "PASS",
+   "evidence": "adapter.owner_view + WS B fdbe131"
+  },
+  {
+   "id": "E4",
+   "scenario": "Corporate-tax question for any business",
+   "input": "CT demo for Amal (LLC); CT demo for another profile (SYN-P06)",
+   "expected": "Amal: 5 rows blocked, outcome withheld; others refused",
+   "actual": "5 rows blocked=True withheld=True; SYN-P06 refused: KeyError: 'corporate tax is shown only for the two fictional demo businesses'",
+   "result": "PASS",
+   "evidence": "adapter.ct_journey; WS B D-064 fixture"
+  },
+  {
+   "id": "E5",
+   "scenario": "A real business asks about corporate tax",
+   "input": "sources360 label for CT-SBR with profile_synthetic=False",
+   "expected": "label refused (corporate_tax_real_profile)",
+   "actual": "shown=False refused=corporate_tax_real_profile",
+   "result": "PASS",
+   "evidence": "WS C sources360 0.2 @ aa50dd4"
+  },
+  {
+   "id": "E6",
+   "scenario": "Official text amended (MD 131/2026; unreviewed summary: SBR period to 2029)",
+   "input": "WS C change-impact evidence",
+   "expected": "one item flagged 'changed — pending review'; status unchanged; not activated",
+   "actual": "flagged=True state='Blocked: legal validation' activation='not activated' review=True",
+   "result": "PASS",
+   "evidence": "adapter.change_replay"
+  },
+  {
+   "id": "E7",
+   "scenario": "A later source change makes a demonstrated claim unsafe (simulated entry)",
+   "input": "temporary suppressed_claims entry for C360-11",
+   "expected": "claim withheld with reason; legal status unchanged; nothing edited silently",
+   "actual": "owner_text='Withheld while a recent change to an official source is revi…' state='Blocked: legal validation'",
+   "result": "PASS",
+   "evidence": "adapter.suppressed (temporary copy; shipped list is empty)"
+  },
+  {
+   "id": "E8",
+   "scenario": "Data claims approval it does not have",
+   "input": "owner text changed to 'This rule is approved.'",
+   "expected": "whole view refused (fail closed)",
+   "actual": "refused: Incompatible: owner-visible text contains approval wording: This rule is approved.",
+   "result": "PASS",
+   "evidence": "adapter.scan"
+  },
+  {
+   "id": "E9",
+   "scenario": "Sources older than allowed",
+   "input": "assessment dated 15 Dec 2026",
+   "expected": "B validity unavailable (fail closed); C citations marked stale",
+   "actual": "validity_available=False; C stale=True",
+   "result": "PASS",
+   "evidence": "pins.run_b / pins.run_c"
+  },
+  {
+   "id": "E10",
+   "scenario": "Answer rests on incomplete law (multi-article gap)",
+   "input": "recorded answer Q35 (cancel voluntary registration)",
+   "expected": "warning 'may be incomplete' naming missing articles",
+   "actual": "guard=incomplete missing=['VAT Decree-Law No. 8 of 2017, Article 21', 'VAT Executive Regulation, Article 14']",
+   "result": "PASS",
+   "evidence": "ask.guard; ledger read-only"
+  },
+  {
+   "id": "E11",
+   "scenario": "Owner asks how to split sales to avoid VAT",
+   "input": "recorded answer U22",
+   "expected": "declined; tax-agent box shown",
+   "actual": "status=declined professional=True",
+   "result": "PASS",
+   "evidence": "ask (recorded answer)"
+  },
+  {
+   "id": "E12",
+   "scenario": "Question outside the recorded set / outside VAT",
+   "input": "free-typed bank question",
+   "expected": "'No recorded answer'; passages labelled not an answer; tax-agent box",
+   "actual": "mode=no_recording professional=True",
+   "result": "PASS",
+   "evidence": "ask._no_recording"
+  },
+  {
+   "id": "E13",
+   "scenario": "A command tries to write the authoritative database",
+   "input": "run_all(--db authoritative)",
+   "expected": "refused before any work",
+   "actual": "refused: AuthoritativeDatabaseError: Refused: the scenario evaluation would write to a protected database (CL_compliance.sqlite3: the authoritative",
+   "result": "PASS",
+   "evidence": "dbsafety.refuse_authoritative"
+  }
+ ]
+}

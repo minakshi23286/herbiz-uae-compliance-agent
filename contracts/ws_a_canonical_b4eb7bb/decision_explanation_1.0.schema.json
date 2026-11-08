@@ -1,0 +1,207 @@
+{
+ "$id": "https://herbiz.invalid/contracts/decision_explanation_1.0.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "confidence": {
+   "additionalProperties": false,
+   "properties": {
+    "basis": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "level": {
+     "enum": [
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "numeric": {
+     "const": null
+    }
+   },
+   "required": [
+    "level",
+    "basis",
+    "numeric"
+   ],
+   "type": "object"
+  },
+  "contract": {
+   "const": "herbiz.decision_explanation/1.0"
+  },
+  "engine": {
+   "additionalProperties": false,
+   "properties": {
+    "commit": {
+     "pattern": "^[0-9a-f]{7,40}$",
+     "type": "string"
+    },
+    "fixture_contract": {
+     "minLength": 1,
+     "type": "string"
+    }
+   },
+   "required": [
+    "commit",
+    "fixture_contract"
+   ],
+   "type": "object"
+  },
+  "execution_mode": {
+   "enum": [
+    "deterministic",
+    "simulated"
+   ]
+  },
+  "label": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "missing_information": {
+   "type": "array"
+  },
+  "obligation_id": {
+   "minLength": 1,
+   "type": "string"
+  },
+  "professional_review": {
+   "type": "array"
+  },
+  "reason": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "review": {
+   "additionalProperties": false,
+   "properties": {
+    "human_review_required": {
+     "type": "boolean"
+    },
+    "release_approved": {
+     "const": false
+    },
+    "reviewer_needed": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   },
+   "required": [
+    "release_approved",
+    "reviewer_needed",
+    "human_review_required"
+   ],
+   "type": "object"
+  },
+  "rule_status": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "state": {
+   "minLength": 1,
+   "type": "string"
+  },
+  "state_chip": {
+   "minLength": 1,
+   "type": "string"
+  },
+  "steps": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "input_facts": {
+      "type": [
+       "object",
+       "array"
+      ]
+     },
+     "kind": {
+      "enum": [
+       "fact_check",
+       "rule_eval",
+       "validity_check",
+       "policy",
+       "block"
+      ]
+     },
+     "n": {
+      "minimum": 1,
+      "type": "integer"
+     },
+     "outcome": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "rule_ref": {
+      "additionalProperties": false,
+      "properties": {
+       "article": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_id": {
+        "minLength": 1,
+        "type": "string"
+       }
+      },
+      "required": [
+       "source_id",
+       "article"
+      ],
+      "type": [
+       "object",
+       "null"
+      ]
+     },
+     "visible_to": {
+      "enum": [
+       "owner",
+       "reviewer"
+      ]
+     }
+    },
+    "required": [
+     "n",
+     "kind",
+     "input_facts",
+     "rule_ref",
+     "outcome",
+     "visible_to"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "contract",
+  "engine",
+  "obligation_id",
+  "state",
+  "state_chip",
+  "reason",
+  "rule_status",
+  "label",
+  "execution_mode",
+  "steps",
+  "missing_information",
+  "professional_review",
+  "confidence",
+  "review"
+ ],
+ "title": "herbiz.decision_explanation/1.0",
+ "type": "object"
+}

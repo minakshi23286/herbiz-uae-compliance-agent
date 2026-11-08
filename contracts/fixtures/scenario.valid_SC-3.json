@@ -1,0 +1,62 @@
+{
+ "contract": "herbiz.scenario/1.0",
+ "scenario_id": "SC-3",
+ "steps": [
+  {
+   "event": "owner_question",
+   "expected": {
+    "flags": [],
+    "must_not": [],
+    "must_show": [],
+    "state": null
+   },
+   "input": {
+    "question_id": "SYN-SC3-Q",
+    "touches": "FTA-VAT-DL8|48"
+   },
+   "n": 1,
+   "released_after": null
+  },
+  {
+   "event": "validity_result",
+   "expected": {
+    "flags": [
+     "stale_source"
+    ],
+    "must_not": [],
+    "must_show": [],
+    "state": null
+   },
+   "input": {
+    "validity_key": "FTA-VAT-DL8|48",
+    "validity_status": "outdated"
+   },
+   "n": 2,
+   "released_after": 1
+  },
+  {
+   "event": "agent_response",
+   "expected": {
+    "flags": [
+     "stale_source",
+     "pending_unverified_link"
+    ],
+    "must_not": [
+     "answer for the affected article",
+     "fetched"
+    ],
+    "must_show": [
+     "current official link",
+     "link not yet verified",
+     "review required"
+    ],
+    "state": null
+   },
+   "input": {},
+   "n": 3,
+   "released_after": 2
+  }
+ ],
+ "synthetic": true,
+ "title": "Outdated source"
+}

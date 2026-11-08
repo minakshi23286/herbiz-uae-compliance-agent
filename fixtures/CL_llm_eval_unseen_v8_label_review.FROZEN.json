@@ -1,0 +1,12 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v8_label_review.json",
+ "sha256": "d7cbf054d74a742c8d11f007e50b44a9e0aac7a2496f7476c1936a71c2b8608f",
+ "frozen_at": "2026-10-17 (Workstream B, before any C1-primary code)",
+ "role": "independent label review of v8",
+ "author": "fresh general-purpose agent; title list only (reviewer: title list + v8 file only); synthetic; no web",
+ "assembled_by": "Claude Code (Workstream B) - copied byte-for-byte; content NOT read by the developer before the code freeze (structure + personal-data scan only)",
+ "personal_data_scan": null,
+ "grading_criteria": "docs/ai/CL_WS_B_C1P_PLAN.md",
+ "grading_criteria_sha256": "9f9e56f2598dede1bb14b3b775e41aca292e705c7a8122c765662d65915b4da0",
+ "rule": "Do not modify after results are observed."
+}

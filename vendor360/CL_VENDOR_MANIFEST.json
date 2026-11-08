@@ -1,0 +1,380 @@
+{
+ "_notice": "Pinned WS B / WS C dependencies, vendored as plain files for a history-free export. The app checks every file against this manifest before use and refuses on any difference.",
+ "created": "2026-11-09",
+ "from_repository_commit": "08fbd9d077d9e2fc894c993acfd9a65fb4baaf81",
+ "trees": {
+  "ws_b_89dc2b9": {
+   "branch": "ws-b-retrieval",
+   "commit": "89dc2b91d9249f09484c67f90a33c4869048422f",
+   "files": {
+    "compliance_agent/__init__.py": {
+     "sha256": "3246c5abab81d45cd28b459a84e69182db3818c11fec34bd701a23041fdea6eb"
+    },
+    "compliance_agent/ask.py": {
+     "sha256": "16ff854d8307f9caa94d70311531a8eaae64560e4cae4666297b46ec4ca69b21"
+    },
+    "compliance_agent/backup.py": {
+     "sha256": "676f75737f162c79cd51ffcf3c175b1d32ff402becabf94f2e3ea228c0918d00"
+    },
+    "compliance_agent/clock.py": {
+     "sha256": "0837df4ee15f645d67bd4cea624daa2b3fe9b69ca5cd514bffeacaadb5806ce9"
+    },
+    "compliance_agent/dbsafety.py": {
+     "sha256": "2d9eea6d709ea07f7be32f1e7c326a7e23ed944ae112bc00b31b6a1aca098650"
+    },
+    "compliance_agent/demo.py": {
+     "sha256": "6d3cf441d911c59d64e49ced54a182c2d02cd1d557d6ca0d51fca30e225971cd"
+    },
+    "compliance_agent/engine.py": {
+     "sha256": "4e1b355052e2edb0e70d72aacd288eacb2a704f8845c48af3038dab16c738b74"
+    },
+    "compliance_agent/evaluation.py": {
+     "sha256": "12780e288d94edb166e75ce31715a18b249b9c30e79868febd63e1bdcaf32dbb"
+    },
+    "compliance_agent/kb.py": {
+     "sha256": "32e4556290cb65f193addc09d9f40224c2b0bb86906819f8c5f6bf6665921d06"
+    },
+    "compliance_agent/llm_lab/__init__.py": {
+     "sha256": "bb0161095e965d55d68c76904eda941e6967cb7717fc90b5b2d25aa6639f83f3"
+    },
+    "compliance_agent/llm_lab/answer.py": {
+     "sha256": "6b05bda1d330e29fbdf36f8f6186bd969e5bfc84e2355ebcfc291d144bbfe329"
+    },
+    "compliance_agent/llm_lab/budget.py": {
+     "sha256": "faf25ea6fce0c685c18df6b1854d7927a6d0011af104428880834ea50b003c18"
+    },
+    "compliance_agent/llm_lab/classifier_c1.py": {
+     "sha256": "874bb6ec2a9a5a9b840dca3efa985544e8b4e77028255f36f06908294bfafc81"
+    },
+    "compliance_agent/llm_lab/classifier_c1p.py": {
+     "sha256": "252f5c679735de2c98234741d4b02df0bb55cbe844302820197959a02def05e5"
+    },
+    "compliance_agent/llm_lab/classifier_c1p2.py": {
+     "sha256": "1d6e1ced5704ae5185e30d3c64ca95ba5a0dbceeb66b057ebf470fd59bfa28fc"
+    },
+    "compliance_agent/llm_lab/concepts.py": {
+     "sha256": "5dd350a321e368c29997c68087126cd5316767e5aa311a91af3bf04488c9c6ad"
+    },
+    "compliance_agent/llm_lab/concepts_v5.py": {
+     "sha256": "8eadc88009b870b9e2600f4860cf305df0067025abb826924c64b37798c05a49"
+    },
+    "compliance_agent/llm_lab/data/CL_coverage_audit_v7.json": {
+     "sha256": "147bf29f9d1b63132088353377144a52b4238011cc85ae4ace0f298ba81d2e1e"
+    },
+    "compliance_agent/llm_lab/data/CL_expansion_v6.json": {
+     "sha256": "bf36ce5deb81410beba2f7dfb0502e692d7600b4ba334ecc75340c07d9184a36"
+    },
+    "compliance_agent/llm_lab/data/CL_provision_map_v6.json": {
+     "sha256": "5fc5d4247f084bdc0291ad8e6423f4b06853558d53d62b568f65a15870d3c6ec"
+    },
+    "compliance_agent/llm_lab/data/CL_provision_map_v7.json": {
+     "sha256": "6c926baf0893c3a0a8333407969747631b1f71445501f962195021497c7fca1a"
+    },
+    "compliance_agent/llm_lab/data/CL_source_validity_v6.json": {
+     "sha256": "debcaf7bcb6d5c15e371a9e9298d25a11d5b31880a5f2573cd8d1b5ccae22ea3"
+    },
+    "compliance_agent/llm_lab/fake.py": {
+     "sha256": "e8e6a65f4a656517ba59db3ce25444f8dd2b8510a76a0432e3fbbc8f338c834e"
+    },
+    "compliance_agent/llm_lab/freeze.py": {
+     "sha256": "040e0a807a33f58fb34e4bcb9df85758be004e5390a5cab7e1a2285bcdae5b10"
+    },
+    "compliance_agent/llm_lab/locators.py": {
+     "sha256": "3bc1cee1649f1befd2c1f5ed975b752577bb6983953e700d906ae5bce4882810"
+    },
+    "compliance_agent/llm_lab/pipeline_c1.py": {
+     "sha256": "98ecf0f874c11ed4bdb753337dd77bb23f40461bb64393dc57a836df8918d412"
+    },
+    "compliance_agent/llm_lab/pipeline_c1p.py": {
+     "sha256": "35ca9eb66142ad4900eba780112c703a4a7853ff607bd65f9f68b26946182712"
+    },
+    "compliance_agent/llm_lab/pipeline_c1p2.py": {
+     "sha256": "c880ef77b598147dcb5d4c389cbf77c2e1d7a2217199e23e443d4c43a73d5f12"
+    },
+    "compliance_agent/llm_lab/pipeline_v6.py": {
+     "sha256": "8c71fb099827950dfd4ba1225b394385763b882212b111ae1158949096ccf957"
+    },
+    "compliance_agent/llm_lab/pipeline_v7.py": {
+     "sha256": "c703911038cfa7b69c47c48e40e8ef4a34e8946221da2b26925c62c5e68ebb97"
+    },
+    "compliance_agent/llm_lab/report.py": {
+     "sha256": "7c65548fd0142a431773b0e0c3811117c8735a10e098422a2b326ea8294bdb53"
+    },
+    "compliance_agent/llm_lab/retrieval_metrics.py": {
+     "sha256": "131ec78f430140f1d93ef457fbd374f17fe7b8c265ef49bf56d1834c0d6b09f6"
+    },
+    "compliance_agent/llm_lab/retrieve.py": {
+     "sha256": "827876d4eda13ad8764b3d410ae2e5e1b72f5ef607562ce8886d5df15636f3ab"
+    },
+    "compliance_agent/llm_lab/retrieve_v8.py": {
+     "sha256": "4da6eef629ada059af459f342d17a2e8ea1a461447e5bd0268a49873a7258aba"
+    },
+    "compliance_agent/llm_lab/run.py": {
+     "sha256": "26c209f6a6b36a4ea50c95bf1f1332d905019696d4c6b3f05606eca8ab814d9c"
+    },
+    "compliance_agent/llm_lab/source_validity_c.py": {
+     "sha256": "d2c5a3d3b7810cc487b3e8e254628dc6fd552f5cbe58689c5da9a56c840d65f9"
+    },
+    "compliance_agent/llm_lab/t2_payloads.py": {
+     "sha256": "0e52488758e55d3c497cc3e7630246d7c7a54577492e54ea3ee368f52d7666ce"
+    },
+    "compliance_agent/obligations/__init__.py": {
+     "sha256": "b1425e40bbb28efa9535137ad80a17d2fc8ea5d1f9365b318e1d6eb8b1ef78fd"
+    },
+    "compliance_agent/obligations/catalogue/ct.json": {
+     "sha256": "ef77b0d63f539adb6878742860c2f072e0dbf03c0283708a3d0af51d4ad0a1e3"
+    },
+    "compliance_agent/obligations/catalogue/synthetic_test.json": {
+     "sha256": "9fdec145ceac32b3969cf2e14b9263ae20a4c3071202a23da8ef99f83eb9b960"
+    },
+    "compliance_agent/obligations/catalogue/vat.json": {
+     "sha256": "7a30bf40b62f5f175e3f2d25b60c0438744eb228b6dda3c9b4058010f1bbd562"
+    },
+    "compliance_agent/obligations/ct_demo.py": {
+     "sha256": "6192594d37a7da080502bccca9f5361d0b2b05142a15d35523029a2297fcbc86"
+    },
+    "compliance_agent/obligations/engine.py": {
+     "sha256": "66d8af382fd258d57f8b97a1c59bedae46e6e6fdb37fd6577979133e8f2c838f"
+    },
+    "compliance_agent/obligations/profile.py": {
+     "sha256": "deb6a8c91fefa0fe2d70545b5308cb36279d5dc2d5c13d75d06777d871b658eb"
+    },
+    "compliance_agent/obligations/profile_schema.json": {
+     "sha256": "5f4092f7c2ca8d53d08f16a119fbeda1d516ca62c2050a0a53a5c94f04d451da"
+    },
+    "compliance_agent/obligations/validity.py": {
+     "sha256": "1c0c35a5735d4404a880e8060ca1bc273bcb40b9c662f7f3320a4288a18e46f9"
+    },
+    "compliance_agent/profiles.py": {
+     "sha256": "62a191107db4670db0d61514336e0b55e48c98f66859c01487985e95896a6e1f"
+    },
+    "compliance_agent/scenario.py": {
+     "sha256": "00f1388beb8a267c25ddb8d47fcca64155093c384249df27ade01fcd6ab6b160"
+    },
+    "compliance_agent/sources.py": {
+     "sha256": "9dd399fd1e952c67400e3e2653fd56bace0b088914e667d834d3755eaba3a404"
+    },
+    "compliance_agent/store.py": {
+     "sha256": "70298a9e3730e574c8c2143305c8428cc041044bc86f212fdcc8061acc7988ad"
+    },
+    "compliance_agent/ui.html": {
+     "sha256": "35b844a5a58960ea3cabb32b27b97415bb8e49ab20c60a8ffd5fd551326ef778"
+    },
+    "compliance_agent/web.py": {
+     "sha256": "b25c39cd5dc32840423989800c91350e6613b34c2e5ec7bb4c34a333651499df"
+    },
+    "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json": {
+     "change": "8 absolute local paths in origin values replaced with <LOCAL_PATH> (WS B rule)",
+     "committed_sha256": "d5e34672425e75aeca30af625e2cf7c147269edcc1e682b6f2fc3939d77517c3",
+     "sha256": "ad9b8e77114beba00e6fb2d8bf9947c4fc2f716045d35f9fd1bea1e40752348e"
+    },
+    "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json.sha256": {
+     "change": "checksum of the scrubbed fixture",
+     "committed_sha256": "14b54190dcbe49abd1b72ffc5a8f3a59a1b4592ad6e6ff7dc2b986f56eb2608e",
+     "sha256": "85f2fab1c3da2d99ad160d3c8fbfce9657d82751aef79e36b6abf7562b249b19"
+    },
+    "docs/360/demo/wsa/README.md": {
+     "sha256": "417571457e48b03a798385c3cb1781b9b1ab49a8ad9fb584e271dcc3138f2c47"
+    },
+    "fixtures/obligations/CL_ct_demo_personas_wsc.json": {
+     "sha256": "4b4f8864579d7719aff4e1840a46ff830443440e751763e30523c33673a28984"
+    },
+    "fixtures/obligations/CL_synthetic_profiles_360.json": {
+     "sha256": "77ca9e8e1392973a9d425d4d868a9459e17690fc289059b25433e01836aa999e"
+    }
+   },
+   "subset": [
+    "compliance_agent/",
+    "fixtures/obligations/",
+    "docs/360/demo/wsa/"
+   ],
+   "workstream": "ws_b"
+  },
+  "ws_c_aa50dd4": {
+   "branch": "ws-c-source-intelligence",
+   "commit": "aa50dd4f63c8a6189d7d1465ab2e5c187226ab7b",
+   "files": {
+    "compliance_agent/__init__.py": {
+     "sha256": "3246c5abab81d45cd28b459a84e69182db3818c11fec34bd701a23041fdea6eb"
+    },
+    "compliance_agent/ask.py": {
+     "sha256": "16ff854d8307f9caa94d70311531a8eaae64560e4cae4666297b46ec4ca69b21"
+    },
+    "compliance_agent/backup.py": {
+     "sha256": "a32b76d274609cd2d62c5990db4f740cd42b45a9b996e221afc3ed4af17a997c"
+    },
+    "compliance_agent/clock.py": {
+     "sha256": "0837df4ee15f645d67bd4cea624daa2b3fe9b69ca5cd514bffeacaadb5806ce9"
+    },
+    "compliance_agent/dbsafety.py": {
+     "sha256": "cd6a996a537d8826d38cd49578dd82bad32f4e34a45dfcd98ba38dcf37ab9b91"
+    },
+    "compliance_agent/demo.py": {
+     "sha256": "6d3cf441d911c59d64e49ced54a182c2d02cd1d557d6ca0d51fca30e225971cd"
+    },
+    "compliance_agent/engine.py": {
+     "sha256": "4e1b355052e2edb0e70d72aacd288eacb2a704f8845c48af3038dab16c738b74"
+    },
+    "compliance_agent/evaluation.py": {
+     "sha256": "12780e288d94edb166e75ce31715a18b249b9c30e79868febd63e1bdcaf32dbb"
+    },
+    "compliance_agent/kb.py": {
+     "sha256": "25f25ab1d085d83049f638f8c46579e8d2eb6fc499d74066fdca6653d846967f"
+    },
+    "compliance_agent/llm_lab/__init__.py": {
+     "sha256": "bb0161095e965d55d68c76904eda941e6967cb7717fc90b5b2d25aa6639f83f3"
+    },
+    "compliance_agent/llm_lab/answer.py": {
+     "sha256": "6b05bda1d330e29fbdf36f8f6186bd969e5bfc84e2355ebcfc291d144bbfe329"
+    },
+    "compliance_agent/llm_lab/budget.py": {
+     "sha256": "faf25ea6fce0c685c18df6b1854d7927a6d0011af104428880834ea50b003c18"
+    },
+    "compliance_agent/llm_lab/concepts.py": {
+     "sha256": "5dd350a321e368c29997c68087126cd5316767e5aa311a91af3bf04488c9c6ad"
+    },
+    "compliance_agent/llm_lab/fake.py": {
+     "sha256": "e8e6a65f4a656517ba59db3ce25444f8dd2b8510a76a0432e3fbbc8f338c834e"
+    },
+    "compliance_agent/llm_lab/freeze.py": {
+     "sha256": "040e0a807a33f58fb34e4bcb9df85758be004e5390a5cab7e1a2285bcdae5b10"
+    },
+    "compliance_agent/llm_lab/report.py": {
+     "sha256": "7c65548fd0142a431773b0e0c3811117c8735a10e098422a2b326ea8294bdb53"
+    },
+    "compliance_agent/llm_lab/retrieval_metrics.py": {
+     "sha256": "131ec78f430140f1d93ef457fbd374f17fe7b8c265ef49bf56d1834c0d6b09f6"
+    },
+    "compliance_agent/llm_lab/retrieve.py": {
+     "sha256": "c61f99cb2f61e581ee104e4e96e527b28338fe997ea67d4ebf7d9427f560373a"
+    },
+    "compliance_agent/llm_lab/run.py": {
+     "sha256": "26c209f6a6b36a4ea50c95bf1f1332d905019696d4c6b3f05606eca8ab814d9c"
+    },
+    "compliance_agent/profiles.py": {
+     "sha256": "62a191107db4670db0d61514336e0b55e48c98f66859c01487985e95896a6e1f"
+    },
+    "compliance_agent/rag_c/__init__.py": {
+     "sha256": "259c0798d5e302c78a849d3332892dd4a07a2ad22a72862d94c872d13fe24c35"
+    },
+    "compliance_agent/rag_c/__main__.py": {
+     "sha256": "5d2e9370efd93fbb8185748d0cfee58163f92d63d7e301345af6541c264a954e"
+    },
+    "compliance_agent/rag_c/amendments.py": {
+     "sha256": "b0bd9249a21e80dbd08ad6e883fd19fe28e581efe8cda31443ab8e353efbd73a"
+    },
+    "compliance_agent/rag_c/citations.py": {
+     "sha256": "857a815187da4df945b95a8cfeb8fa52bd11a9018e4607ccc9155fb67748374b"
+    },
+    "compliance_agent/rag_c/claims.py": {
+     "sha256": "e75f1beeb709ad0a8e88f3431fb1e056cb57d7c496729d71ae114a01baacb72b"
+    },
+    "compliance_agent/rag_c/discovery.py": {
+     "sha256": "a272cf9491a35afe41fd6d4ff7e44971b2dddd9df9eeb9330e345ed1c846477d"
+    },
+    "compliance_agent/rag_c/dryrun.py": {
+     "sha256": "d53a982131cbd9f6b0091692d1199f5613f5eeab77c3240924e1603b0bb285fd"
+    },
+    "compliance_agent/rag_c/extraction_check.py": {
+     "sha256": "b8fd1fd3f75a3e9f9e9c12f3635dacf01f520df2465979bea30f7c8ede6ec9b5"
+    },
+    "compliance_agent/rag_c/firecrawl_trial.py": {
+     "sha256": "1a0a8ada77ded957983fe0dd58497d507e2f484410a9aa92fc649e3d9701ff35"
+    },
+    "compliance_agent/rag_c/interface.py": {
+     "sha256": "160a41e7c548fca11a30dbf1e53e574862696e0b54f1417270b8955f3e51dab0"
+    },
+    "compliance_agent/rag_c/inventory.py": {
+     "sha256": "8bbb26b9dc363e5d4519147c02f2063b2c7948c9d29ca10e73c1a737c98f8554"
+    },
+    "compliance_agent/rag_c/monitor.py": {
+     "sha256": "8e0762bf79b9979470f55f3d0d53913c33a8493217ba0d790e4afe31497486ce"
+    },
+    "compliance_agent/rag_c/protection.py": {
+     "sha256": "398e15b42be0c3afb957e56a7c74bfaa8f58138e44266fc47c1110947f9644fe"
+    },
+    "compliance_agent/rag_c/register.py": {
+     "sha256": "8c1282c0a5ca93e15081dbd60c666d918e2375ada73e05eb3ff80c14b23f9890"
+    },
+    "compliance_agent/rag_c/render.py": {
+     "sha256": "bb3056c1a6063b70466cdf6b128f3b9a4ff0df55c31affeb331cab65d811c2ab"
+    },
+    "compliance_agent/rag_c/sources360.py": {
+     "sha256": "fedcbf56321ab9d1f5352475331358e392c98c0ca4cce55758c570a395bf9a66"
+    },
+    "compliance_agent/rag_c/validity.py": {
+     "sha256": "96cc880a0064286f77ad4b74140afb809d7b9a6d5ba54bb48e4b669f89caacfa"
+    },
+    "compliance_agent/scenario.py": {
+     "sha256": "00f1388beb8a267c25ddb8d47fcca64155093c384249df27ade01fcd6ab6b160"
+    },
+    "compliance_agent/sources.py": {
+     "sha256": "9dd399fd1e952c67400e3e2653fd56bace0b088914e667d834d3755eaba3a404"
+    },
+    "compliance_agent/store.py": {
+     "sha256": "70298a9e3730e574c8c2143305c8428cc041044bc86f212fdcc8061acc7988ad"
+    },
+    "compliance_agent/ui.html": {
+     "sha256": "35b844a5a58960ea3cabb32b27b97415bb8e49ab20c60a8ffd5fd551326ef778"
+    },
+    "compliance_agent/web.py": {
+     "sha256": "b25c39cd5dc32840423989800c91350e6613b34c2e5ec7bb4c34a333651499df"
+    },
+    "docs/CL_evidence/ws_c/360/mvp/CL_sbr_amendment_impact_2026-10-17.json": {
+     "sha256": "be28cebf0512fed1a6d19f751ec0eb89a545a7f333bd55e4da7d4c48244e0d27"
+    },
+    "knowledge_base/CL_360_obligation_sources.json": {
+     "sha256": "863795ee7a891f8328594547bcb042fb1568006a21e52013caaec149b3f82a95"
+    },
+    "knowledge_base/CL_360_source_candidates.json": {
+     "sha256": "bc21dfd08393e557a3aa7a7f60b836ef7d132cd534538291eaa5c435e0e04f55"
+    },
+    "knowledge_base/CL_article_headings.json": {
+     "sha256": "99f3de8a53d9af289d053769472ece246778a4b1a84173cba21c7d540099ecb7"
+    },
+    "knowledge_base/CL_collected_lock.json": {
+     "sha256": "2ebb8c251694c29c27dcb64d722bb38777c8051c9c7c8b421f50d141c6f0be4d"
+    },
+    "knowledge_base/CL_draft_interpretations.json": {
+     "sha256": "ce1555fd37cd60ebaf9b78452d7ee7609d3afa99ed5594ec57e4fe8a39d4a3bd"
+    },
+    "knowledge_base/CL_source_manifest.json": {
+     "sha256": "02acbe976f00d37c491ce22d1c76478153fd8036f9f439509ed52b867c9adacf"
+    },
+    "knowledge_base/CL_source_register.json": {
+     "sha256": "d2723ce836b6b5a8780a80eba317a6a60d57bbc8f798860845202f5270596a02"
+    },
+    "knowledge_base/CL_source_validity.json": {
+     "sha256": "81fd107d37999776d8f65f9ecd9fc70430d2218bcf19c58a91cb03790b75bb05"
+    }
+   },
+   "subset": [
+    "compliance_agent/",
+    "knowledge_base/",
+    "docs/CL_evidence/ws_c/360/mvp/CL_sbr_amendment_impact_2026-10-17.json"
+   ],
+   "workstream": "ws_c"
+  },
+  "ws_c_e01c371": {
+   "branch": "ws-c-source-intelligence",
+   "commit": "e01c371a7315e0b7d85f165c291c6e2d3605ba41",
+   "files": {
+    "compliance_agent/rag_c/policy_gate.py": {
+     "sha256": "c63ed45121cb953471170d1334319ffc52f8c9bf4b2b7ab0e2896d44e98ace10"
+    },
+    "knowledge_base/policy/CL_ai_governance_references.json": {
+     "sha256": "9b3a381ef73e70363bf2f13e9ae620aa82e5383f9c1e5f580b023fb267b9e6e4"
+    },
+    "knowledge_base/policy/CL_policy_kb.json": {
+     "sha256": "d3da659cae8d0f8eb1fd7ab19ad78935328f3c4c6785aba9c60c3a4232835691"
+    }
+   },
+   "subset": [
+    "compliance_agent/rag_c/policy_gate.py",
+    "knowledge_base/policy/CL_policy_kb.json",
+    "knowledge_base/policy/CL_ai_governance_references.json"
+   ],
+   "workstream": "ws_c"
+  }
+ }
+}

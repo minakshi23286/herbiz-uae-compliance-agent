@@ -1,0 +1,183 @@
+{
+ "$id": "https://herbiz.invalid/contracts/capability_declaration_1.0.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "build": {
+   "additionalProperties": false,
+   "properties": {
+    "b_commit": {
+     "pattern": "^[0-9a-f]{7,40}$",
+     "type": "string"
+    },
+    "c_commit": {
+     "pattern": "^[0-9a-f]{7,40}$",
+     "type": "string"
+    },
+    "integration_commit": {
+     "pattern": "^[0-9a-f]{7,40}$",
+     "type": "string"
+    }
+   },
+   "required": [
+    "integration_commit",
+    "b_commit",
+    "c_commit"
+   ],
+   "type": "object"
+  },
+  "capabilities": {
+   "items": {
+    "additionalProperties": false,
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "class": {
+         "const": "live_inference"
+        }
+       },
+       "required": [
+        "class"
+       ]
+      },
+      "then": {
+       "properties": {
+        "active": {
+         "const": false
+        }
+       }
+      }
+     },
+     {
+      "if": {
+       "properties": {
+        "class": {
+         "const": "planned"
+        }
+       },
+       "required": [
+        "class"
+       ]
+      },
+      "then": {
+       "properties": {
+        "active": {
+         "const": false
+        }
+       }
+      }
+     }
+    ],
+    "properties": {
+     "active": {
+      "type": "boolean"
+     },
+     "class": {
+      "enum": [
+       "deterministic",
+       "recorded_model",
+       "proxy_outputs",
+       "live_inference",
+       "tool_use",
+       "simulated",
+       "planned"
+      ]
+     },
+     "description": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "evidence": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "id": {
+      "pattern": "^CAP-[A-Z0-9-]+$",
+      "type": "string"
+     },
+     "owner": {
+      "enum": [
+       "A",
+       "B",
+       "C"
+      ]
+     }
+    },
+    "required": [
+     "id",
+     "class",
+     "owner",
+     "description",
+     "active",
+     "evidence"
+    ],
+    "type": "object"
+   },
+   "minItems": 1,
+   "type": "array"
+  },
+  "contract": {
+   "const": "herbiz.capability_declaration/1.0"
+  },
+  "declared_on": {
+   "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+   "type": "string"
+  },
+  "metrics": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "class": {
+      "enum": [
+       "deterministic",
+       "recorded_model",
+       "proxy_outputs",
+       "live_inference",
+       "tool_use",
+       "simulated",
+       "planned"
+      ]
+     },
+     "date": {
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "type": "string"
+     },
+     "name": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "set": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "value": {
+      "type": [
+       "number",
+       "string"
+      ]
+     }
+    },
+    "required": [
+     "name",
+     "value",
+     "class",
+     "set",
+     "date"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "contract",
+  "declared_on",
+  "build",
+  "capabilities"
+ ],
+ "title": "herbiz.capability_declaration/1.0",
+ "type": "object"
+}

@@ -1,0 +1,10 @@
+{
+ "register": "knowledge_base/CL_source_register.json",
+ "register_version": "1.1.0",
+ "sources": 4,
+ "versions": 5,
+ "candidates": 22,
+ "errors": [],
+ "warnings": [],
+ "valid": true
+}

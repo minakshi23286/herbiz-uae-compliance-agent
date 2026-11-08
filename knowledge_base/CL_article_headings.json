@@ -1,0 +1,1926 @@
+{
+ "_meta": {
+  "generated_by": "rag_c extraction_check.headings",
+  "database": "data/CL_c_readonly_copy.sqlite3 (byte copy of the authoritative DB)",
+  "date": "2026-10-17",
+  "note": "For Workstream B request C-5. Article 1 of the ER has no title (title-less heading). In this DB ER Art. 1 has no passage of its own (use a D10 build)."
+ },
+ "versions": [
+  {
+   "version_id": "FTA-VAT-DL8@v1",
+   "articles": [
+    {
+     "article": "1",
+     "title": "Definitions",
+     "chapter": "Title One – Definitions",
+     "first_locator": "Article 1, pp. 2-7, part 1"
+    },
+    {
+     "article": "2",
+     "title": "Scope of Tax",
+     "chapter": "Title Two – Tax Scope and Rate",
+     "first_locator": "Article 2, p. 7"
+    },
+    {
+     "article": "3",
+     "title": "Tax Rate",
+     "chapter": "Title Two – Tax Scope and Rate",
+     "first_locator": "Article 3, p. 8"
+    },
+    {
+     "article": "4",
+     "title": "Responsibility for Tax",
+     "chapter": "Chapter One – Supply of Goods and Services",
+     "first_locator": "Article 4, p. 8"
+    },
+    {
+     "article": "5",
+     "title": "Supply of Goods",
+     "chapter": "Chapter One – Supply of Goods and Services",
+     "first_locator": "Article 5, p. 8"
+    },
+    {
+     "article": "6",
+     "title": "Supply of Services",
+     "chapter": "Chapter One – Supply of Goods and Services",
+     "first_locator": "Article 6, p. 8"
+    },
+    {
+     "article": "7",
+     "title": "Supply in Special Cases",
+     "chapter": "Chapter One – Supply of Goods and Services",
+     "first_locator": "Article 7, p. 9"
+    },
+    {
+     "article": "8",
+     "title": "Supply consisting of more than one component",
+     "chapter": "Chapter One – Supply of Goods and Services",
+     "first_locator": "Article 8, p. 9"
+    },
+    {
+     "article": "9",
+     "title": "Supply via Agent",
+     "chapter": "Chapter One – Supply of Goods and Services",
+     "first_locator": "Article 9, p. 9"
+    },
+    {
+     "article": "10",
+     "title": "Supply by Government Entities",
+     "chapter": "Chapter Two – Deemed Supply",
+     "first_locator": "Article 10, pp. 9-10"
+    },
+    {
+     "article": "11",
+     "title": "Cases of Deemed Supply",
+     "chapter": "Chapter Two – Deemed Supply",
+     "first_locator": "Article 11, p. 10"
+    },
+    {
+     "article": "12",
+     "title": "Exceptions from Deemed Supply",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 12, pp. 10-11"
+    },
+    {
+     "article": "13",
+     "title": "Mandatory Tax Registration",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 13, p. 11"
+    },
+    {
+     "article": "14",
+     "title": "Tax Group",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 14, pp. 11-12"
+    },
+    {
+     "article": "15",
+     "title": "Registration Exception",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 15, p. 12"
+    },
+    {
+     "article": "16",
+     "title": "Tax Registration of Government Entities",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 16, p. 12"
+    },
+    {
+     "article": "17",
+     "title": "Voluntary Registration",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 17, pp. 12-13"
+    },
+    {
+     "article": "18",
+     "title": "Tax Registration for a Non-Resident",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 18, p. 13"
+    },
+    {
+     "article": "19",
+     "title": "Calculating the Tax Registration Threshold",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 19, p. 13"
+    },
+    {
+     "article": "20",
+     "title": "Capital Assets",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 20, p. 13"
+    },
+    {
+     "article": "21",
+     "title": "Tax Deregistration Cases",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 21, pp. 13-14"
+    },
+    {
+     "article": "22",
+     "title": "Application for Tax Deregistration",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 22, p. 14"
+    },
+    {
+     "article": "23",
+     "title": "Voluntary Tax Deregistration",
+     "chapter": "Title Four – Tax Registration and Deregistration",
+     "first_locator": "Article 23, p. 14"
+    },
+    {
+     "article": "24",
+     "title": "Procedures, Controls and Conditions of Tax",
+     "chapter": "Chapter One – Date of Supply",
+     "first_locator": "Article 24, p. 14"
+    },
+    {
+     "article": "25",
+     "title": "Date of Supply",
+     "chapter": "Chapter One – Date of Supply",
+     "first_locator": "Article 25, pp. 14-15"
+    },
+    {
+     "article": "26",
+     "title": "Date of Supply in Special Cases",
+     "chapter": "Chapter Two – Place of Supply",
+     "first_locator": "Article 26, p. 15"
+    },
+    {
+     "article": "27",
+     "title": "Place of Supply of Goods",
+     "chapter": "Chapter Two – Place of Supply",
+     "first_locator": "Article 27, pp. 15-16"
+    },
+    {
+     "article": "28",
+     "title": "Place of Supply of Water and Energy",
+     "chapter": "Chapter Two – Place of Supply",
+     "first_locator": "Article 28, pp. 16-17"
+    },
+    {
+     "article": "29",
+     "title": "Place of Supply of Services",
+     "chapter": "Chapter Two – Place of Supply",
+     "first_locator": "Article 29, p. 17"
+    },
+    {
+     "article": "30",
+     "title": "Place of Supply in Special Cases",
+     "chapter": "Chapter Two – Place of Supply",
+     "first_locator": "Article 30, p. 17"
+    },
+    {
+     "article": "31",
+     "title": "Place of Supply of Telecommunication and",
+     "chapter": "Chapter Three – Place of Residence",
+     "first_locator": "Article 31, p. 18"
+    },
+    {
+     "article": "32",
+     "title": "Place of Establishment",
+     "chapter": "Chapter Three – Place of Residence",
+     "first_locator": "Article 32, p. 18"
+    },
+    {
+     "article": "33",
+     "title": "The Agent",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 33, pp. 18-19"
+    },
+    {
+     "article": "34",
+     "title": "Value of Supply",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 34, p. 19"
+    },
+    {
+     "article": "35",
+     "title": "Value of Import",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 35, p. 19"
+    },
+    {
+     "article": "36",
+     "title": "Value of Supply and Deemed Supply for Related",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 36, pp. 19-20"
+    },
+    {
+     "article": "37",
+     "title": "Value of Deemed Supply",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 37, p. 20"
+    },
+    {
+     "article": "38",
+     "title": "Tax-Inclusive Prices",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 38, p. 20"
+    },
+    {
+     "article": "39",
+     "title": "Value of Supply in case of Discount or Subsidies",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 39, p. 20"
+    },
+    {
+     "article": "40",
+     "title": "Value of Supply of Vouchers",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 40, p. 20"
+    },
+    {
+     "article": "41",
+     "title": "Value of Supply of Postage Stamps",
+     "chapter": "Chapter Four – Value of Supply",
+     "first_locator": "Article 41, p. 20"
+    },
+    {
+     "article": "42",
+     "title": "Temporary Transfer of Goods",
+     "chapter": "Chapter Five - Profit Margin",
+     "first_locator": "Article 42, p. 21"
+    },
+    {
+     "article": "43",
+     "title": "Charging Tax based on Profit Margin",
+     "chapter": "Chapter One – Zero Rate",
+     "first_locator": "Article 43, p. 21"
+    },
+    {
+     "article": "44",
+     "title": "Supply and Import Taxable at Zero Rate",
+     "chapter": "Chapter One – Zero Rate",
+     "first_locator": "Article 44, p. 21"
+    },
+    {
+     "article": "45",
+     "title": "Goods and Services Subject to Zero Rate",
+     "chapter": "Chapter One – Zero Rate",
+     "first_locator": "Article 45, pp. 21-23, part 1"
+    },
+    {
+     "article": "46",
+     "title": "Supply Exempt from Tax",
+     "chapter": "Chapter Three – Single and Mixed Supplies",
+     "first_locator": "Article 46, p. 23"
+    },
+    {
+     "article": "47",
+     "title": "Supply Consisting of More Than One Component",
+     "chapter": "Chapter Four- Specific Obligations to Account for Tax",
+     "first_locator": "Article 47, p. 23"
+    },
+    {
+     "article": "48",
+     "title": "Reverse Charge",
+     "chapter": "Chapter Four- Specific Obligations to Account for Tax",
+     "first_locator": "Article 48, pp. 23-25, part 1"
+    },
+    {
+     "article": "49",
+     "title": "Import of Concerned Goods",
+     "chapter": "Chapter Five - Designated Zones",
+     "first_locator": "Article 49, p. 25"
+    },
+    {
+     "article": "50",
+     "title": "Designated Zone",
+     "chapter": "Chapter Five - Designated Zones",
+     "first_locator": "Article 50, p. 25"
+    },
+    {
+     "article": "51",
+     "title": "Transfer of Goods in Designated Zones",
+     "chapter": "Chapter Five - Designated Zones",
+     "first_locator": "Article 51, p. 25"
+    },
+    {
+     "article": "52",
+     "title": "Exceptions for Designated Zone",
+     "chapter": "Chapter One – Due Tax for a Tax Period",
+     "first_locator": "Article 52, p. 25"
+    },
+    {
+     "article": "53",
+     "title": "Calculation of Payable Tax",
+     "chapter": "Chapter One – Due Tax for a Tax Period",
+     "first_locator": "Article 53, pp. 25-26"
+    },
+    {
+     "article": "54",
+     "title": "Recoverable Input Tax",
+     "chapter": "Chapter One – Due Tax for a Tax Period",
+     "first_locator": "Article 54, p. 26"
+    },
+    {
+     "article": "55",
+     "title": "Recovery of Recoverable Input Tax in the Tax",
+     "chapter": "Chapter One – Due Tax for a Tax Period",
+     "first_locator": "Article 55, pp. 26-27"
+    },
+    {
+     "article": "56",
+     "title": "Input Tax Paid before Tax Registration",
+     "chapter": "Chapter One – Due Tax for a Tax Period",
+     "first_locator": "Article 56, pp. 27-28"
+    },
+    {
+     "article": "57",
+     "title": "Recovery of Tax by Government Entities and",
+     "chapter": "Chapter Two – Apportionment and Adjustment of Input Tax",
+     "first_locator": "Article 57, p. 28"
+    },
+    {
+     "article": "58",
+     "title": "Calculating the Input Tax that may be Recovered",
+     "chapter": "Chapter Two – Apportionment and Adjustment of Input Tax",
+     "first_locator": "Article 58, p. 28"
+    },
+    {
+     "article": "59",
+     "title": "Conditions and Mechanism of Input Tax Adjustment",
+     "chapter": "Chapter Three – Capital Assets Scheme",
+     "first_locator": "Article 59, pp. 28-29"
+    },
+    {
+     "article": "60",
+     "title": "Capital Assets Scheme",
+     "chapter": "Chapter Four – Adjustment of Tax after the Supply Date",
+     "first_locator": "Article 60, p. 29"
+    },
+    {
+     "article": "61",
+     "title": "Instances and Conditions for Output Tax",
+     "chapter": "Chapter Four – Adjustment of Tax after the Supply Date",
+     "first_locator": "Article 61, pp. 29-30"
+    },
+    {
+     "article": "62",
+     "title": "Mechanism for Output Tax Adjustment",
+     "chapter": "Chapter Four – Adjustment of Tax after the Supply Date",
+     "first_locator": "Article 62, p. 30"
+    },
+    {
+     "article": "63",
+     "title": "Adjustment due to the Issuance of Tax Credit Notes",
+     "chapter": "Chapter Four – Adjustment of Tax after the Supply Date",
+     "first_locator": "Article 63, pp. 30-31"
+    },
+    {
+     "article": "64",
+     "title": "Adjustment for Bad Debts",
+     "chapter": "Chapter Five – Tax Invoices",
+     "first_locator": "Article 64, pp. 31-32"
+    },
+    {
+     "article": "65",
+     "title": "Conditions and Requirements for Issuing Tax",
+     "chapter": "Chapter Five – Tax Invoices",
+     "first_locator": "Article 65, p. 32"
+    },
+    {
+     "article": "66",
+     "title": "Document of Supplies to an Implementing State",
+     "chapter": "Chapter Five – Tax Invoices",
+     "first_locator": "Article 66, p. 32"
+    },
+    {
+     "article": "67",
+     "title": "Date of Issuance of Tax Invoice",
+     "chapter": "Chapter Five – Tax Invoices",
+     "first_locator": "Article 67, p. 33"
+    },
+    {
+     "article": "68",
+     "title": "Rounding on Tax Invoices",
+     "chapter": "Chapter Five – Tax Invoices",
+     "first_locator": "Article 68, p. 33"
+    },
+    {
+     "article": "69",
+     "title": "Currency Used on Tax Invoices",
+     "chapter": "Chapter Six – Tax Credit Notes",
+     "first_locator": "Article 69, p. 33"
+    },
+    {
+     "article": "70",
+     "title": "Conditions and Requirements for Issuing the Tax",
+     "chapter": "Chapter One – Tax Period",
+     "first_locator": "Article 70, pp. 33-34"
+    },
+    {
+     "article": "71",
+     "title": "Duration of Tax Period",
+     "chapter": "Chapter Two – Tax Returns and Tax Settlement",
+     "first_locator": "Article 71, p. 34"
+    },
+    {
+     "article": "72",
+     "title": "Submission of Tax Returns",
+     "chapter": "Chapter Two – Tax Returns and Tax Settlement",
+     "first_locator": "Article 72, p. 34"
+    },
+    {
+     "article": "73",
+     "title": "Settlement of Tax",
+     "chapter": "Chapter Three – Carrying forward the Excess of Recoverable Tax",
+     "first_locator": "Article 73, pp. 34-35"
+    },
+    {
+     "article": "74",
+     "title": "Excess Recoverable Tax",
+     "chapter": "Chapter Four – Other Provisions on Recovery of Tax",
+     "first_locator": "Article 74, p. 35"
+    },
+    {
+     "article": "75",
+     "title": "Tax Recovery in Special Cases",
+     "chapter": "Title Nine – Violations and Penalties",
+     "first_locator": "Article 75, pp. 35-36"
+    },
+    {
+     "article": "76",
+     "title": "Administrative Penalties Assessment",
+     "chapter": "Title Nine – Violations and Penalties",
+     "first_locator": "Article 76, p. 36"
+    },
+    {
+     "article": "77",
+     "title": "Tax Evasion",
+     "chapter": "Title Ten – General Provisions",
+     "first_locator": "Article 77, pp. 36-37"
+    },
+    {
+     "article": "78",
+     "title": "Record-keeping",
+     "chapter": "Title Ten – General Provisions",
+     "first_locator": "Article 78, p. 37"
+    },
+    {
+     "article": "79",
+     "title": "Stating the Tax Registration Number",
+     "chapter": "Title Ten – General Provisions",
+     "first_locator": "Article 79, p. 38"
+    },
+    {
+     "article": "79 (bis)",
+     "title": "Statute of Limitation",
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 79 (bis), pp. 38-39"
+    },
+    {
+     "article": "80",
+     "title": "Transitional Rules",
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 80, p. 39"
+    },
+    {
+     "article": "81",
+     "title": "Revenue Sharing",
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 81, p. 39"
+    },
+    {
+     "article": "82",
+     "title": "Executive Regulation",
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 82, p. 40"
+    },
+    {
+     "article": "83",
+     "title": null,
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 83, p. 40"
+    },
+    {
+     "article": "84",
+     "title": "Cancellation of Conflicting Provisions",
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 84, p. 40"
+    },
+    {
+     "article": "85",
+     "title": "Effective Date of this Decree-Law and its Application",
+     "chapter": "Title Eleven – Closing Provisions",
+     "first_locator": "Article 85, p. 40"
+    }
+   ],
+   "untitled": [
+    "83"
+   ]
+  },
+  {
+   "version_id": "FTA-VAT-ER@v1",
+   "articles": [
+    {
+     "article": "2",
+     "title": "Supply of Goods",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 2, pp. 2-3"
+    },
+    {
+     "article": "3",
+     "title": "Supply of Services",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 3, p. 3"
+    },
+    {
+     "article": "3 (bis)",
+     "title": "Exceptions of Supplies",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 3 (bis), p. 4"
+    },
+    {
+     "article": "4",
+     "title": "Supply of More Than One Component",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 4, pp. 4-5"
+    },
+    {
+     "article": "5",
+     "title": "Exceptions related to Deemed Supply",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 5, pp. 5-6"
+    },
+    {
+     "article": "6",
+     "title": "Application for Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 6, p. 6"
+    },
+    {
+     "article": "7",
+     "title": "Mandatory Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 7, pp. 6-7"
+    },
+    {
+     "article": "8",
+     "title": "Voluntary Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 8, p. 7"
+    },
+    {
+     "article": "9",
+     "title": "Related Parties",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 9, pp. 7-8"
+    },
+    {
+     "article": "10",
+     "title": "Registration as a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 10, pp. 8-10"
+    },
+    {
+     "article": "11",
+     "title": "Amendments to a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 11, p. 10"
+    },
+    {
+     "article": "12",
+     "title": "Effect of registration as a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 12, pp. 10-11"
+    },
+    {
+     "article": "13",
+     "title": "Aggregation of Related Parties",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 13, p. 11"
+    },
+    {
+     "article": "14",
+     "title": "Tax Deregistration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 14, pp. 12-13, part 1"
+    },
+    {
+     "article": "14 (bis)",
+     "title": "Tax Deregistration to Protect the Integrity of",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 14 (bis), p. 13"
+    },
+    {
+     "article": "15",
+     "title": "Deregistration of a Tax Group Registration or",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 15, p. 14"
+    },
+    {
+     "article": "16",
+     "title": "Exception from Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 16, p. 15"
+    },
+    {
+     "article": "17",
+     "title": "Registration when the Decree-Law Comes into",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 17, p. 15"
+    },
+    {
+     "article": "18",
+     "title": "Liabilities due before Deregistration",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 18, pp. 15-16"
+    },
+    {
+     "article": "19",
+     "title": "Due Tax at Date of Supply",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 19, p. 16"
+    },
+    {
+     "article": "20",
+     "title": "Place of Supply of Goods Delivered within the State",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 20, p. 16"
+    },
+    {
+     "article": "21",
+     "title": "Place of Supply of Services Related to Real Estate",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 21, pp. 16-17"
+    },
+    {
+     "article": "22",
+     "title": "Place of Supply of Certain Transport Services",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 22, p. 17"
+    },
+    {
+     "article": "23",
+     "title": "Telecommunication and Electronic Services",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 23, pp. 17-18"
+    },
+    {
+     "article": "24",
+     "title": "Evidence for Certain Supplies Between the",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 24, pp. 18-19"
+    },
+    {
+     "article": "25",
+     "title": "Market Value",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 25, p. 19"
+    },
+    {
+     "article": "26",
+     "title": "Apportionment of Single Consideration",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 26, p. 19"
+    },
+    {
+     "article": "27",
+     "title": "Price Excluding Tax",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 27, p. 20"
+    },
+    {
+     "article": "28",
+     "title": "Discounts, Subsidies and Vouchers",
+     "chapter": "Title Five – Profit Margin Scheme",
+     "first_locator": "Article 28, pp. 20-21"
+    },
+    {
+     "article": "29",
+     "title": "Accounting for Tax on the Profit Margin",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 29, pp. 21-22"
+    },
+    {
+     "article": "30",
+     "title": "Zero-rating the export of goods",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 30, pp. 22-24, part 1"
+    },
+    {
+     "article": "31",
+     "title": "Zero-rating the Export of Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 31, pp. 25-26"
+    },
+    {
+     "article": "32",
+     "title": "Zero-Rating Exported Telecommunications Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 32, p. 26"
+    },
+    {
+     "article": "33",
+     "title": "Zero-rating International Transportation Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 33, pp. 26-27"
+    },
+    {
+     "article": "34",
+     "title": "Zero-rating certain Means of Transport",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 34, pp. 27-28"
+    },
+    {
+     "article": "35",
+     "title": "Zero-rating Goods and Services in Connection with",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 35, pp. 28-29"
+    },
+    {
+     "article": "36",
+     "title": "Zero-rating of precious metals",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 36, p. 29"
+    },
+    {
+     "article": "37",
+     "title": "Residential buildings",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 37, p. 29"
+    },
+    {
+     "article": "38",
+     "title": "Zero-rating of Buildings Specifically Designed to be",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 38, p. 30"
+    },
+    {
+     "article": "39",
+     "title": "Zero-rating Converted Residential Building",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 39, p. 30"
+    },
+    {
+     "article": "40",
+     "title": "Zero-rating Education Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 40, pp. 30-31"
+    },
+    {
+     "article": "41",
+     "title": "Zero-rating Healthcare Services",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 41, pp. 31-32"
+    },
+    {
+     "article": "42",
+     "title": "Tax Treatment of Financial Services",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 42, pp. 32-34, part 1"
+    },
+    {
+     "article": "43",
+     "title": "Exemption of Residential Buildings",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 43, p. 34"
+    },
+    {
+     "article": "44",
+     "title": "Exemption of Bare Land",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 44, p. 34"
+    },
+    {
+     "article": "45",
+     "title": "Exemption of Local Passenger Transport Services",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 45, p. 35"
+    },
+    {
+     "article": "46",
+     "title": "Tax on Supplies of More Than One Component",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 46, pp. 35-36"
+    },
+    {
+     "article": "47",
+     "title": "General Rules regarding Import of Goods",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 47, p. 36"
+    },
+    {
+     "article": "48",
+     "title": "Calculation of Tax under the Reverse Charge",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 48, pp. 37-38"
+    },
+    {
+     "article": "49",
+     "title": "Payments for Goods Transferred to another",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 49, p. 38"
+    },
+    {
+     "article": "50",
+     "title": "Special Rules of Import",
+     "chapter": "Title Nine – Designated Zones",
+     "first_locator": "Article 50, pp. 38-39"
+    },
+    {
+     "article": "51",
+     "title": "Designated zones",
+     "chapter": "Title Nine – Designated Zones",
+     "first_locator": "Article 51, pp. 39-41, part 1"
+    },
+    {
+     "article": "52",
+     "title": "Input Tax Recovery in Respect of Exempt Supplies",
+     "chapter": "Title Ten – Calculation of Due Tax",
+     "first_locator": "Article 52, pp. 41-42"
+    },
+    {
+     "article": "53",
+     "title": "Non-recoverable Input Tax",
+     "chapter": "Title Ten – Calculation of Due Tax",
+     "first_locator": "Article 53, pp. 42-43"
+    },
+    {
+     "article": "54",
+     "title": "Special cases of Input tax",
+     "chapter": "Title Eleven – Apportionment of Input Tax",
+     "first_locator": "Article 54, p. 43"
+    },
+    {
+     "article": "55",
+     "title": "Apportionment of Input Tax",
+     "chapter": "Title Eleven – Apportionment of Input Tax",
+     "first_locator": "Article 55, pp. 43-46, part 1"
+    },
+    {
+     "article": "56",
+     "title": "Adjustment of Input Tax Post-Recovery",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 56, pp. 46-47"
+    },
+    {
+     "article": "57",
+     "title": "Assets Considered Capital Assets",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 57, p. 47"
+    },
+    {
+     "article": "58",
+     "title": "Adjustments under the Capital Assets Scheme",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 58, pp. 47-49, part 1"
+    },
+    {
+     "article": "59",
+     "title": "Tax invoices",
+     "chapter": "Title Thirteen – Tax Invoices and Tax Credit Notes",
+     "first_locator": "Article 59, pp. 49-52, part 1"
+    },
+    {
+     "article": "60",
+     "title": "Tax Credit Note",
+     "chapter": "Title Thirteen – Tax Invoices and Tax Credit Notes",
+     "first_locator": "Article 60, pp. 52-54, part 1"
+    },
+    {
+     "article": "61",
+     "title": "Fractions of Fils",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 61, p. 54"
+    },
+    {
+     "article": "62",
+     "title": "Length of tax period",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 62, pp. 54-55"
+    },
+    {
+     "article": "63",
+     "title": "Tax Periods in the Case of Loss of Capacity",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 63, p. 55"
+    },
+    {
+     "article": "64",
+     "title": "Tax Return and Payment",
+     "chapter": "Title Fifteen – Recovery of Excess Tax",
+     "first_locator": "Article 64, pp. 55-56"
+    },
+    {
+     "article": "65",
+     "title": "Recovery of Excess Tax",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 65, p. 56"
+    },
+    {
+     "article": "66",
+     "title": "New residence",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 66, pp. 56-57"
+    },
+    {
+     "article": "67",
+     "title": "Business visitors",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 67, pp. 57-58"
+    },
+    {
+     "article": "68",
+     "title": "Tourist Visitors",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 68, p. 59"
+    },
+    {
+     "article": "69",
+     "title": "Foreign Governments",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 69, pp. 59-60"
+    },
+    {
+     "article": "70",
+     "title": "Transitional rules",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 70, pp. 60-62, part 1"
+    },
+    {
+     "article": "71",
+     "title": "Record-keeping Requirements",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 71, pp. 62-63"
+    },
+    {
+     "article": "72",
+     "title": "Record Keeping of the Supplies Made",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 72, pp. 63-64"
+    },
+    {
+     "article": "73",
+     "title": null,
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 73, p. 64"
+    },
+    {
+     "article": "74",
+     "title": "Repeal of Conflicting Provisions",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 74, p. 64"
+    },
+    {
+     "article": "75",
+     "title": "Publication and Coming into Force of the Decision",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 75, p. 64"
+    }
+   ],
+   "untitled": [
+    "73"
+   ]
+  },
+  {
+   "version_id": "FTA-VAT-ER@v2",
+   "articles": [
+    {
+     "article": "2",
+     "title": "Supply of Goods",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 2, pp. 2-3"
+    },
+    {
+     "article": "3",
+     "title": "Supply of Services",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 3, pp. 3-4"
+    },
+    {
+     "article": "3 (bis)",
+     "title": "Exceptions of Supplies",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 3 (bis), p. 4"
+    },
+    {
+     "article": "4",
+     "title": "Supply of More Than One Component",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 4, pp. 4-5"
+    },
+    {
+     "article": "5",
+     "title": "Exceptions related to Deemed Supply",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 5, pp. 5-6"
+    },
+    {
+     "article": "6",
+     "title": "Application for Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 6, p. 6"
+    },
+    {
+     "article": "7",
+     "title": "Mandatory Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 7, pp. 6-7"
+    },
+    {
+     "article": "8",
+     "title": "Voluntary Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 8, p. 7"
+    },
+    {
+     "article": "9",
+     "title": "Related Parties",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 9, p. 8"
+    },
+    {
+     "article": "10",
+     "title": "Registration as a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 10, pp. 9-10"
+    },
+    {
+     "article": "11",
+     "title": "Amendments to a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 11, p. 10"
+    },
+    {
+     "article": "12",
+     "title": "Effect of registration as a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 12, pp. 10-11"
+    },
+    {
+     "article": "13",
+     "title": "Aggregation of Related Parties",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 13, p. 11"
+    },
+    {
+     "article": "14",
+     "title": "Tax Deregistration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 14, pp. 12-13, part 1"
+    },
+    {
+     "article": "14 (bis)",
+     "title": "Tax Deregistration to Protect the Integrity of",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 14 (bis), p. 13"
+    },
+    {
+     "article": "15",
+     "title": "Deregistration of a Tax Group Registration or",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 15, p. 14"
+    },
+    {
+     "article": "16",
+     "title": "Exception from Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 16, p. 15"
+    },
+    {
+     "article": "17",
+     "title": "Registration when the Decree-Law Comes into",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 17, p. 15"
+    },
+    {
+     "article": "18",
+     "title": "Liabilities due before Deregistration",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 18, pp. 15-16"
+    },
+    {
+     "article": "19",
+     "title": "Due Tax at Date of Supply",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 19, p. 16"
+    },
+    {
+     "article": "20",
+     "title": "Place of Supply of Goods Delivered within the State",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 20, p. 16"
+    },
+    {
+     "article": "21",
+     "title": "Place of Supply of Services Related to Real Estate",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 21, pp. 16-17"
+    },
+    {
+     "article": "22",
+     "title": "Place of Supply of Certain Transport Services",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 22, p. 17"
+    },
+    {
+     "article": "23",
+     "title": "Telecommunication and Electronic Services",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 23, pp. 17-18"
+    },
+    {
+     "article": "24",
+     "title": "Evidence for Certain Supplies Between the",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 24, pp. 18-19"
+    },
+    {
+     "article": "25",
+     "title": "Market Value",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 25, p. 19"
+    },
+    {
+     "article": "26",
+     "title": "Apportionment of Single Consideration",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 26, p. 19"
+    },
+    {
+     "article": "27",
+     "title": "Price Excluding Tax",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 27, p. 20"
+    },
+    {
+     "article": "28",
+     "title": "Discounts, Subsidies and Vouchers",
+     "chapter": "Title Five – Profit Margin Scheme",
+     "first_locator": "Article 28, pp. 20-21"
+    },
+    {
+     "article": "29",
+     "title": "Accounting for Tax on the Profit Margin",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 29, pp. 21-22"
+    },
+    {
+     "article": "30",
+     "title": "Zero-rating the export of goods",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 30, pp. 22-24, part 1"
+    },
+    {
+     "article": "31",
+     "title": "Zero-rating the Export of Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 31, pp. 25-26"
+    },
+    {
+     "article": "32",
+     "title": "Zero-Rating Exported Telecommunications Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 32, p. 26"
+    },
+    {
+     "article": "33",
+     "title": "Zero-rating International Transportation Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 33, pp. 26-27"
+    },
+    {
+     "article": "34",
+     "title": "Zero-rating certain Means of Transport",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 34, pp. 27-28"
+    },
+    {
+     "article": "35",
+     "title": "Zero-rating Goods and Services in Connection with",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 35, pp. 28-29"
+    },
+    {
+     "article": "36",
+     "title": "Zero-rating of precious metals",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 36, p. 29"
+    },
+    {
+     "article": "37",
+     "title": "Residential buildings",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 37, p. 29"
+    },
+    {
+     "article": "38",
+     "title": "Zero-rating of Buildings Specifically Designed to be",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 38, p. 30"
+    },
+    {
+     "article": "39",
+     "title": "Zero-rating Converted Residential Building",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 39, p. 30"
+    },
+    {
+     "article": "40",
+     "title": "Zero-rating Education Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 40, pp. 30-31"
+    },
+    {
+     "article": "41",
+     "title": "Zero-rating Healthcare Services",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 41, pp. 31-32"
+    },
+    {
+     "article": "42",
+     "title": "Tax Treatment of Financial Services",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 42, pp. 32-34, part 1"
+    },
+    {
+     "article": "43",
+     "title": "Exemption of Residential Buildings",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 43, p. 34"
+    },
+    {
+     "article": "44",
+     "title": "Exemption of Bare Land",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 44, p. 34"
+    },
+    {
+     "article": "45",
+     "title": "Exemption of Local Passenger Transport Services",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 45, p. 35"
+    },
+    {
+     "article": "46",
+     "title": "Tax on Supplies of More Than One Component",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 46, pp. 35-36"
+    },
+    {
+     "article": "47",
+     "title": "General Rules regarding Import of Goods",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 47, p. 36"
+    },
+    {
+     "article": "48",
+     "title": "Calculation of Tax under the Reverse Charge",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 48, pp. 37-38"
+    },
+    {
+     "article": "49",
+     "title": "Payments for Goods Transferred to another",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 49, p. 38"
+    },
+    {
+     "article": "50",
+     "title": "Special Rules of Import",
+     "chapter": "Title Nine – Designated Zones",
+     "first_locator": "Article 50, pp. 38-39"
+    },
+    {
+     "article": "51",
+     "title": "Designated zones",
+     "chapter": "Title Nine – Designated Zones",
+     "first_locator": "Article 51, pp. 39-41, part 1"
+    },
+    {
+     "article": "52",
+     "title": "Input Tax Recovery in Respect of Exempt Supplies",
+     "chapter": "Title Ten – Calculation of Due Tax",
+     "first_locator": "Article 52, pp. 41-42"
+    },
+    {
+     "article": "53",
+     "title": "Non-recoverable Input Tax",
+     "chapter": "Title Ten – Calculation of Due Tax",
+     "first_locator": "Article 53, pp. 42-43"
+    },
+    {
+     "article": "54",
+     "title": "Special cases of Input tax",
+     "chapter": "Title Eleven – Apportionment of Input Tax",
+     "first_locator": "Article 54, p. 43"
+    },
+    {
+     "article": "55",
+     "title": "Apportionment of Input Tax",
+     "chapter": "Title Eleven – Apportionment of Input Tax",
+     "first_locator": "Article 55, pp. 43-46, part 1"
+    },
+    {
+     "article": "56",
+     "title": "Adjustment of Input Tax Post-Recovery",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 56, pp. 46-47"
+    },
+    {
+     "article": "57",
+     "title": "Assets Considered Capital Assets",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 57, p. 47"
+    },
+    {
+     "article": "58",
+     "title": "Adjustments under the Capital Assets Scheme",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 58, pp. 47-49, part 1"
+    },
+    {
+     "article": "59",
+     "title": "Tax invoices 32,",
+     "chapter": "Title Thirteen – Tax Invoices and Tax Credit Notes",
+     "first_locator": "Article 59, pp. 49-52, part 1"
+    },
+    {
+     "article": "60",
+     "title": "Tax Credit Note 34,",
+     "chapter": "Title Thirteen – Tax Invoices and Tax Credit Notes",
+     "first_locator": "Article 60, pp. 53-54, part 1"
+    },
+    {
+     "article": "61",
+     "title": "Fractions of Fils",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 61, pp. 54-55"
+    },
+    {
+     "article": "62",
+     "title": "Length of tax period",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 62, p. 55"
+    },
+    {
+     "article": "63",
+     "title": "Tax Periods in the Case of Loss of Capacity",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 63, p. 55"
+    },
+    {
+     "article": "64",
+     "title": "Tax Return and Payment",
+     "chapter": "Title Fifteen – Recovery of Excess Tax",
+     "first_locator": "Article 64, pp. 56-57"
+    },
+    {
+     "article": "65",
+     "title": "Recovery of Excess Tax",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 65, p. 57"
+    },
+    {
+     "article": "66",
+     "title": "New residence",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 66, pp. 57-58"
+    },
+    {
+     "article": "67",
+     "title": "Business visitors",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 67, pp. 58-59"
+    },
+    {
+     "article": "68",
+     "title": "Tourist Visitors",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 68, pp. 59-60"
+    },
+    {
+     "article": "69",
+     "title": "Foreign Governments",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 69, pp. 60-61"
+    },
+    {
+     "article": "70",
+     "title": "Transitional rules",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 70, pp. 61-63, part 1"
+    },
+    {
+     "article": "71",
+     "title": "Record-keeping Requirements",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 71, p. 63"
+    },
+    {
+     "article": "72",
+     "title": "Record Keeping of the Supplies Made",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 72, pp. 63-64"
+    },
+    {
+     "article": "73",
+     "title": null,
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 73, p. 64"
+    },
+    {
+     "article": "74",
+     "title": "Repeal of Conflicting Provisions",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 74, p. 65"
+    },
+    {
+     "article": "75",
+     "title": "Publication and Coming into Force of the Decision",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 75, p. 65"
+    }
+   ],
+   "untitled": [
+    "73"
+   ]
+  },
+  {
+   "version_id": "FTA-VAT-ER@v3",
+   "articles": [
+    {
+     "article": "2",
+     "title": "Supply of Goods",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 2, pp. 2-3"
+    },
+    {
+     "article": "3",
+     "title": "Supply of Services",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 3, pp. 3-4"
+    },
+    {
+     "article": "3 (bis)",
+     "title": "Exceptions of Supplies",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 3 (bis), p. 4"
+    },
+    {
+     "article": "4",
+     "title": "Supply of More Than One Component",
+     "chapter": "Title Two – Supply",
+     "first_locator": "Article 4, pp. 4-5"
+    },
+    {
+     "article": "5",
+     "title": "Exceptions related to Deemed Supply",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 5, pp. 5-6"
+    },
+    {
+     "article": "6",
+     "title": "Application for Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 6, p. 6"
+    },
+    {
+     "article": "7",
+     "title": "Mandatory Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 7, pp. 6-7"
+    },
+    {
+     "article": "8",
+     "title": "Voluntary Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 8, p. 7"
+    },
+    {
+     "article": "9",
+     "title": "Related Parties",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 9, p. 8"
+    },
+    {
+     "article": "10",
+     "title": "Registration as a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 10, pp. 9-10"
+    },
+    {
+     "article": "11",
+     "title": "Amendments to a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 11, p. 10"
+    },
+    {
+     "article": "12",
+     "title": "Effect of registration as a Tax Group",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 12, pp. 10-11"
+    },
+    {
+     "article": "13",
+     "title": "Aggregation of Related Parties",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 13, p. 11"
+    },
+    {
+     "article": "14",
+     "title": "Tax Deregistration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 14, pp. 12-13, part 1"
+    },
+    {
+     "article": "14 (bis)",
+     "title": "Tax Deregistration to Protect the Integrity of",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 14 (bis), p. 13"
+    },
+    {
+     "article": "15",
+     "title": "Deregistration of a Tax Group Registration or",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 15, p. 14"
+    },
+    {
+     "article": "16",
+     "title": "Exception from Registration",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 16, p. 15"
+    },
+    {
+     "article": "17",
+     "title": "Registration when the Decree-Law Comes into",
+     "chapter": "Title Three – Registration",
+     "first_locator": "Article 17, p. 15"
+    },
+    {
+     "article": "18",
+     "title": "Liabilities due before Deregistration",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 18, pp. 15-16"
+    },
+    {
+     "article": "19",
+     "title": "Due Tax at Date of Supply",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 19, p. 16"
+    },
+    {
+     "article": "20",
+     "title": "Place of Supply of Goods Delivered within the State",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 20, p. 16"
+    },
+    {
+     "article": "21",
+     "title": "Place of Supply of Services Related to Real Estate",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 21, pp. 16-17"
+    },
+    {
+     "article": "22",
+     "title": "Place of Supply of Certain Transport Services",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 22, p. 17"
+    },
+    {
+     "article": "23",
+     "title": "Telecommunication and Electronic Services",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 23, pp. 17-18"
+    },
+    {
+     "article": "24",
+     "title": "Evidence for Certain Supplies Between the",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 24, pp. 18-19"
+    },
+    {
+     "article": "25",
+     "title": "Market Value",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 25, p. 19"
+    },
+    {
+     "article": "26",
+     "title": "Apportionment of Single Consideration",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 26, p. 19"
+    },
+    {
+     "article": "27",
+     "title": "Price Excluding Tax",
+     "chapter": "Title Four – Rules Relating to Supplies",
+     "first_locator": "Article 27, p. 20"
+    },
+    {
+     "article": "28",
+     "title": "Discounts, Subsidies and Vouchers",
+     "chapter": "Title Five – Profit Margin Scheme",
+     "first_locator": "Article 28, pp. 20-21"
+    },
+    {
+     "article": "29",
+     "title": "Accounting for Tax on the Profit Margin",
+     "chapter": "Title Five – Profit Margin Scheme",
+     "first_locator": "Article 29, pp. 21-22, part 1"
+    },
+    {
+     "article": "30",
+     "title": "Zero-rating the export of goods",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 30, pp. 22-25, part 1"
+    },
+    {
+     "article": "31",
+     "title": "Zero-rating the Export of Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 31, pp. 25-26"
+    },
+    {
+     "article": "32",
+     "title": "Zero-Rating Exported Telecommunications Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 32, p. 26"
+    },
+    {
+     "article": "33",
+     "title": "Zero-rating International Transportation Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 33, p. 27"
+    },
+    {
+     "article": "34",
+     "title": "Zero-rating certain Means of Transport",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 34, pp. 27-28"
+    },
+    {
+     "article": "35",
+     "title": "Zero-rating Goods and Services in Connection with",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 35, pp. 28-29"
+    },
+    {
+     "article": "36",
+     "title": "Zero-rating of precious metals",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 36, p. 29"
+    },
+    {
+     "article": "37",
+     "title": "Residential buildings",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 37, pp. 29-30"
+    },
+    {
+     "article": "38",
+     "title": "Zero-rating of Buildings Specifically Designed to be",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 38, p. 30"
+    },
+    {
+     "article": "39",
+     "title": "Zero-rating Converted Residential Building",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 39, p. 30"
+    },
+    {
+     "article": "40",
+     "title": "Zero-rating Education Services",
+     "chapter": "Title Six – Supplies Subject to the Zero Rate",
+     "first_locator": "Article 40, pp. 30-32"
+    },
+    {
+     "article": "41",
+     "title": "Zero-rating Healthcare Services",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 41, p. 32"
+    },
+    {
+     "article": "42",
+     "title": "Tax Treatment of Financial Services",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 42, pp. 32-34, part 1"
+    },
+    {
+     "article": "43",
+     "title": "Exemption of Residential Buildings",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 43, pp. 34-35"
+    },
+    {
+     "article": "44",
+     "title": "Exemption of Bare Land",
+     "chapter": "Title Seven – Exempt Supplies",
+     "first_locator": "Article 44, p. 35"
+    },
+    {
+     "article": "45",
+     "title": "Exemption of Local Passenger Transport Services",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 45, pp. 35-36"
+    },
+    {
+     "article": "46",
+     "title": "Tax on Supplies of More Than One Component",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 46, p. 36"
+    },
+    {
+     "article": "47",
+     "title": "General Rules regarding Import of Goods",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 47, pp. 36-37"
+    },
+    {
+     "article": "48",
+     "title": "Calculation of Tax under the Reverse Charge",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 48, pp. 37-38"
+    },
+    {
+     "article": "49",
+     "title": "Payments for Goods Transferred to another",
+     "chapter": "Title Eight – Accounting for Tax on Certain Supplies",
+     "first_locator": "Article 49, p. 38"
+    },
+    {
+     "article": "50",
+     "title": "Special Rules of Import",
+     "chapter": "Title Nine – Designated Zones",
+     "first_locator": "Article 50, pp. 38-39"
+    },
+    {
+     "article": "51",
+     "title": "Designated zones",
+     "chapter": "Title Nine – Designated Zones",
+     "first_locator": "Article 51, pp. 39-41, part 1"
+    },
+    {
+     "article": "52",
+     "title": "Input Tax Recovery in Respect of Exempt Supplies",
+     "chapter": "Title Ten – Calculation of Due Tax",
+     "first_locator": "Article 52, pp. 41-42"
+    },
+    {
+     "article": "53",
+     "title": "Non-recoverable Input Tax",
+     "chapter": "Title Ten – Calculation of Due Tax",
+     "first_locator": "Article 53, pp. 42-43, part 1"
+    },
+    {
+     "article": "54",
+     "title": "Special cases of Input tax",
+     "chapter": "Title Eleven – Apportionment of Input Tax",
+     "first_locator": "Article 54, pp. 43-44"
+    },
+    {
+     "article": "55",
+     "title": "Apportionment of Input Tax",
+     "chapter": "Title Eleven – Apportionment of Input Tax",
+     "first_locator": "Article 55, pp. 44-47, part 1"
+    },
+    {
+     "article": "56",
+     "title": "Adjustment of Input Tax Post-Recovery",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 56, pp. 47-48"
+    },
+    {
+     "article": "57",
+     "title": "Assets Considered Capital Assets",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 57, pp. 48-49"
+    },
+    {
+     "article": "58",
+     "title": "Adjustments under the Capital Assets Scheme",
+     "chapter": "Title Twelve – Capital Asset Scheme",
+     "first_locator": "Article 58, pp. 49-51, part 1"
+    },
+    {
+     "article": "59",
+     "title": "Tax invoices 43,",
+     "chapter": "Title Thirteen – Tax Invoices and Tax Credit Notes",
+     "first_locator": "Article 59, pp. 51-54, part 1"
+    },
+    {
+     "article": "60",
+     "title": "Tax Credit Note 45,",
+     "chapter": "Title Thirteen – Tax Invoices and Tax Credit Notes",
+     "first_locator": "Article 60, pp. 54-56, part 1"
+    },
+    {
+     "article": "61",
+     "title": "Fractions of Fils",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 61, p. 56"
+    },
+    {
+     "article": "62",
+     "title": "Length of tax period",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 62, p. 56"
+    },
+    {
+     "article": "63",
+     "title": "Tax Periods in the Case of Loss of Capacity",
+     "chapter": "Title Fourteen – Tax Returns and Tax Periods",
+     "first_locator": "Article 63, p. 57"
+    },
+    {
+     "article": "64",
+     "title": "Tax Return and Payment",
+     "chapter": "Title Fifteen – Recovery of Excess Tax",
+     "first_locator": "Article 64, pp. 57-58"
+    },
+    {
+     "article": "65",
+     "title": "Recovery of Excess Tax",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 65, p. 58"
+    },
+    {
+     "article": "66",
+     "title": "New residence",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 66, pp. 58-59"
+    },
+    {
+     "article": "67",
+     "title": "Business visitors",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 67, pp. 59-60"
+    },
+    {
+     "article": "68",
+     "title": "Tourist Visitors",
+     "chapter": "Title Sixteen – Other Provisions Relating to Recovery",
+     "first_locator": "Article 68, pp. 60-61"
+    },
+    {
+     "article": "69",
+     "title": "Foreign Governments",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 69, pp. 61-62"
+    },
+    {
+     "article": "70",
+     "title": "Transitional rules",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 70, pp. 62-64, part 1"
+    },
+    {
+     "article": "71",
+     "title": "Record-keeping Requirements",
+     "chapter": "Title Seventeen",
+     "first_locator": "Article 71, p. 64"
+    },
+    {
+     "article": "72",
+     "title": "Record Keeping of the Supplies Made",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 72, pp. 64-66"
+    },
+    {
+     "article": "73",
+     "title": null,
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 73, p. 66"
+    },
+    {
+     "article": "74",
+     "title": "Repeal of Conflicting Provisions",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 74, p. 66"
+    },
+    {
+     "article": "75",
+     "title": "Publication and Coming into Force of the Decision",
+     "chapter": "Title Eighteen – Closing Provisions",
+     "first_locator": "Article 75, p. 66"
+    }
+   ],
+   "untitled": [
+    "73"
+   ]
+  }
+ ]
+}

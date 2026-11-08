@@ -1,0 +1,221 @@
+{
+  "_notice": "Independent blind set v4 for HerBiz retrieval, written by a fresh agent from general knowledge + article title list only; not tax-reviewed; not legal advice.",
+  "questions": [
+    {
+      "id": "X01",
+      "category": "realistic_scenario",
+      "topic": "mandatory registration threshold",
+      "text": "hi, I run a home bakery from my villa in Sharjah, doing roughly 28k a month in cakes and dessert boxes, sometimes more around Eid. Nobody told me anything about VAT when I got my licence. Do I actually have to register or is that only for big shops?",
+      "required_sources": [["FTA-VAT-DL8", "13"], ["FTA-VAT-ER", "7"]],
+      "supporting_sources": [["FTA-VAT-REG-PAGE", null], ["FTA-VAT-DL8", "19"]],
+      "source_rationale": "About AED 336k a year plus expected peaks puts her near the AED 375,000 mandatory threshold; Art 13 and ER Art 7 set the obligation, and Art 19 / the FTA page explain the threshold test."
+    },
+    {
+      "id": "X02",
+      "category": "realistic_scenario",
+      "topic": "voluntary registration",
+      "text": "My henna and bridal makeup business made about AED 200,000 last year. I'm under the big limit but a corporate client says they prefer suppliers with a TRN. Can I register for VAT even though I don't have to? What do I need to show?",
+      "required_sources": [["FTA-VAT-DL8", "17"], ["FTA-VAT-ER", "8"]],
+      "supporting_sources": [["FTA-VAT-REG-PAGE", null]],
+      "source_rationale": "Turnover above AED 187,500 but below 375,000 is the voluntary registration band set by Art 17 and ER Art 8."
+    },
+    {
+      "id": "X03",
+      "category": "realistic_scenario",
+      "topic": "counting turnover for threshold",
+      "text": "Quick one - for the 375k thing, do I count the money I got from selling my old industrial oven (35k) and the stuff I import from Turkey for my own use? My actual product sales are about 340k this year.",
+      "required_sources": [["FTA-VAT-DL8", "19"], ["FTA-VAT-DL8", "20"]],
+      "supporting_sources": [["FTA-VAT-ER", "7"], ["FTA-VAT-DL8", "13"]],
+      "source_rationale": "Art 19 sets how the registration threshold is calculated (including imports), and Art 20 covers capital assets, whose sale is relevant to whether the oven sale counts."
+    },
+    {
+      "id": "X04",
+      "category": "realistic_scenario",
+      "topic": "registration deadline",
+      "text": "I just checked my numbers and I crossed AED 375,000 over the last 12 months at the end of August. How long do I have to apply? Is it from when I crossed or from when I noticed?",
+      "required_sources": [["FTA-VAT-ER", "7"]],
+      "supporting_sources": [["FTA-VAT-DL8", "13"], ["FTA-VAT-ER", "6"], ["FTA-VAT-DL8", "76"]],
+      "source_rationale": "ER Art 7 sets the time limit to apply after exceeding the threshold and the effective date of registration; late registration links to penalties under Art 76."
+    },
+    {
+      "id": "X05",
+      "category": "realistic_scenario",
+      "topic": "deregistration on closing business",
+      "text": "I'm shutting down my handmade candle business completely next month, I'll cancel the trade licence too. I'm VAT registered. Do I need to cancel the VAT as well and is there a deadline? What happens to the stock I still have?",
+      "required_sources": [["FTA-VAT-DL8", "21"], ["FTA-VAT-ER", "14"]],
+      "supporting_sources": [["FTA-VAT-DL8", "22"], ["FTA-VAT-ER", "18"], ["FTA-VAT-DL8", "11"]],
+      "source_rationale": "Stopping taxable supplies triggers deregistration under Art 21 and ER Art 14; ER Art 18 covers liabilities before deregistration and deemed supply may apply to remaining stock."
+    },
+    {
+      "id": "X06",
+      "category": "realistic_scenario",
+      "topic": "tax group",
+      "text": "My husband has a trading LLC (VAT registered) and I have my own tailoring shop licence, both in Dubai. His accountant said we could do one VAT return together as a group. Is that allowed for husband and wife companies? What are the conditions?",
+      "required_sources": [["FTA-VAT-DL8", "14"], ["FTA-VAT-ER", "10"]],
+      "supporting_sources": [["FTA-VAT-ER", "9"], ["FTA-VAT-ER", "12"]],
+      "source_rationale": "Tax group eligibility is in Art 14 and ER Art 10; whether the two are related parties (ER Art 9) and the effect of grouping (ER Art 12) support the answer."
+    },
+    {
+      "id": "X07",
+      "category": "realistic_scenario",
+      "topic": "export zero-rating",
+      "text": "I sell abayas on Instagram and now getting orders from Oman and Kuwait, I ship by courier. Do I charge 5% VAT to them? What proof do I need to keep that it left the UAE?",
+      "required_sources": [["FTA-VAT-DL8", "45"], ["FTA-VAT-ER", "30"]],
+      "supporting_sources": [["FTA-VAT-DL8", "44"], ["FTA-VAT-DL8", "27"]],
+      "source_rationale": "Export of goods is zero-rated under Art 45, with the conditions and evidence in ER Art 30."
+    },
+    {
+      "id": "X08",
+      "category": "realistic_scenario",
+      "topic": "exempt supplies - residential rent and bare land",
+      "text": "Apart from my catering business I rent out a 2-bedroom flat in Ajman to a family and I'm planning to sell an empty plot of land I own in RAK. Do I add VAT on the rent or on the land sale? Does that rent count towards my VAT turnover?",
+      "required_sources": [["FTA-VAT-DL8", "46"], ["FTA-VAT-ER", "43"], ["FTA-VAT-ER", "44"]],
+      "supporting_sources": [["FTA-VAT-DL8", "19"]],
+      "source_rationale": "Residential lease (after first supply) and bare land are exempt under Art 46, detailed in ER Art 43 and 44; Art 19 bears on whether exempt supplies count to the threshold."
+    },
+    {
+      "id": "X09",
+      "category": "realistic_scenario",
+      "topic": "tax invoice content",
+      "text": "Now I'm registered, what exactly has to be on my invoices? I currently send a WhatsApp photo of a handwritten receipt lol. Can I give a simple receipt for small orders under a certain amount?",
+      "required_sources": [["FTA-VAT-DL8", "65"], ["FTA-VAT-ER", "59"]],
+      "supporting_sources": [["FTA-VAT-DL8", "67"], ["FTA-VAT-DL8", "79"]],
+      "source_rationale": "Art 65 sets tax invoice conditions and ER Art 59 lists required particulars and simplified invoice rules."
+    },
+    {
+      "id": "X10",
+      "category": "realistic_scenario",
+      "topic": "record keeping",
+      "text": "How long do I need to keep my receipts and order records for VAT? I have everything in my phone gallery and an Excel sheet. Is that ok or do they need originals?",
+      "required_sources": [["FTA-VAT-DL8", "78"], ["FTA-VAT-ER", "71"]],
+      "supporting_sources": [["FTA-VAT-ER", "72"]],
+      "source_rationale": "Record-keeping obligations and retention periods are in Art 78 and ER Art 71, with ER Art 72 on records of supplies."
+    },
+    {
+      "id": "X11",
+      "category": "realistic_scenario",
+      "topic": "tax periods and returns",
+      "text": "My TRN came through. Do I file VAT every month or every 3 months? And when is the return and payment due after the period ends?",
+      "required_sources": [["FTA-VAT-DL8", "71"], ["FTA-VAT-DL8", "72"], ["FTA-VAT-ER", "64"]],
+      "supporting_sources": [["FTA-VAT-ER", "62"], ["FTA-VAT-DL8", "73"]],
+      "source_rationale": "Tax period length is in Art 71 / ER Art 62, and return filing and payment deadlines in Art 72 and ER Art 64."
+    },
+    {
+      "id": "X12",
+      "category": "realistic_scenario",
+      "topic": "penalties",
+      "text": "I missed my VAT return deadline by about 3 weeks because I was travelling and also paid late. How bad are the fines? Is there any way to get them reduced?",
+      "required_sources": [["FTA-VAT-DL8", "76"]],
+      "supporting_sources": [["FTA-VAT-DL8", "72"], ["FTA-VAT-DL8", "73"]],
+      "source_rationale": "Administrative penalties are assessed under Art 76; filing and payment duties in Art 72 and 73 frame the breach."
+    },
+    {
+      "id": "X13",
+      "category": "realistic_scenario",
+      "topic": "supply via agent / marketplace",
+      "text": "I sell my skincare products through a friend's concept store - she sells them in her name and takes 20% commission. Another lady sells my stuff on my behalf and the customer pays me directly. Who charges the VAT in each case, me or them?",
+      "required_sources": [["FTA-VAT-DL8", "9"], ["FTA-VAT-DL8", "33"]],
+      "supporting_sources": [["FTA-VAT-DL8", "34"]],
+      "source_rationale": "Supplies via an agent acting in own name versus on behalf of a principal are dealt with in Art 9 and Art 33."
+    },
+    {
+      "id": "X14",
+      "category": "realistic_scenario",
+      "topic": "gifts and free samples",
+      "text": "I give away free sample jars of my pickles at markets and sometimes send gift hampers to influencers. Around 400 jars a year, each costs me maybe AED 15. Do I need to pay VAT on things I give away for free?",
+      "required_sources": [["FTA-VAT-DL8", "11"], ["FTA-VAT-DL8", "12"], ["FTA-VAT-ER", "5"]],
+      "supporting_sources": [["FTA-VAT-DL8", "37"]],
+      "source_rationale": "Free gifts can be deemed supplies under Art 11, with exceptions for samples/low-value gifts in Art 12 and ER Art 5; Art 37 values any deemed supply."
+    },
+    {
+      "id": "X15",
+      "category": "realistic_scenario",
+      "topic": "profit margin scheme second-hand goods",
+      "text": "I buy pre-loved designer handbags from individuals and resell them online. If I buy a bag for 3,000 and sell for 4,200, do I charge VAT on the full 4,200 or just my profit? Someone said there's a special scheme.",
+      "required_sources": [["FTA-VAT-DL8", "43"], ["FTA-VAT-ER", "29"]],
+      "supporting_sources": [],
+      "source_rationale": "The profit margin scheme for second-hand goods is in Art 43, with accounting conditions in ER Art 29."
+    },
+    {
+      "id": "X16",
+      "category": "realistic_scenario",
+      "topic": "designated zone",
+      "text": "I'm setting up a small e-commerce company in a free zone (JAFZA warehouse) to store and ship my products to customers in Dubai. Someone said free zones are 'outside UAE for VAT' so no VAT. Is that true for me?",
+      "required_sources": [["FTA-VAT-DL8", "50"], ["FTA-VAT-ER", "51"]],
+      "supporting_sources": [["FTA-VAT-DL8", "51"], ["FTA-VAT-DL8", "27"]],
+      "source_rationale": "Designated zone treatment is governed by Art 50 and ER Art 51; goods released into the mainland are taxable, so place of supply rules also help."
+    },
+    {
+      "id": "X17",
+      "category": "realistic_scenario",
+      "topic": "non-resident seller",
+      "text": "I live in India and sell printable planners and also ship physical journals to buyers in the UAE through my website. I have no office in Dubai. Do I need a UAE VAT number? There's no minimum amount for me?",
+      "required_sources": [["FTA-VAT-DL8", "18"]],
+      "supporting_sources": [["FTA-VAT-DL8", "48"], ["FTA-VAT-REG-PAGE", null], ["FTA-VAT-ER", "23"]],
+      "source_rationale": "Registration of non-residents is in Art 18; reverse charge (Art 48) may shift liability for business customers and ER Art 23 covers electronic services."
+    },
+    {
+      "id": "X18",
+      "category": "realistic_scenario",
+      "topic": "date of supply / advance payments",
+      "text": "For wedding cakes I take 50% deposit when the order is booked (sometimes 3 months ahead) and the rest on delivery. When do I have to count the VAT - when I get the deposit or when I deliver the cake?",
+      "required_sources": [["FTA-VAT-DL8", "25"], ["FTA-VAT-DL8", "26"]],
+      "supporting_sources": [["FTA-VAT-ER", "19"], ["FTA-VAT-DL8", "67"]],
+      "source_rationale": "Date of supply, including the earlier of payment or delivery, is set by Art 25 with special cases in Art 26."
+    },
+    {
+      "id": "X19",
+      "category": "ambiguous",
+      "topic": "family businesses / splitting",
+      "text": "Me and my two sisters each have our own home-business licences - I do the cakes, one does the packaging and one does the deliveries for my orders. Each of us is around 200k a year. My cousin says the FTA can treat us as one business? Or should we just form a group? Confused.",
+      "required_sources": [["FTA-VAT-ER", "13"], ["FTA-VAT-ER", "9"]],
+      "supporting_sources": [["FTA-VAT-DL8", "14"], ["FTA-VAT-DL8", "13"]],
+      "source_rationale": "Ambiguous because the facts could point to forced aggregation of related parties to prevent splitting (ER Art 13 / Art 9) or to a voluntary tax group (Art 14), and the combined turnover would exceed the mandatory threshold."
+    },
+    {
+      "id": "X20",
+      "category": "ambiguous",
+      "topic": "online courses - place of supply / zero-rating",
+      "text": "I sell recorded baking courses online and also do live Zoom classes. About half my students are in Saudi and the UK, half in the UAE. Do I charge VAT to everyone or is the overseas part zero? Is education zero-rated anyway?",
+      "required_sources": [["FTA-VAT-DL8", "29"], ["FTA-VAT-ER", "31"]],
+      "supporting_sources": [["FTA-VAT-ER", "23"], ["FTA-VAT-ER", "40"], ["FTA-VAT-DL8", "45"]],
+      "source_rationale": "Ambiguous because the answer may rest on place of supply/export of services (Art 29, ER Art 31), on electronic services rules (ER Art 23), or on the education zero-rating (ER Art 40), which likely does not cover hobby courses."
+    },
+    {
+      "id": "X21",
+      "category": "out_of_scope",
+      "topic": "corporate tax",
+      "text": "Do I need to register for corporate tax as a freelancer making about 400k a year? And is the 9% on all my income or only above some limit?",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Corporate tax is a separate law; no VAT source applies."
+    },
+    {
+      "id": "X22",
+      "category": "out_of_scope",
+      "topic": "trade licence renewal",
+      "text": "My home business licence from DED expires next month - how do I renew it online and what does the renewal cost?",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Trade licence renewal is a licensing-authority matter, not VAT."
+    },
+    {
+      "id": "X23",
+      "category": "out_of_scope",
+      "topic": "employee visa",
+      "text": "I want to hire a part-time helper for my kitchen. Can I sponsor her visa under my home business licence or does she need her own?",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Employment visa sponsorship is immigration/labour law; no VAT source."
+    },
+    {
+      "id": "X24",
+      "category": "out_of_scope",
+      "topic": "Emiratisation",
+      "text": "Do the Emiratisation hiring quotas apply to me if I only have 3 staff in my salon? What's the fine if I don't hire a UAE national?",
+      "required_sources": [],
+      "supporting_sources": [],
+      "source_rationale": "Emiratisation is a labour/MOHRE matter; no VAT source."
+    }
+  ]
+}

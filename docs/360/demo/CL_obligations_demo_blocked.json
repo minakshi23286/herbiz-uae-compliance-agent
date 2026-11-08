@@ -1,0 +1,5489 @@
+[
+ {
+  "profile_id": "SYN-P01",
+  "as_of": "2026-10-17",
+  "policy": "blocked",
+  "audience": "owner",
+  "banner": "Draft — synthetic prototype, not reviewed by a qualified professional. Not legal, tax or accounting advice. HerBiz does not file or pay anything.",
+  "profile_gaps": {
+   "missing_required": [],
+   "clarify": [],
+   "unknown": [
+    "ct_registration_status"
+   ],
+   "questions": {}
+  },
+  "source_validity": {
+   "available": true,
+   "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c@9b48966",
+   "error": null
+  },
+  "summary": {
+   "applicable": 1,
+   "not_applicable": 1,
+   "potentially_applicable": 0,
+   "insufficient_information": 2,
+   "blocked_pending_legal_validation": 8
+  },
+  "obligations": [
+   {
+    "id": "C360-01",
+    "domain": "vat",
+    "title": "VAT registration (mandatory threshold)",
+    "meaning": "Registering for VAT may be required when taxable supplies exceed the mandatory threshold over the last 12 months or are expected to in the next 30 days.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: taxable supplies last 12 months: 0–187,500 (band) gt 375,000 -> not met",
+     "Draft check: expected taxable supplies next 30 days: unknown"
+    ],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: 0–187,500 (band) gt 375,000 -> not met",
+     "expected taxable supplies next 30 days: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "expected_taxable_supplies_next_30d_aed",
+      "question": "Expected taxable sales in the next 30 days (AED), if known."
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading of the stored texts: apply within 30 days of the threshold being exceeded (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      }
+     ],
+     "missing": [
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "readiness": 0.5,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Collect your last 12 months of sales records",
+     "Check the threshold on the FTA's own page before acting"
+    ],
+    "professional_review": [
+     "Whether supplies count towards the threshold (related parties, imports, exempt supplies)",
+     "The registration date"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-02",
+    "domain": "vat",
+    "title": "VAT registration (voluntary option)",
+    "meaning": "Registering voluntarily may be possible when supplies or expenses exceed the voluntary threshold.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: taxable supplies last 12 months: 0–187,500 (band) gt 187,500 -> not met",
+     "Draft check: taxable expenses last 12 months: unknown"
+    ],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: 0–187,500 (band) gt 187,500 -> not met",
+     "taxable expenses last 12 months: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "taxable_expenses_last_12m_aed",
+      "question": "Taxable expenses in the last 12 months (AED), if known."
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-ER|8"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "No deadline: this is an option, not a duty.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      }
+     ],
+     "missing": [
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "readiness": 0.5,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Decide with an accountant whether registering voluntarily helps you"
+    ],
+    "professional_review": [
+     "Whether voluntary registration is worthwhile for this business"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-03",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "meaning": "A VAT-registered business may need to file returns and pay VAT for each tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: not_registered eq registered -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading: by the 28th day after the end of each tax period (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep each period's invoices together"
+    ],
+    "professional_review": [
+     "The tax period assigned to the business",
+     "Input tax recovery"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-04",
+    "domain": "vat",
+    "title": "Tax invoices and record keeping (VAT)",
+    "meaning": "A VAT-registered business may need to issue tax invoices and keep records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: not_registered eq registered -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "Ongoing.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Set up an invoice template and a records folder"
+    ],
+    "professional_review": [
+     "Required invoice contents for your supplies"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-05",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "meaning": "A registered business that stops making taxable supplies, or falls below a threshold, may need or be able to deregister.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "official sources conflict",
+    "rule_status": "blocked_source_conflict",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-ER|14"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "conflict",
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "conflict",
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; official sources disagree on a point used here; both are shown; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked: the application deadline conflicts between official sources (20 vs 30 business days, WS-C gap G1)."
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Deregistration deadline (G1 unresolved)"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-07",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (company)",
+    "meaning": "Companies may need to register for corporate tax within a set time.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "licence_issue_date",
+      "question": "When was your licence first issued?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-FTA-DEC3-2024",
+      "CT-REG-SERVICE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "missing": [
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      }
+     ],
+     "readiness": 0.67,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Gather your licence and company documents"
+    ],
+    "professional_review": [
+     "Whether and when the company must register for corporate tax"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-08",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (natural person in business)",
+    "meaning": "An individual doing business may need to register for corporate tax above a turnover level.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-CR49-2023",
+      "CT-NATURAL-PERSON-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep turnover records by calendar year"
+    ],
+    "professional_review": [
+     "Whether your turnover requires corporate tax registration"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-10",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "meaning": "Registered taxable persons may need to file a corporate tax return and pay within a set time after the tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     },
+     {
+      "fact": "financial_year_end",
+      "question": "When does your financial year end (for example 12-31)?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-RETURN-DEADLINE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule; the draft basis is in WS-C research)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep the period's income and expense records together"
+    ],
+    "professional_review": [
+     "Return due date, tax computation and filing"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-11",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief (election)",
+    "meaning": "A revenue-based relief exists; whether it fits a business needs a tax agent's review.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-MD73-2023",
+      "CT-MD131-2026",
+      "CT-SBR-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule). WS-C observed (17 Oct 2026, not professionally reviewed): MD 131/2026 extends the relief to tax periods ending on or before 31 Dec 2029 (was 31 Dec 2026 under MD 73/2023 Art. 2(2)); WS-C gap CT-G1 resolved from official text."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Eligibility for Small Business Relief"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-14",
+    "domain": "corporate_tax",
+    "title": "Accounting records (corporate tax)",
+    "meaning": "Taxable persons may need to keep accounting records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "keeps_accounting_records",
+      "question": "Do you keep records of sales, expenses and receipts?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "ACC-FTA-DEC4-2026",
+      "CT-DL47-2022"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (retention period not reviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Start keeping income, expense and receipt records"
+    ],
+    "professional_review": [
+     "Record-keeping requirements and retention period"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "SYN-LIC-RENEWAL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: licence renewal reminder (synthetic)",
+    "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+    "state": "applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may apply",
+    "why": [
+     "days until licence expiry: 34 lte 60 -> met"
+    ],
+    "reviewer_trace": [
+     "days until licence expiry: 34 lte 60 -> met"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "offset_from_fact",
+     "basis": "TEST RULE: due on the synthetic expiry date; start 30 days before.",
+     "computed": true,
+     "due_date": "2026-11-20",
+     "prepare_from": "2026-10-21",
+     "overdue": false
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "missing": [
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      }
+     ],
+     "readiness": 0.67,
+     "draft_list": false
+    },
+    "owner_actions": [
+     "Check your authority's renewal page",
+     "Gather the renewal documents"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Applies (TEST RULE)",
+    "owner_text": "This applies to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   },
+   {
+    "id": "SYN-WPS-PAYROLL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: payroll document readiness (synthetic)",
+    "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+    "state": "not_applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may not apply",
+    "why": [
+     "has employees: False is_true None -> no"
+    ],
+    "reviewer_trace": [
+     "has employees: False is_true None -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "monthly_day",
+     "basis": "TEST RULE: each month by the 10th.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Keep a monthly salary register"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Does not apply (TEST RULE)",
+    "owner_text": "This does not apply to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   }
+  ]
+ },
+ {
+  "profile_id": "SYN-P02",
+  "as_of": "2026-10-17",
+  "policy": "blocked",
+  "audience": "owner",
+  "banner": "Draft — synthetic prototype, not reviewed by a qualified professional. Not legal, tax or accounting advice. HerBiz does not file or pay anything.",
+  "profile_gaps": {
+   "missing_required": [],
+   "clarify": [],
+   "unknown": [],
+   "questions": {}
+  },
+  "source_validity": {
+   "available": true,
+   "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c@9b48966",
+   "error": null
+  },
+  "summary": {
+   "applicable": 0,
+   "not_applicable": 2,
+   "potentially_applicable": 0,
+   "insufficient_information": 2,
+   "blocked_pending_legal_validation": 8
+  },
+  "obligations": [
+   {
+    "id": "C360-01",
+    "domain": "vat",
+    "title": "VAT registration (mandatory threshold)",
+    "meaning": "Registering for VAT may be required when taxable supplies exceed the mandatory threshold over the last 12 months or are expected to in the next 30 days.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: taxable supplies last 12 months: 187,500–375,000 (band) gt 375,000 -> not met",
+     "Draft check: expected taxable supplies next 30 days: unknown"
+    ],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: 187,500–375,000 (band) gt 375,000 -> not met",
+     "expected taxable supplies next 30 days: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "expected_taxable_supplies_next_30d_aed",
+      "question": "Expected taxable sales in the next 30 days (AED), if known."
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading of the stored texts: apply within 30 days of the threshold being exceeded (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Collect your last 12 months of sales records",
+     "Check the threshold on the FTA's own page before acting"
+    ],
+    "professional_review": [
+     "Whether supplies count towards the threshold (related parties, imports, exempt supplies)",
+     "The registration date"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-02",
+    "domain": "vat",
+    "title": "VAT registration (voluntary option)",
+    "meaning": "Registering voluntarily may be possible when supplies or expenses exceed the voluntary threshold.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: taxable supplies last 12 months: 187,500–375,000 (band) vs 187,500 -> undecided",
+     "Draft check: taxable expenses last 12 months: 40,000 gt 187,500 -> not met"
+    ],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: 187,500–375,000 (band) vs 187,500 -> undecided",
+     "taxable expenses last 12 months: 40,000 gt 187,500 -> not met"
+    ],
+    "missing_information": [
+     {
+      "fact": "taxable_supplies_last_12m_aed (exact amount; the band straddles 187,500)",
+      "question": "If you know it: total taxable sales in the last 12 months (AED)."
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-ER|8"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "No deadline: this is an option, not a duty.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Decide with an accountant whether registering voluntarily helps you"
+    ],
+    "professional_review": [
+     "Whether voluntary registration is worthwhile for this business"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-03",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "meaning": "A VAT-registered business may need to file returns and pay VAT for each tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: not_registered eq registered -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading: by the 28th day after the end of each tax period (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep each period's invoices together"
+    ],
+    "professional_review": [
+     "The tax period assigned to the business",
+     "Input tax recovery"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-04",
+    "domain": "vat",
+    "title": "Tax invoices and record keeping (VAT)",
+    "meaning": "A VAT-registered business may need to issue tax invoices and keep records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: not_registered eq registered -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "Ongoing.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Set up an invoice template and a records folder"
+    ],
+    "professional_review": [
+     "Required invoice contents for your supplies"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-05",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "meaning": "A registered business that stops making taxable supplies, or falls below a threshold, may need or be able to deregister.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "official sources conflict",
+    "rule_status": "blocked_source_conflict",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-ER|14"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "conflict",
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "conflict",
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; official sources disagree on a point used here; both are shown; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked: the application deadline conflicts between official sources (20 vs 30 business days, WS-C gap G1)."
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Deregistration deadline (G1 unresolved)"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-07",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (company)",
+    "meaning": "Companies may need to register for corporate tax within a set time.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "licence_issue_date",
+      "question": "When was your licence first issued?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-FTA-DEC3-2024",
+      "CT-REG-SERVICE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Gather your licence and company documents"
+    ],
+    "professional_review": [
+     "Whether and when the company must register for corporate tax"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-08",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (natural person in business)",
+    "meaning": "An individual doing business may need to register for corporate tax above a turnover level.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-CR49-2023",
+      "CT-NATURAL-PERSON-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep turnover records by calendar year"
+    ],
+    "professional_review": [
+     "Whether your turnover requires corporate tax registration"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-10",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "meaning": "Registered taxable persons may need to file a corporate tax return and pay within a set time after the tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     },
+     {
+      "fact": "financial_year_end",
+      "question": "When does your financial year end (for example 12-31)?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-RETURN-DEADLINE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule; the draft basis is in WS-C research)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep the period's income and expense records together"
+    ],
+    "professional_review": [
+     "Return due date, tax computation and filing"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-11",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief (election)",
+    "meaning": "A revenue-based relief exists; whether it fits a business needs a tax agent's review.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-MD73-2023",
+      "CT-MD131-2026",
+      "CT-SBR-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule). WS-C observed (17 Oct 2026, not professionally reviewed): MD 131/2026 extends the relief to tax periods ending on or before 31 Dec 2029 (was 31 Dec 2026 under MD 73/2023 Art. 2(2)); WS-C gap CT-G1 resolved from official text."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Eligibility for Small Business Relief"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-14",
+    "domain": "corporate_tax",
+    "title": "Accounting records (corporate tax)",
+    "meaning": "Taxable persons may need to keep accounting records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "keeps_accounting_records",
+      "question": "Do you keep records of sales, expenses and receipts?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "ACC-FTA-DEC4-2026",
+      "CT-DL47-2022"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (retention period not reviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Start keeping income, expense and receipt records"
+    ],
+    "professional_review": [
+     "Record-keeping requirements and retention period"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "SYN-LIC-RENEWAL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: licence renewal reminder (synthetic)",
+    "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+    "state": "not_applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may not apply",
+    "why": [
+     "days until licence expiry: 135 lte 60 -> not met"
+    ],
+    "reviewer_trace": [
+     "days until licence expiry: 135 lte 60 -> not met"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "offset_from_fact",
+     "basis": "TEST RULE: due on the synthetic expiry date; start 30 days before.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Check your authority's renewal page",
+     "Gather the renewal documents"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Does not apply (TEST RULE)",
+    "owner_text": "This does not apply to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   },
+   {
+    "id": "SYN-WPS-PAYROLL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: payroll document readiness (synthetic)",
+    "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+    "state": "not_applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may not apply",
+    "why": [
+     "has employees: False is_true None -> no"
+    ],
+    "reviewer_trace": [
+     "has employees: False is_true None -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "monthly_day",
+     "basis": "TEST RULE: each month by the 10th.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Keep a monthly salary register"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Does not apply (TEST RULE)",
+    "owner_text": "This does not apply to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   }
+  ]
+ },
+ {
+  "profile_id": "SYN-P03",
+  "as_of": "2026-10-17",
+  "policy": "blocked",
+  "audience": "owner",
+  "banner": "Draft — synthetic prototype, not reviewed by a qualified professional. Not legal, tax or accounting advice. HerBiz does not file or pay anything.",
+  "profile_gaps": {
+   "missing_required": [],
+   "clarify": [],
+   "unknown": [],
+   "questions": {}
+  },
+  "source_validity": {
+   "available": true,
+   "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c@9b48966",
+   "error": null
+  },
+  "summary": {
+   "applicable": 2,
+   "not_applicable": 0,
+   "potentially_applicable": 0,
+   "insufficient_information": 0,
+   "blocked_pending_legal_validation": 10
+  },
+  "obligations": [
+   {
+    "id": "C360-01",
+    "domain": "vat",
+    "title": "VAT registration (mandatory threshold)",
+    "meaning": "Registering for VAT may be required when taxable supplies exceed the mandatory threshold over the last 12 months or are expected to in the next 30 days.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: 520,000 gt 375,000 -> met",
+     "expected taxable supplies next 30 days: unknown"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading of the stored texts: apply within 30 days of the threshold being exceeded (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      }
+     ],
+     "missing": [
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "readiness": 0.5,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Collect your last 12 months of sales records",
+     "Check the threshold on the FTA's own page before acting"
+    ],
+    "professional_review": [
+     "Whether supplies count towards the threshold (related parties, imports, exempt supplies)",
+     "The registration date"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-02",
+    "domain": "vat",
+    "title": "VAT registration (voluntary option)",
+    "meaning": "Registering voluntarily may be possible when supplies or expenses exceed the voluntary threshold.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: 520,000 gt 187,500 -> met",
+     "taxable expenses last 12 months: unknown"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-ER|8"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "No deadline: this is an option, not a duty.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      }
+     ],
+     "missing": [
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "readiness": 0.5,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Decide with an accountant whether registering voluntarily helps you"
+    ],
+    "professional_review": [
+     "Whether voluntary registration is worthwhile for this business"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-03",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "meaning": "A VAT-registered business may need to file returns and pay VAT for each tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: not_registered eq registered -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading: by the 28th day after the end of each tax period (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep each period's invoices together"
+    ],
+    "professional_review": [
+     "The tax period assigned to the business",
+     "Input tax recovery"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-04",
+    "domain": "vat",
+    "title": "Tax invoices and record keeping (VAT)",
+    "meaning": "A VAT-registered business may need to issue tax invoices and keep records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: not_registered eq registered -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "Ongoing.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Set up an invoice template and a records folder"
+    ],
+    "professional_review": [
+     "Required invoice contents for your supplies"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-05",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "meaning": "A registered business that stops making taxable supplies, or falls below a threshold, may need or be able to deregister.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "official sources conflict",
+    "rule_status": "blocked_source_conflict",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-ER|14"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "conflict",
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "conflict",
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; official sources disagree on a point used here; both are shown; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked: the application deadline conflicts between official sources (20 vs 30 business days, WS-C gap G1)."
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Deregistration deadline (G1 unresolved)"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-07",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (company)",
+    "meaning": "Companies may need to register for corporate tax within a set time.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-FTA-DEC3-2024",
+      "CT-REG-SERVICE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      }
+     ],
+     "missing": [
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "readiness": 0.67,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Gather your licence and company documents"
+    ],
+    "professional_review": [
+     "Whether and when the company must register for corporate tax"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-08",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (natural person in business)",
+    "meaning": "An individual doing business may need to register for corporate tax above a turnover level.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-CR49-2023",
+      "CT-NATURAL-PERSON-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "ready": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "missing": [],
+     "readiness": 1.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep turnover records by calendar year"
+    ],
+    "professional_review": [
+     "Whether your turnover requires corporate tax registration"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-10",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "meaning": "Registered taxable persons may need to file a corporate tax return and pay within a set time after the tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-RETURN-DEADLINE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule; the draft basis is in WS-C research)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep the period's income and expense records together"
+    ],
+    "professional_review": [
+     "Return due date, tax computation and filing"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-11",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief (election)",
+    "meaning": "A revenue-based relief exists; whether it fits a business needs a tax agent's review.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-MD73-2023",
+      "CT-MD131-2026",
+      "CT-SBR-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule). WS-C observed (17 Oct 2026, not professionally reviewed): MD 131/2026 extends the relief to tax periods ending on or before 31 Dec 2029 (was 31 Dec 2026 under MD 73/2023 Art. 2(2)); WS-C gap CT-G1 resolved from official text."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Eligibility for Small Business Relief"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-14",
+    "domain": "corporate_tax",
+    "title": "Accounting records (corporate tax)",
+    "meaning": "Taxable persons may need to keep accounting records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "ACC-FTA-DEC4-2026",
+      "CT-DL47-2022"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (retention period not reviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Start keeping income, expense and receipt records"
+    ],
+    "professional_review": [
+     "Record-keeping requirements and retention period"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "SYN-LIC-RENEWAL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: licence renewal reminder (synthetic)",
+    "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+    "state": "applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may apply",
+    "why": [
+     "days until licence expiry: 45 lte 60 -> met"
+    ],
+    "reviewer_trace": [
+     "days until licence expiry: 45 lte 60 -> met"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "offset_from_fact",
+     "basis": "TEST RULE: due on the synthetic expiry date; start 30 days before.",
+     "computed": true,
+     "due_date": "2026-12-01",
+     "prepare_from": "2026-11-01",
+     "overdue": false
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "ready": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      }
+     ],
+     "missing": [
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "readiness": 0.33,
+     "draft_list": false
+    },
+    "owner_actions": [
+     "Check your authority's renewal page",
+     "Gather the renewal documents"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Applies (TEST RULE)",
+    "owner_text": "This applies to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   },
+   {
+    "id": "SYN-WPS-PAYROLL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: payroll document readiness (synthetic)",
+    "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+    "state": "applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may apply",
+    "why": [
+     "has employees: True is_true None -> yes"
+    ],
+    "reviewer_trace": [
+     "has employees: True is_true None -> yes"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "monthly_day",
+     "basis": "TEST RULE: each month by the 10th.",
+     "computed": true,
+     "due_date": "2026-11-10",
+     "prepare_from": null,
+     "overdue": false
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "employment_contracts",
+       "label": "Employment contracts"
+      },
+      {
+       "id": "salary_register",
+       "label": "Monthly salary register"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "employment_contracts",
+       "label": "Employment contracts"
+      },
+      {
+       "id": "salary_register",
+       "label": "Monthly salary register"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": false
+    },
+    "owner_actions": [
+     "Keep a monthly salary register"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Applies (TEST RULE)",
+    "owner_text": "This applies to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   }
+  ]
+ },
+ {
+  "profile_id": "SYN-P04",
+  "as_of": "2026-10-17",
+  "policy": "blocked",
+  "audience": "owner",
+  "banner": "Draft — synthetic prototype, not reviewed by a qualified professional. Not legal, tax or accounting advice. HerBiz does not file or pay anything.",
+  "profile_gaps": {
+   "missing_required": [],
+   "clarify": [],
+   "unknown": [],
+   "questions": {}
+  },
+  "source_validity": {
+   "available": true,
+   "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c@9b48966",
+   "error": null
+  },
+  "summary": {
+   "applicable": 1,
+   "not_applicable": 3,
+   "potentially_applicable": 0,
+   "insufficient_information": 0,
+   "blocked_pending_legal_validation": 8
+  },
+  "obligations": [
+   {
+    "id": "C360-01",
+    "domain": "vat",
+    "title": "VAT registration (mandatory threshold)",
+    "meaning": "Registering for VAT may be required when taxable supplies exceed the mandatory threshold over the last 12 months or are expected to in the next 30 days.",
+    "state": "not_applicable",
+    "reason": "already done according to your answer (no legal judgement made)",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: already done (per your profile)"
+    ],
+    "reviewer_trace": [
+     "already done (per your profile)"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "satisfied by the owner's answer"
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "Draft reading of the stored texts: apply within 30 days of the threshold being exceeded (not computed; unreviewed). Shown as text only; not a computed date.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Collect your last 12 months of sales records",
+     "Check the threshold on the FTA's own page before acting"
+    ],
+    "professional_review": [
+     "Whether supplies count towards the threshold (related parties, imports, exempt supplies)",
+     "The registration date"
+    ],
+    "already_done": true,
+    "state_chip": "Owner says done — not checked",
+    "owner_text": "Your profile says this is already done. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-02",
+    "domain": "vat",
+    "title": "VAT registration (voluntary option)",
+    "meaning": "Registering voluntarily may be possible when supplies or expenses exceed the voluntary threshold.",
+    "state": "not_applicable",
+    "reason": "already done according to your answer (no legal judgement made)",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: already done (per your profile)"
+    ],
+    "reviewer_trace": [
+     "already done (per your profile)"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-ER|8"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "satisfied by the owner's answer"
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "No deadline: this is an option, not a duty.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Decide with an accountant whether registering voluntarily helps you"
+    ],
+    "professional_review": [
+     "Whether voluntary registration is worthwhile for this business"
+    ],
+    "already_done": true,
+    "state_chip": "Owner says done — not checked",
+    "owner_text": "Your profile says this is already done. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-03",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "meaning": "A VAT-registered business may need to file returns and pay VAT for each tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: registered eq registered -> yes"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading: by the 28th day after the end of each tax period (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "ready": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      }
+     ],
+     "missing": [
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "readiness": 0.5,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep each period's invoices together"
+    ],
+    "professional_review": [
+     "The tax period assigned to the business",
+     "Input tax recovery"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-04",
+    "domain": "vat",
+    "title": "Tax invoices and record keeping (VAT)",
+    "meaning": "A VAT-registered business may need to issue tax invoices and keep records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: registered eq registered -> yes"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "Ongoing.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "ready": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      }
+     ],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "readiness": 0.5,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Set up an invoice template and a records folder"
+    ],
+    "professional_review": [
+     "Required invoice contents for your supplies"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-05",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "meaning": "A registered business that stops making taxable supplies, or falls below a threshold, may need or be able to deregister.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "official sources conflict",
+    "rule_status": "blocked_source_conflict",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-ER|14"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "conflict",
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "conflict",
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; official sources disagree on a point used here; both are shown; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked: the application deadline conflicts between official sources (20 vs 30 business days, WS-C gap G1)."
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Deregistration deadline (G1 unresolved)"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-07",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (company)",
+    "meaning": "Companies may need to register for corporate tax within a set time.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "licence_issue_date",
+      "question": "When was your licence first issued?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-FTA-DEC3-2024",
+      "CT-REG-SERVICE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Gather your licence and company documents"
+    ],
+    "professional_review": [
+     "Whether and when the company must register for corporate tax"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-08",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (natural person in business)",
+    "meaning": "An individual doing business may need to register for corporate tax above a turnover level.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-CR49-2023",
+      "CT-NATURAL-PERSON-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep turnover records by calendar year"
+    ],
+    "professional_review": [
+     "Whether your turnover requires corporate tax registration"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-10",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "meaning": "Registered taxable persons may need to file a corporate tax return and pay within a set time after the tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     },
+     {
+      "fact": "financial_year_end",
+      "question": "When does your financial year end (for example 12-31)?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-RETURN-DEADLINE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule; the draft basis is in WS-C research)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep the period's income and expense records together"
+    ],
+    "professional_review": [
+     "Return due date, tax computation and filing"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-11",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief (election)",
+    "meaning": "A revenue-based relief exists; whether it fits a business needs a tax agent's review.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-MD73-2023",
+      "CT-MD131-2026",
+      "CT-SBR-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule). WS-C observed (17 Oct 2026, not professionally reviewed): MD 131/2026 extends the relief to tax periods ending on or before 31 Dec 2029 (was 31 Dec 2026 under MD 73/2023 Art. 2(2)); WS-C gap CT-G1 resolved from official text."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Eligibility for Small Business Relief"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-14",
+    "domain": "corporate_tax",
+    "title": "Accounting records (corporate tax)",
+    "meaning": "Taxable persons may need to keep accounting records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "keeps_accounting_records",
+      "question": "Do you keep records of sales, expenses and receipts?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "ACC-FTA-DEC4-2026",
+      "CT-DL47-2022"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (retention period not reviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Start keeping income, expense and receipt records"
+    ],
+    "professional_review": [
+     "Record-keeping requirements and retention period"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "SYN-LIC-RENEWAL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: licence renewal reminder (synthetic)",
+    "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+    "state": "not_applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may not apply",
+    "why": [
+     "days until licence expiry: 256 lte 60 -> not met"
+    ],
+    "reviewer_trace": [
+     "days until licence expiry: 256 lte 60 -> not met"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "offset_from_fact",
+     "basis": "TEST RULE: due on the synthetic expiry date; start 30 days before.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Check your authority's renewal page",
+     "Gather the renewal documents"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Does not apply (TEST RULE)",
+    "owner_text": "This does not apply to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   },
+   {
+    "id": "SYN-WPS-PAYROLL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: payroll document readiness (synthetic)",
+    "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+    "state": "applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may apply",
+    "why": [
+     "has employees: True is_true None -> yes"
+    ],
+    "reviewer_trace": [
+     "has employees: True is_true None -> yes"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "monthly_day",
+     "basis": "TEST RULE: each month by the 10th.",
+     "computed": true,
+     "due_date": "2026-11-10",
+     "prepare_from": null,
+     "overdue": false
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "employment_contracts",
+       "label": "Employment contracts"
+      },
+      {
+       "id": "salary_register",
+       "label": "Monthly salary register"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "employment_contracts",
+       "label": "Employment contracts"
+      },
+      {
+       "id": "salary_register",
+       "label": "Monthly salary register"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": false
+    },
+    "owner_actions": [
+     "Keep a monthly salary register"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Applies (TEST RULE)",
+    "owner_text": "This applies to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   }
+  ]
+ },
+ {
+  "profile_id": "SYN-P05",
+  "as_of": "2026-10-17",
+  "policy": "blocked",
+  "audience": "owner",
+  "banner": "Draft — synthetic prototype, not reviewed by a qualified professional. Not legal, tax or accounting advice. HerBiz does not file or pay anything.",
+  "profile_gaps": {
+   "missing_required": [
+    "jurisdiction_type",
+    "licence_expiry_date",
+    "revenue_band_last_12m"
+   ],
+   "clarify": [
+    "person_type"
+   ],
+   "unknown": [
+    "vat_registration_status"
+   ],
+   "questions": {
+    "jurisdiction_type": "Is your licence from a mainland authority or a free zone?",
+    "licence_expiry_date": "When does your licence expire (date printed on the licence)?",
+    "revenue_band_last_12m": "Roughly how much did the business sell in the last 12 months?",
+    "person_type": "Is the business you yourself (a natural person) or a separate company (a juridical person)?"
+   }
+  },
+  "source_validity": {
+   "available": true,
+   "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c@9b48966",
+   "error": null
+  },
+  "summary": {
+   "applicable": 0,
+   "not_applicable": 1,
+   "potentially_applicable": 0,
+   "insufficient_information": 5,
+   "blocked_pending_legal_validation": 6
+  },
+  "obligations": [
+   {
+    "id": "C360-01",
+    "domain": "vat",
+    "title": "VAT registration (mandatory threshold)",
+    "meaning": "Registering for VAT may be required when taxable supplies exceed the mandatory threshold over the last 12 months or are expected to in the next 30 days.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: taxable supplies last 12 months: unknown",
+     "Draft check: expected taxable supplies next 30 days: unknown"
+    ],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: unknown",
+     "expected taxable supplies next 30 days: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "expected_taxable_supplies_next_30d_aed",
+      "question": "Expected taxable sales in the next 30 days (AED), if known."
+     },
+     {
+      "fact": "taxable_supplies_last_12m_aed",
+      "question": "If you know it: total taxable sales in the last 12 months (AED)."
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading of the stored texts: apply within 30 days of the threshold being exceeded (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the owner"
+      },
+      {
+       "id": "sales_12m",
+       "label": "Sales records for the last 12 months"
+      },
+      {
+       "id": "bank_details",
+       "label": "Business bank account details"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Collect your last 12 months of sales records",
+     "Check the threshold on the FTA's own page before acting"
+    ],
+    "professional_review": [
+     "Whether supplies count towards the threshold (related parties, imports, exempt supplies)",
+     "The registration date"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-02",
+    "domain": "vat",
+    "title": "VAT registration (voluntary option)",
+    "meaning": "Registering voluntarily may be possible when supplies or expenses exceed the voluntary threshold.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: taxable supplies last 12 months: unknown",
+     "Draft check: taxable expenses last 12 months: unknown"
+    ],
+    "reviewer_trace": [
+     "taxable supplies last 12 months: unknown",
+     "taxable expenses last 12 months: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "taxable_expenses_last_12m_aed",
+      "question": "Taxable expenses in the last 12 months (AED), if known."
+     },
+     {
+      "fact": "taxable_supplies_last_12m_aed",
+      "question": "If you know it: total taxable sales in the last 12 months (AED)."
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-ER|8"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "No deadline: this is an option, not a duty.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "expenses_12m",
+       "label": "Expense records for the last 12 months"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Decide with an accountant whether registering voluntarily helps you"
+    ],
+    "professional_review": [
+     "Whether voluntary registration is worthwhile for this business"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-03",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "meaning": "A VAT-registered business may need to file returns and pay VAT for each tax period.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: VAT registration status: unknown"
+    ],
+    "reviewer_trace": [
+     "VAT registration status: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "vat_registration_status",
+      "question": "Is the business registered for VAT?"
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading: by the 28th day after the end of each tax period (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep each period's invoices together"
+    ],
+    "professional_review": [
+     "The tax period assigned to the business",
+     "Input tax recovery"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-04",
+    "domain": "vat",
+    "title": "Tax invoices and record keeping (VAT)",
+    "meaning": "A VAT-registered business may need to issue tax invoices and keep records for a set period.",
+    "state": "insufficient_information",
+    "reason": "facts missing; even when answered, the result stays a draft until a reviewer has checked the rule and sources",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: VAT registration status: unknown"
+    ],
+    "reviewer_trace": [
+     "VAT registration status: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "vat_registration_status",
+      "question": "Is the business registered for VAT?"
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "Ongoing.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Set up an invoice template and a records folder"
+    ],
+    "professional_review": [
+     "Required invoice contents for your supplies"
+    ],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-05",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "meaning": "A registered business that stops making taxable supplies, or falls below a threshold, may need or be able to deregister.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "official sources conflict",
+    "rule_status": "blocked_source_conflict",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "vat_registration_status",
+      "question": "Is the business registered for VAT?"
+     },
+     {
+      "fact": "revenue_band_last_12m",
+      "question": "Roughly how much did the business sell in the last 12 months?"
+     }
+    ],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-ER|14"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "conflict",
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "conflict",
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; official sources disagree on a point used here; both are shown; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked: the application deadline conflicts between official sources (20 vs 30 business days, WS-C gap G1)."
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Deregistration deadline (G1 unresolved)"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-07",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (company)",
+    "meaning": "Companies may need to register for corporate tax within a set time.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "person_type",
+      "question": "Is the business you yourself (a natural person) or a separate company (a juridical person)?"
+     },
+     {
+      "fact": "licence_issue_date",
+      "question": "When was your licence first issued?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-FTA-DEC3-2024",
+      "CT-REG-SERVICE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Gather your licence and company documents"
+    ],
+    "professional_review": [
+     "Whether and when the company must register for corporate tax"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-08",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (natural person in business)",
+    "meaning": "An individual doing business may need to register for corporate tax above a turnover level.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "person_type",
+      "question": "Is the business you yourself (a natural person) or a separate company (a juridical person)?"
+     },
+     {
+      "fact": "revenue_band_last_12m",
+      "question": "Roughly how much did the business sell in the last 12 months?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-CR49-2023",
+      "CT-NATURAL-PERSON-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep turnover records by calendar year"
+    ],
+    "professional_review": [
+     "Whether your turnover requires corporate tax registration"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-10",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "meaning": "Registered taxable persons may need to file a corporate tax return and pay within a set time after the tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     },
+     {
+      "fact": "financial_year_end",
+      "question": "When does your financial year end (for example 12-31)?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-RETURN-DEADLINE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule; the draft basis is in WS-C research)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep the period's income and expense records together"
+    ],
+    "professional_review": [
+     "Return due date, tax computation and filing"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-11",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief (election)",
+    "meaning": "A revenue-based relief exists; whether it fits a business needs a tax agent's review.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "revenue_band_last_12m",
+      "question": "Roughly how much did the business sell in the last 12 months?"
+     },
+     {
+      "fact": "jurisdiction_type",
+      "question": "Is your licence from a mainland authority or a free zone?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-MD73-2023",
+      "CT-MD131-2026",
+      "CT-SBR-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule). WS-C observed (17 Oct 2026, not professionally reviewed): MD 131/2026 extends the relief to tax periods ending on or before 31 Dec 2029 (was 31 Dec 2026 under MD 73/2023 Art. 2(2)); WS-C gap CT-G1 resolved from official text."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Eligibility for Small Business Relief"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-14",
+    "domain": "corporate_tax",
+    "title": "Accounting records (corporate tax)",
+    "meaning": "Taxable persons may need to keep accounting records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "keeps_accounting_records",
+      "question": "Do you keep records of sales, expenses and receipts?"
+     },
+     {
+      "fact": "ct_registration_status",
+      "question": "Is the business registered for corporate tax?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "ACC-FTA-DEC4-2026",
+      "CT-DL47-2022"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (retention period not reviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Start keeping income, expense and receipt records"
+    ],
+    "professional_review": [
+     "Record-keeping requirements and retention period"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "SYN-LIC-RENEWAL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: licence renewal reminder (synthetic)",
+    "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+    "state": "insufficient_information",
+    "reason": "facts missing",
+    "rule_status": "synthetic_test",
+    "draft_indication": null,
+    "why": [
+     "days until licence expiry: unknown"
+    ],
+    "reviewer_trace": [
+     "days until licence expiry: unknown"
+    ],
+    "missing_information": [
+     {
+      "fact": "licence_expiry_date",
+      "question": "When does your licence expire (date printed on the licence)?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "offset_from_fact",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "TEST RULE: due on the synthetic expiry date; start 30 days before."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": false
+    },
+    "owner_actions": [
+     "Check your authority's renewal page",
+     "Gather the renewal documents"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Need more information",
+    "owner_text": "HerBiz needs more information before it can say whether this may apply.",
+    "label": "TEST RULE — not law"
+   },
+   {
+    "id": "SYN-WPS-PAYROLL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: payroll document readiness (synthetic)",
+    "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+    "state": "not_applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may not apply",
+    "why": [
+     "has employees: False is_true None -> no"
+    ],
+    "reviewer_trace": [
+     "has employees: False is_true None -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "monthly_day",
+     "basis": "TEST RULE: each month by the 10th.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Keep a monthly salary register"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Does not apply (TEST RULE)",
+    "owner_text": "This does not apply to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   }
+  ]
+ },
+ {
+  "profile_id": "SYN-P06",
+  "as_of": "2026-10-17",
+  "policy": "blocked",
+  "audience": "owner",
+  "banner": "Draft — synthetic prototype, not reviewed by a qualified professional. Not legal, tax or accounting advice. HerBiz does not file or pay anything.",
+  "profile_gaps": {
+   "missing_required": [],
+   "clarify": [],
+   "unknown": [],
+   "questions": {}
+  },
+  "source_validity": {
+   "available": true,
+   "origin": "<LOCAL_PATH> championship/Compliance Operations Agent/CL_compliance_agent_app_ws_c@9b48966",
+   "error": null
+  },
+  "summary": {
+   "applicable": 1,
+   "not_applicable": 3,
+   "potentially_applicable": 0,
+   "insufficient_information": 0,
+   "blocked_pending_legal_validation": 8
+  },
+  "obligations": [
+   {
+    "id": "C360-01",
+    "domain": "vat",
+    "title": "VAT registration (mandatory threshold)",
+    "meaning": "Registering for VAT may be required when taxable supplies exceed the mandatory threshold over the last 12 months or are expected to in the next 30 days.",
+    "state": "not_applicable",
+    "reason": "already done according to your answer (no legal judgement made)",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: already done (per your profile)"
+    ],
+    "reviewer_trace": [
+     "already done (per your profile)"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|13",
+      "FTA-VAT-ER|7",
+      "FTA-VAT-DL8|19"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "satisfied by the owner's answer"
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "Draft reading of the stored texts: apply within 30 days of the threshold being exceeded (not computed; unreviewed). Shown as text only; not a computed date.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Collect your last 12 months of sales records",
+     "Check the threshold on the FTA's own page before acting"
+    ],
+    "professional_review": [
+     "Whether supplies count towards the threshold (related parties, imports, exempt supplies)",
+     "The registration date"
+    ],
+    "already_done": true,
+    "state_chip": "Owner says done — not checked",
+    "owner_text": "Your profile says this is already done. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-02",
+    "domain": "vat",
+    "title": "VAT registration (voluntary option)",
+    "meaning": "Registering voluntarily may be possible when supplies or expenses exceed the voluntary threshold.",
+    "state": "not_applicable",
+    "reason": "already done according to your answer (no legal judgement made)",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [
+     "Draft check: already done (per your profile)"
+    ],
+    "reviewer_trace": [
+     "already done (per your profile)"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|17",
+      "FTA-VAT-ER|8"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "satisfied by the owner's answer"
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "No deadline: this is an option, not a duty.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Decide with an accountant whether registering voluntarily helps you"
+    ],
+    "professional_review": [
+     "Whether voluntary registration is worthwhile for this business"
+    ],
+    "already_done": true,
+    "state_chip": "Owner says done — not checked",
+    "owner_text": "Your profile says this is already done. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-03",
+    "domain": "vat",
+    "title": "VAT returns and payment",
+    "meaning": "A VAT-registered business may need to file returns and pay VAT for each tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: registered eq registered -> yes"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|72",
+      "FTA-VAT-ER|64",
+      "FTA-VAT-DL8|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "draft_text",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Draft reading: by the 28th day after the end of each tax period (not computed; unreviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_invoices",
+       "label": "Sales tax invoices for the period"
+      },
+      {
+       "id": "purchase_invoices",
+       "label": "Purchase invoices for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep each period's invoices together"
+    ],
+    "professional_review": [
+     "The tax period assigned to the business",
+     "Input tax recovery"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-04",
+    "domain": "vat",
+    "title": "Tax invoices and record keeping (VAT)",
+    "meaning": "A VAT-registered business may need to issue tax invoices and keep records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "rule or sources not checked by a reviewer",
+    "rule_status": "draft_unreviewed",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [
+     "VAT registration status: registered eq registered -> yes"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|65",
+      "FTA-VAT-ER|59",
+      "FTA-VAT-DL8|78",
+      "FTA-VAT-ER|71"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "none",
+     "basis": "Ongoing.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "invoice_template",
+       "label": "A tax invoice template"
+      },
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Set up an invoice template and a records folder"
+    ],
+    "professional_review": [
+     "Required invoice contents for your supplies"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-05",
+    "domain": "vat",
+    "title": "VAT deregistration",
+    "meaning": "A registered business that stops making taxable supplies, or falls below a threshold, may need or be able to deregister.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "official sources conflict",
+    "rule_status": "blocked_source_conflict",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [
+      "FTA-VAT-DL8|21",
+      "FTA-VAT-ER|14"
+     ],
+     "source_candidates": [],
+     "validity": {
+      "checked": true,
+      "certified": false,
+      "issue_kinds": [
+       "conflict",
+       "outdated",
+       "version_outdated"
+      ],
+      "blockers": [
+       "conflict",
+       "outdated",
+       "source_not_approved",
+       "version_outdated"
+      ],
+      "wording": "Draft information, not legal or tax advice: the official sources used have not been approved by a qualified reviewer; official sources disagree on a point used here; both are shown; a provision used may be out of date; an older or out-of-date version of an official text was used."
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked: the application deadline conflicts between official sources (20 vs 30 business days, WS-C gap G1)."
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Deregistration deadline (G1 unresolved)"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-07",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (company)",
+    "meaning": "Companies may need to register for corporate tax within a set time.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "licence_issue_date",
+      "question": "When was your licence first issued?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-FTA-DEC3-2024",
+      "CT-REG-SERVICE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Trade licence copy"
+      },
+      {
+       "id": "moa",
+       "label": "Memorandum or articles of association"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport of the manager"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Gather your licence and company documents"
+    ],
+    "professional_review": [
+     "Whether and when the company must register for corporate tax"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-08",
+    "domain": "corporate_tax",
+    "title": "Corporate tax registration (natural person in business)",
+    "meaning": "An individual doing business may need to register for corporate tax above a turnover level.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-CR49-2023",
+      "CT-NATURAL-PERSON-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "sales_12m",
+       "label": "Business turnover records by calendar year"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep turnover records by calendar year"
+    ],
+    "professional_review": [
+     "Whether your turnover requires corporate tax registration"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-10",
+    "domain": "corporate_tax",
+    "title": "Corporate tax return and payment",
+    "meaning": "Registered taxable persons may need to file a corporate tax return and pay within a set time after the tax period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "financial_year_end",
+      "question": "When does your financial year end (for example 12-31)?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-DL47-2022",
+      "CT-RETURN-DEADLINE"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule; the draft basis is in WS-C research)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "draft_pnl",
+       "label": "Draft profit and loss for the period (not audited)"
+      },
+      {
+       "id": "bank_statements",
+       "label": "Bank statements for the period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Keep the period's income and expense records together"
+    ],
+    "professional_review": [
+     "Return due date, tax computation and filing"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-11",
+    "domain": "corporate_tax",
+    "title": "Small Business Relief (election)",
+    "meaning": "A revenue-based relief exists; whether it fits a business needs a tax agent's review.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "CT-MD73-2023",
+      "CT-MD131-2026",
+      "CT-SBR-TOPIC"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (no reviewed rule). WS-C observed (17 Oct 2026, not professionally reviewed): MD 131/2026 extends the relief to tax periods ending on or before 31 Dec 2029 (was 31 Dec 2026 under MD 73/2023 Art. 2(2)); WS-C gap CT-G1 resolved from official text."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "revenue_by_period",
+       "label": "Revenue for each tax period"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [],
+    "professional_review": [
+     "Eligibility for Small Business Relief"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "C360-14",
+    "domain": "corporate_tax",
+    "title": "Accounting records (corporate tax)",
+    "meaning": "Taxable persons may need to keep accounting records for a set period.",
+    "state": "blocked_pending_legal_validation",
+    "reason": "no reviewed rule",
+    "rule_status": "no_reviewed_rule",
+    "draft_indication": null,
+    "why": [],
+    "reviewer_trace": [],
+    "missing_information": [
+     {
+      "fact": "keeps_accounting_records",
+      "question": "Do you keep records of sales, expenses and receipts?"
+     }
+    ],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [
+      "ACC-FTA-DEC4-2026",
+      "CT-DL47-2022"
+     ],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "no collected official provisions"
+     }
+    },
+    "deadline": {
+     "kind": "blocked",
+     "basis": "No date is shown until a qualified reviewer has checked the rule and its sources.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null,
+     "draft_basis_for_reviewer": "Blocked pending legal validation (retention period not reviewed)."
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "records_system",
+       "label": "A place where records are kept"
+      },
+      {
+       "id": "receipts",
+       "label": "Expense receipts"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": true
+    },
+    "owner_actions": [
+     "Start keeping income, expense and receipt records"
+    ],
+    "professional_review": [
+     "Record-keeping requirements and retention period"
+    ],
+    "already_done": false,
+    "state_chip": "Blocked: legal validation",
+    "owner_text": "HerBiz can't answer this yet: the rule or its official sources have not been validated by a qualified reviewer. Check with an FTA-registered tax agent before acting.",
+    "label": "Draft — not reviewed"
+   },
+   {
+    "id": "SYN-LIC-RENEWAL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: licence renewal reminder (synthetic)",
+    "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+    "state": "applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may apply",
+    "why": [
+     "days until licence expiry: 13 lte 60 -> met"
+    ],
+    "reviewer_trace": [
+     "days until licence expiry: 13 lte 60 -> met"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "offset_from_fact",
+     "basis": "TEST RULE: due on the synthetic expiry date; start 30 days before.",
+     "computed": true,
+     "due_date": "2026-10-30",
+     "prepare_from": "2026-09-30",
+     "overdue": false
+    },
+    "documents": {
+     "required": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "ready": [],
+     "missing": [
+      {
+       "id": "trade_licence",
+       "label": "Current trade licence"
+      },
+      {
+       "id": "tenancy_or_noc",
+       "label": "Tenancy contract or landlord NOC"
+      },
+      {
+       "id": "owner_id",
+       "label": "Emirates ID or passport"
+      }
+     ],
+     "readiness": 0.0,
+     "draft_list": false
+    },
+    "owner_actions": [
+     "Check your authority's renewal page",
+     "Gather the renewal documents"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Applies (TEST RULE)",
+    "owner_text": "This applies to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   },
+   {
+    "id": "SYN-WPS-PAYROLL",
+    "domain": "synthetic_test",
+    "title": "TEST RULE: payroll document readiness (synthetic)",
+    "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+    "state": "not_applicable",
+    "reason": "synthetic TEST RULE",
+    "rule_status": "synthetic_test",
+    "draft_indication": "may not apply",
+    "why": [
+     "has employees: False is_true None -> no"
+    ],
+    "reviewer_trace": [
+     "has employees: False is_true None -> no"
+    ],
+    "missing_information": [],
+    "sources": {
+     "provisions": [],
+     "source_candidates": [],
+     "validity": {
+      "checked": false,
+      "certified": false,
+      "reason": "synthetic test rule"
+     }
+    },
+    "deadline": {
+     "kind": "monthly_day",
+     "basis": "TEST RULE: each month by the 10th.",
+     "computed": false,
+     "due_date": null,
+     "prepare_from": null,
+     "overdue": null
+    },
+    "documents": {
+     "required": [],
+     "ready": [],
+     "missing": [],
+     "readiness": null
+    },
+    "owner_actions": [
+     "Keep a monthly salary register"
+    ],
+    "professional_review": [],
+    "already_done": false,
+    "state_chip": "Does not apply (TEST RULE)",
+    "owner_text": "This does not apply to your synthetic test profile (TEST RULE).",
+    "label": "TEST RULE — not law"
+   }
+  ]
+ }
+]

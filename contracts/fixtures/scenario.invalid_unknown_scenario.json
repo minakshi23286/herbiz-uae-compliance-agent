@@ -1,0 +1,81 @@
+{
+ "contract": "herbiz.scenario/1.0",
+ "scenario_id": "SC-4",
+ "steps": [
+  {
+   "event": "profile_submitted",
+   "expected": {
+    "flags": [],
+    "must_not": [],
+    "must_show": [
+     "questions"
+    ],
+    "state": "insufficient_information"
+   },
+   "input": {
+    "jurisdiction_type": "not_sure",
+    "legal_form": "not_sure",
+    "obligation_id": "SYN-OB-VAT-REGISTRATION",
+    "profile_id": "SYN-SC1",
+    "vat_registration_status": "not_sure"
+   },
+   "n": 1,
+   "released_after": null
+  },
+  {
+   "event": "owner_answers",
+   "expected": {
+    "flags": [],
+    "must_not": [],
+    "must_show": [
+     "fewer questions"
+    ],
+    "state": "insufficient_information"
+   },
+   "input": {
+    "jurisdiction_type": "mainland",
+    "legal_form": "llc",
+    "obligation_id": "SYN-OB-VAT-REGISTRATION"
+   },
+   "n": 2,
+   "released_after": 1
+  },
+  {
+   "event": "profile_completed",
+   "expected": {
+    "flags": [
+     "blocked_legal_validation"
+    ],
+    "must_not": [
+     "deadline"
+    ],
+    "must_show": [
+     "what you can do now"
+    ],
+    "state": "blocked_pending_legal_validation"
+   },
+   "input": {
+    "activities": [
+     "design"
+    ],
+    "ct_registration_status": "not_registered",
+    "emirate": "AE-DU",
+    "financial_year_end": "12-31",
+    "has_employees": false,
+    "jurisdiction_type": "mainland",
+    "keeps_accounting_records": true,
+    "legal_form": "llc",
+    "licence_expiry_date": "2027-01-09",
+    "licence_issue_date": "2026-01-10",
+    "obligation_id": "SYN-OB-VAT-REGISTRATION",
+    "person_type": "juridical_person",
+    "revenue_band_last_12m": "187500-375000",
+    "vat_registration_status": "not_registered"
+   },
+   "n": 3,
+   "released_after": 2
+  }
+ ],
+ "synthetic": true,
+ "title": "Missing information"
+}

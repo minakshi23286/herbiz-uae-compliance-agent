@@ -1,0 +1,551 @@
+{
+ "v4_retrieval_fcdfbb7": {
+  "summary": {
+   "questions": 24,
+   "any_expected": 0.6,
+   "all_required": 0.45,
+   "median_first_rank": 5.5,
+   "mrr": 0.234,
+   "irrelevant_added_share": 0.87,
+   "added_on_no_source_questions": 6,
+   "avg_passages": 11.1,
+   "misses_any": [
+    "Y04",
+    "Y05",
+    "Y06",
+    "Y08",
+    "Y11",
+    "Y12",
+    "Y13",
+    "Y20"
+   ],
+   "misses_required": [
+    "Y04",
+    "Y05",
+    "Y06",
+    "Y08",
+    "Y09",
+    "Y10",
+    "Y11",
+    "Y12",
+    "Y13",
+    "Y19",
+    "Y20"
+   ]
+  },
+  "rows": [
+   {
+    "id": "Y01",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 1,
+    "added": 4,
+    "irrelevant_added": 2,
+    "passages": 10
+   },
+   {
+    "id": "Y02",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 9,
+    "added": 7,
+    "irrelevant_added": 4,
+    "passages": 13
+   },
+   {
+    "id": "Y03",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 8,
+    "irrelevant_added": 4,
+    "passages": 14
+   },
+   {
+    "id": "Y04",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 7,
+    "irrelevant_added": 7,
+    "passages": 13
+   },
+   {
+    "id": "Y05",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y06",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y07",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 6,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y08",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 6,
+    "irrelevant_added": 6,
+    "passages": 12
+   },
+   {
+    "id": "Y09",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 5,
+    "added": 6,
+    "irrelevant_added": 6,
+    "passages": 12
+   },
+   {
+    "id": "Y10",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 10,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "Y11",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y12",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 7,
+    "irrelevant_added": 7,
+    "passages": 13
+   },
+   {
+    "id": "Y13",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y14",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 3,
+    "added": 4,
+    "irrelevant_added": 3,
+    "passages": 10
+   },
+   {
+    "id": "Y15",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 1,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y16",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 7,
+    "irrelevant_added": 4,
+    "passages": 13
+   },
+   {
+    "id": "Y17",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 3,
+    "added": 7,
+    "irrelevant_added": 7,
+    "passages": 13
+   },
+   {
+    "id": "Y18",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 7,
+    "irrelevant_added": 5,
+    "passages": 13
+   },
+   {
+    "id": "Y19",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 1,
+    "added": 7,
+    "irrelevant_added": 7,
+    "passages": 13
+   },
+   {
+    "id": "Y20",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 6,
+    "irrelevant_added": 6,
+    "passages": 12
+   },
+   {
+    "id": "Y21",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "Y22",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "Y23",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "Y24",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 4,
+    "irrelevant_added": 4,
+    "passages": 10
+   }
+  ]
+ },
+ "v5_retrieval_a766a50": {
+  "summary": {
+   "questions": 24,
+   "any_expected": 0.8,
+   "all_required": 0.5,
+   "median_first_rank": 6.5,
+   "mrr": 0.251,
+   "irrelevant_added_share": 0.711,
+   "added_on_no_source_questions": 5,
+   "avg_passages": 9.8,
+   "misses_any": [
+    "Y05",
+    "Y08",
+    "Y12",
+    "Y20"
+   ],
+   "misses_required": [
+    "Y03",
+    "Y05",
+    "Y06",
+    "Y08",
+    "Y10",
+    "Y11",
+    "Y12",
+    "Y13",
+    "Y19",
+    "Y20"
+   ]
+  },
+  "rows": [
+   {
+    "id": "Y01",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 1,
+    "added": 4,
+    "irrelevant_added": 2,
+    "passages": 10
+   },
+   {
+    "id": "Y02",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 8,
+    "added": 6,
+    "irrelevant_added": 3,
+    "passages": 12
+   },
+   {
+    "id": "Y03",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 7,
+    "added": 6,
+    "irrelevant_added": 3,
+    "passages": 12
+   },
+   {
+    "id": "Y04",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 5,
+    "irrelevant_added": 2,
+    "passages": 11
+   },
+   {
+    "id": "Y05",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "Y06",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 6,
+    "irrelevant_added": 4,
+    "passages": 12
+   },
+   {
+    "id": "Y07",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 6,
+    "added": 4,
+    "irrelevant_added": 4,
+    "passages": 10
+   },
+   {
+    "id": "Y08",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y09",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 5,
+    "added": 2,
+    "irrelevant_added": 1,
+    "passages": 8
+   },
+   {
+    "id": "Y10",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 7,
+    "added": 2,
+    "irrelevant_added": 0,
+    "passages": 8
+   },
+   {
+    "id": "Y11",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 7,
+    "added": 4,
+    "irrelevant_added": 2,
+    "passages": 10
+   },
+   {
+    "id": "Y12",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 6,
+    "irrelevant_added": 6,
+    "passages": 12
+   },
+   {
+    "id": "Y13",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": null,
+    "added": 6,
+    "irrelevant_added": 5,
+    "passages": 12
+   },
+   {
+    "id": "Y14",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 3,
+    "added": 2,
+    "irrelevant_added": 1,
+    "passages": 8
+   },
+   {
+    "id": "Y15",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 1,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y16",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 5,
+    "irrelevant_added": 2,
+    "passages": 11
+   },
+   {
+    "id": "Y17",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 3,
+    "added": 3,
+    "irrelevant_added": 2,
+    "passages": 9
+   },
+   {
+    "id": "Y18",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": true,
+    "first_rank": 7,
+    "added": 1,
+    "irrelevant_added": 0,
+    "passages": 7
+   },
+   {
+    "id": "Y19",
+    "has_expected": true,
+    "any_expected": true,
+    "all_required": false,
+    "first_rank": 1,
+    "added": 6,
+    "irrelevant_added": 5,
+    "passages": 12
+   },
+   {
+    "id": "Y20",
+    "has_expected": true,
+    "any_expected": false,
+    "all_required": false,
+    "first_rank": null,
+    "added": 5,
+    "irrelevant_added": 5,
+    "passages": 11
+   },
+   {
+    "id": "Y21",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 3,
+    "irrelevant_added": 3,
+    "passages": 9
+   },
+   {
+    "id": "Y22",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 2,
+    "irrelevant_added": 2,
+    "passages": 8
+   },
+   {
+    "id": "Y23",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   },
+   {
+    "id": "Y24",
+    "has_expected": false,
+    "any_expected": null,
+    "all_required": null,
+    "first_rank": null,
+    "added": 0,
+    "irrelevant_added": 0,
+    "passages": 6
+   }
+  ]
+ }
+}

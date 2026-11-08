@@ -1,0 +1,98 @@
+{
+ "budget": {
+  "max_passages": 8,
+  "returned": 2
+ },
+ "code_freeze": {
+  "commit": "fdbe131",
+  "config_sha256": "b0d4913f313bf0e18b6ec2d81d84ff748bdd415a26cb32243978b22b248567bc",
+  "files_sha256": {
+   "compliance_agent/llm_lab/retrieve.py": "7fcd076cf22524f815cc0b050538e819072b4ba29408bf97867b55f7e638c1c1"
+  }
+ },
+ "completeness": {
+  "map_review_status": "draft-unreviewed",
+  "map_version": "provision_map_v7",
+  "missing_required": [
+   {
+    "article": "21",
+    "source_id": "FTA-VAT-DL8"
+   },
+   {
+    "article": "14",
+    "source_id": "FTA-VAT-ER"
+   }
+  ],
+  "status": "complete_for_map"
+ },
+ "contract": "herbiz.retrieval_result/1.0",
+ "execution_mode": "deterministic",
+ "items": [
+  {
+   "added_by": "fixture",
+   "article": "17",
+   "locator": "Article 17, p. 1",
+   "passage_id": "FIXTURE:DL8:17",
+   "rank": 1,
+   "score": null,
+   "source_id": "FTA-VAT-DL8",
+   "text": "SYNTHETIC FIXTURE PASSAGE (no official text)",
+   "url": "https://tax.gov.ae/",
+   "version_id": "FTA-VAT-DL8@v1"
+  },
+  {
+   "added_by": "fixture",
+   "article": "8",
+   "locator": "Article 8, p. 1",
+   "passage_id": "FIXTURE:ER:8",
+   "rank": 2,
+   "score": 1.5,
+   "source_id": "FTA-VAT-ER",
+   "text": "SYNTHETIC FIXTURE PASSAGE (no official text)",
+   "url": "https://tax.gov.ae/",
+   "version_id": "FTA-VAT-ER@v3"
+  }
+ ],
+ "kb_snapshot": {
+  "db_md5": "26e202b87a062288e56bcda1de9b0217",
+  "manifest_version": "0.2.0",
+  "snapshot_date": "2026-10-17"
+ },
+ "query_sha256": "dad46ec002bffd3d8bcf2b11fa4e9048cb6546d5c5977d395355d5761c2517c7",
+ "required_provisions": [
+  {
+   "article": "21",
+   "from": "provision_map_v7",
+   "role": "primary",
+   "source_id": "FTA-VAT-DL8"
+  },
+  {
+   "article": "14",
+   "from": "provision_map_v7",
+   "role": "primary",
+   "source_id": "FTA-VAT-ER"
+  },
+  {
+   "article": "17",
+   "from": "provision_map_v7",
+   "role": "base",
+   "source_id": "FTA-VAT-DL8"
+  }
+ ],
+ "retrieval_version": "fixture",
+ "scope": {
+  "class": "in_scope",
+  "in_scope": true,
+  "reason": "VAT registration topic"
+ },
+ "trace": [
+  {
+   "detail": "fixture",
+   "step": "normalise"
+  },
+  {
+   "detail": "fixture",
+   "step": "lexical_search"
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "answer": {
+  "execution_mode": "recorded_model",
+  "flags": [
+   "may_be_incomplete",
+   "conflict"
+  ],
+  "mode": "recorded",
+  "shown_text_sha256": "b7ee2726de6ca82314c48a0190296560be0f3954487beb645468cdb16c09e23a",
+  "status": "answered"
+ },
+ "at": "2026-10-17T10:00:00+04:00",
+ "build": {
+  "b_commit": "fdbe131",
+  "c_commit": "aa50dd4",
+  "contracts": {
+   "herbiz.audit_record": "1.0",
+   "herbiz.decision_explanation": "1.0",
+   "herbiz.retrieval_result": "1.0",
+   "herbiz.source_validity": "1.2"
+  },
+  "integration_commit": "e42e37a",
+  "snapshot_date": "2026-10-17"
+ },
+ "channel": "ask",
+ "confidence": {
+  "basis": [
+   "incomplete",
+   "conflict"
+  ],
+  "level": "low",
+  "numeric": null
+ },
+ "contract": "herbiz.audit_record/1.0",
+ "decisions": [
+  {
+   "confidence": {
+    "basis": [
+     "blocked",
+     "source_not_current"
+    ],
+    "level": "low",
+    "numeric": null
+   },
+   "contract": "herbiz.decision_explanation/1.0",
+   "engine": {
+    "commit": "fdbe131",
+    "fixture_contract": "ws-b-demo-0.3"
+   },
+   "execution_mode": "deterministic",
+   "label": "Draft — not reviewed",
+   "missing_information": [],
+   "obligation_id": "SYN-OB-VAT-RETURN",
+   "professional_review": [
+    "an FTA-registered tax agent"
+   ],
+   "reason": "rule or sources not checked by a reviewer",
+   "review": {
+    "human_review_required": true,
+    "release_approved": false,
+    "reviewer_needed": "a qualified VAT reviewer"
+   },
+   "rule_status": "draft_unreviewed",
+   "state": "blocked_pending_legal_validation",
+   "state_chip": "Blocked: legal validation",
+   "steps": [
+    {
+     "input_facts": {
+      "vat_registration_status": "registered"
+     },
+     "kind": "fact_check",
+     "n": 1,
+     "outcome": "fact present",
+     "rule_ref": null,
+     "visible_to": "owner"
+    },
+    {
+     "input_facts": [],
+     "kind": "validity_check",
+     "n": 2,
+     "outcome": "source not reviewed",
+     "rule_ref": {
+      "article": "*",
+      "source_id": "FTA-VAT-DL8"
+     },
+     "visible_to": "reviewer"
+    },
+    {
+     "input_facts": [],
+     "kind": "block",
+     "n": 3,
+     "outcome": "blocked pending legal validation",
+     "rule_ref": null,
+     "visible_to": "owner"
+    }
+   ]
+  }
+ ],
+ "error": null,
+ "integrity": {
+  "prev_record_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "record_sha256": "24da89686be5eaa246661d7ad9f4818db218b7d26a4db8d5075bd4cb80a3b6db",
+  "seq": 1
+ },
+ "profile_id": "SYN-AMAL-B",
+ "record_id": "1b4e28ba-2fa1-4d3b-a3f5-ef19b5a7633b",
+ "request": {
+  "gate": {
+   "action": "allow",
+   "clause_ids": [],
+   "control_ids": [],
+   "detector_ids": [],
+   "kb_version": "0.1.1"
+  },
+  "kind": "question",
+  "query_sha256": "dad46ec002bffd3d8bcf2b11fa4e9048cb6546d5c5977d395355d5761c2517c7",
+  "query_text": "SYNTHETIC: I registered for VAT voluntarily last year. Can I cancel my registration now?"
+ },
+ "retrieval": {
+  "budget": {
+   "max_passages": 8,
+   "returned": 2
+  },
+  "code_freeze": {
+   "commit": "fdbe131",
+   "config_sha256": "b0d4913f313bf0e18b6ec2d81d84ff748bdd415a26cb32243978b22b248567bc",
+   "files_sha256": {
+    "compliance_agent/llm_lab/retrieve.py": "7fcd076cf22524f815cc0b050538e819072b4ba29408bf97867b55f7e638c1c1"
+   }
+  },
+  "completeness": {
+   "map_review_status": "draft-unreviewed",
+   "map_version": "provision_map_v7",
+   "missing_required": [
+    {
+     "article": "21",
+     "source_id": "FTA-VAT-DL8"
+    },
+    {
+     "article": "14",
+     "source_id": "FTA-VAT-ER"
+    }
+   ],
+   "status": "incomplete"
+  },
+  "contract": "herbiz.retrieval_result/1.0",
+  "execution_mode": "deterministic",
+  "items": [
+   {
+    "added_by": "fixture",
+    "article": "17",
+    "locator": "Article 17, p. 1",
+    "passage_id": "FIXTURE:DL8:17",
+    "rank": 1,
+    "score": null,
+    "source_id": "FTA-VAT-DL8",
+    "url": "https://tax.gov.ae/",
+    "version_id": "FTA-VAT-DL8@v1"
+   },
+   {
+    "added_by": "fixture",
+    "article": "8",
+    "locator": "Article 8, p. 1",
+    "passage_id": "FIXTURE:ER:8",
+    "rank": 2,
+    "score": 1.5,
+    "source_id": "FTA-VAT-ER",
+    "url": "https://tax.gov.ae/",
+    "version_id": "FTA-VAT-ER@v3"
+   }
+  ],
+  "kb_snapshot": {
+   "db_md5": "26e202b87a062288e56bcda1de9b0217",
+   "manifest_version": "0.2.0",
+   "snapshot_date": "2026-10-17"
+  },
+  "query_sha256": "dad46ec002bffd3d8bcf2b11fa4e9048cb6546d5c5977d395355d5761c2517c7",
+  "required_provisions": [
+   {
+    "article": "21",
+    "from": "provision_map_v7",
+    "role": "primary",
+    "source_id": "FTA-VAT-DL8"
+   },
+   {
+    "article": "14",
+    "from": "provision_map_v7",
+    "role": "primary",
+    "source_id": "FTA-VAT-ER"
+   },
+   {
+    "article": "17",
+    "from": "provision_map_v7",
+    "role": "base",
+    "source_id": "FTA-VAT-DL8"
+   }
+  ],
+  "retrieval_version": "fixture",
+  "scope": {
+   "class": "in_scope",
+   "in_scope": true,
+   "reason": "VAT registration topic"
+  },
+  "trace": [
+   {
+    "detail": "fixture",
+    "step": "normalise"
+   },
+   {
+    "detail": "fixture",
+    "step": "lexical_search"
+   }
+  ]
+ },
+ "review": {
+  "human_review_required": true,
+  "release_approved": false,
+  "reviewer_needed": "a qualified VAT reviewer"
+ },
+ "sanitizer": {
+  "findings": [],
+  "passed": true,
+  "version": "fixture"
+ },
+ "session_id": "SYN-SESSION-0001",
+ "sources": [
+  {
+   "article": "14",
+   "evidence_level": "observed",
+   "retrieved_on": "2026-10-16",
+   "review_status": "candidate",
+   "source_id": "FTA-VAT-ER",
+   "title": "VAT Executive Regulation (fixture title)",
+   "url": "https://tax.gov.ae/",
+   "validity": {
+    "amendments": [],
+    "article": "14",
+    "conflicts": [
+     {
+      "claim": "deregistration application deadline (fixture)",
+      "conflict_id": "FIXTURE-CONFLICT-1",
+      "precedence_known": false,
+      "resolution": "escalate",
+      "values": [
+       {
+        "locator": "Article 14(1)",
+        "source_id": "FTA-VAT-ER",
+        "url": "https://tax.gov.ae/",
+        "value": "FIXTURE-VALUE-A"
+       },
+       {
+        "locator": "Paragraph 1",
+        "source_id": "FTA-VAT-REG-PAGE",
+        "url": "https://tax.gov.ae/",
+        "value": "FIXTURE-VALUE-B"
+       }
+      ]
+     }
+    ],
+    "contract": "herbiz.source_validity/1.2",
+    "current_official_url": null,
+    "current_official_url_status": null,
+    "key": "FTA-VAT-ER|14",
+    "link_checked_on": null,
+    "link_status": "unchecked",
+    "release_approved": false,
+    "reuse_terms": {
+     "note": "fixture",
+     "publisher_terms_url": null,
+     "redistribution": "unknown"
+    },
+    "review_status": "candidate",
+    "snapshot_date": "2026-10-17",
+    "source_id": "FTA-VAT-ER",
+    "status": "conflict"
+   }
+  }
+ ],
+ "synthetic": true
+}

@@ -1,0 +1,39 @@
+# Command: python3 -m compliance_agent.evaluation --db data/CL_compliance.sqlite3   (2026-10-16 05:15 +04)
+PASS S01 missing_facts: Licensing context unknown  (baseline 0/1)
+PASS S02 missing_facts: Jurisdiction unknown, licensing context known  (baseline 0/2)
+PASS S03 missing_facts: Ledger has an unclassified income line  (baseline 0/1)
+PASS S04 regression_salary: Sales 320k + salary 60k must stay below the 375k fixture threshold  (baseline 1/1)
+PASS S05 threshold: Sales 400k: above the fixture threshold  (baseline 0/1)
+PASS S06 threshold: Expected next-30-day supplies above threshold  (baseline 0/1)
+PASS S07 threshold: Already VAT registered  (baseline 1/1)
+PASS S08 irrelevant_source: Food rule for a design business  (baseline 0/1)
+PASS S09 relevant_source: Food rule for a home bakery  (baseline 1/1)
+PASS S10 conflict: Second source says no privacy notice is needed  (baseline 0/1)
+PASS S11 conflict_resolved: Authorised clarification approved by reviewer  (baseline 1/1)
+PASS S12 superseded: Amended licence rule replaces v1 only after approval  (baseline 1/1)
+PASS S13 substantive_unapproved: Substantive change waiting for review does not change the action  (baseline 1/1)
+PASS S14 cosmetic: Formatting-only page change creates nothing  (baseline 1/1)
+PASS S15 future_effective: Future rule for a VAT-registered business raises no action  (baseline 0/0)
+PASS S16 stale_evidence: Evidence captured long ago must be rechecked  (baseline 0/1)
+PASS S17 malicious_source: Hostile forum text cannot change results  (baseline 1/1)
+PASS S18 profile_change: Owner stops collecting customer data  (baseline 0/1)
+PASS S19 renewal_date: Issue date present, expiry unknown: no inferred due date  (baseline 1/1)
+PASS S20 duplicate_retry: Same source and same profile edit sent twice  (baseline 1/1)
+PASS S21 incomplete_evidence: One of two evidence items, then approval attempt  (baseline 1/1)
+PASS S22 rejected_review: Reviewer sends back complete evidence  (baseline 1/1)
+PASS S23 resolution: Complete evidence approved  (baseline 1/1)
+{
+ "scenarios": 23,
+ "passed": 23,
+ "failed": 0,
+ "clarification_rate": 0.108,
+ "escalated_cases": 4,
+ "unexpected_cases_false_alerts": 0,
+ "open_cases_at_end": 50,
+ "applicable_with_citation": "37/37",
+ "applicable_with_quote_found_in_source": "37/37",
+ "baseline_keyword_lookup_agreement": "13/23",
+ "engine_expected_result_agreement": "24/24",
+ "basis": "synthetic fixtures; expected values written by software, not a domain reviewer",
+ "run_id": "EVAL-20261016T051540-RUN-0002"
+}

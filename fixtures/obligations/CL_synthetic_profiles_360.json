@@ -1,0 +1,30 @@
+{
+ "_notice": "SYNTHETIC profiles for the HerBiz 360 obligations engine (Workstream B). Invented businesses; no real person or company. Not legal or tax advice.",
+ "profiles": [
+  {"profile_id": "SYN-P01", "synthetic": true, "persona": "Home baker, Dubai home business licence, small turnover",
+   "fields": {"emirate": "AE-DU", "jurisdiction_type": "mainland", "legal_form": "home_business_licence", "activities": ["home_bakery"],
+              "licence_expiry_date": "2026-11-20", "revenue_band_last_12m": "0-187500", "vat_registration_status": "not_registered",
+              "ct_registration_status": "not_sure", "has_employees": false, "documents_available": ["trade_licence", "owner_id"]}},
+  {"profile_id": "SYN-P02", "synthetic": true, "persona": "Freelance designer, free zone, turnover near the VAT threshold",
+   "fields": {"emirate": "AE-SH", "jurisdiction_type": "free_zone", "legal_form": "freelance_permit", "activities": ["graphic_design"],
+              "licence_expiry_date": "2027-03-01", "revenue_band_last_12m": "187500-375000", "taxable_expenses_last_12m_aed": 40000,
+              "vat_registration_status": "not_registered", "has_employees": false}},
+  {"profile_id": "SYN-P03", "synthetic": true, "persona": "Small catering LLC above the VAT threshold, two staff",
+   "fields": {"emirate": "AE-AZ", "jurisdiction_type": "mainland", "legal_form": "llc", "activities": ["catering"],
+              "licence_issue_date": "2025-02-01", "licence_expiry_date": "2026-12-01", "financial_year_end": "12-31",
+              "revenue_band_last_12m": "375000-1000000", "taxable_supplies_last_12m_aed": 520000, "vat_registration_status": "not_registered",
+              "ct_registration_status": "not_registered", "has_employees": true, "employees_count": 2, "keeps_accounting_records": true,
+              "documents_available": ["trade_licence", "moa", "sales_12m"]}},
+  {"profile_id": "SYN-P04", "synthetic": true, "persona": "VAT-registered beauty salon (sole establishment)",
+   "fields": {"emirate": "AE-AJ", "jurisdiction_type": "mainland", "legal_form": "sole_establishment", "activities": ["beauty_salon"],
+              "licence_expiry_date": "2027-06-30", "revenue_band_last_12m": "375000-1000000", "vat_registration_status": "registered",
+              "has_employees": true, "employees_count": 1, "documents_available": ["sales_invoices", "invoice_template"]}},
+  {"profile_id": "SYN-P05", "synthetic": true, "persona": "New owner who is not sure of several answers",
+   "fields": {"emirate": "AE-RK", "jurisdiction_type": "not_sure", "legal_form": "other", "activities": ["online_retail"],
+              "revenue_band_last_12m": "not_sure", "vat_registration_status": "not_sure", "has_employees": false}},
+  {"profile_id": "SYN-P06", "synthetic": true, "persona": "Consultant natural person with high turnover (corporate-tax question)",
+   "fields": {"emirate": "AE-DU", "jurisdiction_type": "mainland", "legal_form": "sole_establishment", "activities": ["management_consulting"],
+              "licence_expiry_date": "2026-10-30", "revenue_band_last_12m": "1000000-3000000", "taxable_supplies_last_12m_aed": 1400000,
+              "vat_registration_status": "registered", "ct_registration_status": "not_registered", "has_employees": false}}
+ ]
+}

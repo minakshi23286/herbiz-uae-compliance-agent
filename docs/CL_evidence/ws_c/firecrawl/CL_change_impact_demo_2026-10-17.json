@@ -1,0 +1,49 @@
+{
+ "real_data": {
+  "source": "https://uaelegislation.gov.ae/en/legislations/1227",
+  "scraped": "2026-10-17 (Firecrawl, founder-approved trial)",
+  "articles_compared": 87,
+  "official_wording_checked": "will exceed the Mandatory Registration Threshold during the next (30) thirty days"
+ },
+ "synthetic_change": "Art. 13(1)(b): (30) thirty days -> (60) sixty days (test only; not the law)",
+ "step1_detected": {
+  "status": "changed",
+  "substantive_units": [
+   "Article 13"
+  ]
+ },
+ "step2_affected_provision": [
+  "FTA-VAT-DL8|13"
+ ],
+ "step4_alert": {
+  "severity": "high",
+  "kind": "changed_substantive_in_scope",
+  "detail": "substantive change in Article 13 (in scope)"
+ },
+ "step3_answers": {
+  "recorded_answers": 259,
+  "flagged_by_this_change": 36,
+  "example_question_ids": [
+   "Q01",
+   "Q03",
+   "Q04",
+   "Q45",
+   "U01",
+   "U03",
+   "U09",
+   "U10",
+   "U11",
+   "U12"
+  ]
+ },
+ "step5_block": {
+  "certified": false,
+  "reasons": [
+   "outdated",
+   "source_changed",
+   "version_outdated"
+  ],
+  "user_wording": "Draft information, not legal or tax advice: a provision used may be out of date; an older or out-of-date version of an official text was used; an official source used here changed recently and the change has not been reviewed yet."
+ },
+ "after_review_source_changed_issues": 0
+}

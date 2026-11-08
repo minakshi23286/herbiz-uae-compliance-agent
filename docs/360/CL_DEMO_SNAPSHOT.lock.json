@@ -1,0 +1,60 @@
+{
+ "snapshot": "Demo source snapshot: 17 October 2026.",
+ "snapshot_date": "2026-10-17",
+ "approved": "Founder, chat 17 Oct 2026 ('HERBIZ — FOUNDER APPROVAL: DEMO SOURCE SNAPSHOT'): fixed for the 7 Nov internal demo and 10 Nov championship",
+ "b_commit": "89dc2b9",
+ "b_fixture": "docs/360/demo/wsa/CL_WSA_DEMO_FIXTURE_v1.json",
+ "b_fixture_sha256": "d5e34672425e75aeca30af625e2cf7c147269edcc1e682b6f2fc3939d77517c3",
+ "b_validity_pin": "9b48966",
+ "c_commit": "aa50dd4",
+ "c_contract": "0.2",
+ "c_sbr_evidence_sha256": "be28cebf0512fed1a6d19f751ec0eb89a545a7f333bd55e4da7d4c48244e0d27",
+ "c_obligation_sources_sha256": "863795ee7a891f8328594547bcb042fb1568006a21e52013caaec149b3f82a95",
+ "c_source_candidates_sha256": "bc21dfd08393e557a3aa7a7f60b836ef7d132cd534538291eaa5c435e0e04f55",
+ "rule": "Changing any value here changes the demo's source data. Do it only after an entry in docs/360/CL_HERBIZ360_POST_SNAPSHOT_CHANGE_REPORT.md and a founder decision; never silently.",
+ "b_fixture_contract": "ws-b-demo-0.4",
+ "history": [
+  {
+   "date": "2026-10-17",
+   "change": "WS B re-pin 30a6f9a -> fdbe131 (fixture ws-b-demo-0.2 -> ws-b-demo-0.3; sha256 25ca9939… -> 1b8d2c38…)",
+   "why": "owner-row deadline wording only (legal-kalpu S1/S3); no source data, citation or obligation change",
+   "approved": "Founder, chat 17 Oct 2026",
+   "change_report_entry": "DV-001"
+  },
+  {
+   "date": "2026-10-18",
+   "change": "WS B re-pin fdbe131 -> 89dc2b9 (t2-b-rc1); fixture ws-b-demo-0.3 -> ws-b-demo-0.4 (sha256 1b8d2c38… -> d5e34672…)",
+   "why": "owner sentences 'We need/We can't' -> 'HerBiz needs/HerBiz can't' (differential test: only these differ); adds retrieve_v8 as the interim retrieval candidate",
+   "approved": "Founder/CTO, D-101 and D-102 (18 Oct 2026)",
+   "change_report_entry": "DV-002"
+  },
+  {
+   "date": "2026-10-18",
+   "change": "WS C Task 2 data from t2-c-rc2 (8f35b20): source-validity 1.2 export, link status, SC-2/SC-3 source sides; KB manifest v0.2.0 -> v0.2.1 (954f9056… -> c6d59d88…)",
+   "why": "A-4 integration; demo labels and citations stay at aa50dd4 (snapshot unchanged)",
+   "approved": "Founder/CTO, D-101 amended (rc2), 18 Oct 2026",
+   "change_report_entry": "DV-003"
+  }
+ ],
+ "c_gate_commit": "e01c371",
+ "c_gate_files_sha256": {
+  "compliance_agent/rag_c/policy_gate.py": "c63ed45121cb953471170d1334319ffc52f8c9bf4b2b7ab0e2896d44e98ace10",
+  "knowledge_base/policy/CL_policy_kb.json": "d3da659cae8d0f8eb1fd7ab19ad78935328f3c4c6785aba9c60c3a4232835691",
+  "knowledge_base/policy/CL_ai_governance_references.json": "9b3a381ef73e70363bf2f13e9ae620aa82e5383f9c1e5f580b023fb267b9e6e4"
+ },
+ "c_gate_note": "CR-29 / D-088 (founder, 17 Oct 2026): only the personal-data intake gate files are pinned at WS C e01c371. Tax sources, labels and the 17 Oct 2026 source snapshot stay at c_commit. The governance references are collected, not activated or legally assessed.",
+ "c_kb_manifest_commit": "8f35b20",
+ "c_kb_manifest_sha256": {
+  "kb_export/CL_HERBIZ_KB_MANIFEST.json": "c6d59d88a29305fc0493935e6243de883f75e3ef4848dc7f6acfafa3d111706c",
+  "kb_export/README.md": "cb8b07da43e92566dcfe84fdf67fec6272296220470eb26ef69cfaeb32c5361f"
+ },
+ "c_kb_manifest_note": "A-4 (D-101 amended, 18 Oct 2026): WS C manifest v0.2.1 from t2-c-rc2 (metadata only; link status). Portal entries 1227 and 1972: page loads (founder, 18 Oct), contents NOT yet checked. It does not change the demo or the 17 Oct snapshot.",
+ "c_t2_commit": "8f35b20",
+ "c_t2_files_sha256": {
+  "knowledge_base/t2/CL_source_validity_1.2.json": "68e5e85021e2657d8047835c43027bf9359418f8e2a779c5c3a28636316992e3",
+  "knowledge_base/t2/CL_link_status.json": "ac055cfcbed92fb49e47d5939b8fd0287296ecb302ca580e3e4b2584f43933f9",
+  "fixtures/t2/CL_SC2_source_side.json": "7a7d02d93fa4817a9ae0c3fd8b2518cba5852b3a86a272ab98770d0f64d3bd0c",
+  "fixtures/t2/CL_SC3_source_side.json": "f70933f8b8a98adb173d6b0d6a4d7026485dbc23387d81873a8b6e750be9b9e0"
+ },
+ "c_t2_note": "Source-validity 1.2 records (110) are WS C's status metadata, not independently verified legal content. The outdated VAT source (G3) is not resolved: portal 1227 contents await founder verification."
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HerBiz Compliance Agent — TEMPLATE ONLY, NOT INSTALLED (Workstream C, 17 Oct 2026).
+     Runs the source monitor daily at 06:00 with local, allowlisted network access.
+     Install only after founder approval of unattended network access:
+       1. replace __WORKTREE__ with a PERMANENT checkout path (not a removable git worktree) and __HOME__ with your home folder
+       2. copy to ~/Library/LaunchAgents/ae.herbiz.source-monitor.plist
+       3. launchctl load ~/Library/LaunchAgents/ae.herbiz.source-monitor.plist
+     It writes only data/monitor/ (state, reports, alerts). It never collects or activates sources. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>ae.herbiz.source-monitor</string>
+  <key>WorkingDirectory</key><string>__WORKTREE__</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string><string>-lc</string>
+    <string>python3 -m compliance_agent.rag_c monitor --allow-network --db data/CL_c_readonly_copy.sqlite3</string>
+  </array>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/herbiz-source-monitor.out.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/herbiz-source-monitor.err.log</string>
+</dict>
+</plist>

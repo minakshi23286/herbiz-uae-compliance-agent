@@ -1,0 +1,11 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v4.json",
+ "sha256": "d2d22ae618738d061b1204394c967f365b35cf53d11be1b467d3bf3f2cc83206",
+ "frozen_at": "2026-10-16 (Workstream B, before any retrieval change and before any run on v4)",
+ "author": "fresh general-purpose agent; read only the article-title list (160 titles from the newest source versions); no code, no earlier sets, no web; questions written before labels",
+ "assembled_by": "Claude Code (Workstream B) - copied byte-for-byte; questions NOT read by the developer before the retrieval code freeze (structure check only: ids, categories, article refs exist)",
+ "grading_criteria": "docs/ai/CL_WS_B_GATE_PLAN.md",
+ "grading_criteria_sha256": "8d12a46fe6d4e55b5919343cf5b138c17bedcee85c83ace92798f698a19ab7fa",
+ "disclosure": "The topic list given to the author (registration, deregistration, exports, exempt supplies, invoices, records, returns, penalties, place/date of supply, designated zones, agents, profit margin, etc.) was written by the developer; question wording and article labels were not.",
+ "rule": "Do not modify after results are observed. The runner refuses to use this set if the sha256 changes."
+}

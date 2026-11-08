@@ -1,0 +1,28 @@
+{
+  "_notice": "HerBiz Compliance Agent. SYNTHETIC business profiles for testing. Not real people or businesses.",
+  "noor_stage1": {
+    "profile_id": "BP-0001", "project_id": "CA-PRJ-001", "business_id": "HHB-SYN-0001",
+    "display_name": "Noor Design Studio (synthetic)", "synthetic": true,
+    "facts": {
+      "jurisdiction": "AE-DU",
+      "licensing_context": null,
+      "activity": "graphic_design_services",
+      "activity_tags": ["design", "online_services"],
+      "licence_issue_date": "2025-10-20",
+      "licence_expiry_date": null,
+      "employees": 1,
+      "collects_customer_personal_data": true,
+      "sells_online": true,
+      "vat_registered": false,
+      "ledger_last_12m": [
+        {"type": "sale_of_services", "amount_aed": 320000, "note": "design projects, 12 months (synthetic)"},
+        {"type": "salary_cost", "amount_aed": 60000, "note": "part-time assistant salary, 12 months (synthetic)"}
+      ],
+      "expected_taxable_supplies_next_30d_aed": 20000
+    }
+  },
+  "noor_stage2_facts": {
+    "licensing_context": "home_based_licence",
+    "licence_expiry_date": "2026-11-30"
+  }
+}

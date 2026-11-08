@@ -1,0 +1,84 @@
+{
+ "contract": "herbiz.scenario/1.0",
+ "scenario_id": "SC-2",
+ "steps": [
+  {
+   "event": "owner_question",
+   "expected": {
+    "flags": [],
+    "must_not": [],
+    "must_show": [],
+    "state": null
+   },
+   "input": {
+    "question_id": "SYN-SC2-Q",
+    "topic": "vat_deregistration_deadline"
+   },
+   "n": 1,
+   "released_after": null
+  },
+  {
+   "event": "retrieval_and_validity",
+   "expected": {
+    "flags": [
+     "conflict"
+    ],
+    "must_not": [],
+    "must_show": [],
+    "state": null
+   },
+   "input": {
+    "required_provisions": [
+     "FTA-VAT-DL8|21",
+     "FTA-VAT-ER|14"
+    ],
+    "validity_key": "FTA-VAT-ER|14",
+    "validity_status": "conflict"
+   },
+   "n": 2,
+   "released_after": 1
+  },
+  {
+   "event": "agent_response",
+   "expected": {
+    "flags": [
+     "conflict",
+     "blocked_legal_validation"
+    ],
+    "must_not": [
+     "deadline",
+     "resolved"
+    ],
+    "must_show": [
+     "both values with sources",
+     "no precedence rule known",
+     "FTA-registered tax agent"
+    ],
+    "state": "blocked_pending_legal_validation"
+   },
+   "input": {
+    "obligation_id": "C360-05",
+    "profile_fields": {
+     "activities": [
+      "design"
+     ],
+     "ct_registration_status": "not_registered",
+     "emirate": "AE-DU",
+     "financial_year_end": "12-31",
+     "has_employees": false,
+     "jurisdiction_type": "mainland",
+     "keeps_accounting_records": true,
+     "legal_form": "llc",
+     "licence_expiry_date": "2027-01-09",
+     "licence_issue_date": "2026-01-10",
+     "revenue_band_last_12m": "375000-1000000",
+     "vat_registration_status": "registered"
+    }
+   },
+   "n": 3,
+   "released_after": 2
+  }
+ ],
+ "synthetic": true,
+ "title": "Conflicting rules"
+}

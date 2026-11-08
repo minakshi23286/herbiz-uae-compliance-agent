@@ -1,0 +1,44 @@
+{
+ "_meta": {
+  "schema": "HerBiz business profile v360-0.1 (Workstream B)",
+  "status": "draft — field list from WS-C 360 plan (docs/rag/360/03 §1, 05 module 1) + board findings A5; not legally reviewed",
+  "rules": [
+   "Unknown stays unknown: null or the value \"not_sure\" is never defaulted.",
+   "Exact revenue is never required; a band (or \"not_sure\") is enough for the MVP.",
+   "Only synthetic profiles are accepted in this build (synthetic: true).",
+   "requirement: required = needed for any obligation list; conditional = needed only when 'needed_when' holds; optional = improves answers."
+  ],
+  "not_legal_advice": true
+ },
+ "fields": {
+  "emirate": {"type": "enum", "values": ["AE-AZ", "AE-DU", "AE-SH", "AE-AJ", "AE-UQ", "AE-RK", "AE-FU"], "requirement": "required",
+              "question": "Which emirate is your business licensed in?"},
+  "jurisdiction_type": {"type": "enum", "values": ["mainland", "free_zone", "designated_zone"], "requirement": "required",
+                        "question": "Is your licence from a mainland authority or a free zone?",
+                        "clarify": "A designated zone is a special VAT category; if unsure choose free_zone and we will ask more."},
+  "licensing_authority": {"type": "text", "requirement": "optional", "question": "Which authority issued your licence (for example DET Dubai, a free-zone authority)?"},
+  "legal_form": {"type": "enum", "values": ["sole_establishment", "freelance_permit", "home_business_licence", "civil_company", "llc", "branch", "other"],
+                 "requirement": "required", "question": "What is your business's legal form?"},
+  "person_type": {"type": "enum", "values": ["natural_person", "juridical_person"], "requirement": "conditional",
+                  "needed_when": "legal_form is other or not_sure", "derive_from": "legal_form",
+                  "question": "Is the business you yourself (a natural person) or a separate company (a juridical person)?"},
+  "activities": {"type": "list", "requirement": "required", "question": "What does your business do (pick from your licence activities)?"},
+  "licence_issue_date": {"type": "date", "requirement": "optional", "question": "When was your licence first issued?"},
+  "licence_expiry_date": {"type": "date", "requirement": "required", "question": "When does your licence expire (date printed on the licence)?"},
+  "financial_year_end": {"type": "month_day", "requirement": "optional", "question": "When does your financial year end (for example 12-31)?"},
+  "revenue_band_last_12m": {"type": "enum", "values": ["0-187500", "187500-375000", "375000-1000000", "1000000-3000000", "3000000+"],
+                            "requirement": "required", "question": "Roughly how much did the business sell in the last 12 months?",
+                            "clarify": "Ranges only; 'not sure' is allowed."},
+  "taxable_supplies_last_12m_aed": {"type": "amount", "requirement": "optional", "question": "If you know it: total taxable sales in the last 12 months (AED)."},
+  "expected_taxable_supplies_next_30d_aed": {"type": "amount", "requirement": "optional", "question": "Expected taxable sales in the next 30 days (AED), if known."},
+  "taxable_expenses_last_12m_aed": {"type": "amount", "requirement": "optional", "question": "Taxable expenses in the last 12 months (AED), if known."},
+  "vat_registration_status": {"type": "enum", "values": ["registered", "not_registered", "applied"], "requirement": "optional",
+                              "question": "Is the business registered for VAT?"},
+  "ct_registration_status": {"type": "enum", "values": ["registered", "not_registered", "applied"], "requirement": "optional",
+                             "question": "Is the business registered for corporate tax?"},
+  "has_employees": {"type": "bool", "requirement": "required", "question": "Do you employ anyone (other than yourself)?"},
+  "employees_count": {"type": "int", "requirement": "conditional", "needed_when": "has_employees is true", "question": "How many employees?"},
+  "keeps_accounting_records": {"type": "bool", "requirement": "optional", "question": "Do you keep records of sales, expenses and receipts?"},
+  "documents_available": {"type": "list", "requirement": "optional", "question": "Which documents do you already have ready?"}
+ }
+}

@@ -1,0 +1,7 @@
+# Offline retrieval gate on FROZEN unseen v2 (sha 6f47c3ef), retrieval code frozen at 7d63c4c
+Retrieval (any expected article) — eval-v2 code: 14/17 = 82%; FROZEN v3: 17/17 = 100%
+  v3 misses: [] | eval-v2 misses: ['V02', 'V05', 'V07']
+A  v3 recall >= 90%: PASS
+B  original 6 results unchanged for all 24: PASS
+C  average passages 9.6 (max 11) <= 11: PASS
+info: base rule (ER Art. 7) reached the model on 21/21 registration-topic questions

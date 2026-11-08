@@ -1,0 +1,183 @@
+{
+ "contract": "herbiz.capability_declaration/1.0",
+ "declared_on": "2026-10-18",
+ "build": {
+  "integration_commit": "08fbd9d",
+  "b_commit": "89dc2b9",
+  "c_commit": "8f35b20"
+ },
+ "capabilities": [
+  {
+   "id": "CAP-ENGINE",
+   "class": "deterministic",
+   "owner": "B",
+   "description": "Obligations engine: rules as data, fixed states, fail-closed owner view (D-062); no model",
+   "active": true,
+   "evidence": [
+    "compliance_agent/obligations/engine.py",
+    "tests/test_obligations.py"
+   ]
+  },
+  {
+   "id": "CAP-RETRIEVAL",
+   "class": "deterministic",
+   "owner": "B",
+   "description": "Task 2 retrieval v8 (interim candidate, D-102/D-106) for questions with no recorded answer: lexical search, provision map and expansion; never certifies completeness, so every answer is warned. Fails closed if its frozen code drifts",
+   "active": true,
+   "evidence": [
+    "compliance_agent/llm_lab/retrieve_v8.py",
+    "compliance_agent/t2_retrieval.py",
+    "tests/test_a4_integration.py"
+   ]
+  },
+  {
+   "id": "CAP-VALIDITY",
+   "class": "deterministic",
+   "owner": "C",
+   "description": "Source validity and conflict status per passage from the WS C validity 1.2 export (110 records, not independently verified legal content); current official links are shown, never fetched. A recorded answer citing an article recorded as repealed, amended or in conflict is withheld (rc3)",
+   "active": true,
+   "evidence": [
+    "knowledge_base/t2/CL_source_validity_1.2.json",
+    "tests/test_ws_c_t2_delivery.py",
+    "tests/test_recorded_validity.py"
+   ]
+  },
+  {
+   "id": "CAP-GATE",
+   "class": "deterministic",
+   "owner": "C",
+   "description": "Personal-data intake gate (CR-29): pattern checks from the policy KB before any search or log",
+   "active": true,
+   "evidence": [
+    "compliance_agent/rag_c/policy_gate.py",
+    "tests/test_ws_c_policy_gate.py",
+    "tests/test_privacy_gate_app.py"
+   ]
+  },
+  {
+   "id": "CAP-AUDIT",
+   "class": "deterministic",
+   "owner": "A",
+   "description": "Per-response audit records on every owner channel: independent sanitizer, hash chain, reviewer-only view, fail closed",
+   "active": true,
+   "evidence": [
+    "compliance_agent/audit_log.py",
+    "compliance_agent/audit_sanitizer.py",
+    "tests/test_audit_log.py"
+   ]
+  },
+  {
+   "id": "CAP-SCENARIOS",
+   "class": "simulated",
+   "owner": "A",
+   "description": "Error scenarios SC-1 to SC-3: synthetic events released one at a time and checked",
+   "active": true,
+   "evidence": [
+    "compliance_agent/scenarios.py",
+    "tests/test_scenarios.py"
+   ]
+  },
+  {
+   "id": "CAP-RECORDED",
+   "class": "recorded_model",
+   "owner": "A",
+   "description": "VAT answers produced by claude-sonnet-5-5 in offline runs on 16 Oct 2026 and replayed only for an exactly matching question; no model is called at run time",
+   "active": true,
+   "evidence": [
+    "compliance_agent/ask.py",
+    "tests/test_cx_demo.py"
+   ]
+  },
+  {
+   "id": "CAP-PROXY",
+   "class": "proxy_outputs",
+   "owner": "B",
+   "description": "Classifier outputs written by an independent agent for offline evaluation only; not model performance and not used by the app",
+   "active": true,
+   "evidence": [
+    "docs/CL_evidence/ws_b/"
+   ]
+  },
+  {
+   "id": "CAP-LIVE",
+   "class": "live_inference",
+   "owner": "A",
+   "description": "Language model called at run time: none in Task 2 (D5e)",
+   "active": false,
+   "evidence": []
+  },
+  {
+   "id": "CAP-TOOLS",
+   "class": "tool_use",
+   "owner": "A",
+   "description": "Reads the local knowledge base and fixtures; writes its own audit log. Does not browse, fetch sources, file, pay or send",
+   "active": true,
+   "evidence": [
+    "compliance_agent/web.py"
+   ]
+  },
+  {
+   "id": "CAP-SIM",
+   "class": "simulated",
+   "owner": "A",
+   "description": "Fictional businesses, TEST RULES, the simulated reviewer and the change replay; synthetic data only",
+   "active": true,
+   "evidence": [
+    "fixtures/",
+    "docs/360/demo/"
+   ]
+  },
+  {
+   "id": "CAP-PLANNED",
+   "class": "planned",
+   "owner": "A",
+   "description": "Not built: live model answers, six-domain coverage, scheduled source monitoring, Arabic, real users, qualified tax review",
+   "active": false,
+   "evidence": []
+  }
+ ],
+ "metrics": [
+  {
+   "name": "all_required_recall_v8",
+   "value": 0.667,
+   "class": "deterministic",
+   "set": "independent holdout v10 (18/27), frozen code baefe25",
+   "date": "2026-10-18"
+  },
+  {
+   "name": "all_required_recall_v8",
+   "value": 0.704,
+   "class": "deterministic",
+   "set": "independent holdout v11 (19/27), frozen code",
+   "date": "2026-10-18"
+  },
+  {
+   "name": "all_required_recall_v8",
+   "value": 0.685,
+   "class": "deterministic",
+   "set": "v10 + v11 pooled (37/54); 70% target not met",
+   "date": "2026-10-18"
+  },
+  {
+   "name": "false_refusals_v8",
+   "value": "4/27 (v10); 1/27 (v11)",
+   "class": "deterministic",
+   "set": "valid VAT questions classified out of scope",
+   "date": "2026-10-18"
+  },
+  {
+   "name": "warning_rate_v8",
+   "value": 1.0,
+   "class": "deterministic",
+   "set": "v10 and v11: every answer carries the incompleteness warning",
+   "date": "2026-10-18"
+  },
+  {
+   "name": "silent_incomplete_v8",
+   "value": "0 by construction (every answer warned); not completeness detection",
+   "class": "deterministic",
+   "set": "v10 and v11",
+   "date": "2026-10-18"
+  }
+ ]
+}

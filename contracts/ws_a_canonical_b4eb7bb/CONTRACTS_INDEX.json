@@ -1,0 +1,35 @@
+{
+ "_notice": "HerBiz Task 2 canonical contract schemas (doc 16 r2). WS A owns the bytes; semantics owners named per contract. WS B and WS C keep byte-identical read-only copies and check these sha256 values.",
+ "contracts": {
+  "herbiz.audit_record/1.0": {
+   "file": "audit_record_1.0.schema.json",
+   "semantics_owner": "WS A",
+   "sha256": "cc2aebeae9ff0ad54670c2d75e50cd68a6be3eab342c15a8c514d5100989e061"
+  },
+  "herbiz.capability_declaration/1.0": {
+   "file": "capability_declaration_1.0.schema.json",
+   "semantics_owner": "WS A",
+   "sha256": "5bde1f9ed4814a253c2081c1c59094cca7429c53c103ee96bc5c5b1c72b0a50f"
+  },
+  "herbiz.decision_explanation/1.0": {
+   "file": "decision_explanation_1.0.schema.json",
+   "semantics_owner": "WS B",
+   "sha256": "388e98545b88d19b6b3719cc94099efd07318fdedf4154158755694f013e1f7f"
+  },
+  "herbiz.retrieval_result/1.0": {
+   "file": "retrieval_result_1.0.schema.json",
+   "semantics_owner": "WS B",
+   "sha256": "f878a0af5cab43095ed5ef1b587db2f36ea9fa3cd3ea9cf062cf14d32202f3a5"
+  },
+  "herbiz.scenario/1.0": {
+   "file": "scenario_1.0.schema.json",
+   "semantics_owner": "WS A",
+   "sha256": "4f445bea14520ae415bafd6f5c574010202c39db4c736698c3f5db7d8e502883"
+  },
+  "herbiz.source_validity/1.2": {
+   "file": "source_validity_1.2.schema.json",
+   "semantics_owner": "WS C",
+   "sha256": "5ebe5f98e5514f37de62cfed608d38ddc2a21921010bca33e143c14b1035b948"
+  }
+ }
+}

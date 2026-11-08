@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HerBiz Compliance Agent</title>
+<style>
+:root{--bg:#f7f6f3;--card:#fff;--ink:#1d1d1f;--muted:#5f6368;--line:#e2e0da;--accent:#2d5b8a;--warn:#9a5b00;--warn-soft:#fff3dc;--bad:#a12a2a;--bad-soft:#fde8e8;--ok:#1e6b3a;--ok-soft:#e5f4ea;--info-soft:#e8eff7}
+@media (prefers-color-scheme: dark){:root{--bg:#161616;--card:#202124;--ink:#ececec;--muted:#a8a8a8;--line:#3a3a3a;--accent:#8ab4f8;--warn:#f0b35a;--warn-soft:#3a2d16;--bad:#f28b82;--bad-soft:#3a1d1d;--ok:#81c995;--ok-soft:#18301f;--info-soft:#1e2a38}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:14px 16px;border-bottom:1px solid var(--line);background:var(--card)}
+h1{font-size:18px;margin:0}
+.banner{margin-top:8px;padding:8px 10px;border-radius:6px;background:var(--warn-soft);color:var(--warn);font-weight:600;font-size:13px}
+nav{display:flex;gap:6px;padding:10px 16px;flex-wrap:wrap}
+nav button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;font:inherit}
+nav button[aria-selected=true]{background:var(--accent);color:#fff;border-color:var(--accent)}
+main{padding:0 16px 40px;max-width:1100px;margin:0 auto}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
+h2{font-size:16px;margin:0 0 8px}
+h3{font-size:14px;margin:12px 0 4px}
+.muted{color:var(--muted);font-size:13px}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;margin-right:4px}
+.p-applicable,.p-open{background:var(--info-soft);color:var(--accent)}
+.p-needs_clarification,.p-awaiting_review,.p-candidate{background:var(--warn-soft);color:var(--warn)}
+.p-conflict,.p-escalated,.p-stale_evidence,.p-rejected{background:var(--bad-soft);color:var(--bad)}
+.p-not_applicable,.p-resolved,.p-approved,.p-withdrawn,.p-not_yet_in_force,.p-superseded,.p-cosmetic_noted{background:var(--ok-soft);color:var(--ok)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:6px;border-bottom:1px solid var(--line);vertical-align:top}
+.wrap{overflow-x:auto}
+.case{border:1px solid var(--line);border-radius:8px;padding:10px;margin:8px 0}
+.why{background:var(--bg);border-radius:6px;padding:6px 8px;margin:6px 0;font-size:13px}
+label{display:block;font-size:13px;margin:6px 0 2px}
+input,textarea,select{width:100%;padding:7px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit}
+textarea{min-height:52px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.row>*{flex:1 1 180px}
+button.act{border:0;border-radius:6px;padding:8px 12px;cursor:pointer;font:inherit;font-weight:600;background:var(--accent);color:#fff}
+button.sec{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+button.bad{background:var(--bad)}
+#toast{position:fixed;bottom:12px;left:12px;right:12px;max-width:640px;margin:auto;padding:10px 12px;border-radius:8px;background:var(--ink);color:var(--bg);display:none;font-size:13px;white-space:pre-wrap}
+.hidden{display:none}
+pre{white-space:pre-wrap;font-size:12px;margin:4px 0}
+.hdr{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.chips button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 10px;font:inherit;font-size:13px;cursor:pointer;text-align:left}
+.ans{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px}
+.ans p{margin:6px 0}
+.g-ok{background:var(--ok-soft);color:var(--ok)} .g-warn{background:var(--warn-soft);color:var(--warn)}
+.gbox{border-radius:6px;padding:8px 10px;margin:8px 0;font-size:14px}
+.pro{border-left:4px solid var(--accent);background:var(--info-soft);padding:8px 10px;border-radius:6px;margin:8px 0;font-size:14px}
+details.src{border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin:6px 0}
+details.src summary{cursor:pointer}
+body.owner-mode .team-only{display:none}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <div class="hdr"><h1>HerBiz Compliance Helper <span class="muted" style="font-weight:400">· demo</span></h1>
+    <button class="act sec" id="teamtoggle" style="flex:0 0 auto">Team tools</button></div>
+  <div class="banner">Demo with a made-up business. Not legal or tax advice. Answers are recorded examples from earlier tests (no live AI), and nothing here has been checked by a qualified tax professional.</div>
+  <div class="muted">Your to-do list below uses made-up <b>test rules</b>. Answers quote <b>real FTA texts</b>, pulled out by software and not yet checked against the originals.</div>
+  <div class="muted team-only" id="mode">Loading…</div>
+</header>
+<nav role="tablist" class="team-only">
+  <button role="tab" data-tab="owner" aria-selected="true">Business owner view</button>
+  <button role="tab" data-tab="review" aria-selected="false">Reviewer view</button>
+  <button role="tab" data-tab="kb" aria-selected="false">Knowledge base</button>
+  <button role="tab" data-tab="sources" aria-selected="false">Source versions</button>
+  <button role="tab" data-tab="eval" aria-selected="false">Evaluation</button>
+  <button role="tab" data-tab="project" aria-selected="false">Project status</button>
+  <button role="tab" data-tab="history" aria-selected="false">History</button>
+  <button role="tab" data-tab="demo" aria-selected="false">Demo stages</button>
+</nav>
+<main>
+  <div data-panel="owner">
+    <section><h2>Ask a question</h2>
+      <p class="muted">Ask in your own words. This demo replays answers recorded in earlier tests, so the example questions work best:</p>
+      <div class="chips" id="ask-examples"></div>
+      <div class="row"><input id="askq" placeholder="e.g. When is my deadline to register? I crossed the limit." data-keep><button class="act" id="askbtn" style="flex:0 0 auto">Ask</button></div>
+      <div id="askres" aria-live="polite"></div></section>
+    <section><h2>About your business</h2><div id="profile"></div></section>
+    <section><h2>What needs your attention</h2><div id="owner-cases"></div></section>
+    <section><h2>Checked and not needed now</h2><div id="owner-na"></div></section>
+    <section class="team-only"><h2>Search the test rules (team)</h2>
+      <div class="row"><input id="q" placeholder="e.g. privacy notice customer data" data-keep><button class="act sec" id="qbtn" style="flex:0 0 auto">Search</button></div>
+      <div id="qres" class="muted"></div></section>
+  </div>
+  <div data-panel="review" class="hidden">
+    <section><h2>Reviewer details</h2>
+      <p class="muted">Every decision records your name, role and a note with the time (Asia/Dubai). Saved in this browser as you type.</p>
+      <div class="row"><div><label for="rv-name">Your name</label><input id="rv-name" data-keep></div>
+      <div><label for="rv-role">Your role</label><input id="rv-role" data-keep placeholder="e.g. domain reviewer (Dubai licensing)"></div></div>
+      <div class="row"><button class="act sec" id="dl">Download my details</button><button class="act sec" id="ul">Load my details</button><input type="file" id="ulf" accept="application/json" class="hidden"></div>
+    </section>
+    <section><h2>Needs a reviewer</h2><div id="review-cases"></div></section>
+    <section><h2>Closed</h2><div id="closed-cases"></div></section>
+  </div>
+  <div data-panel="kb" class="hidden">
+    <section><h2>Knowledge base</h2>
+      <p class="muted">Labels: <span class="pill p-approved">REAL OFFICIAL SOURCE</span> a file collected from an official site ·
+      <span class="pill p-candidate">UNVERIFIED EXTRACTION</span> text pulled out by software, not yet checked against the original ·
+      <span class="pill p-needs_clarification">DRAFT INTERPRETATION</span> software's reading, not reviewed ·
+      <span class="pill p-open">REVIEWED INTERPRETATION</span> approved by a named reviewer ·
+      <span class="pill p-resolved">SYNTHETIC FIXTURE</span> made-up test material.</p>
+      <div id="kb-counts"></div></section>
+    <section><h2>Search the official texts</h2>
+      <div class="row"><input id="kbq" placeholder="e.g. mandatory registration threshold" data-keep><button class="act sec" id="kbqbtn" style="flex:0 0 auto">Search</button></div>
+      <label><input type="checkbox" id="kball" style="width:auto"> Include older versions</label>
+      <div id="kbres"></div></section>
+    <section><h2>Documents</h2><div class="wrap" id="kb-docs"></div></section>
+    <section><h2>Compare two versions</h2>
+      <div class="row"><select id="cmp-old"></select><select id="cmp-new"></select><button class="act sec" id="cmp-btn" style="flex:0 0 auto">Compare</button></div>
+      <div id="cmp-res"></div></section>
+    <section><h2>Interpretations (what software thinks a source requires)</h2><div id="kb-interp"></div></section>
+    <section><h2>Collection attempts</h2><div class="wrap" id="kb-attempts"></div></section>
+  </div>
+  <div data-panel="eval" class="hidden">
+    <section><h2>Evaluation (synthetic scenarios)</h2>
+      <p class="muted">Expected values were written by software from the made-up fixture rules. A pass means the workflow behaves as specified, not that any legal reading is right.</p>
+      <div class="row"><button class="act" id="eval-run" style="flex:0 0 auto">Run evaluation now</button></div>
+      <div id="eval"></div></section>
+  </div>
+  <div data-panel="project" class="hidden">
+    <section><h2>Project status (local view)</h2>
+      <div class="banner">Not connected to the BOS. The BOS has one task card that points here; changes are copied by hand.</div>
+      <div id="project"></div></section>
+    <section><h2>Reviewer sign-off register</h2>
+      <p class="muted">For a qualified domain reviewer only. An AI adviser cannot sign off. Recorded with time and qualification.</p>
+      <div class="row"><div><label for="so-type">Item type</label><select id="so-type"><option>obligation</option><option>reference_answer</option><option>source</option></select></div>
+      <div><label for="so-id">Item id</label><input id="so-id" data-keep placeholder="e.g. VAT-MANDATORY-REG-REAL#FTA-VAT-DL8@v1"></div></div>
+      <div class="row"><div><label for="so-qual">Your qualification</label><input id="so-qual" data-keep placeholder="e.g. UAE tax agent, registration no."></div>
+      <div><label for="so-dec">Decision</label><select id="so-dec"><option value="agree">agree</option><option value="disagree">disagree</option><option value="needs_source">needs source</option></select></div></div>
+      <label for="so-note">Note</label><textarea id="so-note" data-keep></textarea>
+      <div class="row"><button class="act" id="so-save" style="flex:0 0 auto">Record sign-off</button></div>
+      <div id="signoffs"></div></section>
+  </div>
+  <div data-panel="sources" class="hidden">
+    <section><h2>Source versions</h2><p class="muted">Original text is stored unchanged. A changed page is not a changed rule: substantive changes wait for a reviewer.</p><div class="wrap" id="sources"></div></section>
+  </div>
+  <div data-panel="history" class="hidden">
+    <section><h2>History (newest first)</h2><p class="muted">Append-only. This survives closing and reopening the app.</p><div class="wrap" id="history"></div></section>
+  </div>
+  <div data-panel="demo" class="hidden">
+    <section><h2>Staged demo (synthetic)</h2>
+      <p class="muted">Each stage releases new information. "System step" adds inputs. "Simulated reviewer" performs the human step for a scripted run; you can do it yourself in the Reviewer view instead.</p>
+      <div id="stages"></div>
+      <h3>Start again</h3><p class="muted">Keeps the old database as a dated backup file. Type RESET DEMO.</p>
+      <div class="row"><input id="reset-confirm" placeholder="RESET DEMO"><button class="act bad" id="reset" style="flex:0 0 auto">Start again</button></div>
+    </section>
+  </div>
+</main>
+<div id="toast" role="status"></div>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pill = s => `<span class="pill p-${esc(s)}">${esc(String(s).replace(/_/g," "))}</span>`;
+const tag = (cls, text) => `<span class="pill p-${esc(cls)}">${esc(text)}</span>`;   // colour from cls, words from text
+const PLAIN = {open:"Needs action", awaiting_review:"Waiting for reviewer", escalated:"Escalated to reviewer", resolved:"Resolved", withdrawn:"Withdrawn", rejected:"Rejected"};
+const KEEP_KEY = "herbiz-compliance-ui-v1";
+let S = null;
+
+// ---- keep typed inputs (survive refresh; download/load) ----
+function keepAll(){ const o = {}; document.querySelectorAll("[data-keep]").forEach(el => o[el.id] = el.value); try{ localStorage.setItem(KEEP_KEY, JSON.stringify(o)); }catch(e){} }
+function restore(){ let o = {}; try{ o = JSON.parse(localStorage.getItem(KEEP_KEY) || "{}"); }catch(e){} document.querySelectorAll("[data-keep]").forEach(el => { if (o[el.id] != null) el.value = o[el.id]; }); }
+document.addEventListener("input", e => { if (e.target.matches("[data-keep]")) keepAll(); });
+$("#dl").onclick = () => { keepAll(); const b = new Blob([localStorage.getItem(KEEP_KEY) || "{}"], {type:"application/json"}); const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = "CL_compliance_reviewer_details.json"; a.click(); };
+$("#ul").onclick = () => $("#ulf").click();
+$("#ulf").onchange = async e => { const f = e.target.files[0]; if (!f) return; try{ const o = JSON.parse(await f.text()); localStorage.setItem(KEEP_KEY, JSON.stringify(o)); restore(); render(); toast("Details loaded."); }catch(err){ toast("That file is not a details file."); } };
+
+function toast(m){ const t = $("#toast"); t.textContent = m; t.style.display = "block"; clearTimeout(t._h); t._h = setTimeout(() => t.style.display = "none", 6000); }
+const SESSION = "s-" + Array.from(crypto.getRandomValues(new Uint8Array(16)), b => String.fromCharCode(97 + b % 26)).join("");   // A-1 session id
+async function api(path, body){
+  const r = await fetch(path, body ? {method:"POST", headers:{"Content-Type":"application/json","X-Requested-With":"compliance-ui","X-HerBiz-Session": SESSION}, body:JSON.stringify(body)} : {headers: {"X-HerBiz-Session": SESSION}});
+  const j = await r.json(); if (!r.ok) throw new Error(j.unavailable || j.error || r.status); return j;
+}
+let KB = {};
+async function load(){
+  [S, KB.status, KB.interp, KB.eval, KB.project] = await Promise.all([api("/api/state"), api("/api/kb/status"), api("/api/kb/interpretations"), api("/api/eval"), api("/api/project")]);
+  render(); renderKB(); renderEval(); renderProject(); restore();
+}
+const LABEL = {REAL_OFFICIAL_SOURCE: "REAL OFFICIAL SOURCE", SYNTHETIC_FIXTURE: "SYNTHETIC FIXTURE", UNVERIFIED_EXTRACTION: "UNVERIFIED EXTRACTION"};
+const interpLabel = o => o.origin_label === "SYNTHETIC_FIXTURE" ? "SYNTHETIC FIXTURE" : (o.interpretation_status === "reviewed" ? "REVIEWED INTERPRETATION" : (o.interpretation_status === "rejected" ? "REJECTED INTERPRETATION" : "DRAFT INTERPRETATION"));
+function renderKB(){
+  const st = KB.status;
+  const n = (k, t) => `<div class="case" style="flex:1 1 150px"><div style="font-size:22px;font-weight:700">${esc(st[k])}</div><div class="muted">${t}</div></div>`;
+  $("#kb-counts").innerHTML = `<div class="row">${n("real_sources","real official sources collected")}${n("documents","document captures")}${n("extracted_ok","extracted fully")}${n("extracted_partial","extracted partly")}${n("extraction_failed","extraction failed")}${n("collection_failures","sources not collected")}${n("passages","searchable passages")}${n("approved_real_versions","real versions approved by a reviewer")}${n("draft_interpretations","draft interpretations")}${n("reviewed_interpretations_real","reviewed interpretations")}</div>`;
+  $("#kb-docs").innerHTML = `<table><tr><th>Document</th><th>Label</th><th>Extraction</th><th>Captured</th><th>Original file</th></tr>${st.documents_list.map(d => `<tr><td><code>${esc(d.doc_id)}</code><br><span class="muted">${esc(d.url)}</span><br>version <code>${esc(d.version_id || "—")}</code></td><td><span class="pill p-approved">${esc(LABEL[d.origin_label] || d.origin_label)}</span></td><td>${pill(d.extraction_status)} ${esc(d.extractor)}${d.pages ? ` · ${d.pages} pages` : ""}<div class="muted">${esc(d.extraction_note)}</div></td><td class="muted">${esc(d.retrieved_at)}<br>sha256 ${esc(d.sha)}… · ${(d.bytes/1024).toFixed(0)} KB</td><td class="muted">data/${esc(d.raw_path)}</td></tr>`).join("")}</table>`;
+  $("#kb-attempts").innerHTML = `<table><tr><th>When</th><th>Source</th><th>Outcome</th><th>Detail</th></tr>${st.attempts.slice().reverse().slice(0,40).map(a => `<tr><td class="muted">${esc(a.at)}</td><td><code>${esc(a.source_id)}</code></td><td>${tag(a.outcome === "failed" || a.outcome === "refused" ? "rejected" : "resolved", a.outcome)}</td><td class="muted">${esc(a.detail)}</td></tr>`).join("")}</table>`;
+  const vers = S.sources.filter(v => !v.fixture);
+  const opts = vers.map(v => `<option value="${esc(v.version_id)}">${esc(v.version_id)} (${esc(v.status)})</option>`).join("");
+  if (!$("#cmp-old").options.length){ $("#cmp-old").innerHTML = opts; $("#cmp-new").innerHTML = opts; const er = vers.filter(v => v.source_id === "FTA-VAT-ER"); if (er.length > 1){ $("#cmp-old").value = er[er.length-2].version_id; $("#cmp-new").value = er[er.length-1].version_id; } }
+  $("#kb-interp").innerHTML = KB.interp.map(o => `<div class="case"><span class="pill ${o.origin_label === "SYNTHETIC_FIXTURE" ? "p-resolved" : (o.interpretation_status === "reviewed" ? "p-open" : "p-needs_clarification")}">${esc(interpLabel(o))}</span> <b>${esc(o.title)}</b> <span class="muted"><code>${esc(o.obligation_id)}</code> · source ${esc(o.source_status)} · quote check ${esc(o.support_status)}</span></div>`).join("");
+}
+function renderEval(){
+  const r = KB.eval.run;
+  if (!r){ $("#eval").innerHTML = `<p class="muted">No evaluation run stored yet.</p>`; return; }
+  const m = JSON.parse(r.metrics_json);
+  $("#eval").innerHTML = `<p><b>${r.passed} passed, ${r.failed} failed</b> · run <code>${esc(r.run_id)}</code> at ${esc(r.at)}</p>
+    <table>${Object.entries(m).map(([k,v]) => `<tr><th>${esc(k.replace(/_/g," "))}</th><td>${esc(v)}</td></tr>`).join("")}</table>
+    <h3>Scenarios</h3><table><tr><th>Id</th><th>Type</th><th>Result</th><th>Note</th></tr>${KB.eval.results.map(x => `<tr><td>${esc(x.scenario_id)}</td><td>${esc(x.category)}</td><td>${tag(x.passed ? "resolved" : "rejected", x.passed ? "pass" : "fail")}</td><td class="muted">${esc(x.note)}</td></tr>`).join("")}</table>`;
+}
+function renderProject(){
+  const p = KB.project;
+  $("#project").innerHTML = `<p class="muted">${esc(p.business_line)} · project ${esc(p.project_id)} · BOS card: <code>${esc(p.bos_card)}</code> · updated ${esc(p.updated)}</p>
+    <h3>Release blockers</h3>${(p.release_blockers || []).map(r => `<div class="case">${r.state === "open" ? tag("rejected", "open blocker") : tag("resolved", r.state)} <b>${esc(r.id)}.</b> ${esc(r.blocker)} <span class="muted">${esc(r.evidence)}</span></div>`).join("") || `<p class="muted">None recorded.</p>`}
+    <h3>Tasks</h3><p class="muted">${esc(p.task_status_scope || "")}</p><table><tr><th>Task</th><th>Owner</th><th>Status</th><th>Evidence</th></tr>${p.tasks.map(t => `<tr><td>${esc(t.title)}</td><td>${esc(t.owner)}</td><td>${tag(t.status === "blocked" ? "rejected" : (t.status === "verified" ? "resolved" : "candidate"), t.status === "verified" ? "verified (software tests)" : t.status)}</td><td class="muted">${esc(t.evidence)}</td></tr>`).join("")}</table>
+    <h3>Decision register</h3><p class="muted">States: approved · pending · blocked · rejected · superseded (kept for history). Only the founder approves.</p>${p.decisions.map(d => `<div class="case" ${d.state === "superseded" ? 'style="opacity:.75"' : ""}>${tag({approved:"resolved", pending:"needs_clarification", blocked:"rejected", rejected:"rejected", superseded:"candidate"}[d.state] || "candidate", d.state || "unknown")} <b>${esc(d.id)}.</b> ${esc(d.question)}
+      ${d.recommendation ? `<div class="why"><b>Recommendation:</b> ${esc(d.recommendation)}</div>` : ""}<div>${esc(d.status)}</div>
+      ${d.note_2026_10_16 ? `<div class="muted">Note (16 Oct): ${esc(d.note_2026_10_16)}</div>` : ""}${d.rejected_option ? `<div class="muted">Rejected option: ${esc(d.rejected_option)}</div>` : ""}${d.superseded_by ? `<div class="muted">Superseded by: ${d.superseded_by.map(esc).join(", ")}</div>` : ""}
+      ${(d.status_history || []).map(h => `<div class="muted">Earlier (${esc(h.as_of)}): ${esc(h.status)}</div>`).join("")}${d.blocks ? `<div class="muted">Blocks: ${d.blocks.map(esc).join("; ")}</div>` : ""}${d.source ? `<div class="muted">Source: ${esc(d.source)}</div>` : ""}</div>`).join("")}
+    <h3>Evidence files</h3><p class="muted">${p.evidence_files.map(esc).join(" · ") || "none"}</p>`;
+  $("#signoffs").innerHTML = p.signoffs.length ? `<table><tr><th>When</th><th>Item</th><th>Reviewer</th><th>Decision</th><th>Note</th></tr>${p.signoffs.map(x => `<tr><td class="muted">${esc(x.at)}</td><td><code>${esc(x.item_id)}</code></td><td>${esc(x.reviewer)}<br><span class="muted">${esc(x.qualification)}</span></td><td>${esc(x.decision)}</td><td>${esc(x.note)}</td></tr>`).join("")}</table>` : `<p class="muted">No sign-offs recorded. None will appear until a real reviewer records one.</p>`;
+}
+
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll("[data-panel]").forEach(p => p.classList.toggle("hidden", p.dataset.panel !== b.dataset.tab));
+  try{ localStorage.setItem(KEEP_KEY + ":tab", b.dataset.tab); }catch(e){}
+});
+
+const isTest = x => x.origin_label === "SYNTHETIC_FIXTURE";
+const srcLabel = x => isTest(x) ? `<span class="pill p-resolved">TEST RULE — made up, not the law</span>` : `<span class="pill p-approved">REAL OFFICIAL SOURCE</span><span class="pill p-candidate">software extraction</span>`;
+const link = u => /^https?:/.test(u || "") ? ` · <a href="${esc(u)}" target="_blank" rel="noopener">open the official document</a>` : "";
+function citeList(c){ return (c||[]).map(x => `<details class="src"><summary>${srcLabel(x)} ${esc(x.title)} · ${esc(x.locator)}${x.stale ? " · <b>out of date</b>" : ""}</summary>
+  <pre>${esc(x.full_text || x.passage)}</pre><div class="muted">${esc(x.authority)} · <code>${esc(x.version_id)}</code>${isTest(x) ? "" : link(x.url)}</div></details>`).join(""); }
+const FACT_PLAIN = {jurisdiction:"Emirate", licensing_context:"Licence type", activity:"Activity", licence_issue_date:"Licence issue date", licence_expiry_date:"Licence expiry date", employees:"Employees", collects_customer_personal_data:"Collects customers' personal data", vat_registered:"Already VAT-registered", expected_taxable_supplies_next_30d_aed:"Expected sales, next 30 days (AED)", uae_place_of_residence:"Lives in the UAE", concerned_goods_services_last_12m_aed:"Imports, last 12 months (AED)", acquired_business_or_related_party_supplies:"Bought a business / related-party sales"};
+const EMIRATE = {"AE-DU":"Dubai","AE-SH":"Sharjah","AE-AJ":"Ajman","AE-AZ":"Abu Dhabi","AE-RK":"Ras Al Khaimah","AE-FU":"Fujairah","AE-UQ":"Umm Al Quwain"};
+const ACTIVITY = {home_food:"Home food or baking", beauty:"Beauty and henna", design_online:"Design or online services", handmade_goods:"Handmade goods", tutoring:"Tutoring", other:"Other", graphic_design_services:"Graphic design services"};
+const LICENCE = {home_based_licence:"Home-based licence", commercial_premises_licence:"Licence with commercial premises"};
+const plainFact = (k, v) => v == null ? "<i>not known yet</i>" : esc(k === "jurisdiction" ? (EMIRATE[v] || v) : k === "activity" ? (ACTIVITY[v] || String(v).replace(/_/g," ")) : k === "licensing_context" ? (LICENCE[v] || v) : v === true ? "Yes" : v === false ? "No" : typeof v === "number" ? v.toLocaleString() : v);
+const plainFacts = t => Object.entries(FACT_PLAIN).reduce((s, [k, v]) => s.split(k).join(v.toLowerCase()), String(t || ""));
+const plainWhy = (c, a) => { const test = a && (a.citations||[]).some(isTest); return esc(plainFacts(String(c.why || "").replace(/the approved source/g, test ? "the test rule (made up, not the law)" : "the source").replace(/the profile facts/g, "your business details"))); };
+function assessmentFor(c){ return S.assessments.find(a => a.assessment_id === c.assessment_id); }
+
+function caseCard(c, mode){
+  const a = assessmentFor(c);
+  const ev = c.kind === "obligation_action" ? `<h3>Evidence needed</h3><ul>${c.evidence_required.map(r => {
+      const got = c.evidence.find(e => e.requirement === r && e.provided);
+      return `<li>${got ? "✓" : "○"} ${esc(r)}${got ? ` <span class="muted">(${esc(got.description)})</span>` : ""}</li>`; }).join("") || "<li>None listed</li>"}</ul>` : "";
+  let controls = "";
+  if (mode === "owner" && c.kind === "obligation_action" && c.status === "open" && c.missing_evidence.length){
+    controls = `<div class="row">${c.missing_evidence.map((r,i) => `<div><label for="ev-${c.case_id}-${i}">${esc(r)}</label><input id="ev-${c.case_id}-${i}" data-keep placeholder="What you are sending (file name or link)"></div>`).join("")}</div>
+      <div class="row"><button class="act" data-ev="${c.case_id}">Send evidence</button></div>`;
+  }
+  if (mode === "review" && !["resolved","withdrawn","rejected"].includes(c.status)){
+    controls = `<label for="note-${c.case_id}">Your note (required)</label><textarea id="note-${c.case_id}" data-keep></textarea>
+      ${c.kind === "source_update" && sourceFlags(c).length ? `<label><input type="checkbox" id="ack-${c.case_id}" style="width:auto"> I have read the warning flags and still approve</label>` : ""}
+      <div class="row"><button class="act" data-rv="${c.case_id}" data-d="approve">Approve</button><button class="act sec" data-rv="${c.case_id}" data-d="reject">${c.kind === "source_update" ? "Reject version" : "Send back"}</button></div>`;
+  }
+  const missing = a && a.missing && a.missing.length ? `<div class="why">Facts still needed: <b>${a.missing.map(k => esc(FACT_PLAIN[k] || k)).join(", ")}</b></div>` : "";
+  if (mode === "owner"){
+    const due = c.due_date ? `Due by <b>${esc(c.due_date)}</b>` : "No date yet";
+    return `<div class="case"><div>${pill(c.status)} <b>${esc(c.title)}</b></div>
+      <div class="why"><b>Why:</b> ${plainWhy(c, a)}</div>${missing}
+      <div class="muted">${due} — ${esc(plainFacts(String(c.due_basis || "").replace(/'licence_expiry_date'/g, "the licence expiry date")))}</div>
+      ${ev}${a ? `<details><summary class="muted">How this was checked</summary><pre>${esc(a.rationale)}</pre>${citeList(a.citations)}</details>` : ""}${controls}</div>`;
+  }
+  const reviews = c.reviews.length ? `<details><summary class="muted">Decisions (${c.reviews.length})</summary>${c.reviews.map(r => `<div class="muted">${esc(r.decided_at)} · ${esc(r.reviewer)} (${esc(r.role)}) · ${esc(r.decision)} → ${esc(r.outcome)} · ${esc(r.context)}</div>`).join("")}</details>` : "";
+  return `<div class="case"><div>${pill(c.status)} <b>${esc(c.title)}</b> <span class="muted">${esc(c.case_id)} · ${esc(c.kind.replace(/_/g," "))}</span></div>
+    <div class="why"><b>Why:</b> ${esc(c.why)}</div>${missing}
+    <div class="muted">Owner: ${esc(c.owner)} · Reviewer: ${esc(c.reviewer)} · Due: ${esc(c.due_date || "no date")} — ${esc(c.due_basis)}</div>
+    ${ev}${a ? `<details><summary class="muted">How this was checked</summary><pre>${esc(a.rationale)}</pre>${citeList(a.citations)}</details>` : ""}
+    ${c.kind === "source_update" ? sourceBlock(c) : ""}${c.kind === "interpretation_review" ? interpBlock(c) : ""}${reviews}${controls}</div>`;
+}
+function interpBlock(c){ const oid = c.dedupe_key.replace(/^interpretation:/, ""); const o = (KB.interp || []).find(x => x.obligation_id === oid); if (!o) return "";
+  const q = o.support_quote ? JSON.parse(o.support_quote) : [];
+  return `<div class="why"><b>Quote check:</b> ${pill(o.support_status)} — every quote below must appear in the cited official text.<ul>${q.map(x => `<li class="muted">${esc(x.source_id || "")}: “${esc(x.quote || x)}”</li>`).join("")}</ul>
+    <details><summary class="muted">Conditions and action (draft)</summary><pre>${esc(JSON.stringify(JSON.parse(o.conditions_json), null, 1))}
+${esc(JSON.stringify(JSON.parse(o.action_json), null, 1))}</pre></details></div>`; }
+function sourceFlags(c){ const v = S.sources.find(s => s.version_id === c.source_version_id); return v ? v.flags : []; }
+function sourceBlock(c){ const v = S.sources.find(s => s.version_id === c.source_version_id); if (!v) return "";
+  return `<div class="muted">${esc(v.document_title)} · ${esc(v.issuing_authority)} · ${esc(v.locator)} · change: ${esc(v.change_class)}</div>${v.flags.length ? `<div class="why" style="color:var(--bad)">Warning: ${v.flags.map(esc).join("; ")}</div>` : ""}`; }
+
+function render(){
+  restoreTab();
+  $("#mode").textContent = S.mode + " · clock " + S.now;
+  const p = S.profiles[0];
+  if (!p){ $("#profile").innerHTML = `<p>Tell me a few things about your business so I can check what applies. <span class="muted">Use made-up details only — this is a demo.</span></p>${onboardForm({})}`; wireOnboard(); }
+  else {
+    const f = p.facts, ts = p.taxable_supplies;
+    const facts = ["jurisdiction","licensing_context","activity","licence_issue_date","licence_expiry_date","employees","collects_customer_personal_data","vat_registered","expected_taxable_supplies_next_30d_aed","uae_place_of_residence","concerned_goods_services_last_12m_aed","acquired_business_or_related_party_supplies"];
+    const shown = facts.filter(k => !["licence_issue_date","employees"].includes(k));
+    $("#profile").innerHTML = `<div><b>${esc(p.display_name)}</b> <span class="muted">made-up demo business</span></div>
+      ${p.missing_material_facts.length ? `<div class="why" style="color:var(--warn)">I still need: <b>${p.missing_material_facts.map(k => esc(FACT_PLAIN[k] || k)).join(", ")}</b>. Until then, the list below may be missing things.</div>` : ""}
+      <table><tr><th>Sales counted towards the VAT limit, last 12 months</th><td>${ts.total_aed == null ? "<i>not known yet</i>" : "AED " + ts.total_aed.toLocaleString()}${ts.excluded.map(x => `<div class="muted">Not counted: ${esc(x.type.replace(/_/g," "))} AED ${x.amount_aed.toLocaleString()} (costs are not sales)</div>`).join("")}</td></tr>
+      ${shown.map(k => `<tr><th>${esc(FACT_PLAIN[k] || k)}</th><td>${plainFact(k, f[k])}</td></tr>`).join("")}</table>
+      <details><summary><b>Change my business details</b></summary>${onboardForm(f, p.display_name)}</details>
+      <details><summary><b>More facts</b> <span class="muted">(licence expiry, imports, residence)</span></summary>
+      <div class="row"><div class="hidden"><label for="pf-licensing_context">Licence type</label><select id="pf-licensing_context"><option value="">not sure</option><option value="home_based_licence">Home-based licence</option><option value="commercial_premises_licence">Licence with commercial premises</option></select></div>
+      <div><label for="pf-licence_expiry_date">Licence expiry date (as printed on the licence)</label><input type="date" id="pf-licence_expiry_date"></div>
+      <div><label for="pf-collects">Collects customer personal data</label><select id="pf-collects"><option value="true">yes</option><option value="false">no</option></select></div></div>
+      <div class="row"><div><label for="pf-res">Has a place of residence in the UAE</label><select id="pf-res"><option value="">(unknown)</option><option value="true">yes</option><option value="false">no</option></select></div>
+      <div><label for="pf-cg">Imports / reverse-charge purchases, last 12 months (AED; 0 if none)</label><input type="number" min="0" step="1" id="pf-cg"></div>
+      <div><label for="pf-rp">Bought a business or supplies through related parties?</label><select id="pf-rp"><option value="">(unknown)</option><option value="false">no</option><option value="true">yes</option></select></div></div>
+      <div class="row"><button class="act" id="pf-save">Save facts</button></div></details>`;
+    wireOnboard(p);
+    $("#pf-licensing_context").value = f.licensing_context || "";
+    $("#pf-licence_expiry_date").value = f.licence_expiry_date || "";
+    $("#pf-collects").value = String(f.collects_customer_personal_data);
+    $("#pf-res").value = f.uae_place_of_residence == null ? "" : String(f.uae_place_of_residence);
+    $("#pf-cg").value = f.concerned_goods_services_last_12m_aed ?? "";
+    $("#pf-rp").value = f.acquired_business_or_related_party_supplies == null ? "" : String(f.acquired_business_or_related_party_supplies);
+    const tri = v => v === "" ? null : v === "true";
+    $("#pf-save").onclick = () => act(() => api("/api/profile", {profile_id: p.profile_id, facts: {
+      licensing_context: $("#pf-licensing_context").value || null,
+      licence_expiry_date: $("#pf-licence_expiry_date").value || null,
+      collects_customer_personal_data: $("#pf-collects").value === "true",
+      uae_place_of_residence: tri($("#pf-res").value),
+      concerned_goods_services_last_12m_aed: $("#pf-cg").value === "" ? null : parseInt($("#pf-cg").value, 10),
+      acquired_business_or_related_party_supplies: tri($("#pf-rp").value)}}), "Facts saved; checks re-run.");
+  }
+  const owned = S.cases.filter(c => c.profile_id && !["resolved","withdrawn"].includes(c.status));
+  $("#owner-cases").innerHTML = owned.map(c => caseCard(c, "owner")).join("") || `<p class="muted">Nothing open.</p>`;
+  const na = S.assessments.filter(a => ["not_applicable","not_yet_in_force"].includes(a.result));
+  const NA = {not_applicable: "Does not apply to you now", not_yet_in_force: "Not in force yet"};
+  $("#owner-na").innerHTML = na.map(a => `<div class="case"><span class="pill p-resolved">${esc(NA[a.result] || a.result)}</span> <b>${esc((a.citations && a.citations[0] && a.citations[0].title || a.obligation_key).replace(/ \(synthetic fixture\)/, ""))}</b>
+    ${(a.citations||[]).some(isTest) ? `<span class="pill p-resolved">test rule</span>` : ""}<details><summary class="muted">How this was checked</summary><pre>${esc(a.rationale)}</pre>${citeList(a.citations)}</details></div>`).join("") || `<p class="muted">None yet.</p>`;
+  const forReview = S.cases.filter(c => ["awaiting_review","escalated"].includes(c.status) || (["source_update","interpretation_review"].includes(c.kind) && c.status === "open"));
+  $("#review-cases").innerHTML = forReview.map(c => caseCard(c, "review")).join("") || `<p class="muted">Nothing waiting for a reviewer.</p>`;
+  $("#closed-cases").innerHTML = S.cases.filter(c => ["resolved","withdrawn","rejected"].includes(c.status)).map(c => caseCard(c, "closed")).join("") || `<p class="muted">None yet.</p>`;
+  $("#sources").innerHTML = `<table><tr><th>Version</th><th>Status</th><th>Authority</th><th>Where</th><th>Dates</th><th>Hash</th></tr>${S.sources.map(s => `<tr><td><code>${esc(s.version_id)}</code><br>${esc(s.document_title)}</td><td>${pill(s.status)}<br><span class="muted">${esc(s.change_class)}</span>${s.flags.length ? `<br><b style="color:var(--bad)">flagged</b>` : ""}</td><td>${esc(s.issuing_authority)}<br><span class="muted">${esc(s.authority_type)} · ${esc(s.jurisdiction)}</span></td><td>${esc(s.locator)}<br><span class="muted">${esc(s.source_url)}</span></td><td class="muted">published ${esc(s.publication_date || "unknown")}<br>effective ${esc(s.effective_date || "unknown")}<br>retrieved ${esc(s.retrieved_at)}</td><td><code>${esc(s.hash)}</code></td></tr>`).join("")}</table>`;
+  $("#history").innerHTML = `<table><tr><th>When</th><th>Who</th><th>What</th><th>Item</th><th>Details</th></tr>${S.history.map(h => `<tr><td class="muted">${esc(h.at)}</td><td>${esc(h.actor)}</td><td>${esc(h.event)}</td><td><code>${esc(h.entity_id)}</code></td><td><pre>${esc(JSON.stringify(h.payload))}</pre></td></tr>`).join("")}</table>`;
+  $("#stages").innerHTML = S.stages.map(s => { const d = S.stages_done.includes(s.id), dh = S.stages_done.includes(s.id + "h");
+    return `<div class="case"><b>Stage ${esc(s.id)}:</b> ${esc(s.name)} ${d ? pill("resolved") : ""}<div class="row">
+      <button class="act ${d ? "sec" : ""}" data-st="${s.id}" ${d ? "disabled" : ""}>System step</button>
+      ${s.has_human ? `<button class="act sec" data-st="${s.id}" data-h="1" ${dh || !d ? "disabled" : ""}>Simulated reviewer</button>` : ""}</div></div>`; }).join("");
+  restore();
+  wire();
+}
+function wire(){
+  document.querySelectorAll("[data-st]").forEach(b => b.onclick = () => act(() => api("/api/stage", {stage: b.dataset.st, human: !!b.dataset.h}), null));
+  document.querySelectorAll("[data-ev]").forEach(b => b.onclick = () => { const c = S.cases.find(x => x.case_id === b.dataset.ev);
+    const items = c.missing_evidence.map((r,i) => ({requirement: r, description: ($(`#ev-${c.case_id}-${i}`).value || "").trim(), provided: !!($(`#ev-${c.case_id}-${i}`).value || "").trim()})).filter(x => x.provided);
+    if (!items.length) return toast("Type what you are sending first.");
+    act(() => api("/api/evidence", {case_id: c.case_id, items}), null); });
+  document.querySelectorAll("[data-rv]").forEach(b => b.onclick = () => { const c = S.cases.find(x => x.case_id === b.dataset.rv);
+    const body = {decision: b.dataset.d, reviewer: $("#rv-name").value, role: $("#rv-role").value, context: $(`#note-${c.case_id}`).value};
+    if (!body.reviewer || !body.role || !body.context) return toast("Fill in your name and role (top of this page) and a note.");
+    if (c.kind === "source_update") Object.assign(body, {kind: "source", version_id: c.source_version_id, acknowledge_flags: !!($(`#ack-${c.case_id}`) || {}).checked});
+    else if (c.kind === "interpretation_review") Object.assign(body, {kind: "interpretation", obligation_id: c.dedupe_key.replace(/^interpretation:/, "")});
+    else body.case_id = c.case_id;
+    act(() => api("/api/review", body), null); });
+  $("#qbtn").onclick = async () => { const r = await api("/api/search?q=" + encodeURIComponent($("#q").value));
+    $("#qres").innerHTML = `<p>${esc(r.mode)}</p>` + (r.hits.map(h => `<div class="case"><b>${esc(h.title)}</b> <code>${esc(h.version_id)}</code> ${h.upcoming ? pill("not_yet_in_force") : ""}<div class="muted">Matched words: ${h.matched_terms.map(esc).join(", ")} · ${esc(h.locator)}</div>${(v => v && v.text ? `<details class="src"><summary>Show the rule text</summary><pre>${esc(v.text)}</pre></details>` : "")(S.sources.find(x => x.version_id === h.version_id))}</div>`).join("") || "No test rule matched those words."); };
+  $("#askbtn").onclick = () => ask($("#askq").value);
+  [["#askq","#askbtn"],["#q","#qbtn"],["#kbq","#kbqbtn"]].forEach(([i,b]) => { $(i).onkeydown = e => { if (e.key === "Enter"){ e.preventDefault(); $(b).click(); } }; });
+  $("#kbqbtn").onclick = async () => { const r = await api("/api/kb/search?q=" + encodeURIComponent($("#kbq").value) + ($("#kball").checked ? "&all=1" : ""));
+    $("#kbres").innerHTML = `<p class="muted">${esc(r.mode)} · ${r.hits.length} passages</p>` + r.hits.map(h => `<div class="case"><span class="pill p-approved">${esc(LABEL[h.origin_label] || h.origin_label)}</span><span class="pill p-candidate">${esc(LABEL[h.label] || h.label)}</span> <b>${esc(h.document_title || h.source_id)}</b> · ${esc(h.locator)} <span class="muted">(source ${esc(h.source_status)} · matched ${esc(h.matched)})</span>
+      <div class="why">${esc(h.snip)}</div><button class="act sec" data-pid="${esc(h.passage_id)}">Show full passage</button>${link(h.url)}<div id="pp-${esc(h.passage_id).replace(/[^A-Za-z0-9]/g,"_")}"></div></div>`).join("");
+    document.querySelectorAll("[data-pid]").forEach(b => b.onclick = async () => { const x = await api("/api/kb/passage?id=" + encodeURIComponent(b.dataset.pid));
+      $("#pp-" + b.dataset.pid.replace(/[^A-Za-z0-9]/g,"_")).innerHTML = `<pre>${esc(x.text)}</pre><div class="muted">${esc(x.passage_id)} · pages ${esc(x.page_start)}–${esc(x.page_end)} · check against the original file before relying on it</div>`; }); };
+  $("#cmp-btn").onclick = async () => { const r = await api(`/api/kb/compare?old=${encodeURIComponent($("#cmp-old").value)}&new=${encodeURIComponent($("#cmp-new").value)}`);
+    $("#cmp-res").innerHTML = `<p class="muted">${esc(r.note)}</p><p>Wording changed: <b>${r.summary.substantive}</b> · layout only: ${r.summary.cosmetic} · added: ${r.summary.added} · removed: ${r.summary.removed}</p>
+      <table><tr><th>Part</th><th>Before</th><th>After</th></tr>${r.rows.filter(x => x.change !== "cosmetic").map(x => `<tr><td>${esc(x.unit)} ${pill(x.change === "substantive" ? "needs_clarification" : "candidate")}</td><td class="muted">${esc(x.old)}</td><td>${esc(x.new)}</td></tr>`).join("")}</table>`; };
+  $("#eval-run").onclick = () => act(() => api("/api/eval/run", {}), "Evaluation finished and stored.");
+  $("#so-save").onclick = () => act(() => api("/api/signoff", {item_type: $("#so-type").value, item_id: $("#so-id").value, reviewer: $("#rv-name").value, qualification: $("#so-qual").value, decision: $("#so-dec").value, note: $("#so-note").value}), "Sign-off recorded.");
+  $("#reset").onclick = () => act(() => api("/api/reset", {confirm: $("#reset-confirm").value}), "Started again; old database kept as a backup.");
+}
+// ---- owner: onboarding ----
+function onboardForm(f, name){
+  const opt = (m, v) => Object.entries(m).map(([k,t]) => `<option value="${esc(k)}" ${v === k ? "selected" : ""}>${esc(t)}</option>`).join("");
+  const sales = f.ledger_last_12m ? f.ledger_last_12m.filter(l => ["sale_of_services","sale_of_goods"].includes(l.type)).reduce((t,l) => t + l.amount_aed, 0) : "";
+  const reg = f.vat_registered == null ? "unsure" : String(f.vat_registered);
+  return `<div class="row"><div><label for="ob-name">Business name (made up)</label><input id="ob-name" value="${esc((name || "").replace(/ \(synthetic\)$/, ""))}" placeholder="e.g. Fatima Henna"></div>
+    <div><label for="ob-em">Emirate</label><select id="ob-em"><option value="">choose…</option>${opt(EMIRATE, f.jurisdiction)}</select></div>
+    <div><label for="ob-act">What you do</label><select id="ob-act"><option value="">choose…</option>${opt(ACTIVITY, f.activity)}</select></div></div>
+    <div class="row"><div><label for="ob-sales">Total sales, last 12 months (AED)</label><input id="ob-sales" type="number" min="0" step="1000" value="${esc(sales)}" placeholder="e.g. 400000"></div>
+    <div><label for="ob-30">Sales you expect in the next 30 days (AED)</label><input id="ob-30" type="number" min="0" step="1000" value="${esc(f.expected_taxable_supplies_next_30d_aed ?? "")}" placeholder="leave empty if not sure"></div></div>
+    <div class="row"><div><label for="ob-reg">Already registered for VAT?</label><select id="ob-reg">${opt({unsure:"Not sure", false:"No", true:"Yes"}, reg)}</select></div>
+    <div><label for="ob-lic">Licence type</label><select id="ob-lic"><option value="">Not sure</option>${opt(LICENCE, f.licensing_context)}</select></div></div>
+    <div class="row"><button class="act" id="ob-save" style="flex:0 0 auto">Save my business</button></div>`;
+}
+function wireOnboard(){
+  const b = $("#ob-save"); if (!b) return;
+  b.onclick = () => {
+    if (!$("#ob-em").value || !$("#ob-act").value) return toast("Choose your emirate and what you do first.");
+    act(() => api("/api/onboard", {display_name: $("#ob-name").value, jurisdiction: $("#ob-em").value, activity: $("#ob-act").value,
+      sales_last_12m_aed: $("#ob-sales").value, expected_next_30d_aed: $("#ob-30").value, vat_registered: $("#ob-reg").value,
+      licensing_context: $("#ob-lic").value}), "Saved. I re-checked what applies to you.");
+  };
+}
+// ---- owner: ask (recorded answers only) ----
+const ST_PILL = {answered:"p-open", needs_facts:"p-needs_clarification", not_covered:"p-candidate", declined:"p-rejected", no_recording:"p-candidate"};
+async function ask(q, id){
+  if (!q && !id) return toast("Type a question first.");
+  $("#askres").innerHTML = `<p class="muted">Looking…</p>`;
+  try{
+    const r = id ? await api("/api/ask?id=" + encodeURIComponent(id)) : await api("/api/ask", {q});   // CR-29: questions never in the URL
+    if (id) $("#askq").value = r.question;
+    $("#askres").innerHTML = renderAnswer(r);
+    document.querySelectorAll("[data-sugg]").forEach(b => b.onclick = () => ask("", b.dataset.sugg));
+  }catch(e){ $("#askres").innerHTML = `<p class="muted">Could not get an answer: ${esc(e.message)}</p>`; }
+}
+function renderAnswer(r){
+  const g = r.guard || {};
+  const gbox = g.level === "complete_for_map" ? `<div class="gbox g-ok">✓ ${esc(g.message)}</div>`
+    : g.level === "not_applicable" ? "" : `<div class="gbox g-warn">⚠ ${esc(g.message)}${g.missing && g.missing.length ? `<br><span style="font-size:13px">Not in the texts used: ${g.missing.map(esc).join("; ")}</span>` : ""}</div>`;
+  const facts = r.missing_facts && r.missing_facts.length ? `<h3>To answer properly I need</h3><ul>${r.missing_facts.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+  const srcs = (r.sources || []).length ? `<h3>Where this comes from</h3>${r.sources.map(x => `<details class="src"><summary>${x.quote ? `“${esc(x.quote)}” — ` : ""}<b>${esc(x.where)}</b></summary>${vbox(x.validity)}
+      <div><span class="pill p-approved">REAL OFFICIAL SOURCE</span><span class="pill p-candidate">software extraction</span></div>${x.text ? `<pre>${esc(x.text)}</pre>` : (r.status === "withheld_source_status" ? "" : `<pre>(full text not available)</pre>`)}
+      <div class="muted">${esc(x.locator)}${link(x.url)} · check against the original before relying on it</div></details>`).join("")}` : "";
+  const pass = (r.passages || []).length ? `<h3>Most relevant official passages (not an answer)</h3>${r.passages.map(x => `<details class="src"><summary><b>${esc(x.where)}</b> <span class="muted">${esc(String(x.locator).replace(/^Article [^,]+,\s*/, ""))}</span></summary><pre>${esc(x.text)}</pre><div class="muted">${link(x.url).replace(/^ · /, "")}</div>${vbox(x.validity)}</details>`).join("")}` : "";
+  const interim = r.interim_notice && r.mode === "no_recording" ? `<p class="muted">${esc(r.interim_notice)}</p>` : "";
+  const sugg = (r.suggestions || []).length ? `<h3>Recorded questions close to yours</h3><div class="chips">${r.suggestions.map(x => `<button data-sugg="${esc(x.id)}">${esc(x.text)}</button>`).join("")}</div>` : "";
+  const bring = ["your total sales for the last 12 months", "the sales you expect in the next 30 days", "your trade licence"].concat((r.missing_facts || []).slice(0, 3));
+  const refs = (r.design_references || []).length ? `<p class="muted">Design references: ${r.design_references.map(esc).join(", ")} (principles HerBiz's checks are modelled on; not a legal finding).</p>` : "";
+  const caution = r.caution ? `<div class="gbox g-warn">⚠ ${esc(r.caution)}</div>` : "";
+  const pro = r.professional ? `<div class="pro"><b>Check with a registered tax agent before you act.</b> ${r.status === "declined" || r.status === "blocked" ? "" : "Bring: " + bring.map(esc).join("; ") + "."}</div>`
+    : `<div class="pro">Even when the main texts are present, this is not professional advice. A registered tax agent can confirm it for your situation.</div>`;
+  const prov = r.provenance ? `<p class="muted">${esc(r.provenance.note)} Recorded ${esc(String(r.provenance.recorded_at).slice(0,16).replace("T"," "))} · ${esc(r.provenance.model)}</p>` : "";
+  return `<div class="ans"><div><span class="pill ${ST_PILL[r.status] || "p-candidate"}">${esc(r.status_plain)}</span></div>${gbox}
+    ${caution}${String(r.answer).split(/\n+/).map(t => `<p>${esc(t)}</p>`).join("")}${refs}${facts}${srcs}${pass}${interim}${sugg}${pro}${prov}</div>`;
+}
+// A-4: WS C source validity 1.2 for each passage. The current official link is shown as text-and-link; HerBiz never fetches it.
+function vbox(v){
+  if (!v) return "";
+  const cls = v.status === "current" ? "p-candidate" : "p-rejected";
+  const cur = v.current_official_url ? `<br>Current official page: <a href="${esc(v.current_official_url)}" target="_blank" rel="noopener">${esc(v.current_official_url)}</a>${v.note ? " · " + esc(v.note) : ""}` : "";
+  return `<div class="muted"><span class="pill ${cls}">${esc(v.plain)}</span>${v.conflicts ? ` ${esc(String(v.conflicts))} conflicting statement(s) recorded; review required.` : ""}${cur}</div>`;
+}
+async function loadExamples(){
+  try{ const r = await api("/api/ask/examples");
+    $("#ask-examples").innerHTML = r.examples.map(x => `<button data-ex="${esc(x.id)}" title="${esc(x.text)}"><b>${esc(x.persona)}:</b> ${esc(x.label)}</button>`).join("") || `<span class="muted">No recorded answers are available on this computer.</span>`;
+    document.querySelectorAll("[data-ex]").forEach(b => b.onclick = () => ask("", b.dataset.ex));
+  }catch(e){}
+}
+// ---- owner mode / team mode ----
+function setMode(team){
+  document.body.classList.toggle("owner-mode", !team);
+  $("#teamtoggle").textContent = team ? "Back to owner view" : "Team tools";
+  try{ localStorage.setItem(KEEP_KEY + ":team", team ? "1" : ""); }catch(e){}
+  if (!team){ const b = document.querySelector('nav button[data-tab="owner"]'); if (b) b.click(); }
+}
+$("#teamtoggle").onclick = () => setMode(document.body.classList.contains("owner-mode"));
+(() => { let t = ""; try{ t = localStorage.getItem(KEEP_KEY + ":team") || ""; }catch(e){} document.body.classList.toggle("owner-mode", !t); $("#teamtoggle").textContent = t ? "Back to owner view" : "Team tools"; })();
+async function act(fn, msg){ try{ const r = await fn(); toast(msg || (r.log ? r.log.join("\n") : JSON.stringify(r))); await load(); }catch(e){ toast("Not done: " + e.message); } }
+let tabRestored = false;
+function restoreTab(){ if (tabRestored) return; tabRestored = true; let t = null; try{ t = localStorage.getItem(KEEP_KEY + ":tab"); }catch(e){} if (document.body.classList.contains("owner-mode")) t = "owner"; const b = t && document.querySelector(`nav button[data-tab="${t}"]`); if (b) b.click(); }
+loadExamples();
+load().catch(e => { $("#mode").textContent = "Could not reach the local app: " + e.message; });
+</script>
+</body>
+</html>

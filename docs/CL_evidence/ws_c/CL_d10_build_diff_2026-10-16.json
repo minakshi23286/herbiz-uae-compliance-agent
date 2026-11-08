@@ -1,0 +1,46 @@
+{
+ "only_in_reference": [
+  [
+   "FTA-VAT-ER:11de7a2063f2",
+   "Front matter, p. 2"
+  ],
+  [
+   "FTA-VAT-ER:7e0882e3d6f9",
+   "Front matter, p. 2"
+  ],
+  [
+   "FTA-VAT-ER:b87b4c2c0a60",
+   "Front matter, p. 2"
+  ]
+ ],
+ "only_in_build": [
+  [
+   "FTA-VAT-ER:11de7a2063f2",
+   "Article 1, pp. 1-2"
+  ],
+  [
+   "FTA-VAT-ER:7e0882e3d6f9",
+   "Article 1, pp. 1-2"
+  ],
+  [
+   "FTA-VAT-ER:b87b4c2c0a60",
+   "Article 1, pp. 1-2"
+  ]
+ ],
+ "text_changed": [
+  [
+   "FTA-VAT-ER:11de7a2063f2",
+   "Front matter, p. 1"
+  ],
+  [
+   "FTA-VAT-ER:7e0882e3d6f9",
+   "Front matter, p. 1"
+  ],
+  [
+   "FTA-VAT-ER:b87b4c2c0a60",
+   "Front matter, p. 1"
+  ]
+ ],
+ "unchanged": 365,
+ "passage_counts": {}
+}

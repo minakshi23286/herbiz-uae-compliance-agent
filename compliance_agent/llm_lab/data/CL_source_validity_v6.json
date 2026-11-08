@@ -1,0 +1,16 @@
+{
+ "_meta": {
+  "maintained_by": "Workstream B (retrieval). Mirrors Workstream C's source register gaps; C remains the owner of the findings.",
+  "source_of_findings": "branch ws-c-rag-foundation: knowledge_base/CL_source_register.json gaps G1, G3 and docs/rag/CL_SOURCE_VALIDITY_G1_G3_2026-10-16.md (read-only, 16 Oct 2026), including C's erratum (Art. 1, 55, 65, 70, 76 were changed by DL 16/2024, already in our copy)",
+  "rule": "A retrieval result that needs any provision listed here can never be certified 'complete'. It is labelled source_validity_unresolved and names the issue.",
+  "not_legal_advice": true
+ },
+ "issues": [
+  {"id": "G3", "kind": "outdated", "provisions": ["FTA-VAT-DL8|48", "FTA-VAT-DL8|74", "FTA-VAT-DL8|79 (bis)"],
+   "message": "Our copy of the VAT Decree-Law predates Federal Decree-Law No. 16 of 2025 (in force 1 Jan 2026), which changed Art. 48 and 74 and repealed Art. 79 (bis). The current consolidated text has not been collected."},
+  {"id": "G3-missing", "kind": "missing", "provisions": ["FTA-VAT-DL8|54 (bis)"],
+   "message": "Art. 54 (bis) (added by DL 16/2025) is not in our copy."},
+  {"id": "G1", "kind": "conflict", "provisions": ["FTA-VAT-ER|14"],
+   "message": "Deregistration deadline conflict: ER Art. 14(1) says 20 business days; the FTA deregistration service page (updated 24 Sep 2026) says 30. No deadline may be stated until a qualified reviewer resolves it."}
+ ]
+}

@@ -1,0 +1,1178 @@
+{
+ "_meta": {
+  "checked_on": "2026-10-18",
+  "method": "curl HEAD, then a 1-byte GET if HEAD is refused; status codes only; no content stored; no 403 workaround; fixture.invalid skipped",
+  "counts": {
+   "ok": 83,
+   "blocked_to_automation": 19,
+   "dead": 3,
+   "unchecked": 0
+  },
+  "total": 105,
+  "by": "WS C, Task 2 C-1"
+ },
+ "urls": [
+  {
+   "url": "https://app.invest.dubai.ae/license/renew",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1227",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1226",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ],
+   "founder_check": "page loads (founder, 18 Oct 2026); contents not yet checked"
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1229",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1230",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1582",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1582/related-legislations",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1614",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1625",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "governance",
+    "kb_export"
+   ],
+   "founder_check": "page loads (founder, 18 Oct 2026); contents not yet checked"
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/2161",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/2219",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/2433",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "governance",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/2572",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/2801/download",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://uaelegislation.gov.ae/en/legislations/3860",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://www.uaelegislation.gov.ae/en/legislations/2176",
+   "http_status": 403,
+   "link_status": "blocked_to_automation",
+   "link_checked_on": "2026-10-18",
+   "reason": "HTTP 403 to automation; a person must open it",
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://elaws.moj.gov.ae/UAE-MOJ_LC-En/00_TAXES/UAE-LC-En_2017-08-23_00008_Markait.html?val=EL1",
+   "http_status": null,
+   "link_status": "dead",
+   "link_checked_on": "2026-10-18",
+   "reason": "eLaws host does not respond",
+   "cited_in": [
+    "source_manifest"
+   ],
+   "replacement_url": "https://uaelegislation.gov.ae/en/legislations/1227",
+   "replacement_note": "official portal entry; blocked to automation; pending founder verification"
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2025/07/Federal-Decree-Law-No.-28-of-2022.pdf",
+   "http_status": 404,
+   "link_status": "dead",
+   "link_checked_on": "2026-10-18",
+   "reason": "MoF file removed (404)",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ],
+   "replacement_url": "https://uaelegislation.gov.ae/en/legislations/1625",
+   "replacement_note": "official portal entry; blocked to automation; pending founder verification"
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf",
+   "http_status": 404,
+   "link_status": "dead",
+   "link_checked_on": "2026-10-18",
+   "reason": "MoF file removed (404 since 2026-10-16)",
+   "cited_in": [
+    "kb_export",
+    "register"
+   ],
+   "replacement_url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "replacement_note": "FTA consolidated Executive Regulation (09-2026, stored as FTA-VAT-ER@v3) lists CD 149/2026 in its front matter"
+  },
+  {
+   "url": "https://dda.gov.ae/en/registration-licensing/existing-businesses/license-renewal",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/en/about-ministry/mof-initiatives/einvoicing/",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/en/financial-legislation/",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendment-to-cabinet-decision-on-economic-substance-requirements/",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendments-to-tax-procedures-executive-regulations-effective-april-2026/",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/en/news/ministry-of-finance-announces-amendments-to-the-vat-executive-regulation/",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/en/news/ministry-of-finance-to-implement-vat-law-amendments-starting-january-2026/",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2023/04/Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2023/04/Ministerial-Decision-No.-82-of-2023-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2025/04/Ministerial-Decision-No.-84-of-2025-on-Audited-Financial-Statements.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-no.-243-of-2025-on-the-Electronic-Invoicing-System.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2025/11/Cabinet-Decision-No.-40-of-2017-and-its-amendments-v14.11.25.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2025/12/Cabinet-Decision-Violations-and-Penalties-eInvoicing-final-version-en-8.12.25.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://mof.gov.ae/wp-content/uploads/2026/08/Ministerial-Decision-No.-131-of-2026-Amending-Certain-Provisions-of-Ministerial-Decision-No.-73-of-2023-on-Small-Business-Relief-for-the-Purposes-of-Federal-Decree-Law-No.-47-of-2022-EN.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://mohre.gov.ae/assets/download/8cd7cf08/Federal%20Decree-Law%20No.%2033%20of%202021%20Regarding%20the%20Regulation%20of%20Employment%20Relationship%20and%20its%20amendments.pdf.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Guides/VAT/VAT%20User%20Guide.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Guides/service%20card/VAT%20Deregisteration.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%20153%20of%202025%20on%20the%20Application%20of%20the%20Reverse%20Charge%20Mechanism%20on%20Metal%20Scrap.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-01%20-%20VAT%20-%20Judicial%20Expert%20Services%20-%2007%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-02%20-%20VAT%20-%20Adjustment%20for%20VAT%20Group%20Members%20-%2007%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-03%20-%20VAT%20-%20Method%20of%20Converting%20Consideration%20Received%20in%20Digital%20Currency%20into%20AED%20-%2007%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-04%20-%20VAT%20-%20Life%20Insurance%20-%2007%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/2026-5%20-%20VAT%20-%20Valuation%20of%20Deemed%20Supplies%20-%2007%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%2013%20of%202026%20on%20Measures%2018%2008%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%204%20of%202026%20on%20the%20Rules%20and%20Requirements%20-%2018%2008%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTax.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026-arabic.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2074%20of%202023%20on%20Executive%20Regulation%20of%20Federal%20Decree-Law%20No.%2028%20of%202022%20on%20Tax%20Procedures%20-%20For%20Publishing.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Legislation/FTA-Decision-No-2-of-2025.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2025/VAT%20Administrative%20Exceptions%20Guide%20-%20EN%20-%2005%2012%202025.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/CT_TaxB_ulletin_EN_V5.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/TAXP010%20-%20Designated%20Zones%20for%20CT%20VAT%20Excise%20-%2010%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VAT%20Education%20Guide%20-%2029%2006%202026-rep.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VAT%20Refund%20for%20UAE%20Nationals%20Building%20New%20Residences%20-%20EN%20-%2009%2006%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VAT-Refund-for-UAE-Nationals-Building-New-Residences-EN-10%2004%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VATP045%20-%20Concerned%20Goods%20-%20Tax%20Invoices%20and%20Input%20Tax%20recovery%20-%2008%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Guide/VATP047%20-%20Reverse%20Charge%20Mechanism%20on%20Metal%20Scrap%20-%2010%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/Service-cards/VAT-reg.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae//Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/DataFolder/Files/Legislation/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20For%20Publishing.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/DataFolder/Files/Pdf/Tax%20Groups%20User%20GuideEnglishV050.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/DataFolder/Files/Pdf/Taxable-Person-Guide-June-2018.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Guides/VAT/PublicClarifications/VATP046%20-%20Amendments%20to%20VAT%20Decree-Law%20-%2009%202026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register",
+    "source_manifest"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register",
+    "source_manifest"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive Regulation of Federal Decree Law No 8 of 2017 - Publish - 04 10 2024.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register",
+    "source_manifest"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive-Regulation-of-Federal-Decree-Law-No-08-of-2017-Publish-18-09-2025.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register",
+    "source_manifest"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/FTA%20Decision%20No.%203%20of%202024%20on%20Registration%20Timeline%20for%20Corporate%20Tax%20-%20For%20publishing.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2023/Knowledge%20Center%20Page/vat1-vat-registration-threshold-en.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2025/VATP040%20-%20Amendments%20to%20VAT%20ER%20-%2014%2003%202025.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/Cabinet-Decision-No-74-of-2023-on-Executive-Regulation-of-Tax-Procedures-and-is-amendments-Publishing-01-04-2026.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/DownloadOpenTextFile?fileUrl=en/VAT_VAT_Guides/Tax_Groups_Guide_Value_Added_Tax/Tax_Groups_Guide_EN.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/ar/legislation.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/emaratax/vat_deregistration_self_Assessment_tool.html",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/Legislation.archive.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/content/uae.einvoicing.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/legislation.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/legislation/vat.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.announces.entry.into.force.of.the.decision.amending.administrative.penalties.imposed.for.violations.of.tax.legislation.and.calls.on.registrants.to.benefit.from.the.advantages.of.the.new.decision.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.calls.on.all.persons.subject.to.corporate.tax.to.file.their.tax.returns.and.pay.the.corporate.tax.due.within.the.specified.timeframes.to.avoid.latepayment.penalties.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/media.centre/news/federal.tax.authority.issues.new.decision.on.specified.timeframes.for.corporate.tax.registration.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services/convert.registration.exception.to.trn.vat.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services/corporate.tax.registration.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services/deregistration.of.tax.groups.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services/tax.group.registration.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services/vat.group.amendment.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/services/vat.registration.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/taxes/Vat/guides.references.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register",
+    "source_manifest"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/small.business.relief.23.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "governance",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/Ai/uae-strategy-for-artificial-intelligence",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "governance",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "governance",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://www.mohre.gov.ae/en/guidance-and-awareness-portal-new/wages-protection-system",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "inventory_360",
+    "kb_export"
+   ]
+  },
+  {
+   "url": "https://www.tax.gov.ae/en/content/terms.conditions.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  },
+  {
+   "url": "https://www.tax.gov.ae/en/services/vat.deregistration.aspx",
+   "http_status": 200,
+   "link_status": "ok",
+   "link_checked_on": "2026-10-18",
+   "reason": null,
+   "cited_in": [
+    "kb_export",
+    "register"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+# Optional. The app runs on the Python standard library; these improve PDF extraction and HTTPS on macOS python.org builds.
+# Versions found on the build machine (16 Oct 2026):
+pypdf==6.8.0
+certifi==2025.8.3
+# Alternative to pypdf: poppler pdftotext 26.04.0 (Homebrew: poppler)

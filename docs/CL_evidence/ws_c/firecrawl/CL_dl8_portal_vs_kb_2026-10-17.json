@@ -1,0 +1,94 @@
+{
+ "method": "article sets + number multisets (translation-independent); years and glued footnote markers ignored",
+ "portal": "uaelegislation.gov.ae/en/legislations/1227 (last update 01 Oct 2025), Firecrawl 2026-10-17",
+ "kb": "FTA-VAT-DL8@v1 (FTA consolidation to DL 16/2024)",
+ "articles_only_in_portal": [
+  "Article 54 (bis)",
+  "Front matter"
+ ],
+ "articles_only_in_kb": [
+  "Article 79 (bis)"
+ ],
+ "articles_with_number_differences": [
+  {
+   "article": "Article 12",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "12",
+    "12"
+   ]
+  },
+  {
+   "article": "Article 17",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "12",
+    "30"
+   ]
+  },
+  {
+   "article": "Article 22",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "12"
+   ]
+  },
+  {
+   "article": "Article 23",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "12"
+   ]
+  },
+  {
+   "article": "Article 55",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "22"
+   ]
+  },
+  {
+   "article": "Article 60",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "10"
+   ]
+  },
+  {
+   "article": "Article 65",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "27"
+   ]
+  },
+  {
+   "article": "Article 76",
+   "only_in_portal": [],
+   "only_in_kb": [
+    "32",
+    "33"
+   ]
+  },
+  {
+   "article": "Article 83",
+   "only_in_portal": [
+    "83"
+   ],
+   "only_in_kb": [
+    "8337"
+   ]
+  },
+  {
+   "article": "Article 85",
+   "only_in_portal": [
+    "10",
+    "10",
+    "1227",
+    "16",
+    "31",
+    "38904328"
+   ],
+   "only_in_kb": []
+  }
+ ]
+}

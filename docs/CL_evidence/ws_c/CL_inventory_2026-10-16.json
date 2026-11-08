@@ -1,0 +1,271 @@
+{
+ "database": "data/CL_c_readonly_copy.sqlite3",
+ "integrity": "ok",
+ "counts": {
+  "source_versions": 5,
+  "documents": 5,
+  "passages": 371,
+  "obligations": 2,
+  "reviewer_signoffs": 0,
+  "audit_events": 23
+ },
+ "fts_rows": 371,
+ "real_version_status": {
+  "candidate": 5
+ },
+ "triggers": [
+  "audit_no_delete",
+  "audit_no_update",
+  "source_text_frozen"
+ ],
+ "versions": [
+  {
+   "version_id": "FTA-VAT-DL8@v1",
+   "source_id": "FTA-VAT-DL8",
+   "status": "candidate",
+   "publication_date": null,
+   "effective_date": null,
+   "document_title": "Federal Decree-Law No. 8 of 2017 on Value Added Tax and amendments (FTA legislation archive, 2025 folder)",
+   "doc_id": "FTA-VAT-DL8:37159c643e64",
+   "sha256": "37159c643e64ef2e4accf8a5825539f1c8fac7387166f8fc22afac9e9f6677ea",
+   "raw_path": "raw/FTA-VAT-DL8/37159c643e64ef2e.pdf",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+   "retrieved_at": "2026-10-16T04:58:56+04:00",
+   "extraction_status": "ok",
+   "extractor": "pypdf 6.8.0",
+   "pages": 40,
+   "extraction_note": "Locator repairs: heading 'Article 8337' read as Article 83 (footnote marker merged). Running headers removed: Federal Decree-Law No. # of # and its amendments – As published by Ministry of F. ",
+   "coverage": {
+    "version_id": "FTA-VAT-DL8@v1",
+    "passages": 93,
+    "article_passages": 91,
+    "other_passages": 2,
+    "articles_distinct": 86,
+    "first_article": 1,
+    "last_article": 85,
+    "bis_articles": [
+     "79 (bis)"
+    ],
+    "missing_article_numbers": [],
+    "headings_merged_into_other_passages": [],
+    "split_articles": [
+     1,
+     45,
+     48,
+     79
+    ]
+   }
+  },
+  {
+   "version_id": "FTA-VAT-ER@v1",
+   "source_id": "FTA-VAT-ER",
+   "status": "candidate",
+   "publication_date": null,
+   "effective_date": null,
+   "document_title": "Executive Regulation of the VAT Decree-Law (FTA publication 04-10-2024, archive)",
+   "doc_id": "FTA-VAT-ER:b87b4c2c0a60",
+   "sha256": "b87b4c2c0a60d209783a25b3aa92e64d9f696a0f3300b9ca911c72a401f4e1c7",
+   "raw_path": "raw/FTA-VAT-ER/b87b4c2c0a60d209.pdf",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive Regulation of Federal Decree Law No 8 of 2017 - Publish - 04 10 2024.pdf",
+   "retrieved_at": "2026-10-16T04:58:57+04:00",
+   "extraction_status": "ok",
+   "extractor": "pypdf 6.8.0",
+   "pages": 64,
+   "extraction_note": "Running headers removed: # Cabinet Decision No. # of # and its amendments – Unofficial translation. ",
+   "coverage": {
+    "version_id": "FTA-VAT-ER@v1",
+    "passages": 89,
+    "article_passages": 87,
+    "other_passages": 2,
+    "articles_distinct": 76,
+    "first_article": 2,
+    "last_article": 75,
+    "bis_articles": [
+     "14 (bis)",
+     "3 (bis)"
+    ],
+    "missing_article_numbers": [
+     1
+    ],
+    "headings_merged_into_other_passages": [
+     {
+      "article": 1,
+      "inside": "Front matter, p. 1"
+     }
+    ],
+    "split_articles": [
+     3,
+     14,
+     30,
+     42,
+     51,
+     55,
+     58,
+     59,
+     60,
+     70
+    ]
+   }
+  },
+  {
+   "version_id": "FTA-VAT-ER@v2",
+   "source_id": "FTA-VAT-ER",
+   "status": "candidate",
+   "publication_date": null,
+   "effective_date": null,
+   "document_title": "Executive Regulation of the VAT Decree-Law (FTA publication 18-09-2025, archive)",
+   "doc_id": "FTA-VAT-ER:11de7a2063f2",
+   "sha256": "11de7a2063f2ee7544e45e88df228e05716c4c36871028d898c969691238cbb0",
+   "raw_path": "raw/FTA-VAT-ER/11de7a2063f2ee75.pdf",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive-Regulation-of-Federal-Decree-Law-No-08-of-2017-Publish-18-09-2025.pdf",
+   "retrieved_at": "2026-10-16T04:58:59+04:00",
+   "extraction_status": "ok",
+   "extractor": "pypdf 6.8.0",
+   "pages": 65,
+   "extraction_note": "Running headers removed: # Cabinet Decision No. # of # and its amendments – Unofficial translation. ",
+   "coverage": {
+    "version_id": "FTA-VAT-ER@v2",
+    "passages": 89,
+    "article_passages": 87,
+    "other_passages": 2,
+    "articles_distinct": 76,
+    "first_article": 2,
+    "last_article": 75,
+    "bis_articles": [
+     "14 (bis)",
+     "3 (bis)"
+    ],
+    "missing_article_numbers": [
+     1
+    ],
+    "headings_merged_into_other_passages": [
+     {
+      "article": 1,
+      "inside": "Front matter, p. 1"
+     }
+    ],
+    "split_articles": [
+     3,
+     14,
+     30,
+     42,
+     51,
+     55,
+     58,
+     59,
+     60,
+     70
+    ]
+   }
+  },
+  {
+   "version_id": "FTA-VAT-ER@v3",
+   "source_id": "FTA-VAT-ER",
+   "status": "candidate",
+   "publication_date": null,
+   "effective_date": null,
+   "document_title": "Executive Regulation of the VAT Decree-Law, as amended (FTA file dated 09-2026; file name says 'Law No 8' but page 1 is the Executive Regulation)",
+   "doc_id": "FTA-VAT-ER:7e0882e3d6f9",
+   "sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+   "raw_path": "raw/FTA-VAT-ER/7e0882e3d6f9e4ba.pdf",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "retrieved_at": "2026-10-16T04:59:00+04:00",
+   "extraction_status": "ok",
+   "extractor": "pypdf 6.8.0",
+   "pages": 66,
+   "extraction_note": "Running headers removed: # Cabinet Decision No. # of # and its amendments – As published by the Ministry . ",
+   "coverage": {
+    "version_id": "FTA-VAT-ER@v3",
+    "passages": 91,
+    "article_passages": 89,
+    "other_passages": 2,
+    "articles_distinct": 76,
+    "first_article": 2,
+    "last_article": 75,
+    "bis_articles": [
+     "14 (bis)",
+     "3 (bis)"
+    ],
+    "missing_article_numbers": [
+     1
+    ],
+    "headings_merged_into_other_passages": [
+     {
+      "article": 1,
+      "inside": "Front matter, p. 1"
+     }
+    ],
+    "split_articles": [
+     3,
+     14,
+     29,
+     30,
+     42,
+     51,
+     53,
+     55,
+     58,
+     59,
+     60,
+     70
+    ]
+   }
+  },
+  {
+   "version_id": "FTA-VAT-REG-PAGE@v1",
+   "source_id": "FTA-VAT-REG-PAGE",
+   "status": "candidate",
+   "publication_date": null,
+   "effective_date": null,
+   "document_title": "Registration For VAT (FTA web topic page)",
+   "doc_id": "FTA-VAT-REG-PAGE:a729f138823b",
+   "sha256": "a729f138823baceb14bb028b893234449cc926b1d8eef2fbbcda5aef677a6f36",
+   "raw_path": "raw/FTA-VAT-REG-PAGE/a729f138823baceb.html",
+   "url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+   "retrieved_at": "2026-10-16T04:59:02+04:00",
+   "extraction_status": "ok",
+   "extractor": "html.parser (stdlib)",
+   "pages": null,
+   "extraction_note": "",
+   "coverage": {
+    "version_id": "FTA-VAT-REG-PAGE@v1",
+    "passages": 9,
+    "article_passages": 0,
+    "other_passages": 9,
+    "articles_distinct": 0,
+    "first_article": null,
+    "last_article": null,
+    "bis_articles": [],
+    "missing_article_numbers": [],
+    "headings_merged_into_other_passages": [],
+    "split_articles": []
+   }
+  }
+ ],
+ "collection_attempts": [
+  {
+   "source_id": "FTA-VAT-DL8",
+   "outcome": "new_version",
+   "n": 1,
+   "last_at": "2026-10-16T05:05:13+04:00"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "outcome": "new_version",
+   "n": 3,
+   "last_at": "2026-10-16T05:05:16+04:00"
+  },
+  {
+   "source_id": "FTA-VAT-REG-PAGE",
+   "outcome": "new_version",
+   "n": 1,
+   "last_at": "2026-10-16T05:05:16+04:00"
+  },
+  {
+   "source_id": "MOJ-ELAWS-VAT-DL8",
+   "outcome": "failed",
+   "n": 1,
+   "last_at": "2026-10-16T05:05:16+04:00"
+  }
+ ]
+}

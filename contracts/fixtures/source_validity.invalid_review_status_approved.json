@@ -1,0 +1,42 @@
+{
+ "amendments": [],
+ "article": "14",
+ "conflicts": [
+  {
+   "claim": "deregistration application deadline (fixture)",
+   "conflict_id": "FIXTURE-CONFLICT-1",
+   "precedence_known": false,
+   "resolution": "escalate",
+   "values": [
+    {
+     "locator": "Article 14(1)",
+     "source_id": "FTA-VAT-ER",
+     "url": "https://tax.gov.ae/",
+     "value": "FIXTURE-VALUE-A"
+    },
+    {
+     "locator": "Paragraph 1",
+     "source_id": "FTA-VAT-REG-PAGE",
+     "url": "https://tax.gov.ae/",
+     "value": "FIXTURE-VALUE-B"
+    }
+   ]
+  }
+ ],
+ "contract": "herbiz.source_validity/1.2",
+ "current_official_url": null,
+ "current_official_url_status": null,
+ "key": "FTA-VAT-ER|14",
+ "link_checked_on": null,
+ "link_status": "unchecked",
+ "release_approved": false,
+ "reuse_terms": {
+  "note": "fixture",
+  "publisher_terms_url": null,
+  "redistribution": "unknown"
+ },
+ "review_status": "approved",
+ "snapshot_date": "2026-10-17",
+ "source_id": "FTA-VAT-ER",
+ "status": "conflict"
+}

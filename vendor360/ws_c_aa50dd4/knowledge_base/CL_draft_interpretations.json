@@ -1,0 +1,114 @@
+{
+  "_notice": "HerBiz Compliance Agent. DRAFT interpretations of REAL official sources, written by software (Claude Code) on 16 Oct 2026. NOT REVIEWED. NOT LEGAL OR TAX ADVICE. Each one stays out of every owner-facing result until a qualified UAE tax reviewer approves it in the reviewer queue. Quotes are copied from the extracted text and checked automatically; the check proves the words are there, not that the reading is right.",
+  "interpretations": [
+    {
+      "source_id": "FTA-VAT-DL8",
+      "obligation": {
+        "obligation_key": "VAT-MANDATORY-REG-REAL",
+        "title": "Mandatory VAT registration (draft reading of Decree-Law Art. 13 and 19, Executive Regulation Art. 7)",
+        "requirement": "required",
+        "support_quotes": [
+          {
+            "source_id": "FTA-VAT-DL8",
+            "quote": "Every Person, who has a Place of Residence in the State or an Implementing State, shall register for Tax in the following situations"
+          },
+          {
+            "source_id": "FTA-VAT-DL8",
+            "quote": "Where the total value of all supplies referred to in Article 19 of this Decree-Law exceeded the Mandatory Registration Threshold over the previous 12 -month period"
+          },
+          {
+            "source_id": "FTA-VAT-DL8",
+            "quote": "will exceed the Mandatory Registration Threshold in the next 30 days"
+          },
+          {
+            "source_id": "FTA-VAT-DL8",
+            "quote": "1. The value of taxable Goods and Services."
+          },
+          {
+            "source_id": "FTA-VAT-DL8",
+            "quote": "2. The value of Concerned Goods and Concerned Services received by the Person"
+          },
+          {
+            "source_id": "FTA-VAT-ER",
+            "quote": "The Mandatory Registration Threshold shall be AED 375,000"
+          },
+          {
+            "source_id": "FTA-VAT-ER",
+            "quote": "must file a Tax Registration application with the Authority within 30 (thirty) days of being required to register"
+          }
+        ],
+        "conditions": {
+          "params": {
+            "threshold_aed": 375000
+          },
+          "all": [
+            {
+              "fact": "uae_place_of_residence",
+              "op": "is_true",
+              "label": "has a place of residence in the UAE (Art. 13(1))"
+            },
+            {
+              "fact": "vat_registered",
+              "op": "is_false",
+              "label": "not yet VAT registered"
+            },
+            {
+              "any": [
+                {
+                  "computed": "art19_registration_value_last_12m_aed",
+                  "op": "gt",
+                  "param": "threshold_aed",
+                  "label": "Art. 19 value, previous 12 months (AED): taxable supplies + concerned goods/services; unknown if acquired-business or related-party supplies exist"
+                },
+                {
+                  "fact": "expected_taxable_supplies_next_30d_aed",
+                  "op": "gt",
+                  "param": "threshold_aed",
+                  "label": "expected supplies, next 30 days (AED)"
+                }
+              ]
+            }
+          ]
+        },
+        "action": {
+          "label": "Apply for VAT registration (draft reading; reviewer to confirm)",
+          "due": {
+            "basis_text": "Within 30 days of being required to register (Executive Regulation Art. 7(2), draft reading). The start date depends on when the threshold was exceeded; software does not compute it."
+          },
+          "evidence_required": [
+            "Reviewer note confirming the Article 19 calculation",
+            "FTA registration confirmation"
+          ],
+          "reviewer": "qualified UAE tax reviewer"
+        },
+        "open_questions": [
+          "Does 'taxable Goods and Services' in Art. 19(1) include zero-rated supplies for this owner? (reviewer)",
+          "Exact start of the 30-day period in ER Art. 7(2) for the 'previous 12 months' limb (reviewer)",
+          "Is the 2026 Executive Regulation copy the current consolidated text? (check with FTA)"
+        ]
+      }
+    },
+    {
+      "source_id": "FTA-VAT-DL8",
+      "obligation": {
+        "obligation_key": "VAT-SALARY-NOT-SUPPLY-CHECK",
+        "title": "Negative control: a quote that is NOT in the source must fail the support check",
+        "requirement": "required",
+        "request_review": false,
+        "support_quotes": [
+          {
+            "source_id": "FTA-VAT-DL8",
+            "quote": "salaries paid to employees shall be added to the value of taxable supplies"
+          }
+        ],
+        "conditions": {
+          "all": []
+        },
+        "action": {
+          "label": "Must never be shown",
+          "evidence_required": []
+        }
+      }
+    }
+  ]
+}

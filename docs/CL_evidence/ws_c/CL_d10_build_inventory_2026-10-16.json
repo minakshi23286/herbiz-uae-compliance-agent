@@ -1,0 +1,55 @@
+{
+ "database": "data/CL_rag_c_d10_build.sqlite3 (disposable, git-ignored)",
+ "integrity": "ok",
+ "counts": {
+  "source_versions": 5,
+  "documents": 5,
+  "passages": 371,
+  "obligations": 0,
+  "reviewer_signoffs": 0,
+  "audit_events": 15
+ },
+ "fts_rows": 371,
+ "coverage": {
+  "FTA-VAT-DL8@v1": {
+   "passages": 93,
+   "articles_distinct": 86,
+   "first_article": 1,
+   "last_article": 85,
+   "missing_article_numbers": [],
+   "headings_merged_into_other_passages": []
+  },
+  "FTA-VAT-ER@v1": {
+   "passages": 89,
+   "articles_distinct": 77,
+   "first_article": 1,
+   "last_article": 75,
+   "missing_article_numbers": [],
+   "headings_merged_into_other_passages": []
+  },
+  "FTA-VAT-ER@v2": {
+   "passages": 89,
+   "articles_distinct": 77,
+   "first_article": 1,
+   "last_article": 75,
+   "missing_article_numbers": [],
+   "headings_merged_into_other_passages": []
+  },
+  "FTA-VAT-ER@v3": {
+   "passages": 91,
+   "articles_distinct": 77,
+   "first_article": 1,
+   "last_article": 75,
+   "missing_article_numbers": [],
+   "headings_merged_into_other_passages": []
+  },
+  "FTA-VAT-REG-PAGE@v1": {
+   "passages": 9,
+   "articles_distinct": 0,
+   "first_article": null,
+   "last_article": null,
+   "missing_article_numbers": [],
+   "headings_merged_into_other_passages": []
+  }
+ }
+}

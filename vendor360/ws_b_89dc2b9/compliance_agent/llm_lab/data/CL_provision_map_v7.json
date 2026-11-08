@@ -1,0 +1,2257 @@
+{
+ "_meta": {
+  "article_topics": 162,
+  "articles": 162,
+  "articles_in_a_curated_topic": 74,
+  "base": "v6 provision map + v6 expansion links",
+  "built_by": "experiments/ws_b/CL_build_v7_tables.py",
+  "curated_topics": 47,
+  "locator_contract": "Workstream C interface contract v0.1",
+  "not_legal_advice": true,
+  "note": "Draft: no qualified reviewer has approved it (D3)."
+ },
+ "article_topics": {
+  "art:FTA-VAT-DL8|1": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|1"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Definitions"
+  },
+  "art:FTA-VAT-DL8|10": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|10"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply by Government Entities"
+  },
+  "art:FTA-VAT-DL8|11": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|11",
+    "FTA-VAT-ER|5"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Cases of Deemed Supply"
+  },
+  "art:FTA-VAT-DL8|12": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|12",
+    "FTA-VAT-ER|3 (bis)",
+    "FTA-VAT-ER|5"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exceptions from Deemed Supply"
+  },
+  "art:FTA-VAT-DL8|13": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|13",
+    "FTA-VAT-ER|7"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Mandatory Tax Registration"
+  },
+  "art:FTA-VAT-DL8|14": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|14",
+    "FTA-VAT-ER|10",
+    "FTA-VAT-ER|11"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Group"
+  },
+  "art:FTA-VAT-DL8|15": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|15",
+    "FTA-VAT-ER|16",
+    "FTA-VAT-ER|3 (bis)"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Registration Exception"
+  },
+  "art:FTA-VAT-DL8|16": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|16"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Registration of Government Entities"
+  },
+  "art:FTA-VAT-DL8|17": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|17",
+    "FTA-VAT-ER|8"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Voluntary Registration"
+  },
+  "art:FTA-VAT-DL8|18": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|18"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Registration for a Non-Resident"
+  },
+  "art:FTA-VAT-DL8|19": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|19"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Calculating the Tax Registration Threshold"
+  },
+  "art:FTA-VAT-DL8|2": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|2"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Scope of Tax"
+  },
+  "art:FTA-VAT-DL8|20": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|20",
+    "FTA-VAT-ER|57",
+    "FTA-VAT-ER|58"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Capital Assets"
+  },
+  "art:FTA-VAT-DL8|21": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|21",
+    "FTA-VAT-ER|14",
+    "FTA-VAT-ER|14 (bis)"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Deregistration Cases"
+  },
+  "art:FTA-VAT-DL8|22": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|22",
+    "FTA-VAT-ER|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Application for Tax Deregistration"
+  },
+  "art:FTA-VAT-DL8|23": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|23",
+    "FTA-VAT-ER|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Voluntary Tax Deregistration"
+  },
+  "art:FTA-VAT-DL8|24": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|24",
+    "FTA-VAT-ER|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Procedures, Controls and Conditions of Tax Registration and Deregistration"
+  },
+  "art:FTA-VAT-DL8|25": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|25",
+    "FTA-VAT-ER|19"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Date of Supply"
+  },
+  "art:FTA-VAT-DL8|26": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|26"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Date of Supply in Special Cases"
+  },
+  "art:FTA-VAT-DL8|27": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|27"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Goods"
+  },
+  "art:FTA-VAT-DL8|28": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|28"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Water and Energy"
+  },
+  "art:FTA-VAT-DL8|29": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|29"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Services"
+  },
+  "art:FTA-VAT-DL8|3": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|3"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Rate"
+  },
+  "art:FTA-VAT-DL8|30": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|30"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply in Special Cases"
+  },
+  "art:FTA-VAT-DL8|31": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|31",
+    "FTA-VAT-ER|23"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Telecommunication and Electronic Services"
+  },
+  "art:FTA-VAT-DL8|32": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|32"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Establishment"
+  },
+  "art:FTA-VAT-DL8|33": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|33"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "The Agent"
+  },
+  "art:FTA-VAT-DL8|34": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|34",
+    "FTA-VAT-ER|25"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Supply"
+  },
+  "art:FTA-VAT-DL8|35": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|35"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Import"
+  },
+  "art:FTA-VAT-DL8|36": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|36"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Supply and Deemed Supply for Related"
+  },
+  "art:FTA-VAT-DL8|37": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|37"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Deemed Supply"
+  },
+  "art:FTA-VAT-DL8|38": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|38"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax-Inclusive Prices"
+  },
+  "art:FTA-VAT-DL8|39": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|39"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Supply in case of Discount or Subsidies"
+  },
+  "art:FTA-VAT-DL8|4": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|4"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Responsibility for Tax The"
+  },
+  "art:FTA-VAT-DL8|40": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|40"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Supply of Vouchers"
+  },
+  "art:FTA-VAT-DL8|41": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|41"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Value of Supply of Postage Stamps"
+  },
+  "art:FTA-VAT-DL8|42": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|42"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Temporary Transfer of Goods"
+  },
+  "art:FTA-VAT-DL8|43": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|43"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Charging Tax based on Profit Margin"
+  },
+  "art:FTA-VAT-DL8|44": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|44"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply and Import Taxable at Zero Rate"
+  },
+  "art:FTA-VAT-DL8|45": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|45"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Goods and Services Subject to Zero Rate"
+  },
+  "art:FTA-VAT-DL8|46": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|43",
+    "FTA-VAT-ER|44"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply Exempt from Tax"
+  },
+  "art:FTA-VAT-DL8|47": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|47",
+    "FTA-VAT-ER|4",
+    "FTA-VAT-ER|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply Consisting of More Than One Component"
+  },
+  "art:FTA-VAT-DL8|48": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|48",
+    "FTA-VAT-ER|48"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Reverse Charge"
+  },
+  "art:FTA-VAT-DL8|49": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|49"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Import of Concerned Goods"
+  },
+  "art:FTA-VAT-DL8|5": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|5"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply of Goods"
+  },
+  "art:FTA-VAT-DL8|50": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|50"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Designated Zone"
+  },
+  "art:FTA-VAT-DL8|51": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|51",
+    "FTA-VAT-ER|51"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Transfer of Goods in Designated Zones"
+  },
+  "art:FTA-VAT-DL8|52": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|52",
+    "FTA-VAT-ER|3 (bis)"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exceptions for Designated Zone"
+  },
+  "art:FTA-VAT-DL8|53": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|53"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Calculation of Payable Tax The Payable"
+  },
+  "art:FTA-VAT-DL8|54": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|54"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Recoverable Input Tax"
+  },
+  "art:FTA-VAT-DL8|55": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|55"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Recovery of Recoverable Input Tax in the Tax"
+  },
+  "art:FTA-VAT-DL8|56": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|56"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Input Tax Paid before Tax Registration"
+  },
+  "art:FTA-VAT-DL8|57": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|57"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Recovery of Tax by Government Entities and Charities"
+  },
+  "art:FTA-VAT-DL8|58": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|58"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Calculating the Input Tax that may be Recovered"
+  },
+  "art:FTA-VAT-DL8|59": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Conditions and Mechanism of Input Tax Adjustment"
+  },
+  "art:FTA-VAT-DL8|6": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|6"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply of Services"
+  },
+  "art:FTA-VAT-DL8|60": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|60",
+    "FTA-VAT-ER|58"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Capital Assets Scheme"
+  },
+  "art:FTA-VAT-DL8|61": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|61"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Instances and Conditions for Output Tax Adjustments"
+  },
+  "art:FTA-VAT-DL8|62": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|62"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Mechanism for Output Tax Adjustment"
+  },
+  "art:FTA-VAT-DL8|63": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|63"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Adjustment due to the Issuance of Tax Credit Notes"
+  },
+  "art:FTA-VAT-DL8|64": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|64"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Adjustment for Bad Debts"
+  },
+  "art:FTA-VAT-DL8|65": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|65",
+    "FTA-VAT-ER|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Conditions and Requirements for Issuing Tax Invoices"
+  },
+  "art:FTA-VAT-DL8|66": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|66"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Document of Supplies to an Implementing State"
+  },
+  "art:FTA-VAT-DL8|67": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|67",
+    "FTA-VAT-ER|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Date of Issuance of Tax Invoice"
+  },
+  "art:FTA-VAT-DL8|68": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|68",
+    "FTA-VAT-ER|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Rounding on Tax Invoices"
+  },
+  "art:FTA-VAT-DL8|69": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|69",
+    "FTA-VAT-ER|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Currency Used on Tax Invoices"
+  },
+  "art:FTA-VAT-DL8|7": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|7",
+    "FTA-VAT-ER|50",
+    "FTA-VAT-ER|54"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply in Special Cases"
+  },
+  "art:FTA-VAT-DL8|70": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|70",
+    "FTA-VAT-ER|60"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Conditions and Requirements for Issuing the Tax Credit Note"
+  },
+  "art:FTA-VAT-DL8|71": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|71"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Duration of Tax Period"
+  },
+  "art:FTA-VAT-DL8|72": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|72"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Submission of Tax Returns"
+  },
+  "art:FTA-VAT-DL8|73": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|73"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Settlement of Tax The Executive"
+  },
+  "art:FTA-VAT-DL8|74": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|74",
+    "FTA-VAT-ER|65"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Excess Recoverable Tax"
+  },
+  "art:FTA-VAT-DL8|75": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|75"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Recovery in Special Cases"
+  },
+  "art:FTA-VAT-DL8|76": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|76"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Administrative Penalties Assessment"
+  },
+  "art:FTA-VAT-DL8|77": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|77"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Evasion"
+  },
+  "art:FTA-VAT-DL8|78": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|78",
+    "FTA-VAT-ER|71",
+    "FTA-VAT-ER|72"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Record-keeping"
+  },
+  "art:FTA-VAT-DL8|79": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|79"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Stating the Tax Registration Number"
+  },
+  "art:FTA-VAT-DL8|79 (bis)": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|79 (bis)"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Statute of Limitation"
+  },
+  "art:FTA-VAT-DL8|8": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|8",
+    "FTA-VAT-ER|4",
+    "FTA-VAT-ER|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply consisting of more than one component"
+  },
+  "art:FTA-VAT-DL8|80": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|80",
+    "FTA-VAT-ER|70"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Transitional Rules"
+  },
+  "art:FTA-VAT-DL8|81": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|81"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Revenue Sharing"
+  },
+  "art:FTA-VAT-DL8|82": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|82"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Executive Regulation"
+  },
+  "art:FTA-VAT-DL8|83": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|83"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Article"
+  },
+  "art:FTA-VAT-DL8|84": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|84"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Cancellation of Conflicting Provisions"
+  },
+  "art:FTA-VAT-DL8|85": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|85"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Effective Date of this Decree-Law and its Application"
+  },
+  "art:FTA-VAT-DL8|9": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-DL8|9"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply via Agent"
+  },
+  "art:FTA-VAT-ER|10": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|10",
+    "FTA-VAT-DL8|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Registration as a Tax Group"
+  },
+  "art:FTA-VAT-ER|11": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|11",
+    "FTA-VAT-DL8|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Amendments to a Tax Group"
+  },
+  "art:FTA-VAT-ER|12": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|12",
+    "FTA-VAT-DL8|14"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Effect of registration as a Tax Group"
+  },
+  "art:FTA-VAT-ER|13": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|13"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Aggregation of Related Parties"
+  },
+  "art:FTA-VAT-ER|14": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|14",
+    "FTA-VAT-DL8|21",
+    "FTA-VAT-DL8|22"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Deregistration"
+  },
+  "art:FTA-VAT-ER|14 (bis)": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|14 (bis)",
+    "FTA-VAT-DL8|21"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Deregistration to Protect the Integrity of the Tax System"
+  },
+  "art:FTA-VAT-ER|15": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|15",
+    "FTA-VAT-DL8|14",
+    "FTA-VAT-DL8|21"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Deregistration of a Tax Group Registration or"
+  },
+  "art:FTA-VAT-ER|16": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|16",
+    "FTA-VAT-DL8|15"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exception from Registration"
+  },
+  "art:FTA-VAT-ER|17": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|17"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Registration when the Decree-Law Comes into Force"
+  },
+  "art:FTA-VAT-ER|18": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|18",
+    "FTA-VAT-DL8|21"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Liabilities due before Deregistration"
+  },
+  "art:FTA-VAT-ER|19": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|19",
+    "FTA-VAT-DL8|25"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Due Tax at Date of Supply"
+  },
+  "art:FTA-VAT-ER|2": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|2"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply of Goods"
+  },
+  "art:FTA-VAT-ER|20": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|20"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Goods Delivered within the State"
+  },
+  "art:FTA-VAT-ER|21": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|21"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Services Related to Real Estate"
+  },
+  "art:FTA-VAT-ER|22": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|22"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Place of Supply of Certain Transport Services"
+  },
+  "art:FTA-VAT-ER|23": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|23",
+    "FTA-VAT-DL8|31"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Telecommunication and Electronic Services"
+  },
+  "art:FTA-VAT-ER|24": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|24"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Evidence for Certain Supplies Between the Implementing States"
+  },
+  "art:FTA-VAT-ER|25": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|25",
+    "FTA-VAT-DL8|34"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Market Value"
+  },
+  "art:FTA-VAT-ER|26": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|26"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Apportionment of Single Consideration"
+  },
+  "art:FTA-VAT-ER|27": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|27"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Price Excluding Tax"
+  },
+  "art:FTA-VAT-ER|28": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|28"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Discounts, Subsidies and Vouchers"
+  },
+  "art:FTA-VAT-ER|29": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|29"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Accounting for Tax on the Profit Margin"
+  },
+  "art:FTA-VAT-ER|3": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|3"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply of Services"
+  },
+  "art:FTA-VAT-ER|3 (bis)": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|3 (bis)",
+    "FTA-VAT-DL8|12",
+    "FTA-VAT-DL8|15"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exceptions of Supplies"
+  },
+  "art:FTA-VAT-ER|30": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|30"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating the export of goods"
+  },
+  "art:FTA-VAT-ER|31": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|31"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating the Export of Services"
+  },
+  "art:FTA-VAT-ER|32": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|32"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-Rating Exported Telecommunications Services"
+  },
+  "art:FTA-VAT-ER|33": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|33"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating International Transportation Services"
+  },
+  "art:FTA-VAT-ER|34": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|34"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating certain Means of Transport"
+  },
+  "art:FTA-VAT-ER|35": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|35"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating Goods and Services in Connection with Means of Transport"
+  },
+  "art:FTA-VAT-ER|36": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|36"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating of precious metals"
+  },
+  "art:FTA-VAT-ER|37": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|37"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Residential buildings"
+  },
+  "art:FTA-VAT-ER|38": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|38"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating of Buildings Specifically Designed to be"
+  },
+  "art:FTA-VAT-ER|39": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|39"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating Converted Residential Building"
+  },
+  "art:FTA-VAT-ER|4": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|4",
+    "FTA-VAT-DL8|47",
+    "FTA-VAT-DL8|8"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Supply of More Than One Component"
+  },
+  "art:FTA-VAT-ER|40": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|40"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating Education Services"
+  },
+  "art:FTA-VAT-ER|41": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|41"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Zero-rating Healthcare Services"
+  },
+  "art:FTA-VAT-ER|42": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|42"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Treatment of Financial Services"
+  },
+  "art:FTA-VAT-ER|43": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|43",
+    "FTA-VAT-DL8|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exemption of Residential Buildings"
+  },
+  "art:FTA-VAT-ER|44": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|44",
+    "FTA-VAT-DL8|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exemption of Bare Land"
+  },
+  "art:FTA-VAT-ER|45": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|45",
+    "FTA-VAT-DL8|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exemption of Local Passenger Transport Services"
+  },
+  "art:FTA-VAT-ER|46": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|46",
+    "FTA-VAT-DL8|47",
+    "FTA-VAT-DL8|8"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax on Supplies of More Than One Component"
+  },
+  "art:FTA-VAT-ER|47": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|47"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "General Rules regarding Import of Goods"
+  },
+  "art:FTA-VAT-ER|48": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|48",
+    "FTA-VAT-DL8|48"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Calculation of Tax under the Reverse Charge"
+  },
+  "art:FTA-VAT-ER|49": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|49"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Payments for Goods Transferred to another"
+  },
+  "art:FTA-VAT-ER|5": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|5",
+    "FTA-VAT-DL8|11",
+    "FTA-VAT-DL8|12"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Exceptions related to Deemed Supply"
+  },
+  "art:FTA-VAT-ER|50": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|50",
+    "FTA-VAT-DL8|7"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Special Rules of Import"
+  },
+  "art:FTA-VAT-ER|51": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|51",
+    "FTA-VAT-DL8|51"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Designated zones"
+  },
+  "art:FTA-VAT-ER|52": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|52",
+    "FTA-VAT-DL8|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Input Tax Recovery in Respect of Exempt Supplies"
+  },
+  "art:FTA-VAT-ER|53": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|53"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Non-recoverable Input Tax"
+  },
+  "art:FTA-VAT-ER|54": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|54",
+    "FTA-VAT-DL8|7"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Special cases of Input tax"
+  },
+  "art:FTA-VAT-ER|55": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|55"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Apportionment of Input Tax"
+  },
+  "art:FTA-VAT-ER|56": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|56"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Adjustment of Input Tax Post-Recovery"
+  },
+  "art:FTA-VAT-ER|57": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|57",
+    "FTA-VAT-DL8|20"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Assets Considered Capital Assets"
+  },
+  "art:FTA-VAT-ER|58": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|58",
+    "FTA-VAT-DL8|20",
+    "FTA-VAT-DL8|60"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Adjustments under the Capital Assets Scheme"
+  },
+  "art:FTA-VAT-ER|59": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|59",
+    "FTA-VAT-DL8|65",
+    "FTA-VAT-DL8|67"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax invoices"
+  },
+  "art:FTA-VAT-ER|6": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|6"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Application for Registration"
+  },
+  "art:FTA-VAT-ER|60": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|60",
+    "FTA-VAT-DL8|70"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Credit Note"
+  },
+  "art:FTA-VAT-ER|61": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|61"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Fractions of Fils"
+  },
+  "art:FTA-VAT-ER|62": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|62"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Length of tax period"
+  },
+  "art:FTA-VAT-ER|63": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|63"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Periods in the Case of Loss of Capacity"
+  },
+  "art:FTA-VAT-ER|64": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|64"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tax Return and Payment"
+  },
+  "art:FTA-VAT-ER|65": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|65",
+    "FTA-VAT-DL8|74"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Recovery of Excess Tax If the Taxable"
+  },
+  "art:FTA-VAT-ER|66": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|66"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "New residence"
+  },
+  "art:FTA-VAT-ER|67": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|67"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Business visitors"
+  },
+  "art:FTA-VAT-ER|68": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|68"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Tourist Visitors"
+  },
+  "art:FTA-VAT-ER|69": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|69"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Foreign Governments"
+  },
+  "art:FTA-VAT-ER|7": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|7",
+    "FTA-VAT-DL8|13"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Mandatory Registration"
+  },
+  "art:FTA-VAT-ER|70": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|70",
+    "FTA-VAT-DL8|80"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Transitional rules"
+  },
+  "art:FTA-VAT-ER|71": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|71",
+    "FTA-VAT-DL8|78"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Record-keeping Requirements"
+  },
+  "art:FTA-VAT-ER|72": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|72",
+    "FTA-VAT-DL8|78"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Record Keeping of the Supplies Made"
+  },
+  "art:FTA-VAT-ER|73": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|73"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Article"
+  },
+  "art:FTA-VAT-ER|74": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|74"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Repeal of Conflicting Provisions"
+  },
+  "art:FTA-VAT-ER|75": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|75"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Publication and Coming into Force of the Decision"
+  },
+  "art:FTA-VAT-ER|8": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|8",
+    "FTA-VAT-DL8|17"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Voluntary Registration"
+  },
+  "art:FTA-VAT-ER|9": {
+   "origin": "v7 article topic (article + implementing pairs)",
+   "required": [
+    "FTA-VAT-ER|9"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [],
+   "title": "Related Parties"
+  }
+ },
+ "topics": {
+  "agent": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|9",
+    "FTA-VAT-DL8|33"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|34"
+   ]
+  },
+  "bad_debt": {
+   "origin": "v7 curated",
+   "required": [
+    "FTA-VAT-DL8|64"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|61",
+    "FTA-VAT-DL8|62"
+   ]
+  },
+  "blocked_input_tax": {
+   "origin": "v7 curated",
+   "required": [
+    "FTA-VAT-ER|53"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|54"
+   ]
+  },
+  "capital_assets_scheme": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|60",
+    "FTA-VAT-ER|57"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|58"
+   ]
+  },
+  "capital_assets_threshold": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|19",
+    "FTA-VAT-DL8|20"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|57"
+   ]
+  },
+  "composite_supply": {
+   "origin": "v7 curated",
+   "required": [
+    "FTA-VAT-DL8|8",
+    "FTA-VAT-ER|4"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|47",
+    "FTA-VAT-ER|46"
+   ]
+  },
+  "credit_note": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|63",
+    "FTA-VAT-ER|60"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|61"
+   ]
+  },
+  "date_of_supply": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|25",
+    "FTA-VAT-ER|19"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|26"
+   ]
+  },
+  "deemed_supply": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|11",
+    "FTA-VAT-DL8|12"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|5"
+   ]
+  },
+  "deregistration": {
+   "origin": "v7 curated",
+   "required": [
+    "FTA-VAT-DL8|21",
+    "FTA-VAT-ER|14",
+    "FTA-VAT-DL8|22",
+    "FTA-VAT-DL8|23"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|18"
+   ]
+  },
+  "designated_zone": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|50",
+    "FTA-VAT-ER|51"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|51"
+   ]
+  },
+  "discount": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|39",
+    "FTA-VAT-ER|28"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|34"
+   ]
+  },
+  "education": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|45",
+    "FTA-VAT-ER|40"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "electronic_services": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|31",
+    "FTA-VAT-ER|23"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|29"
+   ]
+  },
+  "evasion": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|77"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|76"
+   ]
+  },
+  "exempt_land": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|44"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "exempt_passenger": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|45"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "exempt_residential": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|43"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|37"
+   ]
+  },
+  "exempt_supplies": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|46"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|43"
+   ]
+  },
+  "financial_services": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|46",
+    "FTA-VAT-ER|42"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "healthcare": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|45",
+    "FTA-VAT-ER|41"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "imports": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|48",
+    "FTA-VAT-ER|47"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|35"
+   ]
+  },
+  "input_tax": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|54",
+    "FTA-VAT-DL8|55"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|53"
+   ]
+  },
+  "input_tax_before_registration": {
+   "origin": "v7 curated",
+   "required": [
+    "FTA-VAT-DL8|56"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|54"
+   ]
+  },
+  "mandatory_registration": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|13",
+    "FTA-VAT-ER|7"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-REG-PAGE|*"
+   ]
+  },
+  "new_residence": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-ER|66"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "non_resident": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|18"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|13"
+   ]
+  },
+  "payment": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|73",
+    "FTA-VAT-ER|64"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "penalties": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|76"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|77"
+   ]
+  },
+  "place_of_supply": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|29",
+    "FTA-VAT-DL8|27"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|30"
+   ]
+  },
+  "profit_margin": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|43",
+    "FTA-VAT-ER|29"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "records": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|78",
+    "FTA-VAT-ER|71"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|72"
+   ]
+  },
+  "registration_exception": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|15",
+    "FTA-VAT-ER|16"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|13"
+   ]
+  },
+  "related_parties": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-ER|13",
+    "FTA-VAT-ER|9"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|14"
+   ]
+  },
+  "related_value": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|36",
+    "FTA-VAT-ER|9"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|25"
+   ]
+  },
+  "tax_group": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|14",
+    "FTA-VAT-ER|10"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|12"
+   ]
+  },
+  "tax_inclusive": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|38",
+    "FTA-VAT-ER|27"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "tax_invoice": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|65",
+    "FTA-VAT-ER|59"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|67"
+   ]
+  },
+  "tax_return": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|72",
+    "FTA-VAT-ER|64",
+    "FTA-VAT-DL8|71"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|71",
+    "FTA-VAT-ER|62"
+   ]
+  },
+  "threshold_calculation": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|19",
+    "FTA-VAT-DL8|13"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|7"
+   ]
+  },
+  "tourist": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-ER|68"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": []
+  },
+  "value_of_supply": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|34"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-ER|25"
+   ]
+  },
+  "vat_rate": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|3"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|2"
+   ]
+  },
+  "voluntary_registration": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|17",
+    "FTA-VAT-ER|8"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-REG-PAGE|*"
+   ]
+  },
+  "vouchers": {
+   "origin": "v7 curated",
+   "required": [
+    "FTA-VAT-DL8|40",
+    "FTA-VAT-ER|28"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|26"
+   ]
+  },
+  "zero_rated": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|45"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|44"
+   ]
+  },
+  "zero_rated_or_exports": {
+   "origin": "v5 index (v6 map)",
+   "required": [
+    "FTA-VAT-DL8|45",
+    "FTA-VAT-ER|30",
+    "FTA-VAT-ER|31"
+   ],
+   "reviewed_by": null,
+   "status": "draft",
+   "supporting": [
+    "FTA-VAT-DL8|44"
+   ]
+  }
+ }
+}

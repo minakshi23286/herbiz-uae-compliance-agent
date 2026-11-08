@@ -1,0 +1,318 @@
+{
+ "$id": "https://herbiz.invalid/contracts/retrieval_result_1.0.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "budget": {
+   "additionalProperties": false,
+   "properties": {
+    "max_passages": {
+     "minimum": 1,
+     "type": "integer"
+    },
+    "returned": {
+     "minimum": 0,
+     "type": "integer"
+    }
+   },
+   "required": [
+    "max_passages",
+    "returned"
+   ],
+   "type": "object"
+  },
+  "code_freeze": {
+   "additionalProperties": false,
+   "properties": {
+    "commit": {
+     "pattern": "^[0-9a-f]{7,40}$",
+     "type": "string"
+    },
+    "config_sha256": {
+     "pattern": "^[0-9a-f]{64}$",
+     "type": "string"
+    },
+    "files_sha256": {
+     "additionalProperties": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+     },
+     "type": "object"
+    }
+   },
+   "required": [
+    "commit",
+    "files_sha256",
+    "config_sha256"
+   ],
+   "type": "object"
+  },
+  "completeness": {
+   "additionalProperties": false,
+   "if": {
+    "properties": {
+     "status": {
+      "const": "complete_for_map"
+     }
+    },
+    "required": [
+     "status"
+    ]
+   },
+   "properties": {
+    "map_review_status": {
+     "const": "draft-unreviewed"
+    },
+    "map_version": {
+     "minLength": 1,
+     "type": "string"
+    },
+    "missing_required": {
+     "items": {
+      "additionalProperties": false,
+      "properties": {
+       "article": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "source_id": {
+        "minLength": 1,
+        "type": "string"
+       }
+      },
+      "required": [
+       "source_id",
+       "article"
+      ],
+      "type": "object"
+     },
+     "type": "array"
+    },
+    "status": {
+     "enum": [
+      "complete_for_map",
+      "incomplete",
+      "unknown"
+     ]
+    }
+   },
+   "required": [
+    "status",
+    "missing_required",
+    "map_version",
+    "map_review_status"
+   ],
+   "then": {
+    "properties": {
+     "missing_required": {
+      "maxItems": 0
+     }
+    }
+   },
+   "type": "object"
+  },
+  "contract": {
+   "const": "herbiz.retrieval_result/1.0"
+  },
+  "execution_mode": {
+   "enum": [
+    "deterministic",
+    "recorded_model",
+    "proxy_outputs",
+    "live_model"
+   ]
+  },
+  "items": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "added_by": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "article": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "locator": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "passage_id": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "rank": {
+      "minimum": 1,
+      "type": "integer"
+     },
+     "score": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "source_id": {
+      "minLength": 1,
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     },
+     "url": {
+      "pattern": "^https://",
+      "type": "string"
+     },
+     "version_id": {
+      "minLength": 1,
+      "type": "string"
+     }
+    },
+    "required": [
+     "rank",
+     "passage_id",
+     "source_id",
+     "article",
+     "locator",
+     "version_id",
+     "url",
+     "added_by",
+     "score"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kb_snapshot": {
+   "additionalProperties": false,
+   "properties": {
+    "db_md5": {
+     "pattern": "^[0-9a-f]{32}$",
+     "type": "string"
+    },
+    "manifest_version": {
+     "minLength": 1,
+     "type": "string"
+    },
+    "snapshot_date": {
+     "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+     "type": "string"
+    }
+   },
+   "required": [
+    "snapshot_date",
+    "db_md5",
+    "manifest_version"
+   ],
+   "type": "object"
+  },
+  "query_sha256": {
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "required_provisions": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "article": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "from": {
+      "pattern": "^provision_map_v[0-9]+$",
+      "type": "string"
+     },
+     "role": {
+      "enum": [
+       "primary",
+       "base",
+       "supporting"
+      ]
+     },
+     "source_id": {
+      "minLength": 1,
+      "type": "string"
+     }
+    },
+    "required": [
+     "source_id",
+     "article",
+     "role",
+     "from"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "retrieval_version": {
+   "minLength": 1,
+   "type": "string"
+  },
+  "scope": {
+   "additionalProperties": false,
+   "properties": {
+    "class": {
+     "enum": [
+      "in_scope",
+      "out_of_scope",
+      "unsupported"
+     ]
+    },
+    "in_scope": {
+     "type": "boolean"
+    },
+    "reason": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "in_scope",
+    "class",
+    "reason"
+   ],
+   "type": "object"
+  },
+  "trace": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "detail": {
+      "type": "string"
+     },
+     "step": {
+      "minLength": 1,
+      "type": "string"
+     }
+    },
+    "required": [
+     "step",
+     "detail"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "contract",
+  "retrieval_version",
+  "code_freeze",
+  "execution_mode",
+  "query_sha256",
+  "kb_snapshot",
+  "items",
+  "budget",
+  "required_provisions",
+  "completeness",
+  "scope",
+  "trace"
+ ],
+ "title": "herbiz.retrieval_result/1.0",
+ "type": "object"
+}

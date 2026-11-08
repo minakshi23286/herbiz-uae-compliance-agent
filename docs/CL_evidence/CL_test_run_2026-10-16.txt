@@ -1,0 +1,38 @@
+# Command: python3 -m unittest discover -s tests -v   (run 2026-10-16 04:36 +04, Python 3.11.9)
+test_19_insufficient_completion_evidence_keeps_case_open (test_compliance_agent.CasesAndReview.test_19_insufficient_completion_evidence_keeps_case_open) ... ok
+test_20_empty_description_does_not_count_as_evidence (test_compliance_agent.CasesAndReview.test_20_empty_description_does_not_count_as_evidence) ... ok
+test_21_rejected_review_returns_case_and_records_identity (test_compliance_agent.CasesAndReview.test_21_rejected_review_returns_case_and_records_identity) ... ok
+test_22_review_needs_identity_and_context (test_compliance_agent.CasesAndReview.test_22_review_needs_identity_and_context) ... ok
+test_23_full_resolution_after_requirements_met (test_compliance_agent.CasesAndReview.test_23_full_resolution_after_requirements_met) ... ok
+test_24_duplicate_retry_does_not_duplicate_case_or_alert (test_compliance_agent.CasesAndReview.test_24_duplicate_retry_does_not_duplicate_case_or_alert) ... ok
+test_25_audit_log_is_append_only (test_compliance_agent.CasesAndReview.test_25_audit_log_is_append_only) ... ok
+test_26_staged_demo_and_restart_persistence (test_compliance_agent.EndToEnd.test_26_staged_demo_and_restart_persistence) ... ok
+test_27_conflict_clarification_updates_only_affected (test_compliance_agent.EndToEnd.test_27_conflict_clarification_updates_only_affected) ... ok
+test_28_no_numeric_confidence_anywhere (test_compliance_agent.EndToEnd.test_28_no_numeric_confidence_anywhere) ... ok
+test_01_missing_jurisdiction_needs_clarification (test_compliance_agent.ProfileAndFacts.test_01_missing_jurisdiction_needs_clarification) ... ok
+test_02_missing_licence_context_needs_clarification (test_compliance_agent.ProfileAndFacts.test_02_missing_licence_context_needs_clarification) ... ok
+test_03_invalid_profiles_are_refused (test_compliance_agent.ProfileAndFacts.test_03_invalid_profiles_are_refused) ... ok
+test_04_regression_salary_never_added_to_taxable_turnover (test_compliance_agent.ProfileAndFacts.test_04_regression_salary_never_added_to_taxable_turnover) ... ok
+test_05_unknown_ledger_line_is_not_guessed (test_compliance_agent.ProfileAndFacts.test_05_unknown_ledger_line_is_not_guessed) ... ok
+test_06_profile_change_rechecks_dependent_assessments (test_compliance_agent.ProfileAndFacts.test_06_profile_change_rechecks_dependent_assessments) ... ok
+test_07_renewal_date_never_inferred_from_issue_date (test_compliance_agent.ProfileAndFacts.test_07_renewal_date_never_inferred_from_issue_date) ... ok
+test_08_irrelevant_source_not_applicable (test_compliance_agent.Sources.test_08_irrelevant_source_not_applicable) ... ok
+test_09_conflicting_evidence_escalates_and_keeps_both (test_compliance_agent.Sources.test_09_conflicting_evidence_escalates_and_keeps_both) ... ok
+test_10_superseded_rule_is_not_used (test_compliance_agent.Sources.test_10_superseded_rule_is_not_used) ... ok
+test_11_withdrawn_rule_escalates_open_case (test_compliance_agent.Sources.test_11_withdrawn_rule_escalates_open_case) ... ok
+test_12_future_effective_date_raises_no_action (test_compliance_agent.Sources.test_12_future_effective_date_raises_no_action) ... ok
+test_13_cosmetic_change_creates_nothing (test_compliance_agent.Sources.test_13_cosmetic_change_creates_nothing) ... ok
+test_14_substantive_change_proposes_then_updates_action (test_compliance_agent.Sources.test_14_substantive_change_proposes_then_updates_action) ... ok
+test_15_resolved_case_reopens_when_rule_changes (test_compliance_agent.Sources.test_15_resolved_case_reopens_when_rule_changes) ... ok
+test_16_malicious_source_text_is_data_only (test_compliance_agent.Sources.test_16_malicious_source_text_is_data_only) ... ok
+test_17_fetch_allowlist_and_unavailable_source (test_compliance_agent.Sources.test_17_fetch_allowlist_and_unavailable_source) ... ok
+test_18_source_evidence_is_immutable (test_compliance_agent.Sources.test_18_source_evidence_is_immutable) ... ok
+test_29_local_api_rejects_foreign_requests_and_serves_state (test_compliance_agent.WebInterface.test_29_local_api_rejects_foreign_requests_and_serves_state) ... /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/unittest/case.py:579: ResourceWarning: unclosed <socket.socket fd=4, family=2, type=1, proto=0, laddr=('127.0.0.1', 57868)>
+  if method() is not None:
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.991s
+
+OK

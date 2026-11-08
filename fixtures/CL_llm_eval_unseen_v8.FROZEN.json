@@ -1,0 +1,18 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v8.json",
+ "sha256": "26bba8876db1f614f3e52011c81f3146c7eeb65cb71f321cc73963a80ecc660b",
+ "frozen_at": "2026-10-17 (Workstream B, before any C1-primary code)",
+ "role": "blind set v8",
+ "author": "fresh general-purpose agent; title list only (reviewer: title list + v8 file only); synthetic; no web",
+ "assembled_by": "Claude Code (Workstream B) - copied byte-for-byte; content NOT read by the developer before the code freeze (structure + personal-data scan only)",
+ "personal_data_scan": {
+  "email": 0,
+  "phone": 0,
+  "emirates_id": 0,
+  "trn_15": 0,
+  "url": 0
+ },
+ "grading_criteria": "docs/ai/CL_WS_B_C1P_PLAN.md",
+ "grading_criteria_sha256": "9f9e56f2598dede1bb14b3b775e41aca292e705c7a8122c765662d65915b4da0",
+ "rule": "Do not modify after results are observed."
+}

@@ -1,0 +1,77 @@
+{
+ "answer": {
+  "execution_mode": "deterministic",
+  "flags": [],
+  "mode": "blocked",
+  "shown_text_sha256": "c4621f11b399781ef68ee901e8e0741d589ff4e7dc85bc530dc983701b79791f",
+  "status": "blocked"
+ },
+ "at": "2026-10-17T10:00:00+04:00",
+ "build": {
+  "b_commit": "fdbe131",
+  "c_commit": "aa50dd4",
+  "contracts": {
+   "herbiz.audit_record": "1.0",
+   "herbiz.decision_explanation": "1.0",
+   "herbiz.retrieval_result": "1.0",
+   "herbiz.source_validity": "1.2"
+  },
+  "integration_commit": "e42e37a",
+  "snapshot_date": "2026-10-17"
+ },
+ "channel": "ask",
+ "confidence": {
+  "basis": [
+   "blocked"
+  ],
+  "level": "low",
+  "numeric": null
+ },
+ "contract": "herbiz.audit_record/1.0",
+ "decisions": [],
+ "error": null,
+ "integrity": {
+  "prev_record_sha256": "24da89686be5eaa246661d7ad9f4818db218b7d26a4db8d5075bd4cb80a3b6db",
+  "record_sha256": "45c1db4e56d92908d3b6685b084af9a86e4f4124cb42d27a3c5bf6e238591dcf",
+  "seq": 2
+ },
+ "profile_id": "SYN-AMAL-B",
+ "record_id": "6fa459ea-ee8a-4ca4-894e-db77e160355e",
+ "request": {
+  "gate": {
+   "action": "block",
+   "clause_ids": [
+    "CHARTER-P4",
+    "HERBIZ-NO-RAW-LOG",
+    "HERBIZ-SYNTHETIC-ONLY",
+    "PDPL-ART4",
+    "PDPL-ART5"
+   ],
+   "control_ids": [
+    "CTRL-NO-RAW-LOG",
+    "CTRL-PD-MINIMISE"
+   ],
+   "detector_ids": [
+    "emirates_id"
+   ],
+   "kb_version": "0.1.1"
+  },
+  "kind": "question",
+  "query_sha256": null,
+  "query_text": "SYNTHETIC question text that the gate blocked"
+ },
+ "retrieval": null,
+ "review": {
+  "human_review_required": true,
+  "release_approved": false,
+  "reviewer_needed": "a qualified VAT reviewer"
+ },
+ "sanitizer": {
+  "findings": [],
+  "passed": true,
+  "version": "fixture"
+ },
+ "session_id": "SYN-SESSION-0001",
+ "sources": [],
+ "synthetic": true
+}

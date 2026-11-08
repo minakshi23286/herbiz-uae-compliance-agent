@@ -1,0 +1,1369 @@
+{
+ "_meta": {
+  "date": "2026-10-17",
+  "by": "Claude Code, Workstream C",
+  "environment": "disposable scratch copy: git archive of ws-b-retrieval + byte copy of the KB (md5 26e202b8...) + C worktree; exports edited only as disposable copies",
+  "synthetic": "worlds 2-5 are hypothetical: no source is approved and the current DL text is not collected in reality",
+  "question_set": "B v8 (offline recorded proxy outputs); B blind set v9 not read"
+ },
+ "worlds": [
+  {
+   "world": "as_is",
+   "verified": 13,
+   "certifiable": 0,
+   "rows": [
+    {
+     "id": "Q801",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q802",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q803",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q804",
+     "retrieval": "ambiguous",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q805",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q806",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "future_text",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q807",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "unparsed_locator",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q808",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q809",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q810",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q811",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q812",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q813",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q814",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q815",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q816",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "source_not_approved"
+     ]
+    },
+    {
+     "id": "Q817",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q818",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q819",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q820",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q821",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q822",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "source_not_approved"
+     ]
+    },
+    {
+     "id": "Q823",
+     "retrieval": "out_of_scope",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "source_not_approved"
+     ]
+    },
+    {
+     "id": "Q824",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q825",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q826",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q827",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q828",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_not_approved",
+      "version_outdated"
+     ]
+    }
+   ]
+  },
+  {
+   "world": "all_approved",
+   "verified": 13,
+   "certifiable": 0,
+   "rows": [
+    {
+     "id": "Q801",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q802",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q803",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q804",
+     "retrieval": "ambiguous",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q805",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q806",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q807",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "unparsed_locator",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q808",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q809",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q810",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q811",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q812",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q813",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q814",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q815",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q816",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text"
+     ]
+    },
+    {
+     "id": "Q817",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q818",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q819",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q820",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q821",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q822",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q823",
+     "retrieval": "out_of_scope",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q824",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q825",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q826",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q827",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q828",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    }
+   ]
+  },
+  {
+   "world": "all_approved_plus_unreviewed_change_ER7",
+   "verified": 13,
+   "certifiable": 0,
+   "rows": [
+    {
+     "id": "Q801",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q802",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q803",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q804",
+     "retrieval": "ambiguous",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q805",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q806",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "future_text",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q807",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "unparsed_locator",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q808",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q809",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q810",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q811",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q812",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q813",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q814",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q815",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q816",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text"
+     ]
+    },
+    {
+     "id": "Q817",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q818",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q819",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q820",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q821",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q822",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q823",
+     "retrieval": "out_of_scope",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q824",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "future_text",
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q825",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q826",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q827",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "version_outdated"
+     ]
+    },
+    {
+     "id": "Q828",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "outdated",
+      "source_changed",
+      "version_outdated"
+     ]
+    }
+   ]
+  },
+  {
+   "world": "approved_and_current_text",
+   "verified": 13,
+   "certifiable": 11,
+   "rows": [
+    {
+     "id": "Q801",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q802",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q803",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q804",
+     "retrieval": "ambiguous",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q805",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q806",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict"
+     ]
+    },
+    {
+     "id": "Q807",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "unparsed_locator"
+     ]
+    },
+    {
+     "id": "Q808",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q809",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "conflict"
+     ]
+    },
+    {
+     "id": "Q810",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q811",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q812",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q813",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q814",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q815",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict"
+     ]
+    },
+    {
+     "id": "Q816",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q817",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q818",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q819",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q820",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q821",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q822",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q823",
+     "retrieval": "out_of_scope",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q824",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q825",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q826",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q827",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q828",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    }
+   ]
+  },
+  {
+   "world": "approved_current_plus_unreviewed_change",
+   "verified": 13,
+   "certifiable": 4,
+   "rows": [
+    {
+     "id": "Q801",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q802",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q803",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q804",
+     "retrieval": "ambiguous",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q805",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q806",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q807",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "unparsed_locator"
+     ]
+    },
+    {
+     "id": "Q808",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q809",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "conflict"
+     ]
+    },
+    {
+     "id": "Q810",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q811",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q812",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q813",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q814",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": true,
+     "blockers": []
+    },
+    {
+     "id": "Q815",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "conflict",
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q816",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q817",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q818",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q819",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q820",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q821",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q822",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q823",
+     "retrieval": "out_of_scope",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q824",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q825",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q826",
+     "retrieval": "complete",
+     "verified": true,
+     "certifiable": false,
+     "blockers": [
+      "source_changed"
+     ]
+    },
+    {
+     "id": "Q827",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    },
+    {
+     "id": "Q828",
+     "retrieval": "incomplete",
+     "verified": false,
+     "certifiable": false,
+     "blockers": []
+    }
+   ]
+  }
+ ]
+}

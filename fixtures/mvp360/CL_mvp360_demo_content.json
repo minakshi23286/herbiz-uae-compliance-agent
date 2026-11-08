@@ -1,0 +1,242 @@
+{
+ "_notice": "HerBiz 360 MVP demo content owned by Workstream A. SYNTHETIC data only. Not legal, tax or accounting advice; not reviewed; not a compliance decision. Personas, obligations and the corporate-tax demo come from Workstream B's read-only fixture (ws-b-demo-0.3 @ fdbe131), not from this file. The who-does-what table is transcribed from Workstream C's board-reviewed document; transactions are invented by Workstream A.",
+ "provenance": {
+  "financial_readiness_design": "ws-c-source-intelligence@6cfcaff (unchanged at aa50dd4):docs/rag/360/CL_HERBIZ_360_02_PRODUCT_SCOPE.md §3 (MVP rows: revenue tests, missing-document list, export; label ladder)",
+  "who_does_what": "ws-c-source-intelligence@6cfcaff (unchanged at aa50dd4):docs/rag/360/CL_HERBIZ_360_02_PRODUCT_SCOPE.md §4 (estimates, not reviewed; no fees)",
+  "transactions": "Workstream A, invented for the demo (17 Oct 2026)"
+ },
+ "banner": "Prototype · synthetic business data · simulated reviewer · Demonstration draft: not legal, tax or accounting advice, not reviewed, and not a compliance decision · HerBiz does not file or pay",
+ "vat_questions": [
+  "Q01",
+  "Q13",
+  "U10",
+  "Q35",
+  "U14"
+ ],
+ "finance": {
+  "period": "Jul–Sep 2026 (sample quarter)",
+  "fx_note": "USD converted at AED 3.6725 per USD (documented demo rate: the published AED–USD peg).",
+  "transactions": [
+   {
+    "date": "2026-07-04",
+    "type": "income",
+    "description": "Logo design — Client 1 (invoice INV-101)",
+    "amount_aed": 6500,
+    "category": "design services",
+    "document": "sales invoice",
+    "has_document": true
+   },
+   {
+    "date": "2026-07-19",
+    "type": "income",
+    "description": "Brand guide — Client 2 (invoice INV-102)",
+    "amount_aed": 11500,
+    "category": "design services",
+    "document": "sales invoice",
+    "has_document": true
+   },
+   {
+    "date": "2026-08-02",
+    "type": "income",
+    "description": "Website mock-ups — overseas client, USD 2,000",
+    "amount_aed": 7345,
+    "category": "design services",
+    "document": "sales invoice",
+    "has_document": false,
+    "fx": "USD 2,000 × 3.6725"
+   },
+   {
+    "date": "2026-08-21",
+    "type": "income",
+    "description": "Bank credit — sender not recognised",
+    "amount_aed": 3500,
+    "category": null,
+    "document": "sales invoice",
+    "has_document": false
+   },
+   {
+    "date": "2026-09-10",
+    "type": "income",
+    "description": "Social media templates — Client 3 (invoice INV-104)",
+    "amount_aed": 4200,
+    "category": "design services",
+    "document": "sales invoice",
+    "has_document": true
+   },
+   {
+    "date": "2026-07-01",
+    "type": "expense",
+    "description": "Design software subscription",
+    "amount_aed": 450,
+    "category": "software",
+    "document": "receipt",
+    "has_document": true
+   },
+   {
+    "date": "2026-07-15",
+    "type": "expense",
+    "description": "Laptop",
+    "amount_aed": 4200,
+    "category": "equipment",
+    "document": "receipt",
+    "has_document": false
+   },
+   {
+    "date": "2026-08-01",
+    "type": "expense",
+    "description": "Co-working day passes",
+    "amount_aed": 1200,
+    "category": "workspace",
+    "document": "receipt",
+    "has_document": true
+   },
+   {
+    "date": "2026-08-28",
+    "type": "expense",
+    "description": "Card payment — description unclear",
+    "amount_aed": 900,
+    "category": null,
+    "document": "receipt",
+    "has_document": false
+   },
+   {
+    "date": "2026-09-30",
+    "type": "expense",
+    "description": "Bank charges",
+    "amount_aed": 35,
+    "category": "bank charges",
+    "document": "bank statement line",
+    "has_document": true
+   }
+  ],
+  "ladder": [
+   [
+    "A1",
+    "Management estimate",
+    "Yes (draft)"
+   ],
+   [
+    "A2",
+    "Bookkeeping record or report",
+    "Yes (draft)"
+   ],
+   [
+    "A3",
+    "Draft financial statements (owner or accountant)",
+    "No"
+   ],
+   [
+    "A4",
+    "Final financial statements (signed off by the owner or management)",
+    "No"
+   ],
+   [
+    "A5",
+    "Audited financial statements — only where required, by a licensed auditor",
+    "No"
+   ],
+   [
+    "T1",
+    "Tax computation (by the preparer or an FTA-registered tax agent)",
+    "No"
+   ],
+   [
+    "T2",
+    "Submitted tax return (on EmaraTax, by an authorised person)",
+    "No — HerBiz only records your statement that it was submitted"
+   ]
+  ]
+ },
+ "who_does_what": {
+  "caption": "Categories, not legal advice. Every \"owner can usually\" answer is an estimate and has not been reviewed. No fees are stated.",
+  "columns": [
+   "Task",
+   "Owner can usually do it directly (estimate)",
+   "Software helps the owner",
+   "Accountant or FTA-registered tax-agent review is advisable",
+   "A licensed or qualified professional is required"
+  ],
+  "rows": [
+   [
+    "Corporate-tax registration on EmaraTax",
+    "Owner can usually start this on EmaraTax (estimate; not reviewed)",
+    "Document checklist",
+    "Several licences, partnerships, free zone",
+    "—"
+   ],
+   [
+    "Corporate-tax return with Small Business Relief",
+    "Unclear: ask a tax agent (estimate)",
+    "Revenue figures, records pack",
+    "First return; doubt about eligibility",
+    "—"
+   ],
+   [
+    "Corporate-tax return with taxable income",
+    "Possible, but complex",
+    "Preparation pack",
+    "Yes",
+    "Depends on the case; never assumed"
+   ],
+   [
+    "Qualifying Free Zone Person claim",
+    "No",
+    "—",
+    "Yes",
+    "Case-dependent"
+   ],
+   [
+    "Related-party or transfer-pricing positions",
+    "No",
+    "Flag only",
+    "Yes",
+    "Case-dependent"
+   ],
+   [
+    "VAT registration and returns",
+    "Yes, through EmaraTax",
+    "Records and reconciliation",
+    "Errors; voluntary disclosure",
+    "—"
+   ],
+   [
+    "Draft or final financial statements",
+    "No",
+    "Export pack",
+    "Yes: accountant",
+    "—"
+   ],
+   [
+    "Audited financial statements",
+    "No",
+    "Export pack",
+    "—",
+    "Licensed auditor where a rule or authority requires it: confirm with a professional"
+   ],
+   [
+    "Licence renewal",
+    "Yes, through the authority portal (estimate)",
+    "Reminder, document list",
+    "—",
+    "—"
+   ],
+   [
+    "Beneficial-owner (UBO) filing",
+    "Usually (estimate)",
+    "Data checklist",
+    "Complex ownership",
+    "—"
+   ],
+   [
+    "WPS payroll",
+    "—",
+    "Payroll checklist",
+    "—",
+    "Pay through a WPS agent or bank listed by MoHRE (a payment channel, not an adviser)"
+   ]
+  ],
+  "legal_review": "Wording adjusted after legal-kalpu review (17 Oct 2026): no time or fee claims; estimates marked."
+ },
+ "suppressed_claims": [],
+ "suppressed_claims_rule": "Founder approval 17 Oct 2026: if a source change found after the 17 Oct snapshot makes a demonstrated claim misleading or unsafe, it is escalated, reviewed and then corrected or suppressed here. Each entry: {claim_id, reason, change_report_entry, since}. claim_id = an owner-row id (e.g. C360-11), a VAT question id (e.g. Q13) or a step ('step:7'). Never edit source data, citations or obligations silently."
+}

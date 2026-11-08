@@ -1,0 +1,29 @@
+{
+ "freeze": "C1-PRIMARY CODE FREEZE (Workstream B, 17 Oct 2026), before blind set v8 is read and before any classifier outputs for v8 exist",
+ "files": {
+  "compliance_agent/llm_lab/classifier_c1p.py": "252f5c679735de2c98234741d4b02df0bb55cbe844302820197959a02def05e5",
+  "compliance_agent/llm_lab/pipeline_c1p.py": "35ca9eb66142ad4900eba780112c703a4a7853ff607bd65f9f68b26946182712",
+  "compliance_agent/llm_lab/source_validity_c.py": "d2c5a3d3b7810cc487b3e8e254628dc6fd552f5cbe58689c5da9a56c840d65f9",
+  "compliance_agent/llm_lab/classifier_c1.py": "874bb6ec2a9a5a9b840dca3efa985544e8b4e77028255f36f06908294bfafc81",
+  "compliance_agent/llm_lab/pipeline_c1.py": "98ecf0f874c11ed4bdb753337dd77bb23f40461bb64393dc57a836df8918d412",
+  "compliance_agent/llm_lab/pipeline_v7.py": "c703911038cfa7b69c47c48e40e8ef4a34e8946221da2b26925c62c5e68ebb97",
+  "compliance_agent/llm_lab/concepts_v5.py": "8eadc88009b870b9e2600f4860cf305df0067025abb826924c64b37798c05a49",
+  "compliance_agent/llm_lab/retrieve.py": "827876d4eda13ad8764b3d410ae2e5e1b72f5ef607562ce8886d5df15636f3ab",
+  "compliance_agent/llm_lab/retrieval_metrics.py": "131ec78f430140f1d93ef457fbd374f17fe7b8c265ef49bf56d1834c0d6b09f6",
+  "compliance_agent/llm_lab/locators.py": "3bc1cee1649f1befd2c1f5ed975b752577bb6983953e700d906ae5bce4882810",
+  "compliance_agent/llm_lab/data/CL_provision_map_v7.json": "6c926baf0893c3a0a8333407969747631b1f71445501f962195021497c7fca1a",
+  "compliance_agent/llm_lab/data/CL_expansion_v6.json": "bf36ce5deb81410beba2f7dfb0502e692d7600b4ba334ecc75340c07d9184a36",
+  "compliance_agent/llm_lab/data/CL_article_index_v6.json": "d235e7bfd0d7eae04d8c76aa0d1c5250340f2211c1302b53291b085c7cdbb573",
+  "compliance_agent/llm_lab/data/CL_source_validity_v6.json": "debcaf7bcb6d5c15e371a9e9298d25a11d5b31880a5f2573cd8d1b5ccae22ea3",
+  "experiments/ws_b/CL_ws_b_c1p_offline_eval.py": "af515612678466e8d0e7afb05c9b8e81e8367b2308fc1469674426290f5a0f7e"
+ },
+ "ws_c_snapshot_read_only": {
+  "branch": "ws-c-source-intelligence",
+  "files": {
+   "compliance_agent/rag_c/interface.py": "670d19e8675ecaa4ccf903d7753b34fdf98b45dff1a463fd3c0616cf22028926",
+   "compliance_agent/rag_c/validity.py": "b99d345d181ef82146e52cbe42a115ac148df541dc17535d38b3f2cf64c1b6f8",
+   "knowledge_base/CL_source_validity.json": "36969cf062b77f774c52339f12fa2e03fb85ebc165bdd53d614bc2b7b7f24a5d"
+  },
+  "note": "recorded, not enforced: C may update its export; B loads C's current read-only interface each run"
+ }
+}

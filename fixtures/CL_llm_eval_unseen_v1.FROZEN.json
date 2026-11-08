@@ -1,0 +1,9 @@
+{
+ "file": "fixtures/CL_llm_eval_unseen_v1.json",
+ "sha256": "45ad5ad07d5f9c160607045f926fdea3f53d020267aed5b36a50aaf57187f430",
+ "frozen_at": "2026-10-16T19:10:53+04:00",
+ "author": "independent general-purpose agent (did not read the project; no web search); expected_sources mapped from article titles after questions were fixed",
+ "assembled_by": "Claude Code (coordinator) \u2014 transcribed without edits; Opus subset chosen before any run",
+ "rule": "Do not modify after results are observed. The runner refuses to use this set if the sha256 changes.",
+ "pre_freeze_use": "No retrieval search and no model call had used these questions at freeze time."
+}

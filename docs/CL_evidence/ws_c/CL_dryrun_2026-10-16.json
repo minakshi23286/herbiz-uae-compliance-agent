@@ -1,0 +1,43 @@
+{
+ "outcomes": [
+  {
+   "source_id": "FTA-VAT-DL8",
+   "outcome": "new_version",
+   "version_id": "FTA-VAT-DL8@v1",
+   "passages": 93
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "outcome": "new_version",
+   "version_id": "FTA-VAT-ER@v1",
+   "passages": 89
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "outcome": "new_version",
+   "version_id": "FTA-VAT-ER@v2",
+   "passages": 89
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "outcome": "new_version",
+   "version_id": "FTA-VAT-ER@v3",
+   "passages": 91
+  },
+  {
+   "source_id": "FTA-VAT-REG-PAGE",
+   "outcome": "new_version",
+   "version_id": "FTA-VAT-REG-PAGE@v1",
+   "passages": 9
+  }
+ ],
+ "build_passages": 371,
+ "reference_passages": 371,
+ "only_in_build": [],
+ "only_in_reference": [],
+ "locator_differences": [],
+ "text_differences": [],
+ "integrity": "ok",
+ "kept_build": null,
+ "reproducible": true
+}

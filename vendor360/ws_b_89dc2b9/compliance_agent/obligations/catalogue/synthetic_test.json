@@ -1,0 +1,24 @@
+{
+ "_meta": {"domain": "synthetic_test", "rule_status": "synthetic_test: TEST RULES, NOT LAW. They exist only to demonstrate the deadline and document-readiness workflows on synthetic profiles. Numbers and dates are invented.",
+           "not_legal_advice": true},
+ "obligations": [
+  {"id": "SYN-LIC-RENEWAL", "domain": "synthetic_test", "title": "TEST RULE: licence renewal reminder (synthetic)",
+   "meaning": "TEST RULE, not law: when a synthetic licence expires within the test window, prepare the renewal.",
+   "rule_status": "synthetic_test",
+   "rule": {"all": [{"fact": "days_until_licence_expiry", "op": "lte", "param": "window_days", "label": "days until licence expiry"}]},
+   "params": {"window_days": 60},
+   "deadline": {"kind": "offset_from_fact", "fact": "licence_expiry_date", "days": 0, "prepare_days_before": 30,
+                "basis": "TEST RULE: due on the synthetic expiry date; start 30 days before."},
+   "documents": [{"id": "trade_licence", "label": "Current trade licence"}, {"id": "tenancy_or_noc", "label": "Tenancy contract or landlord NOC"},
+                 {"id": "owner_id", "label": "Emirates ID or passport"}],
+   "owner_actions": ["Check your authority's renewal page", "Gather the renewal documents"],
+   "professional_review": []},
+  {"id": "SYN-WPS-PAYROLL", "domain": "synthetic_test", "title": "TEST RULE: payroll document readiness (synthetic)",
+   "meaning": "TEST RULE, not law: a synthetic employer prepares monthly payroll documents.",
+   "rule_status": "synthetic_test",
+   "rule": {"all": [{"fact": "has_employees", "op": "is_true", "label": "has employees"}]},
+   "deadline": {"kind": "monthly_day", "day": 10, "basis": "TEST RULE: each month by the 10th."},
+   "documents": [{"id": "employment_contracts", "label": "Employment contracts"}, {"id": "salary_register", "label": "Monthly salary register"}],
+   "owner_actions": ["Keep a monthly salary register"], "professional_review": []}
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "documents": [
+  {
+   "source_id": "FTA-VAT-DL8",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal-Decree-Law-No-8-of-2017-and-amendments.pdf",
+   "sha256": "37159c643e64ef2e4accf8a5825539f1c8fac7387166f8fc22afac9e9f6677ea",
+   "bytes": 445665,
+   "mime": "application/pdf",
+   "retrieved_at": "2026-10-16T04:58:56+04:00",
+   "raw_path": "raw/FTA-VAT-DL8/37159c643e64ef2e.pdf"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive Regulation of Federal Decree Law No 8 of 2017 - Publish - 04 10 2024.pdf",
+   "sha256": "b87b4c2c0a60d209783a25b3aa92e64d9f696a0f3300b9ca911c72a401f4e1c7",
+   "bytes": 709077,
+   "mime": "application/pdf",
+   "retrieved_at": "2026-10-16T04:58:57+04:00",
+   "raw_path": "raw/FTA-VAT-ER/b87b4c2c0a60d209.pdf"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/Executive-Regulation-of-Federal-Decree-Law-No-08-of-2017-Publish-18-09-2025.pdf",
+   "sha256": "11de7a2063f2ee7544e45e88df228e05716c4c36871028d898c969691238cbb0",
+   "bytes": 708273,
+   "mime": "application/pdf",
+   "retrieved_at": "2026-10-16T04:58:59+04:00",
+   "raw_path": "raw/FTA-VAT-ER/11de7a2063f2ee75.pdf"
+  },
+  {
+   "source_id": "FTA-VAT-ER",
+   "url": "https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf",
+   "sha256": "7e0882e3d6f9e4bae4acdfd5420b4266d23f9bf38f22df910db106b24f145840",
+   "bytes": 879857,
+   "mime": "application/pdf",
+   "retrieved_at": "2026-10-16T04:59:00+04:00",
+   "raw_path": "raw/FTA-VAT-ER/7e0882e3d6f9e4ba.pdf"
+  },
+  {
+   "source_id": "FTA-VAT-REG-PAGE",
+   "url": "https://tax.gov.ae/en/taxes/Vat/vat.topics/registration.for.vat.aspx",
+   "sha256": "a729f138823baceb14bb028b893234449cc926b1d8eef2fbbcda5aef677a6f36",
+   "bytes": 346870,
+   "mime": "text/html",
+   "retrieved_at": "2026-10-16T04:59:02+04:00",
+   "raw_path": "raw/FTA-VAT-REG-PAGE/a729f138823baceb.html"
+  }
+ ]
+}

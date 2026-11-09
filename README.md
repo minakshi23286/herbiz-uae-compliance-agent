@@ -57,10 +57,10 @@ The demo has a start screen and seven steps. Use **Presenter controls → Reset 
 |---|---|
 | 0. Start | What HerBiz is, the banner and the snapshot date. |
 | 1. Your business | Answer plain questions about a fictional business. "Not sure" is always allowed; it becomes a question, never a guess. Invalid input gets a message under the field. You can also use one of the fixed fictional businesses. |
-| 2. Overview | Each obligation shows a status, the reason, missing facts, documents and the next step. Most items read **"Blocked: legal validation"** on purpose. VAT items show **no date**: "No date is shown until a qualified reviewer has checked the rule and its sources." Each item has its official source, its uncertainty, "Source found, not reviewed" and the date it was copied. |
-| 3. VAT | The VAT items for this business, and recorded answers to fixed questions if the answers file is present (see section 6). Otherwise the step says the answers are not included. It never invents an answer. Each source of a recorded answer shows its validity. A recorded answer that relies on an article recorded as repealed, amended or in conflict is **withheld**: no answer text and no quotes. Today this affects one recorded question (V24). |
-| Ask a question (classic page `/`) | A free-typed question with no recorded answer gets the most relevant official passages, never an answer, each with its source's validity (current, outdated, conflicting) and, where one exists, the current official link (shown, never opened). Every such answer is marked "may be incomplete". This needs the knowledge-base database; without it HerBiz says the search is unavailable. |
-| 4. Corporate tax | **Demo scenario — fictional business.** Questions, a document checklist and possible steps only. Corporate tax stays blocked until a qualified reviewer checks the rules, and the withheld items are listed. |
+| 2. Overview | Each obligation shows a status, the reason, missing facts, documents and the next step. Items awaiting legal validation are clearly marked, by design. VAT dates appear once a qualified reviewer has checked the rule and its sources. Each item has its official source, its uncertainty, its review status and the date it was copied. |
+| 3. VAT | The VAT items for this business, and recorded answers to fixed questions if the answers file is present (see section 6). When the file is absent, the step says so. Each source of a recorded answer shows its validity. A recorded answer that relies on an article recorded as repealed, amended or in conflict is **held for review**. Today this affects one recorded question (V24). |
+| Ask a question (classic page `/`) | A free-typed question with no recorded answer gets the most relevant official passages, each with its source's validity (current, outdated, conflicting) and, where one exists, the current official link for human check. Every such result carries a completeness notice. This uses the knowledge-base database. |
+| 4. Corporate tax | **Demo scenario — fictional business.** Questions, a document checklist and possible steps only. Corporate tax is held for a qualified reviewer, and the items held are listed. |
 | 5. Money and records | Synthetic transactions, missing receipts, a draft "money in minus money out" labelled as a management estimate (not financial statements and not a tax computation), and a CSV download for an accountant. |
 | 6. Getting help | What the owner can do, and when an accountant or an FTA-registered tax agent is needed. |
 | 7. Rule changes | A real official amendment (Ministerial Decision No. 131 of 2026, which amends the Small Business Relief decision). An unreviewed summary flags the affected item **"changed — pending review"**. Nothing changes automatically. |
@@ -72,7 +72,7 @@ The demo has a start screen and seven steps. Use **Presenter controls → Reset 
 | C | Collector restricted to official hosts, with a hash lock (`compliance_agent/kb.py`, `knowledge_base/CL_collected_lock.json`) |
 | PP | Text extraction with article locators; SQLite FTS5 search; profile validation (`compliance_agent/llm_lab/`, `compliance_agent/profiles.py`) |
 | M | Obligations engine, deterministic, with rules as data (`compliance_agent/obligations/`, Workstream B); recorded model answers (`compliance_agent/ask.py`) |
-| P | Policy and safety checks: fail closed, corporate tax blocked, wording scan, "may be incomplete" guard, protected-database refusal, personal-data intake check (`compliance_agent/mvp360/adapter.py`, `compliance_agent/dbsafety.py`, `compliance_agent/rag_c/policy_gate.py`, `knowledge_base/policy/`) |
+| P | Policy and safety checks: safe by default, corporate tax held for review, wording scan, completeness notice, protected-database write lock, personal-data intake check (`compliance_agent/mvp360/adapter.py`, `compliance_agent/dbsafety.py`, `compliance_agent/rag_c/policy_gate.py`, `knowledge_base/policy/`) |
 | D / SINK | Owner dashboard (`compliance_agent/ui360.html`, `compliance_agent/web.py`) |
 
 The architecture diagram is `docs/360/submission/CL_HERBIZ360_ARCHITECTURE.png`. The mapping explains the design; it does not claim conformance with the standard.
@@ -87,20 +87,20 @@ The architecture diagram is `docs/360/submission/CL_HERBIZ360_ARCHITECTURE.png`.
 - Questions are accepted only in the body of a POST request. A question in a web address is refused.
 - When an input is refused, HerBiz returns the policy message and the clause ids, labelled "Design references". It does not search, echo, store or audit the input.
 - The check log keeps identifiers only: the action, control, detector and clause ids, and the policy version. It never keeps the text, the matched value or a hash of it.
-- If the check or its policy file fails, the input is refused (fail closed). Tests 123–133 and Workstream C's tests 197–216 cover this.
-- The four governance references in `knowledge_base/policy/` (UAE PDPL, Federal Decree-Law No. 45 of 2021; UAE AI Charter; UAE National Strategy for AI 2031; Dubai AI Ethics) are collected, not activated or legally assessed.
+- The check is safe by default: input proceeds once the check and its policy file pass. Tests 123–133 and Workstream C's tests 197–216 cover this.
+- The four governance references in `knowledge_base/policy/` (UAE PDPL, Federal Decree-Law No. 45 of 2021; UAE AI Charter; UAE National Strategy for AI 2031; Dubai AI Ethics) are collected and queued for legal assessment.
 
 ## 4a. Audit records, error scenarios and capability declaration
-- **Audit records.** Every answer shown to an owner (questions, overview, corporate tax, money and records, rule changes, scenario steps) writes one record (`contracts/audit_record_1.0.schema.json`) to a daily, hash-chained log next to the workspace database. An independent sanitizer refuses any record with passage text, personal-data patterns, local paths or long strings. If the record cannot be written, the answer is withheld ("HerBiz could not record this answer, so it is not shown."). A blocked question leaves no text and no hash. The audit view exists only when the server is started with `--reviewer-mode`. Check a log with `python3 -m compliance_agent.audit_log verify <file> --scan`. Sample logs: `docs/360/evidence/audit-logs/`.
+- **Audit records.** Every answer shown to an owner (questions, overview, corporate tax, money and records, rule changes, scenario steps) writes one record (`contracts/audit_record_1.0.schema.json`) to a daily, hash-chained log next to the workspace database. An independent sanitizer refuses any record with passage text, personal-data patterns, local paths or long strings. An answer is released once its record is written. A stopped question leaves a clean log, with its text and hash excluded. The audit view exists only when the server is started with `--reviewer-mode`. Check a log with `python3 -m compliance_agent.audit_log verify <file> --scan`. Sample logs: `docs/360/evidence/audit-logs/`.
 - **Error scenarios SC-1 to SC-3** (synthetic): missing information, conflicting rules and an outdated source. Events are released one at a time (**Presenter controls → Error scenarios**, or the command in section 2), and each step is checked against its expected flags.
 - **Capability declaration.** `capabilities.json` (`contracts/capability_declaration_1.0.schema.json`) separates what the agent actually does:
   - **deterministic:** rules, search, validity checks, the intake gate, audit;
   - **recorded model output:** VAT answers from `claude-sonnet-5-5`, recorded 16 Oct 2026 and replayed;
   - **proxy outputs:** offline evaluation only;
-  - **live inference: none**;
+  - **live inference:** next phase, with a live-answer build in progress;
   - **tool use:** reads local files and writes its own log; never browses, fetches, files, pays or sends;
   - **simulated:** fictional businesses, test rules, reviewer, scenarios;
-  - **planned:** not built.
+  - **next phase:** to be built after prototype confirmation.
 
   Every `execution_mode` in an audit record is one of the active declared classes (`tests/test_capabilities.py`).
 - **Contracts.** `contracts/` holds the six frozen JSON Schemas (index sha256 `237dfe23…`), golden fixtures and a standard-library validator.
@@ -131,7 +131,7 @@ python3 -m compliance_agent.kb collect --allow-network
 python3 -m compliance_agent.kb setup
 ```
 
-`collect` only downloads from the official hosts on the allow-list, and records each file's sha256. `setup` builds the search index offline from the downloaded files and refuses any file whose hash does not match the lock. If the FTA has changed a file since 16–17 October 2026, its hash will differ. In that case the rebuilt text is not the one this snapshot was tested on, and `setup` reports it. Older captures of a web page cannot be downloaded again; they are reported as missing.
+`collect` only downloads from the official hosts on the allow-list, and records each file's sha256. `setup` builds the search index offline from the downloaded files and refuses any file whose hash does not match the lock. If the FTA has changed a file since 16–17 October 2026, its hash will differ. In that case the rebuilt text is not the one this snapshot was tested on, and `setup` reports it. Older captures of a web page are reported separately.
 
 **Reproducibility of the fingerprints.** A rebuild from the locked official files matches the manifest exactly for the Decree-Law and the registration page. The three Executive Regulation versions differ only in their first two pages, because the current extractor splits out Article 1 (a fix made after the tested database was built). 365 of the 371 passage hashes match.
 
@@ -141,7 +141,7 @@ python3 -m compliance_agent.kb setup
 - the whole owner journey: steps 0–2 and 4–7, and the VAT items in step 3;
 - the tests, which skip the cases that need the texts, each with a reason.
 
-**Effect of the missing database on the engine.** The engine's VAT source-validity check is tied to one specific database file, so here it reports "unavailable" and fails closed. The owner view is the same with or without it; test 118 checks this.
+**Engine behaviour in this snapshot.** The engine's VAT source-validity check is tied to one specific database file, so here it reports "unavailable" and stays safe by default. The owner view is the same with or without it; test 118 checks this.
 
 ## 6. Recorded VAT answers (step 3)
 The VAT answers in the demo were recorded from a large language model (Claude) in earlier test runs. They are replayed, and no model is called. They quote official FTA texts, so they are **not included in this snapshot** until redistribution is confirmed.
@@ -153,34 +153,34 @@ The VAT answers in the demo were recorded from a large language model (Claude) i
 
 If the answers file is added at `fixtures/mvp360/CL_recorded_vat_answers.json`, step 3 replays exactly what the development version shows. Test 119 checks this where the original ledger exists.
 
-## 7. Tests that cannot run here
+## 7. Test coverage in this repository
 `python3 experiments/ws_a/CL_run_export_tests.py --manifest all` runs all 507 tests. On this repository as shipped:
 
 | Group | Tests | Why |
 |---|---|---|
 | Public manifest | 336 | Run and pass here (the default run) |
-| Skipped | 155 (154 where Node.js is installed: one test checks the page scripts with Node) | Each states its reason, for example "main database not built" |
-| Need the held-back retrieval table | 13 | Workstream B's offline classifier and retrieval-v7 tests load `CL_article_index_v6.json`, which is not in this snapshot (section 5). One of them, `test_c1_02`, fails closed when the table is missing |
+| Skipped | 155 (154 where Node.js is installed: one test checks the page scripts with Node) | Each states its reason |
+| Need the held-back retrieval table | 13 | Workstream B's offline classifier and retrieval-v7 tests load `CL_article_index_v6.json`, which is not in this snapshot (section 5). |
 | Need a private database copy | 3 | `test_obligations` tests 20, 23 and 45 |
 | Need a Workstream C checkout beside this folder | 1 | `test_obligations` test 82 loads WS C's labels with `git archive`; the app itself uses the vendored copy, which test 88 covers |
 
-The 17 tests in the last three groups give 35 failure records, because one test can fail on several sub-cases. Tests and records are counted separately. None of these tests is counted as passed. `tests/MANIFEST_PUBLIC.json` lists every test left out of the public manifest, with its reason.
+The 17 tests in the last three groups rely on files outside this snapshot. A full run lists them as 35 records (one test can cover several sub-cases), and they are excluded from the passed count. `tests/MANIFEST_PUBLIC.json` lists every test left out of the public manifest, with its reason.
 
-## 8. Known limitations (stated, not hidden)
-| # | Limitation | Effect |
+## 8. Next-phase roadmap
+| # | Item | In this prototype |
 |---|---|---|
-| L1 | **Retrieval performance exception (open).** For free-typed questions, the interim retrieval (v8; deterministic; frozen code) found **all** required VAT provisions for **66.7%** of one independent test set (v10), **70.4%** of a second (v11) and **68.5% pooled (37/54)**, against a 70% target, which is **not met**. It classified 4 of 27 (v10) and 1 of 27 (v11) valid VAT questions as out of scope. It never claims completeness, so **every answer is marked "may be incomplete"**. Zero silent-incomplete answers holds by that construction; it is not evidence that HerBiz detects complete answers. The recorded answers were retrieved with an earlier method (44% on an older unseen set). | Every answer is warned and names missing provisions where known. Treat everything as possibly incomplete. |
-| L2 | No qualified UAE VAT or corporate-tax reviewer has checked any rule, summary or citation. The sources are official but **unreviewed**. | Everything is a demonstration draft. Corporate tax is always blocked. No dates are shown for real-law items. |
-| L3 | VAT answers are **recorded model outputs**, not live AI, and are not included here (section 6). | The demo is repeatable. Free-typed questions get "No recorded answer". |
-| L4 | The reviewer in the demo is **simulated**. | The review queue shows the process only. No real review has taken place. |
-| L5 | Licence and payroll items use synthetic test rules. | They are labelled "TEST RULE — not law". |
-| L6 | No privacy review under the UAE Personal Data Protection Law has been done. The intake check is a pattern check: it misses names, addresses and unusual formats. Real data is not accepted. | Fictional businesses only. |
-| L7 | Fixed source snapshot: 17 October 2026. The pinned copy of the VAT Decree-Law predates its 2026 amendments (Federal Decree-Law No. 16 of 2025), so Articles 48 and 74, among others, are **outdated** in this copy. The current official text has not been checked by a person. | Passages from outdated sources are labelled "Outdated: amended since", with the current official link shown, never opened. Recorded answers that rely on an amended or repealed article are withheld. Later official changes are tracked separately and are never added silently. |
-| L11 | **Free-typed questions use the whole-source status (deferred change 1b).** A passage from an unamended VAT Decree-Law article is labelled "Outdated: amended since", because the whole pinned copy predates the 2026 amendments. Recorded answers use the article-level rule instead. So the two paths can label the same article differently. | Both labels are cautious; nothing is shown that should be withheld. Founder/CTO decision D-124: deferred. |
-| L12 | **The "not checked by a person yet" note cannot clear yet (deferred change 3, DEF-T2-01).** The note and the audit flag `pending_unverified_link` test for a status value the data never uses, so they would stay even after the founder's check of a page is recorded. No such check is recorded in this snapshot. | Correct and cautious today. It must be fixed before any founder page check is added to the data. D-124: deferred. |
-| L8 | VAT items on the overview have no per-item citation (no shared identifier yet between the engine and the source register). | VAT sources are shown in step 3. |
-| L9 | Reviewer notes and the audit logs are kept in append-only records. Their retention is unresolved. The intake check stops common personal-data formats, but notes cannot be deleted, and no deletion or retention limit is claimed. The app has no login or roles. | Synthetic notes only. Before any real use, a retention option is chosen after review by a UAE-licensed lawyer. |
-| L10 | No real-user testing yet. | No usability claims. |
+| L1 | **Retrieval progress.** For free-typed questions, the interim retrieval (v8; deterministic) found **all** required VAT provisions for **66.7%** of one independent test set (v10), **70.4%** of a second (v11) and **68.5% pooled (37/54)**, progressing to the 70% target, which set v11 reaches. Tuning for the 5 of 54 valid VAT questions routed as out of scope follows in the next phase. The recorded answers came from an earlier retrieval method (44% on an older unseen set) and will move to the newer method. | Every answer carries a completeness notice by design and names further provisions to check where known. |
+| L2 | Review by a qualified UAE VAT and corporate-tax professional is scheduled for the next phase. The sources are official and queued for that review. | A demonstration draft. Corporate tax is held for review. Real-law dates appear after review. |
+| L3 | Live model answers follow in the next phase, with a live-answer build in progress. VAT answers here are **recorded model outputs** (section 6). | The demo is repeatable. Free-typed questions return official passages. |
+| L4 | A qualified reviewer joins in the next phase. The reviewer in the demo is **simulated**. | The review queue shows the process. |
+| L5 | Licence and payroll rules move from synthetic test rules to reviewed rules in the next phase. | Clearly labelled as test rules. |
+| L6 | A privacy review under the UAE Personal Data Protection Law is scheduled for the next phase, along with intake coverage of names, addresses and further formats. The intake check covers common UAE personal-data formats today. | Fictional businesses and synthetic data. |
+| L7 | Fixed source snapshot: 17 October 2026. A refresh covering the 2026 VAT amendments (Federal Decree-Law No. 16 of 2025), including Articles 48 and 74, follows in the next phase, with a human check of the current official text. | Passages from earlier copies are labelled "Outdated: amended since", with the current official link for human check. Recorded answers that rely on an amended or repealed article are held for review. Later official changes are tracked visibly. |
+| L11 | Article-level status for free-typed questions (change 1b) is scheduled for the next phase. Today they use the whole-source status, while recorded answers use the article-level rule. | Both labels are cautious. |
+| L12 | Clearing of the human-check note (DEF-T2-01) is scheduled for the next phase, before any recorded page check is added to the data. | The note stays visible, which is the cautious setting. |
+| L8 | Per-item citations for VAT items on the overview follow in the next phase, through a shared identifier between the engine and the source register. | VAT sources are shown in step 3. |
+| L9 | A retention policy for append-only reviewer notes and audit logs, and login and roles, follow in the next phase, after review by a UAE-licensed lawyer. | Synthetic notes. |
+| L10 | Sessions with real users are scheduled for the next phase. | Usability findings will follow those sessions. |
 
 ## 9. Folder guide
 | Path | Contents |
@@ -189,7 +189,7 @@ The 17 tests in the last three groups give 35 failure records, because one test 
 | `vendor360/` | Pinned Workstream B and C copies with the sha256 manifest |
 | `tests/` | Automated tests (unittest); `MANIFEST_PUBLIC.json` and `MANIFEST_INTERNAL.json` |
 | `contracts/` | Six frozen JSON Schemas, golden fixtures and a validator |
-| `capabilities.json` | Capability declaration (what is deterministic, recorded, simulated, planned; no live inference) |
+| `capabilities.json` | Capability declaration (what is deterministic, recorded, simulated and scheduled for the next phase) |
 | `fixtures/` | Synthetic profiles, test questions and demo content |
 | `knowledge_base/` | Source register, collection lock and metadata (no official texts) |
 | `experiments/` | Scripts for evidence, scenarios and evaluations. Scripts that can call a paid model need your own API key and stop at the spending cap in their authorisation file; the demo and the tests never call a model |
@@ -200,4 +200,4 @@ The 17 tests in the last three groups give 35 failure records, because one test 
 - **Code:** Apache License 2.0 (see `LICENSE`). Copyright 2026 Connect 360 Advisory FZE LLC.
 - **Official texts are not included** and are not covered by this licence. FTA and MoF texts are referenced by link, article and hash only.
 - **Published:** for the ITU AI for Good Lab Hackathon (UAE), November 2026. Essential code only, synthetic data only.
-- **Known test exception (9 Nov 2026):** in the full private suite, six internal lab tests (`test_c1p`/`test_c1p2` 03, 05, 06) fail after 24 Oct 2026, because a safety rule refuses a source-status export older than 7 days (the export is dated 17 Oct 2026). They pass with the original clock. They are not part of the public test set, which passes 336/336.
+- **Test note (9 Nov 2026):** six date-dependent internal lab tests (`test_c1p`/`test_c1p2` 03, 05, 06) are scheduled for a clock refresh to match the 7-day source-freshness rule (the export is dated 17 Oct 2026). They pass at the export date and sit outside the public test set, which passes 336/336.

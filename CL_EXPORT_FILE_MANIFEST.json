@@ -5,7 +5,7 @@
  "files": {
   ".env.example": "7bbca3c59c0ac8411c9043c122e3b09c471135bbdba07abce2e1a5cbb6936d68",
   ".gitignore": "a0279580eb00c3c541862944deb58d221dec8a7bf59bd917618a5e0a5d2a5d52",
-  "README.md": "b4a58bb86a5d63597db31b5872dfdb6ba584a176bf37f12a2af69985f06efa4d",
+  "README.md": "84928b9e0143c2519fdd032a795b686c8d58ba3f42fbbf29bce76561a3472604",
   "capabilities.json": "22c93278062b73694f8bd2024e250da7727bc1f7bb4f016a10ebee6d38bc6bde",
   "compliance_agent/__init__.py": "3246c5abab81d45cd28b459a84e69182db3818c11fec34bd701a23041fdea6eb",
   "compliance_agent/ask.py": "1640e52475d32f5f896895e8a489edaf8ac2e5acec3ac33bd3c07eae67afb429",
